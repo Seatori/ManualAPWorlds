@@ -1,0 +1,198 @@
+{
+	"Fine Fields": 	{
+		"connects_to": [],
+		"requires": []
+	},
+	"Lollipop Land": 	{
+		"connects_to": [],
+		"requires": "(|Grand Sun Stone:1|)"
+	},
+	"Old Odyssey": 	{
+		"connects_to": [],
+		"requires": "(|Grand Sun Stone:2|)"
+	},
+	"Wild World": 	{
+		"connects_to": [],
+		"requires": "(|Grand Sun Stone:3|)"
+	},
+	"Endless Explosions": 	{
+		"connects_to": [],
+		"requires": "(|Grand Sun Stone:4|)"
+	},
+	"Royal Road": 	{
+		"connects_to": [],
+		"requires": "(|Grand Sun Stone:5|)"
+	},
+	"Fine Fields Stage 1": 	{
+		"connects_to": [],
+		"requires": "|Fine Fields Stage 1|"
+	},
+	"Fine Fields Stage 2": 	{
+		"connects_to": [],
+		"requires": "|Fine Fields Stage 2|"
+	},
+	"Fine Fields Stage 3": 	{
+		"connects_to": [],
+		"requires": "|Fine Fields Stage 3|"
+	},
+	"Fine Fields Stage 4": 	{
+		"connects_to": [],
+		"requires": "|Fine Fields Stage 4|"
+	},
+	"Fine Fields Boss": 	{
+		"connects_to": [],
+		"requires": "|VS Flowery Woods|"
+	},
+	"Fine Fields Stage EX": 	{
+		"connects_to": [],
+		"requires": "|Fine Fields Stage EX|"
+	},
+	"Lollipop Land Stage 1": 	{
+		"connects_to": [],
+		"requires": "|Lollipop Land Stage 1|"
+	},
+	"Lollipop Land Stage 2": 	{
+		"connects_to": [],
+		"requires": "|Lollipop Land Stage 2|"
+	},
+	"Lollipop Land Stage 3": 	{
+		"connects_to": [],
+		"requires": "|Lollipop Land Stage 3|"
+	},
+	"Lollipop Land Stage 4": 	{
+		"connects_to": [],
+		"requires": "|Lollipop Land Stage 4|"
+	},
+	"Lollipop Land Boss": 	{
+		"connects_to": [],
+		"requires": "|VS Paintra|"
+	},
+	"Lollipop Land Stage EX": 	{
+		"connects_to": [],
+		"requires": "|Lollipop Land Stage EX|"
+	},
+	"Old Odyssey Stage 1": 	{
+		"connects_to": [],
+		"requires": "|Old Odyssey Stage 1|"
+	},
+	"Old Odyssey Stage 2": 	{
+		"connects_to": [],
+		"requires": "|Old Odyssey Stage 2|"
+	},
+	"Old Odyssey Stage 3": 	{
+		"connects_to": [],
+		"requires": "|Old Odyssey Stage 3|"
+	},
+	"Old Odyssey Stage 4": 	{
+		"connects_to": [],
+		"requires": "|Old Odyssey Stage 4|"
+	},
+	"Old Odyssey Stage 5": 	{
+		"connects_to": [],
+		"requires": "|Old Odyssey Stage 5|"
+	},
+	"Old Odyssey Boss": 	{
+		"connects_to": [],
+		"requires": "|VS Kracko|"
+	},
+	"Old Odyssey Stage EX": 	{
+		"connects_to": [],
+		"requires": "|Old Odyssey Stage EX|"
+	},
+	"Wild World Stage 1": 	{
+		"connects_to": [],
+		"requires": "|Wild World Stage 1|"
+	},
+	"Wild World Stage 2": 	{
+		"connects_to": [],
+		"requires": "|Wild World Stage 2|"
+	},
+	"Wild World Stage 3": 	{
+		"connects_to": [],
+		"requires": "|Wild World Stage 3|"
+	},
+	"Wild World Stage 4": 	{
+		"connects_to": [],
+		"requires": "|Wild World Stage 4|"
+	},
+	"Wild World Stage 5": 	{
+		"connects_to": [],
+		"requires": "|Wild World Stage 5|"
+	},
+	"Wild World Boss": 	{
+		"connects_to": [],
+		"requires": "|VS Coily Rattler|"
+	},
+	"Wild World Stage EX": 	{
+		"connects_to": [],
+		"requires": "|Wild World Stage EX|"
+	},
+	"Endless Explosions Stage 1": 	{
+		"connects_to": [],
+		"requires": "|Endless Explosions Stage 1|"
+	},
+	"Endless Explosions Stage 2": 	{
+		"connects_to": [],
+		"requires": "|Endless Explosions Stage 2|"
+	},
+	"Endless Explosions Stage 3": 	{
+		"connects_to": [],
+		"requires": "|Endless Explosions Stage 3|"
+	},
+	"Endless Explosions Stage 4": 	{
+		"connects_to": [],
+		"requires": "|Endless Explosions Stage 4|"
+	},
+	"Endless Explosions Stage 5": 	{
+		"connects_to": [],
+		"requires": "|Endless Explosions Stage 5|"
+	},
+	"Endless Explosions Boss": 	{
+		"connects_to": [],
+		"requires": "|VS Pyribbit|"
+	},
+	"Endless Explosions Stage EX": 	{
+		"connects_to": [],
+		"requires": "|Endless Explosions Stage EX|"
+	},
+	"Royal Road Stage 1": 	{
+		"connects_to": [],
+		"requires": "|Royal Road Stage 1|"
+	},
+	"Royal Road Stage 2": 	{
+		"connects_to": [],
+		"requires": "|Royal Road Stage 2|"
+	},
+	"Royal Road Stage 3": 	{
+		"connects_to": [],
+		"requires": "|Royal Road Stage 3|"
+	},
+	"Royal Road Stage 4": 	{
+		"connects_to": [],
+		"requires": "|Royal Road Stage 4|"
+	},
+	"Royal Road Stage 5": 	{
+		"connects_to": [],
+		"requires": "|Royal Road Stage 5|"
+	},
+	"Royal Road Boss": 	{
+		"connects_to": [],
+		"requires": "|VS Masked Dedede|"
+	},
+	"Royal Road Stage EX 1": 	{
+		"connects_to": [],
+		"requires": "|Royal Road Stage EX 1|"
+	},
+	"Royal Road Stage EX 2": 	{
+		"connects_to": [],
+		"requires": "|Royal Road Stage EX 2|"
+	},
+	"Kirby Fighters": 	{
+		"connects_to": [],
+		"requires": []
+	},
+	"Eternal Dreamland": 	{
+		"connects_to": [],
+		"requires": "(|@Bosses:6|)"
+    }
+}

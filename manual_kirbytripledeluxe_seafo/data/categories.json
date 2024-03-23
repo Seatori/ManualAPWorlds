@@ -1,0 +1,88 @@
+{
+    "Archer Access": {
+        "hidden": true
+    },
+    "Beam Access": {
+        "hidden": true
+    },
+    "Beetle Access": {
+        "hidden": true
+    },
+    "Bell Access": {
+        "hidden": true
+    },
+    "Bomb Access": {
+        "hidden": true
+    },
+    "Circus Access": {
+        "hidden": true
+    },
+    "Crash Access": {
+        "hidden": true
+    },
+    "Cutter Access": {
+        "hidden": true
+    },
+    "Fighter Access": {
+        "hidden": true
+    },
+    "Fire Access": {
+        "hidden": true
+    },
+    "Hammer Access": {
+        "hidden": true
+    },
+    "Ice Access": {
+        "hidden": true
+    },
+    "Leaf Access": {
+        "hidden": true
+    },
+    "Mike Access": {
+        "hidden": true
+    },
+    "Needle Access": {
+        "hidden": true
+    },
+    "Ninja Access": {
+        "hidden": true
+    },
+    "Parasol Access": {
+        "hidden": true
+    },
+    "Spark Access": {
+        "hidden": true
+    },
+    "Spear Access": {
+        "hidden": true
+    },
+    "Stone Access": {
+        "hidden": true
+    },
+    "Sword Access": {
+        "hidden": true
+    },
+    "Wheel Access": {
+        "hidden": true
+    },
+    "Whip Access": {
+        "hidden": true
+    },
+    "Wing Access": {
+        "hidden": true
+    },
+    "Keychains": {
+        "hidden": true,
+        "yaml_option": ["enable_keychain_locations"]
+    },
+    "Copy Abilities": {
+        "hidden": true
+    },
+    "J1 - Clear Kirby Fighters": {
+        "yaml_option": ["enable_kirby_fighters_locations"]
+    },
+	"ABT": {
+		"hidden": true,
+		"yaml_option": ["randomize_ability_testing_room"]
+	}
+}

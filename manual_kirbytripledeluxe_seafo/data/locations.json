@@ -1,0 +1,6050 @@
+[
+	{
+		"name": "Level 1 1st Stage",
+		"region": "Fine Fields",
+		"category": ["A1 - Level 1 Stages"],
+		"requires": [],
+		"place_item_category": ["Stages"]
+	},
+	{
+		"name": "Level 1 2nd Stage",
+		"region": "Fine Fields",
+		"category": ["A1 - Level 1 Stages"],
+		"requires": [],
+		"place_item_category": ["Stages"]
+	},
+	{
+		"name": "Level 1 3rd Stage",
+		"region": "Fine Fields",
+		"category": ["A1 - Level 1 Stages"],
+		"requires": [],
+		"place_item_category": ["Stages"]
+	},
+	{
+		"name": "Level 1 4th Stage",
+		"region": "Fine Fields",
+		"category": ["A1 - Level 1 Stages"],
+		"requires": [],
+		"place_item_category": ["Stages"]
+	},
+	{
+		"name": "Level 1 Boss",
+		"region": "Fine Fields",
+		"category": ["A1 - Level 1 Stages"],
+		"requires": [],
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 1 Boss - 1 Sun Stone",
+		"region": "Fine Fields",
+		"category": ["A1 - Level 1 Stages"],
+		"requires": "(|Sun Stone:1|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 1 Boss - 2 Sun Stones",
+		"region": "Fine Fields",
+		"category": ["A1 - Level 1 Stages"],
+		"requires": "(|Sun Stone:2|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 1 Boss - 3 Sun Stones",
+		"region": "Fine Fields",
+		"category": ["A1 - Level 1 Stages"],
+		"requires": "(|Sun Stone:3|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 1 Boss - 4 Sun Stones",
+		"region": "Fine Fields",
+		"category": ["A1 - Level 1 Stages"],
+		"requires": "(|Sun Stone:4|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 1 Boss - 5 Sun Stones",
+		"region": "Fine Fields",
+		"category": ["A1 - Level 1 Stages"],
+		"requires": "(|Sun Stone:5|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 1 Boss - 6 Sun Stones",
+		"region": "Fine Fields",
+		"category": ["A1 - Level 1 Stages"],
+		"requires": "(|Sun Stone:6|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 1 Boss - 7 Sun Stones",
+		"region": "Fine Fields",
+		"category": ["A1 - Level 1 Stages"],
+		"requires": "(|Sun Stone:7|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 1 Boss - 8 Sun Stones",
+		"region": "Fine Fields",
+		"category": ["A1 - Level 1 Stages"],
+		"requires": "(|Sun Stone:8|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 1 Boss - 9 Sun Stones",
+		"region": "Fine Fields",
+		"category": ["A1 - Level 1 Stages"],
+		"requires": "(|Sun Stone:9|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 1 Boss - 10 Sun Stones",
+		"region": "Fine Fields",
+		"category": ["A1 - Level 1 Stages"],
+		"requires": "(|Sun Stone:10|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 1 Boss - 11 Sun Stones",
+		"region": "Fine Fields",
+		"category": ["A1 - Level 1 Stages"],
+		"requires": "(|Sun Stone:11|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 1 Boss - 12 Sun Stones",
+		"region": "Fine Fields",
+		"category": ["A1 - Level 1 Stages"],
+		"requires": "(|Sun Stone:12|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 1 Boss - 13 Sun Stones",
+		"region": "Fine Fields",
+		"category": ["A1 - Level 1 Stages"],
+		"requires": "(|Sun Stone:13|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 1 Boss - 14 Sun Stones",
+		"region": "Fine Fields",
+		"category": ["A1 - Level 1 Stages"],
+		"requires": "(|Sun Stone:14|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 1 Boss - 15 Sun Stones",
+		"region": "Fine Fields",
+		"category": ["A1 - Level 1 Stages"],
+		"requires": "(|Sun Stone:15|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 1 Boss - 16 Sun Stones",
+		"region": "Fine Fields",
+		"category": ["A1 - Level 1 Stages"],
+		"requires": "(|Sun Stone:16|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 1 Boss - 17 Sun Stones",
+		"region": "Fine Fields",
+		"category": ["A1 - Level 1 Stages"],
+		"requires": "(|Sun Stone:17|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 1 Boss - 18 Sun Stones",
+		"region": "Fine Fields",
+		"category": ["A1 - Level 1 Stages"],
+		"requires": "(|Sun Stone:18|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 1 Boss - 19 Sun Stones",
+		"region": "Fine Fields",
+		"category": ["A1 - Level 1 Stages"],
+		"requires": "(|Sun Stone:19|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 1 Boss - 20 Sun Stones",
+		"region": "Fine Fields",
+		"category": ["A1 - Level 1 Stages"],
+		"requires": "(|Sun Stone:20|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 1 Boss - 21 Sun Stones",
+		"region": "Fine Fields",
+		"category": ["A1 - Level 1 Stages"],
+		"requires": "(|Sun Stone:21|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 1 Boss - 22 Sun Stones",
+		"region": "Fine Fields",
+		"category": ["A1 - Level 1 Stages"],
+		"requires": "(|Sun Stone:22|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 1 Boss - 23 Sun Stones",
+		"region": "Fine Fields",
+		"category": ["A1 - Level 1 Stages"],
+		"requires": "(|Sun Stone:23|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 1 Boss - 24 Sun Stones",
+		"region": "Fine Fields",
+		"category": ["A1 - Level 1 Stages"],
+		"requires": "(|Sun Stone:24|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 1 Boss - 25 Sun Stones",
+		"region": "Fine Fields",
+		"category": ["A1 - Level 1 Stages"],
+		"requires": "(|Sun Stone:25|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 1 Boss - 26 Sun Stones",
+		"region": "Fine Fields",
+		"category": ["A1 - Level 1 Stages"],
+		"requires": "(|Sun Stone:26|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 1 Boss - 27 Sun Stones",
+		"region": "Fine Fields",
+		"category": ["A1 - Level 1 Stages"],
+		"requires": "(|Sun Stone:27|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 1 Boss - 28 Sun Stones",
+		"region": "Fine Fields",
+		"category": ["A1 - Level 1 Stages"],
+		"requires": "(|Sun Stone:28|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 1 Boss - 29 Sun Stones",
+		"region": "Fine Fields",
+		"category": ["A1 - Level 1 Stages"],
+		"requires": "(|Sun Stone:29|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 1 Boss - 30 Sun Stones",
+		"region": "Fine Fields",
+		"category": ["A1 - Level 1 Stages"],
+		"requires": "(|Sun Stone:30|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 1 Boss - 31 Sun Stones",
+		"region": "Fine Fields",
+		"category": ["A1 - Level 1 Stages"],
+		"requires": "(|Sun Stone:31|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 1 Boss - 32 Sun Stones",
+		"region": "Fine Fields",
+		"category": ["A1 - Level 1 Stages"],
+		"requires": "(|Sun Stone:32|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 1 Boss - 33 Sun Stones",
+		"region": "Fine Fields",
+		"category": ["A1 - Level 1 Stages"],
+		"requires": "(|Sun Stone:33|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 1 Boss - 34 Sun Stones",
+		"region": "Fine Fields",
+		"category": ["A1 - Level 1 Stages"],
+		"requires": "(|Sun Stone:34|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 1 Boss - 35 Sun Stones",
+		"region": "Fine Fields",
+		"category": ["A1 - Level 1 Stages"],
+		"requires": "(|Sun Stone:35|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 1 Boss - 36 Sun Stones",
+		"region": "Fine Fields",
+		"category": ["A1 - Level 1 Stages"],
+		"requires": "(|Sun Stone:36|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 1 Boss - 37 Sun Stones",
+		"region": "Fine Fields",
+		"category": ["A1 - Level 1 Stages"],
+		"requires": "(|Sun Stone:37|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 1 Boss - 38 Sun Stones",
+		"region": "Fine Fields",
+		"category": ["A1 - Level 1 Stages"],
+		"requires": "(|Sun Stone:38|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 1 Boss - 39 Sun Stones",
+		"region": "Fine Fields",
+		"category": ["A1 - Level 1 Stages"],
+		"requires": "(|Sun Stone:39|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 1 Boss - 40 Sun Stones",
+		"region": "Fine Fields",
+		"category": ["A1 - Level 1 Stages"],
+		"requires": "(|Sun Stone:40|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 1 Boss - 41 Sun Stones",
+		"region": "Fine Fields",
+		"category": ["A1 - Level 1 Stages"],
+		"requires": "(|Sun Stone:41|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 1 Boss - 42 Sun Stones",
+		"region": "Fine Fields",
+		"category": ["A1 - Level 1 Stages"],
+		"requires": "(|Sun Stone:42|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 1 Boss - 43 Sun Stones",
+		"region": "Fine Fields",
+		"category": ["A1 - Level 1 Stages"],
+		"requires": "(|Sun Stone:43|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 1 Boss - 44 Sun Stones",
+		"region": "Fine Fields",
+		"category": ["A1 - Level 1 Stages"],
+		"requires": "(|Sun Stone:44|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 1 Boss - 45 Sun Stones",
+		"region": "Fine Fields",
+		"category": ["A1 - Level 1 Stages"],
+		"requires": "(|Sun Stone:45|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 1 Boss - 46 Sun Stones",
+		"region": "Fine Fields",
+		"category": ["A1 - Level 1 Stages"],
+		"requires": "(|Sun Stone:46|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 1 Boss - 47 Sun Stones",
+		"region": "Fine Fields",
+		"category": ["A1 - Level 1 Stages"],
+		"requires": "(|Sun Stone:47|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 1 Boss - 48 Sun Stones",
+		"region": "Fine Fields",
+		"category": ["A1 - Level 1 Stages"],
+		"requires": "(|Sun Stone:48|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 1 Boss - 49 Sun Stones",
+		"region": "Fine Fields",
+		"category": ["A1 - Level 1 Stages"],
+		"requires": "(|Sun Stone:49|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 1 Boss - 50 Sun Stones",
+		"region": "Fine Fields",
+		"category": ["A1 - Level 1 Stages"],
+		"requires": "(|Sun Stone:50|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 1 Boss - 51 Sun Stones",
+		"region": "Fine Fields",
+		"category": ["A1 - Level 1 Stages"],
+		"requires": "(|Sun Stone:51|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 1 Boss - 52 Sun Stones",
+		"region": "Fine Fields",
+		"category": ["A1 - Level 1 Stages"],
+		"requires": "(|Sun Stone:52|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 1 Boss - 53 Sun Stones",
+		"region": "Fine Fields",
+		"category": ["A1 - Level 1 Stages"],
+		"requires": "(|Sun Stone:53|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 1 Boss - 54 Sun Stones",
+		"region": "Fine Fields",
+		"category": ["A1 - Level 1 Stages"],
+		"requires": "(|Sun Stone:54|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 1 Boss - 55 Sun Stones",
+		"region": "Fine Fields",
+		"category": ["A1 - Level 1 Stages"],
+		"requires": "(|Sun Stone:55|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 1 Boss - 56 Sun Stones",
+		"region": "Fine Fields",
+		"category": ["A1 - Level 1 Stages"],
+		"requires": "(|Sun Stone:56|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 1 Boss - 57 Sun Stones",
+		"region": "Fine Fields",
+		"category": ["A1 - Level 1 Stages"],
+		"requires": "(|Sun Stone:57|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 1 Boss - 58 Sun Stones",
+		"region": "Fine Fields",
+		"category": ["A1 - Level 1 Stages"],
+		"requires": "(|Sun Stone:58|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 1 Boss - 59 Sun Stones",
+		"region": "Fine Fields",
+		"category": ["A1 - Level 1 Stages"],
+		"requires": "(|Sun Stone:59|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 1 Boss - 60 Sun Stones",
+		"region": "Fine Fields",
+		"category": ["A1 - Level 1 Stages"],
+		"requires": "(|Sun Stone:60|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 1 Boss - 61 Sun Stones",
+		"region": "Fine Fields",
+		"category": ["A1 - Level 1 Stages"],
+		"requires": "(|Sun Stone:61|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 1 Boss - 62 Sun Stones",
+		"region": "Fine Fields",
+		"category": ["A1 - Level 1 Stages"],
+		"requires": "(|Sun Stone:62|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 1 Boss - 63 Sun Stones",
+		"region": "Fine Fields",
+		"category": ["A1 - Level 1 Stages"],
+		"requires": "(|Sun Stone:63|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 1 Boss - 64 Sun Stones",
+		"region": "Fine Fields",
+		"category": ["A1 - Level 1 Stages"],
+		"requires": "(|Sun Stone:64|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 1 Boss - 65 Sun Stones",
+		"region": "Fine Fields",
+		"category": ["A1 - Level 1 Stages"],
+		"requires": "(|Sun Stone:65|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 1 Boss - 66 Sun Stones",
+		"region": "Fine Fields",
+		"category": ["A1 - Level 1 Stages"],
+		"requires": "(|Sun Stone:66|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 1 Boss - 67 Sun Stones",
+		"region": "Fine Fields",
+		"category": ["A1 - Level 1 Stages"],
+		"requires": "(|Sun Stone:67|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 1 Boss - 68 Sun Stones",
+		"region": "Fine Fields",
+		"category": ["A1 - Level 1 Stages"],
+		"requires": "(|Sun Stone:68|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 1 Boss - 69 Sun Stones",
+		"region": "Fine Fields",
+		"category": ["A1 - Level 1 Stages"],
+		"requires": "(|Sun Stone:69|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 1 Boss - 70 Sun Stones",
+		"region": "Fine Fields",
+		"category": ["A1 - Level 1 Stages"],
+		"requires": "(|Sun Stone:70|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 1 Boss - 71 Sun Stones",
+		"region": "Fine Fields",
+		"category": ["A1 - Level 1 Stages"],
+		"requires": "(|Sun Stone:71|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 1 Boss - 72 Sun Stones",
+		"region": "Fine Fields",
+		"category": ["A1 - Level 1 Stages"],
+		"requires": "(|Sun Stone:72|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 1 Boss - 73 Sun Stones",
+		"region": "Fine Fields",
+		"category": ["A1 - Level 1 Stages"],
+		"requires": "(|Sun Stone:73|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 1 Boss - 74 Sun Stones",
+		"region": "Fine Fields",
+		"category": ["A1 - Level 1 Stages"],
+		"requires": "(|Sun Stone:74|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 1 Boss - 75 Sun Stones",
+		"region": "Fine Fields",
+		"category": ["A1 - Level 1 Stages"],
+		"requires": "(|Sun Stone:75|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 1 Boss - 76 Sun Stones",
+		"region": "Fine Fields",
+		"category": ["A1 - Level 1 Stages"],
+		"requires": "(|Sun Stone:76|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 1 Boss - 77 Sun Stones",
+		"region": "Fine Fields",
+		"category": ["A1 - Level 1 Stages"],
+		"requires": "(|Sun Stone:77|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 1 Boss - 78 Sun Stones",
+		"region": "Fine Fields",
+		"category": ["A1 - Level 1 Stages"],
+		"requires": "(|Sun Stone:78|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 1 Boss - 79 Sun Stones",
+		"region": "Fine Fields",
+		"category": ["A1 - Level 1 Stages"],
+		"requires": "(|Sun Stone:79|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 1 Boss - 80 Sun Stones",
+		"region": "Fine Fields",
+		"category": ["A1 - Level 1 Stages"],
+		"requires": "(|Sun Stone:80|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 1 Boss - 81 Sun Stones",
+		"region": "Fine Fields",
+		"category": ["A1 - Level 1 Stages"],
+		"requires": "(|Sun Stone:81|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 1 Boss - 82 Sun Stones",
+		"region": "Fine Fields",
+		"category": ["A1 - Level 1 Stages"],
+		"requires": "(|Sun Stone:82|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 1 Boss - 83 Sun Stones",
+		"region": "Fine Fields",
+		"category": ["A1 - Level 1 Stages"],
+		"requires": "(|Sun Stone:83|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 1 Boss - 84 Sun Stones",
+		"region": "Fine Fields",
+		"category": ["A1 - Level 1 Stages"],
+		"requires": "(|Sun Stone:84|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 1 Boss - 85 Sun Stones",
+		"region": "Fine Fields",
+		"category": ["A1 - Level 1 Stages"],
+		"requires": "(|Sun Stone:85|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 1 Boss - 86 Sun Stones",
+		"region": "Fine Fields",
+		"category": ["A1 - Level 1 Stages"],
+		"requires": "(|Sun Stone:86|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 1 Boss - 87 Sun Stones",
+		"region": "Fine Fields",
+		"category": ["A1 - Level 1 Stages"],
+		"requires": "(|Sun Stone:87|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 1 Boss - 88 Sun Stones",
+		"region": "Fine Fields",
+		"category": ["A1 - Level 1 Stages"],
+		"requires": "(|Sun Stone:88|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 1 Boss - 89 Sun Stones",
+		"region": "Fine Fields",
+		"category": ["A1 - Level 1 Stages"],
+		"requires": "(|Sun Stone:89|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 1 Boss - 90 Sun Stones",
+		"region": "Fine Fields",
+		"category": ["A1 - Level 1 Stages"],
+		"requires": "(|Sun Stone:90|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 1 Boss - 91 Sun Stones",
+		"region": "Fine Fields",
+		"category": ["A1 - Level 1 Stages"],
+		"requires": "(|Sun Stone:91|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 1 Boss - 92 Sun Stones",
+		"region": "Fine Fields",
+		"category": ["A1 - Level 1 Stages"],
+		"requires": "(|Sun Stone:92|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 1 Boss - 93 Sun Stones",
+		"region": "Fine Fields",
+		"category": ["A1 - Level 1 Stages"],
+		"requires": "(|Sun Stone:93|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 1 Boss - 94 Sun Stones",
+		"region": "Fine Fields",
+		"category": ["A1 - Level 1 Stages"],
+		"requires": "(|Sun Stone:94|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 1 Boss - 95 Sun Stones",
+		"region": "Fine Fields",
+		"category": ["A1 - Level 1 Stages"],
+		"requires": "(|Sun Stone:95|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 1 Boss - 96 Sun Stones",
+		"region": "Fine Fields",
+		"category": ["A1 - Level 1 Stages"],
+		"requires": "(|Sun Stone:96|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 1 Boss - 97 Sun Stones",
+		"region": "Fine Fields",
+		"category": ["A1 - Level 1 Stages"],
+		"requires": "(|Sun Stone:97|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 1 Boss - 98 Sun Stones",
+		"region": "Fine Fields",
+		"category": ["A1 - Level 1 Stages"],
+		"requires": "(|Sun Stone:98|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 1 Boss - 99 Sun Stones",
+		"region": "Fine Fields",
+		"category": ["A1 - Level 1 Stages"],
+		"requires": "(|Sun Stone:99|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 1 Boss - 100 Sun Stones",
+		"region": "Fine Fields",
+		"category": ["A1 - Level 1 Stages"],
+		"requires": "(|Sun Stone:100|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 1 EX Stage",
+		"region": "Fine Fields",
+		"category": ["A1 - Level 1 Stages"],
+		"requires": "(|Progressive EX Stage Key:1|)",
+		"place_item_category": ["Stages"]
+	},
+	{
+		"name": "Level 2 1st Stage",
+		"region": "Lollipop Land",
+		"category": ["A2 - Level 2 Stages"],
+		"requires": [],
+		"place_item_category": ["Stages"]
+	},
+	{
+		"name": "Level 2 2nd Stage",
+		"region": "Lollipop Land",
+		"category": ["A2 - Level 2 Stages"],
+		"requires": [],
+		"place_item_category": ["Stages"]
+	},
+	{
+		"name": "Level 2 3rd Stage",
+		"region": "Lollipop Land",
+		"category": ["A2 - Level 2 Stages"],
+		"requires": [],
+		"place_item_category": ["Stages"]
+	},
+	{
+		"name": "Level 2 4th Stage",
+		"region": "Lollipop Land",
+		"category": ["A2 - Level 2 Stages"],
+		"requires": [],
+		"place_item_category": ["Stages"]
+	},
+	{
+		"name": "Level 2 Boss",
+		"region": "Lollipop Land",
+		"category": ["A2 - Level 2 Stages"],
+		"requires": [],
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 2 Boss - 1 Sun Stone",
+		"region": "Lollipop Land",
+		"category": ["A2 - Level 2 Stages"],
+		"requires": "(|Sun Stone:1|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 2 Boss - 2 Sun Stones",
+		"region": "Lollipop Land",
+		"category": ["A2 - Level 2 Stages"],
+		"requires": "(|Sun Stone:2|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 2 Boss - 3 Sun Stones",
+		"region": "Lollipop Land",
+		"category": ["A2 - Level 2 Stages"],
+		"requires": "(|Sun Stone:3|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 2 Boss - 4 Sun Stones",
+		"region": "Lollipop Land",
+		"category": ["A2 - Level 2 Stages"],
+		"requires": "(|Sun Stone:4|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 2 Boss - 5 Sun Stones",
+		"region": "Lollipop Land",
+		"category": ["A2 - Level 2 Stages"],
+		"requires": "(|Sun Stone:5|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 2 Boss - 6 Sun Stones",
+		"region": "Lollipop Land",
+		"category": ["A2 - Level 2 Stages"],
+		"requires": "(|Sun Stone:6|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 2 Boss - 7 Sun Stones",
+		"region": "Lollipop Land",
+		"category": ["A2 - Level 2 Stages"],
+		"requires": "(|Sun Stone:7|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 2 Boss - 8 Sun Stones",
+		"region": "Lollipop Land",
+		"category": ["A2 - Level 2 Stages"],
+		"requires": "(|Sun Stone:8|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 2 Boss - 9 Sun Stones",
+		"region": "Lollipop Land",
+		"category": ["A2 - Level 2 Stages"],
+		"requires": "(|Sun Stone:9|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 2 Boss - 10 Sun Stones",
+		"region": "Lollipop Land",
+		"category": ["A2 - Level 2 Stages"],
+		"requires": "(|Sun Stone:10|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 2 Boss - 11 Sun Stones",
+		"region": "Lollipop Land",
+		"category": ["A2 - Level 2 Stages"],
+		"requires": "(|Sun Stone:11|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 2 Boss - 12 Sun Stones",
+		"region": "Lollipop Land",
+		"category": ["A2 - Level 2 Stages"],
+		"requires": "(|Sun Stone:12|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 2 Boss - 13 Sun Stones",
+		"region": "Lollipop Land",
+		"category": ["A2 - Level 2 Stages"],
+		"requires": "(|Sun Stone:13|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 2 Boss - 14 Sun Stones",
+		"region": "Lollipop Land",
+		"category": ["A2 - Level 2 Stages"],
+		"requires": "(|Sun Stone:14|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 2 Boss - 15 Sun Stones",
+		"region": "Lollipop Land",
+		"category": ["A2 - Level 2 Stages"],
+		"requires": "(|Sun Stone:15|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 2 Boss - 16 Sun Stones",
+		"region": "Lollipop Land",
+		"category": ["A2 - Level 2 Stages"],
+		"requires": "(|Sun Stone:16|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 2 Boss - 17 Sun Stones",
+		"region": "Lollipop Land",
+		"category": ["A2 - Level 2 Stages"],
+		"requires": "(|Sun Stone:17|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 2 Boss - 18 Sun Stones",
+		"region": "Lollipop Land",
+		"category": ["A2 - Level 2 Stages"],
+		"requires": "(|Sun Stone:18|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 2 Boss - 19 Sun Stones",
+		"region": "Lollipop Land",
+		"category": ["A2 - Level 2 Stages"],
+		"requires": "(|Sun Stone:19|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 2 Boss - 20 Sun Stones",
+		"region": "Lollipop Land",
+		"category": ["A2 - Level 2 Stages"],
+		"requires": "(|Sun Stone:20|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 2 Boss - 21 Sun Stones",
+		"region": "Lollipop Land",
+		"category": ["A2 - Level 2 Stages"],
+		"requires": "(|Sun Stone:21|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 2 Boss - 22 Sun Stones",
+		"region": "Lollipop Land",
+		"category": ["A2 - Level 2 Stages"],
+		"requires": "(|Sun Stone:22|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 2 Boss - 23 Sun Stones",
+		"region": "Lollipop Land",
+		"category": ["A2 - Level 2 Stages"],
+		"requires": "(|Sun Stone:23|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 2 Boss - 24 Sun Stones",
+		"region": "Lollipop Land",
+		"category": ["A2 - Level 2 Stages"],
+		"requires": "(|Sun Stone:24|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 2 Boss - 25 Sun Stones",
+		"region": "Lollipop Land",
+		"category": ["A2 - Level 2 Stages"],
+		"requires": "(|Sun Stone:25|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 2 Boss - 26 Sun Stones",
+		"region": "Lollipop Land",
+		"category": ["A2 - Level 2 Stages"],
+		"requires": "(|Sun Stone:26|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 2 Boss - 27 Sun Stones",
+		"region": "Lollipop Land",
+		"category": ["A2 - Level 2 Stages"],
+		"requires": "(|Sun Stone:27|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 2 Boss - 28 Sun Stones",
+		"region": "Lollipop Land",
+		"category": ["A2 - Level 2 Stages"],
+		"requires": "(|Sun Stone:28|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 2 Boss - 29 Sun Stones",
+		"region": "Lollipop Land",
+		"category": ["A2 - Level 2 Stages"],
+		"requires": "(|Sun Stone:29|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 2 Boss - 30 Sun Stones",
+		"region": "Lollipop Land",
+		"category": ["A2 - Level 2 Stages"],
+		"requires": "(|Sun Stone:30|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 2 Boss - 31 Sun Stones",
+		"region": "Lollipop Land",
+		"category": ["A2 - Level 2 Stages"],
+		"requires": "(|Sun Stone:31|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 2 Boss - 32 Sun Stones",
+		"region": "Lollipop Land",
+		"category": ["A2 - Level 2 Stages"],
+		"requires": "(|Sun Stone:32|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 2 Boss - 33 Sun Stones",
+		"region": "Lollipop Land",
+		"category": ["A2 - Level 2 Stages"],
+		"requires": "(|Sun Stone:33|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 2 Boss - 34 Sun Stones",
+		"region": "Lollipop Land",
+		"category": ["A2 - Level 2 Stages"],
+		"requires": "(|Sun Stone:34|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 2 Boss - 35 Sun Stones",
+		"region": "Lollipop Land",
+		"category": ["A2 - Level 2 Stages"],
+		"requires": "(|Sun Stone:35|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 2 Boss - 36 Sun Stones",
+		"region": "Lollipop Land",
+		"category": ["A2 - Level 2 Stages"],
+		"requires": "(|Sun Stone:36|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 2 Boss - 37 Sun Stones",
+		"region": "Lollipop Land",
+		"category": ["A2 - Level 2 Stages"],
+		"requires": "(|Sun Stone:37|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 2 Boss - 38 Sun Stones",
+		"region": "Lollipop Land",
+		"category": ["A2 - Level 2 Stages"],
+		"requires": "(|Sun Stone:38|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 2 Boss - 39 Sun Stones",
+		"region": "Lollipop Land",
+		"category": ["A2 - Level 2 Stages"],
+		"requires": "(|Sun Stone:39|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 2 Boss - 40 Sun Stones",
+		"region": "Lollipop Land",
+		"category": ["A2 - Level 2 Stages"],
+		"requires": "(|Sun Stone:40|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 2 Boss - 41 Sun Stones",
+		"region": "Lollipop Land",
+		"category": ["A2 - Level 2 Stages"],
+		"requires": "(|Sun Stone:41|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 2 Boss - 42 Sun Stones",
+		"region": "Lollipop Land",
+		"category": ["A2 - Level 2 Stages"],
+		"requires": "(|Sun Stone:42|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 2 Boss - 43 Sun Stones",
+		"region": "Lollipop Land",
+		"category": ["A2 - Level 2 Stages"],
+		"requires": "(|Sun Stone:43|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 2 Boss - 44 Sun Stones",
+		"region": "Lollipop Land",
+		"category": ["A2 - Level 2 Stages"],
+		"requires": "(|Sun Stone:44|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 2 Boss - 45 Sun Stones",
+		"region": "Lollipop Land",
+		"category": ["A2 - Level 2 Stages"],
+		"requires": "(|Sun Stone:45|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 2 Boss - 46 Sun Stones",
+		"region": "Lollipop Land",
+		"category": ["A2 - Level 2 Stages"],
+		"requires": "(|Sun Stone:46|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 2 Boss - 47 Sun Stones",
+		"region": "Lollipop Land",
+		"category": ["A2 - Level 2 Stages"],
+		"requires": "(|Sun Stone:47|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 2 Boss - 48 Sun Stones",
+		"region": "Lollipop Land",
+		"category": ["A2 - Level 2 Stages"],
+		"requires": "(|Sun Stone:48|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 2 Boss - 49 Sun Stones",
+		"region": "Lollipop Land",
+		"category": ["A2 - Level 2 Stages"],
+		"requires": "(|Sun Stone:49|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 2 Boss - 50 Sun Stones",
+		"region": "Lollipop Land",
+		"category": ["A2 - Level 2 Stages"],
+		"requires": "(|Sun Stone:50|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 2 Boss - 51 Sun Stones",
+		"region": "Lollipop Land",
+		"category": ["A2 - Level 2 Stages"],
+		"requires": "(|Sun Stone:51|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 2 Boss - 52 Sun Stones",
+		"region": "Lollipop Land",
+		"category": ["A2 - Level 2 Stages"],
+		"requires": "(|Sun Stone:52|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 2 Boss - 53 Sun Stones",
+		"region": "Lollipop Land",
+		"category": ["A2 - Level 2 Stages"],
+		"requires": "(|Sun Stone:53|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 2 Boss - 54 Sun Stones",
+		"region": "Lollipop Land",
+		"category": ["A2 - Level 2 Stages"],
+		"requires": "(|Sun Stone:54|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 2 Boss - 55 Sun Stones",
+		"region": "Lollipop Land",
+		"category": ["A2 - Level 2 Stages"],
+		"requires": "(|Sun Stone:55|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 2 Boss - 56 Sun Stones",
+		"region": "Lollipop Land",
+		"category": ["A2 - Level 2 Stages"],
+		"requires": "(|Sun Stone:56|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 2 Boss - 57 Sun Stones",
+		"region": "Lollipop Land",
+		"category": ["A2 - Level 2 Stages"],
+		"requires": "(|Sun Stone:57|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 2 Boss - 58 Sun Stones",
+		"region": "Lollipop Land",
+		"category": ["A2 - Level 2 Stages"],
+		"requires": "(|Sun Stone:58|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 2 Boss - 59 Sun Stones",
+		"region": "Lollipop Land",
+		"category": ["A2 - Level 2 Stages"],
+		"requires": "(|Sun Stone:59|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 2 Boss - 60 Sun Stones",
+		"region": "Lollipop Land",
+		"category": ["A2 - Level 2 Stages"],
+		"requires": "(|Sun Stone:60|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 2 Boss - 61 Sun Stones",
+		"region": "Lollipop Land",
+		"category": ["A2 - Level 2 Stages"],
+		"requires": "(|Sun Stone:61|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 2 Boss - 62 Sun Stones",
+		"region": "Lollipop Land",
+		"category": ["A2 - Level 2 Stages"],
+		"requires": "(|Sun Stone:62|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 2 Boss - 63 Sun Stones",
+		"region": "Lollipop Land",
+		"category": ["A2 - Level 2 Stages"],
+		"requires": "(|Sun Stone:63|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 2 Boss - 64 Sun Stones",
+		"region": "Lollipop Land",
+		"category": ["A2 - Level 2 Stages"],
+		"requires": "(|Sun Stone:64|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 2 Boss - 65 Sun Stones",
+		"region": "Lollipop Land",
+		"category": ["A2 - Level 2 Stages"],
+		"requires": "(|Sun Stone:65|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 2 Boss - 66 Sun Stones",
+		"region": "Lollipop Land",
+		"category": ["A2 - Level 2 Stages"],
+		"requires": "(|Sun Stone:66|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 2 Boss - 67 Sun Stones",
+		"region": "Lollipop Land",
+		"category": ["A2 - Level 2 Stages"],
+		"requires": "(|Sun Stone:67|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 2 Boss - 68 Sun Stones",
+		"region": "Lollipop Land",
+		"category": ["A2 - Level 2 Stages"],
+		"requires": "(|Sun Stone:68|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 2 Boss - 69 Sun Stones",
+		"region": "Lollipop Land",
+		"category": ["A2 - Level 2 Stages"],
+		"requires": "(|Sun Stone:69|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 2 Boss - 70 Sun Stones",
+		"region": "Lollipop Land",
+		"category": ["A2 - Level 2 Stages"],
+		"requires": "(|Sun Stone:70|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 2 Boss - 71 Sun Stones",
+		"region": "Lollipop Land",
+		"category": ["A2 - Level 2 Stages"],
+		"requires": "(|Sun Stone:71|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 2 Boss - 72 Sun Stones",
+		"region": "Lollipop Land",
+		"category": ["A2 - Level 2 Stages"],
+		"requires": "(|Sun Stone:72|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 2 Boss - 73 Sun Stones",
+		"region": "Lollipop Land",
+		"category": ["A2 - Level 2 Stages"],
+		"requires": "(|Sun Stone:73|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 2 Boss - 74 Sun Stones",
+		"region": "Lollipop Land",
+		"category": ["A2 - Level 2 Stages"],
+		"requires": "(|Sun Stone:74|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 2 Boss - 75 Sun Stones",
+		"region": "Lollipop Land",
+		"category": ["A2 - Level 2 Stages"],
+		"requires": "(|Sun Stone:75|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 2 Boss - 76 Sun Stones",
+		"region": "Lollipop Land",
+		"category": ["A2 - Level 2 Stages"],
+		"requires": "(|Sun Stone:76|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 2 Boss - 77 Sun Stones",
+		"region": "Lollipop Land",
+		"category": ["A2 - Level 2 Stages"],
+		"requires": "(|Sun Stone:77|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 2 Boss - 78 Sun Stones",
+		"region": "Lollipop Land",
+		"category": ["A2 - Level 2 Stages"],
+		"requires": "(|Sun Stone:78|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 2 Boss - 79 Sun Stones",
+		"region": "Lollipop Land",
+		"category": ["A2 - Level 2 Stages"],
+		"requires": "(|Sun Stone:79|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 2 Boss - 80 Sun Stones",
+		"region": "Lollipop Land",
+		"category": ["A2 - Level 2 Stages"],
+		"requires": "(|Sun Stone:80|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 2 Boss - 81 Sun Stones",
+		"region": "Lollipop Land",
+		"category": ["A2 - Level 2 Stages"],
+		"requires": "(|Sun Stone:81|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 2 Boss - 82 Sun Stones",
+		"region": "Lollipop Land",
+		"category": ["A2 - Level 2 Stages"],
+		"requires": "(|Sun Stone:82|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 2 Boss - 83 Sun Stones",
+		"region": "Lollipop Land",
+		"category": ["A2 - Level 2 Stages"],
+		"requires": "(|Sun Stone:83|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 2 Boss - 84 Sun Stones",
+		"region": "Lollipop Land",
+		"category": ["A2 - Level 2 Stages"],
+		"requires": "(|Sun Stone:84|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 2 Boss - 85 Sun Stones",
+		"region": "Lollipop Land",
+		"category": ["A2 - Level 2 Stages"],
+		"requires": "(|Sun Stone:85|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 2 Boss - 86 Sun Stones",
+		"region": "Lollipop Land",
+		"category": ["A2 - Level 2 Stages"],
+		"requires": "(|Sun Stone:86|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 2 Boss - 87 Sun Stones",
+		"region": "Lollipop Land",
+		"category": ["A2 - Level 2 Stages"],
+		"requires": "(|Sun Stone:87|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 2 Boss - 88 Sun Stones",
+		"region": "Lollipop Land",
+		"category": ["A2 - Level 2 Stages"],
+		"requires": "(|Sun Stone:88|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 2 Boss - 89 Sun Stones",
+		"region": "Lollipop Land",
+		"category": ["A2 - Level 2 Stages"],
+		"requires": "(|Sun Stone:89|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 2 Boss - 90 Sun Stones",
+		"region": "Lollipop Land",
+		"category": ["A2 - Level 2 Stages"],
+		"requires": "(|Sun Stone:90|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 2 Boss - 91 Sun Stones",
+		"region": "Lollipop Land",
+		"category": ["A2 - Level 2 Stages"],
+		"requires": "(|Sun Stone:91|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 2 Boss - 92 Sun Stones",
+		"region": "Lollipop Land",
+		"category": ["A2 - Level 2 Stages"],
+		"requires": "(|Sun Stone:92|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 2 Boss - 93 Sun Stones",
+		"region": "Lollipop Land",
+		"category": ["A2 - Level 2 Stages"],
+		"requires": "(|Sun Stone:93|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 2 Boss - 94 Sun Stones",
+		"region": "Lollipop Land",
+		"category": ["A2 - Level 2 Stages"],
+		"requires": "(|Sun Stone:94|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 2 Boss - 95 Sun Stones",
+		"region": "Lollipop Land",
+		"category": ["A2 - Level 2 Stages"],
+		"requires": "(|Sun Stone:95|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 2 Boss - 96 Sun Stones",
+		"region": "Lollipop Land",
+		"category": ["A2 - Level 2 Stages"],
+		"requires": "(|Sun Stone:96|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 2 Boss - 97 Sun Stones",
+		"region": "Lollipop Land",
+		"category": ["A2 - Level 2 Stages"],
+		"requires": "(|Sun Stone:97|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 2 Boss - 98 Sun Stones",
+		"region": "Lollipop Land",
+		"category": ["A2 - Level 2 Stages"],
+		"requires": "(|Sun Stone:98|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 2 Boss - 99 Sun Stones",
+		"region": "Lollipop Land",
+		"category": ["A2 - Level 2 Stages"],
+		"requires": "(|Sun Stone:99|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 2 Boss - 100 Sun Stones",
+		"region": "Lollipop Land",
+		"category": ["A2 - Level 2 Stages"],
+		"requires": "(|Sun Stone:100|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 2 EX Stage",
+		"region": "Lollipop Land",
+		"category": ["A2 - Level 2 Stages"],
+		"requires": "(|Progressive EX Stage Key:2|)",
+		"place_item_category": ["Stages"]
+	},
+	{
+		"name": "Level 3 1st Stage",
+		"region": "Old Odyssey",
+		"category": ["A3 - Level 3 Stages"],
+		"requires": [],
+		"place_item_category": ["Stages"]
+	},
+	{
+		"name": "Level 3 2nd Stage",
+		"region": "Old Odyssey",
+		"category": ["A3 - Level 3 Stages"],
+		"requires": [],
+		"place_item_category": ["Stages"]
+	},
+	{
+		"name": "Level 3 3rd Stage",
+		"region": "Old Odyssey",
+		"category": ["A3 - Level 3 Stages"],
+		"requires": [],
+		"place_item_category": ["Stages"]
+	},
+	{
+		"name": "Level 3 4th Stage",
+		"region": "Old Odyssey",
+		"category": ["A3 - Level 3 Stages"],
+		"requires": [],
+		"place_item_category": ["Stages"]
+	},
+	{
+		"name": "Level 3 5th Stage",
+		"region": "Old Odyssey",
+		"category": ["A3 - Level 3 Stages"],
+		"requires": [],
+		"place_item_category": ["Stages"]
+	},
+	{
+		"name": "Level 3 Boss",
+		"region": "Old Odyssey",
+		"category": ["A3 - Level 3 Stages"],
+		"requires": [],
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 3 Boss - 1 Sun Stone",
+		"region": "Old Odyssey",
+		"category": ["A3 - Level 3 Stages"],
+		"requires": "(|Sun Stone:1|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 3 Boss - 2 Sun Stones",
+		"region": "Old Odyssey",
+		"category": ["A3 - Level 3 Stages"],
+		"requires": "(|Sun Stone:2|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 3 Boss - 3 Sun Stones",
+		"region": "Old Odyssey",
+		"category": ["A3 - Level 3 Stages"],
+		"requires": "(|Sun Stone:3|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 3 Boss - 4 Sun Stones",
+		"region": "Old Odyssey",
+		"category": ["A3 - Level 3 Stages"],
+		"requires": "(|Sun Stone:4|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 3 Boss - 5 Sun Stones",
+		"region": "Old Odyssey",
+		"category": ["A3 - Level 3 Stages"],
+		"requires": "(|Sun Stone:5|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 3 Boss - 6 Sun Stones",
+		"region": "Old Odyssey",
+		"category": ["A3 - Level 3 Stages"],
+		"requires": "(|Sun Stone:6|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 3 Boss - 7 Sun Stones",
+		"region": "Old Odyssey",
+		"category": ["A3 - Level 3 Stages"],
+		"requires": "(|Sun Stone:7|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 3 Boss - 8 Sun Stones",
+		"region": "Old Odyssey",
+		"category": ["A3 - Level 3 Stages"],
+		"requires": "(|Sun Stone:8|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 3 Boss - 9 Sun Stones",
+		"region": "Old Odyssey",
+		"category": ["A3 - Level 3 Stages"],
+		"requires": "(|Sun Stone:9|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 3 Boss - 10 Sun Stones",
+		"region": "Old Odyssey",
+		"category": ["A3 - Level 3 Stages"],
+		"requires": "(|Sun Stone:10|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 3 Boss - 11 Sun Stones",
+		"region": "Old Odyssey",
+		"category": ["A3 - Level 3 Stages"],
+		"requires": "(|Sun Stone:11|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 3 Boss - 12 Sun Stones",
+		"region": "Old Odyssey",
+		"category": ["A3 - Level 3 Stages"],
+		"requires": "(|Sun Stone:12|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 3 Boss - 13 Sun Stones",
+		"region": "Old Odyssey",
+		"category": ["A3 - Level 3 Stages"],
+		"requires": "(|Sun Stone:13|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 3 Boss - 14 Sun Stones",
+		"region": "Old Odyssey",
+		"category": ["A3 - Level 3 Stages"],
+		"requires": "(|Sun Stone:14|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 3 Boss - 15 Sun Stones",
+		"region": "Old Odyssey",
+		"category": ["A3 - Level 3 Stages"],
+		"requires": "(|Sun Stone:15|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 3 Boss - 16 Sun Stones",
+		"region": "Old Odyssey",
+		"category": ["A3 - Level 3 Stages"],
+		"requires": "(|Sun Stone:16|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 3 Boss - 17 Sun Stones",
+		"region": "Old Odyssey",
+		"category": ["A3 - Level 3 Stages"],
+		"requires": "(|Sun Stone:17|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 3 Boss - 18 Sun Stones",
+		"region": "Old Odyssey",
+		"category": ["A3 - Level 3 Stages"],
+		"requires": "(|Sun Stone:18|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 3 Boss - 19 Sun Stones",
+		"region": "Old Odyssey",
+		"category": ["A3 - Level 3 Stages"],
+		"requires": "(|Sun Stone:19|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 3 Boss - 20 Sun Stones",
+		"region": "Old Odyssey",
+		"category": ["A3 - Level 3 Stages"],
+		"requires": "(|Sun Stone:20|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 3 Boss - 21 Sun Stones",
+		"region": "Old Odyssey",
+		"category": ["A3 - Level 3 Stages"],
+		"requires": "(|Sun Stone:21|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 3 Boss - 22 Sun Stones",
+		"region": "Old Odyssey",
+		"category": ["A3 - Level 3 Stages"],
+		"requires": "(|Sun Stone:22|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 3 Boss - 23 Sun Stones",
+		"region": "Old Odyssey",
+		"category": ["A3 - Level 3 Stages"],
+		"requires": "(|Sun Stone:23|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 3 Boss - 24 Sun Stones",
+		"region": "Old Odyssey",
+		"category": ["A3 - Level 3 Stages"],
+		"requires": "(|Sun Stone:24|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 3 Boss - 25 Sun Stones",
+		"region": "Old Odyssey",
+		"category": ["A3 - Level 3 Stages"],
+		"requires": "(|Sun Stone:25|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 3 Boss - 26 Sun Stones",
+		"region": "Old Odyssey",
+		"category": ["A3 - Level 3 Stages"],
+		"requires": "(|Sun Stone:26|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 3 Boss - 27 Sun Stones",
+		"region": "Old Odyssey",
+		"category": ["A3 - Level 3 Stages"],
+		"requires": "(|Sun Stone:27|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 3 Boss - 28 Sun Stones",
+		"region": "Old Odyssey",
+		"category": ["A3 - Level 3 Stages"],
+		"requires": "(|Sun Stone:28|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 3 Boss - 29 Sun Stones",
+		"region": "Old Odyssey",
+		"category": ["A3 - Level 3 Stages"],
+		"requires": "(|Sun Stone:29|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 3 Boss - 30 Sun Stones",
+		"region": "Old Odyssey",
+		"category": ["A3 - Level 3 Stages"],
+		"requires": "(|Sun Stone:30|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 3 Boss - 31 Sun Stones",
+		"region": "Old Odyssey",
+		"category": ["A3 - Level 3 Stages"],
+		"requires": "(|Sun Stone:31|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 3 Boss - 32 Sun Stones",
+		"region": "Old Odyssey",
+		"category": ["A3 - Level 3 Stages"],
+		"requires": "(|Sun Stone:32|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 3 Boss - 33 Sun Stones",
+		"region": "Old Odyssey",
+		"category": ["A3 - Level 3 Stages"],
+		"requires": "(|Sun Stone:33|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 3 Boss - 34 Sun Stones",
+		"region": "Old Odyssey",
+		"category": ["A3 - Level 3 Stages"],
+		"requires": "(|Sun Stone:34|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 3 Boss - 35 Sun Stones",
+		"region": "Old Odyssey",
+		"category": ["A3 - Level 3 Stages"],
+		"requires": "(|Sun Stone:35|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 3 Boss - 36 Sun Stones",
+		"region": "Old Odyssey",
+		"category": ["A3 - Level 3 Stages"],
+		"requires": "(|Sun Stone:36|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 3 Boss - 37 Sun Stones",
+		"region": "Old Odyssey",
+		"category": ["A3 - Level 3 Stages"],
+		"requires": "(|Sun Stone:37|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 3 Boss - 38 Sun Stones",
+		"region": "Old Odyssey",
+		"category": ["A3 - Level 3 Stages"],
+		"requires": "(|Sun Stone:38|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 3 Boss - 39 Sun Stones",
+		"region": "Old Odyssey",
+		"category": ["A3 - Level 3 Stages"],
+		"requires": "(|Sun Stone:39|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 3 Boss - 40 Sun Stones",
+		"region": "Old Odyssey",
+		"category": ["A3 - Level 3 Stages"],
+		"requires": "(|Sun Stone:40|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 3 Boss - 41 Sun Stones",
+		"region": "Old Odyssey",
+		"category": ["A3 - Level 3 Stages"],
+		"requires": "(|Sun Stone:41|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 3 Boss - 42 Sun Stones",
+		"region": "Old Odyssey",
+		"category": ["A3 - Level 3 Stages"],
+		"requires": "(|Sun Stone:42|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 3 Boss - 43 Sun Stones",
+		"region": "Old Odyssey",
+		"category": ["A3 - Level 3 Stages"],
+		"requires": "(|Sun Stone:43|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 3 Boss - 44 Sun Stones",
+		"region": "Old Odyssey",
+		"category": ["A3 - Level 3 Stages"],
+		"requires": "(|Sun Stone:44|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 3 Boss - 45 Sun Stones",
+		"region": "Old Odyssey",
+		"category": ["A3 - Level 3 Stages"],
+		"requires": "(|Sun Stone:45|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 3 Boss - 46 Sun Stones",
+		"region": "Old Odyssey",
+		"category": ["A3 - Level 3 Stages"],
+		"requires": "(|Sun Stone:46|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 3 Boss - 47 Sun Stones",
+		"region": "Old Odyssey",
+		"category": ["A3 - Level 3 Stages"],
+		"requires": "(|Sun Stone:47|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 3 Boss - 48 Sun Stones",
+		"region": "Old Odyssey",
+		"category": ["A3 - Level 3 Stages"],
+		"requires": "(|Sun Stone:48|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 3 Boss - 49 Sun Stones",
+		"region": "Old Odyssey",
+		"category": ["A3 - Level 3 Stages"],
+		"requires": "(|Sun Stone:49|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 3 Boss - 50 Sun Stones",
+		"region": "Old Odyssey",
+		"category": ["A3 - Level 3 Stages"],
+		"requires": "(|Sun Stone:50|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 3 Boss - 51 Sun Stones",
+		"region": "Old Odyssey",
+		"category": ["A3 - Level 3 Stages"],
+		"requires": "(|Sun Stone:51|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 3 Boss - 52 Sun Stones",
+		"region": "Old Odyssey",
+		"category": ["A3 - Level 3 Stages"],
+		"requires": "(|Sun Stone:52|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 3 Boss - 53 Sun Stones",
+		"region": "Old Odyssey",
+		"category": ["A3 - Level 3 Stages"],
+		"requires": "(|Sun Stone:53|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 3 Boss - 54 Sun Stones",
+		"region": "Old Odyssey",
+		"category": ["A3 - Level 3 Stages"],
+		"requires": "(|Sun Stone:54|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 3 Boss - 55 Sun Stones",
+		"region": "Old Odyssey",
+		"category": ["A3 - Level 3 Stages"],
+		"requires": "(|Sun Stone:55|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 3 Boss - 56 Sun Stones",
+		"region": "Old Odyssey",
+		"category": ["A3 - Level 3 Stages"],
+		"requires": "(|Sun Stone:56|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 3 Boss - 57 Sun Stones",
+		"region": "Old Odyssey",
+		"category": ["A3 - Level 3 Stages"],
+		"requires": "(|Sun Stone:57|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 3 Boss - 58 Sun Stones",
+		"region": "Old Odyssey",
+		"category": ["A3 - Level 3 Stages"],
+		"requires": "(|Sun Stone:58|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 3 Boss - 59 Sun Stones",
+		"region": "Old Odyssey",
+		"category": ["A3 - Level 3 Stages"],
+		"requires": "(|Sun Stone:59|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 3 Boss - 60 Sun Stones",
+		"region": "Old Odyssey",
+		"category": ["A3 - Level 3 Stages"],
+		"requires": "(|Sun Stone:60|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 3 Boss - 61 Sun Stones",
+		"region": "Old Odyssey",
+		"category": ["A3 - Level 3 Stages"],
+		"requires": "(|Sun Stone:61|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 3 Boss - 62 Sun Stones",
+		"region": "Old Odyssey",
+		"category": ["A3 - Level 3 Stages"],
+		"requires": "(|Sun Stone:62|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 3 Boss - 63 Sun Stones",
+		"region": "Old Odyssey",
+		"category": ["A3 - Level 3 Stages"],
+		"requires": "(|Sun Stone:63|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 3 Boss - 64 Sun Stones",
+		"region": "Old Odyssey",
+		"category": ["A3 - Level 3 Stages"],
+		"requires": "(|Sun Stone:64|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 3 Boss - 65 Sun Stones",
+		"region": "Old Odyssey",
+		"category": ["A3 - Level 3 Stages"],
+		"requires": "(|Sun Stone:65|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 3 Boss - 66 Sun Stones",
+		"region": "Old Odyssey",
+		"category": ["A3 - Level 3 Stages"],
+		"requires": "(|Sun Stone:66|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 3 Boss - 67 Sun Stones",
+		"region": "Old Odyssey",
+		"category": ["A3 - Level 3 Stages"],
+		"requires": "(|Sun Stone:67|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 3 Boss - 68 Sun Stones",
+		"region": "Old Odyssey",
+		"category": ["A3 - Level 3 Stages"],
+		"requires": "(|Sun Stone:68|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 3 Boss - 69 Sun Stones",
+		"region": "Old Odyssey",
+		"category": ["A3 - Level 3 Stages"],
+		"requires": "(|Sun Stone:69|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 3 Boss - 70 Sun Stones",
+		"region": "Old Odyssey",
+		"category": ["A3 - Level 3 Stages"],
+		"requires": "(|Sun Stone:70|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 3 Boss - 71 Sun Stones",
+		"region": "Old Odyssey",
+		"category": ["A3 - Level 3 Stages"],
+		"requires": "(|Sun Stone:71|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 3 Boss - 72 Sun Stones",
+		"region": "Old Odyssey",
+		"category": ["A3 - Level 3 Stages"],
+		"requires": "(|Sun Stone:72|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 3 Boss - 73 Sun Stones",
+		"region": "Old Odyssey",
+		"category": ["A3 - Level 3 Stages"],
+		"requires": "(|Sun Stone:73|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 3 Boss - 74 Sun Stones",
+		"region": "Old Odyssey",
+		"category": ["A3 - Level 3 Stages"],
+		"requires": "(|Sun Stone:74|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 3 Boss - 75 Sun Stones",
+		"region": "Old Odyssey",
+		"category": ["A3 - Level 3 Stages"],
+		"requires": "(|Sun Stone:75|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 3 Boss - 76 Sun Stones",
+		"region": "Old Odyssey",
+		"category": ["A3 - Level 3 Stages"],
+		"requires": "(|Sun Stone:76|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 3 Boss - 77 Sun Stones",
+		"region": "Old Odyssey",
+		"category": ["A3 - Level 3 Stages"],
+		"requires": "(|Sun Stone:77|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 3 Boss - 78 Sun Stones",
+		"region": "Old Odyssey",
+		"category": ["A3 - Level 3 Stages"],
+		"requires": "(|Sun Stone:78|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 3 Boss - 79 Sun Stones",
+		"region": "Old Odyssey",
+		"category": ["A3 - Level 3 Stages"],
+		"requires": "(|Sun Stone:79|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 3 Boss - 80 Sun Stones",
+		"region": "Old Odyssey",
+		"category": ["A3 - Level 3 Stages"],
+		"requires": "(|Sun Stone:80|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 3 Boss - 81 Sun Stones",
+		"region": "Old Odyssey",
+		"category": ["A3 - Level 3 Stages"],
+		"requires": "(|Sun Stone:81|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 3 Boss - 82 Sun Stones",
+		"region": "Old Odyssey",
+		"category": ["A3 - Level 3 Stages"],
+		"requires": "(|Sun Stone:82|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 3 Boss - 83 Sun Stones",
+		"region": "Old Odyssey",
+		"category": ["A3 - Level 3 Stages"],
+		"requires": "(|Sun Stone:83|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 3 Boss - 84 Sun Stones",
+		"region": "Old Odyssey",
+		"category": ["A3 - Level 3 Stages"],
+		"requires": "(|Sun Stone:84|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 3 Boss - 85 Sun Stones",
+		"region": "Old Odyssey",
+		"category": ["A3 - Level 3 Stages"],
+		"requires": "(|Sun Stone:85|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 3 Boss - 86 Sun Stones",
+		"region": "Old Odyssey",
+		"category": ["A3 - Level 3 Stages"],
+		"requires": "(|Sun Stone:86|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 3 Boss - 87 Sun Stones",
+		"region": "Old Odyssey",
+		"category": ["A3 - Level 3 Stages"],
+		"requires": "(|Sun Stone:87|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 3 Boss - 88 Sun Stones",
+		"region": "Old Odyssey",
+		"category": ["A3 - Level 3 Stages"],
+		"requires": "(|Sun Stone:88|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 3 Boss - 89 Sun Stones",
+		"region": "Old Odyssey",
+		"category": ["A3 - Level 3 Stages"],
+		"requires": "(|Sun Stone:89|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 3 Boss - 90 Sun Stones",
+		"region": "Old Odyssey",
+		"category": ["A3 - Level 3 Stages"],
+		"requires": "(|Sun Stone:90|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 3 Boss - 91 Sun Stones",
+		"region": "Old Odyssey",
+		"category": ["A3 - Level 3 Stages"],
+		"requires": "(|Sun Stone:91|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 3 Boss - 92 Sun Stones",
+		"region": "Old Odyssey",
+		"category": ["A3 - Level 3 Stages"],
+		"requires": "(|Sun Stone:92|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 3 Boss - 93 Sun Stones",
+		"region": "Old Odyssey",
+		"category": ["A3 - Level 3 Stages"],
+		"requires": "(|Sun Stone:93|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 3 Boss - 94 Sun Stones",
+		"region": "Old Odyssey",
+		"category": ["A3 - Level 3 Stages"],
+		"requires": "(|Sun Stone:94|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 3 Boss - 95 Sun Stones",
+		"region": "Old Odyssey",
+		"category": ["A3 - Level 3 Stages"],
+		"requires": "(|Sun Stone:95|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 3 Boss - 96 Sun Stones",
+		"region": "Old Odyssey",
+		"category": ["A3 - Level 3 Stages"],
+		"requires": "(|Sun Stone:96|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 3 Boss - 97 Sun Stones",
+		"region": "Old Odyssey",
+		"category": ["A3 - Level 3 Stages"],
+		"requires": "(|Sun Stone:97|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 3 Boss - 98 Sun Stones",
+		"region": "Old Odyssey",
+		"category": ["A3 - Level 3 Stages"],
+		"requires": "(|Sun Stone:98|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 3 Boss - 99 Sun Stones",
+		"region": "Old Odyssey",
+		"category": ["A3 - Level 3 Stages"],
+		"requires": "(|Sun Stone:99|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 3 Boss - 100 Sun Stones",
+		"region": "Old Odyssey",
+		"category": ["A3 - Level 3 Stages"],
+		"requires": "(|Sun Stone:100|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 3 EX Stage",
+		"region": "Old Odyssey",
+		"category": ["A3 - Level 3 Stages"],
+		"requires": "(|Progressive EX Stage Key:3|)",
+		"place_item_category": ["Stages"]
+	},
+	{
+		"name": "Level 4 1st Stage",
+		"region": "Wild World",
+		"category": ["A4 - Level 4 Stages"],
+		"requires": [],
+		"place_item_category": ["Stages"]
+	},
+	{
+		"name": "Level 4 2nd Stage",
+		"region": "Wild World",
+		"category": ["A4 - Level 4 Stages"],
+		"requires": [],
+		"place_item_category": ["Stages"]
+	},
+	{
+		"name": "Level 4 3rd Stage",
+		"region": "Wild World",
+		"category": ["A4 - Level 4 Stages"],
+		"requires": [],
+		"place_item_category": ["Stages"]
+	},
+	{
+		"name": "Level 4 4th Stage",
+		"region": "Wild World",
+		"category": ["A4 - Level 4 Stages"],
+		"requires": [],
+		"place_item_category": ["Stages"]
+	},
+	{
+		"name": "Level 4 5th Stage",
+		"region": "Wild World",
+		"category": ["A4 - Level 4 Stages"],
+		"requires": [],
+		"place_item_category": ["Stages"]
+	},
+	{
+		"name": "Level 4 Boss",
+		"region": "Wild World",
+		"category": ["A4 - Level 4 Stages"],
+		"requires": [],
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 4 Boss - 1 Sun Stone",
+		"region": "Wild World",
+		"category": ["A4 - Level 4 Stages"],
+		"requires": "(|Sun Stone:1|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 4 Boss - 2 Sun Stones",
+		"region": "Wild World",
+		"category": ["A4 - Level 4 Stages"],
+		"requires": "(|Sun Stone:2|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 4 Boss - 3 Sun Stones",
+		"region": "Wild World",
+		"category": ["A4 - Level 4 Stages"],
+		"requires": "(|Sun Stone:3|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 4 Boss - 4 Sun Stones",
+		"region": "Wild World",
+		"category": ["A4 - Level 4 Stages"],
+		"requires": "(|Sun Stone:4|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 4 Boss - 5 Sun Stones",
+		"region": "Wild World",
+		"category": ["A4 - Level 4 Stages"],
+		"requires": "(|Sun Stone:5|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 4 Boss - 6 Sun Stones",
+		"region": "Wild World",
+		"category": ["A4 - Level 4 Stages"],
+		"requires": "(|Sun Stone:6|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 4 Boss - 7 Sun Stones",
+		"region": "Wild World",
+		"category": ["A4 - Level 4 Stages"],
+		"requires": "(|Sun Stone:7|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 4 Boss - 8 Sun Stones",
+		"region": "Wild World",
+		"category": ["A4 - Level 4 Stages"],
+		"requires": "(|Sun Stone:8|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 4 Boss - 9 Sun Stones",
+		"region": "Wild World",
+		"category": ["A4 - Level 4 Stages"],
+		"requires": "(|Sun Stone:9|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 4 Boss - 10 Sun Stones",
+		"region": "Wild World",
+		"category": ["A4 - Level 4 Stages"],
+		"requires": "(|Sun Stone:10|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 4 Boss - 11 Sun Stones",
+		"region": "Wild World",
+		"category": ["A4 - Level 4 Stages"],
+		"requires": "(|Sun Stone:11|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 4 Boss - 12 Sun Stones",
+		"region": "Wild World",
+		"category": ["A4 - Level 4 Stages"],
+		"requires": "(|Sun Stone:12|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 4 Boss - 13 Sun Stones",
+		"region": "Wild World",
+		"category": ["A4 - Level 4 Stages"],
+		"requires": "(|Sun Stone:13|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 4 Boss - 14 Sun Stones",
+		"region": "Wild World",
+		"category": ["A4 - Level 4 Stages"],
+		"requires": "(|Sun Stone:14|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 4 Boss - 15 Sun Stones",
+		"region": "Wild World",
+		"category": ["A4 - Level 4 Stages"],
+		"requires": "(|Sun Stone:15|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 4 Boss - 16 Sun Stones",
+		"region": "Wild World",
+		"category": ["A4 - Level 4 Stages"],
+		"requires": "(|Sun Stone:16|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 4 Boss - 17 Sun Stones",
+		"region": "Wild World",
+		"category": ["A4 - Level 4 Stages"],
+		"requires": "(|Sun Stone:17|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 4 Boss - 18 Sun Stones",
+		"region": "Wild World",
+		"category": ["A4 - Level 4 Stages"],
+		"requires": "(|Sun Stone:18|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 4 Boss - 19 Sun Stones",
+		"region": "Wild World",
+		"category": ["A4 - Level 4 Stages"],
+		"requires": "(|Sun Stone:19|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 4 Boss - 20 Sun Stones",
+		"region": "Wild World",
+		"category": ["A4 - Level 4 Stages"],
+		"requires": "(|Sun Stone:20|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 4 Boss - 21 Sun Stones",
+		"region": "Wild World",
+		"category": ["A4 - Level 4 Stages"],
+		"requires": "(|Sun Stone:21|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 4 Boss - 22 Sun Stones",
+		"region": "Wild World",
+		"category": ["A4 - Level 4 Stages"],
+		"requires": "(|Sun Stone:22|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 4 Boss - 23 Sun Stones",
+		"region": "Wild World",
+		"category": ["A4 - Level 4 Stages"],
+		"requires": "(|Sun Stone:23|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 4 Boss - 24 Sun Stones",
+		"region": "Wild World",
+		"category": ["A4 - Level 4 Stages"],
+		"requires": "(|Sun Stone:24|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 4 Boss - 25 Sun Stones",
+		"region": "Wild World",
+		"category": ["A4 - Level 4 Stages"],
+		"requires": "(|Sun Stone:25|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 4 Boss - 26 Sun Stones",
+		"region": "Wild World",
+		"category": ["A4 - Level 4 Stages"],
+		"requires": "(|Sun Stone:26|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 4 Boss - 27 Sun Stones",
+		"region": "Wild World",
+		"category": ["A4 - Level 4 Stages"],
+		"requires": "(|Sun Stone:27|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 4 Boss - 28 Sun Stones",
+		"region": "Wild World",
+		"category": ["A4 - Level 4 Stages"],
+		"requires": "(|Sun Stone:28|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 4 Boss - 29 Sun Stones",
+		"region": "Wild World",
+		"category": ["A4 - Level 4 Stages"],
+		"requires": "(|Sun Stone:29|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 4 Boss - 30 Sun Stones",
+		"region": "Wild World",
+		"category": ["A4 - Level 4 Stages"],
+		"requires": "(|Sun Stone:30|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 4 Boss - 31 Sun Stones",
+		"region": "Wild World",
+		"category": ["A4 - Level 4 Stages"],
+		"requires": "(|Sun Stone:31|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 4 Boss - 32 Sun Stones",
+		"region": "Wild World",
+		"category": ["A4 - Level 4 Stages"],
+		"requires": "(|Sun Stone:32|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 4 Boss - 33 Sun Stones",
+		"region": "Wild World",
+		"category": ["A4 - Level 4 Stages"],
+		"requires": "(|Sun Stone:33|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 4 Boss - 34 Sun Stones",
+		"region": "Wild World",
+		"category": ["A4 - Level 4 Stages"],
+		"requires": "(|Sun Stone:34|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 4 Boss - 35 Sun Stones",
+		"region": "Wild World",
+		"category": ["A4 - Level 4 Stages"],
+		"requires": "(|Sun Stone:35|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 4 Boss - 36 Sun Stones",
+		"region": "Wild World",
+		"category": ["A4 - Level 4 Stages"],
+		"requires": "(|Sun Stone:36|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 4 Boss - 37 Sun Stones",
+		"region": "Wild World",
+		"category": ["A4 - Level 4 Stages"],
+		"requires": "(|Sun Stone:37|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 4 Boss - 38 Sun Stones",
+		"region": "Wild World",
+		"category": ["A4 - Level 4 Stages"],
+		"requires": "(|Sun Stone:38|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 4 Boss - 39 Sun Stones",
+		"region": "Wild World",
+		"category": ["A4 - Level 4 Stages"],
+		"requires": "(|Sun Stone:39|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 4 Boss - 40 Sun Stones",
+		"region": "Wild World",
+		"category": ["A4 - Level 4 Stages"],
+		"requires": "(|Sun Stone:40|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 4 Boss - 41 Sun Stones",
+		"region": "Wild World",
+		"category": ["A4 - Level 4 Stages"],
+		"requires": "(|Sun Stone:41|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 4 Boss - 42 Sun Stones",
+		"region": "Wild World",
+		"category": ["A4 - Level 4 Stages"],
+		"requires": "(|Sun Stone:42|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 4 Boss - 43 Sun Stones",
+		"region": "Wild World",
+		"category": ["A4 - Level 4 Stages"],
+		"requires": "(|Sun Stone:43|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 4 Boss - 44 Sun Stones",
+		"region": "Wild World",
+		"category": ["A4 - Level 4 Stages"],
+		"requires": "(|Sun Stone:44|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 4 Boss - 45 Sun Stones",
+		"region": "Wild World",
+		"category": ["A4 - Level 4 Stages"],
+		"requires": "(|Sun Stone:45|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 4 Boss - 46 Sun Stones",
+		"region": "Wild World",
+		"category": ["A4 - Level 4 Stages"],
+		"requires": "(|Sun Stone:46|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 4 Boss - 47 Sun Stones",
+		"region": "Wild World",
+		"category": ["A4 - Level 4 Stages"],
+		"requires": "(|Sun Stone:47|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 4 Boss - 48 Sun Stones",
+		"region": "Wild World",
+		"category": ["A4 - Level 4 Stages"],
+		"requires": "(|Sun Stone:48|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 4 Boss - 49 Sun Stones",
+		"region": "Wild World",
+		"category": ["A4 - Level 4 Stages"],
+		"requires": "(|Sun Stone:49|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 4 Boss - 50 Sun Stones",
+		"region": "Wild World",
+		"category": ["A4 - Level 4 Stages"],
+		"requires": "(|Sun Stone:50|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 4 Boss - 51 Sun Stones",
+		"region": "Wild World",
+		"category": ["A4 - Level 4 Stages"],
+		"requires": "(|Sun Stone:51|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 4 Boss - 52 Sun Stones",
+		"region": "Wild World",
+		"category": ["A4 - Level 4 Stages"],
+		"requires": "(|Sun Stone:52|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 4 Boss - 53 Sun Stones",
+		"region": "Wild World",
+		"category": ["A4 - Level 4 Stages"],
+		"requires": "(|Sun Stone:53|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 4 Boss - 54 Sun Stones",
+		"region": "Wild World",
+		"category": ["A4 - Level 4 Stages"],
+		"requires": "(|Sun Stone:54|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 4 Boss - 55 Sun Stones",
+		"region": "Wild World",
+		"category": ["A4 - Level 4 Stages"],
+		"requires": "(|Sun Stone:55|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 4 Boss - 56 Sun Stones",
+		"region": "Wild World",
+		"category": ["A4 - Level 4 Stages"],
+		"requires": "(|Sun Stone:56|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 4 Boss - 57 Sun Stones",
+		"region": "Wild World",
+		"category": ["A4 - Level 4 Stages"],
+		"requires": "(|Sun Stone:57|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 4 Boss - 58 Sun Stones",
+		"region": "Wild World",
+		"category": ["A4 - Level 4 Stages"],
+		"requires": "(|Sun Stone:58|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 4 Boss - 59 Sun Stones",
+		"region": "Wild World",
+		"category": ["A4 - Level 4 Stages"],
+		"requires": "(|Sun Stone:59|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 4 Boss - 60 Sun Stones",
+		"region": "Wild World",
+		"category": ["A4 - Level 4 Stages"],
+		"requires": "(|Sun Stone:60|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 4 Boss - 61 Sun Stones",
+		"region": "Wild World",
+		"category": ["A4 - Level 4 Stages"],
+		"requires": "(|Sun Stone:61|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 4 Boss - 62 Sun Stones",
+		"region": "Wild World",
+		"category": ["A4 - Level 4 Stages"],
+		"requires": "(|Sun Stone:62|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 4 Boss - 63 Sun Stones",
+		"region": "Wild World",
+		"category": ["A4 - Level 4 Stages"],
+		"requires": "(|Sun Stone:63|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 4 Boss - 64 Sun Stones",
+		"region": "Wild World",
+		"category": ["A4 - Level 4 Stages"],
+		"requires": "(|Sun Stone:64|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 4 Boss - 65 Sun Stones",
+		"region": "Wild World",
+		"category": ["A4 - Level 4 Stages"],
+		"requires": "(|Sun Stone:65|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 4 Boss - 66 Sun Stones",
+		"region": "Wild World",
+		"category": ["A4 - Level 4 Stages"],
+		"requires": "(|Sun Stone:66|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 4 Boss - 67 Sun Stones",
+		"region": "Wild World",
+		"category": ["A4 - Level 4 Stages"],
+		"requires": "(|Sun Stone:67|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 4 Boss - 68 Sun Stones",
+		"region": "Wild World",
+		"category": ["A4 - Level 4 Stages"],
+		"requires": "(|Sun Stone:68|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 4 Boss - 69 Sun Stones",
+		"region": "Wild World",
+		"category": ["A4 - Level 4 Stages"],
+		"requires": "(|Sun Stone:69|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 4 Boss - 70 Sun Stones",
+		"region": "Wild World",
+		"category": ["A4 - Level 4 Stages"],
+		"requires": "(|Sun Stone:70|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 4 Boss - 71 Sun Stones",
+		"region": "Wild World",
+		"category": ["A4 - Level 4 Stages"],
+		"requires": "(|Sun Stone:71|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 4 Boss - 72 Sun Stones",
+		"region": "Wild World",
+		"category": ["A4 - Level 4 Stages"],
+		"requires": "(|Sun Stone:72|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 4 Boss - 73 Sun Stones",
+		"region": "Wild World",
+		"category": ["A4 - Level 4 Stages"],
+		"requires": "(|Sun Stone:73|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 4 Boss - 74 Sun Stones",
+		"region": "Wild World",
+		"category": ["A4 - Level 4 Stages"],
+		"requires": "(|Sun Stone:74|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 4 Boss - 75 Sun Stones",
+		"region": "Wild World",
+		"category": ["A4 - Level 4 Stages"],
+		"requires": "(|Sun Stone:75|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 4 Boss - 76 Sun Stones",
+		"region": "Wild World",
+		"category": ["A4 - Level 4 Stages"],
+		"requires": "(|Sun Stone:76|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 4 Boss - 77 Sun Stones",
+		"region": "Wild World",
+		"category": ["A4 - Level 4 Stages"],
+		"requires": "(|Sun Stone:77|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 4 Boss - 78 Sun Stones",
+		"region": "Wild World",
+		"category": ["A4 - Level 4 Stages"],
+		"requires": "(|Sun Stone:78|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 4 Boss - 79 Sun Stones",
+		"region": "Wild World",
+		"category": ["A4 - Level 4 Stages"],
+		"requires": "(|Sun Stone:79|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 4 Boss - 80 Sun Stones",
+		"region": "Wild World",
+		"category": ["A4 - Level 4 Stages"],
+		"requires": "(|Sun Stone:80|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 4 Boss - 81 Sun Stones",
+		"region": "Wild World",
+		"category": ["A4 - Level 4 Stages"],
+		"requires": "(|Sun Stone:81|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 4 Boss - 82 Sun Stones",
+		"region": "Wild World",
+		"category": ["A4 - Level 4 Stages"],
+		"requires": "(|Sun Stone:82|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 4 Boss - 83 Sun Stones",
+		"region": "Wild World",
+		"category": ["A4 - Level 4 Stages"],
+		"requires": "(|Sun Stone:83|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 4 Boss - 84 Sun Stones",
+		"region": "Wild World",
+		"category": ["A4 - Level 4 Stages"],
+		"requires": "(|Sun Stone:84|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 4 Boss - 85 Sun Stones",
+		"region": "Wild World",
+		"category": ["A4 - Level 4 Stages"],
+		"requires": "(|Sun Stone:85|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 4 Boss - 86 Sun Stones",
+		"region": "Wild World",
+		"category": ["A4 - Level 4 Stages"],
+		"requires": "(|Sun Stone:86|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 4 Boss - 87 Sun Stones",
+		"region": "Wild World",
+		"category": ["A4 - Level 4 Stages"],
+		"requires": "(|Sun Stone:87|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 4 Boss - 88 Sun Stones",
+		"region": "Wild World",
+		"category": ["A4 - Level 4 Stages"],
+		"requires": "(|Sun Stone:88|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 4 Boss - 89 Sun Stones",
+		"region": "Wild World",
+		"category": ["A4 - Level 4 Stages"],
+		"requires": "(|Sun Stone:89|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 4 Boss - 90 Sun Stones",
+		"region": "Wild World",
+		"category": ["A4 - Level 4 Stages"],
+		"requires": "(|Sun Stone:90|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 4 Boss - 91 Sun Stones",
+		"region": "Wild World",
+		"category": ["A4 - Level 4 Stages"],
+		"requires": "(|Sun Stone:91|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 4 Boss - 92 Sun Stones",
+		"region": "Wild World",
+		"category": ["A4 - Level 4 Stages"],
+		"requires": "(|Sun Stone:92|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 4 Boss - 93 Sun Stones",
+		"region": "Wild World",
+		"category": ["A4 - Level 4 Stages"],
+		"requires": "(|Sun Stone:93|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 4 Boss - 94 Sun Stones",
+		"region": "Wild World",
+		"category": ["A4 - Level 4 Stages"],
+		"requires": "(|Sun Stone:94|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 4 Boss - 95 Sun Stones",
+		"region": "Wild World",
+		"category": ["A4 - Level 4 Stages"],
+		"requires": "(|Sun Stone:95|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 4 Boss - 96 Sun Stones",
+		"region": "Wild World",
+		"category": ["A4 - Level 4 Stages"],
+		"requires": "(|Sun Stone:96|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 4 Boss - 97 Sun Stones",
+		"region": "Wild World",
+		"category": ["A4 - Level 4 Stages"],
+		"requires": "(|Sun Stone:97|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 4 Boss - 98 Sun Stones",
+		"region": "Wild World",
+		"category": ["A4 - Level 4 Stages"],
+		"requires": "(|Sun Stone:98|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 4 Boss - 99 Sun Stones",
+		"region": "Wild World",
+		"category": ["A4 - Level 4 Stages"],
+		"requires": "(|Sun Stone:99|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 4 Boss - 100 Sun Stones",
+		"region": "Wild World",
+		"category": ["A4 - Level 4 Stages"],
+		"requires": "(|Sun Stone:100|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 4 EX Stage",
+		"region": "Wild World",
+		"category": ["A4 - Level 4 Stages"],
+		"requires": "(|Progressive EX Stage Key:4|)",
+		"place_item_category": ["Stages"]
+	},
+	{
+		"name": "Level 5 1st Stage",
+		"region": "Endless Explosions",
+		"category": ["A5 - Level 5 Stages"],
+		"requires": [],
+		"place_item_category": ["Stages"]
+	},
+	{
+		"name": "Level 5 2nd Stage",
+		"region": "Endless Explosions",
+		"category": ["A5 - Level 5 Stages"],
+		"requires": [],
+		"place_item_category": ["Stages"]
+	},
+	{
+		"name": "Level 5 3rd Stage",
+		"region": "Endless Explosions",
+		"category": ["A5 - Level 5 Stages"],
+		"requires": [],
+		"place_item_category": ["Stages"]
+	},
+	{
+		"name": "Level 5 4th Stage",
+		"region": "Endless Explosions",
+		"category": ["A5 - Level 5 Stages"],
+		"requires": [],
+		"place_item_category": ["Stages"]
+	},
+	{
+		"name": "Level 5 5th Stage",
+		"region": "Endless Explosions",
+		"category": ["A5 - Level 5 Stages"],
+		"requires": [],
+		"place_item_category": ["Stages"]
+	},
+	{
+		"name": "Level 5 Boss",
+		"region": "Endless Explosions",
+		"category": ["A5 - Level 5 Stages"],
+		"requires": [],
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 5 Boss - 1 Sun Stone",
+		"region": "Endless Explosions",
+		"category": ["A5 - Level 5 Stages"],
+		"requires": "(|Sun Stone:1|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 5 Boss - 2 Sun Stones",
+		"region": "Endless Explosions",
+		"category": ["A5 - Level 5 Stages"],
+		"requires": "(|Sun Stone:2|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 5 Boss - 3 Sun Stones",
+		"region": "Endless Explosions",
+		"category": ["A5 - Level 5 Stages"],
+		"requires": "(|Sun Stone:3|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 5 Boss - 4 Sun Stones",
+		"region": "Endless Explosions",
+		"category": ["A5 - Level 5 Stages"],
+		"requires": "(|Sun Stone:4|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 5 Boss - 5 Sun Stones",
+		"region": "Endless Explosions",
+		"category": ["A5 - Level 5 Stages"],
+		"requires": "(|Sun Stone:5|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 5 Boss - 6 Sun Stones",
+		"region": "Endless Explosions",
+		"category": ["A5 - Level 5 Stages"],
+		"requires": "(|Sun Stone:6|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 5 Boss - 7 Sun Stones",
+		"region": "Endless Explosions",
+		"category": ["A5 - Level 5 Stages"],
+		"requires": "(|Sun Stone:7|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 5 Boss - 8 Sun Stones",
+		"region": "Endless Explosions",
+		"category": ["A5 - Level 5 Stages"],
+		"requires": "(|Sun Stone:8|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 5 Boss - 9 Sun Stones",
+		"region": "Endless Explosions",
+		"category": ["A5 - Level 5 Stages"],
+		"requires": "(|Sun Stone:9|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 5 Boss - 10 Sun Stones",
+		"region": "Endless Explosions",
+		"category": ["A5 - Level 5 Stages"],
+		"requires": "(|Sun Stone:10|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 5 Boss - 11 Sun Stones",
+		"region": "Endless Explosions",
+		"category": ["A5 - Level 5 Stages"],
+		"requires": "(|Sun Stone:11|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 5 Boss - 12 Sun Stones",
+		"region": "Endless Explosions",
+		"category": ["A5 - Level 5 Stages"],
+		"requires": "(|Sun Stone:12|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 5 Boss - 13 Sun Stones",
+		"region": "Endless Explosions",
+		"category": ["A5 - Level 5 Stages"],
+		"requires": "(|Sun Stone:13|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 5 Boss - 14 Sun Stones",
+		"region": "Endless Explosions",
+		"category": ["A5 - Level 5 Stages"],
+		"requires": "(|Sun Stone:14|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 5 Boss - 15 Sun Stones",
+		"region": "Endless Explosions",
+		"category": ["A5 - Level 5 Stages"],
+		"requires": "(|Sun Stone:15|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 5 Boss - 16 Sun Stones",
+		"region": "Endless Explosions",
+		"category": ["A5 - Level 5 Stages"],
+		"requires": "(|Sun Stone:16|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 5 Boss - 17 Sun Stones",
+		"region": "Endless Explosions",
+		"category": ["A5 - Level 5 Stages"],
+		"requires": "(|Sun Stone:17|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 5 Boss - 18 Sun Stones",
+		"region": "Endless Explosions",
+		"category": ["A5 - Level 5 Stages"],
+		"requires": "(|Sun Stone:18|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 5 Boss - 19 Sun Stones",
+		"region": "Endless Explosions",
+		"category": ["A5 - Level 5 Stages"],
+		"requires": "(|Sun Stone:19|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 5 Boss - 20 Sun Stones",
+		"region": "Endless Explosions",
+		"category": ["A5 - Level 5 Stages"],
+		"requires": "(|Sun Stone:20|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 5 Boss - 21 Sun Stones",
+		"region": "Endless Explosions",
+		"category": ["A5 - Level 5 Stages"],
+		"requires": "(|Sun Stone:21|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 5 Boss - 22 Sun Stones",
+		"region": "Endless Explosions",
+		"category": ["A5 - Level 5 Stages"],
+		"requires": "(|Sun Stone:22|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 5 Boss - 23 Sun Stones",
+		"region": "Endless Explosions",
+		"category": ["A5 - Level 5 Stages"],
+		"requires": "(|Sun Stone:23|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 5 Boss - 24 Sun Stones",
+		"region": "Endless Explosions",
+		"category": ["A5 - Level 5 Stages"],
+		"requires": "(|Sun Stone:24|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 5 Boss - 25 Sun Stones",
+		"region": "Endless Explosions",
+		"category": ["A5 - Level 5 Stages"],
+		"requires": "(|Sun Stone:25|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 5 Boss - 26 Sun Stones",
+		"region": "Endless Explosions",
+		"category": ["A5 - Level 5 Stages"],
+		"requires": "(|Sun Stone:26|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 5 Boss - 27 Sun Stones",
+		"region": "Endless Explosions",
+		"category": ["A5 - Level 5 Stages"],
+		"requires": "(|Sun Stone:27|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 5 Boss - 28 Sun Stones",
+		"region": "Endless Explosions",
+		"category": ["A5 - Level 5 Stages"],
+		"requires": "(|Sun Stone:28|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 5 Boss - 29 Sun Stones",
+		"region": "Endless Explosions",
+		"category": ["A5 - Level 5 Stages"],
+		"requires": "(|Sun Stone:29|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 5 Boss - 30 Sun Stones",
+		"region": "Endless Explosions",
+		"category": ["A5 - Level 5 Stages"],
+		"requires": "(|Sun Stone:30|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 5 Boss - 31 Sun Stones",
+		"region": "Endless Explosions",
+		"category": ["A5 - Level 5 Stages"],
+		"requires": "(|Sun Stone:31|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 5 Boss - 32 Sun Stones",
+		"region": "Endless Explosions",
+		"category": ["A5 - Level 5 Stages"],
+		"requires": "(|Sun Stone:32|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 5 Boss - 33 Sun Stones",
+		"region": "Endless Explosions",
+		"category": ["A5 - Level 5 Stages"],
+		"requires": "(|Sun Stone:33|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 5 Boss - 34 Sun Stones",
+		"region": "Endless Explosions",
+		"category": ["A5 - Level 5 Stages"],
+		"requires": "(|Sun Stone:34|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 5 Boss - 35 Sun Stones",
+		"region": "Endless Explosions",
+		"category": ["A5 - Level 5 Stages"],
+		"requires": "(|Sun Stone:35|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 5 Boss - 36 Sun Stones",
+		"region": "Endless Explosions",
+		"category": ["A5 - Level 5 Stages"],
+		"requires": "(|Sun Stone:36|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 5 Boss - 37 Sun Stones",
+		"region": "Endless Explosions",
+		"category": ["A5 - Level 5 Stages"],
+		"requires": "(|Sun Stone:37|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 5 Boss - 38 Sun Stones",
+		"region": "Endless Explosions",
+		"category": ["A5 - Level 5 Stages"],
+		"requires": "(|Sun Stone:38|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 5 Boss - 39 Sun Stones",
+		"region": "Endless Explosions",
+		"category": ["A5 - Level 5 Stages"],
+		"requires": "(|Sun Stone:39|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 5 Boss - 40 Sun Stones",
+		"region": "Endless Explosions",
+		"category": ["A5 - Level 5 Stages"],
+		"requires": "(|Sun Stone:40|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 5 Boss - 41 Sun Stones",
+		"region": "Endless Explosions",
+		"category": ["A5 - Level 5 Stages"],
+		"requires": "(|Sun Stone:41|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 5 Boss - 42 Sun Stones",
+		"region": "Endless Explosions",
+		"category": ["A5 - Level 5 Stages"],
+		"requires": "(|Sun Stone:42|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 5 Boss - 43 Sun Stones",
+		"region": "Endless Explosions",
+		"category": ["A5 - Level 5 Stages"],
+		"requires": "(|Sun Stone:43|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 5 Boss - 44 Sun Stones",
+		"region": "Endless Explosions",
+		"category": ["A5 - Level 5 Stages"],
+		"requires": "(|Sun Stone:44|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 5 Boss - 45 Sun Stones",
+		"region": "Endless Explosions",
+		"category": ["A5 - Level 5 Stages"],
+		"requires": "(|Sun Stone:45|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 5 Boss - 46 Sun Stones",
+		"region": "Endless Explosions",
+		"category": ["A5 - Level 5 Stages"],
+		"requires": "(|Sun Stone:46|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 5 Boss - 47 Sun Stones",
+		"region": "Endless Explosions",
+		"category": ["A5 - Level 5 Stages"],
+		"requires": "(|Sun Stone:47|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 5 Boss - 48 Sun Stones",
+		"region": "Endless Explosions",
+		"category": ["A5 - Level 5 Stages"],
+		"requires": "(|Sun Stone:48|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 5 Boss - 49 Sun Stones",
+		"region": "Endless Explosions",
+		"category": ["A5 - Level 5 Stages"],
+		"requires": "(|Sun Stone:49|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 5 Boss - 50 Sun Stones",
+		"region": "Endless Explosions",
+		"category": ["A5 - Level 5 Stages"],
+		"requires": "(|Sun Stone:50|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 5 Boss - 51 Sun Stones",
+		"region": "Endless Explosions",
+		"category": ["A5 - Level 5 Stages"],
+		"requires": "(|Sun Stone:51|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 5 Boss - 52 Sun Stones",
+		"region": "Endless Explosions",
+		"category": ["A5 - Level 5 Stages"],
+		"requires": "(|Sun Stone:52|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 5 Boss - 53 Sun Stones",
+		"region": "Endless Explosions",
+		"category": ["A5 - Level 5 Stages"],
+		"requires": "(|Sun Stone:53|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 5 Boss - 54 Sun Stones",
+		"region": "Endless Explosions",
+		"category": ["A5 - Level 5 Stages"],
+		"requires": "(|Sun Stone:54|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 5 Boss - 55 Sun Stones",
+		"region": "Endless Explosions",
+		"category": ["A5 - Level 5 Stages"],
+		"requires": "(|Sun Stone:55|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 5 Boss - 56 Sun Stones",
+		"region": "Endless Explosions",
+		"category": ["A5 - Level 5 Stages"],
+		"requires": "(|Sun Stone:56|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 5 Boss - 57 Sun Stones",
+		"region": "Endless Explosions",
+		"category": ["A5 - Level 5 Stages"],
+		"requires": "(|Sun Stone:57|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 5 Boss - 58 Sun Stones",
+		"region": "Endless Explosions",
+		"category": ["A5 - Level 5 Stages"],
+		"requires": "(|Sun Stone:58|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 5 Boss - 59 Sun Stones",
+		"region": "Endless Explosions",
+		"category": ["A5 - Level 5 Stages"],
+		"requires": "(|Sun Stone:59|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 5 Boss - 60 Sun Stones",
+		"region": "Endless Explosions",
+		"category": ["A5 - Level 5 Stages"],
+		"requires": "(|Sun Stone:60|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 5 Boss - 61 Sun Stones",
+		"region": "Endless Explosions",
+		"category": ["A5 - Level 5 Stages"],
+		"requires": "(|Sun Stone:61|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 5 Boss - 62 Sun Stones",
+		"region": "Endless Explosions",
+		"category": ["A5 - Level 5 Stages"],
+		"requires": "(|Sun Stone:62|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 5 Boss - 63 Sun Stones",
+		"region": "Endless Explosions",
+		"category": ["A5 - Level 5 Stages"],
+		"requires": "(|Sun Stone:63|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 5 Boss - 64 Sun Stones",
+		"region": "Endless Explosions",
+		"category": ["A5 - Level 5 Stages"],
+		"requires": "(|Sun Stone:64|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 5 Boss - 65 Sun Stones",
+		"region": "Endless Explosions",
+		"category": ["A5 - Level 5 Stages"],
+		"requires": "(|Sun Stone:65|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 5 Boss - 66 Sun Stones",
+		"region": "Endless Explosions",
+		"category": ["A5 - Level 5 Stages"],
+		"requires": "(|Sun Stone:66|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 5 Boss - 67 Sun Stones",
+		"region": "Endless Explosions",
+		"category": ["A5 - Level 5 Stages"],
+		"requires": "(|Sun Stone:67|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 5 Boss - 68 Sun Stones",
+		"region": "Endless Explosions",
+		"category": ["A5 - Level 5 Stages"],
+		"requires": "(|Sun Stone:68|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 5 Boss - 69 Sun Stones",
+		"region": "Endless Explosions",
+		"category": ["A5 - Level 5 Stages"],
+		"requires": "(|Sun Stone:69|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 5 Boss - 70 Sun Stones",
+		"region": "Endless Explosions",
+		"category": ["A5 - Level 5 Stages"],
+		"requires": "(|Sun Stone:70|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 5 Boss - 71 Sun Stones",
+		"region": "Endless Explosions",
+		"category": ["A5 - Level 5 Stages"],
+		"requires": "(|Sun Stone:71|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 5 Boss - 72 Sun Stones",
+		"region": "Endless Explosions",
+		"category": ["A5 - Level 5 Stages"],
+		"requires": "(|Sun Stone:72|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 5 Boss - 73 Sun Stones",
+		"region": "Endless Explosions",
+		"category": ["A5 - Level 5 Stages"],
+		"requires": "(|Sun Stone:73|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 5 Boss - 74 Sun Stones",
+		"region": "Endless Explosions",
+		"category": ["A5 - Level 5 Stages"],
+		"requires": "(|Sun Stone:74|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 5 Boss - 75 Sun Stones",
+		"region": "Endless Explosions",
+		"category": ["A5 - Level 5 Stages"],
+		"requires": "(|Sun Stone:75|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 5 Boss - 76 Sun Stones",
+		"region": "Endless Explosions",
+		"category": ["A5 - Level 5 Stages"],
+		"requires": "(|Sun Stone:76|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 5 Boss - 77 Sun Stones",
+		"region": "Endless Explosions",
+		"category": ["A5 - Level 5 Stages"],
+		"requires": "(|Sun Stone:77|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 5 Boss - 78 Sun Stones",
+		"region": "Endless Explosions",
+		"category": ["A5 - Level 5 Stages"],
+		"requires": "(|Sun Stone:78|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 5 Boss - 79 Sun Stones",
+		"region": "Endless Explosions",
+		"category": ["A5 - Level 5 Stages"],
+		"requires": "(|Sun Stone:79|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 5 Boss - 80 Sun Stones",
+		"region": "Endless Explosions",
+		"category": ["A5 - Level 5 Stages"],
+		"requires": "(|Sun Stone:80|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 5 Boss - 81 Sun Stones",
+		"region": "Endless Explosions",
+		"category": ["A5 - Level 5 Stages"],
+		"requires": "(|Sun Stone:81|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 5 Boss - 82 Sun Stones",
+		"region": "Endless Explosions",
+		"category": ["A5 - Level 5 Stages"],
+		"requires": "(|Sun Stone:82|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 5 Boss - 83 Sun Stones",
+		"region": "Endless Explosions",
+		"category": ["A5 - Level 5 Stages"],
+		"requires": "(|Sun Stone:83|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 5 Boss - 84 Sun Stones",
+		"region": "Endless Explosions",
+		"category": ["A5 - Level 5 Stages"],
+		"requires": "(|Sun Stone:84|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 5 Boss - 85 Sun Stones",
+		"region": "Endless Explosions",
+		"category": ["A5 - Level 5 Stages"],
+		"requires": "(|Sun Stone:85|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 5 Boss - 86 Sun Stones",
+		"region": "Endless Explosions",
+		"category": ["A5 - Level 5 Stages"],
+		"requires": "(|Sun Stone:86|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 5 Boss - 87 Sun Stones",
+		"region": "Endless Explosions",
+		"category": ["A5 - Level 5 Stages"],
+		"requires": "(|Sun Stone:87|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 5 Boss - 88 Sun Stones",
+		"region": "Endless Explosions",
+		"category": ["A5 - Level 5 Stages"],
+		"requires": "(|Sun Stone:88|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 5 Boss - 89 Sun Stones",
+		"region": "Endless Explosions",
+		"category": ["A5 - Level 5 Stages"],
+		"requires": "(|Sun Stone:89|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 5 Boss - 90 Sun Stones",
+		"region": "Endless Explosions",
+		"category": ["A5 - Level 5 Stages"],
+		"requires": "(|Sun Stone:90|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 5 Boss - 91 Sun Stones",
+		"region": "Endless Explosions",
+		"category": ["A5 - Level 5 Stages"],
+		"requires": "(|Sun Stone:91|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 5 Boss - 92 Sun Stones",
+		"region": "Endless Explosions",
+		"category": ["A5 - Level 5 Stages"],
+		"requires": "(|Sun Stone:92|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 5 Boss - 93 Sun Stones",
+		"region": "Endless Explosions",
+		"category": ["A5 - Level 5 Stages"],
+		"requires": "(|Sun Stone:93|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 5 Boss - 94 Sun Stones",
+		"region": "Endless Explosions",
+		"category": ["A5 - Level 5 Stages"],
+		"requires": "(|Sun Stone:94|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 5 Boss - 95 Sun Stones",
+		"region": "Endless Explosions",
+		"category": ["A5 - Level 5 Stages"],
+		"requires": "(|Sun Stone:95|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 5 Boss - 96 Sun Stones",
+		"region": "Endless Explosions",
+		"category": ["A5 - Level 5 Stages"],
+		"requires": "(|Sun Stone:96|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 5 Boss - 97 Sun Stones",
+		"region": "Endless Explosions",
+		"category": ["A5 - Level 5 Stages"],
+		"requires": "(|Sun Stone:97|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 5 Boss - 98 Sun Stones",
+		"region": "Endless Explosions",
+		"category": ["A5 - Level 5 Stages"],
+		"requires": "(|Sun Stone:98|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 5 Boss - 99 Sun Stones",
+		"region": "Endless Explosions",
+		"category": ["A5 - Level 5 Stages"],
+		"requires": "(|Sun Stone:99|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 5 Boss - 100 Sun Stones",
+		"region": "Endless Explosions",
+		"category": ["A5 - Level 5 Stages"],
+		"requires": "(|Sun Stone:100|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 5 EX Stage",
+		"region": "Endless Explosions",
+		"category": ["A5 - Level 5 Stages"],
+		"requires": "(|Progressive EX Stage Key:5|)",
+		"place_item_category": ["Stages"]
+	},
+	{
+		"name": "Level 6 1st Stage",
+		"region": "Royal Road",
+		"category": ["A6 - Level 6 Stages"],
+		"requires": [],
+		"place_item_category": ["Stages"]
+	},
+	{
+		"name": "Level 6 2nd Stage",
+		"region": "Royal Road",
+		"category": ["A6 - Level 6 Stages"],
+		"requires": [],
+		"place_item_category": ["Stages"]
+	},
+	{
+		"name": "Level 6 3rd Stage",
+		"region": "Royal Road",
+		"category": ["A6 - Level 6 Stages"],
+		"requires": [],
+		"place_item_category": ["Stages"]
+	},
+	{
+		"name": "Level 6 4th Stage",
+		"region": "Royal Road",
+		"category": ["A6 - Level 6 Stages"],
+		"requires": [],
+		"place_item_category": ["Stages"]
+	},
+	{
+		"name": "Level 6 5th Stage",
+		"region": "Royal Road",
+		"category": ["A6 - Level 6 Stages"],
+		"requires": [],
+		"place_item_category": ["Stages"]
+	},
+	{
+		"name": "Level 6 Boss",
+		"region": "Royal Road",
+		"category": ["A6 - Level 6 Stages"],
+		"requires": [],
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 6 Boss - 1 Sun Stone",
+		"region": "Royal Road",
+		"category": ["A6 - Level 6 Stages"],
+		"requires": "(|Sun Stone:1|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 6 Boss - 2 Sun Stones",
+		"region": "Royal Road",
+		"category": ["A6 - Level 6 Stages"],
+		"requires": "(|Sun Stone:2|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 6 Boss - 3 Sun Stones",
+		"region": "Royal Road",
+		"category": ["A6 - Level 6 Stages"],
+		"requires": "(|Sun Stone:3|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 6 Boss - 4 Sun Stones",
+		"region": "Royal Road",
+		"category": ["A6 - Level 6 Stages"],
+		"requires": "(|Sun Stone:4|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 6 Boss - 5 Sun Stones",
+		"region": "Royal Road",
+		"category": ["A6 - Level 6 Stages"],
+		"requires": "(|Sun Stone:5|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 6 Boss - 6 Sun Stones",
+		"region": "Royal Road",
+		"category": ["A6 - Level 6 Stages"],
+		"requires": "(|Sun Stone:6|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 6 Boss - 7 Sun Stones",
+		"region": "Royal Road",
+		"category": ["A6 - Level 6 Stages"],
+		"requires": "(|Sun Stone:7|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 6 Boss - 8 Sun Stones",
+		"region": "Royal Road",
+		"category": ["A6 - Level 6 Stages"],
+		"requires": "(|Sun Stone:8|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 6 Boss - 9 Sun Stones",
+		"region": "Royal Road",
+		"category": ["A6 - Level 6 Stages"],
+		"requires": "(|Sun Stone:9|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 6 Boss - 10 Sun Stones",
+		"region": "Royal Road",
+		"category": ["A6 - Level 6 Stages"],
+		"requires": "(|Sun Stone:10|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 6 Boss - 11 Sun Stones",
+		"region": "Royal Road",
+		"category": ["A6 - Level 6 Stages"],
+		"requires": "(|Sun Stone:11|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 6 Boss - 12 Sun Stones",
+		"region": "Royal Road",
+		"category": ["A6 - Level 6 Stages"],
+		"requires": "(|Sun Stone:12|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 6 Boss - 13 Sun Stones",
+		"region": "Royal Road",
+		"category": ["A6 - Level 6 Stages"],
+		"requires": "(|Sun Stone:13|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 6 Boss - 14 Sun Stones",
+		"region": "Royal Road",
+		"category": ["A6 - Level 6 Stages"],
+		"requires": "(|Sun Stone:14|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 6 Boss - 15 Sun Stones",
+		"region": "Royal Road",
+		"category": ["A6 - Level 6 Stages"],
+		"requires": "(|Sun Stone:15|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 6 Boss - 16 Sun Stones",
+		"region": "Royal Road",
+		"category": ["A6 - Level 6 Stages"],
+		"requires": "(|Sun Stone:16|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 6 Boss - 17 Sun Stones",
+		"region": "Royal Road",
+		"category": ["A6 - Level 6 Stages"],
+		"requires": "(|Sun Stone:17|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 6 Boss - 18 Sun Stones",
+		"region": "Royal Road",
+		"category": ["A6 - Level 6 Stages"],
+		"requires": "(|Sun Stone:18|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 6 Boss - 19 Sun Stones",
+		"region": "Royal Road",
+		"category": ["A6 - Level 6 Stages"],
+		"requires": "(|Sun Stone:19|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 6 Boss - 20 Sun Stones",
+		"region": "Royal Road",
+		"category": ["A6 - Level 6 Stages"],
+		"requires": "(|Sun Stone:20|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 6 Boss - 21 Sun Stones",
+		"region": "Royal Road",
+		"category": ["A6 - Level 6 Stages"],
+		"requires": "(|Sun Stone:21|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 6 Boss - 22 Sun Stones",
+		"region": "Royal Road",
+		"category": ["A6 - Level 6 Stages"],
+		"requires": "(|Sun Stone:22|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 6 Boss - 23 Sun Stones",
+		"region": "Royal Road",
+		"category": ["A6 - Level 6 Stages"],
+		"requires": "(|Sun Stone:23|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 6 Boss - 24 Sun Stones",
+		"region": "Royal Road",
+		"category": ["A6 - Level 6 Stages"],
+		"requires": "(|Sun Stone:24|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 6 Boss - 25 Sun Stones",
+		"region": "Royal Road",
+		"category": ["A6 - Level 6 Stages"],
+		"requires": "(|Sun Stone:25|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 6 Boss - 26 Sun Stones",
+		"region": "Royal Road",
+		"category": ["A6 - Level 6 Stages"],
+		"requires": "(|Sun Stone:26|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 6 Boss - 27 Sun Stones",
+		"region": "Royal Road",
+		"category": ["A6 - Level 6 Stages"],
+		"requires": "(|Sun Stone:27|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 6 Boss - 28 Sun Stones",
+		"region": "Royal Road",
+		"category": ["A6 - Level 6 Stages"],
+		"requires": "(|Sun Stone:28|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 6 Boss - 29 Sun Stones",
+		"region": "Royal Road",
+		"category": ["A6 - Level 6 Stages"],
+		"requires": "(|Sun Stone:29|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 6 Boss - 30 Sun Stones",
+		"region": "Royal Road",
+		"category": ["A6 - Level 6 Stages"],
+		"requires": "(|Sun Stone:30|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 6 Boss - 31 Sun Stones",
+		"region": "Royal Road",
+		"category": ["A6 - Level 6 Stages"],
+		"requires": "(|Sun Stone:31|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 6 Boss - 32 Sun Stones",
+		"region": "Royal Road",
+		"category": ["A6 - Level 6 Stages"],
+		"requires": "(|Sun Stone:32|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 6 Boss - 33 Sun Stones",
+		"region": "Royal Road",
+		"category": ["A6 - Level 6 Stages"],
+		"requires": "(|Sun Stone:33|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 6 Boss - 34 Sun Stones",
+		"region": "Royal Road",
+		"category": ["A6 - Level 6 Stages"],
+		"requires": "(|Sun Stone:34|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 6 Boss - 35 Sun Stones",
+		"region": "Royal Road",
+		"category": ["A6 - Level 6 Stages"],
+		"requires": "(|Sun Stone:35|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 6 Boss - 36 Sun Stones",
+		"region": "Royal Road",
+		"category": ["A6 - Level 6 Stages"],
+		"requires": "(|Sun Stone:36|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 6 Boss - 37 Sun Stones",
+		"region": "Royal Road",
+		"category": ["A6 - Level 6 Stages"],
+		"requires": "(|Sun Stone:37|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 6 Boss - 38 Sun Stones",
+		"region": "Royal Road",
+		"category": ["A6 - Level 6 Stages"],
+		"requires": "(|Sun Stone:38|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 6 Boss - 39 Sun Stones",
+		"region": "Royal Road",
+		"category": ["A6 - Level 6 Stages"],
+		"requires": "(|Sun Stone:39|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 6 Boss - 40 Sun Stones",
+		"region": "Royal Road",
+		"category": ["A6 - Level 6 Stages"],
+		"requires": "(|Sun Stone:40|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 6 Boss - 41 Sun Stones",
+		"region": "Royal Road",
+		"category": ["A6 - Level 6 Stages"],
+		"requires": "(|Sun Stone:41|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 6 Boss - 42 Sun Stones",
+		"region": "Royal Road",
+		"category": ["A6 - Level 6 Stages"],
+		"requires": "(|Sun Stone:42|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 6 Boss - 43 Sun Stones",
+		"region": "Royal Road",
+		"category": ["A6 - Level 6 Stages"],
+		"requires": "(|Sun Stone:43|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 6 Boss - 44 Sun Stones",
+		"region": "Royal Road",
+		"category": ["A6 - Level 6 Stages"],
+		"requires": "(|Sun Stone:44|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 6 Boss - 45 Sun Stones",
+		"region": "Royal Road",
+		"category": ["A6 - Level 6 Stages"],
+		"requires": "(|Sun Stone:45|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 6 Boss - 46 Sun Stones",
+		"region": "Royal Road",
+		"category": ["A6 - Level 6 Stages"],
+		"requires": "(|Sun Stone:46|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 6 Boss - 47 Sun Stones",
+		"region": "Royal Road",
+		"category": ["A6 - Level 6 Stages"],
+		"requires": "(|Sun Stone:47|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 6 Boss - 48 Sun Stones",
+		"region": "Royal Road",
+		"category": ["A6 - Level 6 Stages"],
+		"requires": "(|Sun Stone:48|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 6 Boss - 49 Sun Stones",
+		"region": "Royal Road",
+		"category": ["A6 - Level 6 Stages"],
+		"requires": "(|Sun Stone:49|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 6 Boss - 50 Sun Stones",
+		"region": "Royal Road",
+		"category": ["A6 - Level 6 Stages"],
+		"requires": "(|Sun Stone:50|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 6 Boss - 51 Sun Stones",
+		"region": "Royal Road",
+		"category": ["A6 - Level 6 Stages"],
+		"requires": "(|Sun Stone:51|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 6 Boss - 52 Sun Stones",
+		"region": "Royal Road",
+		"category": ["A6 - Level 6 Stages"],
+		"requires": "(|Sun Stone:52|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 6 Boss - 53 Sun Stones",
+		"region": "Royal Road",
+		"category": ["A6 - Level 6 Stages"],
+		"requires": "(|Sun Stone:53|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 6 Boss - 54 Sun Stones",
+		"region": "Royal Road",
+		"category": ["A6 - Level 6 Stages"],
+		"requires": "(|Sun Stone:54|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 6 Boss - 55 Sun Stones",
+		"region": "Royal Road",
+		"category": ["A6 - Level 6 Stages"],
+		"requires": "(|Sun Stone:55|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 6 Boss - 56 Sun Stones",
+		"region": "Royal Road",
+		"category": ["A6 - Level 6 Stages"],
+		"requires": "(|Sun Stone:56|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 6 Boss - 57 Sun Stones",
+		"region": "Royal Road",
+		"category": ["A6 - Level 6 Stages"],
+		"requires": "(|Sun Stone:57|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 6 Boss - 58 Sun Stones",
+		"region": "Royal Road",
+		"category": ["A6 - Level 6 Stages"],
+		"requires": "(|Sun Stone:58|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 6 Boss - 59 Sun Stones",
+		"region": "Royal Road",
+		"category": ["A6 - Level 6 Stages"],
+		"requires": "(|Sun Stone:59|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 6 Boss - 60 Sun Stones",
+		"region": "Royal Road",
+		"category": ["A6 - Level 6 Stages"],
+		"requires": "(|Sun Stone:60|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 6 Boss - 61 Sun Stones",
+		"region": "Royal Road",
+		"category": ["A6 - Level 6 Stages"],
+		"requires": "(|Sun Stone:61|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 6 Boss - 62 Sun Stones",
+		"region": "Royal Road",
+		"category": ["A6 - Level 6 Stages"],
+		"requires": "(|Sun Stone:62|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 6 Boss - 63 Sun Stones",
+		"region": "Royal Road",
+		"category": ["A6 - Level 6 Stages"],
+		"requires": "(|Sun Stone:63|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 6 Boss - 64 Sun Stones",
+		"region": "Royal Road",
+		"category": ["A6 - Level 6 Stages"],
+		"requires": "(|Sun Stone:64|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 6 Boss - 65 Sun Stones",
+		"region": "Royal Road",
+		"category": ["A6 - Level 6 Stages"],
+		"requires": "(|Sun Stone:65|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 6 Boss - 66 Sun Stones",
+		"region": "Royal Road",
+		"category": ["A6 - Level 6 Stages"],
+		"requires": "(|Sun Stone:66|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 6 Boss - 67 Sun Stones",
+		"region": "Royal Road",
+		"category": ["A6 - Level 6 Stages"],
+		"requires": "(|Sun Stone:67|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 6 Boss - 68 Sun Stones",
+		"region": "Royal Road",
+		"category": ["A6 - Level 6 Stages"],
+		"requires": "(|Sun Stone:68|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 6 Boss - 69 Sun Stones",
+		"region": "Royal Road",
+		"category": ["A6 - Level 6 Stages"],
+		"requires": "(|Sun Stone:69|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 6 Boss - 70 Sun Stones",
+		"region": "Royal Road",
+		"category": ["A6 - Level 6 Stages"],
+		"requires": "(|Sun Stone:70|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 6 Boss - 71 Sun Stones",
+		"region": "Royal Road",
+		"category": ["A6 - Level 6 Stages"],
+		"requires": "(|Sun Stone:71|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 6 Boss - 72 Sun Stones",
+		"region": "Royal Road",
+		"category": ["A6 - Level 6 Stages"],
+		"requires": "(|Sun Stone:72|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 6 Boss - 73 Sun Stones",
+		"region": "Royal Road",
+		"category": ["A6 - Level 6 Stages"],
+		"requires": "(|Sun Stone:73|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 6 Boss - 74 Sun Stones",
+		"region": "Royal Road",
+		"category": ["A6 - Level 6 Stages"],
+		"requires": "(|Sun Stone:74|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 6 Boss - 75 Sun Stones",
+		"region": "Royal Road",
+		"category": ["A6 - Level 6 Stages"],
+		"requires": "(|Sun Stone:75|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 6 Boss - 76 Sun Stones",
+		"region": "Royal Road",
+		"category": ["A6 - Level 6 Stages"],
+		"requires": "(|Sun Stone:76|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 6 Boss - 77 Sun Stones",
+		"region": "Royal Road",
+		"category": ["A6 - Level 6 Stages"],
+		"requires": "(|Sun Stone:77|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 6 Boss - 78 Sun Stones",
+		"region": "Royal Road",
+		"category": ["A6 - Level 6 Stages"],
+		"requires": "(|Sun Stone:78|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 6 Boss - 79 Sun Stones",
+		"region": "Royal Road",
+		"category": ["A6 - Level 6 Stages"],
+		"requires": "(|Sun Stone:79|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 6 Boss - 80 Sun Stones",
+		"region": "Royal Road",
+		"category": ["A6 - Level 6 Stages"],
+		"requires": "(|Sun Stone:80|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 6 Boss - 81 Sun Stones",
+		"region": "Royal Road",
+		"category": ["A6 - Level 6 Stages"],
+		"requires": "(|Sun Stone:81|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 6 Boss - 82 Sun Stones",
+		"region": "Royal Road",
+		"category": ["A6 - Level 6 Stages"],
+		"requires": "(|Sun Stone:82|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 6 Boss - 83 Sun Stones",
+		"region": "Royal Road",
+		"category": ["A6 - Level 6 Stages"],
+		"requires": "(|Sun Stone:83|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 6 Boss - 84 Sun Stones",
+		"region": "Royal Road",
+		"category": ["A6 - Level 6 Stages"],
+		"requires": "(|Sun Stone:84|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 6 Boss - 85 Sun Stones",
+		"region": "Royal Road",
+		"category": ["A6 - Level 6 Stages"],
+		"requires": "(|Sun Stone:85|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 6 Boss - 86 Sun Stones",
+		"region": "Royal Road",
+		"category": ["A6 - Level 6 Stages"],
+		"requires": "(|Sun Stone:86|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 6 Boss - 87 Sun Stones",
+		"region": "Royal Road",
+		"category": ["A6 - Level 6 Stages"],
+		"requires": "(|Sun Stone:87|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 6 Boss - 88 Sun Stones",
+		"region": "Royal Road",
+		"category": ["A6 - Level 6 Stages"],
+		"requires": "(|Sun Stone:88|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 6 Boss - 89 Sun Stones",
+		"region": "Royal Road",
+		"category": ["A6 - Level 6 Stages"],
+		"requires": "(|Sun Stone:89|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 6 Boss - 90 Sun Stones",
+		"region": "Royal Road",
+		"category": ["A6 - Level 6 Stages"],
+		"requires": "(|Sun Stone:90|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 6 Boss - 91 Sun Stones",
+		"region": "Royal Road",
+		"category": ["A6 - Level 6 Stages"],
+		"requires": "(|Sun Stone:91|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 6 Boss - 92 Sun Stones",
+		"region": "Royal Road",
+		"category": ["A6 - Level 6 Stages"],
+		"requires": "(|Sun Stone:92|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 6 Boss - 93 Sun Stones",
+		"region": "Royal Road",
+		"category": ["A6 - Level 6 Stages"],
+		"requires": "(|Sun Stone:93|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 6 Boss - 94 Sun Stones",
+		"region": "Royal Road",
+		"category": ["A6 - Level 6 Stages"],
+		"requires": "(|Sun Stone:94|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 6 Boss - 95 Sun Stones",
+		"region": "Royal Road",
+		"category": ["A6 - Level 6 Stages"],
+		"requires": "(|Sun Stone:95|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 6 Boss - 96 Sun Stones",
+		"region": "Royal Road",
+		"category": ["A6 - Level 6 Stages"],
+		"requires": "(|Sun Stone:96|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 6 Boss - 97 Sun Stones",
+		"region": "Royal Road",
+		"category": ["A6 - Level 6 Stages"],
+		"requires": "(|Sun Stone:97|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 6 Boss - 98 Sun Stones",
+		"region": "Royal Road",
+		"category": ["A6 - Level 6 Stages"],
+		"requires": "(|Sun Stone:98|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 6 Boss - 99 Sun Stones",
+		"region": "Royal Road",
+		"category": ["A6 - Level 6 Stages"],
+		"requires": "(|Sun Stone:99|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 6 Boss - 100 Sun Stones",
+		"region": "Royal Road",
+		"category": ["A6 - Level 6 Stages"],
+		"requires": "(|Sun Stone:100|)",
+		"place_item_category": ["Bosses"]
+	},
+	{
+		"name": "Level 6 1st EX Stage",
+		"region": "Royal Road",
+		"category": ["A6 - Level 6 Stages"],
+		"requires": "(|Progressive EX Stage Key:6|)",
+		"place_item_category": ["Stages"]
+	},
+	{
+		"name": "Level 6 2nd EX Stage",
+		"region": "Royal Road",
+		"category": ["A6 - Level 6 Stages"],
+		"requires": "(|Progressive EX Stage Key:6|)",
+		"place_item_category": ["Stages"]
+	},
+	{
+		"name": "FiFi Stage 1 - Sun Stone 1",
+		"region": "Fine Fields Stage 1",
+		"category": ["B1 - Fine Fields Stage 1"],
+		"requires": []
+	},
+	{
+		"name": "FiFi Stage 1 - Sun Stone 2",
+		"region": "Fine Fields Stage 1",
+		"category": ["B1 - Fine Fields Stage 1"],
+		"requires": []
+	},
+	{
+		"name": "FiFi Stage 1 - Keychain Under Crate",
+		"region": "Fine Fields Stage 1",
+		"category": ["B1 - Fine Fields Stage 1","Keychains"],
+		"requires": []
+	},
+	{
+		"name": "FiFi Stage 1 - Keychain in Grass",
+		"region": "Fine Fields Stage 1",
+		"category": ["B1 - Fine Fields Stage 1","Keychains"],
+		"requires": "(|Archer| AND |@Archer Access:1|) OR (|Beetle| AND |@Beetle Access:1|) OR (|Circus| AND |@Circus Access:1|) OR (|Cutter| AND |@Cutter Access:1|) OR (|Fighter| AND |@Fighter Access:1|) OR |Fire| OR (|Hammer| AND |@Hammer Access:1|) OR (|Leaf| AND |@Leaf Access:1|) OR (|Ninja| AND |@Ninja Access:1|) OR (|Spear| AND |@Spear Access:1|) OR |Sword| OR (|Wing| AND |@Wing Access:1|)"
+	},
+	{
+		"name": "FiFi Stage 1 - Rare Keychain in Hypernova Segment",
+		"region": "Fine Fields Stage 1",
+		"category": ["B1 - Fine Fields Stage 1","Keychains"],
+		"requires": []
+	},
+	{
+		"name": "FiFi Stage 2 - Sun Stone 1",
+		"region": "Fine Fields Stage 2",
+		"category": ["B2 - Fine Fields Stage 2"],
+		"requires": []
+	},
+	{
+		"name": "FiFi Stage 2 - Sun Stone 2",
+		"region": "Fine Fields Stage 2",
+		"category": ["B2 - Fine Fields Stage 2"],
+		"requires": []
+	},
+	{
+		"name": "FiFi Stage 2 - Sun Stone 3",
+		"region": "Fine Fields Stage 2",
+		"category": ["B2 - Fine Fields Stage 2"],
+		"requires": []
+	},
+	{
+		"name": "FiFi Stage 2 - Keychain Above Shotzo",
+		"region": "Fine Fields Stage 2",
+		"category": ["B2 - Fine Fields Stage 2","Keychains"],
+		"requires": []
+	},
+	{
+		"name": "FiFi Stage 2 - Keychain Behind Bronto Burt",
+		"region": "Fine Fields Stage 2",
+		"category": ["B2 - Fine Fields Stage 2","Keychains"],
+		"requires": []
+	},
+	{
+		"name": "FiFi Stage 2 - Keychain Above Blade Knight",
+		"region": "Fine Fields Stage 2",
+		"category": ["B2 - Fine Fields Stage 2","Keychains"],
+		"requires": []
+	},
+	{
+		"name": "FiFi Stage 2 - Rare Keychain Above Goal Door",
+		"region": "Fine Fields Stage 2",
+		"category": ["B2 - Fine Fields Stage 2","Keychains"],
+		"requires": []
+	},
+	{
+		"name": "FiFi Stage 3 - Sun Stone 1",
+		"region": "Fine Fields Stage 3",
+		"category": ["B3 - Fine Fields Stage 3"],
+		"requires": []
+	},
+	{
+		"name": "FiFi Stage 3 - Sun Stone 2",
+		"region": "Fine Fields Stage 3",
+		"category": ["B3 - Fine Fields Stage 3"],
+		"requires": "(|Circus| AND |@Circus Access:1|) OR (|Fighter| AND (|@Fighter Access:1| OR (|Archer| AND |@Archer Access:1|) OR (|Beetle| AND |@Beetle Access:1|) OR |Cutter| OR (|Leaf| AND |@Leaf Access:1|) OR (|Ninja| AND |@Ninja Access:1|) OR (|Spear| AND |@Spear Access:1|) OR |Sword| OR (|Wing| AND |@Wing Access:1|))) OR |Fire| OR (|Hammer| AND |@Hammer Access:1|)"
+	},
+	{
+		"name": "FiFi Stage 3 - Sun Stone 3",
+		"region": "Fine Fields Stage 3",
+		"category": ["B3 - Fine Fields Stage 3"],
+		"requires": []
+	},
+	{
+		"name": "FiFi Stage 3 - Sun Stone 4",
+		"region": "Fine Fields Stage 3",
+		"category": ["B3 - Fine Fields Stage 3"],
+		"requires": []
+	},
+	{
+		"name": "FiFi Stage 3 - Rare Keychain Above Sir Kibble",
+		"region": "Fine Fields Stage 3",
+		"category": ["B3 - Fine Fields Stage 3","Keychains"],
+		"requires": "(|Archer| AND |@Archer Access:1|) OR (|Beetle| AND |@Beetle Access:1|) OR (|Circus| AND |@Circus Access:1|) OR |Cutter| OR (|Fighter| AND |@Fighter Access:1|) OR |Fire| OR (|Hammer| AND |@Hammer Access:1|) OR (|Leaf| AND |@Leaf Access:1|) OR (|Ninja| AND |@Ninja Access:1|) OR (|Spear| AND |@Spear Access:1|) OR |Sword| OR (|Wing| AND |@Wing Access:1|)"
+	},
+	{
+		"name": "FiFi Stage 3 - Keychain in HAL Room",
+		"region": "Fine Fields Stage 3",
+		"category": ["B3 - Fine Fields Stage 3","Keychains"],
+		"requires": "(|Archer| AND |@Archer Access:1|) OR (|Beetle| AND |@Beetle Access:1|) OR (|Circus| AND |@Circus Access:1|) OR |Cutter| OR (|Fighter| AND |@Fighter Access:1|) OR |Fire| OR (|Hammer| AND |@Hammer Access:1|) OR (|Leaf| AND |@Leaf Access:1|) OR (|Ninja| AND |@Ninja Access:1|) OR (|Spear| AND |@Spear Access:1|) OR |Sword| OR (|Wing| AND |@Wing Access:1|)"
+	},
+	{
+		"name": "FiFi Stage 3 - Keychain in Boulder Area",
+		"region": "Fine Fields Stage 3",
+		"category": ["B3 - Fine Fields Stage 3","Keychains"],
+		"requires": "(|Archer| AND |@Archer Access:1|) OR (|Beetle| AND |@Beetle Access:1|) OR (|Circus| AND |@Circus Access:1|) OR |Cutter| OR (|Fighter| AND |@Fighter Access:1|) OR |Fire| OR (|Hammer| AND |@Hammer Access:1|) OR (|Leaf| AND |@Leaf Access:1|) OR (|Ninja| AND |@Ninja Access:1|) OR (|Spear| AND |@Spear Access:1|) OR |Sword| OR (|Wing| AND |@Wing Access:1|)"
+	},
+	{
+		"name": "FiFi Stage 3 - Keychain in Hypernova Segment",
+		"region": "Fine Fields Stage 3",
+		"category": ["B3 - Fine Fields Stage 3","Keychains"],
+		"requires": []
+	},
+	{
+		"name": "FiFi Stage 4 - Sun Stone 1",
+		"region": "Fine Fields Stage 4",
+		"category": ["B4 - Fine Fields Stage 4"],
+		"requires": []
+	},
+	{
+		"name": "FiFi Stage 4 - Sun Stone 2",
+		"region": "Fine Fields Stage 4",
+		"category": ["B4 - Fine Fields Stage 4"],
+		"requires": []
+	},
+	{
+		"name": "FiFi Stage 4 - Sun Stone 3",
+		"region": "Fine Fields Stage 4",
+		"category": ["B4 - Fine Fields Stage 4"],
+		"requires": []
+	},
+	{
+		"name": "FiFi Stage 4 - Keychain Behind Beetley",
+		"region": "Fine Fields Stage 4",
+		"category": ["B4 - Fine Fields Stage 4","Keychains"],
+		"requires": []
+	},
+	{
+		"name": "FiFi Stage 4 - Rare Keychain in Crevice Near Door",
+		"region": "Fine Fields Stage 4",
+		"category": ["B4 - Fine Fields Stage 4","Keychains"],
+		"requires": []
+	},
+	{
+		"name": "FiFi Stage 4 - Keychain Between Gordos",
+		"region": "Fine Fields Stage 4",
+		"category": ["B4 - Fine Fields Stage 4","Keychains"],
+		"requires": []
+	},
+	{
+		"name": "FiFi Stage 4 - Keychain Below Blade Knight",
+		"region": "Fine Fields Stage 4",
+		"category": ["B4 - Fine Fields Stage 4","Keychains"],
+		"requires": "(|Archer| AND |@Archer Access:1|) OR |Beam| OR |Beetle| OR |Bell| OR (|Bomb| AND |@Bomb Access:1|) OR (|Circus| AND |@Circus Access:1|) OR |Cutter| OR (|Fighter| AND |@Fighter Access:1|) OR |Fire| OR (|Hammer| AND |@Hammer Access:1|) OR (|Ice| AND |@Ice Access:1|) OR (|Leaf| AND |@Leaf Access:1|) OR |Needle| OR (|Ninja| AND |@Ninja Access:1|) OR (|Parasol| AND |@Parasol Access:1|) OR |Spark| OR (|Spear| AND |@Spear Access:1|) OR (|Stone| AND |@Stone Access:1|) OR |Sword| OR (|Wheel| AND |@Wheel Access:1|) OR (|Whip| AND |@Whip Access:1|) OR (|Wing| AND |@Wing Access:1|)"
+	},
+	{
+		"name": "VS Flowery Woods - Grand Sun Stone",
+		"region": "Fine Fields Boss",
+		"category": ["H1 - Boss Clears"],
+		"requires": []
+	},
+	{
+		"name": "FiFi Stage EX - Sun Stone",
+		"region": "Fine Fields Stage EX",
+		"category": ["B5 - Fine Fields Stage EX"],
+		"requires": []
+	},
+	{
+		"name": "FiFi Stage EX - Keychain in Tilt Cannon Area",
+		"region": "Fine Fields Stage EX",
+		"category": ["B5 - Fine Fields Stage EX","Keychains"],
+		"requires": []
+	},
+	{
+		"name": "FiFi Stage EX - Rare Keychain Below Grandy",
+		"region": "Fine Fields Stage EX",
+		"category": ["B5 - Fine Fields Stage EX","Keychains"],
+		"requires": []
+	},
+	{
+		"name": "FiFi Stage EX - Keychain Below Door",
+		"region": "Fine Fields Stage EX",
+		"category": ["B5 - Fine Fields Stage EX","Keychains"],
+		"requires": []
+	},
+	{
+		"name": "FiFi Stage EX - Keychain Below Beetley",
+		"region": "Fine Fields Stage EX",
+		"category": ["B5 - Fine Fields Stage EX","Keychains"],
+		"requires": []
+	},
+	{
+		"name": "LoLa Stage 1 - Sun Stone 1",
+		"region": "Lollipop Land Stage 1",
+		"category": ["C1 - Lollipop Land Stage 1"],
+		"requires": []
+	},
+	{
+		"name": "LoLa Stage 1 - Sun Stone 2",
+		"region": "Lollipop Land Stage 1",
+		"category": ["C1 - Lollipop Land Stage 1"],
+		"requires": "(|Beetle| AND |@Beetle Access:1|) OR (|Fighter| AND (|@Fighter Access:1| OR (|Fine Fields Stage 3| AND ((|Archer| AND |@Archer Access:1|) OR (|Circus| AND |@Circus Access:1|) OR |Cutter| OR (|Leaf| AND |@Leaf Access:1|) OR (|Ninja| AND |@Ninja Access:1|) OR (|Spear| AND |@Spear Access:1|) OR |Sword|)))) OR |Fire| OR (|Hammer| AND |@Hammer Access:1|) OR |Parasol| OR |Wheel| OR (|Wing| AND (|@Wing Access:1| OR (|Fine Fields Stage 3| AND ((|Archer| AND |@Archer Access:1|) OR (|Circus| AND |@Circus Access:1|) OR |Cutter| OR (|Leaf| AND |@Leaf Access:1|) OR (|Ninja| AND |@Ninja Access:1|) OR (|Spear| AND |@Spear Access:1|) OR |Sword|)))"
+	},
+	{
+		"name": "LoLa Stage 1 - Sun Stone 3",
+		"region": "Lollipop Land Stage 1",
+		"category": ["C1 - Lollipop Land Stage 1"],
+		"requires": []
+	},
+	{
+		"name": "LoLa Stage 1 - Keychain in First Lollipop Tank Area",
+		"region": "Lollipop Land Stage 1",
+		"category": ["C1 - Lollipop Land Stage 1","Keychains"],
+		"requires": []
+	},
+	{
+		"name": "LoLa Stage 1 - Rare Keychain Before Hot Head",
+		"region": "Lollipop Land Stage 1",
+		"category": ["C1 - Lollipop Land Stage 1","Keychains"],
+		"requires": []
+	},
+	{
+		"name": "LoLa Stage 1 - Keychain in Crate Above Sparky",
+		"region": "Lollipop Land Stage 1",
+		"category": ["C1 - Lollipop Land Stage 1","Keychains"],
+		"requires": []
+	},
+	{
+		"name": "LoLa Stage 2 - Sun Stone 1",
+		"region": "Lollipop Land Stage 2",
+		"category": ["C2 - Lollipop Land Stage 2"],
+		"requires": "|Archer| OR (|Beetle| AND |@Beetle Access:1|) OR |Cutter| OR (|Leaf| AND (|@Leaf Access:1| OR (|Fine Fields Stage 3| AND ((|Circus| AND |@Circus Access:1|) OR (|Fighter| AND |@Fighter Access:1|) OR (|Fire| AND |@Fire Access:1|) OR (|Hammer| AND |@Hammer Access:1|))))) OR (|Ninja| AND |@Ninja Access:1|) OR |Spear| OR (|Sword| AND |@Sword Access:1|) OR (|Wing| AND (|@Wing Access:1| OR (|Fine Fields Stage 3| AND ((|Circus| AND |@Circus Access:1|) OR (|Fighter| AND |@Fighter Access:1|) OR (|Fire| AND |@Fire Access:1|) OR (|Hammer| AND |@Hammer Access:1|)))))"
+	},
+	{
+		"name": "LoLa Stage 2 - Sun Stone 2",
+		"region": "Lollipop Land Stage 2",
+		"category": ["C2 - Lollipop Land Stage 2"],
+		"requires": []
+	},
+	{
+		"name": "LoLa Stage 2 - Sun Stone 3",
+		"region": "Lollipop Land Stage 2",
+		"category": ["C2 - Lollipop Land Stage 2"],
+		"requires": []
+	},
+	{
+		"name": "LoLa Stage 2 - Sun Stone 4",
+		"region": "Lollipop Land Stage 2",
+		"category": ["C2 - Lollipop Land Stage 2"],
+		"requires": []
+	},
+	{
+		"name": "LoLa Stage 2 - Keychain Behind Lanzer",
+		"region": "Lollipop Land Stage 2",
+		"category": ["C2 - Lollipop Land Stage 2","Keychains"],
+		"requires": []
+	},
+	{
+		"name": "LoLa Stage 2 - Keychain Below Craby",
+		"region": "Lollipop Land Stage 2",
+		"category": ["C2 - Lollipop Land Stage 2","Keychains"],
+		"requires": []
+	},
+	{
+		"name": "LoLa Stage 2 - Rare Keychain Above Rope Platform",
+		"region": "Lollipop Land Stage 2",
+		"category": ["C2 - Lollipop Land Stage 2","Keychains"],
+		"requires": "|Archer| OR (|Beetle| AND |@Beetle Access:1|) OR |Cutter| OR (|Fighter| AND (|@Fighter Access:1| OR (|Circus| AND |@Circus Access:1| AND |Fine Fields Stage 3|))) OR (|Fire| AND |@Fire Access:1|) OR (|Hammer| AND |@Hammer Access:1|) OR (|Leaf| AND (|@Leaf Access:1| OR (|Circus| AND |@Circus Access:1| AND |Fine Fields Stage 3|))) OR (|Ninja| AND |@Ninja Access:1|) OR (|Parasol| AND |@Parasol Access:1|) OR |Spear| OR (|Stone| AND |@Stone Access:1|) OR (|Sword| AND |@Sword Access:1|) OR (|Wheel| AND (|@Wheel Access:1| OR (|Circus| AND |@Circus Access:1| AND |Fine Fields Stage 3|))) OR (|Wing| AND (|@Wing Access:1| OR (|Circus| AND |@Circus Access:1| AND |Fine Fields Stage 3|)))"
+	},
+	{
+		"name": "LoLa Stage 2 - Keychain in Hypernova Segment",
+		"region": "Lollipop Land Stage 2",
+		"category": ["C2 - Lollipop Land Stage 2","Keychains"],
+		"requires": []
+	},
+	{
+		"name": "LoLa Stage 3 - Sun Stone 1",
+		"region": "Lollipop Land Stage 3",
+		"category": ["C3 - Lollipop Land Stage 3"],
+		"requires": []
+	},
+	{
+		"name": "LoLa Stage 3 - Sun Stone 2",
+		"region": "Lollipop Land Stage 3",
+		"category": ["C3 - Lollipop Land Stage 3"],
+		"requires": []
+	},
+	{
+		"name": "LoLa Stage 3 - Sun Stone 3",
+		"region": "Lollipop Land Stage 3",
+		"category": ["C3 - Lollipop Land Stage 3"],
+		"requires": []
+	},
+	{
+		"name": "LoLa Stage 3 - Keychain Above Poppy Bros. Jr.",
+		"region": "Lollipop Land Stage 3",
+		"category": ["C3 - Lollipop Land Stage 3","Keychains"],
+		"requires": []
+	},
+	{
+		"name": "LoLa Stage 3 - Keychain Behind Spynum",
+		"region": "Lollipop Land Stage 3",
+		"category": ["C3 - Lollipop Land Stage 3","Keychains"],
+		"requires": []
+	},
+	{
+		"name": "LoLa Stage 3 - Rare Keychain Above Goal Door",
+		"region": "Lollipop Land Stage 3",
+		"category": ["C3 - Lollipop Land Stage 3","Keychains"],
+		"requires": "|Archer| OR |Beam| OR (|Beetle| AND |@Beetle Access:1|) OR (|Bell| AND |@Bell Access:1|) OR |Bomb| OR (|Circus| AND |@Circus Access:1|) OR (|Cutter| AND |@Cutter Access:1|) OR (|Fighter| AND |@Fighter Access:1|) OR |Fire| OR (|Hammer| AND |@Hammer Access:1|) OR |Ice| OR (|Leaf| AND |@Leaf Access:1|) OR (|Needle| AND |@Needle Access:1|) OR |Ninja| OR (|Parasol| AND |@Parasol Access:1|) OR |Spark| OR |Spear| OR (|Stone| AND |@Stone Access:1|) OR |Sword| OR (|Wheel| AND |@Wheel Access:1|) OR |Whip| OR (|Wing| AND |@Wing Access:1|)"
+	},
+	{
+		"name": "LoLa Stage 4 - Sun Stone 1",
+		"region": "Lollipop Land Stage 4",
+		"category": ["C4 - Lollipop Land Stage 4"],
+		"requires": []
+	},
+	{
+		"name": "LoLa Stage 4 - Sun Stone 2",
+		"region": "Lollipop Land Stage 4",
+		"category": ["C4 - Lollipop Land Stage 4"],
+		"requires": []
+	},
+	{
+		"name": "LoLa Stage 4 - Sun Stone 3",
+		"region": "Lollipop Land Stage 4",
+		"category": ["C4 - Lollipop Land Stage 4"],
+		"requires": []
+	},
+	{
+		"name": "LoLa Stage 4 - Keychain Above Poppy Bros. Jr.",
+		"region": "Lollipop Land Stage 4",
+		"category": ["C4 - Lollipop Land Stage 4","Keychains"],
+		"requires": []
+	},
+	{
+		"name": "LoLa Stage 4 - Keychain in Nidoo Room",
+		"region": "Lollipop Land Stage 4",
+		"category": ["C4 - Lollipop Land Stage 4","Keychains"],
+		"requires": []
+	},
+	{
+		"name": "LoLa Stage 4 - Keychain Below Scarfy",
+		"region": "Lollipop Land Stage 4",
+		"category": ["C4 - Lollipop Land Stage 4","Keychains"],
+		"requires": []
+	},
+	{
+		"name": "LoLa Stage 4 - Rare Keychain Above Goal Door",
+		"region": "Lollipop Land Stage 4",
+		"category": ["C4 - Lollipop Land Stage 4","Keychains"],
+		"requires": []
+	},
+	{
+		"name": "VS Paintra - Grand Sun Stone",
+		"region": "Lollipop Land Boss",
+		"category": ["H1 - Boss Clears"],
+		"requires": []
+	},
+	{
+		"name": "LoLa Stage EX - Sun Stone",
+		"region": "Lollipop Land Stage EX",
+		"category": ["C5 - Lollipop Land Stage EX"],
+		"requires": []
+	},
+	{
+		"name": "LoLa Stage EX - Keychain Behind Bomb Blocks",
+		"region": "Lollipop Land Stage EX",
+		"category": ["C5 - Lollipop Land Stage EX","Keychains"],
+		"requires": "(|Beetle| AND |@Beetle Access:1|) OR (|Cutter| AND |@Cutter Access:1|) OR |Fighter| OR |Fire| OR (|Hammer| AND |@Hammer Access:1|) OR |Parasol| OR (|Sword| AND |@Sword Access:1|) OR |Wheel| OR (|Wing| AND (|@Wing Access:1| OR (|Circus| AND |@Circus Access:1| AND |Fine Fields Stage 3|)))"
+	},
+	{
+		"name": "LoLa Stage EX - Rare Keychain Behind Key Gate",
+		"region": "Lollipop Land Stage EX",
+		"category": ["C5 - Lollipop Land Stage EX","Keychains"],
+		"requires": []
+	},
+	{
+		"name": "LoLa Stage EX - Keychain in Key Dee Room",
+		"region": "Lollipop Land Stage EX",
+		"category": ["C5 - Lollipop Land Stage EX","Keychains"],
+		"requires": []
+	},
+	{
+		"name": "OlOd Stage 1 - Sun Stone 1",
+		"region": "Old Odyssey Stage 1",
+		"category": ["D1 - Old Odyssey Stage 1"],
+		"requires": []
+	},
+	{
+		"name": "OlOd Stage 1 - Sun Stone 2",
+		"region": "Old Odyssey Stage 1",
+		"category": ["D1 - Old Odyssey Stage 1"],
+		"requires": []
+	},
+	{
+		"name": "OlOd Stage 1 - Sun Stone 3",
+		"region": "Old Odyssey Stage 1",
+		"category": ["D1 - Old Odyssey Stage 1"],
+		"requires": []
+	},
+	{
+		"name": "OlOd Stage 1 - Keychain in First Waddle Dee Train Area",
+		"region": "Old Odyssey Stage 1",
+		"category": ["D1 - Old Odyssey Stage 1","Keychains"],
+		"requires": []
+	},
+	{
+		"name": "OlOd Stage 1 - Rare Keychain in Pizza Crevice",
+		"region": "Old Odyssey Stage 1",
+		"category": ["D1 - Old Odyssey Stage 1","Keychains"],
+		"requires": "|Archer| OR (|Beam| AND |@Beam Access:1|) OR (|Beetle| AND |@Beetle Access:1|) OR |Bell| OR (|Bomb| AND |@Bomb Access:1|) OR (|Circus| AND |@Circus Access:1|) OR (|Crash| AND |@Crash Access:1|) OR |Cutter| OR (|Fighter| AND |@Fighter Access:1|) OR (|Fire| AND |@Fire Access:1|) OR (|Hammer| AND |@Hammer Access:1|) OR (|Ice| AND |@Ice Access:1|) OR |Leaf| OR (|Mike| AND |@Mike Access:1|) OR (|Needle| AND |@Needle Access:1|) OR (|Ninja| AND |@Ninja Access:1|) OR |Parasol| OR (|Spark| AND |@Spark Access:1|) OR (|Spear| AND |@Spear Access:1|) OR |Stone| OR |Sword| OR (|Wheel| AND |@Wheel Access:1|) OR (|Whip| AND |@Whip Access:1|) OR (|Wing| AND |@Wing Access:1|)"
+	},
+	{
+		"name": "OlOd Stage 1 - Keychain in Hypernova Segment",
+		"region": "Old Odyssey Stage 1",
+		"category": ["D1 - Old Odyssey Stage 1","Keychains"],
+		"requires": []
+	},
+	{
+		"name": "OlOd Stage 2 - Sun Stone 1",
+		"region": "Old Odyssey Stage 2",
+		"category": ["D2 - Old Odyssey Stage 2"],
+		"requires": "|Archer| OR |Beam| OR (|Beetle| AND |@Beetle Access:1|) OR (|Bell| AND |@Bell Access:1|) OR |Bomb| OR (|Circus| AND |@Circus Access:1|) OR (|Crash| AND |@Crash Access:1|) OR |Cutter| OR |Fighter| OR (|Fire| AND |@Fire Access:1|) OR |Hammer| OR (|Ice| AND |@Ice Access:1|) OR (|Leaf| AND |@Leaf Access:1|) OR |Mike| OR |Needle| OR (|Ninja| AND |@Ninja Access:1|) OR (|Parasol| AND |@Parasol Access:1|) OR |Spark| OR |Spear| OR |Stone| OR (|Sword| AND |@Sword Access:1|) OR (|Wheel| AND |@Wheel Access:1|) OR |Whip| OR (|Wing| AND |@Wing Access:1|)"
+	},
+	{
+		"name": "OlOd Stage 2 - Sun Stone 2",
+		"region": "Old Odyssey Stage 2",
+		"category": ["D2 - Old Odyssey Stage 2"],
+		"requires": []
+	},
+	{
+		"name": "OlOd Stage 2 - Sun Stone 3",
+		"region": "Old Odyssey Stage 2",
+		"category": ["D2 - Old Odyssey Stage 2"],
+		"requires": []
+	},
+	{
+		"name": "OlOd Stage 2 - Keychain at Start of Stage",
+		"region": "Old Odyssey Stage 2",
+		"category": ["D2 - Old Odyssey Stage 2","Keychains"],
+		"requires": []
+	},
+	{
+		"name": "OlOd Stage 2 - Keychain in Tilt Gondola Area",
+		"region": "Old Odyssey Stage 2",
+		"category": ["D2 - Old Odyssey Stage 2","Keychains"],
+		"requires": []
+	},
+	{
+		"name": "OlOd Stage 2 - Rare Keychain After Bonkers Fight",
+		"region": "Old Odyssey Stage 2",
+		"category": ["D2 - Old Odyssey Stage 2","Keychains"],
+		"requires": "(|Beetle| AND |@Beetle Access:1|) OR |Hammer| OR |Stone|"
+	},
+	{
+		"name": "OlOd Stage 2 - Keychain Below Goal Door",
+		"region": "Old Odyssey Stage 2",
+		"category": ["D2 - Old Odyssey Stage 2","Keychains"],
+		"requires": []
+	},
+	{
+		"name": "OlOd Stage 3 - Sun Stone 1",
+		"region": "Old Odyssey Stage 3",
+		"category": ["D3 - Old Odyssey Stage 3"],
+		"requires": []
+	},
+	{
+		"name": "OlOd Stage 3 - Sun Stone 2",
+		"region": "Old Odyssey Stage 3",
+		"category": ["D3 - Old Odyssey Stage 3"],
+		"requires": []
+	},
+	{
+		"name": "OlOd Stage 3 - Sun Stone 3",
+		"region": "Old Odyssey Stage 3",
+		"category": ["D3 - Old Odyssey Stage 3"],
+		"requires": "(|Circus| AND |@Circus Access:1|) OR (|Fighter| AND (|@Fighter Access:1| OR (|Fine Fields Stage 3| AND ((|Archer| AND |@Archer Access:1|) OR (|Beetle| AND |@Beetle Access:1|) OR |Cutter| OR (|Leaf| AND |@Leaf Access:1|) OR (|Ninja| AND |@Ninja Access:1|) OR (|Spear| AND |@Spear Access:1|) OR |Sword| OR (|Wing| AND |@Wing Access:1|))))) OR |Fire| OR (|Hammer| AND |@Hammer Access:1|)"
+	},
+	{
+		"name": "OlOd Stage 3 - Keychain in Tilt Cannon Area",
+		"region": "Old Odyssey Stage 3",
+		"category": ["D3 - Old Odyssey Stage 3","Keychains"],
+		"requires": []
+	},
+	{
+		"name": "OlOd Stage 3 - Keychain Behind Sir Kibble",
+		"region": "Old Odyssey Stage 3",
+		"category": ["D3 - Old Odyssey Stage 3","Keychains"],
+		"requires": []
+	},
+	{
+		"name": "OlOd Stage 3 - Keychain Above Sloped Area",
+		"region": "Old Odyssey Stage 3",
+		"category": ["D3 - Old Odyssey Stage 3","Keychains"],
+		"requires": []
+	},
+	{
+		"name": "OlOd Stage 3 - Rare Keychain Before Goal Door",
+		"region": "Old Odyssey Stage 3",
+		"category": ["D3 - Old Odyssey Stage 3","Keychains"],
+		"requires": []
+	},
+	{
+		"name": "OlOd Stage 4 - Sun Stone 1",
+		"region": "Old Odyssey Stage 4",
+		"category": ["D4 - Old Odyssey Stage 4"],
+		"requires": []
+	},
+	{
+		"name": "OlOd Stage 4 - Sun Stone 2",
+		"region": "Old Odyssey Stage 4",
+		"category": ["D4 - Old Odyssey Stage 4"],
+		"requires": "|Archer|"
+	},
+	{
+		"name": "OlOd Stage 4 - Sun Stone 3",
+		"region": "Old Odyssey Stage 4",
+		"category": ["D4 - Old Odyssey Stage 4"],
+		"requires": []
+	},
+	{
+		"name": "OlOd Stage 4 - Keychain Below Wind Current",
+		"region": "Old Odyssey Stage 4",
+		"category": ["D4 - Old Odyssey Stage 4","Keychains"],
+		"requires": []
+	},
+	{
+		"name": "OlOd Stage 4 - Keychain After Round-Trip Door",
+		"region": "Old Odyssey Stage 4",
+		"category": ["D4 - Old Odyssey Stage 4","Keychains"],
+		"requires": []
+	},
+	{
+		"name": "OlOd Stage 4 - Rare Keychain in Tilt Cannon Room",
+		"region": "Old Odyssey Stage 4",
+		"category": ["D4 - Old Odyssey Stage 4","Keychains"],
+		"requires": []
+	},
+	{
+		"name": "OlOd Stage 4 - Keychain Above Gordo",
+		"region": "Old Odyssey Stage 4",
+		"category": ["D4 - Old Odyssey Stage 4","Keychains"],
+		"requires": []
+	},
+	{
+		"name": "OlOd Stage 5 - Sun Stone 1",
+		"region": "Old Odyssey Stage 5",
+		"category": ["D5 - Old Odyssey Stage 5"],
+		"requires": "|Circus| OR (|Fighter| AND (|@Fighter Access:1| OR (|Fine Fields Stage 3| AND ((|Archer| AND |@Archer Access:1|) OR (|Beetle| AND |@Beetle Access:1|) OR |Cutter| OR (|Leaf| AND |@Leaf Access:1|) OR (|Ninja| AND |@Ninja Access:1|) OR |Spear| OR |Sword| OR (|Wing| AND |@Wing Access:1|))))) OR |Fire| OR (|Hammer| AND |@Hammer Access:1|)"
+	},
+	{
+		"name": "OlOd Stage 5 - Sun Stone 2",
+		"region": "Old Odyssey Stage 5",
+		"category": ["D5 - Old Odyssey Stage 5"],
+		"requires": []
+	},
+	{
+		"name": "OlOd Stage 5 - Sun Stone 3",
+		"region": "Old Odyssey Stage 5",
+		"category": ["D5 - Old Odyssey Stage 5"],
+		"requires": []
+	},
+	{
+		"name": "OlOd Stage 5 - Sun Stone 4",
+		"region": "Old Odyssey Stage 5",
+		"category": ["D5 - Old Odyssey Stage 5"],
+		"requires": []
+	},
+	{
+		"name": "OlOd Stage 5 - Keychain Under Chilly",
+		"region": "Old Odyssey Stage 5",
+		"category": ["D5 - Old Odyssey Stage 5","Keychains"],
+		"requires": "|Circus| OR (|Fighter| AND (|@Fighter Access:1| OR (|Fine Fields Stage 3| AND ((|Archer| AND |@Archer Access:1|) OR (|Beetle| AND |@Beetle Access:1|) OR |Cutter| OR (|Leaf| AND |@Leaf Access:1|) OR (|Ninja| AND |@Ninja Access:1|) OR |Spear| OR |Sword| OR (|Wing| AND |@Wing Access:1|))))) OR |Fire| OR (|Hammer| AND |@Hammer Access:1|)"
+	},
+	{
+		"name": "OlOd Stage 5 - Rare Keychain in Fuse Cannon Room",
+		"region": "Old Odyssey Stage 5",
+		"category": ["D5 - Old Odyssey Stage 5","Keychains"],
+		"requires": []
+	},
+	{
+		"name": "OlOd Stage 5 - Keychain in Sun Stone 1 Room",
+		"region": "Old Odyssey Stage 5",
+		"category": ["D5 - Old Odyssey Stage 5","Keychains"],
+		"requires": "|Circus| OR |Fire| OR (|Hammer| AND |@Hammer Access:1|)"
+	},
+	{
+		"name": "OlOd Stage 5 - Keychain in Hypernova Segment",
+		"region": "Old Odyssey Stage 5",
+		"category": ["D5 - Old Odyssey Stage 5","Keychains"],
+		"requires": []
+	},
+	{
+		"name": "VS Kracko - Grand Sun Stone",
+		"region": "Old Odyssey Boss",
+		"category": ["H1 - Boss Clears"],
+		"requires": []
+	},
+	{
+		"name": "OlOd Stage EX - Sun Stone 1",
+		"region": "Old Odyssey Stage EX",
+		"category": ["D6 - Old Odyssey Stage EX"],
+		"requires": []
+	},
+	{
+		"name": "OlOd Stage EX - Sun Stone 2",
+		"region": "Old Odyssey Stage EX",
+		"category": ["D6 - Old Odyssey Stage EX"],
+		"requires": []
+	},
+	{
+		"name": "OlOd Stage EX - Keychain in Tailwind Area",
+		"region": "Old Odyssey Stage EX",
+		"category": ["D6 - Old Odyssey Stage EX","Keychains"],
+		"requires": []
+	},
+	{
+		"name": "OlOd Stage EX - Rare Keychain in Igloo",
+		"region": "Old Odyssey Stage EX",
+		"category": ["D6 - Old Odyssey Stage EX","Keychains"],
+		"requires": []
+	},
+	{
+		"name": "OlOd Stage EX - Keychain Below End of Snowball Segment",
+		"region": "Old Odyssey Stage EX",
+		"category": ["D6 - Old Odyssey Stage EX","Keychains"],
+		"requires": []
+	},
+	{
+		"name": "OlOd Stage EX - Keychain Above Falling Pillar Segment",
+		"region": "Old Odyssey Stage EX",
+		"category": ["D6 - Old Odyssey Stage EX","Keychains"],
+		"requires": []
+	},
+	{
+		"name": "WiWo Stage 1 - Sun Stone 1",
+		"region": "Wild World Stage 1",
+		"category": ["E1 - Wild World Stage 1"],
+		"requires": "|Archer| OR |Beetle| OR |Cutter| OR |Leaf| OR (|Ninja| AND |@Ninja Access:1|) OR |Spear| OR (|Sword| AND |@Sword Access:1|) OR |Wing|"
+	},
+	{
+		"name": "WiWo Stage 1 - Sun Stone 2",
+		"region": "Wild World Stage 1",
+		"category": ["E1 - Wild World Stage 1"],
+		"requires": []
+	},
+	{
+		"name": "WiWo Stage 1 - Sun Stone 3",
+		"region": "Wild World Stage 1",
+		"category": ["E1 - Wild World Stage 1"],
+		"requires": []
+	},
+	{
+		"name": "WiWo Stage 1 - Keychain Below Destroyable Blocks",
+		"region": "Wild World Stage 1",
+		"category": ["E1 - Wild World Stage 1","Keychains"],
+		"requires": "|Archer| OR |Beam| OR |Beetle| OR (|Bell| AND |@Bell Access:1|) OR |Bomb| OR (|Circus| AND |@Circus Access:1|) OR (|Crash| AND |@Crash Access:1|) OR |Cutter| OR (|Fighter| AND |@Fighter Access:1|) OR (|Fire| AND |@Fire Access:1|) OR (|Hammer| AND |@Hammer Access:1|) OR (|Ice| AND |@Ice Access:1|) OR |Leaf| OR (|Mike| AND |@Mike Access:1|) OR (|Needle| AND |@Needle Access:1|) OR (|Ninja| AND |@Ninja Access:1|) OR (|Parasol| AND |@Parasol Access:1|) OR (|Spark| AND |@Spark Access:1|) OR |Spear| OR |Stone| OR (|Sword| AND |@Sword Access:1|) OR (|Wheel| AND |@Wheel Access:1|) OR (|Whip| AND |@Whip Access:1|) OR |Wing|"
+	},
+	{
+		"name": "WiWo Stage 1 - Keychain Behind Foley",
+		"region": "Wild World Stage 1",
+		"category": ["E1 - Wild World Stage 1","Keychains"],
+		"requires": []
+	},
+	{
+		"name": "WiWo Stage 1 - Rare Keychain Above Pacflower",
+		"region": "Wild World Stage 1",
+		"category": ["E1 - Wild World Stage 1","Keychains"],
+		"requires": []
+	},
+	{
+		"name": "WiWo Stage 1 - Keychain in Spiked Pillar Room",
+		"region": "Wild World Stage 1",
+		"category": ["E1 - Wild World Stage 1","Keychains"],
+		"requires": []
+	},
+	{
+		"name": "WiWo Stage 2 - Sun Stone 1",
+		"region": "Wild World Stage 2",
+		"category": ["E2 - Wild World Stage 2"],
+		"requires": []
+	},
+	{
+		"name": "WiWo Stage 2 - Sun Stone 2",
+		"region": "Wild World Stage 2",
+		"category": ["E2 - Wild World Stage 2"],
+		"requires": "|Wheel|"
+	},
+	{
+		"name": "WiWo Stage 2 - Sun Stone 3",
+		"region": "Wild World Stage 2",
+		"category": ["E2 - Wild World Stage 2"],
+		"requires": []
+	},
+	{
+		"name": "WiWo Stage 2 - Keychain Below Gordos",
+		"region": "Wild World Stage 2",
+		"category": ["E2 - Wild World Stage 2","Keychains"],
+		"requires": []
+	},
+	{
+		"name": "WiWo Stage 2 - Keychain in Wheel Area",
+		"region": "Wild World Stage 2",
+		"category": ["E2 - Wild World Stage 2","Keychains"],
+		"requires": []
+	},
+	{
+		"name": "WiWo Stage 2 - Keychain Near Goal Door",
+		"region": "Wild World Stage 2",
+		"category": ["E2 - Wild World Stage 2","Keychains"],
+		"requires": []
+	},
+	{
+		"name": "WiWo Stage 2 - Rare Keychain in Crevice Near Goal Door",
+		"region": "Wild World Stage 2",
+		"category": ["E2 - Wild World Stage 2","Keychains"],
+		"requires": []
+	},
+	{
+		"name": "WiWo Stage 3 - Sun Stone 1",
+		"region": "Wild World Stage 3",
+		"category": ["E3 - Wild World Stage 3"],
+		"requires": []
+	},
+	{
+		"name": "WiWo Stage 3 - Sun Stone 2",
+		"region": "Wild World Stage 3",
+		"category": ["E3 - Wild World Stage 3"],
+		"requires": []
+	},
+	{
+		"name": "WiWo Stage 3 - Sun Stone 3",
+		"region": "Wild World Stage 3",
+		"category": ["E3 - Wild World Stage 3"],
+		"requires": []
+	},
+	{
+		"name": "WiWo Stage 3 - Sun Stone 4",
+		"region": "Wild World Stage 3",
+		"category": ["E3 - Wild World Stage 3"],
+		"requires": []
+	},
+	{
+		"name": "WiWo Stage 3 - Keychain in First Mirror Area",
+		"region": "Wild World Stage 3",
+		"category": ["E3 - Wild World Stage 3","Keychains"],
+		"requires": []
+	},
+	{
+		"name": "WiWo Stage 3 - Keychain Next to Door",
+		"region": "Wild World Stage 3",
+		"category": ["E3 - Wild World Stage 3","Keychains"],
+		"requires": []
+	},
+	{
+		"name": "WiWo Stage 3 - Rare Keychain Behind Invisible Door",
+		"region": "Wild World Stage 3",
+		"category": ["E3 - Wild World Stage 3","Keychains"],
+		"requires": []
+	},
+	{
+		"name": "WiWo Stage 4 - Sun Stone 1",
+		"region": "Wild World Stage 4",
+		"category": ["E4 - Wild World Stage 4"],
+		"requires": []
+	},
+	{
+		"name": "WiWo Stage 4 - Sun Stone 2",
+		"region": "Wild World Stage 4",
+		"category": ["E4 - Wild World Stage 4"],
+		"requires": "(|Archer| AND |@Archer Access:1|) OR (|Beam| AND |@Beam Access:1|) OR (|Beetle| AND |@Beetle Access:1|) OR (|Bell| AND |@Bell Access:1|) OR |Bomb| OR |Circus| OR |Crash| OR |Cutter| OR |Fighter| OR |Fire| OR (|Hammer| AND |@Hammer Access:1|) OR |Ice| OR |Leaf| OR (|Mike| AND |@Mike Access:1|) OR |Needle| OR (|Ninja| AND |@Ninja Access:1|) OR (|Parasol| AND |@Parasol Access:1|) OR (|Spark| AND |@Spark Access:1|) OR (|Spear| AND |@Spear Access:1|) OR |Stone| OR (|Sword| AND |@Sword Access:1|) OR (|Wheel| AND |@Wheel Access:1|) OR (|Whip| AND |@Whip Access:1|) OR (|Wing| AND |@Wing Access:1|)"
+	},
+	{
+		"name": "WiWo Stage 4 - Sun Stone 3",
+		"region": "Wild World Stage 4",
+		"category": ["E4 - Wild World Stage 4"],
+		"requires": []
+	},
+	{
+		"name": "WiWo Stage 4 - Keychain Behind Noddy",
+		"region": "Wild World Stage 4",
+		"category": ["E4 - Wild World Stage 4","Keychains"],
+		"requires": []
+	},
+	{
+		"name": "WiWo Stage 4 - Keychain Above Shotzo",
+		"region": "Wild World Stage 4",
+		"category": ["E4 - Wild World Stage 4","Keychains"],
+		"requires": []
+	},
+	{
+		"name": "WiWo Stage 4 - Rare Keychain Near Searches",
+		"region": "Wild World Stage 4",
+		"category": ["E4 - Wild World Stage 4","Keychains"],
+		"requires": []
+	},
+	{
+		"name": "WiWo Stage 4 - Keychain Under Stake",
+		"region": "Wild World Stage 4",
+		"category": ["E4 - Wild World Stage 4","Keychains"],
+		"requires": "(|Beetle| AND |@Beetle Access:1|) OR (|Hammer| AND |@Hammer Access:1|) OR |Stone|"
+	},
+	{
+		"name": "WiWo Stage 5 - Sun Stone 1",
+		"region": "Wild World Stage 5",
+		"category": ["E5 - Wild World Stage 5"],
+		"requires": []
+	},
+	{
+		"name": "WiWo Stage 5 - Sun Stone 2",
+		"region": "Wild World Stage 5",
+		"category": ["E5 - Wild World Stage 5"],
+		"requires": "(|Archer| AND |@Archer Access:1|) OR (|Beetle| AND |@Beetle Access:1|) OR (|Circus| AND |@Circus Access:1|) OR |Cutter| OR (|Fighter| AND |@Fighter Access:1|) OR |Fire| OR (|Hammer| AND |@Hammer Access:1|) OR |Leaf| OR (|Ninja| AND |@Ninja Access:1|) OR |Spear| OR (|Sword| AND |@Sword Access:1|) OR (|Wing| AND |@Wing Access:1|)"
+	},
+	{
+		"name": "WiWo Stage 5 - Sun Stone 3",
+		"region": "Wild World Stage 5",
+		"category": ["E5 - Wild World Stage 5"],
+		"requires": "(|Archer| AND |@Archer Access:1|) OR (|Beetle| AND |@Beetle Access:1|) OR (|Circus| AND |@Circus Access:1|) OR |Cutter| OR (|Fighter| AND |@Fighter Access:1|) OR |Fire| OR (|Hammer| AND |@Hammer Access:1|) OR |Leaf| OR (|Ninja| AND |@Ninja Access:1|) OR |Spear| OR (|Sword| AND |@Sword Access:1|) OR (|Wing| AND |@Wing Access:1|)"
+	},
+	{
+		"name": "WiWo Stage 5 - Sun Stone 4",
+		"region": "Wild World Stage 5",
+		"category": ["E5 - Wild World Stage 5"],
+		"requires": []
+	},
+	{
+		"name": "WiWo Stage 5 - Keychain in Front of Gigatzos",
+		"region": "Wild World Stage 5",
+		"category": ["E5 - Wild World Stage 5","Keychains"],
+		"requires": []
+	},
+	{
+		"name": "WiWo Stage 5 - Keychain in Tilt Cannon Area",
+		"region": "Wild World Stage 5",
+		"category": ["E5 - Wild World Stage 5","Keychains"],
+		"requires": []
+	},
+	{
+		"name": "WiWo Stage 5 - Rare Keychain in 3D Helmet Cannon Area",
+		"region": "Wild World Stage 5",
+		"category": ["E5 - Wild World Stage 5","Keychains"],
+		"requires": []
+	},
+	{
+		"name": "WiWo Stage 5 - Keychain Above Goal Door",
+		"region": "Wild World Stage 5",
+		"category": ["E5 - Wild World Stage 5","Keychains"],
+		"requires": []
+	},
+	{
+		"name": "VS Coily Rattler - Grand Sun Stone",
+		"region": "Wild World Boss",
+		"category": ["H1 - Boss Clears"],
+		"requires": []
+	},
+	{
+		"name": "WiWo Stage EX - Sun Stone 1",
+		"region": "Wild World Stage EX",
+		"category": ["E6 - Wild World Stage EX"],
+		"requires": "|Circus| OR (|Fighter| AND (|@Fighter Access:1| OR (|Fine Fields Stage 3| AND ((|Archer| AND |@Archer Access:1|) OR (|Beetle| AND |@Beetle Access:1|) OR |Cutter| OR (|Leaf| AND |@Leaf Access:1|) OR (|Ninja| AND |@Ninja Access:1|) OR (|Spear| AND |@Spear Access:1|) OR |Sword| OR |Wing|)))) OR |Fire| OR |Hammer|"
+	},
+	{
+		"name": "WiWo Stage EX - Sun Stone 2",
+		"region": "Wild World Stage EX",
+		"category": ["E6 - Wild World Stage EX"],
+		"requires": []
+	},
+	{
+		"name": "WiWo Stage EX - Keychain Below Barbar",
+		"region": "Wild World Stage EX",
+		"category": ["E6 - Wild World Stage EX","Keychains"],
+		"requires": []
+	},
+	{
+		"name": "WiWo Stage EX - Keychain in Mirror Room",
+		"region": "Wild World Stage EX",
+		"category": ["E6 - Wild World Stage EX","Keychains"],
+		"requires": []
+	},
+	{
+		"name": "WiWo Stage EX - Rare Keychain Behind Key Gate",
+		"region": "Wild World Stage EX",
+		"category": ["E6 - Wild World Stage EX","Keychains"],
+		"requires": []
+	},
+	{
+		"name": "WiWo Stage EX - Keychain Behind Tick",
+		"region": "Wild World Stage EX",
+		"category": ["E6 - Wild World Stage EX","Keychains"],
+		"requires": []
+	},
+	{
+		"name": "EnEx Stage 1 - Sun Stone 1",
+		"region": "Endless Explosions Stage 1",
+		"category": ["F1 - Endless Explosions Stage 1"],
+		"requires": []
+	},
+	{
+		"name": "EnEx Stage 1 - Sun Stone 2",
+		"region": "Endless Explosions Stage 1",
+		"category": ["F1 - Endless Explosions Stage 1"],
+		"requires": "|Ice| OR |Parasol|"
+	},
+	{
+		"name": "EnEx Stage 1 - Sun Stone 3",
+		"region": "Endless Explosions Stage 1",
+		"category": ["F1 - Endless Explosions Stage 1"],
+		"requires": "(|Beetle| AND |@Beetle Access:1|) OR |Fire| OR |Wheel| OR (|Wing| AND (|@Wing Access:1| OR (|Fine Fields Stage 3| AND ((|Archer| AND |@Archer Access:1|) OR |Circus| OR |Cutter| OR (|Fighter| AND |@Fighter Access:1|) OR (|Hammer| AND |@Hammer Access:1|) OR |Leaf| OR (|Ninja| AND |@Ninja Access:1|) OR (|Spear| AND |@Spear Access:1|) OR |Sword|))))"
+	},
+	{
+		"name": "EnEx Stage 1 - Keychain in Flaming Blocks",
+		"region": "Endless Explosions Stage 1",
+		"category": ["F1 - Endless Explosions Stage 1","Keychains"],
+		"requires": "|Ice| OR |Parasol|"
+	},
+	{
+		"name": "EnEx Stage 1 - Keychain Below Door",
+		"region": "Endless Explosions Stage 1",
+		"category": ["F1 - Endless Explosions Stage 1","Keychains"],
+		"requires": []
+	},
+	{
+		"name": "EnEx Stage 1 - Rare Keychain in Background of First Area",
+		"region": "Endless Explosions Stage 1",
+		"category": ["F1 - Endless Explosions Stage 1","Keychains"],
+		"requires": "(|Beetle| AND |@Beetle Access:1|) OR |Fire| OR |Wheel| OR (|Wing| AND (|@Wing Access:1| OR (|Fine Fields Stage 3| AND ((|Archer| AND |@Archer Access:1|) OR |Circus| OR |Cutter| OR (|Fighter| AND |@Fighter Access:1|) OR (|Hammer| AND |@Hammer Access:1|) OR |Leaf| OR (|Ninja| AND |@Ninja Access:1|) OR (|Spear| AND |@Spear Access:1|) OR |Sword|))))"
+	},
+	{
+		"name": "EnEx Stage 2 - Sun Stone 1",
+		"region": "Endless Explosions Stage 2",
+		"category": ["F2 - Endless Explosions Stage 2"],
+		"requires": []
+	},
+	{
+		"name": "EnEx Stage 2 - Sun Stone 2",
+		"region": "Endless Explosions Stage 2",
+		"category": ["F2 - Endless Explosions Stage 2"],
+		"requires": "(|Hammer| AND |@Hammer Access:1|) OR |Stone|"
+	},
+	{
+		"name": "EnEx Stage 2 - Sun Stone 3",
+		"region": "Endless Explosions Stage 2",
+		"category": ["F2 - Endless Explosions Stage 2"],
+		"requires": []
+	},
+	{
+		"name": "EnEx Stage 2 - Sun Stone 4",
+		"region": "Endless Explosions Stage 2",
+		"category": ["F2 - Endless Explosions Stage 2"],
+		"requires": []
+	},
+	{
+		"name": "EnEx Stage 2 - Rare Keychain Above Flaming Blocks",
+		"region": "Endless Explosions Stage 2",
+		"category": ["F2 - Endless Explosions Stage 2","Keychains"],
+		"requires": "(|Ice| AND |@Ice Access:1|) OR |Ninja| OR (|Parasol| AND |@Parasol Access:1|)"
+	},
+	{
+		"name": "EnEx Stage 2 - Keychain Behind Scarfy",
+		"region": "Endless Explosions Stage 2",
+		"category": ["F2 - Endless Explosions Stage 2","Keychains"],
+		"requires": []
+	},
+	{
+		"name": "EnEx Stage 2 - Keychain Before Blocky Fight",
+		"region": "Endless Explosions Stage 2",
+		"category": ["F2 - Endless Explosions Stage 2","Keychains"],
+		"requires": []
+	},
+	{
+		"name": "EnEx Stage 2 - Keychain Behind Barbar",
+		"region": "Endless Explosions Stage 2",
+		"category": ["F2 - Endless Explosions Stage 2","Keychains"],
+		"requires": []
+	},
+	{
+		"name": "EnEx Stage 3 - Sun Stone 1",
+		"region": "Endless Explosions Stage 3",
+		"category": ["F3 - Endless Explosions Stage 3"],
+		"requires": []
+	},
+	{
+		"name": "EnEx Stage 3 - Sun Stone 2",
+		"region": "Endless Explosions Stage 3",
+		"category": ["F3 - Endless Explosions Stage 3"],
+		"requires": []
+	},
+	{
+		"name": "EnEx Stage 3 - Sun Stone 3",
+		"region": "Endless Explosions Stage 3",
+		"category": ["F3 - Endless Explosions Stage 3"],
+		"requires": []
+	},
+	{
+		"name": "EnEx Stage 3 - Keychain in Destroyable Blocks",
+		"region": "Endless Explosions Stage 3",
+		"category": ["F3 - Endless Explosions Stage 3","Keychains"],
+		"requires": []
+	},
+	{
+		"name": "EnEx Stage 3 - Rare Keychain in Tilt Cannon Room",
+		"region": "Endless Explosions Stage 3",
+		"category": ["F3 - Endless Explosions Stage 3","Keychains"],
+		"requires": []
+	},
+	{
+		"name": "EnEx Stage 3 - Keychain Below Blade Knight",
+		"region": "Endless Explosions Stage 3",
+		"category": ["F3 - Endless Explosions Stage 3","Keychains"],
+		"requires": []
+	},
+	{
+		"name": "EnEx Stage 3 - Keychain Below 3D Teleporter",
+		"region": "Endless Explosions Stage 3",
+		"category": ["F3 - Endless Explosions Stage 3","Keychains"],
+		"requires": []
+	},
+	{
+		"name": "EnEx Stage 4 - Sun Stone 1",
+		"region": "Endless Explosions Stage 4",
+		"category": ["F4 - Endless Explosions Stage 4"],
+		"requires": []
+	},
+	{
+		"name": "EnEx Stage 4 - Sun Stone 2",
+		"region": "Endless Explosions Stage 4",
+		"category": ["F4 - Endless Explosions Stage 4"],
+		"requires": "|Archer|"
+	},
+	{
+		"name": "EnEx Stage 4 - Sun Stone 3",
+		"region": "Endless Explosions Stage 4",
+		"category": ["F4 - Endless Explosions Stage 4"],
+		"requires": []
+	},
+	{
+		"name": "EnEx Stage 4 - Sun Stone 4",
+		"region": "Endless Explosions Stage 4",
+		"category": ["F4 - Endless Explosions Stage 4"],
+		"requires": []
+	},
+	{
+		"name": "EnEx Stage 4 - Keychain in 3D Tilt Missile Area",
+		"region": "Endless Explosions Stage 4",
+		"category": ["F4 - Endless Explosions Stage 4","Keychains"],
+		"requires": []
+	},
+	{
+		"name": "EnEx Stage 4 - Keychain in Archer Area",
+		"region": "Endless Explosions Stage 4",
+		"category": ["F4 - Endless Explosions Stage 4","Keychains"],
+		"requires": []
+	},
+	{
+		"name": "EnEx Stage 4 - Keychain in Second Rotating Wall Area",
+		"region": "Endless Explosions Stage 4",
+		"category": ["F4 - Endless Explosions Stage 4","Keychains"],
+		"requires": []
+	},
+	{
+		"name": "EnEx Stage 4 - Rare Keychain in Breakable Wall Block",
+		"region": "Endless Explosions Stage 4",
+		"category": ["F4 - Endless Explosions Stage 4","Keychains"],
+		"requires": []
+	},
+	{
+		"name": "EnEx Stage 5 - Sun Stone 1",
+		"region": "Endless Explosions Stage 5",
+		"category": ["F5 - Endless Explosions Stage 5"],
+		"requires": []
+	},
+	{
+		"name": "EnEx Stage 5 - Sun Stone 2",
+		"region": "Endless Explosions Stage 5",
+		"category": ["F5 - Endless Explosions Stage 5"],
+		"requires": []
+	},
+	{
+		"name": "EnEx Stage 5 - Sun Stone 3",
+		"region": "Endless Explosions Stage 5",
+		"category": ["F5 - Endless Explosions Stage 5"],
+		"requires": []
+	},
+	{
+		"name": "EnEx Stage 5 - Sun Stone 4",
+		"region": "Endless Explosions Stage 5",
+		"category": ["F5 - Endless Explosions Stage 5"],
+		"requires": []
+	},
+	{
+		"name": "EnEx Stage 5 - Keychain Before Second Miniboss Fight",
+		"region": "Endless Explosions Stage 5",
+		"category": ["F5 - Endless Explosions Stage 5","Keychains"],
+		"requires": []
+	},
+	{
+		"name": "EnEx Stage 5 - Keychain Below Birdon",
+		"region": "Endless Explosions Stage 5",
+		"category": ["F5 - Endless Explosions Stage 5","Keychains"],
+		"requires": []
+	},
+	{
+		"name": "EnEx Stage 5 - Rare Keychain Before Bonkers Fight",
+		"region": "Endless Explosions Stage 5",
+		"category": ["F5 - Endless Explosions Stage 5","Keychains"],
+		"requires": []
+	},
+	{
+		"name": "EnEx Stage 5 - Keychain Before Goal Door",
+		"region": "Endless Explosions Stage 5",
+		"category": ["F5 - Endless Explosions Stage 5","Keychains"],
+		"requires": []
+	},
+	{
+		"name": "VS Pyribbit - Grand Sun Stone",
+		"region": "Endless Explosions Boss",
+		"category": ["H1 - Boss Clears"],
+		"requires": []
+	},
+	{
+		"name": "EnEx Stage EX - Sun Stone 1",
+		"region": "Endless Explosions Stage EX",
+		"category": ["F6 - Endless Explosions Stage EX"],
+		"requires": "|Archer|"
+	},
+	{
+		"name": "EnEx Stage EX - Sun Stone 2",
+		"region": "Endless Explosions Stage EX",
+		"category": ["F6 - Endless Explosions Stage EX"],
+		"requires": []
+	},
+	{
+		"name": "EnEx Stage EX - Keychain Below First Door",
+		"region": "Endless Explosions Stage EX",
+		"category": ["F6 - Endless Explosions Stage EX","Keychains"],
+		"requires": []
+	},
+	{
+		"name": "EnEx Stage EX - Keychain in Bomb Block",
+		"region": "Endless Explosions Stage EX",
+		"category": ["F6 - Endless Explosions Stage EX","Keychains"],
+		"requires": []
+	},
+	{
+		"name": "EnEx Stage EX - Keychain Behind Key Gate",
+		"region": "Endless Explosions Stage EX",
+		"category": ["F6 - Endless Explosions Stage EX","Keychains"],
+		"requires": []
+	},
+	{
+		"name": "EnEx Stage EX - Rare Keychain Above 3D Teleporter",
+		"region": "Endless Explosions Stage EX",
+		"category": ["F6 - Endless Explosions Stage EX","Keychains"],
+		"requires": []
+	},
+	{
+		"name": "RoRo Stage 1 - Sun Stone 1",
+		"region": "Royal Road Stage 1",
+		"category": ["G1 - Royal Road Stage 1"],
+		"requires": []
+	},
+	{
+		"name": "RoRo Stage 1 - Sun Stone 2",
+		"region": "Royal Road Stage 1",
+		"category": ["G1 - Royal Road Stage 1"],
+		"requires": "|Archer| OR |Beetle| OR (|Cutter| AND |@Cutter Access:1|) OR (|Leaf| AND (|@Leaf Access:1| OR (|Fine Fields Stage 3| AND (|Circus| OR (|Fighter| AND |@Fighter Access:1|) OR |Fire| OR |Hammer|)))) OR |Ninja| OR |Spear| OR |Sword| OR |Wing|"
+	},
+	{
+		"name": "RoRo Stage 1 - Sun Stone 3",
+		"region": "Royal Road Stage 1",
+		"category": ["G1 - Royal Road Stage 1"],
+		"requires": "|Archer| OR (|Beam| AND |@Beam Access:1|) OR |Beetle| OR |Bell| OR (|Bomb| AND |@Bomb Access:1|) OR |Circus| OR (|Cutter| AND |@Cutter Access:1|) OR (|Fighter| AND |@Fighter Access:1|) OR |Fire| OR |Hammer| OR (|Ice| AND |@Ice Access:1|) OR (|Leaf| AND |@Leaf Access:1|) OR (|Needle| AND |@Needle Access:1|) OR |Ninja| OR (|Parasol| AND |@Parasol Access:1|) OR |Spark| OR |Spear| OR |Stone| OR |Sword| OR |Wheel| OR (|Whip| AND |@Whip Access:1|) OR |Wing|"
+	},
+	{
+		"name": "RoRo Stage 1 - Keychain Below Rocky",
+		"region": "Royal Road Stage 1",
+		"category": ["G1 - Royal Road Stage 1","Keychains"],
+		"requires": []
+	},
+	{
+		"name": "RoRo Stage 1 - Keychain in HAL Room",
+		"region": "Royal Road Stage 1",
+		"category": ["G1 - Royal Road Stage 1","Keychains"],
+		"requires": []
+	},
+	{
+		"name": "RoRo Stage 1 - Keychain in Destroyable Block on Bridge",
+		"region": "Royal Road Stage 1",
+		"category": ["G1 - Royal Road Stage 1","Keychains"],
+		"requires": []
+	},
+	{
+		"name": "RoRo Stage 1 - Rare Keychain Below Sectra Tank",
+		"region": "Royal Road Stage 1",
+		"category": ["G1 - Royal Road Stage 1","Keychains"],
+		"requires": "|Archer| OR (|Beam| AND |@Beam Access:1|) OR |Beetle| OR |Bell| OR (|Bomb| AND |@Bomb Access:1|) OR |Circus| OR (|Cutter| AND |@Cutter Access:1|) OR (|Fighter| AND |@Fighter Access:1|) OR |Fire| OR |Hammer| OR (|Ice| AND |@Ice Access:1|) OR (|Leaf| AND |@Leaf Access:1|) OR (|Needle| AND |@Needle Access:1|) OR |Ninja| OR (|Parasol| AND |@Parasol Access:1|) OR |Spark| OR |Spear| OR |Stone| OR |Sword| OR |Wheel| OR (|Whip| AND |@Whip Access:1|) OR |Wing|"
+	},
+	{
+		"name": "RoRo Stage 2 - Sun Stone",
+		"region": "Royal Road Stage 2",
+		"category": ["G2 - Royal Road Stage 2"],
+		"requires": []
+	},
+	{
+		"name": "RoRo Stage 2 - Keychain in Breakable Wall Block",
+		"region": "Royal Road Stage 2",
+		"category": ["G2 - Royal Road Stage 2","Keychains"],
+		"requires": []
+	},
+	{
+		"name": "RoRo Stage 2 - Keychain Above Walky",
+		"region": "Royal Road Stage 2",
+		"category": ["G2 - Royal Road Stage 2","Keychains"],
+		"requires": []
+	},
+	{
+		"name": "RoRo Stage 2 - Rare Keychain in Kracko Fight",
+		"region": "Royal Road Stage 2",
+		"category": ["G2 - Royal Road Stage 2","Keychains"],
+		"requires": []
+	},
+	{
+		"name": "RoRo Stage 3 - Sun Stone 1",
+		"region": "Royal Road Stage 3",
+		"category": ["G3 - Royal Road Stage 3"],
+		"requires": []
+	},
+	{
+		"name": "RoRo Stage 3 - Sun Stone 2",
+		"region": "Royal Road Stage 3",
+		"category": ["G3 - Royal Road Stage 3"],
+		"requires": []
+	},
+	{
+		"name": "RoRo Stage 3 - Sun Stone 3",
+		"region": "Royal Road Stage 3",
+		"category": ["G3 - Royal Road Stage 3"],
+		"requires": []
+	},
+	{
+		"name": "RoRo Stage 3 - Keychain Behind First Ball and Chain",
+		"region": "Royal Road Stage 3",
+		"category": ["G3 - Royal Road Stage 3","Keychains"],
+		"requires": []
+	},
+	{
+		"name": "RoRo Stage 3 - Keychain on Path to Rare Keychain",
+		"region": "Royal Road Stage 3",
+		"category": ["G3 - Royal Road Stage 3","Keychains"],
+		"requires": []
+	},
+	{
+		"name": "RoRo Stage 3 - Rare Keychain on Waddle Dee Train",
+		"region": "Royal Road Stage 3",
+		"category": ["G3 - Royal Road Stage 3","Keychains"],
+		"requires": []
+	},
+	{
+		"name": "RoRo Stage 3 - Keychain in Big Missile Launcher",
+		"region": "Royal Road Stage 3",
+		"category": ["G3 - Royal Road Stage 3","Keychains"],
+		"requires": []
+	},
+	{
+		"name": "RoRo Stage 4 - Sun Stone",
+		"region": "Royal Road Stage 4",
+		"category": ["G4 - Royal Road Stage 4"],
+		"requires": []
+	},
+	{
+		"name": "RoRo Stage 4 - Keychain Above Sectra Bronto Burt",
+		"region": "Royal Road Stage 4",
+		"category": ["G4 - Royal Road Stage 4","Keychains"],
+		"requires": []
+	},
+	{
+		"name": "RoRo Stage 4 - Keychain Near Spectra Spynum",
+		"region": "Royal Road Stage 4",
+		"category": ["G4 - Royal Road Stage 4","Keychains"],
+		"requires": []
+	},
+	{
+		"name": "RoRo Stage 4 - Rare Keychain in Cannons",
+		"region": "Royal Road Stage 4",
+		"category": ["G4 - Royal Road Stage 4","Keychains"],
+		"requires": []
+	},
+	{
+		"name": "RoRo Stage 5 - Sun Stone 1",
+		"region": "Royal Road Stage 5",
+		"category": ["G5 - Royal Road Stage 5"],
+		"requires": []
+	},
+	{
+		"name": "RoRo Stage 5 - Sun Stone 2",
+		"region": "Royal Road Stage 5",
+		"category": ["G5 - Royal Road Stage 5"],
+		"requires": "(|Circus| AND |@Circus Access:1|) OR (|Fighter| AND (|@Fighter Access:1| OR (|Fine Fields Stage 3| AND (|Archer| OR |Beetle| OR |Cutter| OR (|Leaf| AND |@Leaf Access:1|) OR (|Ninja| AND |@Ninja Access:1|) OR |Spear| OR |Sword| OR (|Wing| AND |@Wing Access:1|))))) OR (|Fire| AND |@Fire Access:1|) OR |Hammer|"
+	},
+	{
+		"name": "RoRo Stage 5 - Sun Stone 3",
+		"region": "Royal Road Stage 5",
+		"category": ["G5 - Royal Road Stage 5"],
+		"requires": []
+	},
+	{
+		"name": "RoRo Stage 5 - Sun Stone 4",
+		"region": "Royal Road Stage 5",
+		"category": ["G5 - Royal Road Stage 5"],
+		"requires": []
+	},
+	{
+		"name": "RoRo Stage 5 - Keychain in First 3D Securitron Room",
+		"region": "Royal Road Stage 5",
+		"category": ["G5 - Royal Road Stage 5","Keychains"],
+		"requires": []
+	},
+	{
+		"name": "RoRo Stage 5 - Keychain Above Spectra Spynums",
+		"region": "Royal Road Stage 5",
+		"category": ["G5 - Royal Road Stage 5","Keychains"],
+		"requires": []
+	},
+	{
+		"name": "RoRo Stage 5 - Rare Keychain Below Stake",
+		"region": "Royal Road Stage 5",
+		"category": ["G5 - Royal Road Stage 5","Keychains"],
+		"requires": "|Beetle| OR |Hammer| OR (|Stone| AND |@Stone Access:1|)"
+	},
+	{
+		"name": "RoRo Stage 5 - Keychain in HAL Room",
+		"region": "Royal Road Stage 5",
+		"category": ["G5 - Royal Road Stage 5","Keychains"],
+		"requires": []
+	},
+	{
+		"name": "RoRo Stage 5 - Keychain in Star Block Pillar",
+		"region": "Royal Road Stage 5",
+		"category": ["G5 - Royal Road Stage 5","Keychains"],
+		"requires": []
+	},
+	{
+		"name": "VS Masked Dedede - Defeat Masked Dedede's Revenge",
+		"region": "Royal Road Boss",
+		"category": ["H1 - Boss Clears"],
+		"requires": []
+	},
+	{
+		"name": "RoRo Stage EX 1 - Sun Stone 1",
+		"region": "Royal Road Stage EX 1",
+		"category": ["G6 - Royal Road Stage EX 1"],
+		"requires": "|Circus| OR |Fire| OR (|Hammer| AND |@Hammer Access:1|)"
+	},
+	{
+		"name": "RoRo Stage EX 1 - Sun Stone 2",
+		"region": "Royal Road Stage EX 1",
+		"category": ["G6 - Royal Road Stage EX 1"],
+		"requires": []
+	},
+	{
+		"name": "RoRo Stage EX 1 - Sun Stone 3",
+		"region": "Royal Road Stage EX 1",
+		"category": ["G6 - Royal Road Stage EX 1"],
+		"requires": []
+	},
+	{
+		"name": "RoRo Stage EX 1 - Keychain Under Clown Acrobot",
+		"region": "Royal Road Stage EX 1",
+		"category": ["G6 - Royal Road Stage EX 1","Keychains"],
+		"requires": []
+	},
+	{
+		"name": "RoRo Stage EX 1 - Keychain Under Ice Blocks",
+		"region": "Royal Road Stage EX 1",
+		"category": ["G6 - Royal Road Stage EX 1","Keychains"],
+		"requires": "|Circus| OR |Fire| OR (|Hammer| AND |@Hammer Access:1|)"
+	},
+	{
+		"name": "RoRo Stage EX 1 - Keychain in Timed Dynamite Area",
+		"region": "Royal Road Stage EX 1",
+		"category": ["G6 - Royal Road Stage EX 1","Keychains"],
+		"requires": []
+	},
+	{
+		"name": "RoRo Stage EX 1 - Keychain in 3D Securitron Area",
+		"region": "Royal Road Stage EX 1",
+		"category": ["G6 - Royal Road Stage EX 1","Keychains"],
+		"requires": []
+	},
+	{
+		"name": "RoRo Stage EX 1 - Rare Keychain in Flaming Blocks",
+		"region": "Royal Road Stage EX 1",
+		"category": ["G6 - Royal Road Stage EX 1","Keychains"],
+	    "requires": "(|Circus| OR |Fighter| OR |Fire| OR (|Hammer| AND |@Hammer Access:1|)) AND (|Ice| OR |Parasol|)"
+	},
+	{
+		"name": "RoRo Stage EX 1 - Keychain Below Gigatzo",
+		"region": "Royal Road Stage EX 1",
+		"category": ["G6 - Royal Road Stage EX 1","Keychains"],
+		"requires": []
+	},
+	{
+		"name": "RoRo Stage EX 2 - Sun Stone",
+		"region": "Royal Road Stage EX 2",
+		"category": ["G7 - Royal Road Stage EX 2"],
+		"requires": []
+	},
+	{
+		"name": "RoRo Stage EX 2 - Left Keychain Below Barbar Area",
+		"region": "Royal Road Stage EX 2",
+		"category": ["G7 - Royal Road Stage EX 2","Keychains"],
+		"requires": []
+	},
+	{
+		"name": "RoRo Stage EX 2 - Right Keychain Below Barbar Area",
+		"region": "Royal Road Stage EX 2",
+		"category": ["G7 - Royal Road Stage EX 2","Keychains"],
+		"requires": []
+	},
+	{
+		"name": "RoRo Stage EX 2 - Keychain in Gigant Chicks Fight",
+		"region": "Royal Road Stage EX 2",
+		"category": ["G7 - Royal Road Stage EX 2","Keychains"],
+		"requires": []
+	},
+	{
+		"name": "RoRo Stage EX 2 - Rare Keychain in Moon Room",
+		"region": "Royal Road Stage EX 2",
+		"category": ["G7 - Royal Road Stage EX 2","Keychains"],
+		"requires": []
+	},
+	{
+		"name": "RoRo Stage EX 2 - Left Keychain in Moon Room",
+		"region": "Royal Road Stage EX 2",
+		"category": ["G7 - Royal Road Stage EX 2","Keychains"],
+		"requires": []
+	},
+	{
+		"name": "RoRo Stage EX 2 - Right Keychain in Moon Room",
+		"region": "Royal Road Stage EX 2",
+		"category": ["G7 - Royal Road Stage EX 2","Keychains"],
+		"requires": []
+	},
+	{
+		"name": "Level 1 - Unlock EX Stage",
+		"region": "Fine Fields",
+		"category": ["I1 - Collect Sun Stones"],
+		"requires": "|Archer| AND |@Archer Access:1| AND |Wheel| AND |@Wheel Access:1| AND ((|Hammer| AND |@Hammer Access:1|) OR ((|Stone| AND |@Stone Access:1|) AND ((|Circus| AND |@Circus Access:1|) OR (|Fire| AND |@Fire Access:1|)))) AND ((|Ice| AND |@Ice Access:1|) OR (|Parasol| AND |@Parasol Access:1|))"
+	},
+	{
+		"name": "Level 2 - Unlock EX Stage",
+		"region": "Lollipop Land",
+		"category": ["I1 - Collect Sun Stones"],
+		"requires": "|Archer| AND |@Archer Access:1| AND |Wheel| AND |@Wheel Access:1| AND ((|Hammer| AND |@Hammer Access:1|) OR ((|Stone| AND |@Stone Access:1|) AND ((|Circus| AND |@Circus Access:1|) OR (|Fire| AND |@Fire Access:1|)))) AND ((|Ice| AND |@Ice Access:1|) OR (|Parasol| AND |@Parasol Access:1|))"
+	},
+	{
+		"name": "Level 3 - Unlock EX Stage",
+		"region": "Old Odyssey",
+		"category": ["I1 - Collect Sun Stones"],
+		"requires": "|Archer| AND |@Archer Access:1| AND |Wheel| AND |@Wheel Access:1| AND ((|Hammer| AND |@Hammer Access:1|) OR ((|Stone| AND |@Stone Access:1|) AND ((|Circus| AND |@Circus Access:1|) OR (|Fire| AND |@Fire Access:1|)))) AND ((|Ice| AND |@Ice Access:1|) OR (|Parasol| AND |@Parasol Access:1|))"
+	},
+	{
+		"name": "Level 4 - Unlock EX Stage",
+		"region": "Wild World",
+		"category": ["I1 - Collect Sun Stones"],
+		"requires": "|Archer| AND |@Archer Access:1| AND |Wheel| AND |@Wheel Access:1| AND ((|Hammer| AND |@Hammer Access:1|) OR ((|Stone| AND |@Stone Access:1|) AND ((|Circus| AND |@Circus Access:1|) OR (|Fire| AND |@Fire Access:1|)))) AND ((|Ice| AND |@Ice Access:1|) OR (|Parasol| AND |@Parasol Access:1|))"
+	},
+	{
+		"name": "Level 5 - Unlock EX Stage",
+		"region": "Endless Explosions",
+		"category": ["I1 - Collect Sun Stones"],
+		"requires": "|Archer| AND |@Archer Access:1| AND |Wheel| AND |@Wheel Access:1| AND ((|Hammer| AND |@Hammer Access:1|) OR ((|Stone| AND |@Stone Access:1|) AND ((|Circus| AND |@Circus Access:1|) OR (|Fire| AND |@Fire Access:1|)))) AND ((|Ice| AND |@Ice Access:1|) OR (|Parasol| AND |@Parasol Access:1|))"
+	},
+	{
+		"name": "Level 6 - Unlock EX Stage",
+		"region": "Royal Road",
+		"category": ["I1 - Collect Sun Stones"],
+		"requires": "|Archer| AND |@Archer Access:1| AND |Wheel| AND |@Wheel Access:1| AND ((|Hammer| AND |@Hammer Access:1|) OR ((|Stone| AND |@Stone Access:1|) AND ((|Circus| AND |@Circus Access:1|) OR (|Fire| AND |@Fire Access:1|)))) AND ((|Ice| AND |@Ice Access:1|) OR (|Parasol| AND |@Parasol Access:1|))"
+	},
+	{
+		"name": "Collect All Sun Stones",
+		"region": "Royal Road",
+		"category": ["I1 - Collect Sun Stones","Keychains"],
+		"requires": "|Progressive EX Stage Key:6| AND |Archer| AND |Wheel| AND (|Hammer| OR (|Stone| AND (|Circus| OR |Fire|))) AND (|Ice| OR |Parasol|)"
+	},
+	{
+		"name": "Clear Kirby Fighters - Archer",
+		"region": "Kirby Fighters",
+		"category": ["J1 - Clear Kirby Fighters"],
+		"requires": "|Archer|"
+	},
+	{
+		"name": "Clear Kirby Fighters - Beam",
+		"region": "Kirby Fighters",
+		"category": ["J1 - Clear Kirby Fighters"],
+		"requires": "|Beam|"
+	},
+	{
+		"name": "Clear Kirby Fighters - Bomb",
+		"region": "Kirby Fighters",
+		"category": ["J1 - Clear Kirby Fighters"],
+		"requires": "|Bomb|"
+	},
+	{
+		"name": "Clear Kirby Fighters - Cutter",
+		"region": "Kirby Fighters",
+		"category": ["J1 - Clear Kirby Fighters"],
+		"requires": "|Cutter|"
+	},
+	{
+		"name": "Clear Kirby Fighters - Fighter",
+		"region": "Kirby Fighters",
+		"category": ["J1 - Clear Kirby Fighters"],
+		"requires": "|Fighter|"
+	},
+	{
+		"name": "Clear Kirby Fighters - Hammer",
+		"region": "Kirby Fighters",
+		"category": ["J1 - Clear Kirby Fighters"],
+		"requires": "|Hammer|"
+	},
+	{
+		"name": "Clear Kirby Fighters - Ninja",
+		"region": "Kirby Fighters",
+		"category": ["J1 - Clear Kirby Fighters"],
+		"requires": "|Ninja|"
+	},
+	{
+		"name": "Clear Kirby Fighters - Parasol",
+		"region": "Kirby Fighters",
+		"category": ["J1 - Clear Kirby Fighters"],
+		"requires": "|Parasol|"
+	},
+	{
+		"name": "Clear Kirby Fighters - Sword",
+		"region": "Kirby Fighters",
+		"category": ["J1 - Clear Kirby Fighters"],
+		"requires": "|Sword|"
+	},
+	{
+		"name": "Clear Kirby Fighters - Whip",
+		"region": "Kirby Fighters",
+		"category": ["J1 - Clear Kirby Fighters"],
+		"requires": "|Whip|"
+	},
+	{
+		"name": "Defeat Queen Sectonia",
+		"region": "Eternal Dreamland",
+		"victory": true,
+		"category": ["K1 - Eternal Dreamland"],
+		"requires": []
+	}
+]

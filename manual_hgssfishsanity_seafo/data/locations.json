@@ -1,0 +1,141 @@
+[
+	{
+		"victory": true,
+		"name": "Fish 'Em All Up!",
+		"category": ["Victory"],
+		"requires": "|RageCandyBar| AND |Plain Badge| AND |Fog Badge| AND |Championship Badge| AND |Earth Badge| AND ((|Rising Badge| AND (|S.S. Ticket| OR (|SquirtBottle| AND (|Storm Badge| OR |Volcano Badge| OR (|Hive Badge| AND |Radio Card|))))) OR (|SquirtBottle| AND ((|S.S. Ticket| AND (|Volcano Badge| OR (|Radio Card| AND |Hive Badge|))) OR (|Magnet Train Pass| AND (|Volcano Badge| OR (|Radio Card| AND |Hive Badge|))))) OR (|S.S. Ticket| AND |Zephyr Badge| AND |Hive Badge| AND |Magnet Train Pass| AND (|Volcano Badge| OR |Radio Card|)))",
+		"region": "New Bark Town"
+	},
+	{
+		"name": "Catch Magikarp",
+		"category": ["New Bark Town"],
+		"requires": [],
+		"region": "Magikarp Locations"
+	},
+	{
+		"name": "Catch Tentacool",
+		"category": ["New Bark Town"],
+		"requires": [],
+		"region": "Tentacool Locations"
+	},
+	{
+		"name": "Catch Shellder",
+		"category": ["New Bark Town"],
+		"requires": [],
+		"region": "Shellder Locations"
+	},
+	{
+		"name": "Catch Chinchou",
+		"category": ["New Bark Town"],
+		"requires": [],
+		"region": "Chinchou Locations"
+	},
+	{
+		"category": ["New Bark Town"],
+		"requires": [],
+		"name": "Catch Tentacruel",
+		"region": "Tentacruel Locations"
+	},
+	{
+		"category": ["New Bark Town"],
+		"requires": [],
+		"name": "Catch Lanturn",
+		"region": "Lanturn Locations"
+	},
+	{
+		"category": ["Cherrygrove City"],
+		"requires": [],
+		"name": "Catch Krabby",
+		"region": "Krabby Locations"
+	},
+	{
+		"category": ["Cherrygrove City"],
+		"requires": [],
+		"name": "Catch Staryu",
+		"region": "Staryu Locations"
+	},
+	{
+		"category": ["Cherrygrove City"],
+		"requires": [],
+		"name": "Catch Corsola",
+		"region": "Corsola Locations"
+	},
+	{
+		"category": ["Cherrygrove City"],
+		"requires": [],
+		"name": "Catch Kingler",
+		"region": "Kingler Locations"
+	},
+	{
+		"category": ["Route 30"],
+		"requires": [],
+		"name": "Catch Poliwag",
+		"region": "Poliwag Locations"
+	},
+	{
+		"category": ["Dark Cave","Union Cave","Route 42","Tohjo Falls"],
+		"requires": [],
+		"name": "Catch Goldeen",
+		"region": "Goldeen Locations"
+	},
+	{
+		"category": ["Dark Cave","Union Cave","Route 42","Tohjo Falls"],
+		"requires": [],
+		"name": "Catch Seaking",
+		"region": "Seaking Locations"
+	},
+	{
+		"category": ["Route 32","Route 12","Route 13"],
+		"requires": [],
+		"name": "Catch Qwilfish",
+		"region": "Qwilfish Locations"
+	},
+	{
+		"category": ["Whirl Islands","Seafoam Islands"],
+		"requires": [],
+		"name": "Catch Horsea",
+		"region": "Horsea Locations"
+	},
+	{
+		"category": ["Whirl Islands","Seafoam Islands"],
+		"requires": [],
+		"name": "Catch Seadra",
+		"region": "Seadra Locations"
+	},
+	{
+		"category": ["Lake of Rage","Mt. Silver Cave","Fuchsia City","Seafoam Islands"],
+		"requires": [],
+		"name": "Catch Gyarados",
+		"region": "Gyarados Locations"
+	},
+	{
+		"category": ["Route 44"],
+		"requires": [],
+		"name": "Catch Remoraid",
+		"region": "Remoraid Locations"
+	},
+	{
+		"category": ["Dragon's Den"],
+		"requires": [],
+		"name": "Catch Dratini",
+		"region": "Dratini Locations"
+	},
+	{
+		"category": ["Dragon's Den"],
+		"requires": [],
+		"name": "Catch Dragonair",
+		"region": "Dragonair Locations"
+	},
+	{
+		"category": ["Cerulean Cave"],
+		"requires": [],
+		"name": "Catch Poliwhirl",
+		"region": "Poliwhirl Locations"
+	},
+	{
+		"category": ["Seafoam Islands"],
+		"requires": [],
+		"name": "Catch Psyduck",
+		"region": "Psyduck Locations"
+	}
+]

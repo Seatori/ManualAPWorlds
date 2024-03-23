@@ -1,0 +1,158 @@
+[
+	{
+		"count":1,
+		"name": "Fishing Rod",
+		"category": ["Fishing Rods"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Durable Fishing Rod",
+		"category": ["Fishing Rods"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "High Capacity Reel",
+		"category": ["Reels"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "High Speed Reel",
+		"category": ["Reels"],
+		"useful": true
+	},
+	{
+		"count":1,
+		"name": "High Tension Reel",
+		"category": ["Reels"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Illuminated Lure",
+		"category": ["Lures"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Motorized Lure",
+		"category": ["Lures"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Sinking Lure",
+		"category": ["Lures"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Radiation EPP Upgrade",
+		"category": ["EPP Upgrades"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Heating EPP Upgrade",
+		"category": ["EPP Upgrades"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Cooling EPP Upgrade",
+		"category": ["EPP Upgrades"],
+		"progression": true
+	},
+	{
+		"count": "2",
+		"name": "10 Pixels",
+		"category": [],
+		"filler": true
+	},
+	{
+		"count": "2",
+		"name": "20 Pixels",
+		"category": [],
+		"filler": true
+	},
+	{
+		"count": "2",
+		"name": "50 Pixels",
+		"category": [],
+		"filler": true
+	},
+	{
+		"count": "2",
+		"name": "12 Pixels",
+		"category": [],
+		"filler": true
+	},
+	{
+		"count": "2",
+		"name": "25 Pixels",
+		"category": [],
+		"filler": true
+	},
+	{
+		"count": "2",
+		"name": "62 Pixels",
+		"category": [],
+		"filler": true
+	},
+	{
+		"count": "2",
+		"name": "15 Pixels",
+		"category": [],
+		"filler": true
+	},
+	{
+		"count": "4",
+		"name": "35 Pixels",
+		"category": [],
+		"filler": true
+	},
+	{
+		"count": "2",
+		"name": "75 Pixels",
+		"category": [],
+		"filler": true
+	},
+	{
+		"count": "2",
+		"name": "17 Pixels",
+		"category": [],
+		"filler": true
+	},
+	{
+		"count": "2",
+		"name": "87 Pixels",
+		"category": [],
+		"filler": true
+	},
+	{
+		"count": "4",
+		"name": "Manipulator Module",
+		"category": [],
+		"filler": true
+	},
+	{
+		"count": "4",
+		"name": "Tech Card",
+		"category": [],
+		"filler": true
+	},
+	{
+		"count": "4",
+		"name": "Diamond",
+		"category": [],
+		"filler": true
+	},
+	{
+		"count":1,
+		"name": "Relocator",
+		"category": [],
+		"useful": true
+	}
+]

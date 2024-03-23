@@ -1,0 +1,1003 @@
+{
+	"New Bark Town": 	{
+		"connects_to": ["Cherrygrove City","Route 27 West","New Bark Town - Old Rod","New Bark Town - Good Rod","New Bark Town - Super Rod"],
+		"starting": true,
+		"requires": []
+	},
+	"Cherrygrove City": 	{
+		"connects_to": ["Route 30","Cherrygrove City - Old Rod","Cherrygrove City - Good Rod","Cherrygrove City - Super Rod"],
+		"requires": []
+	},
+	"Route 30": 	{
+		"connects_to": ["Route 31","Route 30 - Old Rod"],
+		"requires": []
+	},
+	"Route 31": 	{
+		"connects_to": ["Violet City","Dark Cave","Route 31 - Old Rod"],
+		"requires": []
+	},
+	"Dark Cave": 	{
+		"connects_to": ["Dark Cave - Old Rod","Dark Cave - Super Rod"],
+		"requires": "|TM70 Flash|"
+	},
+	"Violet City": 	{
+		"connects_to": ["Ruins of Alph","Route 32 Gate","Route 36","Violet City - Old Rod","Violet City - Swarms"],
+		"requires": []
+	},
+	"Ruins of Alph": 	{
+		"connects_to": ["Ruins of Alph - Old Rod"],
+		"requires": []
+	},
+	"Route 32 Gate": 	{
+		"connects_to": ["Route 32"],
+		"requires": "|Zephyr Badge|"
+	},
+	"Route 32": 	{
+		"connects_to": ["Union Cave 1F","Route 32 - Old Rod","Route 32 - Good Rod","Route 32 - Swarms"],
+		"requires": []
+	},
+	"Union Cave 1F": 	{
+		"connects_to": ["Route 32","Union Cave B2F","Azalea Town","Union Cave 1F - Old Rod","Union Cave 1F - Super Rod"],
+		"requires": []
+	},
+	"Union Cave B2F": 	{
+		"connects_to": ["Union Cave B2F - Old Rod","Union Cave B2F - Good Rod","Union Cave B2F - Super Rod"],
+		"requires": "|Fog Badge|"
+	},
+	"Azalea Town": 	{
+		"connects_to": ["Union Cave 1F","Slowpoke Well B1F","Ilex Forest Tree"],
+		"requires": []
+	},
+	"Slowpoke Well B1F": 	{
+		"connects_to": ["Slowpoke Well B1F - Old Rod","Slowpoke Well B1F - Super Rod"],
+		"requires": []
+	},
+	"Slowpoke Well B2F": 	{
+		"connects_to": [],
+		"requires": "|Plain Badge| AND |Fog Badge|"
+	},
+	"Ilex Forest Tree": 	{
+		"connects_to": ["Azalea Town","Ilex Forest"],
+		"requires": "|Hive Badge|"
+	},
+	"Ilex Forest": 	{
+		"connects_to": ["Ilex Forest Tree","Route 34","Ilex Forest - Old Rod"],
+		"requires": []
+	},
+	"Route 34": 	{
+		"connects_to": ["Ilex Forest","Goldenrod City","Route 34 - Old Rod","Route 34 - Good Rod","Route 34 - Super Rod"],
+		"requires": []
+	},
+	"Goldenrod City": 	{
+		"connects_to": ["Route 34","Route 35","Magnet Train"],
+		"requires": []
+	},
+	"Magnet Train": 	{
+		"connects_to": ["Goldenrod City","Saffron City"],
+		"requires": "|Magnet Train Pass|"
+	},
+	"Route 35": 	{
+		"connects_to": ["Goldenrod City","Route 36","Route 35 - Old Rod"],
+		"requires": []
+	},
+	"Route 36": 	{
+		"connects_to": ["Route 35","Ecruteak City"],
+		"requires": "|SquirtBottle|"
+	},
+	"Ecruteak City": 	{
+		"connects_to": ["Olivine City","Route 42","Ecruteak City - Old Rod"],
+		"requires": []
+	},
+	"Olivine City": 	{
+		"connects_to": ["Ecruteak City","Route 40","S.S. Aqua","Olivine City - Old Rod","Olivine City - Good Rod","Olivine City - Super Rod"],
+		"requires": []
+	},
+	"S.S. Aqua": 	{
+		"connects_to": ["Olivine City","Vermilion City"],
+		"requires": "|S.S. Ticket|"
+	},
+	"Route 40": 	{
+		"connects_to": ["Route 41","Route 40 - Old Rod","Route 40 - Good Rod","Route 40 - Super Rod"],
+		"requires": []
+	},
+	"Route 41": 	{
+		"connects_to": ["Cianwood City","Whirl Islands 1F","Route 41 - Old Rod","Route 41 - Good Rod","Route 41 - Super Rod"],
+		"requires": "|Fog Badge|"
+	},
+	"Whirl Islands 1F": 	{
+		"connects_to": ["Whirl Islands B2F","Whirl Islands 1F - Old Rod","Whirl Islands 1F - Good Rod","Whirl Islands 1F - Super Rod"],
+		"requires": "|Glacier Badge|"
+	},
+	"Whirl Islands B2F": 	{
+		"connects_to": [],
+		"requires": []
+	},
+	"Cianwood City": 	{
+		"connects_to": ["Cliff Edge Gate","Cianwood City - Old Rod","Cianwood City - Good Rod","Cianwood City - Super Rod"],
+		"requires": []
+	},
+	"Cliff Edge Gate": 	{
+		"connects_to": ["Cliff Edge Gate Water","Route 47"],
+		"requires": []
+	},
+	"Cliff Edge Gate Water": 	{
+		"connects_to": ["Cliff Edge Gate - Old Rod","Cliff Edge Gate - Good Rod"],
+		"requires": "|Earth Badge|"
+	},
+	"Route 47": 	{
+		"connects_to": ["Safari Zone","Route 47 - Old Rod","Route 47 - Good Rod","Route 47 - Super Rod"],
+		"requires": []
+	},
+	"Safari Zone": 	{
+		"connects_to": ["Safari Zone Meadow","Safari Zone Swamp","Safari Zone Marshland","Safari Zone Rocky Beach","Safari Zone Wetland"],
+		"requires": "|Radio Card|"
+	},
+	"Safari Zone Meadow": 	{
+		"connects_to": ["Safari Zone Meadow - Old Rod","Safari Zone Meadow - Good Rod","Safari Zone Meadow - Super Rod"],
+		"requires": []
+	},
+	"Safari Zone Swamp": 	{
+		"connects_to": ["Safari Zone Swamp - Old Rod","Safari Zone Swamp - Good Rod","Safari Zone Swamp - Super Rod"],
+		"requires": []
+	},
+	"Safari Zone Marshland": 	{
+		"connects_to": ["Safari Zone Marshland - Old Rod","Safari Zone Marshland - Good Rod","Safari Zone Marshland - Super Rod"],
+		"requires": []
+	},
+	"Safari Zone Rocky Beach": 	{
+		"connects_to": ["Safari Zone Rocky Beach - Old Rod","Safari Zone Rocky Beach - Good Rod","Safari Zone Rocky Beach - Super Rod"],
+		"requires": []
+	},
+	"Safari Zone Wetland": 	{
+		"connects_to": ["Safari Zone Wetland - Old Rod","Safari Zone Wetland - Good Rod","Safari Zone Wetland - Super Rod"],
+		"requires": []
+	},
+	"Route 42": 	{
+		"connects_to": ["Mt. Mortar","Route 42 - Old Rod","Route 42 - Super Rod"],
+		"requires": []
+	},
+	"Mt. Mortar": 	{
+		"connects_to": ["Mahogany Town","Mt. Mortar - Old Rod","Mt. Mortar - Super Rod"],
+		"requires": []
+	},
+	"Mahogany Town": 	{
+		"connects_to": ["Route 43","Route 44"],
+		"requires": []
+	},
+	"Route 43": 	{
+		"connects_to": ["Lake of Rage","Route 43 - Old Rod"],
+		"requires": []
+	},
+	"Lake of Rage": 	{
+		"connects_to": ["Lake of Rage - Old Rod","Lake of Rage - Good Rod"],
+		"requires": []
+	},
+	"Route 44": 	{
+		"connects_to": ["Ice Path","Route 44 - Old Rod","Route 44 - Good Rod","Route 44 - Swarms"],
+		"requires": "|RageCandyBar|"
+	},
+	"Ice Path": 	{
+		"connects_to": ["Blackthorn City"],
+		"requires": "|Plain Badge|"
+	},
+	"Blackthorn City": 	{
+		"connects_to": ["Dragon's Den","Route 45","Blackthorn City - Old Rod"],
+		"requires": []
+	},
+	"Dragon's Den": 	{
+		"connects_to": ["Dragon's Den - Old Rod","Dragon's Den - Good Rod","Dragon's Den - Super Rod"],
+		"requires": "|Fog Badge|"
+	},
+	"Route 45": 	{
+		"connects_to": ["Route 45 - Old Rod"],
+		"requires": []
+	},
+	"Route 27 West": 	{
+		"connects_to": ["Tohjo Falls","Route 27 - Old Rod","Route 27 - Good Rod","Route 27 - Super Rod"],
+		"requires": "|Fog Badge|"
+	},
+	"Tohjo Falls": 	{
+		"connects_to": ["Tohjo Waterfall","Tohjo Falls - Old Rod","Tohjo Falls - Super Rod"],
+		"requires": []
+	},
+	"Tohjo Waterfall": 	{
+		"connects_to": ["Route 26"],
+		"requires": "|Rising Badge|"
+	},
+	"Route 27 East": 	{
+		"connects_to": ["Route 27 - Old Rod","Route 27 - Good Rod","Route 27 - Super Rod"],
+		"requires": []
+	},
+	"Route 26": 	{
+		"connects_to": ["Route 27 East","League Reception Gate","Route 26 - Old Rod","Route 26 - Good Rod","Route 26 - Super Rod"],
+		"requires": []
+	},
+	"League Reception Gate": 	{
+		"connects_to": ["Route 26","Route 22 Gate","Route 28 Gate"],
+		"requires": []
+	},
+	"Route 22 Gate": 	{
+		"connects_to": ["League Reception Gate","Route 22"],
+		"requires": "|Championship Badge|"
+	},
+	"Route 28 Gate": 	{
+		"connects_to": ["Route 28"],
+		"requires": "|Championship Badge| AND |Earth Badge|"
+	},
+	"Route 28": 	{
+		"connects_to": ["Mt. Silver","Route 28 - Old Rod"],
+		"requires": []
+	},
+	"Mt. Silver": 	{
+		"connects_to": ["Mt. Silver Cave","Mt. Silver - Old Rod"],
+		"requires": []
+	},
+	"Mt. Silver Cave": 	{
+		"connects_to": ["Mt. Silver Cave - Old Rod","Mt. Silver Cave - Good Rod"],
+		"requires": []
+	},
+	"Route 22": 	{
+		"connects_to": ["Route 22 Gate","Viridian City","Route 22 - Old Rod"],
+		"requires": []
+	},
+	"Viridian City": 	{
+		"connects_to": ["Pallet Town","Route 22","Route 4","Diglett's Cave","Viridian City - Old Rod"],
+		"requires": []
+	},
+	"Pallet Town": 	{
+		"connects_to": ["Viridian City","Route 21","Pallet Town - Old Rod","Pallet Town - Good Rod","Pallet Town - Super Rod"],
+		"requires": []
+	},
+	"Route 4": 	{
+		"connects_to": ["Cerulean City"],
+		"requires": "|Storm Badge| OR (|S.S. Ticket| AND |RageCandyBar| AND |Plain Badge|)"
+	},
+	"Cerulean City": 	{
+		"connects_to": ["Route 24","Route 9","Saffron City"],
+		"requires": []
+	},
+	"Route 24": 	{
+		"connects_to": ["Route 25","Cerulean City Water","Route 24 - Old Rod","Route 24 - Super Rod"],
+		"requires": []
+	},
+	"Route 25": 	{
+		"connects_to": ["Route 25 - Old Rod","Route 25 - Super Rod"],
+		"requires": []
+	},
+	"Cerulean City Water": 	{
+		"connects_to": ["Route 4 Water","Cerulean Cave","Cerulean City - Old Rod","Cerulean City - Super Rod"],
+		"requires": "|Fog Badge|"
+	},
+	"Route 4 Water": 	{
+		"connects_to": ["Route 4 - Old Rod","Route 4 - Super Rod"],
+		"requires": []
+	},
+	"Cerulean Cave": 	{
+		"connects_to": ["Cerulean Cave - Old Rod","Cerulean Cave - Good Rod","Cerulean Cave - Super Rod"],
+		"requires": "|Championship Badge| AND |Earth Badge|"
+	},
+	"Route 6": 	{
+		"connects_to": ["Vermilion City","Saffron City","Route 6 - Old Rod"],
+		"requires": []
+	},
+	"Vermilion City": 	{
+		"connects_to": ["Route 6","Route 11","S.S. Aqua","Vermilion City - Old Rod","Vermilion City - Good Rod","Vermilion City - Super Rod"],
+		"requires": []
+	},
+	"Route 11": 	{
+		"connects_to": ["Vermilion City","Diglett's Cave"],
+		"requires": []
+	},
+	"Diglett's Cave": 	{
+		"connects_to": ["Viridian City","Route 11"],
+		"requires": "|Hive Badge| AND |Radio Card|"
+	},
+	"Route 9": 	{
+		"connects_to": ["Route 10","Route 9 - Old Rod","Route 9 - Super Rod"],
+		"requires": []
+	},
+	"Route 10": 	{
+		"connects_to": ["Route 10 - Old Rod","Route 10 - Super Rod"],
+		"requires": "|Fog Badge|"
+	},
+	"Saffron City": 	{
+		"connects_to": ["Cerulean City","Route 6","Celadon City","Route 12"],
+		"requires": []
+	},
+	"Celadon City": 	{
+		"connects_to": [],
+		"requires": []
+	},
+	"Route 12": 	{
+		"connects_to": ["Saffron City","Route 13","Route 12 - Old Rod","Route 12 - Super Rod","Route 12 - Swarms"],
+		"requires": []
+	},
+	"Route 13": 	{
+		"connects_to": ["Route 12","Fuchsia City","Route 13 - Old Rod","Route 13 - Super Rod"],
+		"requires": []
+	},
+	"Fuchsia City": 	{
+		"connects_to": ["Route 13","Fuchsia Gate","Fuchsia City - Old Rod","Fuchsia City - Good Rod"],
+		"requires": []
+	},
+	"Fuchsia Gate": 	{
+		"connects_to": ["Fuchsia City","Route 19"],
+		"requires": "|Volcano Badge|"
+	},
+	"Route 19": 	{
+		"connects_to": ["Fuchsia Gate","Route 20 East","Route 19 - Old Rod","Route 19 - Good Rod","Route 19 - Super Rod"],
+		"requires": []
+	},
+	"Route 20 East": 	{
+		"connects_to": ["Route 19","Seafoam Islands","Route 20 - Old Rod","Route 20 - Good Rod","Route 20 - Super Rod"],
+		"requires": "|Fog Badge|"
+	},
+	"Seafoam Islands": 	{
+		"connects_to": ["Route 20 East","Route 20 West","Seafoam Islands - Old Rod","Seafoam Islands - Good Rod","Seafoam Islands - Super Rod"],
+		"requires": "|Plain Badge|"
+	},
+	"Route 20 West": 	{
+		"connects_to": ["Seafoam Islands","Cinnabar Island","Route 20 - Old Rod","Route 20 - Good Rod","Route 20 - Super Rod"],
+		"requires": []
+	},
+	"Cinnabar Island": 	{
+		"connects_to": ["Route 20 West","Route 21","Cinnabar Island - Old Rod","Cinnabar Island - Good Rod","Cinnabar Island - Super Rod"],
+		"requires": "|Fog Badge|"
+	},
+	"Route 21": 	{
+		"connects_to": ["Pallet Town","Cinnabar Island","Route 21 - Old Rod","Route 21 - Good Rod","Route 21 - Super Rod"],
+		"requires": []
+	},
+	"New Bark Town - Old Rod": 	{
+		"connects_to": ["Magikarp Locations","Tentacool Locations"],
+		"requires": "|Progressive Fishing Rod:1|"
+	},
+	"New Bark Town - Good Rod": 	{
+		"connects_to": ["Chinchou Locations","Shellder Locations"],
+		"requires": "|Progressive Fishing Rod:2|"
+	},
+	"New Bark Town - Super Rod": 	{
+		"connects_to": ["Tentacruel Locations","Lanturn Locations"],
+		"requires": "|Progressive Fishing Rod:3|"
+	},
+	"Cherrygrove City - Old Rod": 	{
+		"connects_to": ["Magikarp Locations","Krabby Locations"],
+		"requires": "|Progressive Fishing Rod:1|"
+	},
+	"Cherrygrove City - Good Rod": 	{
+		"connects_to": ["Corsola Locations","Staryu Locations"],
+		"requires": "|Progressive Fishing Rod:2|"
+	},
+	"Cherrygrove City - Super Rod": 	{
+		"connects_to": ["Kingler Locations"],
+		"requires": "|Progressive Fishing Rod:3|"
+	},
+	"Route 30 - Old Rod": 	{
+		"connects_to": ["Magikarp Locations","Poliwag Locations"],
+		"requires": "|Progressive Fishing Rod:1|"
+	},
+	"Route 31 - Old Rod": 	{
+		"connects_to": ["Magikarp Locations","Poliwag Locations"],
+		"requires": "|Progressive Fishing Rod:1|"
+	},
+	"Dark Cave - Old Rod": 	{
+		"connects_to": ["Magikarp Locations","Goldeen Locations"],
+		"requires": "|Progressive Fishing Rod:1|"
+	},
+	"Dark Cave - Super Rod": 	{
+		"connects_to": ["Seaking Locations"],
+		"requires": "|Progressive Fishing Rod:3|"
+	},
+	"Violet City - Old Rod": 	{
+		"connects_to": ["Magikarp Locations","Poliwag Locations"],
+		"requires": "|Progressive Fishing Rod:1|"
+	},
+	"Violet City - Swarms": 	{
+		"connects_to": ["Whiscash Locations"],
+		"requires": "|Progressive Fishing Rod:1| AND |Radio Card|"
+	},
+	"Ruins of Alph - Old Rod": 	{
+		"connects_to": ["Magikarp Locations","Poliwag Locations"],
+		"requires": "|Progressive Fishing Rod:1|"
+	},
+	"Route 32 - Old Rod": 	{
+		"connects_to": ["Magikarp Locations","Tentacool Locations"],
+		"requires": "|Progressive Fishing Rod:1|"
+	},
+	"Route 32 - Good Rod": 	{
+		"connects_to": ["Qwilfish Locations"],
+		"requires": "|Progressive Fishing Rod:2|"
+	},
+	"Route 32 - Swarms": 	{
+		"connects_to": [],
+		"requires": "|Progressive Fishing Rod:1| AND |Radio Card|"
+	},
+	"Union Cave 1F - Old Rod": 	{
+		"connects_to": ["Magikarp Locations","Goldeen Locations"],
+		"requires": "|Progressive Fishing Rod:1|"
+	},
+	"Union Cave 1F - Super Rod": 	{
+		"connects_to": ["Seaking Locations"],
+		"requires": "|Progressive Fishing Rod:3|"
+	},
+	"Union Cave B2F - Old Rod": 	{
+		"connects_to": ["Krabby Locations"],
+		"requires": "|Progressive Fishing Rod:1|"
+	},
+	"Union Cave B2F - Good Rod": 	{
+		"connects_to": ["Corsola Locations","Staryu Locations"],
+		"requires": "|Progressive Fishing Rod:2|"
+	},
+	"Union Cave B2F - Super Rod": 	{
+		"connects_to": ["Kingler Locations"],
+		"requires": "|Progressive Fishing Rod:3|"
+	},
+	"Slowpoke Well B1F - Old Rod": 	{
+		"connects_to": ["Magikarp Locations","Goldeen Locations"],
+		"requires": "|Progressive Fishing Rod:1|"
+	},
+	"Slowpoke Well B1F - Super Rod": 	{
+		"connects_to": ["Seaking Locations"],
+		"requires": "|Progressive Fishing Rod:3|"
+	},
+	"Ilex Forest - Old Rod": 	{
+		"connects_to": ["Magikarp Locations","Poliwag Locations"],
+		"requires": "|Progressive Fishing Rod:1|"
+	},
+	"Route 34 - Old Rod": 	{
+		"connects_to": ["Magikarp Locations","Krabby Locations"],
+		"requires": "|Progressive Fishing Rod:1|"
+	},
+	"Route 34 - Good Rod": 	{
+		"connects_to": ["Corsola Locations","Staryu Locations"],
+		"requires": "|Progressive Fishing Rod:2|"
+	},
+	"Route 34 - Super Rod": 	{
+		"connects_to": ["Kingler Locations"],
+		"requires": "|Progressive Fishing Rod:3|"
+	},
+	"Route 35 - Old Rod": 	{
+		"connects_to": ["Magikarp Locations","Poliwag Locations"],
+		"requires": "|Progressive Fishing Rod:1|"
+	},
+	"Ecruteak City - Old Rod": 	{
+		"connects_to": ["Magikarp Locations","Poliwag Locations"],
+		"requires": "|Progressive Fishing Rod:1|"
+	},
+	"Olivine City - Old Rod": 	{
+		"connects_to": ["Magikarp Locations","Krabby Locations"],
+		"requires": "|Progressive Fishing Rod:1|"
+	},
+	"Olivine City - Good Rod": 	{
+		"connects_to": ["Corsola Locations","Staryu Locations"],
+		"requires": "|Progressive Fishing Rod:2|"
+	},
+	"Olivine City - Super Rod": 	{
+		"connects_to": ["Kingler Locations"],
+		"requires": "|Progressive Fishing Rod:3|"
+	},
+	"Route 40 - Old Rod": 	{
+		"connects_to": ["Magikarp Locations","Krabby Locations"],
+		"requires": "|Progressive Fishing Rod:1|"
+	},
+	"Route 40 - Good Rod": 	{
+		"connects_to": ["Corsola Locations","Staryu Locations"],
+		"requires": "|Progressive Fishing Rod:2|"
+	},
+	"Route 40 - Super Rod": 	{
+		"connects_to": ["Kingler Locations"],
+		"requires": "|Progressive Fishing Rod:3|"
+	},
+	"Route 41 - Old Rod": 	{
+		"connects_to": ["Magikarp Locations","Tentacool Locations"],
+		"requires": "|Progressive Fishing Rod:1|"
+	},
+	"Route 41 - Good Rod": 	{
+		"connects_to": ["Chinchou Locations","Shellder Locations"],
+		"requires": "|Progressive Fishing Rod:2|"
+	},
+	"Route 41 - Super Rod": 	{
+		"connects_to": ["Tentacruel Locations","Lanturn Locations"],
+		"requires": "|Progressive Fishing Rod:3|"
+	},
+	"Whirl Islands 1F - Old Rod": 	{
+		"connects_to": ["Magikarp Locations","Krabby Locations"],
+		"requires": "|Progressive Fishing Rod:1|"
+	},
+	"Whirl Islands 1F - Good Rod": 	{
+		"connects_to": ["Horsea Locations"],
+		"requires": "|Progressive Fishing Rod:2|"
+	},
+	"Whirl Islands 1F - Super Rod": 	{
+		"connects_to": ["Kingler Locations","Seadra Locations"],
+		"requires": "|Progressive Fishing Rod:3|"
+	},
+	"Cianwood City - Old Rod": 	{
+		"connects_to": ["Magikarp Locations","Krabby Locations"],
+		"requires": "|Progressive Fishing Rod:1|"
+	},
+	"Cianwood City - Good Rod": 	{
+		"connects_to": ["Corsola Locations","Staryu Locations"],
+		"requires": "|Progressive Fishing Rod:2|"
+	},
+	"Cianwood City - Super Rod": 	{
+		"connects_to": ["Kingler Locations"],
+		"requires": "|Progressive Fishing Rod:3|"
+	},
+	"Cliff Edge Gate - Old Rod": 	{
+		"connects_to": ["Magikarp Locations"],
+		"requires": "|Progressive Fishing Rod:1|"
+	},
+	"Cliff Edge Gate - Good Rod": 	{
+		"connects_to": ["Poliwag Locations"],
+		"requires": "|Progressive Fishing Rod:2|"
+	},
+	"Route 47 - Old Rod": 	{
+		"connects_to": ["Magikarp Locations","Tentacool Locations"],
+		"requires": "|Progressive Fishing Rod:1|"
+	},
+	"Route 47 - Good Rod": 	{
+		"connects_to": ["Chinchou Locations","Shellder Locations"],
+		"requires": "|Progressive Fishing Rod:2|"
+	},
+	"Route 47 - Super Rod": 	{
+		"connects_to": ["Tentacruel Locations","Lanturn Locations"],
+		"requires": "|Progressive Fishing Rod:3|"
+	},
+	"Safari Zone Meadow - Old Rod": 	{
+		"connects_to": [],
+		"requires": "|Progressive Fishing Rod:1|"
+	},
+	"Safari Zone Meadow - Good Rod": 	{
+		"connects_to": [],
+		"requires": "|Progressive Fishing Rod:2|"
+	},
+	"Safari Zone Meadow - Super Rod": 	{
+		"connects_to": [],
+		"requires": "|Progressive Fishing Rod:3|"
+	},
+	"Safari Zone Swamp - Old Rod": 	{
+		"connects_to": [],
+		"requires": "|Progressive Fishing Rod:1|"
+	},
+	"Safari Zone Swamp - Good Rod": 	{
+		"connects_to": [],
+		"requires": "|Progressive Fishing Rod:2|"
+	},
+	"Safari Zone Swamp - Super Rod": 	{
+		"connects_to": [],
+		"requires": "|Progressive Fishing Rod:3|"
+	},
+	"Safari Zone Marshland - Old Rod": 	{
+		"connects_to": [],
+		"requires": "|Progressive Fishing Rod:1|"
+	},
+	"Safari Zone Marshland - Good Rod": 	{
+		"connects_to": [],
+		"requires": "|Progressive Fishing Rod:2|"
+	},
+	"Safari Zone Marshland - Super Rod": 	{
+		"connects_to": ["Barboach Locations"],
+		"requires": "|Progressive Fishing Rod:3|"
+	},
+	"Safari Zone Rocky Beach - Old Rod": 	{
+		"connects_to": [],
+		"requires": "|Progressive Fishing Rod:1|"
+	},
+	"Safari Zone Rocky Beach - Good Rod": 	{
+		"connects_to": [],
+		"requires": "|Progressive Fishing Rod:2|"
+	},
+	"Safari Zone Rocky Beach - Super Rod": 	{
+		"connects_to": ["Corphish Locations"],
+		"requires": "|Progressive Fishing Rod:3|"
+	},
+	"Safari Zone Wetland - Old Rod": 	{
+		"connects_to": [],
+		"requires": "|Progressive Fishing Rod:1|"
+	},
+	"Safari Zone Wetland - Good Rod": 	{
+		"connects_to": ["Corphish Locations"],
+		"requires": "|Progressive Fishing Rod:2|"
+	},
+	"Safari Zone Wetland - Super Rod": 	{
+		"connects_to": [],
+		"requires": "|Progressive Fishing Rod:3|"
+	},
+	"Route 42 - Old Rod": 	{
+		"connects_to": ["Magikarp Locations","Goldeen Locations"],
+		"requires": "|Progressive Fishing Rod:1|"
+	},
+	"Route 42 - Super Rod": 	{
+		"connects_to": ["Seaking Locations"],
+		"requires": "|Progressive Fishing Rod:3|"
+	},
+	"Mt. Mortar - Old Rod": 	{
+		"connects_to": ["Magikarp Locations","Goldeen Locations"],
+		"requires": "|Progressive Fishing Rod:1|"
+	},
+	"Mt. Mortar - Super Rod": 	{
+		"connects_to": ["Seaking Locations"],
+		"requires": "|Progressive Fishing Rod:3|"
+	},
+	"Route 43 - Old Rod": 	{
+		"connects_to": ["Magikarp Locations","Poliwag Locations"],
+		"requires": "|Progressive Fishing Rod:1|"
+	},
+	"Lake of Rage - Old Rod": 	{
+		"connects_to": ["Magikarp Locations"],
+		"requires": "|Progressive Fishing Rod:1|"
+	},
+	"Lake of Rage - Good Rod": 	{
+		"connects_to": ["Gyarados Locations"],
+		"requires": "|Progressive Fishing Rod:2|"
+	},
+	"Route 44 - Old Rod": 	{
+		"connects_to": ["Magikarp Locations","Poliwag Locations"],
+		"requires": "|Progressive Fishing Rod:1|"
+	},
+	"Route 44 - Good Rod": 	{
+		"connects_to": ["Remoraid Locations"],
+		"requires": "|Progressive Fishing Rod:2|"
+	},
+	"Route 44 - Swarms": 	{
+		"connects_to": [],
+		"requires": "|Progressive Fishing Rod:1| AND |Radio Card|"
+	},
+	"Blackthorn City - Old Rod": 	{
+		"connects_to": ["Magikarp Locations","Poliwag Locations"],
+		"requires": "|Progressive Fishing Rod:1|"
+	},
+	"Dragon's Den - Old Rod": 	{
+		"connects_to": ["Magikarp Locations"],
+		"requires": "|Progressive Fishing Rod:1|"
+	},
+	"Dragon's Den - Good Rod": 	{
+		"connects_to": ["Dratini Locations"],
+		"requires": "|Progressive Fishing Rod:2|"
+	},
+	"Dragon's Den - Super Rod": 	{
+		"connects_to": ["Dragonair Locations"],
+		"requires": "|Progressive Fishing Rod:3|"
+	},
+	"Route 45 - Old Rod": 	{
+		"connects_to": ["Magikarp Locations","Poliwag Locations"],
+		"requires": "|Progressive Fishing Rod:1|"
+	},
+	"Route 27 - Old Rod": 	{
+		"connects_to": ["Magikarp Locations","Tentacool Locations"],
+		"requires": "|Progressive Fishing Rod:1|"
+	},
+	"Route 27 - Good Rod": 	{
+		"connects_to": ["Chinchou Locations","Shellder Locations"],
+		"requires": "|Progressive Fishing Rod:2|"
+	},
+	"Route 27 - Super Rod": 	{
+		"connects_to": ["Tentacruel Locations","Lanturn Locations"],
+		"requires": "|Progressive Fishing Rod:3|"
+	},
+	"Tohjo Falls - Old Rod": 	{
+		"connects_to": ["Magikarp Locations","Goldeen Locations"],
+		"requires": "|Progressive Fishing Rod:1|"
+	},
+	"Tohjo Falls - Super Rod": 	{
+		"connects_to": ["Seaking Locations"],
+		"requires": "|Progressive Fishing Rod:3|"
+	},
+	"Route 26 - Old Rod": 	{
+		"connects_to": ["Magikarp Locations","Tentacool Locations"],
+		"requires": "|Progressive Fishing Rod:1|"
+	},
+	"Route 26 - Good Rod": 	{
+		"connects_to": ["Chinchou Locations","Shellder Locations"],
+		"requires": "|Progressive Fishing Rod:2|"
+	},
+	"Route 26 - Super Rod": 	{
+		"connects_to": ["Tentacruel Locations","Lanturn Locations"],
+		"requires": "|Progressive Fishing Rod:3|"
+	},
+	"Route 28 - Old Rod": 	{
+		"connects_to": ["Magikarp Locations","Poliwag Locations"],
+		"requires": "|Progressive Fishing Rod:1|"
+	},
+	"Mt. Silver - Old Rod": 	{
+		"connects_to": ["Magikarp Locations","Poliwag Locations"],
+		"requires": "|Progressive Fishing Rod:1|"
+	},
+	"Mt. Silver Cave - Old Rod": 	{
+		"connects_to": ["Magikarp Locations","Goldeen Locations"],
+		"requires": "|Progressive Fishing Rod:1|"
+	},
+	"Mt. Silver Cave - Good Rod": 	{
+		"connects_to": ["Seaking Locations","Gyarados Locations"],
+		"requires": "|Progressive Fishing Rod:2|"
+	},
+	"Route 22 - Old Rod": 	{
+		"connects_to": ["Magikarp Locations","Poliwag Locations"],
+		"requires": "|Progressive Fishing Rod:1|"
+	},
+	"Viridian City - Old Rod": 	{
+		"connects_to": ["Magikarp Locations","Poliwag Locations"],
+		"requires": "|Progressive Fishing Rod:1|"
+	},
+	"Pallet Town - Old Rod": 	{
+		"connects_to": ["Magikarp Locations","Tentacool Locations"],
+		"requires": "|Progressive Fishing Rod:1|"
+	},
+	"Pallet Town - Good Rod": 	{
+		"connects_to": ["Chinchou Locations","Shellder Locations"],
+		"requires": "|Progressive Fishing Rod:2|"
+	},
+	"Pallet Town - Super Rod": 	{
+		"connects_to": ["Tentacruel Locations","Lanturn Locations"],
+		"requires": "|Progressive Fishing Rod:3|"
+	},
+	"Route 4 - Old Rod": 	{
+		"connects_to": ["Magikarp Locations","Goldeen Locations"],
+		"requires": "|Progressive Fishing Rod:1|"
+	},
+	"Route 4 - Super Rod": 	{
+		"connects_to": ["Seaking Locations"],
+		"requires": "|Progressive Fishing Rod:3|"
+	},
+	"Cerulean City - Old Rod": 	{
+		"connects_to": ["Magikarp Locations","Goldeen Locations"],
+		"requires": "|Progressive Fishing Rod:1|"
+	},
+	"Cerulean City - Super Rod": 	{
+		"connects_to": ["Seaking Locations"],
+		"requires": "|Progressive Fishing Rod:3|"
+	},
+	"Route 24 - Old Rod": 	{
+		"connects_to": ["Magikarp Locations","Goldeen Locations"],
+		"requires": "|Progressive Fishing Rod:1|"
+	},
+	"Route 24 - Super Rod": 	{
+		"connects_to": ["Seaking Locations"],
+		"requires": "|Progressive Fishing Rod:3|"
+	},
+	"Route 25 - Old Rod": 	{
+		"connects_to": ["Magikarp Locations","Goldeen Locations"],
+		"requires": "|Progressive Fishing Rod:1|"
+	},
+	"Route 25 - Super Rod": 	{
+		"connects_to": ["Seaking Locations"],
+		"requires": "|Progressive Fishing Rod:3|"
+	},
+	"Cerulean Cave - Old Rod": 	{
+		"connects_to": ["Magikarp Locations"],
+		"requires": "|Progressive Fishing Rod:1|"
+	},
+	"Cerulean Cave - Good Rod": 	{
+		"connects_to": ["Poliwag Locations","Goldeen Locations"],
+		"requires": "|Progressive Fishing Rod:2|"
+	},
+	"Cerulean Cave - Super Rod": 	{
+		"connects_to": ["Poliwhirl Locations","Gyarados Locations"],
+		"requires": "|Progressive Fishing Rod:3|"
+	},
+	"Route 6 - Old Rod": 	{
+		"connects_to": ["Magikarp Locations","Poliwag Locations"],
+		"requires": "|Progressive Fishing Rod:1|"
+	},
+	"Vermilion City - Old Rod": 	{
+		"connects_to": ["Magikarp Locations","Tentacool Locations"],
+		"requires": "|Progressive Fishing Rod:1|"
+	},
+	"Vermilion City - Good Rod": 	{
+		"connects_to": ["Chinchou Locations","Shellder Locations"],
+		"requires": "|Progressive Fishing Rod:2|"
+	},
+	"Vermilion City - Super Rod": 	{
+		"connects_to": ["Tentacruel Locations","Lanturn Locations"],
+		"requires": "|Progressive Fishing Rod:3|"
+	},
+	"Route 9 - Old Rod": 	{
+		"connects_to": ["Magikarp Locations","Goldeen Locations"],
+		"requires": "|Progressive Fishing Rod:1|"
+	},
+	"Route 9 - Super Rod": 	{
+		"connects_to": ["Seaking Locations"],
+		"requires": "|Progressive Fishing Rod:3|"
+	},
+	"Route 10 - Old Rod": 	{
+		"connects_to": ["Magikarp Locations","Goldeen Locations"],
+		"requires": "|Progressive Fishing Rod:1|"
+	},
+	"Route 10 - Super Rod": 	{
+		"connects_to": ["Seaking Locations"],
+		"requires": "|Progressive Fishing Rod:3|"
+	},
+	"Route 12 - Old Rod": 	{
+		"connects_to": ["Magikarp Locations","Tentacool Locations"],
+		"requires": "|Progressive Fishing Rod:1|"
+	},
+	"Route 12 - Super Rod": 	{
+		"connects_to": ["Qwilfish Locations"],
+		"requires": "|Progressive Fishing Rod:3|"
+	},
+	"Route 12 - Swarms": 	{
+		"connects_to": ["Relicanth Locations"],
+		"requires": "|Progressive Fishing Rod:1| AND |Radio Card|"
+	},
+	"Route 13 - Old Rod": 	{
+		"connects_to": ["Magikarp Locations","Tentacool Locations"],
+		"requires": "|Progressive Fishing Rod:1|"
+	},
+	"Route 13 - Super Rod": 	{
+		"connects_to": ["Qwilfish Locations"],
+		"requires": "|Progressive Fishing Rod:3|"
+	},
+	"Fuchsia City - Old Rod": 	{
+		"connects_to": ["Magikarp Locations"],
+		"requires": "|Progressive Fishing Rod:1|"
+	},
+	"Fuchsia City - Good Rod": 	{
+		"connects_to": ["Gyarados Locations"],
+		"requires": "|Progressive Fishing Rod:2|"
+	},
+	"Route 19 - Old Rod": 	{
+		"connects_to": ["Magikarp Locations","Krabby Locations"],
+		"requires": "|Progressive Fishing Rod:1|"
+	},
+	"Route 19 - Good Rod": 	{
+		"connects_to": ["Corsola Locations","Staryu Locations"],
+		"requires": "|Progressive Fishing Rod:2|"
+	},
+	"Route 19 - Super Rod": 	{
+		"connects_to": ["Kingler Locations"],
+		"requires": "|Progressive Fishing Rod:3|"
+	},
+	"Route 20 - Old Rod": 	{
+		"connects_to": ["Magikarp Locations","Tentacool Locations"],
+		"requires": "|Progressive Fishing Rod:1|"
+	},
+	"Route 20 - Good Rod": 	{
+		"connects_to": ["Chinchou Locations","Shellder Locations"],
+		"requires": "|Progressive Fishing Rod:2|"
+	},
+	"Route 20 - Super Rod": 	{
+		"connects_to": ["Tentacruel Locations","Lanturn Locations"],
+		"requires": "|Progressive Fishing Rod:3|"
+	},
+	"Seafoam Islands - Old Rod": 	{
+		"connects_to": ["Magikarp Locations","Krabby Locations"],
+		"requires": "|Progressive Fishing Rod:1|"
+	},
+	"Seafoam Islands - Good Rod": 	{
+		"connects_to": ["Psyduck Locations","Horsea Locations"],
+		"requires": "|Progressive Fishing Rod:2|"
+	},
+	"Seafoam Islands - Super Rod": 	{
+		"connects_to": ["Gyarados Locations","Kingler Locations","Seadra Locations"],
+		"requires": "|Progressive Fishing Rod:3|"
+	},
+	"Cinnabar Island - Old Rod": 	{
+		"connects_to": ["Magikarp Locations","Tentacool Locations"],
+		"requires": "|Progressive Fishing Rod:1|"
+	},
+	"Cinnabar Island - Good Rod": 	{
+		"connects_to": ["Chinchou Locations","Shellder Locations"],
+		"requires": "|Progressive Fishing Rod:2|"
+	},
+	"Cinnabar Island - Super Rod": 	{
+		"connects_to": ["Tentacruel Locations","Lanturn Locations"],
+		"requires": "|Progressive Fishing Rod:3|"
+	},
+	"Route 21 - Old Rod": 	{
+		"connects_to": ["Magikarp Locations","Tentacool Locations"],
+		"requires": "|Progressive Fishing Rod:1|"
+	},
+	"Route 21 - Good Rod": 	{
+		"connects_to": ["Chinchou Locations","Shellder Locations"],
+		"requires": "|Progressive Fishing Rod:2|"
+	},
+	"Route 21 - Super Rod": 	{
+		"connects_to": ["Tentacruel Locations","Lanturn Locations"],
+		"requires": "|Progressive Fishing Rod:3|"
+	},
+	"Magikarp Locations": 	{
+		"connects_to": [],
+		"requires": []
+	},
+	"Tentacool Locations": 	{
+		"connects_to": [],
+		"requires": []
+	},
+	"Chinchou Locations": 	{
+		"connects_to": [],
+		"requires": []
+	},
+	"Shellder Locations": 	{
+		"connects_to": [],
+		"requires": []
+	},
+	"Tentacruel Locations": 	{
+		"connects_to": [],
+		"requires": []
+	},
+	"Lanturn Locations": 	{
+		"connects_to": [],
+		"requires": []
+	},
+	"Krabby Locations": 	{
+		"connects_to": [],
+		"requires": []
+	},
+	"Staryu Locations": 	{
+		"connects_to": [],
+		"requires": []
+	},
+	"Corsola Locations": 	{
+		"connects_to": [],
+		"requires": []
+	},
+	"Kingler Locations": 	{
+		"connects_to": [],
+		"requires": []
+	},
+	"Poliwag Locations": 	{
+		"connects_to": [],
+		"requires": []
+	},
+	"Goldeen Locations": 	{
+		"connects_to": [],
+		"requires": []
+	},
+	"Seaking Locations": 	{
+		"connects_to": [],
+		"requires": []
+	},
+	"Whiscash Locations": 	{
+		"connects_to": [],
+		"requires": []
+	},
+	"Qwilfish Locations": 	{
+		"connects_to": [],
+		"requires": []
+	},
+	"Horsea Locations": 	{
+		"connects_to": [],
+		"requires": []
+	},
+	"Seadra Locations": 	{
+		"connects_to": [],
+		"requires": []
+	},
+	"Barboach Locations": 	{
+		"connects_to": [],
+		"requires": []
+	},
+	"Corphish Locations": 	{
+		"connects_to": [],
+		"requires": []
+	},
+	"Gyarados Locations": 	{
+		"connects_to": [],
+		"requires": []
+	},
+	"Remoraid Locations": 	{
+		"connects_to": [],
+		"requires": []
+	},
+	"Dratini Locations": 	{
+		"connects_to": [],
+		"requires": []
+	},
+	"Dragonair Locations": 	{
+		"connects_to": [],
+		"requires": []
+	},
+	"Poliwhirl Locations": 	{
+		"connects_to": [],
+		"requires": []
+	},
+	"Relicanth Locations": 	{
+		"connects_to": [],
+		"requires": []
+	},
+	"Psyduck Locations": 	{
+		"connects_to": [],
+		"requires": []
+}
+}

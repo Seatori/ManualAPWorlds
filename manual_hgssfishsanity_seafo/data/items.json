@@ -1,0 +1,122 @@
+[
+	{
+		"count": "3",
+		"name": "Progressive Fishing Rod",
+		"category": ["Fishing Rods"],
+		"progression": true
+	},
+	{
+		"count": "3",
+		"name": "Progressive Pokeballs",
+		"category": ["Pokeballs"],
+		"useful": true
+	},
+	{
+		"count":1,
+		"name": "Zephyr Badge",
+		"category": ["Badges"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Hive Badge",
+		"category": ["Badges"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Plain Badge",
+		"category": ["Badges"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Fog Badge",
+		"category": ["Badges"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Storm Badge",
+		"category": ["Badges"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Glacier Badge",
+		"category": ["Badges"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Rising Badge",
+		"category": ["Badges"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Volcano Badge",
+		"category": ["Badges"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Earth Badge",
+		"category": ["Badges"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Championship Badge",
+		"category": ["Badges"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "TM70 Flash",
+		"category": ["TMs"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "SquirtBottle",
+		"category": ["Key Items"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Magnet Train Pass",
+		"category": ["Key Items"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "RageCandyBar",
+		"category": ["Key Items"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "S.S. Ticket",
+		"category": ["Key Items"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Radio Card",
+		"category": ["Key Items"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "TM54 False Swipe",
+		"category": ["TMs"],
+		"useful": true
+	},
+	{
+		"count":1,
+		"name": "Fishing Ability",
+		"category": ["Abilities"],
+		"useful": true
+	}
+]

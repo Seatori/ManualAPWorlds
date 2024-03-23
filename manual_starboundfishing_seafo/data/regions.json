@@ -1,0 +1,18 @@
+{
+	"Ocean Planet": 	{
+		"connects_to": [],
+		"requires": []
+	},
+	"Toxic Planet": 	{
+		"connects_to": [],
+		"requires": "|Radiation EPP Upgrade| AND |Durable Fishing Rod|"
+	},
+	"Arctic Planet": 	{
+		"connects_to": [],
+		"requires": "|Heating EPP Upgrade|"
+	},
+	"Magma Planet": 	{
+		"connects_to": [],
+		"requires": "|Cooling EPP Upgrade| AND |Durable Fishing Rod|"
+}
+}

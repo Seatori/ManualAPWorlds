@@ -1,0 +1,297 @@
+[
+	{
+		"name": "Catch Jerkfish",
+		"region": "Ocean Planet",
+		"category": ["A0 - Ocean Planet","A1 - Ocean Day","A2 - Ocean Night","A3 - Ocean Shallow","A5 - Ocean Common"],
+		"requires": []
+	},
+	{
+		"name": "Catch Sandy Dirtwhisker",
+		"region": "Ocean Planet",
+		"category": ["A0 - Ocean Planet","A1 - Ocean Day","A2 - Ocean Night","A3 - Ocean Shallow","A4 - Ocean Deep","A5 - Ocean Common"],
+		"requires": []
+	},
+	{
+		"name": "Catch Toothy Mudchomp",
+		"region": "Ocean Planet",
+		"category": ["A0 - Ocean Planet","A1 - Ocean Day","A2 - Ocean Night","A4 - Ocean Deep","A5 - Ocean Common"],
+		"requires": "|High Capacity Reel|"
+	},
+	{
+		"name": "Catch Funnyfish",
+		"region": "Ocean Planet",
+		"category": ["A0 - Ocean Planet","A1 - Ocean Day","A3 - Ocean Shallow","A6 - Ocean Uncommon"],
+		"requires": []
+	},
+	{
+		"name": "Catch Squareboy",
+		"region": "Ocean Planet",
+		"category": ["A0 - Ocean Planet","A2 - Ocean Night","A3 - Ocean Shallow","A6 - Ocean Uncommon"],
+		"requires": "|Illuminated Lure|"
+	},
+	{
+		"name": "Catch Frilled Tadguppy",
+		"region": "Ocean Planet",
+		"category": ["A0 - Ocean Planet","A1 - Ocean Day","A3 - Ocean Shallow","A4 - Ocean Deep","A6 - Ocean Uncommon"],
+		"requires": []
+	},
+	{
+		"name": "Catch Copper Bonejaw",
+		"region": "Ocean Planet",
+		"category": ["A0 - Ocean Planet","A2 - Ocean Night","A4 - Ocean Deep","A6 - Ocean Uncommon"],
+		"requires": "|High Capacity Reel| AND |Illuminated Lure|"
+	},
+	{
+		"name": "Catch Pink Sunbeam",
+		"region": "Ocean Planet",
+		"category": ["A0 - Ocean Planet","A1 - Ocean Day","A3 - Ocean Shallow","A7 - Ocean Rare"],
+		"requires": "|High Tension Reel| AND |Motorized Lure|"
+	},
+	{
+		"name": "Catch Crescent Hoopfish",
+		"region": "Ocean Planet",
+		"category": ["A0 - Ocean Planet","A2 - Ocean Night","A3 - Ocean Shallow","A4 - Ocean Deep","A7 - Ocean Rare"],
+		"requires": "|High Tension Reel| AND |Illuminated Lure|"
+	},
+	{
+		"name": "Catch Hermit Tonguile",
+		"region": "Ocean Planet",
+		"category": ["A0 - Ocean Planet","A1 - Ocean Day","A4 - Ocean Deep","A7 - Ocean Rare"],
+		"requires": "|High Capacity Reel| AND (|Motorized Lure| OR |Sinking Lure|)"
+	},
+	{
+		"name": "Catch Banded Wormeel",
+		"region": "Ocean Planet",
+		"category": ["A0 - Ocean Planet","A2 - Ocean Night","A3 - Ocean Shallow","A4 - Ocean Deep","A7 - Ocean Rare"],
+		"requires": "|High Tension Reel| AND |Illuminated Lure|"
+	},
+	{
+		"name": "Catch Chucklefish",
+		"region": "Ocean Planet",
+		"category": ["A0 - Ocean Planet","A1 - Ocean Day","A2 - Ocean Night","A4 - Ocean Deep","A8 - Ocean Legendary"],
+		"requires": "|High Capacity Reel| AND (|Motorized Lure| OR |Sinking Lure|)"
+	},
+	{
+		"name": "Catch Barbed Redeye",
+		"region": "Toxic Planet",
+		"category": ["B0 - Toxic Planet","B1 - Toxic Day","B2 - Toxic Night","B3 - Toxic Shallow","B5 - Toxic Common"],
+		"requires": []
+	},
+	{
+		"name": "Catch Spotted Gulptredder",
+		"region": "Toxic Planet",
+		"category": ["B0 - Toxic Planet","B1 - Toxic Day","B2 - Toxic Night","B4 - Toxic Deep","B5 - Toxic Common"],
+		"requires": "|High Capacity Reel|"
+	},
+	{
+		"name": "Catch Irradiated Globfish",
+		"region": "Toxic Planet",
+		"category": ["B0 - Toxic Planet","B1 - Toxic Day","B2 - Toxic Night","B3 - Toxic Shallow","B4 - Toxic Deep","B5 - Toxic Common"],
+		"requires": []
+	},
+	{
+		"name": "Catch Silkpig",
+		"region": "Toxic Planet",
+		"category": ["B0 - Toxic Planet","B1 - Toxic Day","B3 - Toxic Shallow","B4 - Toxic Deep","B6 - Toxic Uncommon"],
+		"requires": []
+	},
+	{
+		"name": "Catch Mortilus",
+		"region": "Toxic Planet",
+		"category": ["B0 - Toxic Planet","B2 - Toxic Night","B4 - Toxic Deep","B6 - Toxic Uncommon"],
+		"requires": "|High Capacity Reel| AND |Illuminated Lure|"
+	},
+	{
+		"name": "Catch Nosy Scoutier",
+		"region": "Toxic Planet",
+		"category": ["B0 - Toxic Planet","B1 - Toxic Day","B3 - Toxic Shallow","B4 - Toxic Deep","B6 - Toxic Uncommon"],
+		"requires": []
+	},
+	{
+		"name": "Catch Night Clawnacle",
+		"region": "Toxic Planet",
+		"category": ["B0 - Toxic Planet","B2 - Toxic Night","B3 - Toxic Shallow","B6 - Toxic Uncommon"],
+		"requires": "|Illuminated Lure|"
+	},
+	{
+		"name": "Catch Silver Curloach",
+		"region": "Toxic Planet",
+		"category": ["B0 - Toxic Planet","B1 - Toxic Day","B3 - Toxic Shallow","B4 - Toxic Deep","B7 - Toxic Rare"],
+		"requires": "|High Tension Reel|"
+	},
+	{
+		"name": "Catch Blighteel",
+		"region": "Toxic Planet",
+		"category": ["B0 - Toxic Planet","B2 - Toxic Night","B4 - Toxic Deep","B7 - Toxic Rare"],
+		"requires": "|High Capacity Reel| AND |Illuminated Lure|"
+	},
+	{
+		"name": "Catch Crimson Fantail",
+		"region": "Toxic Planet",
+		"category": ["B0 - Toxic Planet","B1 - Toxic Day","B3 - Toxic Shallow","B7 - Toxic Rare"],
+		"requires": "|High Tension Reel| AND |Motorized Lure|"
+	},
+	{
+		"name": "Catch Brown Chordopod",
+		"region": "Toxic Planet",
+		"category": ["B0 - Toxic Planet","B2 - Toxic Night","B3 - Toxic Shallow","B4 - Toxic Deep","B7 - Toxic Rare"],
+		"requires": "|High Tension Reel| AND |Illuminated Lure|"
+	},
+	{
+		"name": "Catch Dark Gembrane",
+		"region": "Toxic Planet",
+		"category": ["B0 - Toxic Planet","B1 - Toxic Day","B2 - Toxic Night","B4 - Toxic Deep","B8 - Toxic Legendary"],
+		"requires": "|High Capacity Reel| AND (|Motorized Lure| OR |Sinking Lure|)"
+	},
+	{
+		"name": "Catch Arctic Speartooth",
+		"region": "Arctic Planet",
+		"category": ["C0 - Arctic Planet","C1 - Arctic Day","C2 - Arctic Night","C3 - Arctic Shallow","C4 - Arctic Deep","C5 - Arctic Common"],
+		"requires": []
+	},
+	{
+		"name": "Catch Salt Rampskull",
+		"region": "Arctic Planet",
+		"category": ["C0 - Arctic Planet","C1 - Arctic Day","C2 - Arctic Night","C4 - Arctic Deep","C5 - Arctic Common"],
+		"requires": "|High Capacity Reel|"
+	},
+	{
+		"name": "Catch Blue Sabertrout",
+		"region": "Arctic Planet",
+		"category": ["C0 - Arctic Planet","C1 - Arctic Day","C2 - Arctic Night","C3 - Arctic Shallow","C5 - Arctic Common"],
+		"requires": []
+	},
+	{
+		"name": "Catch Sealacanth",
+		"region": "Arctic Planet",
+		"category": ["C0 - Arctic Planet","C1 - Arctic Day","C2 - Arctic Night","C3 - Arctic Shallow","C6 - Arctic Uncommon"],
+		"requires": []
+	},
+	{
+		"name": "Catch Whiskered Chub",
+		"region": "Arctic Planet",
+		"category": ["C0 - Arctic Planet","C1 - Arctic Day","C2 - Arctic Night","C3 - Arctic Shallow","C4 - Arctic Deep","C6 - Arctic Uncommon"],
+		"requires": []
+	},
+	{
+		"name": "Catch Coral Chirpfish",
+		"region": "Arctic Planet",
+		"category": ["C0 - Arctic Planet","C1 - Arctic Day","C3 - Arctic Shallow","C4 - Arctic Deep","C6 - Arctic Uncommon"],
+		"requires": []
+	},
+	{
+		"name": "Catch Glacial Wimp",
+		"region": "Arctic Planet",
+		"category": ["C0 - Arctic Planet","C2 - Arctic Night","C4 - Arctic Deep","C6 - Arctic Uncommon"],
+		"requires": "|High Capacity Reel| AND |Illuminated Lure|"
+	},
+	{
+		"name": "Catch Luminous Swindler",
+		"region": "Arctic Planet",
+		"category": ["C0 - Arctic Planet","C2 - Arctic Night","C4 - Arctic Deep","C7 - Arctic Rare"],
+		"requires": "|High Capacity Reel| AND |Illuminated Lure|"
+	},
+	{
+		"name": "Catch Garland Conger",
+		"region": "Arctic Planet",
+		"category": ["C0 - Arctic Planet","C1 - Arctic Day","C2 - Arctic Night","C3 - Arctic Shallow","C4 - Arctic Deep","C7 - Arctic Rare"],
+		"requires": "|High Tension Reel| AND |Motorized Lure|"
+	},
+	{
+		"name": "Catch Right Gazer",
+		"region": "Arctic Planet",
+		"category": ["C0 - Arctic Planet","C1 - Arctic Day","C3 - Arctic Shallow","C7 - Arctic Rare"],
+		"requires": "|High Tension Reel| AND |Motorized Lure|"
+	},
+	{
+		"name": "Catch Muckfang",
+		"region": "Arctic Planet",
+		"category": ["C0 - Arctic Planet","C1 - Arctic Day","C2 - Arctic Night","C3 - Arctic Shallow","C4 - Arctic Deep","C7 - Arctic Rare"],
+		"requires": "|High Tension Reel| AND |Motorized Lure|"
+	},
+	{
+		"name": "Catch Variegated Breacher",
+		"region": "Arctic Planet",
+		"category": ["C0 - Arctic Planet","C1 - Arctic Day","C2 - Arctic Night","C4 - Arctic Deep","C8 - Arctic Legendary"],
+		"requires": "|High Capacity Reel| AND (|Motorized Lure| OR |Sinking Lure|)"
+	},
+	{
+		"name": "Catch Orange Ashlet",
+		"region": "Magma Planet",
+		"category": ["D0 - Magma Planet","D1 - Magma Day","D2 - Magma Night","D3 - Magma Shallow","D5 - Magma Common"],
+		"requires": []
+	},
+	{
+		"name": "Catch Red Hand",
+		"region": "Magma Planet",
+		"category": ["D0 - Magma Planet","D1 - Magma Day","D2 - Magma Night","D4 - Magma Deep","D5 - Magma Common"],
+		"requires": "|High Capacity Reel|"
+	},
+	{
+		"name": "Catch Sulphish",
+		"region": "Magma Planet",
+		"category": ["D0 - Magma Planet","D1 - Magma Day","D2 - Magma Night","D3 - Magma Shallow","D4 - Magma Deep","D5 - Magma Common"],
+		"requires": []
+	},
+	{
+		"name": "Catch Scarlet Swellpurl",
+		"region": "Magma Planet",
+		"category": ["D0 - Magma Planet","D1 - Magma Day","D3 - Magma Shallow","D4 - Magma Deep","D6 - Magma Uncommon"],
+		"requires": []
+	},
+	{
+		"name": "Catch Lampred",
+		"region": "Magma Planet",
+		"category": ["D0 - Magma Planet","D2 - Magma Night","D4 - Magma Deep","D6 - Magma Uncommon"],
+		"requires": "|High Capacity Reel| AND |Illuminated Lure|"
+	},
+	{
+		"name": "Catch Basalt Darter",
+		"region": "Magma Planet",
+		"category": ["D0 - Magma Planet","D1 - Magma Day","D3 - Magma Shallow","D4 - Magma Deep","D6 - Magma Uncommon"],
+		"requires": []
+	},
+	{
+		"name": "Catch Scorcheye",
+		"region": "Magma Planet",
+		"category": ["D0 - Magma Planet","D2 - Magma Night","D3 - Magma Shallow","D4 - Magma Deep","D6 - Magma Uncommon"],
+		"requires": "|Illuminated Lure|"
+	},
+	{
+		"name": "Catch Gold Feudibranch",
+		"region": "Magma Planet",
+		"category": ["D0 - Magma Planet","D1 - Magma Day","D3 - Magma Shallow","D4 - Magma Deep","D7 - Magma Rare"],
+		"requires": "|High Tension Reel| AND |Motorized Lure|"
+	},
+	{
+		"name": "Catch Volcaris",
+		"region": "Magma Planet",
+		"category": ["D0 - Magma Planet","D2 - Magma Night","D3 - Magma Shallow","D7 - Magma Rare"],
+		"requires": "|High Tension Reel| AND |Illuminated Lure|"
+	},
+	{
+		"name": "Catch Imperviray",
+		"region": "Magma Planet",
+		"category": ["D0 - Magma Planet","D1 - Magma Day","D3 - Magma Shallow","D4 - Magma Deep","D7 - Magma Rare"],
+		"requires": "|High Tension Reel| AND |Motorized Lure|"
+	},
+	{
+		"name": "Catch Seadragon",
+		"region": "Magma Planet",
+		"category": ["D0 - Magma Planet","D2 - Magma Night","D3 - Magma Shallow","D4 - Magma Deep","D7 - Magma Rare"],
+		"requires": "|High Tension Reel| AND |Illuminated Lure|"
+	},
+	{
+		"name": "Catch Magmalodon",
+		"region": "Magma Planet",
+		"category": ["D0 - Magma Planet","D1 - Magma Day","D2 - Magma Night","D4 - Magma Deep","D8 - Magma Legendary"],
+		"requires": "|High Capacity Reel| AND (|Motorized Lure| OR |Sinking Lure|)"
+	},
+	{
+		"victory": true,
+		"region": "Ocean Planet",
+		"name": "Catch All Rare Fish",
+		"category": ["Victory"],
+		"requires": "|@EPP Upgrades:3| AND |Durable Fishing Rod| AND |High Capacity Reel| AND |High Tension Reel| AND |Illuminated Lure| AND |Motorized Lure|"
+	}
+]
