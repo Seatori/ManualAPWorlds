@@ -1,2 +1,2 @@
 
-	{"game": "StarboundFishing","creator": "Seafo","filler_item_name": "Raw Fish"}
+	{"game": "StarboundFishing","creator": "Seafo","filler_item_name": "Raw Fish","starting_items": [{"items": ["Fishing Rod"]}]}
