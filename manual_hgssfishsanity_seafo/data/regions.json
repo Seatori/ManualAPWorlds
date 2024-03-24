@@ -106,7 +106,7 @@
 	},
 	"Whirl Islands 1F": 	{
 		"connects_to": ["Whirl Islands B2F","Whirl Islands 1F - Old Rod","Whirl Islands 1F - Good Rod","Whirl Islands 1F - Super Rod"],
-		"requires": "|Glacier Badge|"
+		"requires": "|Glacier Badge| AND |TM70 Flash|"
 	},
 	"Whirl Islands B2F": 	{
 		"connects_to": [],
