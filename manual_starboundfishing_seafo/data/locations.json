@@ -22,7 +22,7 @@
 		"name": "Catch Toothy Mudchomp",
 		"region": "Ocean Planet",
 		"category": ["A0 - Ocean Planet","A1 - Ocean Day","A2 - Ocean Night","A4 - Ocean Deep","A5 - Ocean Common","E1 - Day Fish","E2 - Night Fish","F2 - Deep Fish","G1 - Common Fish"],
-		"requires": "|High Capacity Reel|"
+		"requires": []
 	},
 	{
 		"name": "Catch Funnyfish",
@@ -88,7 +88,7 @@
 		"name": "Catch Spotted Gulptredder",
 		"region": "Toxic Planet",
 		"category": ["B0 - Toxic Planet","B1 - Toxic Day","B2 - Toxic Night","B4 - Toxic Deep","B5 - Toxic Common","E1 - Day Fish","E2 - Night Fish","F2 - Deep Fish","G1 - Common Fish"],
-		"requires": "|High Capacity Reel|"
+		"requires": []
 	},
 	{
 		"name": "Catch Irradiated Globfish",
@@ -160,7 +160,7 @@
 		"name": "Catch Salt Rampskull",
 		"region": "Arctic Planet",
 		"category": ["C0 - Arctic Planet","C1 - Arctic Day","C2 - Arctic Night","C4 - Arctic Deep","C5 - Arctic Common","E1 - Day Fish","E2 - Night Fish","F2 - Deep Fish","G1 - Common Fish"],
-		"requires": "|High Capacity Reel|"
+		"requires": []
 	},
 	{
 		"name": "Catch Blue Sabertrout",
@@ -232,7 +232,7 @@
 		"name": "Catch Red Hand",
 		"region": "Magma Planet",
 		"category": ["D0 - Magma Planet","D1 - Magma Day","D2 - Magma Night","D4 - Magma Deep","D5 - Magma Common","E1 - Day Fish","E2 - Night Fish","F2 - Deep Fish","G1 - Common Fish"],
-		"requires": "|High Capacity Reel|"
+		"requires": []
 	},
 	{
 		"name": "Catch Sulphish",
