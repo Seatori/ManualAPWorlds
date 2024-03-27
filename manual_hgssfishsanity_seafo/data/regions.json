@@ -274,7 +274,7 @@
 	},
 	"Cerulean Cave": 	{
 		"connects_to": ["Cerulean Cave - Old Rod","Cerulean Cave - Good Rod","Cerulean Cave - Super Rod"],
-		"requires": "|Championship Badge| AND |Earth Badge|"
+		"requires": "|TM70 Flash| AND |Championship Badge| AND |Earth Badge|"
 	},
 	"Route 6": 	{
 		"connects_to": ["Vermilion City","Saffron City","Route 6 - Old Rod"],

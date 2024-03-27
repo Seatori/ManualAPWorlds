@@ -3,7 +3,7 @@
 		"victory": true,
 		"name": "Fish 'Em All Up!",
 		"category": ["Victory"],
-		"requires": "|Progressive Fishing Rod:3| AND |RageCandyBar| AND |Plain Badge| AND |Fog Badge| AND |Championship Badge| AND |Earth Badge| AND ((|Rising Badge| AND (|S.S. Ticket| OR (|SquirtBottle| AND (|Storm Badge| OR |Volcano Badge| OR (|Hive Badge| AND |Radio Card|))))) OR (|SquirtBottle| AND ((|S.S. Ticket| AND (|Volcano Badge| OR (|Radio Card| AND |Hive Badge|))) OR (|Magnet Train Pass| AND (|Volcano Badge| OR (|Radio Card| AND |Hive Badge|))))) OR (|S.S. Ticket| AND |Zephyr Badge| AND |Hive Badge| AND |Magnet Train Pass| AND (|Volcano Badge| OR |Radio Card|)))",
+		"requires": "|Progressive Fishing Rod:3| AND |TM70 Flash| AND |RageCandyBar| AND |Plain Badge| AND |Fog Badge| AND |Championship Badge| AND |Earth Badge| AND ((|Rising Badge| AND (|S.S. Ticket| OR (|SquirtBottle| AND (|Storm Badge| OR |Volcano Badge| OR (|Hive Badge| AND |Radio Card|))))) OR (|SquirtBottle| AND ((|S.S. Ticket| AND (|Volcano Badge| OR (|Radio Card| AND |Hive Badge|))) OR (|Magnet Train Pass| AND (|Volcano Badge| OR (|Radio Card| AND |Hive Badge|))))) OR (|S.S. Ticket| AND |Zephyr Badge| AND |Hive Badge| AND |Magnet Train Pass| AND (|Volcano Badge| OR |Radio Card|)))",
 		"region": "New Bark Town"
 	},
 	{
