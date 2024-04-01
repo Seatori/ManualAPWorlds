@@ -49,7 +49,7 @@
 		"requires": []
 	},
 	"Slowpoke Well B1F": 	{
-		"connects_to": ["Slowpoke Well B1F - Old Rod","Slowpoke Well B1F - Super Rod"],
+		"connects_to": ["Slowpoke Well B2F","Slowpoke Well B1F - Old Rod","Slowpoke Well B1F - Super Rod"],
 		"requires": []
 	},
 	"Slowpoke Well B2F": 	{
@@ -241,11 +241,15 @@
 		"requires": []
 	},
 	"Viridian City": 	{
-		"connects_to": ["Pallet Town","Route 22","Route 4","Diglett's Cave","Viridian City - Old Rod"],
+		"connects_to": ["Pallet Town","Route 22","Mt. Moon Square","Diglett's Cave","Viridian City - Old Rod"],
 		"requires": []
 	},
 	"Pallet Town": 	{
 		"connects_to": ["Viridian City","Route 21","Pallet Town - Old Rod","Pallet Town - Good Rod","Pallet Town - Super Rod"],
+		"requires": []
+	},
+	"Mt. Moon Square": 	{
+		"connects_to": ["Route 4","Mt. Moon Square - Old Rod","Mt. Moon Square - Good Rod"],
 		"requires": []
 	},
 	"Route 4": 	{
@@ -731,6 +735,14 @@
 	"Pallet Town - Super Rod": 	{
 		"connects_to": ["Tentacruel Locations","Lanturn Locations"],
 		"requires": "|Progressive Fishing Rod:3|"
+	},
+	"Mt. Moon Square - Old Rod": 	{
+		"connects_to": ["Magikarp Locations"],
+		"requires": "|Progressive Fishing Rod:1|"
+	},
+	"Mt. Moon Square - Good Rod": 	{
+		"connects_to": ["Poliwag Locations"],
+		"requires": "|Progressive Fishing Rod:2|"
 	},
 	"Route 4 - Old Rod": 	{
 		"connects_to": ["Magikarp Locations","Goldeen Locations"],
