@@ -8,132 +8,132 @@
 	},
 	{
 		"name": "Catch Magikarp",
-		"category": ["New Bark Town"],
+		"category": ["01 - New Bark Town","02 - Cherrygrove City","03 - Route 30","07 - Dark Cave","08 - Route 32","09 - Union Cave","18 - Whirl Islands","23 - Route 42","26 - Lake of Rage","27 - Route 44","29 - Dragon's Den","32 - Tohjo Falls","35 - Mt. Silver Cave","42 - Cerulean Cave","49 - Route 12","50 - Route 13","51 - Fuchsia City","54 - Seafoam Islands"],
 		"requires": [],
 		"region": "Magikarp Locations"
 	},
 	{
 		"name": "Catch Tentacool",
-		"category": ["New Bark Town"],
+		"category": ["01 - New Bark Town","08 - Route 32","49 - Route 12","50 - Route 13"],
 		"requires": [],
 		"region": "Tentacool Locations"
 	},
 	{
 		"name": "Catch Shellder",
-		"category": ["New Bark Town"],
+		"category": ["01 - New Bark Town"],
 		"requires": [],
 		"region": "Shellder Locations"
 	},
 	{
 		"name": "Catch Chinchou",
-		"category": ["New Bark Town"],
+		"category": ["01 - New Bark Town"],
 		"requires": [],
 		"region": "Chinchou Locations"
 	},
 	{
-		"category": ["New Bark Town"],
+		"category": ["01 - New Bark Town"],
 		"requires": [],
 		"name": "Catch Tentacruel",
 		"region": "Tentacruel Locations"
 	},
 	{
-		"category": ["New Bark Town"],
+		"category": ["01 - New Bark Town"],
 		"requires": [],
 		"name": "Catch Lanturn",
 		"region": "Lanturn Locations"
 	},
 	{
-		"category": ["Cherrygrove City"],
+		"category": ["02 - Cherrygrove City","09 - Union Cave","18 - Whirl Islands","54 - Seafoam Islands"],
 		"requires": [],
 		"name": "Catch Krabby",
 		"region": "Krabby Locations"
 	},
 	{
-		"category": ["Cherrygrove City"],
+		"category": ["02 - Cherrygrove City","09 - Union Cave"],
 		"requires": [],
 		"name": "Catch Staryu",
 		"region": "Staryu Locations"
 	},
 	{
-		"category": ["Cherrygrove City"],
+		"category": ["02 - Cherrygrove City","09 - Union Cave"],
 		"requires": [],
 		"name": "Catch Corsola",
 		"region": "Corsola Locations"
 	},
 	{
-		"category": ["Cherrygrove City"],
+		"category": ["02 - Cherrygrove City","09 - Union Cave","18 - Whirl Islands","54 - Seafoam Islands"],
 		"requires": [],
 		"name": "Catch Kingler",
 		"region": "Kingler Locations"
 	},
 	{
-		"category": ["Route 30"],
+		"category": ["03 - Route 30","27 - Route 44","42 - Cerulean Cave"],
 		"requires": [],
 		"name": "Catch Poliwag",
 		"region": "Poliwag Locations"
 	},
 	{
-		"category": ["Dark Cave","Union Cave","Route 42","Tohjo Falls"],
+		"category": ["07 - Dark Cave","09 - Union Cave","23 - Route 42","32 - Tohjo Falls","35 - Mt. Silver Cave","42 - Cerulean Cave"],
 		"requires": [],
 		"name": "Catch Goldeen",
 		"region": "Goldeen Locations"
 	},
 	{
-		"category": ["Dark Cave","Union Cave","Route 42","Tohjo Falls"],
+		"category": ["07 - Dark Cave","09 - Union Cave","23 - Route 42","32 - Tohjo Falls","35 - Mt. Silver Cave"],
 		"requires": [],
 		"name": "Catch Seaking",
 		"region": "Seaking Locations"
 	},
 	{
-		"category": ["Route 32","Route 12","Route 13"],
+		"category": ["08 - Route 32","49 - Route 12","50 - Route 13"],
 		"requires": [],
 		"name": "Catch Qwilfish",
 		"region": "Qwilfish Locations"
 	},
 	{
-		"category": ["Whirl Islands","Seafoam Islands"],
+		"category": ["18 - Whirl Islands","54 - Seafoam Islands"],
 		"requires": [],
 		"name": "Catch Horsea",
 		"region": "Horsea Locations"
 	},
 	{
-		"category": ["Whirl Islands","Seafoam Islands"],
+		"category": ["18 - Whirl Islands","54 - Seafoam Islands"],
 		"requires": [],
 		"name": "Catch Seadra",
 		"region": "Seadra Locations"
 	},
 	{
-		"category": ["Lake of Rage","Mt. Silver Cave","Fuchsia City","Seafoam Islands"],
+		"category": ["26 - Lake of Rage","35 - Mt. Silver Cave","42 - Cerulean Cave","51 - Fuchsia City","54 - Seafoam Islands"],
 		"requires": [],
 		"name": "Catch Gyarados",
 		"region": "Gyarados Locations"
 	},
 	{
-		"category": ["Route 44"],
+		"category": ["27 - Route 44"],
 		"requires": [],
 		"name": "Catch Remoraid",
 		"region": "Remoraid Locations"
 	},
 	{
-		"category": ["Dragon's Den"],
+		"category": ["29 - Dragon's Den"],
 		"requires": [],
 		"name": "Catch Dratini",
 		"region": "Dratini Locations"
 	},
 	{
-		"category": ["Dragon's Den"],
+		"category": ["29 - Dragon's Den"],
 		"requires": [],
 		"name": "Catch Dragonair",
 		"region": "Dragonair Locations"
 	},
 	{
-		"category": ["Cerulean Cave"],
+		"category": ["42 - Cerulean Cave"],
 		"requires": [],
 		"name": "Catch Poliwhirl",
 		"region": "Poliwhirl Locations"
 	},
 	{
-		"category": ["Seafoam Islands"],
+		"category": ["54 - Seafoam Islands"],
 		"requires": [],
 		"name": "Catch Psyduck",
 		"region": "Psyduck Locations"
