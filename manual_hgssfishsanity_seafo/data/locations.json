@@ -3,139 +3,1517 @@
 		"victory": true,
 		"name": "Fish 'Em All Up!",
 		"category": ["Victory"],
-		"requires": "|Progressive Fishing Rod:3| AND |TM70 Flash| AND |RageCandyBar| AND |Plain Badge| AND |Fog Badge| AND |Championship Badge| AND |Earth Badge| AND ((|Rising Badge| AND (|S.S. Ticket| OR (|SquirtBottle| AND (|Storm Badge| OR |Volcano Badge| OR (|Hive Badge| AND |Radio Card|))))) OR (|SquirtBottle| AND ((|S.S. Ticket| AND (|Volcano Badge| OR (|Radio Card| AND |Hive Badge|))) OR (|Magnet Train Pass| AND (|Volcano Badge| OR (|Radio Card| AND |Hive Badge|))))) OR (|S.S. Ticket| AND |Zephyr Badge| AND |Hive Badge| AND |Magnet Train Pass| AND (|Volcano Badge| OR |Radio Card|)))",
+		"requires": "|@Pokedex Entries:ALL|",
 		"region": "New Bark Town"
 	},
 	{
 		"name": "Catch Magikarp",
-		"category": ["01 - New Bark Town","02 - Cherrygrove City","03 - Route 30","07 - Dark Cave","08 - Route 32","09 - Union Cave","18 - Whirl Islands","23 - Route 42","26 - Lake of Rage","27 - Route 44","29 - Dragon's Den","32 - Tohjo Falls","35 - Mt. Silver Cave","42 - Cerulean Cave","49 - Route 12","50 - Route 13","51 - Fuchsia City","54 - Seafoam Islands"],
+		"category": ["01 - New Bark Town","02 - Cherrygrove City","03 - Route 30","07 - Dark Cave","08 - Route 32","09 - Union Cave","18 - Whirl Islands","23 - Route 42","26 - Lake of Rage","27 - Route 44","29 - Dragon's Den","32 - Tohjo Falls","36 - Mt. Silver Cave","45 - Cerulean Cave","49 - Route 12","50 - Route 13","53 - Fuchsia City","56 - Seafoam Islands","Catch Species"],
 		"requires": [],
 		"region": "Magikarp Locations"
 	},
 	{
 		"name": "Catch Tentacool",
-		"category": ["01 - New Bark Town","08 - Route 32","49 - Route 12","50 - Route 13"],
+		"category": ["01 - New Bark Town","08 - Route 32","49 - Route 12","50 - Route 13","Catch Species"],
 		"requires": [],
 		"region": "Tentacool Locations"
 	},
 	{
 		"name": "Catch Shellder",
-		"category": ["01 - New Bark Town"],
+		"category": ["01 - New Bark Town","Catch Species"],
 		"requires": [],
 		"region": "Shellder Locations"
 	},
 	{
 		"name": "Catch Chinchou",
-		"category": ["01 - New Bark Town"],
+		"category": ["01 - New Bark Town","Catch Species"],
 		"requires": [],
 		"region": "Chinchou Locations"
 	},
 	{
-		"category": ["01 - New Bark Town"],
+		"category": ["01 - New Bark Town","Catch Species"],
 		"requires": [],
 		"name": "Catch Tentacruel",
 		"region": "Tentacruel Locations"
 	},
 	{
-		"category": ["01 - New Bark Town"],
+		"category": ["01 - New Bark Town","Catch Species"],
 		"requires": [],
 		"name": "Catch Lanturn",
 		"region": "Lanturn Locations"
 	},
 	{
-		"category": ["02 - Cherrygrove City","09 - Union Cave","18 - Whirl Islands","54 - Seafoam Islands"],
+		"category": ["02 - Cherrygrove City","09 - Union Cave","18 - Whirl Islands","56 - Seafoam Islands","Catch Species"],
 		"requires": [],
 		"name": "Catch Krabby",
 		"region": "Krabby Locations"
 	},
 	{
-		"category": ["02 - Cherrygrove City","09 - Union Cave"],
+		"category": ["02 - Cherrygrove City","09 - Union Cave","Catch Species"],
 		"requires": [],
 		"name": "Catch Staryu",
 		"region": "Staryu Locations"
 	},
 	{
-		"category": ["02 - Cherrygrove City","09 - Union Cave"],
+		"category": ["02 - Cherrygrove City","09 - Union Cave","Catch Species"],
 		"requires": [],
 		"name": "Catch Corsola",
 		"region": "Corsola Locations"
 	},
 	{
-		"category": ["02 - Cherrygrove City","09 - Union Cave","18 - Whirl Islands","54 - Seafoam Islands"],
+		"category": ["02 - Cherrygrove City","09 - Union Cave","18 - Whirl Islands","56 - Seafoam Islands","Catch Species"],
 		"requires": [],
 		"name": "Catch Kingler",
 		"region": "Kingler Locations"
 	},
 	{
-		"category": ["03 - Route 30","27 - Route 44","42 - Cerulean Cave"],
+		"category": ["03 - Route 30","27 - Route 44","45 - Cerulean Cave","Catch Species"],
 		"requires": [],
 		"name": "Catch Poliwag",
 		"region": "Poliwag Locations"
 	},
 	{
-		"category": ["07 - Dark Cave","09 - Union Cave","23 - Route 42","32 - Tohjo Falls","35 - Mt. Silver Cave","42 - Cerulean Cave"],
+		"category": ["07 - Dark Cave","09 - Union Cave","23 - Route 42","32 - Tohjo Falls","36 - Mt. Silver Cave","45 - Cerulean Cave","Catch Species"],
 		"requires": [],
 		"name": "Catch Goldeen",
 		"region": "Goldeen Locations"
 	},
 	{
-		"category": ["07 - Dark Cave","09 - Union Cave","23 - Route 42","32 - Tohjo Falls","35 - Mt. Silver Cave"],
+		"category": ["07 - Dark Cave","09 - Union Cave","23 - Route 42","32 - Tohjo Falls","36 - Mt. Silver Cave","Catch Species"],
 		"requires": [],
 		"name": "Catch Seaking",
 		"region": "Seaking Locations"
 	},
 	{
-		"category": ["08 - Route 32","49 - Route 12","50 - Route 13"],
+		"category": ["08 - Route 32","49 - Route 12","50 - Route 13","Catch Species"],
 		"requires": [],
 		"name": "Catch Qwilfish",
 		"region": "Qwilfish Locations"
 	},
 	{
-		"category": ["18 - Whirl Islands","54 - Seafoam Islands"],
+		"category": ["18 - Whirl Islands","56 - Seafoam Islands","Catch Species"],
 		"requires": [],
 		"name": "Catch Horsea",
 		"region": "Horsea Locations"
 	},
 	{
-		"category": ["18 - Whirl Islands","54 - Seafoam Islands"],
+		"category": ["18 - Whirl Islands","56 - Seafoam Islands","Catch Species"],
 		"requires": [],
 		"name": "Catch Seadra",
 		"region": "Seadra Locations"
 	},
 	{
-		"category": ["26 - Lake of Rage","35 - Mt. Silver Cave","42 - Cerulean Cave","51 - Fuchsia City","54 - Seafoam Islands"],
+		"category": ["26 - Lake of Rage","36 - Mt. Silver Cave","45 - Cerulean Cave","53 - Fuchsia City","56 - Seafoam Islands","Catch Species"],
 		"requires": [],
 		"name": "Catch Gyarados",
 		"region": "Gyarados Locations"
 	},
 	{
-		"category": ["27 - Route 44"],
+		"category": ["27 - Route 44","Catch Species"],
 		"requires": [],
 		"name": "Catch Remoraid",
 		"region": "Remoraid Locations"
 	},
 	{
-		"category": ["29 - Dragon's Den"],
+		"category": ["29 - Dragon's Den","Catch Species"],
 		"requires": [],
 		"name": "Catch Dratini",
 		"region": "Dratini Locations"
 	},
 	{
-		"category": ["29 - Dragon's Den"],
+		"category": ["29 - Dragon's Den","Catch Species"],
 		"requires": [],
 		"name": "Catch Dragonair",
 		"region": "Dragonair Locations"
 	},
 	{
-		"category": ["42 - Cerulean Cave"],
+		"category": ["45 - Cerulean Cave","Catch Species"],
 		"requires": [],
 		"name": "Catch Poliwhirl",
 		"region": "Poliwhirl Locations"
 	},
 	{
-		"category": ["54 - Seafoam Islands"],
+		"category": ["56 - Seafoam Islands","Catch Species"],
 		"requires": [],
 		"name": "Catch Psyduck",
 		"region": "Psyduck Locations"
+	},
+	{
+		"name": "Register Magikarp",
+		"category": ["00 - Pokedex Entries"],
+		"requires": [],
+		"region": "Magikarp Locations",
+		"place_item": ["Magikarp Entry"]
+	},
+	{
+		"name": "Register Tentacool",
+		"category": ["00 - Pokedex Entries"],
+		"requires": [],
+		"region": "Tentacool Locations",
+		"place_item": ["Tentacool Entry"]
+	},
+	{
+		"name": "Register Krabby",
+		"category": ["00 - Pokedex Entries"],
+		"requires": [],
+		"region": "Krabby Locations",
+		"place_item": ["Krabby Entry"]
+	},
+	{
+		"name": "Register Poliwag",
+		"category": ["00 - Pokedex Entries"],
+		"requires": [],
+		"region": "Poliwag Locations",
+		"place_item": ["Poliwag Entry"]
+	},
+	{
+		"name": "Register Shellder",
+		"category": ["00 - Pokedex Entries"],
+		"requires": [],
+		"region": "Shellder Locations",
+		"place_item": ["Shellder Entry"]
+	},
+	{
+		"name": "Register Chinchou",
+		"category": ["00 - Pokedex Entries"],
+		"requires": [],
+		"region": "Chinchou Locations",
+		"place_item": ["Chinchou Entry"]
+	},
+	{
+		"name": "Register Corsola",
+		"category": ["00 - Pokedex Entries"],
+		"requires": [],
+		"region": "Corsola Locations",
+		"place_item": ["Corsola Entry"]
+	},
+	{
+		"name": "Register Staryu",
+		"category": ["00 - Pokedex Entries"],
+		"requires": [],
+		"region": "Staryu Locations",
+		"place_item": ["Staryu Entry"]
+	},
+	{
+		"name": "Register Tentacruel",
+		"category": ["00 - Pokedex Entries"],
+		"requires": [],
+		"region": "Tentacruel Locations",
+		"place_item": ["Tentacruel Entry"]
+	},
+	{
+		"name": "Register Lanturn",
+		"category": ["00 - Pokedex Entries"],
+		"requires": [],
+		"region": "Lanturn Locations",
+		"place_item": ["Lanturn Entry"]
+	},
+	{
+		"name": "Register Kingler",
+		"category": ["00 - Pokedex Entries"],
+		"requires": [],
+		"region": "Kingler Locations",
+		"place_item": ["Kingler Entry"]
+	},
+	{
+		"name": "Register Goldeen",
+		"category": ["00 - Pokedex Entries"],
+		"requires": [],
+		"region": "Goldeen Locations",
+		"place_item": ["Goldeen Entry"]
+	},
+	{
+		"name": "Register Seaking",
+		"category": ["00 - Pokedex Entries"],
+		"requires": [],
+		"region": "Seaking Locations",
+		"place_item": ["Seaking Entry"]
+	},
+	{
+		"name": "Register Qwilfish",
+		"category": ["00 - Pokedex Entries"],
+		"requires": [],
+		"region": "Qwilfish Locations",
+		"place_item": ["Qwilfish Entry"]
+	},
+	{
+		"name": "Register Gyarados",
+		"category": ["00 - Pokedex Entries"],
+		"requires": [],
+		"region": "Gyarados Locations",
+		"place_item": ["Gyarados Entry"]
+	},
+	{
+		"name": "Register Horsea",
+		"category": ["00 - Pokedex Entries"],
+		"requires": [],
+		"region": "Horsea Locations",
+		"place_item": ["Horsea Entry"]
+	},
+	{
+		"name": "Register Seadra",
+		"category": ["00 - Pokedex Entries"],
+		"requires": [],
+		"region": "Seadra Locations",
+		"place_item": ["Seadra Entry"]
+	},
+	{
+		"name": "Register Remoraid",
+		"category": ["00 - Pokedex Entries"],
+		"requires": [],
+		"region": "Remoraid Locations",
+		"place_item": ["Remoraid Entry"]
+	},
+	{
+		"name": "Register Dratini",
+		"category": ["00 - Pokedex Entries"],
+		"requires": [],
+		"region": "Dratini Locations",
+		"place_item": ["Dratini Entry"]
+	},
+	{
+		"name": "Register Dragonair",
+		"category": ["00 - Pokedex Entries"],
+		"requires": [],
+		"region": "Dragonair Locations",
+		"place_item": ["Dragonair Entry"]
+	},
+	{
+		"name": "Register Psyduck",
+		"category": ["00 - Pokedex Entries"],
+		"requires": [],
+		"region": "Psyduck Locations",
+		"place_item": ["Psyduck Entry"]
+	},
+	{
+		"name": "Register Poliwhirl",
+		"category": ["00 - Pokedex Entries"],
+		"requires": [],
+		"region": "Poliwhirl Locations",
+		"place_item": ["Poliwhirl Entry"]
+	},
+	{
+		"category": ["01 - New Bark Town","Routesanity"],
+		"requires": [],
+		"name": "New Bark Town - Catch Magikarp",
+		"region": "New Bark Town - Old Rod"
+	},
+	{
+		"category": ["01 - New Bark Town","Routesanity"],
+		"requires": [],
+		"name": "New Bark Town - Catch Tentacool",
+		"region": "New Bark Town - Old Rod"
+	},
+	{
+		"category": ["01 - New Bark Town","Routesanity"],
+		"requires": [],
+		"name": "New Bark Town - Catch Shellder",
+		"region": "New Bark Town - Good Rod"
+	},
+	{
+		"category": ["01 - New Bark Town","Routesanity"],
+		"requires": [],
+		"name": "New Bark Town - Catch Chinchou",
+		"region": "New Bark Town - Good Rod"
+	},
+	{
+		"category": ["01 - New Bark Town","Routesanity"],
+		"requires": [],
+		"name": "New Bark Town - Catch Tentacruel",
+		"region": "New Bark Town - Super Rod"
+	},
+	{
+		"category": ["01 - New Bark Town","Routesanity"],
+		"requires": [],
+		"name": "New Bark Town - Catch Lanturn",
+		"region": "New Bark Town - Super Rod"
+	},
+	{
+		"category": ["02 - Cherrygrove City","Routesanity"],
+		"requires": [],
+		"name": "Cherrygrove City - Catch Magikarp",
+		"region": "Cherrygrove City - Old Rod"
+	},
+	{
+		"category": ["02 - Cherrygrove City","Routesanity"],
+		"requires": [],
+		"name": "Cherrygrove City - Catch Krabby",
+		"region": "Cherrygrove City - Old Rod"
+	},
+	{
+		"category": ["02 - Cherrygrove City","Routesanity"],
+		"requires": [],
+		"name": "Cherrygrove City - Catch Corsola",
+		"region": "Cherrygrove City - Good Rod"
+	},
+	{
+		"category": ["02 - Cherrygrove City","Routesanity"],
+		"requires": [],
+		"name": "Cherrygrove City - Catch Staryu",
+		"region": "Cherrygrove City - Good Rod"
+	},
+	{
+		"category": ["02 - Cherrygrove City","Routesanity"],
+		"requires": [],
+		"name": "Cherrygrove City - Catch Kingler",
+		"region": "Cherrygrove City - Super Rod"
+	},
+	{
+		"category": ["03 - Route 30","Routesanity"],
+		"requires": [],
+		"name": "Route 30 - Catch Magikarp",
+		"region": "Route 30 - Old Rod"
+	},
+	{
+		"category": ["03 - Route 30","Routesanity"],
+		"requires": [],
+		"name": "Route 30 - Catch Poliwag",
+		"region": "Route 30 - Old Rod"
+	},
+	{
+		"category": ["04 - Route 31","Routesanity"],
+		"requires": [],
+		"name": "Route 31 - Catch Magikarp",
+		"region": "Route 31 - Old Rod"
+	},
+	{
+		"category": ["04 - Route 31","Routesanity"],
+		"requires": [],
+		"name": "Route 31 - Catch Poliwag",
+		"region": "Route 31 - Old Rod"
+	},
+	{
+		"category": ["05 - Violet City","Routesanity"],
+		"requires": [],
+		"name": "Violet City - Catch Magikarp",
+		"region": "Violet City - Old Rod"
+	},
+	{
+		"category": ["05 - Violet City","Routesanity"],
+		"requires": [],
+		"name": "Violet City - Catch Poliwag",
+		"region": "Violet City - Old Rod"
+	},
+	{
+		"category": ["06 - Ruins of Alph","Routesanity"],
+		"requires": [],
+		"name": "Ruins of Alph - Catch Magikarp",
+		"region": "Ruins of Alph - Old Rod"
+	},
+	{
+		"category": ["06 - Ruins of Alph","Routesanity"],
+		"requires": [],
+		"name": "Ruins of Alph - Catch Poliwag",
+		"region": "Ruins of Alph - Old Rod"
+	},
+	{
+		"category": ["07 - Dark Cave","Routesanity"],
+		"requires": [],
+		"name": "Dark Cave - Catch Magikarp",
+		"region": "Dark Cave - Old Rod"
+	},
+	{
+		"category": ["07 - Dark Cave","Routesanity"],
+		"requires": [],
+		"name": "Dark Cave - Catch Goldeen",
+		"region": "Dark Cave - Old Rod"
+	},
+	{
+		"category": ["07 - Dark Cave","Routesanity"],
+		"requires": [],
+		"name": "Dark Cave - Catch Seaking",
+		"region": "Dark Cave - Super Rod"
+	},
+	{
+		"category": ["08 - Route 32","Routesanity"],
+		"requires": [],
+		"name": "Route 32 - Catch Magikarp",
+		"region": "Route 32 - Old Rod"
+	},
+	{
+		"category": ["08 - Route 32","Routesanity"],
+		"requires": [],
+		"name": "Route 32 - Catch Tentacool",
+		"region": "Route 32 - Old Rod"
+	},
+	{
+		"category": ["08 - Route 32","Routesanity"],
+		"requires": [],
+		"name": "Route 32 - Catch Qwilfish",
+		"region": "Route 32 - Good Rod"
+	},
+	{
+		"category": ["09 - Union Cave","Routesanity"],
+		"requires": [],
+		"name": "Union Cave - Catch Magikarp",
+		"region": "Union Cave 1F - Old Rod"
+	},
+	{
+		"category": ["09 - Union Cave","Routesanity"],
+		"requires": [],
+		"name": "Union Cave - Catch Goldeen",
+		"region": "Union Cave 1F - Old Rod"
+	},
+	{
+		"category": ["09 - Union Cave","Routesanity"],
+		"requires": [],
+		"name": "Union Cave - Catch Seaking",
+		"region": "Union Cave 1F - Super Rod"
+	},
+	{
+		"category": ["09 - Union Cave","Routesanity"],
+		"requires": [],
+		"name": "Union Cave - Catch Krabby",
+		"region": "Union Cave B2F - Old Rod"
+	},
+	{
+		"category": ["09 - Union Cave","Routesanity"],
+		"requires": [],
+		"name": "Union Cave - Catch Corsola",
+		"region": "Union Cave B2F - Good Rod"
+	},
+	{
+		"category": ["09 - Union Cave","Routesanity"],
+		"requires": [],
+		"name": "Union Cave - Catch Staryu",
+		"region": "Union Cave B2F - Good Rod"
+	},
+	{
+		"category": ["09 - Union Cave","Routesanity"],
+		"requires": [],
+		"name": "Union Cave - Catch Kingler",
+		"region": "Union Cave B2F - Super Rod"
+	},
+	{
+		"category": ["10 - Slowpoke Well","Routesanity"],
+		"requires": [],
+		"name": "Slowpoke Well - Catch Magikarp",
+		"region": "Slowpoke Well B1F - Old Rod"
+	},
+	{
+		"category": ["10 - Slowpoke Well","Routesanity"],
+		"requires": [],
+		"name": "Slowpoke Well - Catch Goldeen",
+		"region": "Slowpoke Well B1F - Old Rod"
+	},
+	{
+		"category": ["10 - Slowpoke Well","Routesanity"],
+		"requires": [],
+		"name": "Slowpoke Well - Catch Seaking",
+		"region": "Slowpoke Well B1F - Super Rod"
+	},
+	{
+		"category": ["11 - Ilex Forest","Routesanity"],
+		"requires": [],
+		"name": "Ilex Forest - Catch Magikarp",
+		"region": "Ilex Forest - Old Rod"
+	},
+	{
+		"category": ["11 - Ilex Forest","Routesanity"],
+		"requires": [],
+		"name": "Ilex Forest - Catch Poliwag",
+		"region": "Ilex Forest - Old Rod"
+	},
+	{
+		"category": ["12 - Route 34","Routesanity"],
+		"requires": [],
+		"name": "Route 34 - Catch Magikarp",
+		"region": "Route 34 - Old Rod"
+	},
+	{
+		"category": ["12 - Route 34","Routesanity"],
+		"requires": [],
+		"name": "Route 34 - Catch Krabby",
+		"region": "Route 34 - Old Rod"
+	},
+	{
+		"category": ["12 - Route 34","Routesanity"],
+		"requires": [],
+		"name": "Route 34 - Catch Corsola",
+		"region": "Route 34 - Good Rod"
+	},
+	{
+		"category": ["12 - Route 34","Routesanity"],
+		"requires": [],
+		"name": "Route 34 - Catch Staryu",
+		"region": "Route 34 - Good Rod"
+	},
+	{
+		"category": ["12 - Route 34","Routesanity"],
+		"requires": [],
+		"name": "Route 34 - Catch Kingler",
+		"region": "Route 34 - Super Rod"
+	},
+	{
+		"category": ["13 - Route 35","Routesanity"],
+		"requires": [],
+		"name": "Route 35 - Catch Magikarp",
+		"region": "Route 35 - Old Rod"
+	},
+	{
+		"category": ["13 - Route 35","Routesanity"],
+		"requires": [],
+		"name": "Route 35 - Catch Poliwag",
+		"region": "Route 35 - Old Rod"
+	},
+	{
+		"category": ["14 - Ecruteak City","Routesanity"],
+		"requires": [],
+		"name": "Ecruteak City - Catch Magikarp",
+		"region": "Ecruteak City - Old Rod"
+	},
+	{
+		"category": ["14 - Ecruteak City","Routesanity"],
+		"requires": [],
+		"name": "Ecruteak City - Catch Poliwag",
+		"region": "Ecruteak City - Old Rod"
+	},
+	{
+		"category": ["15 - Olivine City","Routesanity"],
+		"requires": [],
+		"name": "Olivine City - Catch Magikarp",
+		"region": "Olivine City - Old Rod"
+	},
+	{
+		"category": ["15 - Olivine City","Routesanity"],
+		"requires": [],
+		"name": "Olivine City - Catch Krabby",
+		"region": "Olivine City - Old Rod"
+	},
+	{
+		"category": ["15 - Olivine City","Routesanity"],
+		"requires": [],
+		"name": "Olivine City - Catch Corsola",
+		"region": "Olivine City - Good Rod"
+	},
+	{
+		"category": ["15 - Olivine City","Routesanity"],
+		"requires": [],
+		"name": "Olivine City - Catch Staryu",
+		"region": "Olivine City - Good Rod"
+	},
+	{
+		"category": ["15 - Olivine City","Routesanity"],
+		"requires": [],
+		"name": "Olivine City - Catch Kingler",
+		"region": "Olivine City - Super Rod"
+	},
+	{
+		"category": ["16 - Route 40","Routesanity"],
+		"requires": [],
+		"name": "Route 40 - Catch Magikarp",
+		"region": "Route 40 - Old Rod"
+	},
+	{
+		"category": ["16 - Route 40","Routesanity"],
+		"requires": [],
+		"name": "Route 40 - Catch Krabby",
+		"region": "Route 40 - Old Rod"
+	},
+	{
+		"category": ["16 - Route 40","Routesanity"],
+		"requires": [],
+		"name": "Route 40 - Catch Corsola",
+		"region": "Route 40 - Good Rod"
+	},
+	{
+		"category": ["16 - Route 40","Routesanity"],
+		"requires": [],
+		"name": "Route 40 - Catch Staryu",
+		"region": "Route 40 - Good Rod"
+	},
+	{
+		"category": ["16 - Route 40","Routesanity"],
+		"requires": [],
+		"name": "Route 40 - Catch Kingler",
+		"region": "Route 40 - Super Rod"
+	},
+	{
+		"category": ["17 - Route 41","Routesanity"],
+		"requires": [],
+		"name": "Route 41 - Catch Magikarp",
+		"region": "Route 41 - Old Rod"
+	},
+	{
+		"category": ["17 - Route 41","Routesanity"],
+		"requires": [],
+		"name": "Route 41 - Catch Tentacool",
+		"region": "Route 41 - Old Rod"
+	},
+	{
+		"category": ["17 - Route 41","Routesanity"],
+		"requires": [],
+		"name": "Route 41 - Catch Shellder",
+		"region": "Route 41 - Good Rod"
+	},
+	{
+		"category": ["17 - Route 41","Routesanity"],
+		"requires": [],
+		"name": "Route 41 - Catch Chinchou",
+		"region": "Route 41 - Good Rod"
+	},
+	{
+		"category": ["17 - Route 41","Routesanity"],
+		"requires": [],
+		"name": "Route 41 - Catch Tentacruel",
+		"region": "Route 41 - Super Rod"
+	},
+	{
+		"category": ["17 - Route 41","Routesanity"],
+		"requires": [],
+		"name": "Route 41 - Catch Lanturn",
+		"region": "Route 41 - Super Rod"
+	},
+	{
+		"category": ["18 - Whirl Islands","Routesanity"],
+		"requires": [],
+		"name": "Whirl Islands - Catch Magikarp",
+		"region": "Whirl Islands 1F - Old Rod"
+	},
+	{
+		"category": ["18 - Whirl Islands","Routesanity"],
+		"requires": [],
+		"name": "Whirl Islands - Catch Krabby",
+		"region": "Whirl Islands 1F - Old Rod"
+	},
+	{
+		"category": ["18 - Whirl Islands","Routesanity"],
+		"requires": [],
+		"name": "Whirl Islands - Catch Horsea",
+		"region": "Whirl Islands 1F - Good Rod"
+	},
+	{
+		"category": ["18 - Whirl Islands","Routesanity"],
+		"requires": [],
+		"name": "Whirl Islands - Catch Kingler",
+		"region": "Whirl Islands 1F - Super Rod"
+	},
+	{
+		"category": ["18 - Whirl Islands","Routesanity"],
+		"requires": [],
+		"name": "Whirl Islands - Catch Seadra",
+		"region": "Whirl Islands 1F - Super Rod"
+	},
+	{
+		"category": ["19 - Cianwood City","Routesanity"],
+		"requires": [],
+		"name": "Cianwood City - Catch Magikarp",
+		"region": "Cianwood City - Old Rod"
+	},
+	{
+		"category": ["19 - Cianwood City","Routesanity"],
+		"requires": [],
+		"name": "Cianwood City - Catch Krabby",
+		"region": "Cianwood City - Old Rod"
+	},
+	{
+		"category": ["19 - Cianwood City","Routesanity"],
+		"requires": [],
+		"name": "Cianwood City - Catch Corsola",
+		"region": "Cianwood City - Good Rod"
+	},
+	{
+		"category": ["19 - Cianwood City","Routesanity"],
+		"requires": [],
+		"name": "Cianwood City - Catch Staryu",
+		"region": "Cianwood City - Good Rod"
+	},
+	{
+		"category": ["19 - Cianwood City","Routesanity"],
+		"requires": [],
+		"name": "Cianwood City - Catch Kingler",
+		"region": "Cianwood City - Super Rod"
+	},
+	{
+		"category": ["20 - Cliff Edge Gate","Routesanity"],
+		"requires": [],
+		"name": "Cliff Edge Gate - Catch Magikarp",
+		"region": "Cliff Edge Gate - Old Rod"
+	},
+	{
+		"category": ["20 - Cliff Edge Gate","Routesanity"],
+		"requires": [],
+		"name": "Cliff Edge Gate - Catch Poliwag",
+		"region": "Cliff Edge Gate - Good Rod"
+	},
+	{
+		"category": ["21 - Route 47","Routesanity"],
+		"requires": [],
+		"name": "Route 47 - Catch Magikarp",
+		"region": "Route 47 - Old Rod"
+	},
+	{
+		"category": ["21 - Route 47","Routesanity"],
+		"requires": [],
+		"name": "Route 47 - Catch Tentacool",
+		"region": "Route 47 - Old Rod"
+	},
+	{
+		"category": ["21 - Route 47","Routesanity"],
+		"requires": [],
+		"name": "Route 47 - Catch Shellder",
+		"region": "Route 47 - Good Rod"
+	},
+	{
+		"category": ["21 - Route 47","Routesanity"],
+		"requires": [],
+		"name": "Route 47 - Catch Chinchou",
+		"region": "Route 47 - Good Rod"
+	},
+	{
+		"category": ["21 - Route 47","Routesanity"],
+		"requires": [],
+		"name": "Route 47 - Catch Tentacruel",
+		"region": "Route 47 - Super Rod"
+	},
+	{
+		"category": ["21 - Route 47","Routesanity"],
+		"requires": [],
+		"name": "Route 47 - Catch Lanturn",
+		"region": "Route 47 - Super Rod"
+	},
+	{
+		"category": ["23 - Route 42","Routesanity"],
+		"requires": [],
+		"name": "Route 42 - Catch Magikarp",
+		"region": "Route 42 - Old Rod"
+	},
+	{
+		"category": ["23 - Route 42","Routesanity"],
+		"requires": [],
+		"name": "Route 42 - Catch Goldeen",
+		"region": "Route 42 - Old Rod"
+	},
+	{
+		"category": ["23 - Route 42","Routesanity"],
+		"requires": [],
+		"name": "Route 42 - Catch Seaking",
+		"region": "Route 42 - Super Rod"
+	},
+	{
+		"category": ["24 - Mt. Mortar","Routesanity"],
+		"requires": [],
+		"name": "Mt. Mortar - Catch Magikarp",
+		"region": "Mt. Mortar - Old Rod"
+	},
+	{
+		"category": ["24 - Mt. Mortar","Routesanity"],
+		"requires": [],
+		"name": "Mt. Mortar - Catch Goldeen",
+		"region": "Mt. Mortar - Old Rod"
+	},
+	{
+		"category": ["24 - Mt. Mortar","Routesanity"],
+		"requires": [],
+		"name": "Mt. Mortar - Catch Seaking",
+		"region": "Mt. Mortar - Super Rod"
+	},
+	{
+		"category": ["25 - Route 43","Routesanity"],
+		"requires": [],
+		"name": "Route 43 - Catch Magikarp",
+		"region": "Route 43 - Old Rod"
+	},
+	{
+		"category": ["25 - Route 43","Routesanity"],
+		"requires": [],
+		"name": "Route 43 - Catch Poliwag",
+		"region": "Route 43 - Old Rod"
+	},
+	{
+		"category": ["26 - Lake of Rage","Routesanity"],
+		"requires": [],
+		"name": "Lake of Rage - Catch Magikarp",
+		"region": "Lake of Rage - Old Rod"
+	},
+	{
+		"category": ["26 - Lake of Rage","Routesanity"],
+		"requires": [],
+		"name": "Lake of Rage - Catch Gyarados",
+		"region": "Lake of Rage - Good Rod"
+	},
+	{
+		"category": ["27 - Route 44","Routesanity"],
+		"requires": [],
+		"name": "Route 44 - Catch Magikarp",
+		"region": "Route 44 - Old Rod"
+	},
+	{
+		"category": ["27 - Route 44","Routesanity"],
+		"requires": [],
+		"name": "Route 44 - Catch Poliwag",
+		"region": "Route 44 - Old Rod"
+	},
+	{
+		"category": ["27 - Route 44","Routesanity"],
+		"requires": [],
+		"name": "Route 44 - Catch Remoraid",
+		"region": "Route 44 - Good Rod"
+	},
+	{
+		"category": ["28 - Blackthorn City","Routesanity"],
+		"requires": [],
+		"name": "Blackthorn City - Catch Magikarp",
+		"region": "Blackthorn City - Old Rod"
+	},
+	{
+		"category": ["28 - Blackthorn City","Routesanity"],
+		"requires": [],
+		"name": "Blackthorn City - Catch Poliwag",
+		"region": "Blackthorn City - Old Rod"
+	},
+	{
+		"category": ["29 - Dragon's Den","Routesanity"],
+		"requires": [],
+		"name": "Dragon's Den - Catch Magikarp",
+		"region": "Dragon's Den - Old Rod"
+	},
+	{
+		"category": ["29 - Dragon's Den","Routesanity"],
+		"requires": [],
+		"name": "Dragon's Den - Catch Dratini",
+		"region": "Dragon's Den - Good Rod"
+	},
+	{
+		"category": ["29 - Dragon's Den","Routesanity"],
+		"requires": [],
+		"name": "Dragon's Den - Catch Dragonair",
+		"region": "Dragon's Den - Super Rod"
+	},
+	{
+		"category": ["30 - Route 45","Routesanity"],
+		"requires": [],
+		"name": "Route 45 - Catch Magikarp",
+		"region": "Route 45 - Old Rod"
+	},
+	{
+		"category": ["30 - Route 45","Routesanity"],
+		"requires": [],
+		"name": "Route 45 - Catch Poliwag",
+		"region": "Route 45 - Old Rod"
+	},
+	{
+		"category": ["31 - Route 27","Routesanity"],
+		"requires": [],
+		"name": "Route 27 - Catch Magikarp",
+		"region": "Route 27 - Old Rod"
+	},
+	{
+		"category": ["31 - Route 27","Routesanity"],
+		"requires": [],
+		"name": "Route 27 - Catch Tentacool",
+		"region": "Route 27 - Old Rod"
+	},
+	{
+		"category": ["31 - Route 27","Routesanity"],
+		"requires": [],
+		"name": "Route 27 - Catch Shellder",
+		"region": "Route 27 - Good Rod"
+	},
+	{
+		"category": ["31 - Route 27","Routesanity"],
+		"requires": [],
+		"name": "Route 27 - Catch Chinchou",
+		"region": "Route 27 - Good Rod"
+	},
+	{
+		"category": ["31 - Route 27","Routesanity"],
+		"requires": [],
+		"name": "Route 27 - Catch Tentacruel",
+		"region": "Route 27 - Super Rod"
+	},
+	{
+		"category": ["31 - Route 27","Routesanity"],
+		"requires": [],
+		"name": "Route 27 - Catch Lanturn",
+		"region": "Route 27 - Super Rod"
+	},
+	{
+		"category": ["32 - Tohjo Falls","Routesanity"],
+		"requires": [],
+		"name": "Tohjo Falls - Catch Magikarp",
+		"region": "Tohjo Falls - Old Rod"
+	},
+	{
+		"category": ["32 - Tohjo Falls","Routesanity"],
+		"requires": [],
+		"name": "Tohjo Falls - Catch Goldeen",
+		"region": "Tohjo Falls - Old Rod"
+	},
+	{
+		"category": ["32 - Tohjo Falls","Routesanity"],
+		"requires": [],
+		"name": "Tohjo Falls - Catch Seaking",
+		"region": "Tohjo Falls - Super Rod"
+	},
+	{
+		"category": ["33 - Route 26","Routesanity"],
+		"requires": [],
+		"name": "Route 26 - Catch Magikarp",
+		"region": "Route 26 - Old Rod"
+	},
+	{
+		"category": ["33 - Route 26","Routesanity"],
+		"requires": [],
+		"name": "Route 26 - Catch Tentacool",
+		"region": "Route 26 - Old Rod"
+	},
+	{
+		"category": ["33 - Route 26","Routesanity"],
+		"requires": [],
+		"name": "Route 26 - Catch Shellder",
+		"region": "Route 26 - Good Rod"
+	},
+	{
+		"category": ["33 - Route 26","Routesanity"],
+		"requires": [],
+		"name": "Route 26 - Catch Chinchou",
+		"region": "Route 26 - Good Rod"
+	},
+	{
+		"category": ["33 - Route 26","Routesanity"],
+		"requires": [],
+		"name": "Route 26 - Catch Tentacruel",
+		"region": "Route 26 - Super Rod"
+	},
+	{
+		"category": ["33 - Route 26","Routesanity"],
+		"requires": [],
+		"name": "Route 26 - Catch Lanturn",
+		"region": "Route 26 - Super Rod"
+	},
+	{
+		"category": ["34 - Route 28","Routesanity"],
+		"requires": [],
+		"name": "Route 28 - Catch Magikarp",
+		"region": "Route 28 - Old Rod"
+	},
+	{
+		"category": ["34 - Route 28","Routesanity"],
+		"requires": [],
+		"name": "Route 28 - Catch Poliwag",
+		"region": "Route 28 - Old Rod"
+	},
+	{
+		"category": ["35 - Mt. Silver","Routesanity"],
+		"requires": [],
+		"name": "Mt. Silver - Catch Magikarp",
+		"region": "Mt. Silver - Old Rod"
+	},
+	{
+		"category": ["35 - Mt. Silver","Routesanity"],
+		"requires": [],
+		"name": "Mt. Silver - Catch Poliwag",
+		"region": "Mt. Silver - Old Rod"
+	},
+	{
+		"category": ["36 - Mt. Silver Cave","Routesanity"],
+		"requires": [],
+		"name": "Mt. Silver Cave - Catch Magikarp",
+		"region": "Mt. Silver Cave - Old Rod"
+	},
+	{
+		"category": ["36 - Mt. Silver Cave","Routesanity"],
+		"requires": [],
+		"name": "Mt. Silver Cave - Catch Goldeen",
+		"region": "Mt. Silver Cave - Old Rod"
+	},
+	{
+		"category": ["36 - Mt. Silver Cave","Routesanity"],
+		"requires": [],
+		"name": "Mt. Silver Cave - Catch Gyarados",
+		"region": "Mt. Silver Cave - Good Rod"
+	},
+	{
+		"category": ["36 - Mt. Silver Cave","Routesanity"],
+		"requires": [],
+		"name": "Mt. Silver Cave - Catch Seaking",
+		"region": "Mt. Silver Cave - Good Rod"
+	},
+	{
+		"category": ["37 - Route 22","Routesanity"],
+		"requires": [],
+		"name": "Route 22 - Catch Magikarp",
+		"region": "Route 22 - Old Rod"
+	},
+	{
+		"category": ["37 - Route 22","Routesanity"],
+		"requires": [],
+		"name": "Route 22 - Catch Poliwag",
+		"region": "Route 22 - Old Rod"
+	},
+	{
+		"category": ["38 - Viridian City","Routesanity"],
+		"requires": [],
+		"name": "Viridian City - Catch Magikarp",
+		"region": "Viridian City - Old Rod"
+	},
+	{
+		"category": ["38 - Viridian City","Routesanity"],
+		"requires": [],
+		"name": "Viridian City - Catch Poliwag",
+		"region": "Viridian City - Old Rod"
+	},
+	{
+		"category": ["39 - Pallet Town","Routesanity"],
+		"requires": [],
+		"name": "Pallet Town - Catch Magikarp",
+		"region": "Pallet Town - Old Rod"
+	},
+	{
+		"category": ["39 - Pallet Town","Routesanity"],
+		"requires": [],
+		"name": "Pallet Town - Catch Tentacool",
+		"region": "Pallet Town - Old Rod"
+	},
+	{
+		"category": ["39 - Pallet Town","Routesanity"],
+		"requires": [],
+		"name": "Pallet Town - Catch Shellder",
+		"region": "Pallet Town - Good Rod"
+	},
+	{
+		"category": ["39 - Pallet Town","Routesanity"],
+		"requires": [],
+		"name": "Pallet Town - Catch Chinchou",
+		"region": "Pallet Town - Good Rod"
+	},
+	{
+		"category": ["39 - Pallet Town","Routesanity"],
+		"requires": [],
+		"name": "Pallet Town - Catch Tentacruel",
+		"region": "Pallet Town - Super Rod"
+	},
+	{
+		"category": ["39 - Pallet Town","Routesanity"],
+		"requires": [],
+		"name": "Pallet Town - Catch Lanturn",
+		"region": "Pallet Town - Super Rod"
+	},
+	{
+		"category": ["40 - Mt. Moon Square","Routesanity"],
+		"requires": [],
+		"name": "Mt. Moon Square - Catch Magikarp",
+		"region": "Mt. Moon Square - Old Rod"
+	},
+	{
+		"category": ["40 - Mt. Moon Square","Routesanity"],
+		"requires": [],
+		"name": "Mt. Moon Square - Catch Poliwag",
+		"region": "Mt. Moon Square - Good Rod"
+	},
+	{
+		"category": ["41 - Route 4","Routesanity"],
+		"requires": [],
+		"name": "Route 4 - Catch Magikarp",
+		"region": "Route 4 - Old Rod"
+	},
+	{
+		"category": ["41 - Route 4","Routesanity"],
+		"requires": [],
+		"name": "Route 4 - Catch Goldeen",
+		"region": "Route 4 - Old Rod"
+	},
+	{
+		"category": ["41 - Route 4","Routesanity"],
+		"requires": [],
+		"name": "Route 4 - Catch Seaking",
+		"region": "Route 4 - Super Rod"
+	},
+	{
+		"category": ["42 - Cerulean City","Routesanity"],
+		"requires": [],
+		"name": "Cerulean City - Catch Magikarp",
+		"region": "Cerulean City - Old Rod"
+	},
+	{
+		"category": ["42 - Cerulean City","Routesanity"],
+		"requires": [],
+		"name": "Cerulean City - Catch Goldeen",
+		"region": "Cerulean City - Old Rod"
+	},
+	{
+		"category": ["42 - Cerulean City","Routesanity"],
+		"requires": [],
+		"name": "Cerulean City - Catch Seaking",
+		"region": "Cerulean City - Super Rod"
+	},
+	{
+		"category": ["43 - Route 24","Routesanity"],
+		"requires": [],
+		"name": "Route 24 - Catch Magikarp",
+		"region": "Route 24 - Old Rod"
+	},
+	{
+		"category": ["43 - Route 24","Routesanity"],
+		"requires": [],
+		"name": "Route 24 - Catch Goldeen",
+		"region": "Route 24 - Old Rod"
+	},
+	{
+		"category": ["43 - Route 24","Routesanity"],
+		"requires": [],
+		"name": "Route 24 - Catch Seaking",
+		"region": "Route 24 - Super Rod"
+	},
+	{
+		"category": ["44 - Route 25","Routesanity"],
+		"requires": [],
+		"name": "Route 25 - Catch Magikarp",
+		"region": "Route 25 - Old Rod"
+	},
+	{
+		"category": ["44 - Route 25","Routesanity"],
+		"requires": [],
+		"name": "Route 25 - Catch Goldeen",
+		"region": "Route 25 - Old Rod"
+	},
+	{
+		"category": ["44 - Route 25","Routesanity"],
+		"requires": [],
+		"name": "Route 25 - Catch Seaking",
+		"region": "Route 25 - Super Rod"
+	},
+	{
+		"category": ["45 - Cerulean Cave","Routesanity"],
+		"requires": [],
+		"name": "Cerulean Cave - Catch Magikarp",
+		"region": "Cerulean Cave - Old Rod"
+	},
+	{
+		"category": ["45 - Cerulean Cave","Routesanity"],
+		"requires": [],
+		"name": "Cerulean Cave - Catch Poliwag",
+		"region": "Cerulean Cave - Good Rod"
+	},
+	{
+		"category": ["45 - Cerulean Cave","Routesanity"],
+		"requires": [],
+		"name": "Cerulean Cave - Catch Goldeen",
+		"region": "Cerulean Cave - Good Rod"
+	},
+	{
+		"category": ["45 - Cerulean Cave","Routesanity"],
+		"requires": [],
+		"name": "Cerulean Cave - Catch Poliwhirl",
+		"region": "Cerulean Cave - Super Rod"
+	},
+	{
+		"category": ["45 - Cerulean Cave","Routesanity"],
+		"requires": [],
+		"name": "Cerulean Cave - Catch Gyarados",
+		"region": "Cerulean Cave - Super Rod"
+	},
+	{
+		"category": ["46 - Route 6","Routesanity"],
+		"requires": [],
+		"name": "Route 6 - Catch Magikarp",
+		"region": "Route 6 - Old Rod"
+	},
+	{
+		"category": ["46 - Route 6","Routesanity"],
+		"requires": [],
+		"name": "Route 6 - Catch Poliwag",
+		"region": "Route 6 - Old Rod"
+	},
+	{
+		"category": ["47 - Vermilion City","Routesanity"],
+		"requires": [],
+		"name": "Vermilion City - Catch Magikarp",
+		"region": "Vermilion City - Old Rod"
+	},
+	{
+		"category": ["47 - Vermilion City","Routesanity"],
+		"requires": [],
+		"name": "Vermilion City - Catch Tentacool",
+		"region": "Vermilion City - Old Rod"
+	},
+	{
+		"category": ["47 - Vermilion City","Routesanity"],
+		"requires": [],
+		"name": "Vermilion City - Catch Shellder",
+		"region": "Vermilion City - Good Rod"
+	},
+	{
+		"category": ["47 - Vermilion City","Routesanity"],
+		"requires": [],
+		"name": "Vermilion City - Catch Chinchou",
+		"region": "Vermilion City - Good Rod"
+	},
+	{
+		"category": ["47 - Vermilion City","Routesanity"],
+		"requires": [],
+		"name": "Vermilion City - Catch Tentacruel",
+		"region": "Vermilion City - Super Rod"
+	},
+	{
+		"category": ["47 - Vermilion City","Routesanity"],
+		"requires": [],
+		"name": "Vermilion City - Catch Lanturn",
+		"region": "Vermilion City - Super Rod"
+	},
+	{
+		"category": ["48 - Route 9","Routesanity"],
+		"requires": [],
+		"name": "Route 9 - Catch Magikarp",
+		"region": "Route 9 - Old Rod"
+	},
+	{
+		"category": ["48 - Route 9","Routesanity"],
+		"requires": [],
+		"name": "Route 9 - Catch Goldeen",
+		"region": "Route 9 - Old Rod"
+	},
+	{
+		"category": ["48 - Route 9","Routesanity"],
+		"requires": [],
+		"name": "Route 9 - Catch Seaking",
+		"region": "Route 9 - Super Rod"
+	},
+	{
+		"category": ["49 - Route 10","Routesanity"],
+		"requires": [],
+		"name": "Route 10 - Catch Magikarp",
+		"region": "Route 10 - Old Rod"
+	},
+	{
+		"category": ["49 - Route 10","Routesanity"],
+		"requires": [],
+		"name": "Route 10 - Catch Goldeen",
+		"region": "Route 10 - Old Rod"
+	},
+	{
+		"category": ["49 - Route 10","Routesanity"],
+		"requires": [],
+		"name": "Route 10 - Catch Seaking",
+		"region": "Route 10 - Super Rod"
+	},
+	{
+		"category": ["51 - Route 12","Routesanity"],
+		"requires": [],
+		"name": "Route 12 - Catch Magikarp",
+		"region": "Route 12 - Old Rod"
+	},
+	{
+		"category": ["51 - Route 12","Routesanity"],
+		"requires": [],
+		"name": "Route 12 - Catch Tentacool",
+		"region": "Route 12 - Old Rod"
+	},
+	{
+		"category": ["51 - Route 12","Routesanity"],
+		"requires": [],
+		"name": "Route 12 - Catch Qwilfish",
+		"region": "Route 12 - Super Rod"
+	},
+	{
+		"category": ["52 - Route 13","Routesanity"],
+		"requires": [],
+		"name": "Route 13 - Catch Magikarp",
+		"region": "Route 13 - Old Rod"
+	},
+	{
+		"category": ["52 - Route 13","Routesanity"],
+		"requires": [],
+		"name": "Route 13 - Catch Tentacool",
+		"region": "Route 13 - Old Rod"
+	},
+	{
+		"category": ["52 - Route 13","Routesanity"],
+		"requires": [],
+		"name": "Route 13 - Catch Qwilfish",
+		"region": "Route 13 - Super Rod"
+	},
+	{
+		"category": ["53 - Fuchsia City","Routesanity"],
+		"requires": [],
+		"name": "Fuchsia City - Catch Magikarp",
+		"region": "Fuchsia City - Old Rod"
+	},
+	{
+		"category": ["53 - Fuchsia City","Routesanity"],
+		"requires": [],
+		"name": "Fuchsia City - Catch Gyarados",
+		"region": "Fuchsia City - Good Rod"
+	},
+	{
+		"category": ["54 - Route 19","Routesanity"],
+		"requires": [],
+		"name": "Route 19 - Catch Magikarp",
+		"region": "Route 19 - Old Rod"
+	},
+	{
+		"category": ["54 - Route 19","Routesanity"],
+		"requires": [],
+		"name": "Route 19 - Catch Krabby",
+		"region": "Route 19 - Old Rod"
+	},
+	{
+		"category": ["54 - Route 19","Routesanity"],
+		"requires": [],
+		"name": "Route 19 - Catch Corsola",
+		"region": "Route 19 - Good Rod"
+	},
+	{
+		"category": ["54 - Route 19","Routesanity"],
+		"requires": [],
+		"name": "Route 19 - Catch Staryu",
+		"region": "Route 19 - Good Rod"
+	},
+	{
+		"category": ["54 - Route 19","Routesanity"],
+		"requires": [],
+		"name": "Route 19 - Catch Kingler",
+		"region": "Route 19 - Super Rod"
+	},
+	{
+		"category": ["55 - Route 20","Routesanity"],
+		"requires": [],
+		"name": "Route 20 - Catch Magikarp",
+		"region": "Route 20 - Old Rod"
+	},
+	{
+		"category": ["55 - Route 20","Routesanity"],
+		"requires": [],
+		"name": "Route 20 - Catch Tentacool",
+		"region": "Route 20 - Old Rod"
+	},
+	{
+		"category": ["55 - Route 20","Routesanity"],
+		"requires": [],
+		"name": "Route 20 - Catch Shellder",
+		"region": "Route 20 - Good Rod"
+	},
+	{
+		"category": ["55 - Route 20","Routesanity"],
+		"requires": [],
+		"name": "Route 20 - Catch Chinchou",
+		"region": "Route 20 - Good Rod"
+	},
+	{
+		"category": ["55 - Route 20","Routesanity"],
+		"requires": [],
+		"name": "Route 20 - Catch Tentacruel",
+		"region": "Route 20 - Super Rod"
+	},
+	{
+		"category": ["55 - Route 20","Routesanity"],
+		"requires": [],
+		"name": "Route 20 - Catch Lanturn",
+		"region": "Route 20 - Super Rod"
+	},
+	{
+		"category": ["56 - Seafoam Islands","Routesanity"],
+		"requires": [],
+		"name": "Seafoam Islands - Catch Magikarp",
+		"region": "Seafoam Islands - Old Rod"
+	},
+	{
+		"category": ["56 - Seafoam Islands","Routesanity"],
+		"requires": [],
+		"name": "Seafoam Islands - Catch Krabby",
+		"region": "Seafoam Islands - Old Rod"
+	},
+	{
+		"category": ["56 - Seafoam Islands","Routesanity"],
+		"requires": [],
+		"name": "Seafoam Islands - Catch Psyduck",
+		"region": "Seafoam Islands - Good Rod"
+	},
+	{
+		"category": ["56 - Seafoam Islands","Routesanity"],
+		"requires": [],
+		"name": "Seafoam Islands - Catch Horsea",
+		"region": "Seafoam Islands - Good Rod"
+	},
+	{
+		"category": ["56 - Seafoam Islands","Routesanity"],
+		"requires": [],
+		"name": "Seafoam Islands - Catch Gyarados",
+		"region": "Seafoam Islands - Super Rod"
+	},
+	{
+		"category": ["56 - Seafoam Islands","Routesanity"],
+		"requires": [],
+		"name": "Seafoam Islands - Catch Kingler",
+		"region": "Seafoam Islands - Super Rod"
+	},
+	{
+		"category": ["56 - Seafoam Islands","Routesanity"],
+		"requires": [],
+		"name": "Seafoam Islands - Catch Seadra",
+		"region": "Seafoam Islands - Super Rod"
+	},
+	{
+		"category": ["57 - Cinnabar Island","Routesanity"],
+		"requires": [],
+		"name": "Cinnabar Island - Catch Magikarp",
+		"region": "Cinnabar Island - Old Rod"
+	},
+	{
+		"category": ["57 - Cinnabar Island","Routesanity"],
+		"requires": [],
+		"name": "Cinnabar Island - Catch Tentacool",
+		"region": "Cinnabar Island - Old Rod"
+	},
+	{
+		"category": ["57 - Cinnabar Island","Routesanity"],
+		"requires": [],
+		"name": "Cinnabar Island - Catch Shellder",
+		"region": "Cinnabar Island - Good Rod"
+	},
+	{
+		"category": ["57 - Cinnabar Island","Routesanity"],
+		"requires": [],
+		"name": "Cinnabar Island - Catch Chinchou",
+		"region": "Cinnabar Island - Good Rod"
+	},
+	{
+		"category": ["57 - Cinnabar Island","Routesanity"],
+		"requires": [],
+		"name": "Cinnabar Island - Catch Tentacruel",
+		"region": "Cinnabar Island - Super Rod"
+	},
+	{
+		"category": ["57 - Cinnabar Island","Routesanity"],
+		"requires": [],
+		"name": "Cinnabar Island - Catch Lanturn",
+		"region": "Cinnabar Island - Super Rod"
+	},
+	{
+		"category": ["58 - Route 21","Routesanity"],
+		"requires": [],
+		"name": "Route 21 - Catch Magikarp",
+		"region": "Route 21 - Old Rod"
+	},
+	{
+		"category": ["58 - Route 21","Routesanity"],
+		"requires": [],
+		"name": "Route 21 - Catch Tentacool",
+		"region": "Route 21 - Old Rod"
+	},
+	{
+		"category": ["58 - Route 21","Routesanity"],
+		"requires": [],
+		"name": "Route 21 - Catch Shellder",
+		"region": "Route 21 - Good Rod"
+	},
+	{
+		"category": ["58 - Route 21","Routesanity"],
+		"requires": [],
+		"name": "Route 21 - Catch Chinchou",
+		"region": "Route 21 - Good Rod"
+	},
+	{
+		"category": ["58 - Route 21","Routesanity"],
+		"requires": [],
+		"name": "Route 21 - Catch Tentacruel",
+		"region": "Route 21 - Super Rod"
+	},
+	{
+		"category": ["58 - Route 21","Routesanity"],
+		"requires": [],
+		"name": "Route 21 - Catch Lanturn",
+		"region": "Route 21 - Super Rod"
 	}
 ]

@@ -118,7 +118,7 @@
 	},
 	"Cliff Edge Gate": 	{
 		"connects_to": ["Cliff Edge Gate Water","Route 47"],
-		"requires": []
+		"requires": "|SecretPotion|"
 	},
 	"Cliff Edge Gate Water": 	{
 		"connects_to": ["Cliff Edge Gate - Old Rod","Cliff Edge Gate - Good Rod"],

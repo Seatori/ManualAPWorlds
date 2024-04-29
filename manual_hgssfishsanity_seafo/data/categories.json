@@ -1,0 +1,10 @@
+{
+	"Catch Species": {
+		"hidden": true,
+		"yaml_option": ["!routesanity"]
+	},
+	"Routesanity": {
+		"hidden": true,
+		"yaml_option": ["routesanity"]
+	}
+}

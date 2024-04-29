@@ -1,5 +1,137 @@
 [
 	{
+		"count":1,
+		"name": "Magikarp Entry",
+		"category": ["Pokedex Entries"],
+		"progression_skip_balancing": true
+	},
+	{
+		"count":1,
+		"name": "Tentacool Entry",
+		"category": ["Pokedex Entries"],
+		"progression_skip_balancing": true
+	},
+	{
+		"count":1,
+		"name": "Krabby Entry",
+		"category": ["Pokedex Entries"],
+		"progression_skip_balancing": true
+	},
+	{
+		"count":1,
+		"name": "Poliwag Entry",
+		"category": ["Pokedex Entries"],
+		"progression_skip_balancing": true
+	},
+	{
+		"count":1,
+		"name": "Shellder Entry",
+		"category": ["Pokedex Entries"],
+		"progression_skip_balancing": true
+	},
+	{
+		"count":1,
+		"name": "Chinchou Entry",
+		"category": ["Pokedex Entries"],
+		"progression_skip_balancing": true
+	},
+	{
+		"count":1,
+		"name": "Corsola Entry",
+		"category": ["Pokedex Entries"],
+		"progression_skip_balancing": true
+	},
+	{
+		"count":1,
+		"name": "Staryu Entry",
+		"category": ["Pokedex Entries"],
+		"progression_skip_balancing": true
+	},
+	{
+		"count":1,
+		"name": "Tentacruel Entry",
+		"category": ["Pokedex Entries"],
+		"progression_skip_balancing": true
+	},
+	{
+		"count":1,
+		"name": "Lanturn Entry",
+		"category": ["Pokedex Entries"],
+		"progression_skip_balancing": true
+	},
+	{
+		"count":1,
+		"name": "Kingler Entry",
+		"category": ["Pokedex Entries"],
+		"progression_skip_balancing": true
+	},
+	{
+		"count":1,
+		"name": "Goldeen Entry",
+		"category": ["Pokedex Entries"],
+		"progression_skip_balancing": true
+	},
+	{
+		"count":1,
+		"name": "Seaking Entry",
+		"category": ["Pokedex Entries"],
+		"progression_skip_balancing": true
+	},
+	{
+		"count":1,
+		"name": "Qwilfish Entry",
+		"category": ["Pokedex Entries"],
+		"progression_skip_balancing": true
+	},
+	{
+		"count":1,
+		"name": "Gyarados Entry",
+		"category": ["Pokedex Entries"],
+		"progression_skip_balancing": true
+	},
+	{
+		"count":1,
+		"name": "Horsea Entry",
+		"category": ["Pokedex Entries"],
+		"progression_skip_balancing": true
+	},
+	{
+		"count":1,
+		"name": "Seadra Entry",
+		"category": ["Pokedex Entries"],
+		"progression_skip_balancing": true
+	},
+	{
+		"count":1,
+		"name": "Remoraid Entry",
+		"category": ["Pokedex Entries"],
+		"progression_skip_balancing": true
+	},
+	{
+		"count":1,
+		"name": "Dratini Entry",
+		"category": ["Pokedex Entries"],
+		"progression_skip_balancing": true
+	},
+	{
+		"count":1,
+		"name": "Dragonair Entry",
+		"category": ["Pokedex Entries"],
+		"progression_skip_balancing": true
+	},
+	{
+		"count":1,
+		"name": "Psyduck Entry",
+		"category": ["Pokedex Entries"],
+		"progression_skip_balancing": true
+	},
+	{
+		"count":1,
+		"name": "Poliwhirl Entry",
+		"category": ["Pokedex Entries"],
+		"progression_skip_balancing": true
+	},
+	{
 		"count": "3",
 		"name": "Progressive Fishing Rod",
 		"category": ["Fishing Rods"],
@@ -8,7 +140,7 @@
 	{
 		"count": "3",
 		"name": "Progressive Pokeballs",
-		"category": ["Pokeballs"],
+		"category": ["Pokeball Tier"],
 		"useful": true
 	},
 	{
@@ -116,7 +248,115 @@
 	{
 		"count":1,
 		"name": "Fishing Ability",
-		"category": ["Abilities"],
+		"category": ["Abilities","Catch Species"],
 		"useful": true
+	},
+	{
+		"count":1,
+		"name": "Suction Cups",
+		"category": ["Abilities","Routesanity"],
+		"useful": true
+	},
+	{
+		"count":1,
+		"name": "Sticky Hold",
+		"category": ["Abilities","Routesanity"],
+		"useful": true
+	},
+	{
+		"count":1,
+		"name": "SecretPotion",
+		"category": ["Key Items","Routesanity"],
+	    "progression": true
+	},
+	{
+		"count":1,
+		"name": "Bicycle",
+		"category": ["Key Items","Routesanity"],
+		"useful": true
+	},
+	{
+		"count":1,
+		"name": "Mineral Badge",
+		"category": ["Badges","Routesanity"],
+		"useful": true
+	},
+	{
+		"count":1,
+		"name": "Boulder Badge",
+		"category": ["Badges","Routesanity"],
+		"useful": true
+	},
+	{
+		"count":1,
+		"name": "Cascade Badge",
+		"category": ["Badges","Routesanity"],
+		"useful": true
+	},
+	{
+		"count":1,
+		"name": "Thunder Badge",
+		"category": ["Badges","Routesanity"],
+		"useful": true
+	},
+	{
+		"count":1,
+		"name": "Rainbow Badge",
+		"category": ["Badges","Routesanity"],
+		"useful": true
+	},
+	{
+		"count":1,
+		"name": "Soul Badge",
+		"category": ["Badges","Routesanity"],
+		"useful": true
+	},
+	{
+		"count":1,
+		"name": "Marsh Badge",
+		"category": ["Badges","Routesanity"],
+		"useful": true
+	},
+	{
+		"count": "3",
+		"name": "Progressive Status Ailments",
+		"category": ["Status Ailments","Routesanity"],
+		"useful": true
+	},
+	{
+		"count": "3",
+		"name": "Progressive Repels",
+		"category": ["Repels","Routesanity"],
+		"useful": true
+	},
+	{
+		"count":1,
+		"name": "Master Ball",
+		"category": ["Pokeballs","Routesanity"],
+		"useful": true
+	},
+	{
+		"count": "55",
+		"name": "Net Ball",
+		"category": ["Pokeballs","Routesanity"],
+		"filler": true
+	},
+	{
+		"count": "55",
+		"name": "Dive Ball",
+		"category": ["Pokeballs","Routesanity"],
+		"filler": true
+	},
+	{
+		"count": "55",
+		"name": "Lure Ball",
+		"category": ["Pokeballs","Routesanity"],
+		"filler": true
+	},
+	{
+		"count": "0",
+		"name": "Failed Catch Trap",
+		"category": [],
+		"trap": true
 	}
 ]
