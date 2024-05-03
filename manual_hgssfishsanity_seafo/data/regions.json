@@ -346,11 +346,11 @@
 	},
 	"Cinnabar Island": 	{
 		"connects_to": ["Route 20 West","Route 21","Cinnabar Island - Old Rod","Cinnabar Island - Good Rod","Cinnabar Island - Super Rod"],
-		"requires": "|Fog Badge|"
+		"requires": []
 	},
 	"Route 21": 	{
 		"connects_to": ["Pallet Town","Cinnabar Island","Route 21 - Old Rod","Route 21 - Good Rod","Route 21 - Super Rod"],
-		"requires": []
+		"requires": "|Fog Badge|"
 	},
 	"New Bark Town - Old Rod": 	{
 		"connects_to": ["Magikarp Locations","Tentacool Locations"],
