@@ -153,12 +153,16 @@
 		"requires": []
 	},
 	"Route 42": 	{
-		"connects_to": ["Mt. Mortar","Route 42 - Old Rod","Route 42 - Super Rod"],
+		"connects_to": ["Mt. Mortar","Mt. Mortar Water","Route 42 - Old Rod","Route 42 - Super Rod"],
 		"requires": []
 	},
 	"Mt. Mortar": 	{
-		"connects_to": ["Mahogany Town","Mt. Mortar - Old Rod","Mt. Mortar - Super Rod"],
+		"connects_to": ["Mahogany Town"],
 		"requires": []
+	},
+	"Mt. Mortar Water": {
+		"connects_to": ["Mt. Mortar - Old Rod","Mt. Mortar - Super Rod"],
+		"requires": "|Fog Badge|"
 	},
 	"Mahogany Town": 	{
 		"connects_to": ["Route 43","Route 44"],
