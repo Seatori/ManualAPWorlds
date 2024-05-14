@@ -4489,13 +4489,13 @@
 	{
 		"name": "FiFi Stage 1 - Sun Stone 1",
 		"region": "Fine Fields Stage 1",
-		"category": ["B1 - Fine Fields Stage 1"],
+		"category": ["B1 - Fine Fields Stage 1","Sun Stone Locations"],
 		"requires": []
 	},
 	{
 		"name": "FiFi Stage 1 - Sun Stone 2",
 		"region": "Fine Fields Stage 1",
-		"category": ["B1 - Fine Fields Stage 1"],
+		"category": ["B1 - Fine Fields Stage 1","Sun Stone Locations"],
 		"requires": []
 	},
 	{
@@ -4519,19 +4519,19 @@
 	{
 		"name": "FiFi Stage 2 - Sun Stone 1",
 		"region": "Fine Fields Stage 2",
-		"category": ["B2 - Fine Fields Stage 2"],
+		"category": ["B2 - Fine Fields Stage 2","Sun Stone Locations"],
 		"requires": []
 	},
 	{
 		"name": "FiFi Stage 2 - Sun Stone 2",
 		"region": "Fine Fields Stage 2",
-		"category": ["B2 - Fine Fields Stage 2"],
+		"category": ["B2 - Fine Fields Stage 2","Sun Stone Locations"],
 		"requires": []
 	},
 	{
 		"name": "FiFi Stage 2 - Sun Stone 3",
 		"region": "Fine Fields Stage 2",
-		"category": ["B2 - Fine Fields Stage 2"],
+		"category": ["B2 - Fine Fields Stage 2","Sun Stone Locations"],
 		"requires": []
 	},
 	{
@@ -4561,25 +4561,25 @@
 	{
 		"name": "FiFi Stage 3 - Sun Stone 1",
 		"region": "Fine Fields Stage 3",
-		"category": ["B3 - Fine Fields Stage 3"],
+		"category": ["B3 - Fine Fields Stage 3","Sun Stone Locations"],
 		"requires": []
 	},
 	{
 		"name": "FiFi Stage 3 - Sun Stone 2",
 		"region": "Fine Fields Stage 3",
-		"category": ["B3 - Fine Fields Stage 3"],
+		"category": ["B3 - Fine Fields Stage 3","Sun Stone Locations"],
 		"requires": "(|Circus| AND |@Circus Access:1|) OR (|Fighter| AND (|@Fighter Access:1| OR (|Archer| AND |@Archer Access:1|) OR (|Beetle| AND |@Beetle Access:1|) OR |Cutter| OR (|Leaf| AND |@Leaf Access:1|) OR (|Ninja| AND |@Ninja Access:1|) OR (|Spear| AND |@Spear Access:1|) OR |Sword| OR (|Wing| AND |@Wing Access:1|))) OR |Fire| OR (|Hammer| AND |@Hammer Access:1|)"
 	},
 	{
 		"name": "FiFi Stage 3 - Sun Stone 3",
 		"region": "Fine Fields Stage 3",
-		"category": ["B3 - Fine Fields Stage 3"],
+		"category": ["B3 - Fine Fields Stage 3","Sun Stone Locations"],
 		"requires": []
 	},
 	{
 		"name": "FiFi Stage 3 - Sun Stone 4",
 		"region": "Fine Fields Stage 3",
-		"category": ["B3 - Fine Fields Stage 3"],
+		"category": ["B3 - Fine Fields Stage 3","Sun Stone Locations"],
 		"requires": []
 	},
 	{
@@ -4609,19 +4609,19 @@
 	{
 		"name": "FiFi Stage 4 - Sun Stone 1",
 		"region": "Fine Fields Stage 4",
-		"category": ["B4 - Fine Fields Stage 4"],
+		"category": ["B4 - Fine Fields Stage 4","Sun Stone Locations"],
 		"requires": []
 	},
 	{
 		"name": "FiFi Stage 4 - Sun Stone 2",
 		"region": "Fine Fields Stage 4",
-		"category": ["B4 - Fine Fields Stage 4"],
+		"category": ["B4 - Fine Fields Stage 4","Sun Stone Locations"],
 		"requires": []
 	},
 	{
 		"name": "FiFi Stage 4 - Sun Stone 3",
 		"region": "Fine Fields Stage 4",
-		"category": ["B4 - Fine Fields Stage 4"],
+		"category": ["B4 - Fine Fields Stage 4","Sun Stone Locations"],
 		"requires": []
 	},
 	{
@@ -4657,7 +4657,7 @@
 	{
 		"name": "FiFi Stage EX - Sun Stone",
 		"region": "Fine Fields Stage EX",
-		"category": ["B5 - Fine Fields Stage EX"],
+		"category": ["B5 - Fine Fields Stage EX","Sun Stone Locations"],
 		"requires": []
 	},
 	{
@@ -4687,19 +4687,19 @@
 	{
 		"name": "LoLa Stage 1 - Sun Stone 1",
 		"region": "Lollipop Land Stage 1",
-		"category": ["C1 - Lollipop Land Stage 1"],
+		"category": ["C1 - Lollipop Land Stage 1","Sun Stone Locations"],
 		"requires": []
 	},
 	{
 		"name": "LoLa Stage 1 - Sun Stone 2",
 		"region": "Lollipop Land Stage 1",
-		"category": ["C1 - Lollipop Land Stage 1"],
+		"category": ["C1 - Lollipop Land Stage 1","Sun Stone Locations"],
 		"requires": "(|Beetle| AND |@Beetle Access:1|) OR (|Fighter| AND (|@Fighter Access:1| OR (|Fine Fields Stage 3| AND ((|Archer| AND |@Archer Access:1|) OR (|Circus| AND |@Circus Access:1|) OR |Cutter| OR (|Leaf| AND |@Leaf Access:1|) OR (|Ninja| AND |@Ninja Access:1|) OR (|Spear| AND |@Spear Access:1|) OR |Sword|)))) OR |Fire| OR (|Hammer| AND |@Hammer Access:1|) OR |Parasol| OR |Wheel| OR (|Wing| AND (|@Wing Access:1| OR (|Fine Fields Stage 3| AND ((|Archer| AND |@Archer Access:1|) OR (|Circus| AND |@Circus Access:1|) OR |Cutter| OR (|Leaf| AND |@Leaf Access:1|) OR (|Ninja| AND |@Ninja Access:1|) OR (|Spear| AND |@Spear Access:1|) OR |Sword|)))"
 	},
 	{
 		"name": "LoLa Stage 1 - Sun Stone 3",
 		"region": "Lollipop Land Stage 1",
-		"category": ["C1 - Lollipop Land Stage 1"],
+		"category": ["C1 - Lollipop Land Stage 1","Sun Stone Locations"],
 		"requires": []
 	},
 	{
@@ -4723,25 +4723,25 @@
 	{
 		"name": "LoLa Stage 2 - Sun Stone 1",
 		"region": "Lollipop Land Stage 2",
-		"category": ["C2 - Lollipop Land Stage 2"],
+		"category": ["C2 - Lollipop Land Stage 2","Sun Stone Locations"],
 		"requires": "|Archer| OR (|Beetle| AND |@Beetle Access:1|) OR |Cutter| OR (|Leaf| AND (|@Leaf Access:1| OR (|Fine Fields Stage 3| AND ((|Circus| AND |@Circus Access:1|) OR (|Fighter| AND |@Fighter Access:1|) OR (|Fire| AND |@Fire Access:1|) OR (|Hammer| AND |@Hammer Access:1|))))) OR (|Ninja| AND |@Ninja Access:1|) OR |Spear| OR (|Sword| AND |@Sword Access:1|) OR (|Wing| AND (|@Wing Access:1| OR (|Fine Fields Stage 3| AND ((|Circus| AND |@Circus Access:1|) OR (|Fighter| AND |@Fighter Access:1|) OR (|Fire| AND |@Fire Access:1|) OR (|Hammer| AND |@Hammer Access:1|)))))"
 	},
 	{
 		"name": "LoLa Stage 2 - Sun Stone 2",
 		"region": "Lollipop Land Stage 2",
-		"category": ["C2 - Lollipop Land Stage 2"],
+		"category": ["C2 - Lollipop Land Stage 2","Sun Stone Locations"],
 		"requires": []
 	},
 	{
 		"name": "LoLa Stage 2 - Sun Stone 3",
 		"region": "Lollipop Land Stage 2",
-		"category": ["C2 - Lollipop Land Stage 2"],
+		"category": ["C2 - Lollipop Land Stage 2","Sun Stone Locations"],
 		"requires": []
 	},
 	{
 		"name": "LoLa Stage 2 - Sun Stone 4",
 		"region": "Lollipop Land Stage 2",
-		"category": ["C2 - Lollipop Land Stage 2"],
+		"category": ["C2 - Lollipop Land Stage 2","Sun Stone Locations"],
 		"requires": []
 	},
 	{
@@ -4771,19 +4771,19 @@
 	{
 		"name": "LoLa Stage 3 - Sun Stone 1",
 		"region": "Lollipop Land Stage 3",
-		"category": ["C3 - Lollipop Land Stage 3"],
+		"category": ["C3 - Lollipop Land Stage 3","Sun Stone Locations"],
 		"requires": []
 	},
 	{
 		"name": "LoLa Stage 3 - Sun Stone 2",
 		"region": "Lollipop Land Stage 3",
-		"category": ["C3 - Lollipop Land Stage 3"],
+		"category": ["C3 - Lollipop Land Stage 3","Sun Stone Locations"],
 		"requires": []
 	},
 	{
 		"name": "LoLa Stage 3 - Sun Stone 3",
 		"region": "Lollipop Land Stage 3",
-		"category": ["C3 - Lollipop Land Stage 3"],
+		"category": ["C3 - Lollipop Land Stage 3","Sun Stone Locations"],
 		"requires": []
 	},
 	{
@@ -4807,19 +4807,19 @@
 	{
 		"name": "LoLa Stage 4 - Sun Stone 1",
 		"region": "Lollipop Land Stage 4",
-		"category": ["C4 - Lollipop Land Stage 4"],
+		"category": ["C4 - Lollipop Land Stage 4","Sun Stone Locations"],
 		"requires": []
 	},
 	{
 		"name": "LoLa Stage 4 - Sun Stone 2",
 		"region": "Lollipop Land Stage 4",
-		"category": ["C4 - Lollipop Land Stage 4"],
+		"category": ["C4 - Lollipop Land Stage 4","Sun Stone Locations"],
 		"requires": []
 	},
 	{
 		"name": "LoLa Stage 4 - Sun Stone 3",
 		"region": "Lollipop Land Stage 4",
-		"category": ["C4 - Lollipop Land Stage 4"],
+		"category": ["C4 - Lollipop Land Stage 4","Sun Stone Locations"],
 		"requires": []
 	},
 	{
@@ -4855,7 +4855,7 @@
 	{
 		"name": "LoLa Stage EX - Sun Stone",
 		"region": "Lollipop Land Stage EX",
-		"category": ["C5 - Lollipop Land Stage EX"],
+		"category": ["C5 - Lollipop Land Stage EX","Sun Stone Locations"],
 		"requires": []
 	},
 	{
@@ -4879,19 +4879,19 @@
 	{
 		"name": "OlOd Stage 1 - Sun Stone 1",
 		"region": "Old Odyssey Stage 1",
-		"category": ["D1 - Old Odyssey Stage 1"],
+		"category": ["D1 - Old Odyssey Stage 1","Sun Stone Locations"],
 		"requires": []
 	},
 	{
 		"name": "OlOd Stage 1 - Sun Stone 2",
 		"region": "Old Odyssey Stage 1",
-		"category": ["D1 - Old Odyssey Stage 1"],
+		"category": ["D1 - Old Odyssey Stage 1","Sun Stone Locations"],
 		"requires": []
 	},
 	{
 		"name": "OlOd Stage 1 - Sun Stone 3",
 		"region": "Old Odyssey Stage 1",
-		"category": ["D1 - Old Odyssey Stage 1"],
+		"category": ["D1 - Old Odyssey Stage 1","Sun Stone Locations"],
 		"requires": []
 	},
 	{
@@ -4915,19 +4915,19 @@
 	{
 		"name": "OlOd Stage 2 - Sun Stone 1",
 		"region": "Old Odyssey Stage 2",
-		"category": ["D2 - Old Odyssey Stage 2"],
+		"category": ["D2 - Old Odyssey Stage 2","Sun Stone Locations"],
 		"requires": "|Archer| OR |Beam| OR (|Beetle| AND |@Beetle Access:1|) OR (|Bell| AND |@Bell Access:1|) OR |Bomb| OR (|Circus| AND |@Circus Access:1|) OR (|Crash| AND |@Crash Access:1|) OR |Cutter| OR |Fighter| OR (|Fire| AND |@Fire Access:1|) OR |Hammer| OR (|Ice| AND |@Ice Access:1|) OR (|Leaf| AND |@Leaf Access:1|) OR |Mike| OR |Needle| OR (|Ninja| AND |@Ninja Access:1|) OR (|Parasol| AND |@Parasol Access:1|) OR |Spark| OR |Spear| OR |Stone| OR (|Sword| AND |@Sword Access:1|) OR (|Wheel| AND |@Wheel Access:1|) OR |Whip| OR (|Wing| AND |@Wing Access:1|)"
 	},
 	{
 		"name": "OlOd Stage 2 - Sun Stone 2",
 		"region": "Old Odyssey Stage 2",
-		"category": ["D2 - Old Odyssey Stage 2"],
+		"category": ["D2 - Old Odyssey Stage 2","Sun Stone Locations"],
 		"requires": []
 	},
 	{
 		"name": "OlOd Stage 2 - Sun Stone 3",
 		"region": "Old Odyssey Stage 2",
-		"category": ["D2 - Old Odyssey Stage 2"],
+		"category": ["D2 - Old Odyssey Stage 2","Sun Stone Locations"],
 		"requires": []
 	},
 	{
@@ -4957,19 +4957,19 @@
 	{
 		"name": "OlOd Stage 3 - Sun Stone 1",
 		"region": "Old Odyssey Stage 3",
-		"category": ["D3 - Old Odyssey Stage 3"],
+		"category": ["D3 - Old Odyssey Stage 3","Sun Stone Locations"],
 		"requires": []
 	},
 	{
 		"name": "OlOd Stage 3 - Sun Stone 2",
 		"region": "Old Odyssey Stage 3",
-		"category": ["D3 - Old Odyssey Stage 3"],
+		"category": ["D3 - Old Odyssey Stage 3","Sun Stone Locations"],
 		"requires": []
 	},
 	{
 		"name": "OlOd Stage 3 - Sun Stone 3",
 		"region": "Old Odyssey Stage 3",
-		"category": ["D3 - Old Odyssey Stage 3"],
+		"category": ["D3 - Old Odyssey Stage 3","Sun Stone Locations"],
 		"requires": "(|Circus| AND |@Circus Access:1|) OR (|Fighter| AND (|@Fighter Access:1| OR (|Fine Fields Stage 3| AND ((|Archer| AND |@Archer Access:1|) OR (|Beetle| AND |@Beetle Access:1|) OR |Cutter| OR (|Leaf| AND |@Leaf Access:1|) OR (|Ninja| AND |@Ninja Access:1|) OR (|Spear| AND |@Spear Access:1|) OR |Sword| OR (|Wing| AND |@Wing Access:1|))))) OR |Fire| OR (|Hammer| AND |@Hammer Access:1|)"
 	},
 	{
@@ -4999,19 +4999,19 @@
 	{
 		"name": "OlOd Stage 4 - Sun Stone 1",
 		"region": "Old Odyssey Stage 4",
-		"category": ["D4 - Old Odyssey Stage 4"],
+		"category": ["D4 - Old Odyssey Stage 4","Sun Stone Locations"],
 		"requires": []
 	},
 	{
 		"name": "OlOd Stage 4 - Sun Stone 2",
 		"region": "Old Odyssey Stage 4",
-		"category": ["D4 - Old Odyssey Stage 4"],
+		"category": ["D4 - Old Odyssey Stage 4","Sun Stone Locations"],
 		"requires": "|Archer|"
 	},
 	{
 		"name": "OlOd Stage 4 - Sun Stone 3",
 		"region": "Old Odyssey Stage 4",
-		"category": ["D4 - Old Odyssey Stage 4"],
+		"category": ["D4 - Old Odyssey Stage 4","Sun Stone Locations"],
 		"requires": []
 	},
 	{
@@ -5041,25 +5041,25 @@
 	{
 		"name": "OlOd Stage 5 - Sun Stone 1",
 		"region": "Old Odyssey Stage 5",
-		"category": ["D5 - Old Odyssey Stage 5"],
+		"category": ["D5 - Old Odyssey Stage 5","Sun Stone Locations"],
 		"requires": "|Circus| OR (|Fighter| AND (|@Fighter Access:1| OR (|Fine Fields Stage 3| AND ((|Archer| AND |@Archer Access:1|) OR (|Beetle| AND |@Beetle Access:1|) OR |Cutter| OR (|Leaf| AND |@Leaf Access:1|) OR (|Ninja| AND |@Ninja Access:1|) OR |Spear| OR |Sword| OR (|Wing| AND |@Wing Access:1|))))) OR |Fire| OR (|Hammer| AND |@Hammer Access:1|)"
 	},
 	{
 		"name": "OlOd Stage 5 - Sun Stone 2",
 		"region": "Old Odyssey Stage 5",
-		"category": ["D5 - Old Odyssey Stage 5"],
+		"category": ["D5 - Old Odyssey Stage 5","Sun Stone Locations"],
 		"requires": []
 	},
 	{
 		"name": "OlOd Stage 5 - Sun Stone 3",
 		"region": "Old Odyssey Stage 5",
-		"category": ["D5 - Old Odyssey Stage 5"],
+		"category": ["D5 - Old Odyssey Stage 5","Sun Stone Locations"],
 		"requires": []
 	},
 	{
 		"name": "OlOd Stage 5 - Sun Stone 4",
 		"region": "Old Odyssey Stage 5",
-		"category": ["D5 - Old Odyssey Stage 5"],
+		"category": ["D5 - Old Odyssey Stage 5","Sun Stone Locations"],
 		"requires": []
 	},
 	{
@@ -5095,13 +5095,13 @@
 	{
 		"name": "OlOd Stage EX - Sun Stone 1",
 		"region": "Old Odyssey Stage EX",
-		"category": ["D6 - Old Odyssey Stage EX"],
+		"category": ["D6 - Old Odyssey Stage EX","Sun Stone Locations"],
 		"requires": []
 	},
 	{
 		"name": "OlOd Stage EX - Sun Stone 2",
 		"region": "Old Odyssey Stage EX",
-		"category": ["D6 - Old Odyssey Stage EX"],
+		"category": ["D6 - Old Odyssey Stage EX","Sun Stone Locations"],
 		"requires": []
 	},
 	{
@@ -5131,19 +5131,19 @@
 	{
 		"name": "WiWo Stage 1 - Sun Stone 1",
 		"region": "Wild World Stage 1",
-		"category": ["E1 - Wild World Stage 1"],
+		"category": ["E1 - Wild World Stage 1","Sun Stone Locations"],
 		"requires": "|Archer| OR |Beetle| OR |Cutter| OR |Leaf| OR (|Ninja| AND |@Ninja Access:1|) OR |Spear| OR (|Sword| AND |@Sword Access:1|) OR |Wing|"
 	},
 	{
 		"name": "WiWo Stage 1 - Sun Stone 2",
 		"region": "Wild World Stage 1",
-		"category": ["E1 - Wild World Stage 1"],
+		"category": ["E1 - Wild World Stage 1","Sun Stone Locations"],
 		"requires": []
 	},
 	{
 		"name": "WiWo Stage 1 - Sun Stone 3",
 		"region": "Wild World Stage 1",
-		"category": ["E1 - Wild World Stage 1"],
+		"category": ["E1 - Wild World Stage 1","Sun Stone Locations"],
 		"requires": []
 	},
 	{
@@ -5173,19 +5173,19 @@
 	{
 		"name": "WiWo Stage 2 - Sun Stone 1",
 		"region": "Wild World Stage 2",
-		"category": ["E2 - Wild World Stage 2"],
+		"category": ["E2 - Wild World Stage 2","Sun Stone Locations"],
 		"requires": []
 	},
 	{
 		"name": "WiWo Stage 2 - Sun Stone 2",
 		"region": "Wild World Stage 2",
-		"category": ["E2 - Wild World Stage 2"],
+		"category": ["E2 - Wild World Stage 2","Sun Stone Locations"],
 		"requires": "|Wheel|"
 	},
 	{
 		"name": "WiWo Stage 2 - Sun Stone 3",
 		"region": "Wild World Stage 2",
-		"category": ["E2 - Wild World Stage 2"],
+		"category": ["E2 - Wild World Stage 2","Sun Stone Locations"],
 		"requires": []
 	},
 	{
@@ -5215,25 +5215,25 @@
 	{
 		"name": "WiWo Stage 3 - Sun Stone 1",
 		"region": "Wild World Stage 3",
-		"category": ["E3 - Wild World Stage 3"],
+		"category": ["E3 - Wild World Stage 3","Sun Stone Locations"],
 		"requires": []
 	},
 	{
 		"name": "WiWo Stage 3 - Sun Stone 2",
 		"region": "Wild World Stage 3",
-		"category": ["E3 - Wild World Stage 3"],
+		"category": ["E3 - Wild World Stage 3","Sun Stone Locations"],
 		"requires": []
 	},
 	{
 		"name": "WiWo Stage 3 - Sun Stone 3",
 		"region": "Wild World Stage 3",
-		"category": ["E3 - Wild World Stage 3"],
+		"category": ["E3 - Wild World Stage 3","Sun Stone Locations"],
 		"requires": []
 	},
 	{
 		"name": "WiWo Stage 3 - Sun Stone 4",
 		"region": "Wild World Stage 3",
-		"category": ["E3 - Wild World Stage 3"],
+		"category": ["E3 - Wild World Stage 3","Sun Stone Locations"],
 		"requires": []
 	},
 	{
@@ -5257,19 +5257,19 @@
 	{
 		"name": "WiWo Stage 4 - Sun Stone 1",
 		"region": "Wild World Stage 4",
-		"category": ["E4 - Wild World Stage 4"],
+		"category": ["E4 - Wild World Stage 4","Sun Stone Locations"],
 		"requires": []
 	},
 	{
 		"name": "WiWo Stage 4 - Sun Stone 2",
 		"region": "Wild World Stage 4",
-		"category": ["E4 - Wild World Stage 4"],
+		"category": ["E4 - Wild World Stage 4","Sun Stone Locations"],
 		"requires": "(|Archer| AND |@Archer Access:1|) OR (|Beam| AND |@Beam Access:1|) OR (|Beetle| AND |@Beetle Access:1|) OR (|Bell| AND |@Bell Access:1|) OR |Bomb| OR |Circus| OR |Crash| OR |Cutter| OR |Fighter| OR |Fire| OR (|Hammer| AND |@Hammer Access:1|) OR |Ice| OR |Leaf| OR (|Mike| AND |@Mike Access:1|) OR |Needle| OR (|Ninja| AND |@Ninja Access:1|) OR (|Parasol| AND |@Parasol Access:1|) OR (|Spark| AND |@Spark Access:1|) OR (|Spear| AND |@Spear Access:1|) OR |Stone| OR (|Sword| AND |@Sword Access:1|) OR (|Wheel| AND |@Wheel Access:1|) OR (|Whip| AND |@Whip Access:1|) OR (|Wing| AND |@Wing Access:1|)"
 	},
 	{
 		"name": "WiWo Stage 4 - Sun Stone 3",
 		"region": "Wild World Stage 4",
-		"category": ["E4 - Wild World Stage 4"],
+		"category": ["E4 - Wild World Stage 4","Sun Stone Locations"],
 		"requires": []
 	},
 	{
@@ -5299,25 +5299,25 @@
 	{
 		"name": "WiWo Stage 5 - Sun Stone 1",
 		"region": "Wild World Stage 5",
-		"category": ["E5 - Wild World Stage 5"],
+		"category": ["E5 - Wild World Stage 5","Sun Stone Locations"],
 		"requires": []
 	},
 	{
 		"name": "WiWo Stage 5 - Sun Stone 2",
 		"region": "Wild World Stage 5",
-		"category": ["E5 - Wild World Stage 5"],
+		"category": ["E5 - Wild World Stage 5","Sun Stone Locations"],
 		"requires": "(|Archer| AND |@Archer Access:1|) OR (|Beetle| AND |@Beetle Access:1|) OR (|Circus| AND |@Circus Access:1|) OR |Cutter| OR (|Fighter| AND |@Fighter Access:1|) OR |Fire| OR (|Hammer| AND |@Hammer Access:1|) OR |Leaf| OR (|Ninja| AND |@Ninja Access:1|) OR |Spear| OR (|Sword| AND |@Sword Access:1|) OR (|Wing| AND |@Wing Access:1|)"
 	},
 	{
 		"name": "WiWo Stage 5 - Sun Stone 3",
 		"region": "Wild World Stage 5",
-		"category": ["E5 - Wild World Stage 5"],
+		"category": ["E5 - Wild World Stage 5","Sun Stone Locations"],
 		"requires": "(|Archer| AND |@Archer Access:1|) OR (|Beetle| AND |@Beetle Access:1|) OR (|Circus| AND |@Circus Access:1|) OR |Cutter| OR (|Fighter| AND |@Fighter Access:1|) OR |Fire| OR (|Hammer| AND |@Hammer Access:1|) OR |Leaf| OR (|Ninja| AND |@Ninja Access:1|) OR |Spear| OR (|Sword| AND |@Sword Access:1|) OR (|Wing| AND |@Wing Access:1|)"
 	},
 	{
 		"name": "WiWo Stage 5 - Sun Stone 4",
 		"region": "Wild World Stage 5",
-		"category": ["E5 - Wild World Stage 5"],
+		"category": ["E5 - Wild World Stage 5","Sun Stone Locations"],
 		"requires": []
 	},
 	{
@@ -5353,13 +5353,13 @@
 	{
 		"name": "WiWo Stage EX - Sun Stone 1",
 		"region": "Wild World Stage EX",
-		"category": ["E6 - Wild World Stage EX"],
+		"category": ["E6 - Wild World Stage EX","Sun Stone Locations"],
 		"requires": "|Circus| OR (|Fighter| AND (|@Fighter Access:1| OR (|Fine Fields Stage 3| AND ((|Archer| AND |@Archer Access:1|) OR (|Beetle| AND |@Beetle Access:1|) OR |Cutter| OR (|Leaf| AND |@Leaf Access:1|) OR (|Ninja| AND |@Ninja Access:1|) OR (|Spear| AND |@Spear Access:1|) OR |Sword| OR |Wing|)))) OR |Fire| OR |Hammer|"
 	},
 	{
 		"name": "WiWo Stage EX - Sun Stone 2",
 		"region": "Wild World Stage EX",
-		"category": ["E6 - Wild World Stage EX"],
+		"category": ["E6 - Wild World Stage EX","Sun Stone Locations"],
 		"requires": []
 	},
 	{
@@ -5389,19 +5389,19 @@
 	{
 		"name": "EnEx Stage 1 - Sun Stone 1",
 		"region": "Endless Explosions Stage 1",
-		"category": ["F1 - Endless Explosions Stage 1"],
+		"category": ["F1 - Endless Explosions Stage 1","Sun Stone Locations"],
 		"requires": []
 	},
 	{
 		"name": "EnEx Stage 1 - Sun Stone 2",
 		"region": "Endless Explosions Stage 1",
-		"category": ["F1 - Endless Explosions Stage 1"],
+		"category": ["F1 - Endless Explosions Stage 1","Sun Stone Locations"],
 		"requires": "|Ice| OR |Parasol|"
 	},
 	{
 		"name": "EnEx Stage 1 - Sun Stone 3",
 		"region": "Endless Explosions Stage 1",
-		"category": ["F1 - Endless Explosions Stage 1"],
+		"category": ["F1 - Endless Explosions Stage 1","Sun Stone Locations"],
 		"requires": "(|Beetle| AND |@Beetle Access:1|) OR |Fire| OR |Wheel| OR (|Wing| AND (|@Wing Access:1| OR (|Fine Fields Stage 3| AND ((|Archer| AND |@Archer Access:1|) OR |Circus| OR |Cutter| OR (|Fighter| AND |@Fighter Access:1|) OR (|Hammer| AND |@Hammer Access:1|) OR |Leaf| OR (|Ninja| AND |@Ninja Access:1|) OR (|Spear| AND |@Spear Access:1|) OR |Sword|))))"
 	},
 	{
@@ -5425,25 +5425,25 @@
 	{
 		"name": "EnEx Stage 2 - Sun Stone 1",
 		"region": "Endless Explosions Stage 2",
-		"category": ["F2 - Endless Explosions Stage 2"],
+		"category": ["F2 - Endless Explosions Stage 2","Sun Stone Locations"],
 		"requires": []
 	},
 	{
 		"name": "EnEx Stage 2 - Sun Stone 2",
 		"region": "Endless Explosions Stage 2",
-		"category": ["F2 - Endless Explosions Stage 2"],
+		"category": ["F2 - Endless Explosions Stage 2","Sun Stone Locations"],
 		"requires": "(|Hammer| AND |@Hammer Access:1|) OR |Stone|"
 	},
 	{
 		"name": "EnEx Stage 2 - Sun Stone 3",
 		"region": "Endless Explosions Stage 2",
-		"category": ["F2 - Endless Explosions Stage 2"],
+		"category": ["F2 - Endless Explosions Stage 2","Sun Stone Locations"],
 		"requires": []
 	},
 	{
 		"name": "EnEx Stage 2 - Sun Stone 4",
 		"region": "Endless Explosions Stage 2",
-		"category": ["F2 - Endless Explosions Stage 2"],
+		"category": ["F2 - Endless Explosions Stage 2","Sun Stone Locations"],
 		"requires": []
 	},
 	{
@@ -5473,19 +5473,19 @@
 	{
 		"name": "EnEx Stage 3 - Sun Stone 1",
 		"region": "Endless Explosions Stage 3",
-		"category": ["F3 - Endless Explosions Stage 3"],
+		"category": ["F3 - Endless Explosions Stage 3","Sun Stone Locations"],
 		"requires": []
 	},
 	{
 		"name": "EnEx Stage 3 - Sun Stone 2",
 		"region": "Endless Explosions Stage 3",
-		"category": ["F3 - Endless Explosions Stage 3"],
+		"category": ["F3 - Endless Explosions Stage 3","Sun Stone Locations"],
 		"requires": []
 	},
 	{
 		"name": "EnEx Stage 3 - Sun Stone 3",
 		"region": "Endless Explosions Stage 3",
-		"category": ["F3 - Endless Explosions Stage 3"],
+		"category": ["F3 - Endless Explosions Stage 3","Sun Stone Locations"],
 		"requires": []
 	},
 	{
@@ -5515,25 +5515,25 @@
 	{
 		"name": "EnEx Stage 4 - Sun Stone 1",
 		"region": "Endless Explosions Stage 4",
-		"category": ["F4 - Endless Explosions Stage 4"],
+		"category": ["F4 - Endless Explosions Stage 4","Sun Stone Locations"],
 		"requires": []
 	},
 	{
 		"name": "EnEx Stage 4 - Sun Stone 2",
 		"region": "Endless Explosions Stage 4",
-		"category": ["F4 - Endless Explosions Stage 4"],
+		"category": ["F4 - Endless Explosions Stage 4","Sun Stone Locations"],
 		"requires": "|Archer|"
 	},
 	{
 		"name": "EnEx Stage 4 - Sun Stone 3",
 		"region": "Endless Explosions Stage 4",
-		"category": ["F4 - Endless Explosions Stage 4"],
+		"category": ["F4 - Endless Explosions Stage 4","Sun Stone Locations"],
 		"requires": []
 	},
 	{
 		"name": "EnEx Stage 4 - Sun Stone 4",
 		"region": "Endless Explosions Stage 4",
-		"category": ["F4 - Endless Explosions Stage 4"],
+		"category": ["F4 - Endless Explosions Stage 4","Sun Stone Locations"],
 		"requires": []
 	},
 	{
@@ -5563,25 +5563,25 @@
 	{
 		"name": "EnEx Stage 5 - Sun Stone 1",
 		"region": "Endless Explosions Stage 5",
-		"category": ["F5 - Endless Explosions Stage 5"],
+		"category": ["F5 - Endless Explosions Stage 5","Sun Stone Locations"],
 		"requires": []
 	},
 	{
 		"name": "EnEx Stage 5 - Sun Stone 2",
 		"region": "Endless Explosions Stage 5",
-		"category": ["F5 - Endless Explosions Stage 5"],
+		"category": ["F5 - Endless Explosions Stage 5","Sun Stone Locations"],
 		"requires": []
 	},
 	{
 		"name": "EnEx Stage 5 - Sun Stone 3",
 		"region": "Endless Explosions Stage 5",
-		"category": ["F5 - Endless Explosions Stage 5"],
+		"category": ["F5 - Endless Explosions Stage 5","Sun Stone Locations"],
 		"requires": []
 	},
 	{
 		"name": "EnEx Stage 5 - Sun Stone 4",
 		"region": "Endless Explosions Stage 5",
-		"category": ["F5 - Endless Explosions Stage 5"],
+		"category": ["F5 - Endless Explosions Stage 5","Sun Stone Locations"],
 		"requires": []
 	},
 	{
@@ -5617,13 +5617,13 @@
 	{
 		"name": "EnEx Stage EX - Sun Stone 1",
 		"region": "Endless Explosions Stage EX",
-		"category": ["F6 - Endless Explosions Stage EX"],
+		"category": ["F6 - Endless Explosions Stage EX","Sun Stone Locations"],
 		"requires": "|Archer|"
 	},
 	{
 		"name": "EnEx Stage EX - Sun Stone 2",
 		"region": "Endless Explosions Stage EX",
-		"category": ["F6 - Endless Explosions Stage EX"],
+		"category": ["F6 - Endless Explosions Stage EX","Sun Stone Locations"],
 		"requires": []
 	},
 	{
@@ -5653,19 +5653,19 @@
 	{
 		"name": "RoRo Stage 1 - Sun Stone 1",
 		"region": "Royal Road Stage 1",
-		"category": ["G1 - Royal Road Stage 1"],
+		"category": ["G1 - Royal Road Stage 1","Sun Stone Locations"],
 		"requires": []
 	},
 	{
 		"name": "RoRo Stage 1 - Sun Stone 2",
 		"region": "Royal Road Stage 1",
-		"category": ["G1 - Royal Road Stage 1"],
+		"category": ["G1 - Royal Road Stage 1","Sun Stone Locations"],
 		"requires": "|Archer| OR |Beetle| OR (|Cutter| AND |@Cutter Access:1|) OR (|Leaf| AND (|@Leaf Access:1| OR (|Fine Fields Stage 3| AND (|Circus| OR (|Fighter| AND |@Fighter Access:1|) OR |Fire| OR |Hammer|)))) OR |Ninja| OR |Spear| OR |Sword| OR |Wing|"
 	},
 	{
 		"name": "RoRo Stage 1 - Sun Stone 3",
 		"region": "Royal Road Stage 1",
-		"category": ["G1 - Royal Road Stage 1"],
+		"category": ["G1 - Royal Road Stage 1","Sun Stone Locations"],
 		"requires": "|Archer| OR (|Beam| AND |@Beam Access:1|) OR |Beetle| OR |Bell| OR (|Bomb| AND |@Bomb Access:1|) OR |Circus| OR (|Cutter| AND |@Cutter Access:1|) OR (|Fighter| AND |@Fighter Access:1|) OR |Fire| OR |Hammer| OR (|Ice| AND |@Ice Access:1|) OR (|Leaf| AND |@Leaf Access:1|) OR (|Needle| AND |@Needle Access:1|) OR |Ninja| OR (|Parasol| AND |@Parasol Access:1|) OR |Spark| OR |Spear| OR |Stone| OR |Sword| OR |Wheel| OR (|Whip| AND |@Whip Access:1|) OR |Wing|"
 	},
 	{
@@ -5695,7 +5695,7 @@
 	{
 		"name": "RoRo Stage 2 - Sun Stone",
 		"region": "Royal Road Stage 2",
-		"category": ["G2 - Royal Road Stage 2"],
+		"category": ["G2 - Royal Road Stage 2","Sun Stone Locations"],
 		"requires": []
 	},
 	{
@@ -5719,19 +5719,19 @@
 	{
 		"name": "RoRo Stage 3 - Sun Stone 1",
 		"region": "Royal Road Stage 3",
-		"category": ["G3 - Royal Road Stage 3"],
+		"category": ["G3 - Royal Road Stage 3","Sun Stone Locations"],
 		"requires": []
 	},
 	{
 		"name": "RoRo Stage 3 - Sun Stone 2",
 		"region": "Royal Road Stage 3",
-		"category": ["G3 - Royal Road Stage 3"],
+		"category": ["G3 - Royal Road Stage 3","Sun Stone Locations"],
 		"requires": []
 	},
 	{
 		"name": "RoRo Stage 3 - Sun Stone 3",
 		"region": "Royal Road Stage 3",
-		"category": ["G3 - Royal Road Stage 3"],
+		"category": ["G3 - Royal Road Stage 3","Sun Stone Locations"],
 		"requires": []
 	},
 	{
@@ -5761,7 +5761,7 @@
 	{
 		"name": "RoRo Stage 4 - Sun Stone",
 		"region": "Royal Road Stage 4",
-		"category": ["G4 - Royal Road Stage 4"],
+		"category": ["G4 - Royal Road Stage 4","Sun Stone Locations"],
 		"requires": []
 	},
 	{
@@ -5785,25 +5785,25 @@
 	{
 		"name": "RoRo Stage 5 - Sun Stone 1",
 		"region": "Royal Road Stage 5",
-		"category": ["G5 - Royal Road Stage 5"],
+		"category": ["G5 - Royal Road Stage 5","Sun Stone Locations"],
 		"requires": []
 	},
 	{
 		"name": "RoRo Stage 5 - Sun Stone 2",
 		"region": "Royal Road Stage 5",
-		"category": ["G5 - Royal Road Stage 5"],
+		"category": ["G5 - Royal Road Stage 5","Sun Stone Locations"],
 		"requires": "(|Circus| AND |@Circus Access:1|) OR (|Fighter| AND (|@Fighter Access:1| OR (|Fine Fields Stage 3| AND (|Archer| OR |Beetle| OR |Cutter| OR (|Leaf| AND |@Leaf Access:1|) OR (|Ninja| AND |@Ninja Access:1|) OR |Spear| OR |Sword| OR (|Wing| AND |@Wing Access:1|))))) OR (|Fire| AND |@Fire Access:1|) OR |Hammer|"
 	},
 	{
 		"name": "RoRo Stage 5 - Sun Stone 3",
 		"region": "Royal Road Stage 5",
-		"category": ["G5 - Royal Road Stage 5"],
+		"category": ["G5 - Royal Road Stage 5","Sun Stone Locations"],
 		"requires": []
 	},
 	{
 		"name": "RoRo Stage 5 - Sun Stone 4",
 		"region": "Royal Road Stage 5",
-		"category": ["G5 - Royal Road Stage 5"],
+		"category": ["G5 - Royal Road Stage 5","Sun Stone Locations"],
 		"requires": []
 	},
 	{
@@ -5845,19 +5845,19 @@
 	{
 		"name": "RoRo Stage EX 1 - Sun Stone 1",
 		"region": "Royal Road Stage EX 1",
-		"category": ["G6 - Royal Road Stage EX 1"],
+		"category": ["G6 - Royal Road Stage EX 1","Sun Stone Locations"],
 		"requires": "|Circus| OR |Fire| OR (|Hammer| AND |@Hammer Access:1|)"
 	},
 	{
 		"name": "RoRo Stage EX 1 - Sun Stone 2",
 		"region": "Royal Road Stage EX 1",
-		"category": ["G6 - Royal Road Stage EX 1"],
+		"category": ["G6 - Royal Road Stage EX 1","Sun Stone Locations"],
 		"requires": []
 	},
 	{
 		"name": "RoRo Stage EX 1 - Sun Stone 3",
 		"region": "Royal Road Stage EX 1",
-		"category": ["G6 - Royal Road Stage EX 1"],
+		"category": ["G6 - Royal Road Stage EX 1","Sun Stone Locations"],
 		"requires": []
 	},
 	{
@@ -5899,7 +5899,7 @@
 	{
 		"name": "RoRo Stage EX 2 - Sun Stone",
 		"region": "Royal Road Stage EX 2",
-		"category": ["G7 - Royal Road Stage EX 2"],
+		"category": ["G7 - Royal Road Stage EX 2","Sun Stone Locations"],
 		"requires": []
 	},
 	{

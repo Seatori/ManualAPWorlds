@@ -84,5 +84,8 @@
 	"ABT": {
 		"hidden": true,
 		"yaml_option": ["randomize_ability_testing_room"]
+	},
+	"Sun Stone Locations": {
+		"hidden": true
 	}
 }
