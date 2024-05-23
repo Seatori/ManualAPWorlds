@@ -32,7 +32,8 @@ class RandomizeKeychains(DefaultOnToggle):
     display_name = "Randomize Keychains"
 
 class RandomizeAbilities(DefaultOnToggle):
-    """Choose whether or not to prevent use of Kirby's Copy Abilities before obtaining them."""
+    """Choose whether or not to prevent use of Kirby's Copy Abilities before obtaining them.
+    Automatically set to false if Keychains aren't randomized."""
     display_name = "Randomize Copy Abilities"
 
 class KirbyFighters(Toggle):
