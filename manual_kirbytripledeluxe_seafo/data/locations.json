@@ -4694,7 +4694,7 @@
 		"name": "LoLa Stage 1 - Sun Stone 2",
 		"region": "Lollipop Land Stage 1",
 		"category": ["C1 - Lollipop Land Stage 1","Sun Stone Locations"],
-		"requires": "(|Beetle| AND |@Beetle Access:1|) OR (|Fighter| AND (|@Fighter Access:1| OR (|Fine Fields Stage 3| AND ((|Archer| AND |@Archer Access:1|) OR (|Circus| AND |@Circus Access:1|) OR |Cutter| OR (|Leaf| AND |@Leaf Access:1|) OR (|Ninja| AND |@Ninja Access:1|) OR (|Spear| AND |@Spear Access:1|) OR |Sword|)))) OR |Fire| OR (|Hammer| AND |@Hammer Access:1|) OR |Parasol| OR |Wheel| OR (|Wing| AND (|@Wing Access:1| OR (|Fine Fields Stage 3| AND ((|Archer| AND |@Archer Access:1|) OR (|Circus| AND |@Circus Access:1|) OR |Cutter| OR (|Leaf| AND |@Leaf Access:1|) OR (|Ninja| AND |@Ninja Access:1|) OR (|Spear| AND |@Spear Access:1|) OR |Sword|)))"
+		"requires": "(|Archer| AND |@Archer Access:1|) OR (|Beetle| AND |@Beetle Access:1|) OR (|Bell| AND |@Bell Access:1|) OR (|Circus| AND |@Circus Access:1|) OR |Cutter| OR (|Fighter| AND (|@Fighter Access:1| OR (|Fine Fields Stage 3| AND |Spear| AND |@Spear Access:1|))) OR |Fire| OR (|Hammer| AND |@Hammer Access:1|) OR (|Leaf| AND |@Leaf Access:1|) OR (|Ninja| AND |@Ninja Access:1|) OR |Parasol| OR (|Stone| AND |@Stone Access:1|) OR (|Sword| AND |@Sword Access:1|) OR |Wheel| OR (|Wing| AND (|@Wing Access:1| OR (|Fine Fields Stage 3| AND |Spear| AND |@Spear Access:1|)))"
 	},
 	{
 		"name": "LoLa Stage 1 - Sun Stone 3",
