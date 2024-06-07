@@ -415,8 +415,8 @@
 	},
 	{
 		"count":1,
-		"name": "Ability Testing Room",
-		"category": ["Abilities","ABT","Archer Access","Beam Access","Beetle Access","Bell Access","Bomb Access","Circus Access","Crash Access","Cutter Access","Fighter Access","Fire Access","Hammer Access","Ice Access","Leaf Access","Mike Access","Needle Access","Ninja Access","Parasol Access","Spark Access","Spear Access","Stone Access","Sword Access","Wheel Access","Whip Access","Wing Access"],
+		"name": "Copy Ability Testing Room",
+		"category": ["Abilities","ATR","Archer Access","Beam Access","Beetle Access","Bell Access","Bomb Access","Circus Access","Crash Access","Cutter Access","Fighter Access","Fire Access","Hammer Access","Ice Access","Leaf Access","Mike Access","Needle Access","Ninja Access","Parasol Access","Spark Access","Spear Access","Stone Access","Sword Access","Wheel Access","Whip Access","Wing Access"],
 		"progression": true
 	},
 	{

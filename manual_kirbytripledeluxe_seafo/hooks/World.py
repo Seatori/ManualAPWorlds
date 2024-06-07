@@ -1303,7 +1303,7 @@ def before_create_items_filler(item_pool: list, world: World, multiworld: MultiW
     
     keychains = is_option_enabled(multiworld, player, "enable_keychain_locations")
     abilities = is_option_enabled(multiworld, player, "randomize_copy_abilities")
-    abt = is_option_enabled(multiworld, player, "randomize_ability_testing_room")
+    atr = is_option_enabled(multiworld, player, "randomize_ability_testing_room")
     archer = next(i for i in item_pool if i.name == "Archer")
     beam = next(i for i in item_pool if i.name == "Beam")
     beetle = next(i for i in item_pool if i.name == "Beetle")
