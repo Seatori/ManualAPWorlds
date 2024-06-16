@@ -81,7 +81,7 @@
     "J1 - Clear Kirby Fighters": {
         "yaml_option": ["enable_kirby_fighters_locations"]
     },
-	"ABT": {
+	"ATR": {
 		"hidden": true,
 		"yaml_option": ["randomize_ability_testing_room"]
 	},

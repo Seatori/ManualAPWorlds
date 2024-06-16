@@ -1,6 +1,6 @@
 # Object classes from AP core, to represent an entire MultiWorld and this individual World that's part of it
 from worlds.AutoWorld import World
-from BaseClasses import ItemClassification, MultiWorld, CollectionState
+from BaseClasses import MultiWorld, CollectionState, ItemClassification
 
 # Object classes from Manual -- extending AP core -- representing items and locations that are used in generation
 from ..Items import ManualItem
@@ -19,9 +19,10 @@ from ..Helpers import is_option_enabled, get_option_value
 ########################################################################################
 ## Order of method calls when the world generates:
 ##    1. create_regions - Creates regions and locations
-##    2. set_rules - Creates rules for accessing regions and locations
-##    3. generate_basic - Creates the item pool and runs any place_item options
-##    4. pre_fill - Creates the victory location
+##    2. create_items - Creates the item pool
+##    3. set_rules - Creates rules for accessing regions and locations
+##    4. generate_basic - Runs any post item pool options, like place item/category
+##    5. pre_fill - Creates the victory location
 ##
 ## The create_item method is used by plando and start_inventory settings to create an item from an item name.
 ## The fill_slot_data method will be used to send data to the Manual client for later use, like deathlink.
@@ -29,11 +30,11 @@ from ..Helpers import is_option_enabled, get_option_value
 
 
 
-# Called before regions and locations are created. Not clear why you'd want this, but it's here.
+# Called before regions and locations are created. Not clear why you'd want this, but it's here. Victory location is included, but Victory event is not placed yet.
 def before_create_regions(world: World, multiworld: MultiWorld, player: int):
     pass
 
-# Called after regions and locations are created, in case you want to see or modify that information.
+# Called after regions and locations are created, in case you want to see or modify that information. Victory location is included.
 def after_create_regions(world: World, multiworld: MultiWorld, player: int):
     # Use this hook to remove locations from the world
     level1boss = get_option_value(multiworld, player, "level_1_boss_sun_stones")
@@ -1260,10 +1261,10 @@ def after_create_regions(world: World, multiworld: MultiWorld, player: int):
         removeSixthBoss = ["Level 6 Boss", "Level 6 Boss - 1 Sun Stone", "Level 6 Boss - 2 Sun Stones", "Level 6 Boss - 3 Sun Stones", "Level 6 Boss - 4 Sun Stones", "Level 6 Boss - 5 Sun Stones", "Level 6 Boss - 6 Sun Stones", "Level 6 Boss - 7 Sun Stones", "Level 6 Boss - 8 Sun Stones", "Level 6 Boss - 9 Sun Stones", "Level 6 Boss - 10 Sun Stones", "Level 6 Boss - 11 Sun Stones", "Level 6 Boss - 12 Sun Stones", "Level 6 Boss - 13 Sun Stones", "Level 6 Boss - 14 Sun Stones", "Level 6 Boss - 15 Sun Stones", "Level 6 Boss - 16 Sun Stones", "Level 6 Boss - 17 Sun Stones", "Level 6 Boss - 18 Sun Stones", "Level 6 Boss - 19 Sun Stones", "Level 6 Boss - 20 Sun Stones", "Level 6 Boss - 21 Sun Stones", "Level 6 Boss - 22 Sun Stones", "Level 6 Boss - 23 Sun Stones", "Level 6 Boss - 24 Sun Stones", "Level 6 Boss - 25 Sun Stones", "Level 6 Boss - 26 Sun Stones", "Level 6 Boss - 27 Sun Stones", "Level 6 Boss - 28 Sun Stones", "Level 6 Boss - 29 Sun Stones", "Level 6 Boss - 30 Sun Stones", "Level 6 Boss - 31 Sun Stones", "Level 6 Boss - 32 Sun Stones", "Level 6 Boss - 33 Sun Stones", "Level 6 Boss - 34 Sun Stones", "Level 6 Boss - 35 Sun Stones", "Level 6 Boss - 36 Sun Stones", "Level 6 Boss - 37 Sun Stones", "Level 6 Boss - 38 Sun Stones", "Level 6 Boss - 39 Sun Stones", "Level 6 Boss - 40 Sun Stones", "Level 6 Boss - 41 Sun Stones", "Level 6 Boss - 42 Sun Stones", "Level 6 Boss - 43 Sun Stones", "Level 6 Boss - 44 Sun Stones", "Level 6 Boss - 45 Sun Stones", "Level 6 Boss - 46 Sun Stones", "Level 6 Boss - 47 Sun Stones", "Level 6 Boss - 48 Sun Stones", "Level 6 Boss - 49 Sun Stones", "Level 6 Boss - 50 Sun Stones", "Level 6 Boss - 51 Sun Stones", "Level 6 Boss - 52 Sun Stones", "Level 6 Boss - 53 Sun Stones", "Level 6 Boss - 54 Sun Stones", "Level 6 Boss - 55 Sun Stones", "Level 6 Boss - 56 Sun Stones", "Level 6 Boss - 57 Sun Stones", "Level 6 Boss - 58 Sun Stones", "Level 6 Boss - 59 Sun Stones", "Level 6 Boss - 60 Sun Stones", "Level 6 Boss - 61 Sun Stones", "Level 6 Boss - 62 Sun Stones", "Level 6 Boss - 63 Sun Stones", "Level 6 Boss - 64 Sun Stones", "Level 6 Boss - 65 Sun Stones", "Level 6 Boss - 66 Sun Stones", "Level 6 Boss - 67 Sun Stones", "Level 6 Boss - 68 Sun Stones", "Level 6 Boss - 69 Sun Stones", "Level 6 Boss - 70 Sun Stones", "Level 6 Boss - 71 Sun Stones", "Level 6 Boss - 72 Sun Stones", "Level 6 Boss - 73 Sun Stones", "Level 6 Boss - 74 Sun Stones", "Level 6 Boss - 75 Sun Stones", "Level 6 Boss - 76 Sun Stones", "Level 6 Boss - 77 Sun Stones", "Level 6 Boss - 78 Sun Stones", "Level 6 Boss - 79 Sun Stones", "Level 6 Boss - 80 Sun Stones", "Level 6 Boss - 81 Sun Stones", "Level 6 Boss - 82 Sun Stones", "Level 6 Boss - 83 Sun Stones", "Level 6 Boss - 84 Sun Stones", "Level 6 Boss - 85 Sun Stones", "Level 6 Boss - 86 Sun Stones", "Level 6 Boss - 87 Sun Stones", "Level 6 Boss - 88 Sun Stones", "Level 6 Boss - 89 Sun Stones", "Level 6 Boss - 90 Sun Stones", "Level 6 Boss - 91 Sun Stones", "Level 6 Boss - 92 Sun Stones", "Level 6 Boss - 93 Sun Stones", "Level 6 Boss - 94 Sun Stones", "Level 6 Boss - 95 Sun Stones", "Level 6 Boss - 96 Sun Stones", "Level 6 Boss - 97 Sun Stones", "Level 6 Boss - 98 Sun Stones", "Level 6 Boss - 99 Sun Stones"] # List of location names
     else:
         removeSixthBoss = ["Level 6 Boss - 1 Sun Stone", "Level 6 Boss - 2 Sun Stones", "Level 6 Boss - 3 Sun Stones", "Level 6 Boss - 4 Sun Stones", "Level 6 Boss - 5 Sun Stones", "Level 6 Boss - 6 Sun Stones", "Level 6 Boss - 7 Sun Stones", "Level 6 Boss - 8 Sun Stones", "Level 6 Boss - 9 Sun Stones", "Level 6 Boss - 10 Sun Stones", "Level 6 Boss - 11 Sun Stones", "Level 6 Boss - 12 Sun Stones", "Level 6 Boss - 13 Sun Stones", "Level 6 Boss - 14 Sun Stones", "Level 6 Boss - 15 Sun Stones", "Level 6 Boss - 16 Sun Stones", "Level 6 Boss - 17 Sun Stones", "Level 6 Boss - 18 Sun Stones", "Level 6 Boss - 19 Sun Stones", "Level 6 Boss - 20 Sun Stones", "Level 6 Boss - 21 Sun Stones", "Level 6 Boss - 22 Sun Stones", "Level 6 Boss - 23 Sun Stones", "Level 6 Boss - 24 Sun Stones", "Level 6 Boss - 25 Sun Stones", "Level 6 Boss - 26 Sun Stones", "Level 6 Boss - 27 Sun Stones", "Level 6 Boss - 28 Sun Stones", "Level 6 Boss - 29 Sun Stones", "Level 6 Boss - 30 Sun Stones", "Level 6 Boss - 31 Sun Stones", "Level 6 Boss - 32 Sun Stones", "Level 6 Boss - 33 Sun Stones", "Level 6 Boss - 34 Sun Stones", "Level 6 Boss - 35 Sun Stones", "Level 6 Boss - 36 Sun Stones", "Level 6 Boss - 37 Sun Stones", "Level 6 Boss - 38 Sun Stones", "Level 6 Boss - 39 Sun Stones", "Level 6 Boss - 40 Sun Stones", "Level 6 Boss - 41 Sun Stones", "Level 6 Boss - 42 Sun Stones", "Level 6 Boss - 43 Sun Stones", "Level 6 Boss - 44 Sun Stones", "Level 6 Boss - 45 Sun Stones", "Level 6 Boss - 46 Sun Stones", "Level 6 Boss - 47 Sun Stones", "Level 6 Boss - 48 Sun Stones", "Level 6 Boss - 49 Sun Stones", "Level 6 Boss - 50 Sun Stones", "Level 6 Boss - 51 Sun Stones", "Level 6 Boss - 52 Sun Stones", "Level 6 Boss - 53 Sun Stones", "Level 6 Boss - 54 Sun Stones", "Level 6 Boss - 55 Sun Stones", "Level 6 Boss - 56 Sun Stones", "Level 6 Boss - 57 Sun Stones", "Level 6 Boss - 58 Sun Stones", "Level 6 Boss - 59 Sun Stones", "Level 6 Boss - 60 Sun Stones", "Level 6 Boss - 61 Sun Stones", "Level 6 Boss - 62 Sun Stones", "Level 6 Boss - 63 Sun Stones", "Level 6 Boss - 64 Sun Stones", "Level 6 Boss - 65 Sun Stones", "Level 6 Boss - 66 Sun Stones", "Level 6 Boss - 67 Sun Stones", "Level 6 Boss - 68 Sun Stones", "Level 6 Boss - 69 Sun Stones", "Level 6 Boss - 70 Sun Stones", "Level 6 Boss - 71 Sun Stones", "Level 6 Boss - 72 Sun Stones", "Level 6 Boss - 73 Sun Stones", "Level 6 Boss - 74 Sun Stones", "Level 6 Boss - 75 Sun Stones", "Level 6 Boss - 76 Sun Stones", "Level 6 Boss - 77 Sun Stones", "Level 6 Boss - 78 Sun Stones", "Level 6 Boss - 79 Sun Stones", "Level 6 Boss - 80 Sun Stones", "Level 6 Boss - 81 Sun Stones", "Level 6 Boss - 82 Sun Stones", "Level 6 Boss - 83 Sun Stones", "Level 6 Boss - 84 Sun Stones", "Level 6 Boss - 85 Sun Stones", "Level 6 Boss - 86 Sun Stones", "Level 6 Boss - 87 Sun Stones", "Level 6 Boss - 88 Sun Stones", "Level 6 Boss - 89 Sun Stones", "Level 6 Boss - 90 Sun Stones", "Level 6 Boss - 91 Sun Stones", "Level 6 Boss - 92 Sun Stones", "Level 6 Boss - 93 Sun Stones", "Level 6 Boss - 94 Sun Stones", "Level 6 Boss - 95 Sun Stones", "Level 6 Boss - 96 Sun Stones", "Level 6 Boss - 97 Sun Stones", "Level 6 Boss - 98 Sun Stones", "Level 6 Boss - 99 Sun Stones", "Level 6 Boss - 100 Sun Stones"] # List of location names
-    
+
 
     # Add your code here to calculate which locations to remove
-    
+
     for region in multiworld.regions:
         if region.player == player:
             for location in list(region.locations):
@@ -1282,71 +1283,52 @@ def after_create_regions(world: World, multiworld: MultiWorld, player: int):
     if hasattr(multiworld, "clear_location_cache"):
         multiworld.clear_location_cache()
 
-# Called before rules for accessing regions and locations are created. Not clear why you'd want this, but it's here.
-def before_set_rules(world: World, multiworld: MultiWorld, player: int):
-    pass
+# The item pool before starting items are processed, in case you want to see the raw item pool at that stage
+def before_create_items_starting(item_pool: list, world: World, multiworld: MultiWorld, player: int) -> list:
+    return item_pool
 
-# Called after rules for accessing regions and locations are created, in case you want to see or modify that information.
-def after_set_rules(world: World, multiworld: MultiWorld, player: int):
-    # Use this hook to modify the access rules for a given location
-    sectoniareq = get_option_value(multiworld, player, "queen_sectonia_boss_requirement")
-    for region in multiworld.get_regions(player):
-        for location in region.locations:
-            match location.name:
-                case "__Manual Game Complete__":
-                    location.access_rule = lambda state: state.count_group("Bosses", world.player) >= sectoniareq
-    pass
-    
-    def Example_Rule(state: CollectionState) -> bool:
-        # Calculated rules take a CollectionState object and return a boolean 
-        # True if the player can access the location
-        # CollectionState is defined in BaseClasses
-        return True
-    
-    ## Common functions:
-    # location = world.get_location(location_name, player)
-    # location.access_rule = Example_Rule
-    
-    ## Combine rules:
-    # old_rule = location.access_rule
-    # location.access_rule = lambda state: old_rule(state) and Example_Rule(state)
-    # OR
-    # location.access_rule = lambda state: old_rule(state) or Example_Rule(state)
+# The item pool after starting items are processed but before filler is added, in case you want to see the raw item pool at that stage
+def before_create_items_filler(item_pool: list, world: World, multiworld: MultiWorld, player: int) -> list:
+    # Use this hook to remove items from the item pool
+    itemNamesToRemove = [] # List of item names
 
-# The complete item pool prior to being set for generation is provided here, in case you want to make changes to it
-def before_generate_basic(item_pool: list, world: World, multiworld: MultiWorld, player: int) -> list:
+    # Add your code here to calculate which items to remove.
+    #
+    # Because multiple copies of an item can exist, you need to add an item name
+    # to the list multiple times if you want to remove multiple copies of it.
+
+    for itemName in itemNamesToRemove:
+        item = next(i for i in item_pool if i.name == itemName)
+        item_pool.remove(item)
+    
     keychains = is_option_enabled(multiworld, player, "enable_keychain_locations")
     abilities = is_option_enabled(multiworld, player, "randomize_copy_abilities")
-    abt = is_option_enabled(multiworld, player, "randomize_ability_testing_room")
-    #start_abilities = []
-    #for item in item_pool:
-    #    if item.name == "Archer":
-    #        start_abilities.append(item)
-    archer = item_pool[0]#[189]#[81]
-    beam = item_pool[1]#[190]#[82]
-    beetle = item_pool[2]#[191]#[83]
-    bell = item_pool[3]#[192]#[84]
-    bomb = item_pool[4]#[193]#[85]
-    circus = item_pool[5]#[194]#[86]
-    crash = item_pool[6]#[195]#[87]
-    cutter = item_pool[7]#[196]#[88]
-    fighter = item_pool[8]#[197]#[89]
-    fire = item_pool[9]#[198]#[90]
-    hammer = item_pool[10]#[199]#[91]
-    ice = item_pool[11]#[200]#[92]
-    leaf = item_pool[12]#[201]#[93]
-    mike = item_pool[13]#[202]#[94]
-    needle = item_pool[14]#[203]#[95]
-    ninja = item_pool[15]#[204]#[96]
-    parasol = item_pool[16]#[205]#[97]
-    sleep = item_pool[17]#[206]#[98]
-    spark = item_pool[18]#[207]#[99]
-    spear = item_pool[19]#[208]#[100]
-    stone = item_pool[20]#[209]#[101]
-    sword = item_pool[21]#[210]#[102]
-    wheel = item_pool[22]#[211]#[103]
-    whip = item_pool[23]#[212]#[104]
-    wing = item_pool[24]#[213]#[105]
+    atr = is_option_enabled(multiworld, player, "randomize_ability_testing_room")
+    archer = next(i for i in item_pool if i.name == "Archer")
+    beam = next(i for i in item_pool if i.name == "Beam")
+    beetle = next(i for i in item_pool if i.name == "Beetle")
+    bell = next(i for i in item_pool if i.name == "Bell")
+    bomb = next(i for i in item_pool if i.name == "Bomb")
+    circus = next(i for i in item_pool if i.name == "Circus")
+    crash = next(i for i in item_pool if i.name == "Crash")
+    cutter = next(i for i in item_pool if i.name == "Cutter")
+    fighter = next(i for i in item_pool if i.name == "Fighter")
+    fire = next(i for i in item_pool if i.name == "Fire")
+    hammer = next(i for i in item_pool if i.name == "Hammer")
+    ice = next(i for i in item_pool if i.name == "Ice")
+    leaf = next(i for i in item_pool if i.name == "Leaf")
+    mike = next(i for i in item_pool if i.name == "Mike")
+    needle = next(i for i in item_pool if i.name == "Needle")
+    ninja = next(i for i in item_pool if i.name == "Ninja")
+    parasol = next(i for i in item_pool if i.name == "Parasol")
+    sleep = next(i for i in item_pool if i.name == "Sleep")
+    spark = next(i for i in item_pool if i.name == "Spark")
+    spear = next(i for i in item_pool if i.name == "Spear")
+    stone = next(i for i in item_pool if i.name == "Stone")
+    sword = next(i for i in item_pool if i.name == "Sword")
+    wheel = next(i for i in item_pool if i.name == "Wheel")
+    whip = next(i for i in item_pool if i.name == "Whip")
+    wing = next(i for i in item_pool if i.name == "Wing")
     if abilities == False:
         multiworld.push_precollected(archer)
         multiworld.push_precollected(beam)
@@ -1398,14 +1380,6 @@ def before_generate_basic(item_pool: list, world: World, multiworld: MultiWorld,
         item_pool.remove(wheel)
         item_pool.remove(whip)
         item_pool.remove(wing)
-        #pool = add_filler_items(pool, traps)
-        #filler_to_remove = 25
-        #for item in item_pool:
-        #    if item.name == "Nothing":
-        #        filler_to_remove+= 1
-        #for item in [item for item in item_pool if item.name == "Nothing"]:
-        #    item_pool.remove(item)
-        #pool = add_filler_items(pool, traps)
         return item_pool
     elif keychains == False:
         multiworld.push_precollected(archer)
@@ -1458,202 +1432,70 @@ def before_generate_basic(item_pool: list, world: World, multiworld: MultiWorld,
         item_pool.remove(wheel)
         item_pool.remove(whip)
         item_pool.remove(wing)
-        #pool = add_filler_items(pool, traps)
-        #filler_to_remove = 25
-        #for item in item_pool:
-        #    if item.name == "Nothing":
-        #        filler_to_remove+= 1
-        #for item in [item for item in item_pool if item.name == "Nothing"]:
-        #    item_pool.remove(item)
-        #pool = add_filler_items(pool, traps)
         return item_pool
     else:
         return item_pool
-    # Use this hook to remove items from the item pool
-    #itemNamesToRemove = [] # List of item names
-    
-    # Add your code here to calculate which items to remove.
-    # 
-    # Because multiple copies of an item can exist, you need to add an item name
-    # to the list multiple times if you want to remove multiple copies of it.
-    
-    #for itemName in itemNamesToRemove:
-    #    item = next(i for i in item_pool if i.name == itemName)
-    #    item_pool.remove(item)
-    
-    
-    
-    
+
     # Some other useful hook options:
-    
+
     ## Place an item at a specific location
     # location = next(l for l in multiworld.get_unfilled_locations(player=player) if l.name == "Location Name")
     # item_to_place = next(i for i in item_pool if i.name == "Item Name")
     # location.place_locked_item(item_to_place)
     # item_pool.remove(item_to_place)
 
-# This method is run at the very end of pre-generation, once the place_item options have been handled and before AP generation occurs
-def after_generate_basic(world: World, multiworld: MultiWorld, player: int):
-   # keychains = is_option_enabled(multiworld, player, "enable_keychain_locations")
-   # abilities = is_option_enabled(multiworld, player, "randomize_copy_abilities")
-   # fighters = is_option_enabled(multiworld, player, "enable_kirby_fighters_locations")
-   # abt = is_option_enabled(multiworld, player, "randomize_ability_testing_room")
-   # for item in item_pool:
-   #     if item == "Sleep":
-   #         classification = ItemClassification.trap
-   # if abt == True:
-   #     if abilities == False:
-   #         if item == "Ability Testing Room":
-   #             classification = ItemClassification.useful
-   #             return item
-   #     elif keychains == False:
-   #         if item == "Ability Testing Room":
-   #             classification = ItemClassification.useful
-   #             return item
-   #     else: 
-   #         return item
-   # else:
-   #     return item
-    #start_abilities = ["Archer", "Beam", "Beetle", "Bell", "Bomb", "Circus", "Crash", "Cutter", "Fighter", "Fire", "Hammer", "Ice", "Leaf", "Mike", "Needle", "Ninja", "Parasol", "Sleep", "Spark", "Spear", "Stone", "Sword", "Wheel", "Whip", "Wing"]
-    #start_abilities = []
-    #for item in item_table:
-    #    if "Archer":
-    #        start_abilities.append(item)
-    #for item in item_table:
-        #if category == "Abilities":
-        #if item.name == "Archer":
-            #start_abilities.append(item)
-    #if abilities == False:
-        #start_abilities.append("Archer","Beam","Beetle","Bell","Bomb","Circus","Crash","Cutter","Fighter","Fire","Hammer","Ice","Leaf","Mike","Needle","Ninja","Parasol","Sleep","Spark","Spear","Stone","Sword","Wheel","Whip","Wing")
-        #start_abilities.append("Beam")
-        #start_abilities.append("Beetle")
-        #start_abilities.append("Bell")
-        #start_abilities.append("Bomb")
-        #start_abilities.append("Circus")
-        #start_abilities.append("Crash")
-        #start_abilities.append("Cutter")
-        #start_abilities.append("Fighter")
-        #start_abilities.append("Fire")
-        #start_abilities.append("Hammer")
-        #start_abilities.append("Ice")
-        #start_abilities.append("Leaf")
-        #start_abilities.append("Mike")
-        #start_abilities.append("Needle")
-        #start_abilities.append("Ninja")
-        #start_abilities.append("Parasol")
-        #start_abilities.append("Sleep")
-        #start_abilities.append("Spark")
-        #start_abilities.append("Spear")
-        #start_abilities.append("Stone")
-        #start_abilities.append("Sword")
-        #start_abilities.append("Wheel")
-        #start_abilities.append("Whip")
-        #start_abilities.append("Wing")
-        #multiworld.push_precollected(start_abilities)
-        #multiworld.push_precollected("Beam")
-        #multiworld.push_precollected("Beetle")
-        #multiworld.push_precollected("Bell")
-        #multiworld.push_precollected("Bomb")
-        #multiworld.push_precollected("Circus")
-        #multiworld.push_precollected("Crash")
-        #multiworld.push_precollected("Cutter")
-        #multiworld.push_precollected("Fighter")
-        #multiworld.push_precollected("Fire")
-        #multiworld.push_precollected("Hammer")
-        #multiworld.push_precollected("Ice")
-        #multiworld.push_precollected("Leaf")
-        #multiworld.push_precollected("Mike")
-        #multiworld.push_precollected("Needle")
-        #multiworld.push_precollected("Ninja")
-        #multiworld.push_precollected("Parasol")
-        #multiworld.push_precollected("Sleep")
-        #multiworld.push_precollected("Spark")
-        #multiworld.push_precollected("Spear")
-        #multiworld.push_precollected("Stone")
-        #multiworld.push_precollected("Sword")
-        #multiworld.push_precollected("Wheel")
-        #multiworld.push_precollected("Whip")
-        #multiworld.push_precollected("Wing")
-        #return player
-    #elif keychains == False:
-        #start_abilities.append("Archer")
-        #start_abilities.append("Beam")
-        #start_abilities.append("Beetle")
-        #start_abilities.append("Bell")
-        #start_abilities.append("Bomb")
-        #start_abilities.append("Circus")
-        #start_abilities.append("Crash")
-        #start_abilities.append("Cutter")
-        #start_abilities.append("Fighter")
-        #start_abilities.append("Fire")
-        #start_abilities.append("Hammer")
-        #start_abilities.append("Ice")
-        #start_abilities.append("Leaf")
-        #start_abilities.append("Mike")
-        #start_abilities.append("Needle")
-        #start_abilities.append("Ninja")
-        #start_abilities.append("Parasol")
-        #start_abilities.append("Sleep")
-        #start_abilities.append("Spark")
-        #start_abilities.append("Spear")
-        #start_abilities.append("Stone")
-        #start_abilities.append("Sword")
-        #start_abilities.append("Wheel")
-        #start_abilities.append("Whip")
-        #start_abilities.append("Wing")
-        #multiworld.push_precollected(start_abilities)
-        #return player
-    #else :
+# The complete item pool prior to being set for generation is provided here, in case you want to make changes to it
+def after_create_items(item_pool: list, world: World, multiworld: MultiWorld, player: int) -> list:
+    return item_pool
+
+# Called before rules for accessing regions and locations are created. Not clear why you'd want this, but it's here.
+def before_set_rules(world: World, multiworld: MultiWorld, player: int):
     pass
 
-# This method is called before the victory location has the victory event placed and locked
-def before_pre_fill(world: World, multiworld: MultiWorld, player: int):
+# Called after rules for accessing regions and locations are created, in case you want to see or modify that information.
+def after_set_rules(world: World, multiworld: MultiWorld, player: int):
+    # Use this hook to modify the access rules for a given location
+    sectoniareq = get_option_value(multiworld, player, "queen_sectonia_boss_requirement")
+    for region in multiworld.get_regions(player):
+        for location in region.locations:
+            match location.name:
+                case "__Manual Game Complete__":
+                    location.access_rule = lambda state: state.count_group("Bosses", world.player) >= sectoniareq
     pass
 
-# This method is called after the victory location has the victory event placed and locked
-def after_pre_fill(world: World, multiworld: MultiWorld, player: int):
-    pass
+    def Example_Rule(state: CollectionState) -> bool:
+        # Calculated rules take a CollectionState object and return a boolean
+        # True if the player can access the location
+        # CollectionState is defined in BaseClasses
+        return True
+
+    ## Common functions:
+    # location = world.get_location(location_name, player)
+    # location.access_rule = Example_Rule
+
+    ## Combine rules:
+    # old_rule = location.access_rule
+    # location.access_rule = lambda state: old_rule(state) and Example_Rule(state)
+    # OR
+    # location.access_rule = lambda state: old_rule(state) or Example_Rule(state)
 
 # The item name to create is provided before the item is created, in case you want to make changes to it
 def before_create_item(item_name: str, world: World, multiworld: MultiWorld, player: int) -> str:
     return item_name
-    
+
 # The item that was created is provided after creation, in case you want to modify the item
 def after_create_item(item: ManualItem, world: World, multiworld: MultiWorld, player: int) -> ManualItem:
-    keychains = is_option_enabled(multiworld, player, "enable_keychain_locations")
-    abilities = is_option_enabled(multiworld, player, "randomize_copy_abilities")
-    abt = is_option_enabled(multiworld, player, "randomize_ability_testing_room")
-    #if abt == True:
-    #    if abilities == False:
-    #        if item == "Ability Testing Room":
-    #            classification = ItemClassification.useful
-    #            return item
-    #    elif keychains == False:
-    #        if item == "Ability Testing Room":
-    #            classification = ItemClassification.useful
-    #            return item
-    #    else: 
-    #        return item
-    #else:
-    #    return item
-    #for item in item_pool:
-    #    if item == "Sleep":
-    #        classification = ItemClassification.trap
-    #if abt == True:
-    #    if abilities == False:
-    #        if item == "Ability Testing Room":
-    #            classification = ItemClassification.useful
-    #            return item
-    #    elif keychains == False:
-    #        if item == "Ability Testing Room":
-    #            classification = ItemClassification.useful
-    #            return item
-    #    else: 
-    #        return item
-    #else:
-    #    return item
+    if item.name == "Sleep":
+        item.classification = ItemClassification.trap
     return item
 
+# This method is run towards the end of pre-generation, before the place_item options have been handled and before AP generation occurs
+def before_generate_basic(world: World, multiworld: MultiWorld, player: int) -> list:
+    pass
+
+# This method is run at the very end of pre-generation, once the place_item options have been handled and before AP generation occurs
+def after_generate_basic(world: World, multiworld: MultiWorld, player: int):
+    pass
 
 # This is called before slot data is set and provides an empty dict ({}), in case you want to modify it before Manual does
 def before_fill_slot_data(slot_data: dict, world: World, multiworld: MultiWorld, player: int) -> dict:
@@ -1662,11 +1504,7 @@ def before_fill_slot_data(slot_data: dict, world: World, multiworld: MultiWorld,
 # This is called after slot data is set and provides the slot data at the time, in case you want to check and modify it after Manual is done with it
 def after_fill_slot_data(slot_data: dict, world: World, multiworld: MultiWorld, player: int) -> dict:
     return slot_data
-    
-def after_add_filler_items(item_pool: dict, world: World, multiworld: MultiWorld, player: int) -> dict:
-    keychains = is_option_enabled(multiworld, player, "enable_keychain_locations")
-    abilities = is_option_enabled(multiworld, player, "randomize_copy_abilities")
-    for item in item_pool:
-        if item.name == "Sleep":
-            item.classification = ItemClassification.trap
-    return item_pool
+
+# This is called right at the end, in case you want to write stuff to the spoiler log
+def before_write_spoiler(world: World, multiworld: MultiWorld, spoiler_handle) -> None:
+    pass
