@@ -1,12 +1,5 @@
 [
-	{
-		"name": "Level 1 1st Stage",
-		"region": "Fine Fields",
-		"category": ["A1 - Level 1 Stages"],
-		"requires": [],
-		"place_item_category": ["Stages"]
-	},
-	{
+    {
 		"name": "Level 1 2nd Stage",
 		"region": "Fine Fields",
 		"category": ["A1 - Level 1 Stages"],

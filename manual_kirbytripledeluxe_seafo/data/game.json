@@ -1,2 +1,2 @@
 
-	{"game": "KirbyTripleDeluxe","creator": "Seafo","filler_item_name": "Keychain"}
+	{"game": "KirbyTripleDeluxe","creator": "Seafo","filler_item_name": "Keychain","starting_items": [{"item_categories": ["Stages"],"random": 1}]}
