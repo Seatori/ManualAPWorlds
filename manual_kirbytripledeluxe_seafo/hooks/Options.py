@@ -118,8 +118,10 @@ class QueenSectoniaRequirement(Range):
     
 class FillerTrapPercent(Range):
     """
-    How many filler items will be replaced with traps.
-    0 means no additional traps, 100 means all fillers are traps.
+    How many random Keychains will be replaced with Lose Ability Traps.
+    Lose Ability Traps make Kirby eject whatever ability he had. They do nothing if he didn't have one.
+    
+    0 means no traps are added, 100 means all random Keychains will be replaced by traps.
     """
     display_name = "Filler Trap Percentage"
     range_start = 0
