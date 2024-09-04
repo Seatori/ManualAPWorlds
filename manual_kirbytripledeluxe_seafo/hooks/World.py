@@ -32,7 +32,7 @@ from ..Helpers import is_option_enabled, get_option_value
 
 # Called before regions and locations are created. Not clear why you'd want this, but it's here. Victory location is included, but Victory event is not placed yet.
 def before_create_regions(world: World, multiworld: MultiWorld, player: int):
-    pass
+    world.options.goal.value = get_option_value(multiworld, player, 'queen_sectonia_boss_requirement') - 1
 
 # Called after regions and locations are created, in case you want to see or modify that information. Victory location is included.
 def after_create_regions(world: World, multiworld: MultiWorld, player: int):
@@ -1455,12 +1455,6 @@ def before_set_rules(world: World, multiworld: MultiWorld, player: int):
 # Called after rules for accessing regions and locations are created, in case you want to see or modify that information.
 def after_set_rules(world: World, multiworld: MultiWorld, player: int):
     # Use this hook to modify the access rules for a given location
-    sectoniareq = get_option_value(multiworld, player, "queen_sectonia_boss_requirement")
-    for region in multiworld.get_regions(player):
-        for location in region.locations:
-            match location.name:
-                case "__Manual Game Complete__":
-                    location.access_rule = lambda state: state.count_group("Bosses", world.player) >= sectoniareq
     pass
 
     def Example_Rule(state: CollectionState) -> bool:
