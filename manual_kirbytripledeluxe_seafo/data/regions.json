@@ -193,6 +193,6 @@
 	},
 	"Eternal Dreamland": 	{
 		"connects_to": [],
-		"requires": "(|@Bosses:6|)"
+		"requires": []
     }
 }

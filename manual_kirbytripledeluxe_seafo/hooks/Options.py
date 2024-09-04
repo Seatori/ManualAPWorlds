@@ -1,5 +1,5 @@
 # Object classes from AP that represent different types of options that you can create
-from Options import FreeText, NumericOption, Toggle, DefaultOnToggle, Choice, TextChoice, Range, NamedRange
+from Options import FreeText, NumericOption, Toggle, DefaultOnToggle, Choice, TextChoice, Range, NamedRange, Visibility
 
 # These helper methods allow you to determine if an option has been set, or what its value is, for any player in the multiworld
 from ..Helpers import is_option_enabled, get_option_value
@@ -128,7 +128,10 @@ class FillerTrapPercent(Range):
     range_end = 100
     default = 0
 
-
+class Goal(Range):
+    range_start = 0
+    range_end = 5
+    visibility = Visibility.none
 
 # This is called before any manual options are defined, in case you want to define your own with a clean slate or let Manual define over them
 def before_options_defined(options: dict) -> dict:
@@ -148,4 +151,5 @@ def before_options_defined(options: dict) -> dict:
 # This is called after any manual options are defined, in case you want to see what options are defined or want to modify the defined options
 def after_options_defined(options: dict) -> dict:
     options["filler_traps"] = FillerTrapPercent
+    options["goal"] = Goal
     return options

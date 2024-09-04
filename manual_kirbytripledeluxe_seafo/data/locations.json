@@ -6034,10 +6034,45 @@
 		"requires": "|Whip|"
 	},
 	{
-		"name": "Defeat Queen Sectonia",
+		"name": "Defeat Queen Sectonia - Requires 1 Boss",
 		"region": "Eternal Dreamland",
 		"victory": true,
 		"category": ["K1 - Eternal Dreamland"],
-		"requires": []
+		"requires": "|@Bosses:1|"
+	},
+	{
+		"name": "Defeat Queen Sectonia - Requires 2 Bosses",
+		"region": "Eternal Dreamland",
+		"victory": true,
+		"category": ["K1 - Eternal Dreamland"],
+		"requires": "|@Bosses:2|"
+	},
+	{
+		"name": "Defeat Queen Sectonia - Requires 3 Bosses",
+		"region": "Eternal Dreamland",
+		"victory": true,
+		"category": ["K1 - Eternal Dreamland"],
+		"requires": "|@Bosses:3|"
+	},
+	{
+		"name": "Defeat Queen Sectonia - Requires 4 Bosses",
+		"region": "Eternal Dreamland",
+		"victory": true,
+		"category": ["K1 - Eternal Dreamland"],
+		"requires": "|@Bosses:4|"
+	},
+	{
+		"name": "Defeat Queen Sectonia - Requires 5 Bosses",
+		"region": "Eternal Dreamland",
+		"victory": true,
+		"category": ["K1 - Eternal Dreamland"],
+		"requires": "|@Bosses:5|"
+	},
+	{
+		"name": "Defeat Queen Sectonia - Requires 6 Bosses",
+		"region": "Eternal Dreamland",
+		"victory": true,
+		"category": ["K1 - Eternal Dreamland"],
+		"requires": "|@Bosses:6|"
 	}
 ]
