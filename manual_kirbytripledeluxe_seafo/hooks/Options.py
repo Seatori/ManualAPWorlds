@@ -27,19 +27,18 @@ from ..Helpers import is_option_enabled, get_option_value
 #   options["total_characters_to_win_with"] = TotalCharactersToWinWith
 #
 
-class RandomizeKeychains(DefaultOnToggle):
-    """
-    Add additional locations for all of the Keychains and Rare Keychains in Story Mode.
-    Includes the Queen Sectonia Keychain obtained from collecting all Sun Stones.
-    """
-    display_name = "Randomize Keychains"
-
 class RandomizeAbilities(DefaultOnToggle):
     """
     Prevent use of Kirby's Copy Abilities before obtaining them.
-    Automatically set to false if Keychains aren't randomized.
     """
     display_name = "Randomize Copy Abilities"
+
+class RandomizeKeychains(DefaultOnToggle):
+    """
+    Add additional locations for all of the Keychains and Rare Keychains in Story Mode.
+    The Queen Sectonia Keychain obtained from collecting all Sun Stones is randomized, but has no equivalent location.
+    """
+    display_name = "Randomize Keychains"
 
 class KirbyFighters(Toggle):
     """
@@ -135,8 +134,8 @@ class Goal(Range):
 
 # This is called before any manual options are defined, in case you want to define your own with a clean slate or let Manual define over them
 def before_options_defined(options: dict) -> dict:
-    options["enable_keychain_locations"] = RandomizeKeychains
     options["randomize_copy_abilities"] = RandomizeAbilities
+    options["enable_keychain_locations"] = RandomizeKeychains
     options["enable_kirby_fighters_locations"] = KirbyFighters
     options["randomize_ability_testing_room"] = AbilityTestingRoom
     options["level_1_boss_sun_stones"] = Level1BossRequirement
