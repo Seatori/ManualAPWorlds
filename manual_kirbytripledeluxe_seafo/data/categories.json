@@ -85,6 +85,9 @@
 		"hidden": true,
 		"yaml_option": ["randomize_ability_testing_room"]
 	},
+	"Goal Games": {
+		"hidden": true
+	},
 	"Sun Stone Locations": {
 		"hidden": true
 	}
