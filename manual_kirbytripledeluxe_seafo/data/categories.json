@@ -71,13 +71,21 @@
     "Wing Access": {
         "hidden": true
     },
+    "Copy Abilities": {
+        "hidden": true
+    },
     "Keychains": {
         "hidden": true,
         "yaml_option": ["enable_keychain_locations"]
     },
-    "Copy Abilities": {
-        "hidden": true
-    },
+	"Progressive Keys": {
+		"hidden": true,
+		"yaml_option": ["progressive_ex_stage_keys"]
+	},
+	"Vanilla Keys": {
+		"hidden": true,
+		"yaml_option": ["!progressive_ex_stage_keys"]
+	},
     "J1 - Clear Kirby Fighters": {
         "yaml_option": ["enable_kirby_fighters_locations"]
     },

@@ -24,7 +24,7 @@
 		"name": "Level 1 - Unlock EX Stage",
 		"region": "Fine Fields",
 		"category": ["A1 - Level 1 Stages"],
-		"requires": "(|Progressive EX Stage Key:1|)",
+		"requires": "|Progressive EX Stage Key:1| OR |Level 1 EX Stage Key|",
 		"place_item_category": ["Stages"]
 	},
 	{
@@ -766,7 +766,7 @@
 		"name": "Level 2 - Unlock EX Stage",
 		"region": "Lollipop Land",
 		"category": ["A2 - Level 2 Stages"],
-		"requires": "(|Progressive EX Stage Key:2|)",
+		"requires": "|Progressive EX Stage Key:2| OR |Level 2 EX Stage Key|",
 		"place_item_category": ["Stages"]
 	},
 	{
@@ -1515,7 +1515,7 @@
 		"name": "Level 3 - Unlock EX Stage",
 		"region": "Old Odyssey",
 		"category": ["A3 - Level 3 Stages"],
-		"requires": "(|Progressive EX Stage Key:3|)",
+		"requires": "|Progressive EX Stage Key:3| OR |Level 3 EX Stage Key|",
 		"place_item_category": ["Stages"]
 	},
 	{
@@ -2264,7 +2264,7 @@
 		"name": "Level 4 - Unlock EX Stage",
 		"region": "Wild World",
 		"category": ["A4 - Level 4 Stages"],
-		"requires": "(|Progressive EX Stage Key:4|)",
+		"requires": "|Progressive EX Stage Key:4| OR |Level 4 EX Stage Key|",
 		"place_item_category": ["Stages"]
 	},
 	{
@@ -3010,6 +3010,13 @@
 		"place_item_category": ["Stages"]
 	},
 	{
+		"name": "Level 5 - Unlock EX Stage",
+		"region": "Endless Explosions",
+		"category": ["A5 - Level 5 Stages"],
+		"requires": "|Progressive EX Stage Key:5| OR |Level 5 EX Stage Key|",
+		"place_item_category": ["Stages"]
+	},
+	{
 		"name": "Unlock Level 5 Boss",
 		"region": "Endless Explosions",
 		"category": ["A5 - Level 5 Stages"],
@@ -3717,13 +3724,6 @@
 		"place_item_category": ["Bosses"]
 	},
 	{
-		"name": "Level 5 - Unlock EX Stage",
-		"region": "Endless Explosions",
-		"category": ["A5 - Level 5 Stages"],
-		"requires": "(|Progressive EX Stage Key:5|)",
-		"place_item_category": ["Stages"]
-	},
-	{
 		"name": "Level 6 - Unlock 1st Stage",
 		"region": "Royal Road",
 		"category": ["A6 - Level 6 Stages"],
@@ -3762,14 +3762,14 @@
 		"name": "Level 6 - Unlock 1st EX Stage",
 		"region": "Royal Road",
 		"category": ["A6 - Level 6 Stages"],
-		"requires": "(|Progressive EX Stage Key:6|)",
+		"requires": "|Progressive EX Stage Key:6| OR |Level 6 EX Stage Key|",
 		"place_item_category": ["Stages"]
 	},
 	{
 		"name": "Level 6 - Unlock 2nd EX Stage",
 		"region": "Royal Road",
 		"category": ["A6 - Level 6 Stages"],
-		"requires": "(|Progressive EX Stage Key:6|)",
+		"requires": "|Progressive EX Stage Key:6| OR |Level 6 EX Stage Key|",
 		"place_item_category": ["Stages"]
 	},
 	{

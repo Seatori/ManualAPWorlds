@@ -40,6 +40,13 @@ class RandomizeKeychains(DefaultOnToggle):
     """
     display_name = "Randomize Keychains"
 
+class ExtraStageKeys(DefaultOnToggle):
+    """
+    When enabled, the EX Stage Key items in the pool will become progressive.
+    This means that Level 1's EX Stage will always be unlocked first, followed by Level 2's, and so on.
+    """
+    display_name = "Progressive EX Stage Keys"
+
 class KirbyFighters(Toggle):
     """
     Add additional locations for clearing Kirby Fighters with each of the available Copy Abilities.
@@ -136,6 +143,7 @@ class Goal(Range):
 def before_options_defined(options: dict) -> dict:
     options["randomize_copy_abilities"] = RandomizeAbilities
     options["enable_keychain_locations"] = RandomizeKeychains
+    options["progressive_ex_stage_keys"] = ExtraStageKeys
     options["enable_kirby_fighters_locations"] = KirbyFighters
     options["randomize_ability_testing_room"] = AbilityTestingRoom
     options["level_1_boss_sun_stones"] = Level1BossRequirement
