@@ -79,6 +79,14 @@ def after_create_regions(world: World, multiworld: MultiWorld, player: int):
     else:
         remove_sixth_boss = [loc.name for loc in multiworld.get_locations(player) if "Level 6 Boss -" in loc.name]
 
+    keychains = get_option_value(multiworld, player, "keychain_locations")
+    if keychains == 1:
+        remove_keychains = [loc.name for loc in multiworld.get_locations(player) if "- Keychain" in loc.name
+                            or "Left Keychain" in loc.name or "Right Keychain" in loc.name]
+    elif keychains == 0:
+        remove_keychains = [loc.name for loc in multiworld.get_locations(player) if "Keychain" in loc.name]
+    else:
+        remove_keychains = []
 
     # Add your code here to calculate which locations to remove
 
@@ -97,6 +105,9 @@ def after_create_regions(world: World, multiworld: MultiWorld, player: int):
                     region.locations.remove(location)
                 if location.name in remove_sixth_boss:
                     region.locations.remove(location)
+                if location.name in remove_keychains:
+                    region.locations.remove(location)
+
     if hasattr(multiworld, "clear_location_cache"):
         multiworld.clear_location_cache()
 
@@ -118,7 +129,6 @@ def before_create_items_filler(item_pool: list, world: World, multiworld: MultiW
         item = next(i for i in item_pool if i.name == itemName)
         item_pool.remove(item)
     
-    # keychains = is_option_enabled(multiworld, player, "enable_keychain_locations")
     # atr = is_option_enabled(multiworld, player, "randomize_ability_testing_room")
     abilities = is_option_enabled(multiworld, player, "randomize_copy_abilities")
     archer = next(i for i in item_pool if i.name == "Archer")
@@ -197,9 +207,15 @@ def before_create_items_filler(item_pool: list, world: World, multiworld: MultiW
         item_pool.remove(wheel)
         item_pool.remove(whip)
         item_pool.remove(wing)
-        return item_pool
-    else:
-        return item_pool
+
+    keychains = get_option_value(multiworld, player, "keychain_locations")
+    if keychains == 0:
+        rare_keychains = [i.name for i in item_pool if " Keychain" in i.name]
+        for keychains_to_remove in rare_keychains:
+            remove_keychains = next(i for i in item_pool if i.name == keychains_to_remove)
+            item_pool.remove(remove_keychains)
+
+    return item_pool
 
     # Some other useful hook options:
 

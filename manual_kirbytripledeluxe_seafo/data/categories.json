@@ -75,8 +75,7 @@
         "hidden": true
     },
     "Keychains": {
-        "hidden": true,
-        "yaml_option": ["enable_keychain_locations"]
+        "hidden": true
     },
 	"Progressive Keys": {
 		"hidden": true,

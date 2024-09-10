@@ -33,11 +33,17 @@ class RandomizeAbilities(DefaultOnToggle):
     """
     display_name = "Randomize Copy Abilities"
 
-class RandomizeKeychains(DefaultOnToggle):
+class RandomizeKeychains(Choice):
     """
-    Add additional locations for all of the Keychains and Rare Keychains in Story Mode.
+    Add additional locations for the Keychains in Story Mode. Also adds the Rare Keychains to the pool as filler items.
     The Queen Sectonia Keychain obtained from collecting all Sun Stones is randomized, but has no equivalent location.
     """
+    alias_false = 0
+    option_no = 0
+    option_only_rares = 1
+    alias_true = 2
+    option_yes = 2
+    default = 1
     display_name = "Randomize Keychains"
 
 class ExtraStageKeys(DefaultOnToggle):
@@ -124,7 +130,7 @@ class QueenSectoniaRequirement(Range):
     
 class FillerTrapPercent(Range):
     """
-    How many random Keychains will be replaced with Lose Ability Traps.
+    How many random Keychains will be replaced by Lose Ability Traps.
     Lose Ability Traps make Kirby eject whatever ability he had. They do nothing if he didn't have one.
     
     0 means no traps are added, 100 means all random Keychains will be replaced by traps.
@@ -142,7 +148,7 @@ class Goal(Range):
 # This is called before any manual options are defined, in case you want to define your own with a clean slate or let Manual define over them
 def before_options_defined(options: dict) -> dict:
     options["randomize_copy_abilities"] = RandomizeAbilities
-    options["enable_keychain_locations"] = RandomizeKeychains
+    options["keychain_locations"] = RandomizeKeychains
     options["progressive_ex_stage_keys"] = ExtraStageKeys
     options["enable_kirby_fighters_locations"] = KirbyFighters
     options["randomize_ability_testing_room"] = AbilityTestingRoom
