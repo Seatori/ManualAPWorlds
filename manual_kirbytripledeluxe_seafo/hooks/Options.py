@@ -61,7 +61,7 @@ class KirbyFighters(Toggle):
 
 class AbilityTestingRoom(Toggle):
     """
-    Add the ability to access the Copy Ability Testing Room to the item pool. If false, you're logically assumed to not have access.
+    Add the ability to access the Copy Ability Testing Room to the item pool. If false, you're never logically considered to have access.
     """
     display_name = "Randomize Ability Testing Room"
 
