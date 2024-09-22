@@ -4480,18 +4480,6 @@
 		"place_item_category": ["Stages"]
 	},
 	{
-		"name": "FiFi Stage 1 - Sun Stone 1",
-		"region": "Fine Fields Stage 1",
-		"category": ["B1 - Fine Fields Stage 1","Sun Stone Locations"],
-		"requires": []
-	},
-	{
-		"name": "FiFi Stage 1 - Sun Stone 2",
-		"region": "Fine Fields Stage 1",
-		"category": ["B1 - Fine Fields Stage 1","Sun Stone Locations"],
-		"requires": []
-	},
-	{
 		"name": "FiFi Stage 1 - Keychain in Grass",
 		"region": "Fine Fields Stage 1",
 		"category": ["B1 - Fine Fields Stage 1","Keychains"],
@@ -4501,6 +4489,18 @@
 		"name": "FiFi Stage 1 - Keychain Under Crate",
 		"region": "Fine Fields Stage 1",
 		"category": ["B1 - Fine Fields Stage 1","Keychains"],
+		"requires": []
+	},
+	{
+		"name": "FiFi Stage 1 - Sun Stone 1 Under Tree",
+		"region": "Fine Fields Stage 1",
+		"category": ["B1 - Fine Fields Stage 1","Sun Stone Locations"],
+		"requires": []
+	},
+	{
+		"name": "FiFi Stage 1 - Sun Stone 2 in Stone Block",
+		"region": "Fine Fields Stage 1",
+		"category": ["B1 - Fine Fields Stage 1","Sun Stone Locations"],
 		"requires": []
 	},
 	{
@@ -4516,33 +4516,33 @@
 		"requires": []
 	},
 	{
-		"name": "FiFi Stage 2 - Sun Stone 1",
-		"region": "Fine Fields Stage 2",
-		"category": ["B2 - Fine Fields Stage 2","Sun Stone Locations"],
-		"requires": []
-	},
-	{
-		"name": "FiFi Stage 2 - Sun Stone 2",
-		"region": "Fine Fields Stage 2",
-		"category": ["B2 - Fine Fields Stage 2","Sun Stone Locations"],
-		"requires": []
-	},
-	{
-		"name": "FiFi Stage 2 - Sun Stone 3",
-		"region": "Fine Fields Stage 2",
-		"category": ["B2 - Fine Fields Stage 2","Sun Stone Locations"],
-		"requires": []
-	},
-	{
 		"name": "FiFi Stage 2 - Keychain Above Shotzo",
 		"region": "Fine Fields Stage 2",
 		"category": ["B2 - Fine Fields Stage 2","Keychains"],
 		"requires": []
 	},
 	{
+		"name": "FiFi Stage 2 - Sun Stone 1 Between Breakable Walls",
+		"region": "Fine Fields Stage 2",
+		"category": ["B2 - Fine Fields Stage 2","Sun Stone Locations"],
+		"requires": []
+	},
+	{
 		"name": "FiFi Stage 2 - Keychain Behind Bronto Burt",
 		"region": "Fine Fields Stage 2",
 		"category": ["B2 - Fine Fields Stage 2","Keychains"],
+		"requires": []
+	},
+	{
+		"name": "FiFi Stage 2 - Sun Stone 2 in Tilt Cannon Area",
+		"region": "Fine Fields Stage 2",
+		"category": ["B2 - Fine Fields Stage 2","Sun Stone Locations"],
+		"requires": []
+	},
+	{
+		"name": "FiFi Stage 2 - Sun Stone 3 in Tilt Water Pot Room",
+		"region": "Fine Fields Stage 2",
+		"category": ["B2 - Fine Fields Stage 2","Sun Stone Locations"],
 		"requires": []
 	},
 	{
@@ -4564,30 +4564,6 @@
 		"requires": []
 	},
 	{
-		"name": "FiFi Stage 3 - Sun Stone 1",
-		"region": "Fine Fields Stage 3",
-		"category": ["B3 - Fine Fields Stage 3","Sun Stone Locations"],
-		"requires": []
-	},
-	{
-		"name": "FiFi Stage 3 - Sun Stone 2",
-		"region": "Fine Fields Stage 3",
-		"category": ["B3 - Fine Fields Stage 3","Sun Stone Locations"],
-		"requires": "(|Circus| AND |@Circus Access:1|) OR (|Fighter| AND (|@Fighter Access:1| OR (|Archer| AND |@Archer Access:1|) OR (|Beetle| AND |@Beetle Access:1|) OR |Cutter| OR (|Leaf| AND |@Leaf Access:1|) OR (|Ninja| AND |@Ninja Access:1|) OR (|Spear| AND |@Spear Access:1|) OR |Sword| OR (|Wing| AND |@Wing Access:1|))) OR |Fire| OR (|Hammer| AND |@Hammer Access:1|)"
-	},
-	{
-		"name": "FiFi Stage 3 - Sun Stone 3",
-		"region": "Fine Fields Stage 3",
-		"category": ["B3 - Fine Fields Stage 3","Sun Stone Locations"],
-		"requires": []
-	},
-	{
-		"name": "FiFi Stage 3 - Sun Stone 4",
-		"region": "Fine Fields Stage 3",
-		"category": ["B3 - Fine Fields Stage 3","Sun Stone Locations"],
-		"requires": []
-	},
-	{
 		"name": "FiFi Stage 3 - Rare Keychain Above Sir Kibble",
 		"region": "Fine Fields Stage 3",
 		"category": ["B3 - Fine Fields Stage 3","Keychains"],
@@ -4600,15 +4576,39 @@
 		"requires": "(|Archer| AND |@Archer Access:1|) OR (|Beetle| AND |@Beetle Access:1|) OR (|Circus| AND |@Circus Access:1|) OR |Cutter| OR (|Fighter| AND |@Fighter Access:1|) OR |Fire| OR (|Hammer| AND |@Hammer Access:1|) OR (|Leaf| AND |@Leaf Access:1|) OR (|Ninja| AND |@Ninja Access:1|) OR (|Spear| AND |@Spear Access:1|) OR |Sword| OR (|Wing| AND |@Wing Access:1|)"
 	},
 	{
+		"name": "FiFi Stage 3 - Sun Stone 1 in 3D Tilt Missile Area",
+		"region": "Fine Fields Stage 3",
+		"category": ["B3 - Fine Fields Stage 3","Sun Stone Locations"],
+		"requires": []
+	},
+	{
 		"name": "FiFi Stage 3 - Keychain in Boulder Area",
 		"region": "Fine Fields Stage 3",
 		"category": ["B3 - Fine Fields Stage 3","Keychains"],
 		"requires": "(|Archer| AND |@Archer Access:1|) OR (|Beetle| AND |@Beetle Access:1|) OR (|Circus| AND |@Circus Access:1|) OR |Cutter| OR (|Fighter| AND |@Fighter Access:1|) OR |Fire| OR (|Hammer| AND |@Hammer Access:1|) OR (|Leaf| AND |@Leaf Access:1|) OR (|Ninja| AND |@Ninja Access:1|) OR (|Spear| AND |@Spear Access:1|) OR |Sword| OR (|Wing| AND |@Wing Access:1|)"
 	},
 	{
+		"name": "FiFi Stage 3 - Sun Stone 2 in Fuse Cannon Room",
+		"region": "Fine Fields Stage 3",
+		"category": ["B3 - Fine Fields Stage 3","Sun Stone Locations"],
+		"requires": "(|Circus| AND |@Circus Access:1|) OR (|Fighter| AND (|@Fighter Access:1| OR (|Archer| AND |@Archer Access:1|) OR (|Beetle| AND |@Beetle Access:1|) OR |Cutter| OR (|Leaf| AND |@Leaf Access:1|) OR (|Ninja| AND |@Ninja Access:1|) OR (|Spear| AND |@Spear Access:1|) OR |Sword| OR (|Wing| AND |@Wing Access:1|))) OR |Fire| OR (|Hammer| AND |@Hammer Access:1|)"
+	},
+	{
+		"name": "FiFi Stage 3 - Sun Stone 3 in Ball and Chain Room",
+		"region": "Fine Fields Stage 3",
+		"category": ["B3 - Fine Fields Stage 3","Sun Stone Locations"],
+		"requires": []
+	},
+	{
 		"name": "FiFi Stage 3 - Keychain in Hypernova Segment",
 		"region": "Fine Fields Stage 3",
 		"category": ["B3 - Fine Fields Stage 3","Keychains"],
+		"requires": []
+	},
+	{
+		"name": "FiFi Stage 3 - Sun Stone 4 Next to Goal Door",
+		"region": "Fine Fields Stage 3",
+		"category": ["B3 - Fine Fields Stage 3","Sun Stone Locations"],
 		"requires": []
 	},
 	{
@@ -4618,27 +4618,15 @@
 		"requires": []
 	},
 	{
-		"name": "FiFi Stage 4 - Sun Stone 1",
-		"region": "Fine Fields Stage 4",
-		"category": ["B4 - Fine Fields Stage 4","Sun Stone Locations"],
-		"requires": []
-	},
-	{
-		"name": "FiFi Stage 4 - Sun Stone 2",
-		"region": "Fine Fields Stage 4",
-		"category": ["B4 - Fine Fields Stage 4","Sun Stone Locations"],
-		"requires": []
-	},
-	{
-		"name": "FiFi Stage 4 - Sun Stone 3",
-		"region": "Fine Fields Stage 4",
-		"category": ["B4 - Fine Fields Stage 4","Sun Stone Locations"],
-		"requires": []
-	},
-	{
 		"name": "FiFi Stage 4 - Keychain Behind Beetley",
 		"region": "Fine Fields Stage 4",
 		"category": ["B4 - Fine Fields Stage 4","Keychains"],
+		"requires": []
+	},
+	{
+		"name": "FiFi Stage 4 - Sun Stone 1 Behind First Key Gate",
+		"region": "Fine Fields Stage 4",
+		"category": ["B4 - Fine Fields Stage 4","Sun Stone Locations"],
 		"requires": []
 	},
 	{
@@ -4654,10 +4642,22 @@
 		"requires": []
 	},
 	{
+		"name": "FiFi Stage 4 - Sun Stone 2 Above Tick",
+		"region": "Fine Fields Stage 4",
+		"category": ["B4 - Fine Fields Stage 4","Sun Stone Locations"],
+		"requires": []
+	},
+	{
 		"name": "FiFi Stage 4 - Keychain Below Blade Knight",
 		"region": "Fine Fields Stage 4",
 		"category": ["B4 - Fine Fields Stage 4","Keychains"],
 		"requires": "(|Archer| AND |@Archer Access:1|) OR |Beam| OR |Beetle| OR |Bell| OR (|Bomb| AND |@Bomb Access:1|) OR (|Circus| AND |@Circus Access:1|) OR |Cutter| OR (|Fighter| AND |@Fighter Access:1|) OR |Fire| OR (|Hammer| AND |@Hammer Access:1|) OR (|Ice| AND |@Ice Access:1|) OR (|Leaf| AND |@Leaf Access:1|) OR |Needle| OR (|Ninja| AND |@Ninja Access:1|) OR (|Parasol| AND |@Parasol Access:1|) OR |Spark| OR (|Spear| AND |@Spear Access:1|) OR (|Stone| AND |@Stone Access:1|) OR |Sword| OR (|Wheel| AND |@Wheel Access:1|) OR (|Whip| AND |@Whip Access:1|) OR (|Wing| AND |@Wing Access:1|)"
+	},
+	{
+		"name": "FiFi Stage 4 - Sun Stone 3 in Tilt Gondola Area",
+		"region": "Fine Fields Stage 4",
+		"category": ["B4 - Fine Fields Stage 4","Sun Stone Locations"],
+		"requires": []
 	},
 	{
 		"name": "FiFi Stage 4 - Goal Game",
@@ -4669,12 +4669,6 @@
 		"name": "VS Flowery Woods - Grand Sun Stone",
 		"region": "Fine Fields Boss",
 		"category": ["H1 - Boss Clears"],
-		"requires": []
-	},
-	{
-		"name": "FiFi Stage EX - Sun Stone",
-		"region": "Fine Fields Stage EX",
-		"category": ["B5 - Fine Fields Stage EX","Sun Stone Locations"],
 		"requires": []
 	},
 	{
@@ -4702,27 +4696,15 @@
 		"requires": []
 	},
 	{
+		"name": "FiFi Stage EX - Sun Stone",
+		"region": "Fine Fields Stage EX",
+		"category": ["B5 - Fine Fields Stage EX","Sun Stone Locations"],
+		"requires": []
+	},
+	{
 		"name": "FiFi Stage EX - Goal Game",
 		"region": "Fine Fields Stage EX",
 		"category": ["B5 - Fine Fields Stage EX","Goal Games"],
-		"requires": []
-	},
-	{
-		"name": "LoLa Stage 1 - Sun Stone 1",
-		"region": "Lollipop Land Stage 1",
-		"category": ["C1 - Lollipop Land Stage 1","Sun Stone Locations"],
-		"requires": []
-	},
-	{
-		"name": "LoLa Stage 1 - Sun Stone 2",
-		"region": "Lollipop Land Stage 1",
-		"category": ["C1 - Lollipop Land Stage 1","Sun Stone Locations"],
-		"requires": "(|Archer| AND |@Archer Access:1|) OR (|Beetle| AND |@Beetle Access:1|) OR (|Bell| AND |@Bell Access:1|) OR (|Circus| AND |@Circus Access:1|) OR |Cutter| OR (|Fighter| AND (|@Fighter Access:1| OR (|Fine Fields Stage 3| AND |Spear| AND |@Spear Access:1|))) OR |Fire| OR (|Hammer| AND |@Hammer Access:1|) OR (|Leaf| AND |@Leaf Access:1|) OR (|Ninja| AND |@Ninja Access:1|) OR |Parasol| OR (|Stone| AND |@Stone Access:1|) OR (|Sword| AND |@Sword Access:1|) OR |Wheel| OR (|Wing| AND (|@Wing Access:1| OR (|Fine Fields Stage 3| AND |Spear| AND |@Spear Access:1|)))"
-	},
-	{
-		"name": "LoLa Stage 1 - Sun Stone 3",
-		"region": "Lollipop Land Stage 1",
-		"category": ["C1 - Lollipop Land Stage 1","Sun Stone Locations"],
 		"requires": []
 	},
 	{
@@ -4730,6 +4712,18 @@
 		"region": "Lollipop Land Stage 1",
 		"category": ["C1 - Lollipop Land Stage 1","Keychains"],
 		"requires": []
+	},
+	{
+		"name": "LoLa Stage 1 - Sun Stone 1 in First Lollipop Tank Area",
+		"region": "Lollipop Land Stage 1",
+		"category": ["C1 - Lollipop Land Stage 1","Sun Stone Locations"],
+		"requires": []
+	},
+	{
+		"name": "LoLa Stage 1 - Sun Stone 2 in Wheel Area",
+		"region": "Lollipop Land Stage 1",
+		"category": ["C1 - Lollipop Land Stage 1","Sun Stone Locations"],
+		"requires": "(|Archer| AND |@Archer Access:1|) OR (|Beetle| AND |@Beetle Access:1|) OR (|Bell| AND |@Bell Access:1|) OR (|Circus| AND |@Circus Access:1|) OR |Cutter| OR (|Fighter| AND (|@Fighter Access:1| OR (|Fine Fields Stage 3| AND |Spear| AND |@Spear Access:1|))) OR |Fire| OR (|Hammer| AND |@Hammer Access:1|) OR (|Leaf| AND |@Leaf Access:1|) OR (|Ninja| AND |@Ninja Access:1|) OR |Parasol| OR (|Stone| AND |@Stone Access:1|) OR (|Sword| AND |@Sword Access:1|) OR |Wheel| OR (|Wing| AND (|@Wing Access:1| OR (|Fine Fields Stage 3| AND |Spear| AND |@Spear Access:1|)))"
 	},
 	{
 		"name": "LoLa Stage 1 - Rare Keychain Before Hot Head",
@@ -4744,33 +4738,15 @@
 		"requires": []
 	},
 	{
+		"name": "LoLa Stage 1 - Sun Stone 3 in Chest After Lollipop Tank",
+		"region": "Lollipop Land Stage 1",
+		"category": ["C1 - Lollipop Land Stage 1","Sun Stone Locations"],
+		"requires": []
+	},
+	{
 		"name": "LoLa Stage 1 - Goal Game",
 		"region": "Lollipop Land Stage 1",
 		"category": ["C1 - Lollipop Land Stage 1","Goal Games"],
-		"requires": []
-	},
-	{
-		"name": "LoLa Stage 2 - Sun Stone 1",
-		"region": "Lollipop Land Stage 2",
-		"category": ["C2 - Lollipop Land Stage 2","Sun Stone Locations"],
-		"requires": "|Archer| OR (|Beetle| AND |@Beetle Access:1|) OR |Cutter| OR (|Leaf| AND (|@Leaf Access:1| OR (|Fine Fields Stage 3| AND ((|Circus| AND |@Circus Access:1|) OR (|Fighter| AND |@Fighter Access:1|) OR (|Fire| AND |@Fire Access:1|) OR (|Hammer| AND |@Hammer Access:1|))))) OR (|Ninja| AND |@Ninja Access:1|) OR |Spear| OR (|Sword| AND |@Sword Access:1|) OR (|Wing| AND (|@Wing Access:1| OR (|Fine Fields Stage 3| AND ((|Circus| AND |@Circus Access:1|) OR (|Fighter| AND |@Fighter Access:1|) OR (|Fire| AND |@Fire Access:1|) OR (|Hammer| AND |@Hammer Access:1|)))))"
-	},
-	{
-		"name": "LoLa Stage 2 - Sun Stone 2",
-		"region": "Lollipop Land Stage 2",
-		"category": ["C2 - Lollipop Land Stage 2","Sun Stone Locations"],
-		"requires": []
-	},
-	{
-		"name": "LoLa Stage 2 - Sun Stone 3",
-		"region": "Lollipop Land Stage 2",
-		"category": ["C2 - Lollipop Land Stage 2","Sun Stone Locations"],
-		"requires": []
-	},
-	{
-		"name": "LoLa Stage 2 - Sun Stone 4",
-		"region": "Lollipop Land Stage 2",
-		"category": ["C2 - Lollipop Land Stage 2","Sun Stone Locations"],
 		"requires": []
 	},
 	{
@@ -4780,9 +4756,21 @@
 		"requires": []
 	},
 	{
+		"name": "LoLa Stage 2 - Sun Stone 1 in Tilt Rope Weight Room",
+		"region": "Lollipop Land Stage 2",
+		"category": ["C2 - Lollipop Land Stage 2","Sun Stone Locations"],
+		"requires": "|Archer| OR (|Beetle| AND |@Beetle Access:1|) OR |Cutter| OR (|Leaf| AND (|@Leaf Access:1| OR (|Fine Fields Stage 3| AND ((|Circus| AND |@Circus Access:1|) OR (|Fighter| AND |@Fighter Access:1|) OR (|Fire| AND |@Fire Access:1|) OR (|Hammer| AND |@Hammer Access:1|))))) OR (|Ninja| AND |@Ninja Access:1|) OR |Spear| OR (|Sword| AND |@Sword Access:1|) OR (|Wing| AND (|@Wing Access:1| OR (|Fine Fields Stage 3| AND ((|Circus| AND |@Circus Access:1|) OR (|Fighter| AND |@Fighter Access:1|) OR (|Fire| AND |@Fire Access:1|) OR (|Hammer| AND |@Hammer Access:1|)))))"
+	},
+	{
 		"name": "LoLa Stage 2 - Keychain Below Craby",
 		"region": "Lollipop Land Stage 2",
 		"category": ["C2 - Lollipop Land Stage 2","Keychains"],
+		"requires": []
+	},
+	{
+		"name": "LoLa Stage 2 - Sun Stone 2 Above Mamatee",
+		"region": "Lollipop Land Stage 2",
+		"category": ["C2 - Lollipop Land Stage 2","Sun Stone Locations"],
 		"requires": []
 	},
 	{
@@ -4792,9 +4780,21 @@
 		"requires": "|Archer| OR (|Beetle| AND |@Beetle Access:1|) OR |Cutter| OR (|Fighter| AND (|@Fighter Access:1| OR (|Circus| AND |@Circus Access:1| AND |Fine Fields Stage 3|))) OR (|Fire| AND |@Fire Access:1|) OR (|Hammer| AND |@Hammer Access:1|) OR (|Leaf| AND (|@Leaf Access:1| OR (|Circus| AND |@Circus Access:1| AND |Fine Fields Stage 3|))) OR (|Ninja| AND |@Ninja Access:1|) OR (|Parasol| AND |@Parasol Access:1|) OR |Spear| OR (|Stone| AND |@Stone Access:1|) OR (|Sword| AND |@Sword Access:1|) OR (|Wheel| AND (|@Wheel Access:1| OR (|Circus| AND |@Circus Access:1| AND |Fine Fields Stage 3|))) OR (|Wing| AND (|@Wing Access:1| OR (|Circus| AND |@Circus Access:1| AND |Fine Fields Stage 3|)))"
 	},
 	{
+		"name": "LoLa Stage 2 - Sun Stone 3 in Toy Trucks Room",
+		"region": "Lollipop Land Stage 2",
+		"category": ["C2 - Lollipop Land Stage 2","Sun Stone Locations"],
+		"requires": []
+	},
+	{
 		"name": "LoLa Stage 2 - Keychain in Hypernova Segment",
 		"region": "Lollipop Land Stage 2",
 		"category": ["C2 - Lollipop Land Stage 2","Keychains"],
+		"requires": []
+	},
+	{
+		"name": "LoLa Stage 2 - Sun Stone 4 on Tapestry",
+		"region": "Lollipop Land Stage 2",
+		"category": ["C2 - Lollipop Land Stage 2","Sun Stone Locations"],
 		"requires": []
 	},
 	{
@@ -4804,33 +4804,33 @@
 		"requires": []
 	},
 	{
-		"name": "LoLa Stage 3 - Sun Stone 1",
-		"region": "Lollipop Land Stage 3",
-		"category": ["C3 - Lollipop Land Stage 3","Sun Stone Locations"],
-		"requires": []
-	},
-	{
-		"name": "LoLa Stage 3 - Sun Stone 2",
-		"region": "Lollipop Land Stage 3",
-		"category": ["C3 - Lollipop Land Stage 3","Sun Stone Locations"],
-		"requires": []
-	},
-	{
-		"name": "LoLa Stage 3 - Sun Stone 3",
-		"region": "Lollipop Land Stage 3",
-		"category": ["C3 - Lollipop Land Stage 3","Sun Stone Locations"],
-		"requires": []
-	},
-	{
 		"name": "LoLa Stage 3 - Keychain Above Poppy Bros. Jr.",
 		"region": "Lollipop Land Stage 3",
 		"category": ["C3 - Lollipop Land Stage 3","Keychains"],
 		"requires": []
 	},
 	{
+		"name": "LoLa Stage 3 - Sun Stone 1 in 3D Helmet Cannon Area",
+		"region": "Lollipop Land Stage 3",
+		"category": ["C3 - Lollipop Land Stage 3","Sun Stone Locations"],
+		"requires": []
+	},
+	{
 		"name": "LoLa Stage 3 - Keychain Behind Spynum",
 		"region": "Lollipop Land Stage 3",
 		"category": ["C3 - Lollipop Land Stage 3","Keychains"],
+		"requires": []
+	},
+	{
+		"name": "LoLa Stage 3 - Sun Stone 2 in Timed Dynamite Area",
+		"region": "Lollipop Land Stage 3",
+		"category": ["C3 - Lollipop Land Stage 3","Sun Stone Locations"],
+		"requires": []
+	},
+	{
+		"name": "LoLa Stage 3 - Sun Stone 3 Below Searches",
+		"region": "Lollipop Land Stage 3",
+		"category": ["C3 - Lollipop Land Stage 3","Sun Stone Locations"],
 		"requires": []
 	},
 	{
@@ -4846,27 +4846,15 @@
 		"requires": []
 	},
 	{
-		"name": "LoLa Stage 4 - Sun Stone 1",
-		"region": "Lollipop Land Stage 4",
-		"category": ["C4 - Lollipop Land Stage 4","Sun Stone Locations"],
-		"requires": []
-	},
-	{
-		"name": "LoLa Stage 4 - Sun Stone 2",
-		"region": "Lollipop Land Stage 4",
-		"category": ["C4 - Lollipop Land Stage 4","Sun Stone Locations"],
-		"requires": []
-	},
-	{
-		"name": "LoLa Stage 4 - Sun Stone 3",
-		"region": "Lollipop Land Stage 4",
-		"category": ["C4 - Lollipop Land Stage 4","Sun Stone Locations"],
-		"requires": []
-	},
-	{
 		"name": "LoLa Stage 4 - Keychain Above Poppy Bros. Jr.",
 		"region": "Lollipop Land Stage 4",
 		"category": ["C4 - Lollipop Land Stage 4","Keychains"],
+		"requires": []
+	},
+	{
+		"name": "LoLa Stage 4 - Sun Stone 1 Behind Key Gate",
+		"region": "Lollipop Land Stage 4",
+		"category": ["C4 - Lollipop Land Stage 4","Sun Stone Locations"],
 		"requires": []
 	},
 	{
@@ -4876,9 +4864,21 @@
 		"requires": []
 	},
 	{
+		"name": "LoLa Stage 4 - Sun Stone 2 Behind Ripped Banner",
+		"region": "Lollipop Land Stage 4",
+		"category": ["C4 - Lollipop Land Stage 4","Sun Stone Locations"],
+		"requires": []
+	},
+	{
 		"name": "LoLa Stage 4 - Keychain Below Scarfy",
 		"region": "Lollipop Land Stage 4",
 		"category": ["C4 - Lollipop Land Stage 4","Keychains"],
+		"requires": []
+	},
+	{
+		"name": "LoLa Stage 4 - Sun Stone 3 in Mirror Gordo Room",
+		"region": "Lollipop Land Stage 4",
+		"category": ["C4 - Lollipop Land Stage 4","Sun Stone Locations"],
 		"requires": []
 	},
 	{
@@ -4900,12 +4900,6 @@
 		"requires": []
 	},
 	{
-		"name": "LoLa Stage EX - Sun Stone",
-		"region": "Lollipop Land Stage EX",
-		"category": ["C5 - Lollipop Land Stage EX","Sun Stone Locations"],
-		"requires": []
-	},
-	{
 		"name": "LoLa Stage EX - Keychain Behind Bomb Blocks",
 		"region": "Lollipop Land Stage EX",
 		"category": ["C5 - Lollipop Land Stage EX","Keychains"],
@@ -4924,33 +4918,27 @@
 		"requires": []
 	},
 	{
+		"name": "LoLa Stage EX - Sun Stone",
+		"region": "Lollipop Land Stage EX",
+		"category": ["C5 - Lollipop Land Stage EX","Sun Stone Locations"],
+		"requires": []
+	},
+	{
 		"name": "LoLa Stage EX - Goal Game",
 		"region": "Lollipop Land Stage EX",
 		"category": ["C5 - Lollipop Land Stage EX","Goal Games"],
 		"requires": []
 	},
 	{
-		"name": "OlOd Stage 1 - Sun Stone 1",
-		"region": "Old Odyssey Stage 1",
-		"category": ["D1 - Old Odyssey Stage 1","Sun Stone Locations"],
-		"requires": []
-	},
-	{
-		"name": "OlOd Stage 1 - Sun Stone 2",
-		"region": "Old Odyssey Stage 1",
-		"category": ["D1 - Old Odyssey Stage 1","Sun Stone Locations"],
-		"requires": []
-	},
-	{
-		"name": "OlOd Stage 1 - Sun Stone 3",
-		"region": "Old Odyssey Stage 1",
-		"category": ["D1 - Old Odyssey Stage 1","Sun Stone Locations"],
-		"requires": []
-	},
-	{
 		"name": "OlOd Stage 1 - Keychain in First Waddle Dee Train Area",
 		"region": "Old Odyssey Stage 1",
 		"category": ["D1 - Old Odyssey Stage 1","Keychains"],
+		"requires": []
+	},
+	{
+		"name": "OlOd Stage 1 - Sun Stone 1 in Tilt Cannon Room",
+		"region": "Old Odyssey Stage 1",
+		"category": ["D1 - Old Odyssey Stage 1","Sun Stone Locations"],
 		"requires": []
 	},
 	{
@@ -4966,27 +4954,21 @@
 		"requires": []
 	},
 	{
+		"name": "OlOd Stage 1 - Sun Stone 2 on Waddle Dee Train",
+		"region": "Old Odyssey Stage 1",
+		"category": ["D1 - Old Odyssey Stage 1","Sun Stone Locations"],
+		"requires": []
+	},
+	{
+		"name": "OlOd Stage 1 - Sun Stone 3 in Mandola Root Room",
+		"region": "Old Odyssey Stage 1",
+		"category": ["D1 - Old Odyssey Stage 1","Sun Stone Locations"],
+		"requires": []
+	},
+	{
 		"name": "OlOd Stage 1 - Goal Game",
 		"region": "Old Odyssey Stage 1",
 		"category": ["D1 - Old Odyssey Stage 1","Goal Games"],
-		"requires": []
-	},
-	{
-		"name": "OlOd Stage 2 - Sun Stone 1",
-		"region": "Old Odyssey Stage 2",
-		"category": ["D2 - Old Odyssey Stage 2","Sun Stone Locations"],
-		"requires": "|Archer| OR |Beam| OR (|Beetle| AND |@Beetle Access:1|) OR (|Bell| AND |@Bell Access:1|) OR |Bomb| OR (|Circus| AND |@Circus Access:1|) OR (|Crash| AND |@Crash Access:1|) OR |Cutter| OR |Fighter| OR (|Fire| AND |@Fire Access:1|) OR |Hammer| OR (|Ice| AND |@Ice Access:1|) OR (|Leaf| AND |@Leaf Access:1|) OR |Mike| OR |Needle| OR (|Ninja| AND |@Ninja Access:1|) OR (|Parasol| AND |@Parasol Access:1|) OR |Spark| OR |Spear| OR |Stone| OR (|Sword| AND |@Sword Access:1|) OR (|Wheel| AND |@Wheel Access:1|) OR |Whip| OR (|Wing| AND |@Wing Access:1|)"
-	},
-	{
-		"name": "OlOd Stage 2 - Sun Stone 2",
-		"region": "Old Odyssey Stage 2",
-		"category": ["D2 - Old Odyssey Stage 2","Sun Stone Locations"],
-		"requires": []
-	},
-	{
-		"name": "OlOd Stage 2 - Sun Stone 3",
-		"region": "Old Odyssey Stage 2",
-		"category": ["D2 - Old Odyssey Stage 2","Sun Stone Locations"],
 		"requires": []
 	},
 	{
@@ -5002,10 +4984,28 @@
 		"requires": []
 	},
 	{
+		"name": "OlOd Stage 2 - Sun Stone 1 Behind Key Gate",
+		"region": "Old Odyssey Stage 2",
+		"category": ["D2 - Old Odyssey Stage 2","Sun Stone Locations"],
+		"requires": "|Archer| OR |Beam| OR (|Beetle| AND |@Beetle Access:1|) OR (|Bell| AND |@Bell Access:1|) OR |Bomb| OR (|Circus| AND |@Circus Access:1|) OR (|Crash| AND |@Crash Access:1|) OR |Cutter| OR |Fighter| OR (|Fire| AND |@Fire Access:1|) OR |Hammer| OR (|Ice| AND |@Ice Access:1|) OR (|Leaf| AND |@Leaf Access:1|) OR |Mike| OR |Needle| OR (|Ninja| AND |@Ninja Access:1|) OR (|Parasol| AND |@Parasol Access:1|) OR |Spark| OR |Spear| OR |Stone| OR (|Sword| AND |@Sword Access:1|) OR (|Wheel| AND |@Wheel Access:1|) OR |Whip| OR (|Wing| AND |@Wing Access:1|)"
+	},
+	{
+		"name": "OlOd Stage 2 - Sun Stone 2 in Walky Room",
+		"region": "Old Odyssey Stage 2",
+		"category": ["D2 - Old Odyssey Stage 2","Sun Stone Locations"],
+		"requires": []
+	},
+	{
 		"name": "OlOd Stage 2 - Rare Keychain After Bonkers Fight",
 		"region": "Old Odyssey Stage 2",
 		"category": ["D2 - Old Odyssey Stage 2","Keychains"],
 		"requires": "(|Beetle| AND |@Beetle Access:1|) OR |Hammer| OR |Stone|"
+	},
+	{
+		"name": "OlOd Stage 2 - Sun Stone 3 in Front of Falling Pillar",
+		"region": "Old Odyssey Stage 2",
+		"category": ["D2 - Old Odyssey Stage 2","Sun Stone Locations"],
+		"requires": []
 	},
 	{
 		"name": "OlOd Stage 2 - Keychain Below Goal Door",
@@ -5020,24 +5020,6 @@
 		"requires": []
 	},
 	{
-		"name": "OlOd Stage 3 - Sun Stone 1",
-		"region": "Old Odyssey Stage 3",
-		"category": ["D3 - Old Odyssey Stage 3","Sun Stone Locations"],
-		"requires": []
-	},
-	{
-		"name": "OlOd Stage 3 - Sun Stone 2",
-		"region": "Old Odyssey Stage 3",
-		"category": ["D3 - Old Odyssey Stage 3","Sun Stone Locations"],
-		"requires": []
-	},
-	{
-		"name": "OlOd Stage 3 - Sun Stone 3",
-		"region": "Old Odyssey Stage 3",
-		"category": ["D3 - Old Odyssey Stage 3","Sun Stone Locations"],
-		"requires": "(|Circus| AND |@Circus Access:1|) OR (|Fighter| AND (|@Fighter Access:1| OR (|Fine Fields Stage 3| AND ((|Archer| AND |@Archer Access:1|) OR (|Beetle| AND |@Beetle Access:1|) OR |Cutter| OR (|Leaf| AND |@Leaf Access:1|) OR (|Ninja| AND |@Ninja Access:1|) OR (|Spear| AND |@Spear Access:1|) OR |Sword| OR (|Wing| AND |@Wing Access:1|))))) OR |Fire| OR (|Hammer| AND |@Hammer Access:1|)"
-	},
-	{
 		"name": "OlOd Stage 3 - Keychain in Tilt Cannon Area",
 		"region": "Old Odyssey Stage 3",
 		"category": ["D3 - Old Odyssey Stage 3","Keychains"],
@@ -5050,10 +5032,28 @@
 		"requires": []
 	},
 	{
+		"name": "OlOd Stage 3 - Sun Stone 1 in 3D Laser Bar Area",
+		"region": "Old Odyssey Stage 3",
+		"category": ["D3 - Old Odyssey Stage 3","Sun Stone Locations"],
+		"requires": []
+	},
+	{
+		"name": "OlOd Stage 3 - Sun Stone 2 Behind Pacto",
+		"region": "Old Odyssey Stage 3",
+		"category": ["D3 - Old Odyssey Stage 3","Sun Stone Locations"],
+		"requires": []
+	},
+	{
 		"name": "OlOd Stage 3 - Keychain Above Sloped Area",
 		"region": "Old Odyssey Stage 3",
 		"category": ["D3 - Old Odyssey Stage 3","Keychains"],
 		"requires": []
+	},
+	{
+		"name": "OlOd Stage 3 - Sun Stone 3 in Fuse Cannon Room",
+		"region": "Old Odyssey Stage 3",
+		"category": ["D3 - Old Odyssey Stage 3","Sun Stone Locations"],
+		"requires": "(|Circus| AND |@Circus Access:1|) OR (|Fighter| AND (|@Fighter Access:1| OR (|Fine Fields Stage 3| AND ((|Archer| AND |@Archer Access:1|) OR (|Beetle| AND |@Beetle Access:1|) OR |Cutter| OR (|Leaf| AND |@Leaf Access:1|) OR (|Ninja| AND |@Ninja Access:1|) OR (|Spear| AND |@Spear Access:1|) OR |Sword| OR (|Wing| AND |@Wing Access:1|))))) OR |Fire| OR (|Hammer| AND |@Hammer Access:1|)"
 	},
 	{
 		"name": "OlOd Stage 3 - Rare Keychain Before Goal Door",
@@ -5068,28 +5068,22 @@
 		"requires": []
 	},
 	{
-		"name": "OlOd Stage 4 - Sun Stone 1",
-		"region": "Old Odyssey Stage 4",
-		"category": ["D4 - Old Odyssey Stage 4","Sun Stone Locations"],
-		"requires": []
-	},
-	{
-		"name": "OlOd Stage 4 - Sun Stone 2",
-		"region": "Old Odyssey Stage 4",
-		"category": ["D4 - Old Odyssey Stage 4","Sun Stone Locations"],
-		"requires": "|Archer|"
-	},
-	{
-		"name": "OlOd Stage 4 - Sun Stone 3",
-		"region": "Old Odyssey Stage 4",
-		"category": ["D4 - Old Odyssey Stage 4","Sun Stone Locations"],
-		"requires": []
-	},
-	{
 		"name": "OlOd Stage 4 - Keychain Below Wind Current",
 		"region": "Old Odyssey Stage 4",
 		"category": ["D4 - Old Odyssey Stage 4","Keychains"],
 		"requires": []
+	},
+	{
+		"name": "OlOd Stage 4 - Sun Stone 1 in Invincibility Candy Area",
+		"region": "Old Odyssey Stage 4",
+		"category": ["D4 - Old Odyssey Stage 4","Sun Stone Locations"],
+		"requires": []
+	},
+	{
+		"name": "OlOd Stage 4 - Sun Stone 2 in Tilt Gear Room",
+		"region": "Old Odyssey Stage 4",
+		"category": ["D4 - Old Odyssey Stage 4","Sun Stone Locations"],
+		"requires": "|Archer|"
 	},
 	{
 		"name": "OlOd Stage 4 - Keychain After Round-Trip Door",
@@ -5110,33 +5104,15 @@
 		"requires": []
 	},
 	{
+		"name": "OlOd Stage 4 - Sun Stone 3 Near Goal Door",
+		"region": "Old Odyssey Stage 4",
+		"category": ["D4 - Old Odyssey Stage 4","Sun Stone Locations"],
+		"requires": []
+	},
+	{
 		"name": "OlOd Stage 4 - Goal Game",
 		"region": "Old Odyssey Stage 4",
 		"category": ["D4 - Old Odyssey Stage 4","Goal Games"],
-		"requires": []
-	},
-	{
-		"name": "OlOd Stage 5 - Sun Stone 1",
-		"region": "Old Odyssey Stage 5",
-		"category": ["D5 - Old Odyssey Stage 5","Sun Stone Locations"],
-		"requires": "|Circus| OR (|Fighter| AND (|@Fighter Access:1| OR (|Fine Fields Stage 3| AND ((|Archer| AND |@Archer Access:1|) OR (|Beetle| AND |@Beetle Access:1|) OR |Cutter| OR (|Leaf| AND |@Leaf Access:1|) OR (|Ninja| AND |@Ninja Access:1|) OR |Spear| OR |Sword| OR (|Wing| AND |@Wing Access:1|))))) OR |Fire| OR (|Hammer| AND |@Hammer Access:1|)"
-	},
-	{
-		"name": "OlOd Stage 5 - Sun Stone 2",
-		"region": "Old Odyssey Stage 5",
-		"category": ["D5 - Old Odyssey Stage 5","Sun Stone Locations"],
-		"requires": []
-	},
-	{
-		"name": "OlOd Stage 5 - Sun Stone 3",
-		"region": "Old Odyssey Stage 5",
-		"category": ["D5 - Old Odyssey Stage 5","Sun Stone Locations"],
-		"requires": []
-	},
-	{
-		"name": "OlOd Stage 5 - Sun Stone 4",
-		"region": "Old Odyssey Stage 5",
-		"category": ["D5 - Old Odyssey Stage 5","Sun Stone Locations"],
 		"requires": []
 	},
 	{
@@ -5152,15 +5128,39 @@
 		"requires": []
 	},
 	{
-		"name": "OlOd Stage 5 - Keychain in Sun Stone 1 Room",
+		"name": "OlOd Stage 5 - Sun Stone 1 in Ice Block Room",
+		"region": "Old Odyssey Stage 5",
+		"category": ["D5 - Old Odyssey Stage 5","Sun Stone Locations"],
+		"requires": "|Circus| OR (|Fighter| AND (|@Fighter Access:1| OR (|Fine Fields Stage 3| AND ((|Archer| AND |@Archer Access:1|) OR (|Beetle| AND |@Beetle Access:1|) OR |Cutter| OR (|Leaf| AND |@Leaf Access:1|) OR (|Ninja| AND |@Ninja Access:1|) OR |Spear| OR |Sword| OR (|Wing| AND |@Wing Access:1|))))) OR |Fire| OR (|Hammer| AND |@Hammer Access:1|)"
+	},
+	{
+		"name": "OlOd Stage 5 - Keychain in Ice Block Room",
 		"region": "Old Odyssey Stage 5",
 		"category": ["D5 - Old Odyssey Stage 5","Keychains"],
 		"requires": "|Circus| OR |Fire| OR (|Hammer| AND |@Hammer Access:1|)"
 	},
 	{
+		"name": "OlOd Stage 5 - Sun Stone 2 Behind Key Gate",
+		"region": "Old Odyssey Stage 5",
+		"category": ["D5 - Old Odyssey Stage 5","Sun Stone Locations"],
+		"requires": []
+	},
+	{
 		"name": "OlOd Stage 5 - Keychain in Hypernova Segment",
 		"region": "Old Odyssey Stage 5",
 		"category": ["D5 - Old Odyssey Stage 5","Keychains"],
+		"requires": []
+	},
+	{
+		"name": "OlOd Stage 5 - Sun Stone 3 from Snowman Couple",
+		"region": "Old Odyssey Stage 5",
+		"category": ["D5 - Old Odyssey Stage 5","Sun Stone Locations"],
+		"requires": []
+	},
+	{
+		"name": "OlOd Stage 5 - Sun Stone 4 in Wooden House",
+		"region": "Old Odyssey Stage 5",
+		"category": ["D5 - Old Odyssey Stage 5","Sun Stone Locations"],
 		"requires": []
 	},
 	{
@@ -5173,18 +5173,6 @@
 		"name": "VS Kracko - Grand Sun Stone",
 		"region": "Old Odyssey Boss",
 		"category": ["H1 - Boss Clears"],
-		"requires": []
-	},
-	{
-		"name": "OlOd Stage EX - Sun Stone 1",
-		"region": "Old Odyssey Stage EX",
-		"category": ["D6 - Old Odyssey Stage EX","Sun Stone Locations"],
-		"requires": []
-	},
-	{
-		"name": "OlOd Stage EX - Sun Stone 2",
-		"region": "Old Odyssey Stage EX",
-		"category": ["D6 - Old Odyssey Stage EX","Sun Stone Locations"],
 		"requires": []
 	},
 	{
@@ -5206,9 +5194,21 @@
 		"requires": []
 	},
 	{
+		"name": "OlOd Stage EX - Sun Stone 1 in Key Dee Room",
+		"region": "Old Odyssey Stage EX",
+		"category": ["D6 - Old Odyssey Stage EX","Sun Stone Locations"],
+		"requires": []
+	},
+	{
 		"name": "OlOd Stage EX - Keychain Above Falling Pillar Segment",
 		"region": "Old Odyssey Stage EX",
 		"category": ["D6 - Old Odyssey Stage EX","Keychains"],
+		"requires": []
+	},
+	{
+		"name": "OlOd Stage EX - Sun Stone 2 After Mr. Frosty DX Fight",
+		"region": "Old Odyssey Stage EX",
+		"category": ["D6 - Old Odyssey Stage EX","Sun Stone Locations"],
 		"requires": []
 	},
 	{
@@ -5218,33 +5218,27 @@
 		"requires": []
 	},
 	{
-		"name": "WiWo Stage 1 - Sun Stone 1",
-		"region": "Wild World Stage 1",
-		"category": ["E1 - Wild World Stage 1","Sun Stone Locations"],
-		"requires": "|Archer| OR |Beetle| OR |Cutter| OR |Leaf| OR (|Ninja| AND |@Ninja Access:1|) OR |Spear| OR (|Sword| AND |@Sword Access:1|) OR |Wing|"
-	},
-	{
-		"name": "WiWo Stage 1 - Sun Stone 2",
-		"region": "Wild World Stage 1",
-		"category": ["E1 - Wild World Stage 1","Sun Stone Locations"],
-		"requires": []
-	},
-	{
-		"name": "WiWo Stage 1 - Sun Stone 3",
-		"region": "Wild World Stage 1",
-		"category": ["E1 - Wild World Stage 1","Sun Stone Locations"],
-		"requires": []
-	},
-	{
 		"name": "WiWo Stage 1 - Keychain Below Destroyable Blocks",
 		"region": "Wild World Stage 1",
 		"category": ["E1 - Wild World Stage 1","Keychains"],
 		"requires": "|Archer| OR |Beam| OR |Beetle| OR (|Bell| AND |@Bell Access:1|) OR |Bomb| OR (|Circus| AND |@Circus Access:1|) OR (|Crash| AND |@Crash Access:1|) OR |Cutter| OR (|Fighter| AND |@Fighter Access:1|) OR (|Fire| AND |@Fire Access:1|) OR (|Hammer| AND |@Hammer Access:1|) OR (|Ice| AND |@Ice Access:1|) OR |Leaf| OR (|Mike| AND |@Mike Access:1|) OR (|Needle| AND |@Needle Access:1|) OR (|Ninja| AND |@Ninja Access:1|) OR (|Parasol| AND |@Parasol Access:1|) OR (|Spark| AND |@Spark Access:1|) OR |Spear| OR |Stone| OR (|Sword| AND |@Sword Access:1|) OR (|Wheel| AND |@Wheel Access:1|) OR (|Whip| AND |@Whip Access:1|) OR |Wing|"
 	},
 	{
+		"name": "WiWo Stage 1 - Sun Stone 1 in Tilt Rope Weights Room",
+		"region": "Wild World Stage 1",
+		"category": ["E1 - Wild World Stage 1","Sun Stone Locations"],
+		"requires": "|Archer| OR |Beetle| OR |Cutter| OR |Leaf| OR (|Ninja| AND |@Ninja Access:1|) OR |Spear| OR (|Sword| AND |@Sword Access:1|) OR |Wing|"
+	},
+	{
 		"name": "WiWo Stage 1 - Keychain Behind Foley",
 		"region": "Wild World Stage 1",
 		"category": ["E1 - Wild World Stage 1","Keychains"],
+		"requires": []
+	},
+	{
+		"name": "WiWo Stage 1 - Sun Stone 2 in Banana Horde",
+		"region": "Wild World Stage 1",
+		"category": ["E1 - Wild World Stage 1","Sun Stone Locations"],
 		"requires": []
 	},
 	{
@@ -5260,27 +5254,15 @@
 		"requires": []
 	},
 	{
+		"name": "WiWo Stage 1 - Sun Stone 3 in Spiked Pillar Room",
+		"region": "Wild World Stage 1",
+		"category": ["E1 - Wild World Stage 1","Sun Stone Locations"],
+		"requires": []
+	},
+	{
 		"name": "WiWo Stage 1 - Goal Game",
 		"region": "Wild World Stage 1",
 		"category": ["E1 - Wild World Stage 1","Goal Games"],
-		"requires": []
-	},
-	{
-		"name": "WiWo Stage 2 - Sun Stone 1",
-		"region": "Wild World Stage 2",
-		"category": ["E2 - Wild World Stage 2","Sun Stone Locations"],
-		"requires": []
-	},
-	{
-		"name": "WiWo Stage 2 - Sun Stone 2",
-		"region": "Wild World Stage 2",
-		"category": ["E2 - Wild World Stage 2","Sun Stone Locations"],
-		"requires": "|Wheel|"
-	},
-	{
-		"name": "WiWo Stage 2 - Sun Stone 3",
-		"region": "Wild World Stage 2",
-		"category": ["E2 - Wild World Stage 2","Sun Stone Locations"],
 		"requires": []
 	},
 	{
@@ -5290,9 +5272,27 @@
 		"requires": []
 	},
 	{
+		"name": "WiWo Stage 2 - Sun Stone 1 Above Foley",
+		"region": "Wild World Stage 2",
+		"category": ["E2 - Wild World Stage 2","Sun Stone Locations"],
+		"requires": []
+	},
+	{
 		"name": "WiWo Stage 2 - Keychain in Wheel Area",
 		"region": "Wild World Stage 2",
 		"category": ["E2 - Wild World Stage 2","Keychains"],
+		"requires": []
+	},
+	{
+		"name": "WiWo Stage 2 - Sun Stone 2 in Wheel Area",
+		"region": "Wild World Stage 2",
+		"category": ["E2 - Wild World Stage 2","Sun Stone Locations"],
+		"requires": "|Wheel|"
+	},
+	{
+		"name": "WiWo Stage 2 - Sun Stone 3 Below Goal Door",
+		"region": "Wild World Stage 2",
+		"category": ["E2 - Wild World Stage 2","Sun Stone Locations"],
 		"requires": []
 	},
 	{
@@ -5314,33 +5314,15 @@
 		"requires": []
 	},
 	{
-		"name": "WiWo Stage 3 - Sun Stone 1",
-		"region": "Wild World Stage 3",
-		"category": ["E3 - Wild World Stage 3","Sun Stone Locations"],
-		"requires": []
-	},
-	{
-		"name": "WiWo Stage 3 - Sun Stone 2",
-		"region": "Wild World Stage 3",
-		"category": ["E3 - Wild World Stage 3","Sun Stone Locations"],
-		"requires": []
-	},
-	{
-		"name": "WiWo Stage 3 - Sun Stone 3",
-		"region": "Wild World Stage 3",
-		"category": ["E3 - Wild World Stage 3","Sun Stone Locations"],
-		"requires": []
-	},
-	{
-		"name": "WiWo Stage 3 - Sun Stone 4",
-		"region": "Wild World Stage 3",
-		"category": ["E3 - Wild World Stage 3","Sun Stone Locations"],
-		"requires": []
-	},
-	{
 		"name": "WiWo Stage 3 - Keychain in First Mirror Area",
 		"region": "Wild World Stage 3",
 		"category": ["E3 - Wild World Stage 3","Keychains"],
+		"requires": []
+	},
+	{
+		"name": "WiWo Stage 3 - Sun Stone 1 in 3D Tilt Missile Room",
+		"region": "Wild World Stage 3",
+		"category": ["E3 - Wild World Stage 3","Sun Stone Locations"],
 		"requires": []
 	},
 	{
@@ -5356,27 +5338,27 @@
 		"requires": []
 	},
 	{
+		"name": "WiWo Stage 3 - Sun Stone 2 Behind Key Gate",
+		"region": "Wild World Stage 3",
+		"category": ["E3 - Wild World Stage 3","Sun Stone Locations"],
+		"requires": []
+	},
+	{
+		"name": "WiWo Stage 3 - Sun Stone 3 Inside Statue",
+		"region": "Wild World Stage 3",
+		"category": ["E3 - Wild World Stage 3","Sun Stone Locations"],
+		"requires": []
+	},
+	{
+		"name": "WiWo Stage 3 - Sun Stone 4 Behind Window",
+		"region": "Wild World Stage 3",
+		"category": ["E3 - Wild World Stage 3","Sun Stone Locations"],
+		"requires": []
+	},
+	{
 		"name": "WiWo Stage 3 - Goal Game",
 		"region": "Wild World Stage 3",
 		"category": ["E3 - Wild World Stage 3","Goal Games"],
-		"requires": []
-	},
-	{
-		"name": "WiWo Stage 4 - Sun Stone 1",
-		"region": "Wild World Stage 4",
-		"category": ["E4 - Wild World Stage 4","Sun Stone Locations"],
-		"requires": []
-	},
-	{
-		"name": "WiWo Stage 4 - Sun Stone 2",
-		"region": "Wild World Stage 4",
-		"category": ["E4 - Wild World Stage 4","Sun Stone Locations"],
-		"requires": "(|Archer| AND |@Archer Access:1|) OR (|Beam| AND |@Beam Access:1|) OR (|Beetle| AND |@Beetle Access:1|) OR (|Bell| AND |@Bell Access:1|) OR |Bomb| OR |Circus| OR |Crash| OR |Cutter| OR |Fighter| OR |Fire| OR (|Hammer| AND |@Hammer Access:1|) OR |Ice| OR |Leaf| OR (|Mike| AND |@Mike Access:1|) OR |Needle| OR (|Ninja| AND |@Ninja Access:1|) OR (|Parasol| AND |@Parasol Access:1|) OR (|Spark| AND |@Spark Access:1|) OR (|Spear| AND |@Spear Access:1|) OR |Stone| OR (|Sword| AND |@Sword Access:1|) OR (|Wheel| AND |@Wheel Access:1|) OR (|Whip| AND |@Whip Access:1|) OR (|Wing| AND |@Wing Access:1|)"
-	},
-	{
-		"name": "WiWo Stage 4 - Sun Stone 3",
-		"region": "Wild World Stage 4",
-		"category": ["E4 - Wild World Stage 4","Sun Stone Locations"],
 		"requires": []
 	},
 	{
@@ -5392,10 +5374,22 @@
 		"requires": []
 	},
 	{
+		"name": "WiWo Stage 4 - Sun Stone 1 on Conveyor Belt",
+		"region": "Wild World Stage 4",
+		"category": ["E4 - Wild World Stage 4","Sun Stone Locations"],
+		"requires": []
+	},
+	{
 		"name": "WiWo Stage 4 - Rare Keychain Near Searches",
 		"region": "Wild World Stage 4",
 		"category": ["E4 - Wild World Stage 4","Keychains"],
 		"requires": []
+	},
+	{
+		"name": "WiWo Stage 4 - Sun Stone 2 After Blocky Fight",
+		"region": "Wild World Stage 4",
+		"category": ["E4 - Wild World Stage 4","Sun Stone Locations"],
+		"requires": "(|Archer| AND |@Archer Access:1|) OR (|Beam| AND |@Beam Access:1|) OR (|Beetle| AND |@Beetle Access:1|) OR (|Bell| AND |@Bell Access:1|) OR |Bomb| OR |Circus| OR |Crash| OR |Cutter| OR |Fighter| OR |Fire| OR (|Hammer| AND |@Hammer Access:1|) OR |Ice| OR |Leaf| OR (|Mike| AND |@Mike Access:1|) OR |Needle| OR (|Ninja| AND |@Ninja Access:1|) OR (|Parasol| AND |@Parasol Access:1|) OR (|Spark| AND |@Spark Access:1|) OR (|Spear| AND |@Spear Access:1|) OR |Stone| OR (|Sword| AND |@Sword Access:1|) OR (|Wheel| AND |@Wheel Access:1|) OR (|Whip| AND |@Whip Access:1|) OR (|Wing| AND |@Wing Access:1|)"
 	},
 	{
 		"name": "WiWo Stage 4 - Keychain Under Stake",
@@ -5404,33 +5398,15 @@
 		"requires": "(|Beetle| AND |@Beetle Access:1|) OR (|Hammer| AND |@Hammer Access:1|) OR |Stone|"
 	},
 	{
+		"name": "WiWo Stage 4 - Sun Stone 3 Below Crumbling Blocks",
+		"region": "Wild World Stage 4",
+		"category": ["E4 - Wild World Stage 4","Sun Stone Locations"],
+		"requires": []
+	},
+	{
 		"name": "WiWo Stage 4 - Goal Game",
 		"region": "Wild World Stage 4",
 		"category": ["E4 - Wild World Stage 4","Goal Games"],
-		"requires": []
-	},
-	{
-		"name": "WiWo Stage 5 - Sun Stone 1",
-		"region": "Wild World Stage 5",
-		"category": ["E5 - Wild World Stage 5","Sun Stone Locations"],
-		"requires": []
-	},
-	{
-		"name": "WiWo Stage 5 - Sun Stone 2",
-		"region": "Wild World Stage 5",
-		"category": ["E5 - Wild World Stage 5","Sun Stone Locations"],
-		"requires": "(|Archer| AND |@Archer Access:1|) OR (|Beetle| AND |@Beetle Access:1|) OR (|Circus| AND |@Circus Access:1|) OR |Cutter| OR (|Fighter| AND |@Fighter Access:1|) OR |Fire| OR (|Hammer| AND |@Hammer Access:1|) OR |Leaf| OR (|Ninja| AND |@Ninja Access:1|) OR |Spear| OR (|Sword| AND |@Sword Access:1|) OR (|Wing| AND |@Wing Access:1|)"
-	},
-	{
-		"name": "WiWo Stage 5 - Sun Stone 3",
-		"region": "Wild World Stage 5",
-		"category": ["E5 - Wild World Stage 5","Sun Stone Locations"],
-		"requires": "(|Archer| AND |@Archer Access:1|) OR (|Beetle| AND |@Beetle Access:1|) OR (|Circus| AND |@Circus Access:1|) OR |Cutter| OR (|Fighter| AND |@Fighter Access:1|) OR |Fire| OR (|Hammer| AND |@Hammer Access:1|) OR |Leaf| OR (|Ninja| AND |@Ninja Access:1|) OR |Spear| OR (|Sword| AND |@Sword Access:1|) OR (|Wing| AND |@Wing Access:1|)"
-	},
-	{
-		"name": "WiWo Stage 5 - Sun Stone 4",
-		"region": "Wild World Stage 5",
-		"category": ["E5 - Wild World Stage 5","Sun Stone Locations"],
 		"requires": []
 	},
 	{
@@ -5440,15 +5416,39 @@
 		"requires": []
 	},
 	{
+		"name": "WiWo Stage 5 - Sun Stone 1 Below Scale Platform",
+		"region": "Wild World Stage 5",
+		"category": ["E5 - Wild World Stage 5","Sun Stone Locations"],
+		"requires": []
+	},
+	{
 		"name": "WiWo Stage 5 - Keychain in Tilt Cannon Area",
 		"region": "Wild World Stage 5",
 		"category": ["E5 - Wild World Stage 5","Keychains"],
 		"requires": []
 	},
 	{
+		"name": "WiWo Stage 5 - Sun Stone 2 in Grassy Area",
+		"region": "Wild World Stage 5",
+		"category": ["E5 - Wild World Stage 5","Sun Stone Locations"],
+		"requires": "(|Archer| AND |@Archer Access:1|) OR (|Beetle| AND |@Beetle Access:1|) OR (|Circus| AND |@Circus Access:1|) OR |Cutter| OR (|Fighter| AND |@Fighter Access:1|) OR |Fire| OR (|Hammer| AND |@Hammer Access:1|) OR |Leaf| OR (|Ninja| AND |@Ninja Access:1|) OR |Spear| OR (|Sword| AND |@Sword Access:1|) OR (|Wing| AND |@Wing Access:1|)"
+	},
+	{
+		"name": "WiWo Stage 5 - Sun Stone 3 in Hidden Scale Room",
+		"region": "Wild World Stage 5",
+		"category": ["E5 - Wild World Stage 5","Sun Stone Locations"],
+		"requires": "(|Archer| AND |@Archer Access:1|) OR (|Beetle| AND |@Beetle Access:1|) OR (|Circus| AND |@Circus Access:1|) OR |Cutter| OR (|Fighter| AND |@Fighter Access:1|) OR |Fire| OR (|Hammer| AND |@Hammer Access:1|) OR |Leaf| OR (|Ninja| AND |@Ninja Access:1|) OR |Spear| OR (|Sword| AND |@Sword Access:1|) OR (|Wing| AND |@Wing Access:1|)"
+	},
+	{
 		"name": "WiWo Stage 5 - Rare Keychain in 3D Helmet Cannon Area",
 		"region": "Wild World Stage 5",
 		"category": ["E5 - Wild World Stage 5","Keychains"],
+		"requires": []
+	},
+	{
+		"name": "WiWo Stage 5 - Sun Stone 4 in 3D Helmet Cannon Area",
+		"region": "Wild World Stage 5",
+		"category": ["E5 - Wild World Stage 5","Sun Stone Locations"],
 		"requires": []
 	},
 	{
@@ -5470,25 +5470,13 @@
 		"requires": []
 	},
 	{
-		"name": "WiWo Stage EX - Sun Stone 1",
-		"region": "Wild World Stage EX",
-		"category": ["E6 - Wild World Stage EX","Sun Stone Locations"],
-		"requires": "|Circus| OR (|Fighter| AND (|@Fighter Access:1| OR (|Fine Fields Stage 3| AND ((|Archer| AND |@Archer Access:1|) OR (|Beetle| AND |@Beetle Access:1|) OR |Cutter| OR (|Leaf| AND |@Leaf Access:1|) OR (|Ninja| AND |@Ninja Access:1|) OR (|Spear| AND |@Spear Access:1|) OR |Sword| OR |Wing|)))) OR |Fire| OR |Hammer|"
-	},
-	{
-		"name": "WiWo Stage EX - Sun Stone 2",
-		"region": "Wild World Stage EX",
-		"category": ["E6 - Wild World Stage EX","Sun Stone Locations"],
-		"requires": []
-	},
-	{
 		"name": "WiWo Stage EX - Keychain Below Barbar",
 		"region": "Wild World Stage EX",
 		"category": ["E6 - Wild World Stage EX","Keychains"],
 		"requires": []
 	},
 	{
-		"name": "WiWo Stage EX - Keychain in Mirror Room",
+		"name": "WiWo Stage EX - Keychain in Mirror Area",
 		"region": "Wild World Stage EX",
 		"category": ["E6 - Wild World Stage EX","Keychains"],
 		"requires": []
@@ -5500,9 +5488,21 @@
 		"requires": []
 	},
 	{
+		"name": "WiWo Stage EX - Sun Stone 1 in Fuse Cannon Room",
+		"region": "Wild World Stage EX",
+		"category": ["E6 - Wild World Stage EX","Sun Stone Locations"],
+		"requires": "|Circus| OR (|Fighter| AND (|@Fighter Access:1| OR (|Fine Fields Stage 3| AND ((|Archer| AND |@Archer Access:1|) OR (|Beetle| AND |@Beetle Access:1|) OR |Cutter| OR (|Leaf| AND |@Leaf Access:1|) OR (|Ninja| AND |@Ninja Access:1|) OR (|Spear| AND |@Spear Access:1|) OR |Sword| OR |Wing|)))) OR |Fire| OR |Hammer|"
+	},
+	{
 		"name": "WiWo Stage EX - Keychain Behind Tick",
 		"region": "Wild World Stage EX",
 		"category": ["E6 - Wild World Stage EX","Keychains"],
+		"requires": []
+	},
+	{
+		"name": "WiWo Stage EX - Sun Stone 2 After Bonkers DX Fight",
+		"region": "Wild World Stage EX",
+		"category": ["E6 - Wild World Stage EX","Sun Stone Locations"],
 		"requires": []
 	},
 	{
@@ -5512,27 +5512,21 @@
 		"requires": []
 	},
 	{
-		"name": "EnEx Stage 1 - Sun Stone 1",
+		"name": "EnEx Stage 1 - Keychain in Flaming Blocks",
+		"region": "Endless Explosions Stage 1",
+		"category": ["F1 - Endless Explosions Stage 1","Keychains"],
+		"requires": "|Ice| OR |Parasol|"
+	},
+	{
+		"name": "EnEx Stage 1 - Sun Stone 1 Above Invincibility Candy",
 		"region": "Endless Explosions Stage 1",
 		"category": ["F1 - Endless Explosions Stage 1","Sun Stone Locations"],
 		"requires": []
 	},
 	{
-		"name": "EnEx Stage 1 - Sun Stone 2",
+		"name": "EnEx Stage 1 - Sun Stone 2 in Flaming Blocks Room",
 		"region": "Endless Explosions Stage 1",
 		"category": ["F1 - Endless Explosions Stage 1","Sun Stone Locations"],
-		"requires": "|Ice| OR |Parasol|"
-	},
-	{
-		"name": "EnEx Stage 1 - Sun Stone 3",
-		"region": "Endless Explosions Stage 1",
-		"category": ["F1 - Endless Explosions Stage 1","Sun Stone Locations"],
-		"requires": "(|Beetle| AND |@Beetle Access:1|) OR |Fire| OR |Wheel| OR (|Wing| AND (|@Wing Access:1| OR (|Fine Fields Stage 3| AND ((|Archer| AND |@Archer Access:1|) OR |Circus| OR |Cutter| OR (|Fighter| AND |@Fighter Access:1|) OR (|Hammer| AND |@Hammer Access:1|) OR |Leaf| OR (|Ninja| AND |@Ninja Access:1|) OR (|Spear| AND |@Spear Access:1|) OR |Sword|))))"
-	},
-	{
-		"name": "EnEx Stage 1 - Keychain in Flaming Blocks",
-		"region": "Endless Explosions Stage 1",
-		"category": ["F1 - Endless Explosions Stage 1","Keychains"],
 		"requires": "|Ice| OR |Parasol|"
 	},
 	{
@@ -5540,6 +5534,12 @@
 		"region": "Endless Explosions Stage 1",
 		"category": ["F1 - Endless Explosions Stage 1","Keychains"],
 		"requires": []
+	},
+	{
+		"name": "EnEx Stage 1 - Sun Stone 3 Behind Key Door",
+		"region": "Endless Explosions Stage 1",
+		"category": ["F1 - Endless Explosions Stage 1","Sun Stone Locations"],
+		"requires": "(|Beetle| AND |@Beetle Access:1|) OR |Fire| OR |Wheel| OR (|Wing| AND (|@Wing Access:1| OR (|Fine Fields Stage 3| AND ((|Archer| AND |@Archer Access:1|) OR |Circus| OR |Cutter| OR (|Fighter| AND |@Fighter Access:1|) OR (|Hammer| AND |@Hammer Access:1|) OR |Leaf| OR (|Ninja| AND |@Ninja Access:1|) OR (|Spear| AND |@Spear Access:1|) OR |Sword|))))"
 	},
 	{
 		"name": "EnEx Stage 1 - Rare Keychain in Background of First Area",
@@ -5551,30 +5551,6 @@
 		"name": "EnEx Stage 1 - Goal Game",
 		"region": "Endless Explosions Stage 1",
 		"category": ["F1 - Endless Explosions Stage 1","Goal Games"],
-		"requires": []
-	},
-	{
-		"name": "EnEx Stage 2 - Sun Stone 1",
-		"region": "Endless Explosions Stage 2",
-		"category": ["F2 - Endless Explosions Stage 2","Sun Stone Locations"],
-		"requires": []
-	},
-	{
-		"name": "EnEx Stage 2 - Sun Stone 2",
-		"region": "Endless Explosions Stage 2",
-		"category": ["F2 - Endless Explosions Stage 2","Sun Stone Locations"],
-		"requires": "(|Hammer| AND |@Hammer Access:1|) OR |Stone|"
-	},
-	{
-		"name": "EnEx Stage 2 - Sun Stone 3",
-		"region": "Endless Explosions Stage 2",
-		"category": ["F2 - Endless Explosions Stage 2","Sun Stone Locations"],
-		"requires": []
-	},
-	{
-		"name": "EnEx Stage 2 - Sun Stone 4",
-		"region": "Endless Explosions Stage 2",
-		"category": ["F2 - Endless Explosions Stage 2","Sun Stone Locations"],
 		"requires": []
 	},
 	{
@@ -5590,39 +5566,45 @@
 		"requires": []
 	},
 	{
+		"name": "EnEx Stage 2 - Sun Stone 1 Below Barbar in Water",
+		"region": "Endless Explosions Stage 2",
+		"category": ["F2 - Endless Explosions Stage 2","Sun Stone Locations"],
+		"requires": []
+	},
+	{
 		"name": "EnEx Stage 2 - Keychain Before Blocky Fight",
 		"region": "Endless Explosions Stage 2",
 		"category": ["F2 - Endless Explosions Stage 2","Keychains"],
 		"requires": []
 	},
 	{
-		"name": "EnEx Stage 2 - Keychain Behind Barbar",
+		"name": "EnEx Stage 2 - Keychain Behind Barbar in Water",
 		"region": "Endless Explosions Stage 2",
 		"category": ["F2 - Endless Explosions Stage 2","Keychains"],
+		"requires": []
+	},
+	{
+		"name": "EnEx Stage 2 - Sun Stone 2 in Timed Dynamite Room",
+		"region": "Endless Explosions Stage 2",
+		"category": ["F2 - Endless Explosions Stage 2","Sun Stone Locations"],
+		"requires": "(|Hammer| AND |@Hammer Access:1|) OR |Stone|"
+	},
+	{
+		"name": "EnEx Stage 2 - Sun Stone 3 in Chest on Boulders",
+		"region": "Endless Explosions Stage 2",
+		"category": ["F2 - Endless Explosions Stage 2","Sun Stone Locations"],
+		"requires": []
+	},
+	{
+		"name": "EnEx Stage 2 - Sun Stone 4 Below Land Barbar",
+		"region": "Endless Explosions Stage 2",
+		"category": ["F2 - Endless Explosions Stage 2","Sun Stone Locations"],
 		"requires": []
 	},
 	{
 		"name": "EnEx Stage 2 - Goal Game",
 		"region": "Endless Explosions Stage 2",
 		"category": ["F2 - Endless Explosions Stage 2","Goal Games"],
-		"requires": []
-	},
-	{
-		"name": "EnEx Stage 3 - Sun Stone 1",
-		"region": "Endless Explosions Stage 3",
-		"category": ["F3 - Endless Explosions Stage 3","Sun Stone Locations"],
-		"requires": []
-	},
-	{
-		"name": "EnEx Stage 3 - Sun Stone 2",
-		"region": "Endless Explosions Stage 3",
-		"category": ["F3 - Endless Explosions Stage 3","Sun Stone Locations"],
-		"requires": []
-	},
-	{
-		"name": "EnEx Stage 3 - Sun Stone 3",
-		"region": "Endless Explosions Stage 3",
-		"category": ["F3 - Endless Explosions Stage 3","Sun Stone Locations"],
 		"requires": []
 	},
 	{
@@ -5638,6 +5620,18 @@
 		"requires": []
 	},
 	{
+		"name": "EnEx Stage 3 - Sun Stone 1 in Tilt Cannon Room",
+		"region": "Endless Explosions Stage 3",
+		"category": ["F3 - Endless Explosions Stage 3","Sun Stone Locations"],
+		"requires": []
+	},
+	{
+		"name": "EnEx Stage 3 - Sun Stone 2 in Timed Dynamite Block",
+		"region": "Endless Explosions Stage 3",
+		"category": ["F3 - Endless Explosions Stage 3","Sun Stone Locations"],
+		"requires": []
+	},
+	{
 		"name": "EnEx Stage 3 - Keychain Below Blade Knight",
 		"region": "Endless Explosions Stage 3",
 		"category": ["F3 - Endless Explosions Stage 3","Keychains"],
@@ -5650,33 +5644,15 @@
 		"requires": []
 	},
 	{
+		"name": "EnEx Stage 3 - Sun Stone 3 Behind Goal Door",
+		"region": "Endless Explosions Stage 3",
+		"category": ["F3 - Endless Explosions Stage 3","Sun Stone Locations"],
+		"requires": []
+	},
+	{
 		"name": "EnEx Stage 3 - Goal Game",
 		"region": "Endless Explosions Stage 3",
 		"category": ["F3 - Endless Explosions Stage 3","Goal Games"],
-		"requires": []
-	},
-	{
-		"name": "EnEx Stage 4 - Sun Stone 1",
-		"region": "Endless Explosions Stage 4",
-		"category": ["F4 - Endless Explosions Stage 4","Sun Stone Locations"],
-		"requires": []
-	},
-	{
-		"name": "EnEx Stage 4 - Sun Stone 2",
-		"region": "Endless Explosions Stage 4",
-		"category": ["F4 - Endless Explosions Stage 4","Sun Stone Locations"],
-		"requires": "|Archer|"
-	},
-	{
-		"name": "EnEx Stage 4 - Sun Stone 3",
-		"region": "Endless Explosions Stage 4",
-		"category": ["F4 - Endless Explosions Stage 4","Sun Stone Locations"],
-		"requires": []
-	},
-	{
-		"name": "EnEx Stage 4 - Sun Stone 4",
-		"region": "Endless Explosions Stage 4",
-		"category": ["F4 - Endless Explosions Stage 4","Sun Stone Locations"],
 		"requires": []
 	},
 	{
@@ -5684,6 +5660,18 @@
 		"region": "Endless Explosions Stage 4",
 		"category": ["F4 - Endless Explosions Stage 4","Keychains"],
 		"requires": []
+	},
+	{
+		"name": "EnEx Stage 4 - Sun Stone 1 in 3D Tilt Missile Area",
+		"region": "Endless Explosions Stage 4",
+		"category": ["F4 - Endless Explosions Stage 4","Sun Stone Locations"],
+		"requires": []
+	},
+	{
+		"name": "EnEx Stage 4 - Sun Stone 2 in Tilt Gear Room",
+		"region": "Endless Explosions Stage 4",
+		"category": ["F4 - Endless Explosions Stage 4","Sun Stone Locations"],
+		"requires": "|Archer|"
 	},
 	{
 		"name": "EnEx Stage 4 - Keychain in Archer Area",
@@ -5704,31 +5692,25 @@
 		"requires": []
 	},
 	{
+		"name": "EnEx Stage 4 - Sun Stone 3 Between Lava-Falls",
+		"region": "Endless Explosions Stage 4",
+		"category": ["F4 - Endless Explosions Stage 4","Sun Stone Locations"],
+		"requires": []
+	},
+	{
+		"name": "EnEx Stage 4 - Sun Stone 4 from Volcano",
+		"region": "Endless Explosions Stage 4",
+		"category": ["F4 - Endless Explosions Stage 4","Sun Stone Locations"],
+		"requires": []
+	},
+	{
 		"name": "EnEx Stage 4 - Goal Game",
 		"region": "Endless Explosions Stage 4",
 		"category": ["F4 - Endless Explosions Stage 4","Goal Games"],
 		"requires": []
 	},
 	{
-		"name": "EnEx Stage 5 - Sun Stone 1",
-		"region": "Endless Explosions Stage 5",
-		"category": ["F5 - Endless Explosions Stage 5","Sun Stone Locations"],
-		"requires": []
-	},
-	{
-		"name": "EnEx Stage 5 - Sun Stone 2",
-		"region": "Endless Explosions Stage 5",
-		"category": ["F5 - Endless Explosions Stage 5","Sun Stone Locations"],
-		"requires": []
-	},
-	{
-		"name": "EnEx Stage 5 - Sun Stone 3",
-		"region": "Endless Explosions Stage 5",
-		"category": ["F5 - Endless Explosions Stage 5","Sun Stone Locations"],
-		"requires": []
-	},
-	{
-		"name": "EnEx Stage 5 - Sun Stone 4",
+		"name": "EnEx Stage 5 - Sun Stone 1 After First Miniboss Fight",
 		"region": "Endless Explosions Stage 5",
 		"category": ["F5 - Endless Explosions Stage 5","Sun Stone Locations"],
 		"requires": []
@@ -5737,6 +5719,18 @@
 		"name": "EnEx Stage 5 - Keychain Before Second Miniboss Fight",
 		"region": "Endless Explosions Stage 5",
 		"category": ["F5 - Endless Explosions Stage 5","Keychains"],
+		"requires": []
+	},
+	{
+		"name": "EnEx Stage 5 - Sun Stone 2 After Second Miniboss Fight",
+		"region": "Endless Explosions Stage 5",
+		"category": ["F5 - Endless Explosions Stage 5","Sun Stone Locations"],
+		"requires": []
+	},
+	{
+		"name": "EnEx Stage 5 - Sun Stone 3 After Third Miniboss Fight",
+		"region": "Endless Explosions Stage 5",
+		"category": ["F5 - Endless Explosions Stage 5","Sun Stone Locations"],
 		"requires": []
 	},
 	{
@@ -5749,6 +5743,12 @@
 		"name": "EnEx Stage 5 - Rare Keychain Before Bonkers Fight",
 		"region": "Endless Explosions Stage 5",
 		"category": ["F5 - Endless Explosions Stage 5","Keychains"],
+		"requires": []
+	},
+	{
+		"name": "EnEx Stage 5 - Sun Stone 4 After Bonkers Fight",
+		"region": "Endless Explosions Stage 5",
+		"category": ["F5 - Endless Explosions Stage 5","Sun Stone Locations"],
 		"requires": []
 	},
 	{
@@ -5770,18 +5770,6 @@
 		"requires": []
 	},
 	{
-		"name": "EnEx Stage EX - Sun Stone 1",
-		"region": "Endless Explosions Stage EX",
-		"category": ["F6 - Endless Explosions Stage EX","Sun Stone Locations"],
-		"requires": "|Archer|"
-	},
-	{
-		"name": "EnEx Stage EX - Sun Stone 2",
-		"region": "Endless Explosions Stage EX",
-		"category": ["F6 - Endless Explosions Stage EX","Sun Stone Locations"],
-		"requires": []
-	},
-	{
 		"name": "EnEx Stage EX - Keychain Below First Door",
 		"region": "Endless Explosions Stage EX",
 		"category": ["F6 - Endless Explosions Stage EX","Keychains"],
@@ -5800,9 +5788,21 @@
 		"requires": []
 	},
 	{
+		"name": "EnEx Stage EX - Sun Stone 1 in Tilt Gear Room",
+		"region": "Endless Explosions Stage EX",
+		"category": ["F6 - Endless Explosions Stage EX","Sun Stone Locations"],
+		"requires": "|Archer|"
+	},
+	{
 		"name": "EnEx Stage EX - Rare Keychain Above 3D Teleporter",
 		"region": "Endless Explosions Stage EX",
 		"category": ["F6 - Endless Explosions Stage EX","Keychains"],
+		"requires": []
+	},
+	{
+		"name": "EnEx Stage EX - Sun Stone 2 After Grand Wheelie DX Fight",
+		"region": "Endless Explosions Stage EX",
+		"category": ["F6 - Endless Explosions Stage EX","Sun Stone Locations"],
 		"requires": []
 	},
 	{
@@ -5812,27 +5812,15 @@
 		"requires": []
 	},
 	{
-		"name": "RoRo Stage 1 - Sun Stone 1",
-		"region": "Royal Road Stage 1",
-		"category": ["G1 - Royal Road Stage 1","Sun Stone Locations"],
-		"requires": []
-	},
-	{
-		"name": "RoRo Stage 1 - Sun Stone 2",
-		"region": "Royal Road Stage 1",
-		"category": ["G1 - Royal Road Stage 1","Sun Stone Locations"],
-		"requires": "|Archer| OR |Beetle| OR (|Cutter| AND |@Cutter Access:1|) OR (|Leaf| AND (|@Leaf Access:1| OR (|Fine Fields Stage 3| AND (|Circus| OR (|Fighter| AND |@Fighter Access:1|) OR |Fire| OR |Hammer|)))) OR |Ninja| OR |Spear| OR |Sword| OR |Wing|"
-	},
-	{
-		"name": "RoRo Stage 1 - Sun Stone 3",
-		"region": "Royal Road Stage 1",
-		"category": ["G1 - Royal Road Stage 1","Sun Stone Locations"],
-		"requires": "|Archer| OR (|Beam| AND |@Beam Access:1|) OR |Beetle| OR |Bell| OR (|Bomb| AND |@Bomb Access:1|) OR |Circus| OR (|Cutter| AND |@Cutter Access:1|) OR (|Fighter| AND |@Fighter Access:1|) OR |Fire| OR |Hammer| OR (|Ice| AND |@Ice Access:1|) OR (|Leaf| AND |@Leaf Access:1|) OR (|Needle| AND |@Needle Access:1|) OR |Ninja| OR (|Parasol| AND |@Parasol Access:1|) OR |Spark| OR |Spear| OR |Stone| OR |Sword| OR |Wheel| OR (|Whip| AND |@Whip Access:1|) OR |Wing|"
-	},
-	{
 		"name": "RoRo Stage 1 - Keychain Below Rocky",
 		"region": "Royal Road Stage 1",
 		"category": ["G1 - Royal Road Stage 1","Keychains"],
+		"requires": []
+	},
+	{
+		"name": "RoRo Stage 1 - Sun Stone 1 Behind Moonja",
+		"region": "Royal Road Stage 1",
+		"category": ["G1 - Royal Road Stage 1","Sun Stone Locations"],
 		"requires": []
 	},
 	{
@@ -5842,10 +5830,22 @@
 		"requires": []
 	},
 	{
+		"name": "RoRo Stage 1 - Sun Stone 2 in Tilt Rope Weights Room",
+		"region": "Royal Road Stage 1",
+		"category": ["G1 - Royal Road Stage 1","Sun Stone Locations"],
+		"requires": "|Archer| OR |Beetle| OR (|Cutter| AND |@Cutter Access:1|) OR (|Leaf| AND (|@Leaf Access:1| OR (|Fine Fields Stage 3| AND (|Circus| OR (|Fighter| AND |@Fighter Access:1|) OR |Fire| OR |Hammer|)))) OR |Ninja| OR |Spear| OR |Sword| OR |Wing|"
+	},
+	{
 		"name": "RoRo Stage 1 - Keychain in Destroyable Block on Bridge",
 		"region": "Royal Road Stage 1",
 		"category": ["G1 - Royal Road Stage 1","Keychains"],
 		"requires": []
+	},
+	{
+		"name": "RoRo Stage 1 - Sun Stone 3 in Chest After Sectra Tank",
+		"region": "Royal Road Stage 1",
+		"category": ["G1 - Royal Road Stage 1","Sun Stone Locations"],
+		"requires": "|Archer| OR (|Beam| AND |@Beam Access:1|) OR |Beetle| OR |Bell| OR (|Bomb| AND |@Bomb Access:1|) OR |Circus| OR (|Cutter| AND |@Cutter Access:1|) OR (|Fighter| AND |@Fighter Access:1|) OR |Fire| OR |Hammer| OR (|Ice| AND |@Ice Access:1|) OR (|Leaf| AND |@Leaf Access:1|) OR (|Needle| AND |@Needle Access:1|) OR |Ninja| OR (|Parasol| AND |@Parasol Access:1|) OR |Spark| OR |Spear| OR |Stone| OR |Sword| OR |Wheel| OR (|Whip| AND |@Whip Access:1|) OR |Wing|"
 	},
 	{
 		"name": "RoRo Stage 1 - Rare Keychain Below Sectra Tank",
@@ -5857,12 +5857,6 @@
 		"name": "RoRo Stage 1 - Goal Game",
 		"region": "Royal Road Stage 1",
 		"category": ["G1 - Royal Road Stage 1","Goal Games"],
-		"requires": []
-	},
-	{
-		"name": "RoRo Stage 2 - Sun Stone",
-		"region": "Royal Road Stage 2",
-		"category": ["G2 - Royal Road Stage 2","Sun Stone Locations"],
 		"requires": []
 	},
 	{
@@ -5878,6 +5872,12 @@
 		"requires": []
 	},
 	{
+		"name": "RoRo Stage 2 - Sun Stone",
+		"region": "Royal Road Stage 2",
+		"category": ["G2 - Royal Road Stage 2","Sun Stone Locations"],
+		"requires": []
+	},
+	{
 		"name": "RoRo Stage 2 - Rare Keychain in Kracko Fight",
 		"region": "Royal Road Stage 2",
 		"category": ["G2 - Royal Road Stage 2","Keychains"],
@@ -5890,31 +5890,19 @@
 		"requires": []
 	},
 	{
-		"name": "RoRo Stage 3 - Sun Stone 1",
-		"region": "Royal Road Stage 3",
-		"category": ["G3 - Royal Road Stage 3","Sun Stone Locations"],
-		"requires": []
-	},
-	{
-		"name": "RoRo Stage 3 - Sun Stone 2",
-		"region": "Royal Road Stage 3",
-		"category": ["G3 - Royal Road Stage 3","Sun Stone Locations"],
-		"requires": []
-	},
-	{
-		"name": "RoRo Stage 3 - Sun Stone 3",
-		"region": "Royal Road Stage 3",
-		"category": ["G3 - Royal Road Stage 3","Sun Stone Locations"],
-		"requires": []
-	},
-	{
 		"name": "RoRo Stage 3 - Keychain Behind First Ball and Chain",
 		"region": "Royal Road Stage 3",
 		"category": ["G3 - Royal Road Stage 3","Keychains"],
 		"requires": []
 	},
 	{
-		"name": "RoRo Stage 3 - Keychain on Path to Rare Keychain",
+		"name": "RoRo Stage 3 - Sun Stone 1 from Snowman Couple",
+		"region": "Royal Road Stage 3",
+		"category": ["G3 - Royal Road Stage 3","Sun Stone Locations"],
+		"requires": []
+	},
+	{
+		"name": "RoRo Stage 3 - Keychain Behind Third Ball and Chain",
 		"region": "Royal Road Stage 3",
 		"category": ["G3 - Royal Road Stage 3","Keychains"],
 		"requires": []
@@ -5923,6 +5911,18 @@
 		"name": "RoRo Stage 3 - Rare Keychain on Waddle Dee Train",
 		"region": "Royal Road Stage 3",
 		"category": ["G3 - Royal Road Stage 3","Keychains"],
+		"requires": []
+	},
+	{
+		"name": "RoRo Stage 3 - Sun Stone 2 in Chest on Boulders",
+		"region": "Royal Road Stage 3",
+		"category": ["G3 - Royal Road Stage 3","Sun Stone Locations"],
+		"requires": []
+	},
+	{
+		"name": "RoRo Stage 3 - Sun Stone 3 in Slide Laser Robot Room",
+		"region": "Royal Road Stage 3",
+		"category": ["G3 - Royal Road Stage 3","Sun Stone Locations"],
 		"requires": []
 	},
 	{
@@ -5938,12 +5938,6 @@
 		"requires": []
 	},
 	{
-		"name": "RoRo Stage 4 - Sun Stone",
-		"region": "Royal Road Stage 4",
-		"category": ["G4 - Royal Road Stage 4","Sun Stone Locations"],
-		"requires": []
-	},
-	{
 		"name": "RoRo Stage 4 - Keychain Above Sectra Bronto Burt",
 		"region": "Royal Road Stage 4",
 		"category": ["G4 - Royal Road Stage 4","Keychains"],
@@ -5953,6 +5947,12 @@
 		"name": "RoRo Stage 4 - Keychain Near Spectra Spynum",
 		"region": "Royal Road Stage 4",
 		"category": ["G4 - Royal Road Stage 4","Keychains"],
+		"requires": []
+	},
+	{
+		"name": "RoRo Stage 4 - Sun Stone",
+		"region": "Royal Road Stage 4",
+		"category": ["G4 - Royal Road Stage 4","Sun Stone Locations"],
 		"requires": []
 	},
 	{
@@ -5968,33 +5968,9 @@
 		"requires": []
 	},
 	{
-		"name": "RoRo Stage 5 - Sun Stone 1",
+		"name": "RoRo Stage 5 - Sun Stone 1 in 3D Helmet Cannon Area",
 		"region": "Royal Road Stage 5",
 		"category": ["G5 - Royal Road Stage 5","Sun Stone Locations"],
-		"requires": []
-	},
-	{
-		"name": "RoRo Stage 5 - Sun Stone 2",
-		"region": "Royal Road Stage 5",
-		"category": ["G5 - Royal Road Stage 5","Sun Stone Locations"],
-		"requires": "(|Circus| AND |@Circus Access:1|) OR (|Fighter| AND (|@Fighter Access:1| OR (|Fine Fields Stage 3| AND (|Archer| OR |Beetle| OR |Cutter| OR (|Leaf| AND |@Leaf Access:1|) OR (|Ninja| AND |@Ninja Access:1|) OR |Spear| OR |Sword| OR (|Wing| AND |@Wing Access:1|))))) OR (|Fire| AND |@Fire Access:1|) OR |Hammer|"
-	},
-	{
-		"name": "RoRo Stage 5 - Sun Stone 3",
-		"region": "Royal Road Stage 5",
-		"category": ["G5 - Royal Road Stage 5","Sun Stone Locations"],
-		"requires": []
-	},
-	{
-		"name": "RoRo Stage 5 - Sun Stone 4",
-		"region": "Royal Road Stage 5",
-		"category": ["G5 - Royal Road Stage 5","Sun Stone Locations"],
-		"requires": []
-	},
-	{
-		"name": "RoRo Stage 5 - Keychain in First 3D Securitron Room",
-		"region": "Royal Road Stage 5",
-		"category": ["G5 - Royal Road Stage 5","Keychains"],
 		"requires": []
 	},
 	{
@@ -6010,6 +5986,18 @@
 		"requires": "|Beetle| OR |Hammer| OR (|Stone| AND |@Stone Access:1|)"
 	},
 	{
+		"name": "RoRo Stage 5 - Keychain in First 3D Securitron Area",
+		"region": "Royal Road Stage 5",
+		"category": ["G5 - Royal Road Stage 5","Keychains"],
+		"requires": []
+	},
+	{
+		"name": "RoRo Stage 5 - Sun Stone 2 After Fuse Cannon Room",
+		"region": "Royal Road Stage 5",
+		"category": ["G5 - Royal Road Stage 5","Sun Stone Locations"],
+		"requires": "(|Circus| AND |@Circus Access:1|) OR (|Fighter| AND (|@Fighter Access:1| OR (|Fine Fields Stage 3| AND (|Archer| OR |Beetle| OR |Cutter| OR (|Leaf| AND |@Leaf Access:1|) OR (|Ninja| AND |@Ninja Access:1|) OR |Spear| OR |Sword| OR (|Wing| AND |@Wing Access:1|))))) OR (|Fire| AND |@Fire Access:1|) OR |Hammer|"
+	},
+	{
 		"name": "RoRo Stage 5 - Keychain in HAL Room",
 		"region": "Royal Road Stage 5",
 		"category": ["G5 - Royal Road Stage 5","Keychains"],
@@ -6019,6 +6007,18 @@
 		"name": "RoRo Stage 5 - Keychain in Star Block Pillar",
 		"region": "Royal Road Stage 5",
 		"category": ["G5 - Royal Road Stage 5","Keychains"],
+		"requires": []
+	},
+	{
+		"name": "RoRo Stage 5 - Sun Stone 3 After Mr. Frosty DX",
+		"region": "Royal Road Stage 5",
+		"category": ["G5 - Royal Road Stage 5","Sun Stone Locations"],
+		"requires": []
+	},
+	{
+		"name": "RoRo Stage 5 - Sun Stone 4 Behind Grand Wheelie DX",
+		"region": "Royal Road Stage 5",
+		"category": ["G5 - Royal Road Stage 5","Sun Stone Locations"],
 		"requires": []
 	},
 	{
@@ -6034,28 +6034,16 @@
 		"requires": []
 	},
 	{
-		"name": "RoRo Stage EX 1 - Sun Stone 1",
-		"region": "Royal Road Stage EX 1",
-		"category": ["G6 - Royal Road Stage EX 1","Sun Stone Locations"],
-		"requires": "|Circus| OR |Fire| OR (|Hammer| AND |@Hammer Access:1|)"
-	},
-	{
-		"name": "RoRo Stage EX 1 - Sun Stone 2",
-		"region": "Royal Road Stage EX 1",
-		"category": ["G6 - Royal Road Stage EX 1","Sun Stone Locations"],
-		"requires": []
-	},
-	{
-		"name": "RoRo Stage EX 1 - Sun Stone 3",
-		"region": "Royal Road Stage EX 1",
-		"category": ["G6 - Royal Road Stage EX 1","Sun Stone Locations"],
-		"requires": []
-	},
-	{
 		"name": "RoRo Stage EX 1 - Keychain Under Clown Acrobot",
 		"region": "Royal Road Stage EX 1",
 		"category": ["G6 - Royal Road Stage EX 1","Keychains"],
 		"requires": []
+	},
+	{
+		"name": "RoRo Stage EX 1 - Sun Stone 1 in Falling Wall Room",
+		"region": "Royal Road Stage EX 1",
+		"category": ["G6 - Royal Road Stage EX 1","Sun Stone Locations"],
+		"requires": "|Circus| OR |Fire| OR (|Hammer| AND |@Hammer Access:1|)"
 	},
 	{
 		"name": "RoRo Stage EX 1 - Keychain Under Ice Blocks",
@@ -6067,6 +6055,12 @@
 		"name": "RoRo Stage EX 1 - Keychain in Timed Dynamite Area",
 		"region": "Royal Road Stage EX 1",
 		"category": ["G6 - Royal Road Stage EX 1","Keychains"],
+		"requires": []
+	},
+	{
+		"name": "RoRo Stage EX 1 - Sun Stone 2 in 3D Laser Bar Room",
+		"region": "Royal Road Stage EX 1",
+		"category": ["G6 - Royal Road Stage EX 1","Sun Stone Locations"],
 		"requires": []
 	},
 	{
@@ -6088,25 +6082,25 @@
 		"requires": []
 	},
 	{
+		"name": "RoRo Stage EX 1 - Sun Stone 3 After Gigant Edge DX Fight",
+		"region": "Royal Road Stage EX 1",
+		"category": ["G6 - Royal Road Stage EX 1","Sun Stone Locations"],
+		"requires": []
+	},
+	{
 		"name": "RoRo Stage EX 1 - Goal Game",
 		"region": "Royal Road Stage EX 1",
 		"category": ["G6 - Royal Road Stage EX 1","Goal Games"],
 		"requires": []
 	},
 	{
-		"name": "RoRo Stage EX 2 - Sun Stone",
-		"region": "Royal Road Stage EX 2",
-		"category": ["G7 - Royal Road Stage EX 2","Sun Stone Locations"],
-		"requires": []
-	},
-	{
-		"name": "RoRo Stage EX 2 - Left Keychain Below Barbar Area",
+		"name": "RoRo Stage EX 2 - Left Keychain Below Land Barbar Area",
 		"region": "Royal Road Stage EX 2",
 		"category": ["G7 - Royal Road Stage EX 2","Keychains"],
 		"requires": []
 	},
 	{
-		"name": "RoRo Stage EX 2 - Right Keychain Below Barbar Area",
+		"name": "RoRo Stage EX 2 - Right Keychain Below Land Barbar Area",
 		"region": "Royal Road Stage EX 2",
 		"category": ["G7 - Royal Road Stage EX 2","Keychains"],
 		"requires": []
@@ -6115,6 +6109,12 @@
 		"name": "RoRo Stage EX 2 - Keychain in Gigant Chicks Fight",
 		"region": "Royal Road Stage EX 2",
 		"category": ["G7 - Royal Road Stage EX 2","Keychains"],
+		"requires": []
+	},
+	{
+		"name": "RoRo Stage EX 2 - Sun Stone",
+		"region": "Royal Road Stage EX 2",
+		"category": ["G7 - Royal Road Stage EX 2","Sun Stone Locations"],
 		"requires": []
 	},
 	{
