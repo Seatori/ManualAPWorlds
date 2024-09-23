@@ -164,7 +164,43 @@
 	{
 		"count": "6",
 		"name": "Progressive EX Stage Key",
-		"category": ["EX Stages"],
+		"category": ["EX Stages","Progressive Keys"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Level 1 EX Stage Key",
+		"category": ["EX Stages","Vanilla Keys"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Level 2 EX Stage Key",
+		"category": ["EX Stages","Vanilla Keys"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Level 3 EX Stage Key",
+		"category": ["EX Stages","Vanilla Keys"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Level 4 EX Stage Key",
+		"category": ["EX Stages","Vanilla Keys"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Level 5 EX Stage Key",
+		"category": ["EX Stages","Vanilla Keys"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Level 6 EX Stage Key",
+		"category": ["EX Stages","Vanilla Keys"],
 		"progression": true
 	},
 	{

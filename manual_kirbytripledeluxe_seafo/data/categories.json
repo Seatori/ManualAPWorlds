@@ -71,21 +71,31 @@
     "Wing Access": {
         "hidden": true
     },
-    "Keychains": {
-        "hidden": true,
-        "yaml_option": ["enable_keychain_locations"]
-    },
     "Copy Abilities": {
         "hidden": true
+    },
+    "Keychains": {
+        "hidden": true
+    },
+    "Progressive Keys": {
+        "hidden": true,
+        "yaml_option": ["progressive_ex_stage_keys"]
+    },
+    "Vanilla Keys": {
+        "hidden": true,
+        "yaml_option": ["!progressive_ex_stage_keys"]
     },
     "J1 - Clear Kirby Fighters": {
         "yaml_option": ["enable_kirby_fighters_locations"]
     },
-	"ATR": {
-		"hidden": true,
-		"yaml_option": ["randomize_ability_testing_room"]
-	},
-	"Sun Stone Locations": {
-		"hidden": true
-	}
+    "ATR": {
+        "hidden": true,
+        "yaml_option": ["randomize_ability_testing_room"]
+    },
+    "Goal Games": {
+        "hidden": true
+    },
+    "Sun Stone Locations": {
+        "hidden": true
+    }
 }
