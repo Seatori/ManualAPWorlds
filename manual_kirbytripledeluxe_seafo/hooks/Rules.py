@@ -5,6 +5,36 @@ from BaseClasses import MultiWorld, CollectionState
 
 import re
 
+# Functions used to check the logic difficulty level.
+
+
+def easy_logic(world: World, multiworld: MultiWorld, state: CollectionState, player: int) -> bool:
+    if world.options.logic_difficulty == 0:
+        return True
+    else:
+        return False
+
+
+def normal_logic(world: World, multiworld: MultiWorld, state: CollectionState, player: int) -> bool:
+    if world.options.logic_difficulty == 1:
+        return True
+    else:
+        return False
+
+
+def hard_logic(world: World, multiworld: MultiWorld, state: CollectionState, player: int) -> bool:
+    if world.options.logic_difficulty == 2:
+        return True
+    else:
+        return False
+
+
+def not_easy_logic(world: World, multiworld: MultiWorld, state: CollectionState, player: int) -> bool:
+    if world.options.logic_difficulty > 0:
+        return True
+    else:
+        return False
+
 # Sometimes you have a requirement that is just too messy or repetitive to write out with boolean logic.
 # Define a function here, and you can use it in a requires string with {function_name()}.
 def overfishedAnywhere(world: World, multiworld: MultiWorld, state: CollectionState, player: int):

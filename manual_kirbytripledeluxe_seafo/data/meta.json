@@ -1,0 +1,40 @@
+{
+    "_comment": [ "remove the _ before a non-comment/info propertie to enable it",
+    "For more info use json schemas to get a description and allowed value for every properties",
+    "https://github.com/ManualForArchipelago/Manual/blob/main/docs/resources/json-schemas-for-world-devs.md"],
+    "docs": {
+        "_comment": [ "For more info on the possible documentation properties check schema and/or the github",
+            "https://github.com/ArchipelagoMW/Archipelago/blob/main/docs/world%20api.md#webworld-class"
+        ],
+        "apworld_description": [
+            "Kirby's back in his first adventure on the Nintendo 3DS system! Use the brand new 3D Warp Stars to travel",
+            "between the foreground and background, and the powerful Hypernova ability to destroy giant obstacles, as",
+            "you explore the hidden land of Floralia on your way to rescue King Dedede from the mysterious Taranza and",
+            "uncover the mystery behind the sudden appearance of the Dreamstalk!"
+        ],
+        "web": {
+            "_comment": "for more info check github https://github.com/ArchipelagoMW/Archipelago/blob/main/docs/world%20api.md#webworld-class",
+            "theme": "grassFlowers",
+            "bug_report_page": "https://discord.gg/T5bcsVHByx",
+            "tutorials": [
+                {
+                    "name": "Multiworld Setup Guide",
+                    "description": "A guide to setting up the Kirby: Triple Deluxe Manual APWorld.",
+                    "language": "English",
+                    "file_name": "setup_en.md",
+                    "link": "setup/en",
+                    "authors": ["Seafo"],
+                    "_comment": "if you don't include the authors it will use creator from game.json"
+                }
+            ],
+            "_options_presets": {
+                "Easy":{
+                    "Option1": true,
+                    "Option2": "potato"
+                }
+            }
+        }
+    },
+    "_comment_":"Enable the generation of puml diagram of your apworld region and locations for debug purposes",
+    "enable_region_diagram": false
+}

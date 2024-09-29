@@ -262,6 +262,16 @@ def before_create_item(item_name: str, world: World, multiworld: MultiWorld, pla
 def after_create_item(item: ManualItem, world: World, multiworld: MultiWorld, player: int) -> ManualItem:
     if item.name == "Sleep":
         item.classification = ItemClassification.trap
+    if item.name == "Wing":
+        if world.options.logic_difficulty == 0:
+            item.classification = ItemClassification.useful
+    if item.name == "Bomb":
+        if world.options.logic_difficulty == 0 and not world.options.enable_kirby_fighters_locations:
+            item.classification = ItemClassification.useful
+    if item.name == "Copy Ability Testing Room":
+        if world.options.logic_difficulty < 2 or not world.options.randomize_copy_abilities:
+            item.classification = ItemClassification.useful
+
     return item
 
 # This method is run towards the end of pre-generation, before the place_item options have been handled and before AP generation occurs
