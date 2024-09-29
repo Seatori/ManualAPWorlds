@@ -1,9 +1,9 @@
 # Object classes from AP that represent different types of options that you can create
-from Options import FreeText, NumericOption, Toggle, DefaultOnToggle, Choice, TextChoice, Range, NamedRange, Visibility
+from Options import (FreeText, NumericOption, Toggle, DefaultOnToggle, Choice, TextChoice, Range, NamedRange,
+                     OptionGroup, Visibility)
 
 # These helper methods allow you to determine if an option has been set, or what its value is, for any player in the multiworld
 from ..Helpers import is_option_enabled, get_option_value
-
 
 
 ####################################################################
@@ -27,11 +27,13 @@ from ..Helpers import is_option_enabled, get_option_value
 #   options["total_characters_to_win_with"] = TotalCharactersToWinWith
 #
 
+
 class RandomizeAbilities(DefaultOnToggle):
     """
-    Prevent use of Kirby's Copy Abilities before obtaining them.
+    Prevent the use of Kirby's Copy Abilities before obtaining them.
     """
     display_name = "Randomize Copy Abilities"
+
 
 class RandomizeKeychains(Choice):
     """
@@ -40,11 +42,13 @@ class RandomizeKeychains(Choice):
     """
     alias_false = 0
     option_no = 0
+    alias_rares_only = 1
     option_only_rares = 1
     alias_true = 2
     option_yes = 2
-    default = 1
+    default = 0
     display_name = "Randomize Keychains"
+
 
 class ExtraStageKeys(DefaultOnToggle):
     """
@@ -53,19 +57,51 @@ class ExtraStageKeys(DefaultOnToggle):
     """
     display_name = "Progressive EX Stage Keys"
 
+
 class KirbyFighters(Toggle):
     """
     Add additional locations for clearing Kirby Fighters with each of the available Copy Abilities.
     """
     display_name = "Add Kirby Fighters Locations"
 
+
 class AbilityTestingRoom(Toggle):
     """
-    Add the ability to access the Copy Ability Testing Room to the item pool. If false, you're never logically considered to have access.
+    Add the ability to access the Copy Ability Testing Room to the item pool.
+    If false, you're never logically considered to have access.
     """
     display_name = "Randomize Ability Testing Room"
 
-class Level1BossRequirement(Range):
+
+class LogicDifficulty(Choice):
+    """
+    Adjusts the expectations for the player's use of abilities.
+
+    Easy only expects the player to use immediately accessible abilities, or if none are available,
+    abilities that were presented to the player shortly before. It has a focus on using the 'intended' methods.
+    Note that even on easy logic, the player is expected to beat all stages and bosses without needing an ability.
+
+    Normal expects the player to use almost any valid ability that can be found in the stage.
+    It also expects the use of some basic tricks that can be done without an ability.
+    Some difficult tricks are still left out of logic.
+
+    Hard expects the player to use almost everything at their disposal.
+    Once the player gains access to an ability through any stage, boss, or the Copy Ability Testing Room,
+    they can be expected to bring that ability to anywhere that it can be used.
+    Damage boosting and using ability stars as projectiles can be also expected.
+    Note that the player is not expected to bring Crash and Mike through mid-boss fights.
+
+    Logic difficulty is only relevant when copy abilities are randomized.
+    """
+    option_easy = 0
+    alias_medium = 1
+    option_normal = 1
+    option_hard = 2
+    default = 1
+    display_name = "Logic Difficulty"
+
+
+class Level1BossRequirement(NamedRange):
     """
     How many Sun Stones are required to battle the boss of Level 1.
     """
@@ -73,8 +109,13 @@ class Level1BossRequirement(Range):
     range_start = 0
     range_end = 100
     default = 5
-    
-class Level2BossRequirement(Range):
+
+    special_range_names = {
+        "vanilla": 5,
+    }
+
+
+class Level2BossRequirement(NamedRange):
     """
     How many Sun Stones are required to battle the boss of Level 2.
     """
@@ -82,8 +123,13 @@ class Level2BossRequirement(Range):
     range_start = 0
     range_end = 100
     default = 11
-    
-class Level3BossRequirement(Range):
+
+    special_range_names = {
+        "vanilla": 11,
+    }
+
+
+class Level3BossRequirement(NamedRange):
     """
     How many Sun Stones are required to battle the boss of Level 3.
     """
@@ -91,8 +137,13 @@ class Level3BossRequirement(Range):
     range_start = 0
     range_end = 100
     default = 18
-    
-class Level4BossRequirement(Range):
+
+    special_range_names = {
+        "vanilla": 18,
+    }
+
+
+class Level4BossRequirement(NamedRange):
     """
     How many Sun Stones are required to battle the boss of Level 4.
     """
@@ -100,8 +151,13 @@ class Level4BossRequirement(Range):
     range_start = 0
     range_end = 100
     default = 26
-    
-class Level5BossRequirement(Range):
+
+    special_range_names = {
+        "vanilla": 26,
+    }
+
+
+class Level5BossRequirement(NamedRange):
     """
     How many Sun Stones are required to battle the boss of Level 5.
     """
@@ -109,8 +165,13 @@ class Level5BossRequirement(Range):
     range_start = 0
     range_end = 100
     default = 36
-    
-class Level6BossRequirement(Range):
+
+    special_range_names = {
+        "vanilla": 36,
+    }
+
+
+class Level6BossRequirement(NamedRange):
     """
     How many Sun Stones are required to battle the boss of Level 6.
     """
@@ -118,16 +179,23 @@ class Level6BossRequirement(Range):
     range_start = 0
     range_end = 100
     default = 43
-    
+
+    special_range_names = {
+        "vanilla": 43,
+    }
+
+
 class QueenSectoniaRequirement(Range):
     """
     How many bosses need to be fought before Queen Sectonia becomes available.
+    Default value is 6.
     """
     display_name = "Bosses Before Queen Sectonia"
     range_start = 1
     range_end = 6
     default = 6
-    
+
+
 class FillerTrapPercent(Range):
     """
     How many random Keychains will be replaced by Lose Ability Traps.
@@ -140,10 +208,12 @@ class FillerTrapPercent(Range):
     range_end = 100
     default = 0
 
+
 class Goal(Range):
     range_start = 0
     range_end = 5
     visibility = Visibility.none
+
 
 # This is called before any manual options are defined, in case you want to define your own with a clean slate or let Manual define over them
 def before_options_defined(options: dict) -> dict:
@@ -152,6 +222,7 @@ def before_options_defined(options: dict) -> dict:
     options["progressive_ex_stage_keys"] = ExtraStageKeys
     options["enable_kirby_fighters_locations"] = KirbyFighters
     options["randomize_ability_testing_room"] = AbilityTestingRoom
+    options["logic_difficulty"] = LogicDifficulty
     options["level_1_boss_sun_stones"] = Level1BossRequirement
     options["level_2_boss_sun_stones"] = Level2BossRequirement
     options["level_3_boss_sun_stones"] = Level3BossRequirement
@@ -160,6 +231,7 @@ def before_options_defined(options: dict) -> dict:
     options["level_6_boss_sun_stones"] = Level6BossRequirement
     options["queen_sectonia_boss_requirement"] = QueenSectoniaRequirement
     return options
+
 
 # This is called after any manual options are defined, in case you want to see what options are defined or want to modify the defined options
 def after_options_defined(options: dict) -> dict:
