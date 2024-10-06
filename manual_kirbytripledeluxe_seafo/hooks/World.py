@@ -265,14 +265,31 @@ def before_create_item(item_name: str, world: World, multiworld: MultiWorld, pla
 
 # The item that was created is provided after creation, in case you want to modify the item
 def after_create_item(item: ManualItem, world: World, multiworld: MultiWorld, player: int) -> ManualItem:
-    if item.name == "Sleep":
-        item.classification = ItemClassification.trap
-    if item.name == "Wing":
-        if world.options.logic_difficulty == 0:
-            item.classification = ItemClassification.useful
+    # Bomb has no specific use when story mode is set to easy logic, but is always needed for Kirby Fighters.
+    # Though even when Kirby Fighters locations aren't enabled, Bomb is still nice to have.
     if item.name == "Bomb":
         if world.options.logic_difficulty == 0 and not world.options.enable_kirby_fighters_locations:
             item.classification = ItemClassification.useful
+
+    # Mike has an extra requirement added for easy logic, and all of its important requirements are considered 'hard'.
+    # Neither of these apply to normal logic, so it's never required for anything but is still good to have.
+    if item.name == "Mike":
+        if world.options.logic_difficulty == 1:
+            item.classification = ItemClassification.useful
+
+    # Sleep is a purely detrimental ability, and (theoretically) it would only be advantageous to never receive it.
+    # Of course, this is a Manual, and the player is never going to take Sleep anyway. But this is how I would classify
+    # it in a proper integration, and I just think it's more appropriate for it to be labeled as disadvantageous.
+    if item.name == "Sleep":
+        item.classification = ItemClassification.trap
+
+    # Wing has no specific use when story mode is set to easy logic, but is still good to have.
+    if item.name == "Wing":
+        if world.options.logic_difficulty == 0:
+            item.classification = ItemClassification.useful
+
+    # Taking abilities from other areas is only needed in hard logic, and ability logic is only relevant if randomized.
+    # It is however still convenient for if the player wants to go out of logic, or just use their favorite ability.
     if item.name == "Copy Ability Testing Room":
         if world.options.logic_difficulty < 2 or not world.options.randomize_copy_abilities:
             item.classification = ItemClassification.useful

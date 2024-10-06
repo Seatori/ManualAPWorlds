@@ -4987,7 +4987,7 @@
 		"name": "OlOd Stage 2 - Sun Stone 1 Behind Key Gate",
 		"region": "Old Odyssey Stage 2",
 		"category": ["D2 - Old Odyssey Stage 2","Sun Stone Locations"],
-		"requires": "({easy_logic()} AND |Spear|) OR ({normal_logic()} AND (|Archer| OR |Beam| OR |Bomb| OR |Cutter| OR |Fighter| OR |Hammer| OR |Mike| OR |Needle| OR |Spark| OR |Spear| OR |Stone| OR |Whip|)) OR ({hard_logic()} AND (|Archer| OR |Beam| OR (|Beetle| AND |@Beetle Access:1|) OR (|Bell| AND |@Bell Access:1|) OR |Bomb| OR (|Circus| AND |@Circus Access:1|) OR (|Crash| AND |@Crash Access:1|) OR |Cutter| OR |Fighter| OR (|Fire| AND |@Fire Access:1|) OR |Hammer| OR (|Ice| AND |@Ice Access:1|) OR (|Leaf| AND |@Leaf Access:1|) OR |Mike| OR |Needle| OR (|Ninja| AND |@Ninja Access:1|) OR (|Parasol| AND |@Parasol Access:1|) OR |Spark| OR |Spear| OR |Stone| OR (|Sword| AND |@Sword Access:1|) OR (|Wheel| AND |@Wheel Access:1|) OR |Whip| OR (|Wing| AND |@Wing Access:1|)))"
+		"requires": "({easy_logic()} AND |Spear|) OR ({normal_logic()} AND (|Archer| OR |Beam| OR |Bomb| OR |Cutter| OR |Fighter| OR |Hammer| OR |Needle| OR |Spark| OR |Spear| OR |Stone| OR |Whip|)) OR ({hard_logic()} AND (|Archer| OR |Beam| OR (|Beetle| AND |@Beetle Access:1|) OR (|Bell| AND |@Bell Access:1|) OR |Bomb| OR (|Circus| AND |@Circus Access:1|) OR (|Crash| AND |@Crash Access:1|) OR |Cutter| OR |Fighter| OR (|Fire| AND |@Fire Access:1|) OR |Hammer| OR (|Ice| AND |@Ice Access:1|) OR (|Leaf| AND |@Leaf Access:1|) OR |Mike| OR |Needle| OR (|Ninja| AND |@Ninja Access:1|) OR (|Parasol| AND |@Parasol Access:1|) OR |Spark| OR |Spear| OR |Stone| OR (|Sword| AND |@Sword Access:1|) OR (|Wheel| AND |@Wheel Access:1|) OR |Whip| OR (|Wing| AND |@Wing Access:1|)))"
 	},
 	{
 		"name": "OlOd Stage 2 - Sun Stone 2 in Walky Room",
