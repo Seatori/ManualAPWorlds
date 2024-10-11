@@ -464,15 +464,25 @@ def can_use_wing(world: World, multiworld: MultiWorld, state: CollectionState, p
                 )
 
 
-# Rewrite this later
 def fine_fields_hal_room(world: World, multiworld: MultiWorld, state: CollectionState, player: int) -> bool:
-    return (can_use_archer(state, world.player) or can_use_beetle(state, world.player)
-            or can_use_circus(state, world.player) or can_use_cutter(state, world.player)
-            or can_use_fighter(state, world.player) or can_use_fire(state, world.player)
-            or can_use_hammer(state, world.player) or can_use_leaf(state, world.player)
-            or can_use_ninja(state, world.player) or can_use_spear(state, world.player)
-            or can_use_sword(state, world.player) or can_use_wing(state, world.player)
-            )
+    if world.options.shuffle_stages == 0:
+        return (can_use_archer(state, world.player) or can_use_beetle(state, world.player)
+                or can_use_circus(state, world.player) or can_use_cutter(state, world.player)
+                or can_use_fighter(state, world.player) or can_use_fire(state, world.player)
+                or can_use_hammer(state, world.player) or can_use_leaf(state, world.player)
+                or can_use_ninja(state, world.player) or can_use_spear(state, world.player)
+                or can_use_sword(state, world.player) or can_use_wing(state, world.player)
+                )
+    else:
+        return (state.has("Fine Fields Stage 3")
+                and (can_use_archer(state, world.player) or can_use_beetle(state, world.player)
+                     or can_use_circus(state, world.player) or can_use_cutter(state, world.player)
+                     or can_use_fighter(state, world.player) or can_use_fire(state, world.player)
+                     or can_use_hammer(state, world.player) or can_use_leaf(state, world.player)
+                     or can_use_ninja(state, world.player) or can_use_spear(state, world.player)
+                     or can_use_sword(state, world.player) or can_use_wing(state, world.player)
+                     )
+                )
 
 
 # Sometimes you have a requirement that is just too messy or repetitive to write out with boolean logic.
