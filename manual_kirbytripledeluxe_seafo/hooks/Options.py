@@ -73,6 +73,26 @@ class AbilityTestingRoom(Toggle):
     display_name = "Randomize Ability Testing Room"
 
 
+class StageRando(Toggle):
+    """
+    Randomizes the position of stages across the game.
+    All non-boss stages, including EX stages, are in the pool.
+    So your first stage in Fine Fields could be a Wild World stage, and the EX stage
+    could be a normal stage from Royal Road.
+    """
+    display_name = "Stage Shuffle"
+
+
+class BossRando(Toggle):
+    """
+    Randomizes the level each boss is fought in.
+    So you could fight Flowery Woods in Endless Explosions, or Masked Dedede in Old Odyssey.
+    Sun Stone requirements are determined based on levels, and will be the same regardless of which boss is there.
+    Does not affect the boss refights in Royal Road.
+    """
+    display_name = "Boss Shuffle"
+
+
 class LogicDifficulty(Choice):
     """
     Adjusts the expectations for the player's use of abilities.
@@ -222,6 +242,8 @@ def before_options_defined(options: dict) -> dict:
     options["progressive_ex_stage_keys"] = ExtraStageKeys
     options["enable_kirby_fighters_locations"] = KirbyFighters
     options["randomize_ability_testing_room"] = AbilityTestingRoom
+    options["stage_shuffle"] = StageRando
+    options["boss_shuffle"] = BossRando
     options["logic_difficulty"] = LogicDifficulty
     options["level_1_boss_sun_stones"] = Level1BossRequirement
     options["level_2_boss_sun_stones"] = Level2BossRequirement
