@@ -14,6 +14,7 @@ from ..Data import game_table, item_table, location_table, region_table
 # These helper methods allow you to determine if an option has been set, or what its value is, for any player in the multiworld
 from ..Helpers import is_option_enabled, get_option_value
 
+import re
 
 
 ########################################################################################
@@ -29,15 +30,20 @@ from ..Helpers import is_option_enabled, get_option_value
 ########################################################################################
 
 
-
 # Use this function to change the valid filler items to be created to replace item links or starting items.
 # Default value is the `filler_item_name` from game.json
 def hook_get_filler_item_name(world: World, multiworld: MultiWorld, player: int) -> str | bool:
     return False
 
+
 # Called before regions and locations are created. Not clear why you'd want this, but it's here. Victory location is included, but Victory event is not placed yet.
 def before_create_regions(world: World, multiworld: MultiWorld, player: int):
-    world.options.goal.value = get_option_value(multiworld, player, 'queen_sectonia_boss_requirement') - 1
+    sectonia_boss_req = get_option_value(multiworld, player, "queen_sectonia_boss_requirement")
+    if sectonia_boss_req == -1:
+        world.options.goal.value = sectonia_boss_req + 1
+    else:
+        world.options.goal.value = sectonia_boss_req
+
 
 # Called after regions and locations are created, in case you want to see or modify that information. Victory location is included.
 def after_create_regions(world: World, multiworld: MultiWorld, player: int):
@@ -93,6 +99,25 @@ def after_create_regions(world: World, multiworld: MultiWorld, player: int):
     else:
         remove_keychains = []
 
+    stage_shuffle = get_option_value(multiworld, player, "stage_shuffle")
+    # Here we remove every 'Unlock Stage' location, since all stages are in their vanilla positions.
+    if stage_shuffle == 0:
+        remove_stages = [loc.name for loc in multiworld.get_locations(player)
+                         if "Unlock 1st" in loc.name or "Unlock 2nd" in loc.name or "Unlock 3rd" in loc.name
+                         or "Unlock 4th" in loc.name or "Unlock 5th" in loc.name or "Unlock EX" in loc.name]
+    # In this case since only main stages are shuffled, we have to remove the unused 'Unlock EX Stage' locations.
+    elif stage_shuffle == 1:
+        remove_stages = [loc.name for loc in multiworld.get_locations(player)
+                         if "Unlock EX" in loc.name or "Unlock 1st EX" in loc.name or "Unlock 2nd EX" in loc.name]
+    # In this case only EX stages are shuffled, so we remove the 'Unlock Stage' locations for the vanilla main stages.
+    elif stage_shuffle == 2:
+        remove_stages = [loc.name for loc in multiworld.get_locations(player)
+                         if "Unlock 1st Stage" in loc.name or "Unlock 2nd Stage" in loc.name
+                         or "Unlock 3rd" in loc.name or "Unlock 4th" in loc.name or "Unlock 5th" in loc.name]
+    # Finally, if all stages are shuffled, we don't have to remove their respective unlock locations.
+    else:
+        remove_stages = []
+
     # Add your code here to calculate which locations to remove
 
     for region in multiworld.regions:
@@ -112,13 +137,17 @@ def after_create_regions(world: World, multiworld: MultiWorld, player: int):
                     region.locations.remove(location)
                 if location.name in remove_keychains:
                     region.locations.remove(location)
+                if location.name in remove_stages:
+                    region.locations.remove(location)
 
     if hasattr(multiworld, "clear_location_cache"):
         multiworld.clear_location_cache()
 
+
 # The item pool before starting items are processed, in case you want to see the raw item pool at that stage
 def before_create_items_starting(item_pool: list, world: World, multiworld: MultiWorld, player: int) -> list:
     return item_pool
+
 
 # The item pool after starting items are processed but before filler is added, in case you want to see the raw item pool at that stage
 def before_create_items_filler(item_pool: list, world: World, multiworld: MultiWorld, player: int) -> list:
@@ -133,85 +162,6 @@ def before_create_items_filler(item_pool: list, world: World, multiworld: MultiW
     for itemName in itemNamesToRemove:
         item = next(i for i in item_pool if i.name == itemName)
         item_pool.remove(item)
-    
-    # atr = is_option_enabled(multiworld, player, "randomize_ability_testing_room")
-    abilities = is_option_enabled(multiworld, player, "randomize_copy_abilities")
-    archer = next(i for i in item_pool if i.name == "Archer")
-    beam = next(i for i in item_pool if i.name == "Beam")
-    beetle = next(i for i in item_pool if i.name == "Beetle")
-    bell = next(i for i in item_pool if i.name == "Bell")
-    bomb = next(i for i in item_pool if i.name == "Bomb")
-    circus = next(i for i in item_pool if i.name == "Circus")
-    crash = next(i for i in item_pool if i.name == "Crash")
-    cutter = next(i for i in item_pool if i.name == "Cutter")
-    fighter = next(i for i in item_pool if i.name == "Fighter")
-    fire = next(i for i in item_pool if i.name == "Fire")
-    hammer = next(i for i in item_pool if i.name == "Hammer")
-    ice = next(i for i in item_pool if i.name == "Ice")
-    leaf = next(i for i in item_pool if i.name == "Leaf")
-    mike = next(i for i in item_pool if i.name == "Mike")
-    needle = next(i for i in item_pool if i.name == "Needle")
-    ninja = next(i for i in item_pool if i.name == "Ninja")
-    parasol = next(i for i in item_pool if i.name == "Parasol")
-    sleep = next(i for i in item_pool if i.name == "Sleep")
-    spark = next(i for i in item_pool if i.name == "Spark")
-    spear = next(i for i in item_pool if i.name == "Spear")
-    stone = next(i for i in item_pool if i.name == "Stone")
-    sword = next(i for i in item_pool if i.name == "Sword")
-    wheel = next(i for i in item_pool if i.name == "Wheel")
-    whip = next(i for i in item_pool if i.name == "Whip")
-    wing = next(i for i in item_pool if i.name == "Wing")
-    if not abilities:
-        multiworld.push_precollected(archer)
-        multiworld.push_precollected(beam)
-        multiworld.push_precollected(beetle)
-        multiworld.push_precollected(bell)
-        multiworld.push_precollected(bomb)
-        multiworld.push_precollected(circus)
-        multiworld.push_precollected(crash)
-        multiworld.push_precollected(cutter)
-        multiworld.push_precollected(fighter)
-        multiworld.push_precollected(fire)
-        multiworld.push_precollected(hammer)
-        multiworld.push_precollected(ice)
-        multiworld.push_precollected(leaf)
-        multiworld.push_precollected(mike)
-        multiworld.push_precollected(needle)
-        multiworld.push_precollected(ninja)
-        multiworld.push_precollected(parasol)
-        multiworld.push_precollected(sleep)
-        multiworld.push_precollected(spark)
-        multiworld.push_precollected(spear)
-        multiworld.push_precollected(stone)
-        multiworld.push_precollected(sword)
-        multiworld.push_precollected(wheel)
-        multiworld.push_precollected(whip)
-        multiworld.push_precollected(wing)
-        item_pool.remove(archer)
-        item_pool.remove(beam)
-        item_pool.remove(beetle)
-        item_pool.remove(bell)
-        item_pool.remove(bomb)
-        item_pool.remove(circus)
-        item_pool.remove(crash)
-        item_pool.remove(cutter)
-        item_pool.remove(fighter)
-        item_pool.remove(fire)
-        item_pool.remove(hammer)
-        item_pool.remove(ice)
-        item_pool.remove(leaf)
-        item_pool.remove(mike)
-        item_pool.remove(needle)
-        item_pool.remove(ninja)
-        item_pool.remove(parasol)
-        item_pool.remove(sleep)
-        item_pool.remove(spark)
-        item_pool.remove(spear)
-        item_pool.remove(stone)
-        item_pool.remove(sword)
-        item_pool.remove(wheel)
-        item_pool.remove(whip)
-        item_pool.remove(wing)
 
     keychains = get_option_value(multiworld, player, "keychain_locations")
     if keychains == 0:
@@ -219,6 +169,58 @@ def before_create_items_filler(item_pool: list, world: World, multiworld: MultiW
         for keychains_to_remove in rare_keychains:
             remove_keychains = next(i for i in item_pool if i.name == keychains_to_remove)
             item_pool.remove(remove_keychains)
+
+    stage_shuffle = get_option_value(multiworld, player, "stage_shuffle")
+    if stage_shuffle == 0:
+        # No stages are shuffled here, so we don't need any stage items.
+        stages = [i.name for i in item_pool
+                  if "Stage 1" in i.name or "Stage 2" in i.name or "Stage 3" in i.name
+                  or "Stage 4" in i.name or "Stage 5" in i.name or "Stage EX" in i.name]
+        for stages_to_remove in stages:
+            remove_stages = next(i for i in item_pool if i.name == stages_to_remove)
+            item_pool.remove(remove_stages)
+    elif stage_shuffle == 1:
+        # EX stages aren't shuffled here, so we don't need their items.
+        ex_stages = [i.name for i in item_pool if "Stage EX" in i.name]
+        for ex_stages_to_remove in ex_stages:
+            remove_ex_stages = next(i for i in item_pool if i.name == ex_stages_to_remove)
+            item_pool.remove(remove_ex_stages)
+
+        # Since only main stages are shuffled, we need to get one for the player to start with.
+        main_stages = [i for i in item_pool
+                       if "Stage 1" in i.name or "Stage 2" in i.name or "Stage 3" in i.name
+                       or "Stage 4" in i.name or "Stage 5" in i.name]
+        first_stage = world.random.choice(main_stages)
+        multiworld.push_precollected(first_stage)
+        item_pool.remove(first_stage)
+    elif stage_shuffle == 2:
+        # Main stages aren't shuffled here, so we don't need their items.
+        main_stages = [i.name for i in item_pool
+                       if "Stage 1" in i.name or "Stage 2" in i.name or "Stage 3" in i.name
+                       or "Stage 4" in i.name or "Stage 5" in i.name]
+        for main_stages_to_remove in main_stages:
+            remove_main_stages = next(i for i in item_pool if i.name == main_stages_to_remove)
+            item_pool.remove(remove_main_stages)
+    elif stage_shuffle == 3:
+        # Since stages are shuffled, we need to get one for the player to start with.
+        # We're only checking for main stages here because EX stages should always be shuffled between themselves.
+        main_stages = [i for i in item_pool
+                       if "Stage 1" in i.name or "Stage 2" in i.name or "Stage 3" in i.name
+                       or "Stage 4" in i.name or "Stage 5" in i.name]
+        first_stage = world.random.choice(main_stages)
+        multiworld.push_precollected(first_stage)
+        item_pool.remove(first_stage)
+    elif stage_shuffle == 4:
+        # Since stages are shuffled, we need to get one for the player to start with.
+        # In this case, we can start with any stage since they can each be in any position.
+        stages = [i for i in item_pool
+                  if "Stage 1" in i.name or "Stage 2" in i.name or "Stage 3" in i.name
+                  or "Stage 4" in i.name or "Stage 5" in i.name or "Stage EX" in i.name]
+        first_stage = world.random.choice(stages)
+        multiworld.push_precollected(first_stage)
+        item_pool.remove(first_stage)
+    else:
+        raise Exception("Invalid value for option \'Stage Shuffle\'. \nPlease report this to the maintainer.")
 
     return item_pool
 
@@ -230,9 +232,11 @@ def before_create_items_filler(item_pool: list, world: World, multiworld: MultiW
     # location.place_locked_item(item_to_place)
     # item_pool.remove(item_to_place)
 
+
 # The complete item pool prior to being set for generation is provided here, in case you want to make changes to it
 def after_create_items(item_pool: list, world: World, multiworld: MultiWorld, player: int) -> list:
     return item_pool
+
 
 # Called before rules for accessing regions and locations are created. Not clear why you'd want this, but it's here.
 def before_set_rules(world: World, multiworld: MultiWorld, player: int):
@@ -259,9 +263,11 @@ def after_set_rules(world: World, multiworld: MultiWorld, player: int):
     # OR
     # location.access_rule = lambda state: old_rule(state) or Example_Rule(state)
 
+
 # The item name to create is provided before the item is created, in case you want to make changes to it
 def before_create_item(item_name: str, world: World, multiworld: MultiWorld, player: int) -> str:
     return item_name
+
 
 # The item that was created is provided after creation, in case you want to modify the item
 def after_create_item(item: ManualItem, world: World, multiworld: MultiWorld, player: int) -> ManualItem:
@@ -277,9 +283,8 @@ def after_create_item(item: ManualItem, world: World, multiworld: MultiWorld, pl
         if world.options.logic_difficulty == 1:
             item.classification = ItemClassification.useful
 
-    # Sleep is a purely detrimental ability, and (theoretically) it would only be advantageous to never receive it.
-    # Of course, this is a Manual, and the player is never going to take Sleep anyway. But this is how I would classify
-    # it in a proper integration, and I just think it's more appropriate for it to be labeled as disadvantageous.
+    # Sleep is a purely detrimental ability, and (theoretically) it would only be disadvantageous to receive it.
+    # We want it to be classified as a trap, but need to do it here so that it won't be duplicated by filler traps.
     if item.name == "Sleep":
         item.classification = ItemClassification.trap
 
@@ -296,25 +301,102 @@ def after_create_item(item: ManualItem, world: World, multiworld: MultiWorld, pl
 
     return item
 
+
 # This method is run towards the end of pre-generation, before the place_item options have been handled and before AP generation occurs
 def before_generate_basic(world: World, multiworld: MultiWorld, player: int) -> list:
-    pass
+    stage_shuffle = get_option_value(multiworld, player, "stage_shuffle")
+    boss_shuffle = get_option_value(multiworld, player, "boss_shuffle")
+    # Stage Shuffle 4 and Boss Shuffle 3 are the default behavior, so we don't need to place anything here.
+    # Stage Shuffle 0 doesn't need any items placed, so we also check for it.
+    if (stage_shuffle == 0 or stage_shuffle == 4) and boss_shuffle == 3:
+        return
+
+    if stage_shuffle == 1 or stage_shuffle == 3:
+        main_stage_locs = [loc for loc in multiworld.get_locations(player)
+                           if "Unlock 1st Stage" in loc.name or "Unlock 2nd Stage" in loc.name
+                           or "Unlock 3rd" in loc.name or "Unlock 4th" in loc.name or "Unlock 5th" in loc.name]
+        main_stage_items = [i for i in multiworld.get_items() if i.player == player
+                            and ("Stage 1" in i.name or "Stage 2" in i.name or "Stage 3" in i.name
+                            or "Stage 4" in i.name or "Stage 5" in i.name)]
+        for main_stage in main_stage_items:
+            if len(main_stage_locs) == 0:
+                break
+
+            next_main_stage = world.random.choice(main_stage_locs)
+            next_main_stage.place_locked_item(main_stage)
+            multiworld.itempool.remove(main_stage)
+            main_stage_locs.remove(next_main_stage)
+
+    if stage_shuffle == 2 or stage_shuffle == 3:
+        ex_stage_locs = [loc for loc in multiworld.get_locations(player)
+                         if "Unlock EX" in loc.name or "Unlock 1st EX" in loc.name or "Unlock 2nd EX" in loc.name]
+        ex_stage_items = [i for i in multiworld.get_items() if i.player == player
+                          and "Stage EX" in i.name]
+
+        for ex_stage in ex_stage_items:
+            if len(ex_stage_locs) == 0:
+                break
+
+            next_ex_stage = world.random.choice(ex_stage_locs)
+            next_ex_stage.place_locked_item(ex_stage)
+            multiworld.itempool.remove(ex_stage)
+            ex_stage_locs.remove(next_ex_stage)
+
+    if boss_shuffle == 0:
+        boss_stage_locs = [loc for loc in multiworld.get_locations(player)
+                           if "Level 1 Boss" in loc.name or "Level 2 Boss" in loc.name or "Level 3 Boss" in loc.name
+                           or "Level 4 Boss" in loc.name or "Level 5 Boss" in loc.name or "Level 6 Boss" in loc.name]
+        boss_stage_items = [i for i in multiworld.get_items() if i.player == player and "VS" in i.name]
+        for boss in boss_stage_items:
+            if len(boss_stage_locs) == 0:
+                break
+
+            boss_locations = boss_stage_locs.pop(0)
+            boss_locations.place_locked_item(boss)
+            multiworld.itempool.remove(boss)
+
+    if boss_shuffle == 1:
+        masked_dedede_loc = [loc for loc in multiworld.get_locations(player) if "Level 6 Boss" in loc.name]
+        masked_dedede_item = [i for i in multiworld.get_items() if i.player == player and i.name == "VS Masked Dedede"]
+        for boss in masked_dedede_item:
+            if len(masked_dedede_loc) == 0:
+                break
+
+            place_dedede = masked_dedede_loc.pop()
+            place_dedede.place_locked_item(boss)
+            multiworld.itempool.remove(boss)
+
+    if boss_shuffle == 2:
+        masked_dedede_loc = [loc for loc in multiworld.get_locations(player) if "Level 1 Boss" in loc.name]
+        masked_dedede_item = [i for i in multiworld.get_items() if i.player == player and i.name == "VS Masked Dedede"]
+        for boss in masked_dedede_item:
+            if len(masked_dedede_loc) == 0:
+                break
+
+            place_dedede = masked_dedede_loc.pop()
+            place_dedede.place_locked_item(boss)
+            multiworld.itempool.remove(boss)
+
 
 # This method is run at the very end of pre-generation, once the place_item options have been handled and before AP generation occurs
 def after_generate_basic(world: World, multiworld: MultiWorld, player: int):
     pass
 
+
 # This is called before slot data is set and provides an empty dict ({}), in case you want to modify it before Manual does
 def before_fill_slot_data(slot_data: dict, world: World, multiworld: MultiWorld, player: int) -> dict:
     return slot_data
+
 
 # This is called after slot data is set and provides the slot data at the time, in case you want to check and modify it after Manual is done with it
 def after_fill_slot_data(slot_data: dict, world: World, multiworld: MultiWorld, player: int) -> dict:
     return slot_data
 
+
 # This is called right at the end, in case you want to write stuff to the spoiler log
 def before_write_spoiler(world: World, multiworld: MultiWorld, spoiler_handle) -> None:
     pass
+
 
 # This is called when you want to add information to the hint text
 def before_extend_hint_information(hint_data: dict[int, dict[int, str]], world: World, multiworld: MultiWorld, player: int) -> None:
@@ -331,6 +413,7 @@ def before_extend_hint_information(hint_data: dict[int, dict[int, str]], world: 
     #     hint_data[player][location.address] = hint_string
     
     pass
+
 
 def after_extend_hint_information(hint_data: dict[int, dict[int, str]], world: World, multiworld: MultiWorld, player: int) -> None:
     pass

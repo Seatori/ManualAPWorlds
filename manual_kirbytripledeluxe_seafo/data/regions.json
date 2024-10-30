@@ -25,19 +25,19 @@
 	},
 	"Fine Fields Stage 1": 	{
 		"connects_to": [],
-		"requires": "|Fine Fields Stage 1|"
+		"requires": "{vanilla_main_stages()} OR |Fine Fields Stage 1|"
 	},
 	"Fine Fields Stage 2": 	{
 		"connects_to": [],
-		"requires": "|Fine Fields Stage 2|"
+		"requires": "{vanilla_main_stages()} OR |Fine Fields Stage 2|"
 	},
 	"Fine Fields Stage 3": 	{
 		"connects_to": [],
-		"requires": "|Fine Fields Stage 3|"
+		"requires": "{vanilla_main_stages()} OR |Fine Fields Stage 3|"
 	},
 	"Fine Fields Stage 4": 	{
 		"connects_to": [],
-		"requires": "|Fine Fields Stage 4|"
+		"requires": "{vanilla_main_stages()} OR |Fine Fields Stage 4|"
 	},
 	"Fine Fields Boss": 	{
 		"connects_to": [],
@@ -45,23 +45,23 @@
 	},
 	"Fine Fields Stage EX": 	{
 		"connects_to": [],
-		"requires": "|Fine Fields Stage EX|"
+		"requires": "({vanilla_ex_stages()} AND (|Progressive EX Stage Key:1| OR |Level 1 EX Stage Key|)) OR |Fine Fields Stage EX|"
 	},
 	"Lollipop Land Stage 1": 	{
 		"connects_to": [],
-		"requires": "|Lollipop Land Stage 1|"
+		"requires": "({vanilla_main_stages()} AND |Grand Sun Stone:1|) OR |Lollipop Land Stage 1|"
 	},
 	"Lollipop Land Stage 2": 	{
 		"connects_to": [],
-		"requires": "|Lollipop Land Stage 2|"
+		"requires": "({vanilla_main_stages()} AND |Grand Sun Stone:1|) OR |Lollipop Land Stage 2|"
 	},
 	"Lollipop Land Stage 3": 	{
 		"connects_to": [],
-		"requires": "|Lollipop Land Stage 3|"
+		"requires": "({vanilla_main_stages()} AND |Grand Sun Stone:1|) OR |Lollipop Land Stage 3|"
 	},
 	"Lollipop Land Stage 4": 	{
 		"connects_to": [],
-		"requires": "|Lollipop Land Stage 4|"
+		"requires": "({vanilla_main_stages()} AND |Grand Sun Stone:1|) OR |Lollipop Land Stage 4|"
 	},
 	"Lollipop Land Boss": 	{
 		"connects_to": [],
@@ -69,27 +69,27 @@
 	},
 	"Lollipop Land Stage EX": 	{
 		"connects_to": [],
-		"requires": "|Lollipop Land Stage EX|"
+		"requires": "({vanilla_ex_stages()} AND |Grand Sun Stone:1| AND (|Progressive EX Stage Key:2| OR |Level 2 EX Stage Key|)) OR |Lollipop Land Stage EX|"
 	},
 	"Old Odyssey Stage 1": 	{
 		"connects_to": [],
-		"requires": "|Old Odyssey Stage 1|"
+		"requires": "({vanilla_main_stages()} AND |Grand Sun Stone:2|) OR |Old Odyssey Stage 1|"
 	},
 	"Old Odyssey Stage 2": 	{
 		"connects_to": [],
-		"requires": "|Old Odyssey Stage 2|"
+		"requires": "({vanilla_main_stages()} AND |Grand Sun Stone:2|) OR |Old Odyssey Stage 2|"
 	},
 	"Old Odyssey Stage 3": 	{
 		"connects_to": [],
-		"requires": "|Old Odyssey Stage 3|"
+		"requires": "({vanilla_main_stages()} AND |Grand Sun Stone:2|) OR |Old Odyssey Stage 3|"
 	},
 	"Old Odyssey Stage 4": 	{
 		"connects_to": [],
-		"requires": "|Old Odyssey Stage 4|"
+		"requires": "({vanilla_main_stages()} AND |Grand Sun Stone:2|) OR |Old Odyssey Stage 4|"
 	},
 	"Old Odyssey Stage 5": 	{
 		"connects_to": [],
-		"requires": "|Old Odyssey Stage 5|"
+		"requires": "({vanilla_main_stages()} AND |Grand Sun Stone:2|) OR |Old Odyssey Stage 5|"
 	},
 	"Old Odyssey Boss": 	{
 		"connects_to": [],
@@ -97,27 +97,27 @@
 	},
 	"Old Odyssey Stage EX": 	{
 		"connects_to": [],
-		"requires": "|Old Odyssey Stage EX|"
+		"requires": "({vanilla_ex_stages()} AND |Grand Sun Stone:2| AND (|Progressive EX Stage Key:3| OR |Level 3 EX Stage Key|)) OR |Old Odyssey Stage EX|"
 	},
 	"Wild World Stage 1": 	{
 		"connects_to": [],
-		"requires": "|Wild World Stage 1|"
+		"requires": "({vanilla_main_stages()} AND |Grand Sun Stone:3|) OR |Wild World Stage 1|"
 	},
 	"Wild World Stage 2": 	{
 		"connects_to": [],
-		"requires": "|Wild World Stage 2|"
+		"requires": "({vanilla_main_stages()} AND |Grand Sun Stone:3|) OR |Wild World Stage 2|"
 	},
 	"Wild World Stage 3": 	{
 		"connects_to": [],
-		"requires": "|Wild World Stage 3|"
+		"requires": "({vanilla_main_stages()} AND |Grand Sun Stone:3|) OR |Wild World Stage 3|"
 	},
 	"Wild World Stage 4": 	{
 		"connects_to": [],
-		"requires": "|Wild World Stage 4|"
+		"requires": "({vanilla_main_stages()} AND |Grand Sun Stone:3|) OR |Wild World Stage 4|"
 	},
 	"Wild World Stage 5": 	{
 		"connects_to": [],
-		"requires": "|Wild World Stage 5|"
+		"requires": "({vanilla_main_stages()} AND |Grand Sun Stone:3|) OR |Wild World Stage 5|"
 	},
 	"Wild World Boss": 	{
 		"connects_to": [],
@@ -125,27 +125,27 @@
 	},
 	"Wild World Stage EX": 	{
 		"connects_to": [],
-		"requires": "|Wild World Stage EX|"
+		"requires": "({vanilla_ex_stages()} AND |Grand Sun Stone:3| AND (|Progressive EX Stage Key:4| OR |Level 4 EX Stage Key|)) OR |Wild World Stage EX|"
 	},
 	"Endless Explosions Stage 1": 	{
 		"connects_to": [],
-		"requires": "|Endless Explosions Stage 1|"
+		"requires": "({vanilla_main_stages()} AND |Grand Sun Stone:4|) OR |Endless Explosions Stage 1|"
 	},
 	"Endless Explosions Stage 2": 	{
 		"connects_to": [],
-		"requires": "|Endless Explosions Stage 2|"
+		"requires": "({vanilla_main_stages()} AND |Grand Sun Stone:4|) OR |Endless Explosions Stage 2|"
 	},
 	"Endless Explosions Stage 3": 	{
 		"connects_to": [],
-		"requires": "|Endless Explosions Stage 3|"
+		"requires": "({vanilla_main_stages()} AND |Grand Sun Stone:4|) OR |Endless Explosions Stage 3|"
 	},
 	"Endless Explosions Stage 4": 	{
 		"connects_to": [],
-		"requires": "|Endless Explosions Stage 4|"
+		"requires": "({vanilla_main_stages()} AND |Grand Sun Stone:4|) OR |Endless Explosions Stage 4|"
 	},
 	"Endless Explosions Stage 5": 	{
 		"connects_to": [],
-		"requires": "|Endless Explosions Stage 5|"
+		"requires": "({vanilla_main_stages()} AND |Grand Sun Stone:4|) OR |Endless Explosions Stage 5|"
 	},
 	"Endless Explosions Boss": 	{
 		"connects_to": [],
@@ -153,27 +153,27 @@
 	},
 	"Endless Explosions Stage EX": 	{
 		"connects_to": [],
-		"requires": "|Endless Explosions Stage EX|"
+		"requires": "({vanilla_ex_stages()} AND |Grand Sun Stone:4| AND (|Progressive EX Stage Key:5| OR |Level 5 EX Stage Key|)) OR |Endless Explosions Stage EX|"
 	},
 	"Royal Road Stage 1": 	{
 		"connects_to": [],
-		"requires": "|Royal Road Stage 1|"
+		"requires": "({vanilla_main_stages()} AND |Grand Sun Stone:5|) OR |Royal Road Stage 1|"
 	},
 	"Royal Road Stage 2": 	{
 		"connects_to": [],
-		"requires": "|Royal Road Stage 2|"
+		"requires": "({vanilla_main_stages()} AND |Grand Sun Stone:5|) OR |Royal Road Stage 2|"
 	},
 	"Royal Road Stage 3": 	{
 		"connects_to": [],
-		"requires": "|Royal Road Stage 3|"
+		"requires": "({vanilla_main_stages()} AND |Grand Sun Stone:5|) OR |Royal Road Stage 3|"
 	},
 	"Royal Road Stage 4": 	{
 		"connects_to": [],
-		"requires": "|Royal Road Stage 4|"
+		"requires": "({vanilla_main_stages()} AND |Grand Sun Stone:5|) OR |Royal Road Stage 4|"
 	},
 	"Royal Road Stage 5": 	{
 		"connects_to": [],
-		"requires": "|Royal Road Stage 5|"
+		"requires": "({vanilla_main_stages()} AND |Grand Sun Stone:5|) OR |Royal Road Stage 5|"
 	},
 	"Royal Road Boss": 	{
 		"connects_to": [],
@@ -181,11 +181,11 @@
 	},
 	"Royal Road Stage EX 1": 	{
 		"connects_to": [],
-		"requires": "|Royal Road Stage EX 1|"
+		"requires": "({vanilla_ex_stages()} AND |Grand Sun Stone:5| AND (|Progressive EX Stage Key:6| OR |Level 6 EX Stage Key|)) OR |Royal Road Stage EX 1|"
 	},
 	"Royal Road Stage EX 2": 	{
 		"connects_to": [],
-		"requires": "|Royal Road Stage EX 2|"
+		"requires": "({vanilla_ex_stages()} AND |Grand Sun Stone:5| AND (|Progressive EX Stage Key:6| OR |Level 6 EX Stage Key|)) OR |Royal Road Stage EX 2|"
 	},
 	"Kirby Fighters": 	{
 		"connects_to": [],
