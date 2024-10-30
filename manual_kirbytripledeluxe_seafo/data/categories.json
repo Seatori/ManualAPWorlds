@@ -1,80 +1,23 @@
 {
-    "Archer Access": {
-        "hidden": true
-    },
-    "Beam Access": {
-        "hidden": true
-    },
-    "Beetle Access": {
-        "hidden": true
-    },
-    "Bell Access": {
-        "hidden": true
-    },
-    "Bomb Access": {
-        "hidden": true
-    },
-    "Circus Access": {
-        "hidden": true
-    },
-    "Crash Access": {
-        "hidden": true
-    },
-    "Cutter Access": {
-        "hidden": true
-    },
-    "Fighter Access": {
-        "hidden": true
-    },
-    "Fire Access": {
-        "hidden": true
-    },
-    "Hammer Access": {
-        "hidden": true
-    },
-    "Ice Access": {
-        "hidden": true
-    },
-    "Leaf Access": {
-        "hidden": true
-    },
-    "Mike Access": {
-        "hidden": true
-    },
-    "Needle Access": {
-        "hidden": true
-    },
-    "Ninja Access": {
-        "hidden": true
-    },
-    "Parasol Access": {
-        "hidden": true
-    },
-    "Spark Access": {
-        "hidden": true
-    },
-    "Spear Access": {
-        "hidden": true
-    },
-    "Stone Access": {
-        "hidden": true
-    },
-    "Sword Access": {
-        "hidden": true
-    },
-    "Wheel Access": {
-        "hidden": true
-    },
-    "Whip Access": {
-        "hidden": true
-    },
-    "Wing Access": {
-        "hidden": true
-    },
     "Copy Abilities": {
         "hidden": true
     },
-    "Keychains": {
+    "Burning Abilities": {
+        "hidden": true
+    },
+    "Cooling Abilities": {
+        "hidden": true
+    },
+    "Cutting Abilities": {
+        "hidden": true
+    },
+    "Pounding Abilities": {
+        "hidden": true
+    },
+    "Main Stages": {
+        "hidden": true
+    },
+    "EX Stages": {
         "hidden": true
     },
     "Progressive Keys": {
@@ -85,20 +28,164 @@
         "hidden": true,
         "yaml_option": ["!progressive_ex_stage_keys"]
     },
-    "J1 - Clear Kirby Fighters": {
-        "yaml_option": ["enable_kirby_fighters_locations"]
+    "Ability Room": {
+        "hidden": true
+    },
+    "Copy Ability Room": {
+        "hidden": true
     },
     "ATR": {
         "hidden": true,
         "yaml_option": ["randomize_ability_testing_room"]
     },
-    "Ability Testing Room": {
+    "Sun Stone Locations": {
         "hidden": true
     },
     "Goal Games": {
         "hidden": true
     },
-    "Sun Stone Locations": {
+    "Rare Keychain Locations": {
+        "hidden": true
+    },
+    "Keychain Locations": {
+        "hidden": true
+    },
+    "Boss Clears": {
+        "hidden": true
+    },
+    "Grand Sun Stone Locations": {
+        "hidden": true
+    },
+    "Fine Fields": {
+        "hidden": true
+    },
+    "Lollipop Land": {
+        "hidden": true
+    },
+    "Old Odyssey": {
+        "hidden": true
+    },
+    "Wild World": {
+        "hidden": true
+    },
+    "Endless Explosions": {
+        "hidden": true
+    },
+    "Royal Road": {
+        "hidden": true
+    },
+    "Fine Fields Stage 1": {
+        "hidden": true
+    },
+    "Fine Fields Stage 2": {
+        "hidden": true
+    },
+    "Fine Fields Stage 3": {
+        "hidden": true
+    },
+    "Fine Fields Stage 4": {
+        "hidden": true
+    },
+    "Fine Fields Stage EX": {
+        "hidden": true
+    },
+    "Lollipop Land Stage 1": {
+        "hidden": true
+    },
+    "Lollipop Land Stage 2": {
+        "hidden": true
+    },
+    "Lollipop Land Stage 3": {
+        "hidden": true
+    },
+    "Lollipop Land Stage 4": {
+        "hidden": true
+    },
+    "Lollipop Land Stage EX": {
+        "hidden": true
+    },
+    "Old Odyssey Stage 1": {
+        "hidden": true
+    },
+    "Old Odyssey Stage 2": {
+        "hidden": true
+    },
+    "Old Odyssey Stage 3": {
+        "hidden": true
+    },
+    "Old Odyssey Stage 4": {
+        "hidden": true
+    },
+    "Old Odyssey Stage 5": {
+        "hidden": true
+    },
+    "Old Odyssey Stage EX": {
+        "hidden": true
+    },
+    "Wild World Stage 1": {
+        "hidden": true
+    },
+    "Wild World Stage 2": {
+        "hidden": true
+    },
+    "Wild World Stage 3": {
+        "hidden": true
+    },
+    "Wild World Stage 4": {
+        "hidden": true
+    },
+    "Wild World Stage 5": {
+        "hidden": true
+    },
+    "Wild World Stage EX": {
+        "hidden": true
+    },
+    "Endless Explosions Stage 1": {
+        "hidden": true
+    },
+    "Endless Explosions Stage 2": {
+        "hidden": true
+    },
+    "Endless Explosions Stage 3": {
+        "hidden": true
+    },
+    "Endless Explosions Stage 4": {
+        "hidden": true
+    },
+    "Endless Explosions Stage 5": {
+        "hidden": true
+    },
+    "Endless Explosions Stage EX": {
+        "hidden": true
+    },
+    "Royal Road Stage 1": {
+        "hidden": true
+    },
+    "Royal Road Stage 2": {
+        "hidden": true
+    },
+    "Royal Road Stage 3": {
+        "hidden": true
+    },
+    "Royal Road Stage 4": {
+        "hidden": true
+    },
+    "Royal Road Stage 5": {
+        "hidden": true
+    },
+    "Royal Road Stage EX 1": {
+        "hidden": true
+    },
+    "Royal Road Stage EX 2": {
+        "hidden": true
+    },
+    "J1 - Clear Kirby Fighters": {
+        "yaml_option": ["enable_kirby_fighters_locations"]
+    },
+    "Clear Kirby Fighters": {
+        "hidden": true
+    },
+    "Kirby Fighters": {
         "hidden": true
     }
 }

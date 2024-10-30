@@ -31,6 +31,7 @@ from ..Helpers import is_option_enabled, get_option_value
 class RandomizeAbilities(DefaultOnToggle):
     """
     Prevent the use of Kirby's Copy Abilities before obtaining them.
+    Regardless of the option chosen, Hypernova is never randomized.
     """
     display_name = "Randomize Copy Abilities"
 
@@ -39,6 +40,8 @@ class RandomizeKeychains(Choice):
     """
     Add additional locations for the Keychains in Story Mode. Also adds the Rare Keychains to the pool as filler items.
     The Queen Sectonia Keychain obtained from collecting all Sun Stones is randomized, but has no equivalent location.
+    Only randomizing Rare Keychains adds 35 checks.
+    Randomizing all Keychains adds an additional 102 checks, for a total of 137 added.
     """
     alias_false = 0
     option_no = 0
@@ -46,8 +49,7 @@ class RandomizeKeychains(Choice):
     option_only_rares = 1
     alias_true = 2
     option_yes = 2
-    default = 0
-    display_name = "Randomize Keychains"
+    display_name = "Keychain Locations"
 
 
 class ExtraStageKeys(DefaultOnToggle):
@@ -58,38 +60,80 @@ class ExtraStageKeys(DefaultOnToggle):
     display_name = "Progressive EX Stage Keys"
 
 
-class KirbyFighters(Toggle):
-    """
-    Add additional locations for clearing Kirby Fighters with each of the available Copy Abilities.
-    """
-    display_name = "Add Kirby Fighters Locations"
-
-
 class AbilityTestingRoom(Toggle):
     """
     Add the ability to access the Copy Ability Testing Room to the item pool.
-    If false, you're never logically considered to have access.
+    If unrandomized, you're instead considered to have access once you can fight Queen Sectonia.
     """
     display_name = "Randomize Ability Testing Room"
 
 
-class StageRando(Toggle):
+class KirbyFighters(Toggle):
     """
-    Randomizes the position of stages across the game.
-    All non-boss stages, including EX stages, are in the pool.
-    So your first stage in Fine Fields could be a Wild World stage, and the EX stage
-    could be a normal stage from Royal Road.
+    Add additional locations for clearing Kirby Fighters with each of the available Copy Abilities.
+    Recommended to only enable with Copy Abilities randomized, since otherwise they will all be available immediately.
+    Adds 10 checks.
     """
+    display_name = "Add Kirby Fighters Locations"
+
+
+class StageRando(Choice):
+    """
+    Randomizes the positions of stages across the game.
+    'Main Stages' means that only the stages that are normally needed to finish the game will be shuffled.
+    'Extra Stages' means that the bonus stages unlocked by collecting all Sun Stones in a given level will be shuffled.
+    'Split Pools' means that both types of stages will be shuffled, but only among themselves.
+    'Fully Shuffled' means that any stage can appear in any other stage's position, regardless of the type.
+    """
+    alias_false = 0
+    alias_no = 0
+    alias_off = 0
+    alias_vanilla = 0
+    option_disabled = 0
+    alias_main = 1
+    option_main_stages = 1
+    alias_ex = 2
+    alias_ex_stages = 2
+    alias_extra = 2
+    option_extra_stages = 2
+    alias_split = 3
+    option_split_pools = 3
+    alias_true = 4
+    alias_yes = 4
+    alias_on = 4
+    alias_full = 4
+    alias_shuffled = 4
+    alias_enabled = 4
+    option_fully_shuffled = 4
     display_name = "Stage Shuffle"
 
 
-class BossRando(Toggle):
+class BossRando(Choice):
     """
-    Randomizes the level each boss is fought in.
+    If enabled, the level each boss is fought in will be randomized.
     So you could fight Flowery Woods in Endless Explosions, or Masked Dedede in Old Odyssey.
     Sun Stone requirements are determined based on levels, and will be the same regardless of which boss is there.
     Does not affect the boss refights in Royal Road.
+
+    'Vanilla Dedede' forces the Masked Dedede fight to be placed at the end of Level 6, as is the case normally,
+    allowing for vanilla-adjacent seeds that don't require fighting all bosses.
+    'Early Dedede' forces the Masked Dedede fight to be placed in Level 1.
+    This allows for the goal to be placed in a fixed position that doesn't require all Grand Sun Stones,
+    permitting the goal requirement to purely be a set amount of Sun Stones without intruding on the other bosses.
     """
+    alias_false = 0
+    alias_no = 0
+    alias_off = 0
+    option_disabled = 0
+    option_vanilla_dedede = 1
+    option_early_dedede = 2
+    alias_true = 3
+    alias_yes = 3
+    alias_on = 3
+    alias_full = 3
+    alias_shuffled = 3
+    alias_enabled = 3
+    option_fully_shuffled = 3
     display_name = "Boss Shuffle"
 
 
@@ -111,7 +155,7 @@ class LogicDifficulty(Choice):
     Damage boosting and using ability stars as projectiles can be also expected.
     Note that the player is not expected to bring Crash and Mike through mid-boss fights.
 
-    Logic difficulty is only relevant when copy abilities are randomized.
+    Logic difficulty is only relevant when Copy Abilities are randomized.
     """
     option_easy = 0
     alias_medium = 1
@@ -131,7 +175,12 @@ class Level1BossRequirement(NamedRange):
     default = 5
 
     special_range_names = {
-        "vanilla": 5,
+        "none": 0,
+        "half": 3,
+        "normal": 5,
+        "extra": 8,
+        "double": 10,
+        "all": 100,
     }
 
 
@@ -145,7 +194,12 @@ class Level2BossRequirement(NamedRange):
     default = 11
 
     special_range_names = {
-        "vanilla": 11,
+        "none": 0,
+        "half": 6,
+        "normal": 11,
+        "extra": 17,
+        "double": 22,
+        "all": 100,
     }
 
 
@@ -159,7 +213,12 @@ class Level3BossRequirement(NamedRange):
     default = 18
 
     special_range_names = {
-        "vanilla": 18,
+        "none": 0,
+        "half": 9,
+        "normal": 18,
+        "extra": 27,
+        "double": 36,
+        "all": 100,
     }
 
 
@@ -173,7 +232,12 @@ class Level4BossRequirement(NamedRange):
     default = 26
 
     special_range_names = {
-        "vanilla": 26,
+        "none": 0,
+        "half": 13,
+        "normal": 26,
+        "extra": 39,
+        "double": 52,
+        "all": 100,
     }
 
 
@@ -187,7 +251,12 @@ class Level5BossRequirement(NamedRange):
     default = 36
 
     special_range_names = {
-        "vanilla": 36,
+        "none": 0,
+        "half": 18,
+        "normal": 36,
+        "extra": 54,
+        "double": 72,
+        "all": 100,
     }
 
 
@@ -201,22 +270,35 @@ class Level6BossRequirement(NamedRange):
     default = 43
 
     special_range_names = {
-        "vanilla": 43,
+        "none": 0,
+        "half": 22,
+        "normal": 43,
+        "extra": 65,
+        "double": 86,
+        "all": 100,
     }
 
 
-class QueenSectoniaRequirement(Range):
+class QueenSectoniaRequirement(NamedRange):
     """
     How many bosses need to be fought before Queen Sectonia becomes available.
-    Default value is 6.
+    The fight is always considered to be accessible immediately after defeating the prerequisite number of bosses,
+    and the positions of the bosses has no impact on this.
+    If set to vanilla, she's always fought directly after defeating Masked Dedede's Revenge, as is the case normally.
     """
     display_name = "Bosses Before Queen Sectonia"
     range_start = 1
     range_end = 6
-    default = 6
+    default = -1
+
+    special_range_names = {
+        "vanilla": -1,
+        "minimum": 1,
+        "maximum": 6,
+    }
 
 
-class FillerTrapPercent(Range):
+class FillerTrapPercent(NamedRange):
     """
     How many random Keychains will be replaced by Lose Ability Traps.
     Lose Ability Traps make Kirby eject whatever ability he had. They do nothing if he didn't have one.
@@ -226,12 +308,19 @@ class FillerTrapPercent(Range):
     display_name = "Filler Trap Percentage"
     range_start = 0
     range_end = 100
-    default = 0
+
+    special_range_names = {
+        "none": 0,
+        "some": 25,
+        "half": 50,
+        "most": 75,
+        "all": 100,
+    }
 
 
 class Goal(Range):
     range_start = 0
-    range_end = 5
+    range_end = 6
     visibility = Visibility.none
 
 
@@ -240,8 +329,8 @@ def before_options_defined(options: dict) -> dict:
     options["randomize_copy_abilities"] = RandomizeAbilities
     options["keychain_locations"] = RandomizeKeychains
     options["progressive_ex_stage_keys"] = ExtraStageKeys
-    options["enable_kirby_fighters_locations"] = KirbyFighters
     options["randomize_ability_testing_room"] = AbilityTestingRoom
+    options["enable_kirby_fighters_locations"] = KirbyFighters
     options["stage_shuffle"] = StageRando
     options["boss_shuffle"] = BossRando
     options["logic_difficulty"] = LogicDifficulty
