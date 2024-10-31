@@ -299,6 +299,19 @@ def after_create_item(item: ManualItem, world: World, multiworld: MultiWorld, pl
         if world.options.logic_difficulty < 2 or not world.options.randomize_copy_abilities:
             item.classification = ItemClassification.useful
 
+    prog_sun_stones = max(world.options.level_1_sun_stones, world.options.level_2_sun_stones,
+                          world.options.level_3_sun_stones, world.options.level_4_sun_stones,
+                          world.options.level_5_sun_stones, world.options.level_6_sun_stones)
+    if prog_sun_stones == 0:
+        world.options.excess_sun_stone_class = 2
+        if item.name == "Sun Stone":
+            item.classification = ItemClassification.filler
+        return item
+
+    print(item.name == "Sun Stone")
+    # if world.options.excess_sun_stone_class == 1:
+        # total_sun_stones =
+
     return item
 
 

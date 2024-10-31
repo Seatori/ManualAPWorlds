@@ -117,6 +117,7 @@ class BossRando(Choice):
 
     'Vanilla Dedede' forces the Masked Dedede fight to be placed at the end of Level 6, as is the case normally,
     allowing for vanilla-adjacent seeds that don't require fighting all bosses.
+
     'Early Dedede' forces the Masked Dedede fight to be placed in Level 1.
     This allows for the goal to be placed in a fixed position that doesn't require all Grand Sun Stones,
     permitting the goal requirement to purely be a set amount of Sun Stones without intruding on the other bosses.
@@ -163,6 +164,26 @@ class LogicDifficulty(Choice):
     option_hard = 2
     default = 1
     display_name = "Logic Difficulty"
+
+
+class ExtraSunStones(Choice):
+    """
+    If some of the Sun Stones aren't needed for any given boss, this determines how the excess will be classified.
+
+    'Progression' means that the excess can be placed on priority locations and won't be placed on excluded locations.
+    This also determines that the excess are logically expected to be collected.
+
+    'Useful' means that the excess won't be placed on either priority or excluded locations.
+    They also won't be logically expected to be collected, making it likely that you'll gain access to bosses early.
+
+    'Filler' means that the excess won't be placed on priority locations but can be placed on excluded locations.
+    Just like with 'Useful', they also won't be logically expected to be collected.
+    If no Sun Stones are required for any bosses, they will default to this.
+    """
+    option_progression = 0
+    option_useful = 1
+    option_filler = 2
+    display_name = "Excess Sun Stone Classification"
 
 
 class Level1BossRequirement(NamedRange):
@@ -334,6 +355,7 @@ def before_options_defined(options: dict) -> dict:
     options["stage_shuffle"] = StageRando
     options["boss_shuffle"] = BossRando
     options["logic_difficulty"] = LogicDifficulty
+    options["excess_sun_stone_class"] = ExtraSunStones
     options["level_1_boss_sun_stones"] = Level1BossRequirement
     options["level_2_boss_sun_stones"] = Level2BossRequirement
     options["level_3_boss_sun_stones"] = Level3BossRequirement
