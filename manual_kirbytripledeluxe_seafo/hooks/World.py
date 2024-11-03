@@ -38,6 +38,8 @@ def hook_get_filler_item_name(world: World, multiworld: MultiWorld, player: int)
 
 # Called before regions and locations are created. Not clear why you'd want this, but it's here. Victory location is included, but Victory event is not placed yet.
 def before_create_regions(world: World, multiworld: MultiWorld, player: int):
+    if world.options.enable_kirby_fighters_locations.value < 2:
+        raise Exception("Outdated option name 'enable_kirby_fighters_locations' detected. Please use an updated YAML.")
     sectonia_boss_req = get_option_value(multiworld, player, "queen_sectonia_boss_requirement")
     if sectonia_boss_req == -1:
         world.options.goal.value = sectonia_boss_req + 1
@@ -220,9 +222,46 @@ def before_create_items_filler(item_pool: list, world: World, multiworld: MultiW
         multiworld.push_precollected(first_stage)
         item_pool.remove(first_stage)
     else:
-        raise Exception("Invalid value for option \'Stage Shuffle\'. \nPlease report this to the maintainer.")
+        raise Exception("Invalid value for option 'Stage Shuffle'. Please report this to the maintainer.")
 
-    return item_pool
+    # If we want our excess Sun Stones to be progression items, we don't need to do anything here.
+    if world.options.excess_sun_stones == 0:
+        return item_pool
+
+    # Getting the number of how many Sun Stones need to be progression items.
+    prog_sun_stones = max(world.options.level_1_boss_sun_stones, world.options.level_2_boss_sun_stones,
+                          world.options.level_3_boss_sun_stones, world.options.level_4_boss_sun_stones,
+                          world.options.level_5_boss_sun_stones, world.options.level_6_boss_sun_stones)
+    # Checking how many Sun Stones are in the pool.
+    total_sun_stones = [i for i in item_pool if i.name == "Sun Stone"]
+    # Calculating the number of unnecessary Sun Stones by subtracting the number in the pool by how many are needed.
+    excess_sun_stones = len(total_sun_stones) - prog_sun_stones
+
+    # If we know that our excess Sun Stones are being removed, it doesn't matter how many are needed.
+    # So we do this step before checking if we should end.
+    if world.options.excess_sun_stones == 3:
+        for _, item in zip(range(excess_sun_stones), total_sun_stones):
+            sun_stones = next(i for i in item_pool if i.name == "Sun Stone")
+            item_pool.remove(sun_stones)
+        return item_pool
+
+    # If no Sun Stones are required for any bosses, we always want any that may be in the pool to be filler.
+    # This is handled in a later function, so we can just quit out here.
+    if prog_sun_stones == 0:
+        return item_pool
+
+    # Modifying the unneeded Sun Stones based on which option was chosen.
+    if world.options.excess_sun_stones == 1:
+        for _, item in zip(range(excess_sun_stones), total_sun_stones):
+            item.classification = ItemClassification.useful
+        return item_pool
+    elif world.options.excess_sun_stones == 2:
+        for _, item in zip(range(excess_sun_stones), total_sun_stones):
+            item.classification = ItemClassification.filler
+        return item_pool
+    else:
+        # By this point, all four valid options should have been accounted for, so we throw an error if it went wrong.
+        raise Exception("Invalid value for option 'Excess Sun Stones'. Please report this to the maintainer.")
 
     # Some other useful hook options:
 
@@ -274,7 +313,7 @@ def after_create_item(item: ManualItem, world: World, multiworld: MultiWorld, pl
     # Bomb has no specific use when story mode is set to easy logic, but is always needed for Kirby Fighters.
     # Though even when Kirby Fighters locations aren't enabled, Bomb is still nice to have.
     if item.name == "Bomb":
-        if world.options.logic_difficulty == 0 and not world.options.enable_kirby_fighters_locations:
+        if world.options.logic_difficulty == 0 and not world.options.kirby_fighters_locations:
             item.classification = ItemClassification.useful
 
     # Mike has an extra requirement added for easy logic, and all of its important requirements are considered 'hard'.
@@ -298,6 +337,16 @@ def after_create_item(item: ManualItem, world: World, multiworld: MultiWorld, pl
     if item.name == "Copy Ability Testing Room":
         if world.options.logic_difficulty < 2 or not world.options.randomize_copy_abilities:
             item.classification = ItemClassification.useful
+
+    # If we don't need Sun Stones for any bosses, they don't have any use.
+    required_sun_stones = max(world.options.level_1_boss_sun_stones, world.options.level_2_boss_sun_stones,
+                              world.options.level_3_boss_sun_stones, world.options.level_4_boss_sun_stones,
+                              world.options.level_5_boss_sun_stones, world.options.level_6_boss_sun_stones)
+    if required_sun_stones == 0:
+        if world.options.excess_sun_stones < 2:
+            world.options.excess_sun_stones.value = 2
+        if item.name == "Sun Stone":
+            item.classification = ItemClassification.filler
 
     return item
 
