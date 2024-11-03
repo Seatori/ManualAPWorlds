@@ -53,6 +53,15 @@ class RandomizeKeychains(Choice):
     display_name = "Keychain Locations"
 
 
+class KirbyFighters(Toggle):
+    """
+    Add additional locations for clearing Kirby Fighters with each of the available Copy Abilities.
+    Recommended to only enable with Copy Abilities randomized, since otherwise they will all be available immediately.
+    Adds 10 checks.
+    """
+    display_name = "Kirby Fighters Locations"
+
+
 class ExtraStageKeys(DefaultOnToggle):
     """
     When enabled, the EX Stage Key items in the pool will become progressive.
@@ -61,21 +70,19 @@ class ExtraStageKeys(DefaultOnToggle):
     display_name = "Progressive EX Stage Keys"
 
 
-class AbilityTestingRoom(Toggle):
+class AbilityTestingRoom(Choice):
     """
-    Add the ability to access the Copy Ability Testing Room to the item pool.
-    If unrandomized, you're instead considered to have access once you can fight Queen Sectonia.
+    Determines how the Copy Ability Testing Room will be handled.
+    'Postgame' means that it will be unlocked by defeating Queen Sectonia, as is the case normally.
+    'Randomized' means that the ability to access it will become a shuffled item. An equivalent location is not created.
+    'Disabled' means that the player will never be considered to have access to it at all.
     """
-    display_name = "Randomize Ability Testing Room"
-
-
-class KirbyFighters(Toggle):
-    """
-    Add additional locations for clearing Kirby Fighters with each of the available Copy Abilities.
-    Recommended to only enable with Copy Abilities randomized, since otherwise they will all be available immediately.
-    Adds 10 checks.
-    """
-    display_name = "Kirby Fighters Locations"
+    alias_vanilla = 0
+    option_postgame = 0
+    option_randomized = 1
+    alias_removed = 2
+    option_disabled = 2
+    display_name = "Ability Testing Room Access"
 
 
 class StageRando(Choice):
@@ -370,9 +377,9 @@ class DeprecatedFightersName(Choice):
 def before_options_defined(options: dict) -> dict:
     options["randomize_copy_abilities"] = RandomizeAbilities
     options["keychain_locations"] = RandomizeKeychains
-    options["progressive_ex_stage_keys"] = ExtraStageKeys
-    options["randomize_ability_testing_room"] = AbilityTestingRoom
     options["kirby_fighters_locations"] = KirbyFighters
+    options["progressive_ex_stage_keys"] = ExtraStageKeys
+    options["ability_testing_room"] = AbilityTestingRoom
     options["stage_shuffle"] = StageRando
     options["boss_shuffle"] = BossRando
     options["logic_difficulty"] = LogicDifficulty

@@ -35,8 +35,7 @@
         "hidden": true
     },
     "ATR": {
-        "hidden": true,
-        "yaml_option": ["randomize_ability_testing_room"]
+        "hidden": true
     },
     "Sun Stone Locations": {
         "hidden": true
@@ -180,7 +179,7 @@
         "hidden": true
     },
     "J1 - Clear Kirby Fighters": {
-        "yaml_option": ["enable_kirby_fighters_locations"]
+        "yaml_option": ["kirby_fighters_locations"]
     },
     "Clear Kirby Fighters": {
         "hidden": true

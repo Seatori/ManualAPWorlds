@@ -181,18 +181,15 @@ def vanilla_ex_stages(world: World, multiworld: MultiWorld, state: CollectionSta
 # N/A
 
 
-# With the Copy Ability Testing Room randomized, Sectonia's fight gives the player access to the following abilities:
+# Sectonia's fight gives the player access to the following abilities:
 # Archer, Beetle, Bomb, Fighter, Fire, Ice, Leaf, Spark, Stone, Whip, and Wing.
-# Otherwise, it gives the player access to all of them, being the vanilla unlock condition for the ATR.
+#
+# If the Copy Ability Testing Room requires its vanilla conditions, this is used for that as well.
 def can_fight_sectonia(world: World, multiworld: MultiWorld, state: CollectionState, player: int) -> bool:
     if world.options.queen_sectonia_boss_requirement == -1:
         return state.has("VS Masked Dedede", player)
     else:
         return state.has_group_unique("Bosses", player, world.options.queen_sectonia_boss_requirement.value)
-
-
-def randomized_atr(world: World, multiworld: MultiWorld, state: CollectionState, player: int) -> bool:
-    return world.options.randomize_ability_testing_room
 
 
 def can_use_archer(world: World, multiworld: MultiWorld, state: CollectionState, player: int) -> bool:
@@ -257,9 +254,6 @@ def can_use_beam(world: World, multiworld: MultiWorld, state: CollectionState, p
                      or state.has("Wild World Stage 5", player) or state.has("Endless Explosions Stage 1", player)
                      or state.has("Endless Explosions Stage 5", player) or state.has("Royal Road Stage 4", player)
                      or state.has("VS Masked Dedede", player) or state.has("Copy Ability Testing Room", player)
-                     or (can_fight_sectonia(world, multiworld, state, player)
-                         and not randomized_atr(world, multiworld, state, player)
-                         )
                      )
                 )
     else:
@@ -274,9 +268,6 @@ def can_use_beam(world: World, multiworld: MultiWorld, state: CollectionState, p
                      or state.has("Endless Explosions Stage 1", player)
                      or state.has("Endless Explosions Stage 5", player) or state.has("Royal Road Stage 4", player)
                      or state.has("VS Masked Dedede", player) or state.has("Copy Ability Testing Room", player)
-                     or (can_fight_sectonia(world, multiworld, state, player)
-                         and not randomized_atr(world, multiworld, state, player)
-                         )
                      )
                 )
 
@@ -323,9 +314,6 @@ def can_use_bell(world: World, multiworld: MultiWorld, state: CollectionState, p
                      or state.has("Endless Explosions Stage EX", player) or state.has("Royal Road Stage 1", player)
                      or state.has("Royal Road Stage 4", player) or state.has("VS Masked Dedede", player)
                      or state.has("Royal Road Stage EX 1", player) or state.has("Copy Ability Testing Room", player)
-                     or (can_fight_sectonia(world, multiworld, state, player)
-                         and not randomized_atr(world, multiworld, state, player)
-                         )
                      )
                 )
 
@@ -391,9 +379,6 @@ def can_use_circus(world: World, multiworld: MultiWorld, state: CollectionState,
                      or state.has("VS Masked Dedede", player)
                      or state.has("Royal Road Stage EX 1", player)
                      or state.has("Copy Ability Testing Room", player)
-                     or (can_fight_sectonia(world, multiworld, state, player)
-                         and not randomized_atr(world, multiworld, state, player)
-                         )
                      )
                 )
     elif world.options.stage_shuffle == 1:
@@ -410,9 +395,6 @@ def can_use_circus(world: World, multiworld: MultiWorld, state: CollectionState,
                      or state.has("Endless Explosions Stage 5", player) or state.has("Royal Road Stage 1", player)
                      or state.has("Royal Road Stage 2", player) or state.has("VS Masked Dedede", player)
                      or state.has("Copy Ability Testing Room", player)
-                     or (can_fight_sectonia(world, multiworld, state, player)
-                         and not randomized_atr(world, multiworld, state, player)
-                         )
                      )
                 )
     else:
@@ -424,9 +406,6 @@ def can_use_circus(world: World, multiworld: MultiWorld, state: CollectionState,
                      or state.has("Endless Explosions Stage 5", player) or state.has("Royal Road Stage 1", player)
                      or state.has("Royal Road Stage 2", player) or state.has("VS Masked Dedede", player)
                      or state.has("Royal Road Stage EX 1", player) or state.has("Copy Ability Testing Room", player)
-                     or (can_fight_sectonia(world, multiworld, state, player)
-                         and not randomized_atr(world, multiworld, state, player)
-                         )
                      )
                 )
 
@@ -438,9 +417,6 @@ def can_use_crash(world: World, multiworld: MultiWorld, state: CollectionState, 
                      or state.has("Old Odyssey Stage EX", player)
                      or state.has("Wild World Stage EX", player)
                      or state.has("Copy Ability Testing Room", player)
-                     or (can_fight_sectonia(world, multiworld, state, player)
-                         and not randomized_atr(world, multiworld, state, player)
-                         )
                      )
                 )
     elif world.options.stage_shuffle == 1:
@@ -454,9 +430,6 @@ def can_use_crash(world: World, multiworld: MultiWorld, state: CollectionState, 
                      or state.has("Wild World Stage 3", player) or state.has("Wild World Stage 4", player)
                      or (state.has("Grand Sun Stone", player, 3) and state.has("Level 4 EX Stage Key", player))
                      or state.has("Royal Road Stage 5", player) or state.has("Copy Ability Testing Room", player)
-                     or (can_fight_sectonia(world, multiworld, state, player)
-                         and not randomized_atr(world, multiworld, state, player)
-                         )
                      )
                 )
     else:
@@ -465,9 +438,6 @@ def can_use_crash(world: World, multiworld: MultiWorld, state: CollectionState, 
                      or state.has("Wild World Stage 3", player) or state.has("Wild World Stage 4", player)
                      or state.has("Wild World Stage EX", player) or state.has("Royal Road Stage 5", player)
                      or state.has("Copy Ability Testing Room", player)
-                     or (can_fight_sectonia(world, multiworld, state, player)
-                         and not randomized_atr(world, multiworld, state, player)
-                         )
                      )
                 )
 
@@ -488,9 +458,6 @@ def can_use_cutter(world: World, multiworld: MultiWorld, state: CollectionState,
                      or state.has("Endless Explosions Stage 4", player)
                      or state.has("Endless Explosions Stage 5", player) or state.has("Royal Road Stage 4", player)
                      or state.has("Royal Road Stage 5", player) or state.has("Copy Ability Testing Room", player)
-                     or (can_fight_sectonia(world, multiworld, state, player)
-                         and not randomized_atr(world, multiworld, state, player)
-                         )
                      )
                 )
     else:
@@ -507,9 +474,6 @@ def can_use_cutter(world: World, multiworld: MultiWorld, state: CollectionState,
                      or state.has("Endless Explosions Stage 5", player) or state.has("Royal Road Stage 4", player)
                      or state.has("Royal Road Stage 5", player) or state.has("Royal Road Stage EX 1", player)
                      or state.has("Copy Ability Testing Room", player)
-                     or (can_fight_sectonia(world, multiworld, state, player)
-                         and not randomized_atr(world, multiworld, state, player)
-                         )
                      )
                 )
 
@@ -612,9 +576,6 @@ def can_use_hammer(world: World, multiworld: MultiWorld, state: CollectionState,
                      or state.has("Old Odyssey Stage EX", player)
                      or state.has("Wild World Stage EX", player)
                      or state.has("Copy Ability Testing Room", player)
-                     or (can_fight_sectonia(world, multiworld, state, player)
-                         and not randomized_atr(world, multiworld, state, player)
-                         )
                      )
                 )
     elif world.options.stage_shuffle == 1:
@@ -629,9 +590,6 @@ def can_use_hammer(world: World, multiworld: MultiWorld, state: CollectionState,
                      or state.has("Endless Explosions Stage 5", player) or state.has("Royal Road Stage 1", player)
                      or state.has("Royal Road Stage 4", player) or state.has("Royal Road Stage 5", player)
                      or state.has("Copy Ability Testing Room", player)
-                     or (can_fight_sectonia(world, multiworld, state, player)
-                         and not randomized_atr(world, multiworld, state, player)
-                         )
                      )
                 )
     else:
@@ -640,9 +598,6 @@ def can_use_hammer(world: World, multiworld: MultiWorld, state: CollectionState,
                      or state.has("Wild World Stage EX", player) or state.has("Endless Explosions Stage 5", player)
                      or state.has("Royal Road Stage 1", player) or state.has("Royal Road Stage 4", player)
                      or state.has("Royal Road Stage 5", player) or state.has("Copy Ability Testing Room", player)
-                     or (can_fight_sectonia(world, multiworld, state, player)
-                         and not randomized_atr(world, multiworld, state, player)
-                         )
                      )
                 )
 
@@ -709,9 +664,6 @@ def can_use_mike(world: World, multiworld: MultiWorld, state: CollectionState, p
         return (state.has("Mike", player)
                 and (state.has("Grand Sun Stone", player, 2)
                      or state.has("Copy Ability Testing Room", player)
-                     or (can_fight_sectonia(world, multiworld, state, player)
-                         and not randomized_atr(world, multiworld, state, player)
-                         )
                      )
                 )
     else:
@@ -719,9 +671,6 @@ def can_use_mike(world: World, multiworld: MultiWorld, state: CollectionState, p
                 and (state.has("Old Odyssey Stage 2", player) or state.has("Endless Explosions Stage 3", player)
                      or state.has("Endless Explosions Stage 5", player) or state.has("Royal Road Stage 2", player)
                      or state.has("Copy Ability Testing Room", player)
-                     or (can_fight_sectonia(world, multiworld, state, player)
-                         and not randomized_atr(world, multiworld, state, player)
-                         )
                      )
                 )
 
@@ -738,9 +687,6 @@ def can_use_needle(world: World, multiworld: MultiWorld, state: CollectionState,
                      or state.has("Endless Explosions Stage 3", player)
                      or state.has("Endless Explosions Stage 5", player) or state.has("Royal Road Stage 4", player)
                      or state.has("Royal Road Stage 5", player) or state.has("Copy Ability Testing Room", player)
-                     or (can_fight_sectonia(world, multiworld, state, player)
-                         and not randomized_atr(world, multiworld, state, player)
-                         )
                      )
                 )
     else:
@@ -751,9 +697,6 @@ def can_use_needle(world: World, multiworld: MultiWorld, state: CollectionState,
                      or state.has("Endless Explosions Stage 5", player) or state.has("Royal Road Stage 4", player)
                      or state.has("Royal Road Stage 5", player) or state.has("Royal Road Stage EX 1", player)
                      or state.has("Copy Ability Testing Room", player)
-                     or (can_fight_sectonia(world, multiworld, state, player)
-                         and not randomized_atr(world, multiworld, state, player)
-                         )
                      )
                 )
 
@@ -766,9 +709,6 @@ def can_use_ninja(world: World, multiworld: MultiWorld, state: CollectionState, 
                      or state.has("Old Odyssey Stage EX", player)
                      or state.has("Endless Explosions Stage EX", player)
                      or state.has("Copy Ability Testing Room", player)
-                     or (can_fight_sectonia(world, multiworld, state, player)
-                         and not randomized_atr(world, multiworld, state, player)
-                         )
                      )
                 )
     elif world.options.stage_shuffle == 1:
@@ -783,9 +723,6 @@ def can_use_ninja(world: World, multiworld: MultiWorld, state: CollectionState, 
                      or state.has("Wild World Stage 2", player) or state.has("Wild World Stage 3", player)
                      or state.has("Endless Explosions Stage 2", player) or state.has("Royal Road Stage 1", player)
                      or state.has("Royal Road Stage 4", player) or state.has("Copy Ability Testing Room", player)
-                     or (can_fight_sectonia(world, multiworld, state, player)
-                         and not randomized_atr(world, multiworld, state, player)
-                         )
                      )
                 )
     else:
@@ -796,9 +733,6 @@ def can_use_ninja(world: World, multiworld: MultiWorld, state: CollectionState, 
                      or state.has("Endless Explosions Stage 2", player)
                      or state.has("Endless Explosions Stage EX", player) or state.has("Royal Road Stage 1", player)
                      or state.has("Royal Road Stage 4", player) or state.has("Copy Ability Testing Room", player)
-                     or (can_fight_sectonia(world, multiworld, state, player)
-                         and not randomized_atr(world, multiworld, state, player)
-                         )
                      )
                 )
 
@@ -812,9 +746,6 @@ def can_use_parasol(world: World, multiworld: MultiWorld, state: CollectionState
                      or state.has("Endless Explosions Stage EX", player)
                      or state.has("Royal Road Stage EX 1", player)
                      or state.has("Copy Ability Testing Room", player)
-                     or (can_fight_sectonia(world, multiworld, state, player)
-                         and not randomized_atr(world, multiworld, state, player)
-                         )
                      )
                 )
     elif world.options.stage_shuffle == 1:
@@ -831,9 +762,6 @@ def can_use_parasol(world: World, multiworld: MultiWorld, state: CollectionState
                      or state.has("Endless Explosions Stage 4", player)
                      or state.has("Endless Explosions Stage 5", player) or state.has("Royal Road Stage 2", player)
                      or state.has("Royal Road Stage 4", player) or state.has("Copy Ability Testing Room", player)
-                     or (can_fight_sectonia(world, multiworld, state, player)
-                         and not randomized_atr(world, multiworld, state, player)
-                         )
                      )
                 )
     else:
@@ -847,9 +775,6 @@ def can_use_parasol(world: World, multiworld: MultiWorld, state: CollectionState
                      or state.has("Endless Explosions Stage EX", player) or state.has("Royal Road Stage 2", player)
                      or state.has("Royal Road Stage 4", player) or state.has("Royal Road Stage EX 1", player)
                      or state.has("Copy Ability Testing Room", player)
-                     or (can_fight_sectonia(world, multiworld, state, player)
-                         and not randomized_atr(world, multiworld, state, player)
-                         )
                      )
                 )
 
@@ -897,9 +822,6 @@ def can_use_spear(world: World, multiworld: MultiWorld, state: CollectionState, 
                      or state.has("Endless Explosions Stage EX", player)
                      or state.has("Royal Road Stage EX 1", player)
                      or state.has("Copy Ability Testing Room", player)
-                     or (can_fight_sectonia(world, multiworld, state, player)
-                         and not randomized_atr(world, multiworld, state, player)
-                         )
                      )
                 )
     elif world.options.stage_shuffle == 1:
@@ -919,9 +841,6 @@ def can_use_spear(world: World, multiworld: MultiWorld, state: CollectionState, 
                      or state.has("Endless Explosions Stage 5", player) or state.has("Royal Road Stage 1", player)
                      or state.has("Royal Road Stage 2", player) or state.has("Royal Road Stage 4", player)
                      or state.has("Royal Road Stage 5", player) or state.has("Copy Ability Testing Room", player)
-                     or (can_fight_sectonia(world, multiworld, state, player)
-                         and not randomized_atr(world, multiworld, state, player)
-                         )
                      )
                 )
     else:
@@ -938,9 +857,6 @@ def can_use_spear(world: World, multiworld: MultiWorld, state: CollectionState, 
                      or state.has("Royal Road Stage 2", player) or state.has("Royal Road Stage 4", player)
                      or state.has("Royal Road Stage 5", player) or state.has("Royal Road Stage EX 1", player)
                      or state.has("Copy Ability Testing Room", player)
-                     or (can_fight_sectonia(world, multiworld, state, player)
-                         and not randomized_atr(world, multiworld, state, player)
-                         )
                      )
                 )
 
@@ -1013,9 +929,6 @@ def can_use_sword(world: World, multiworld: MultiWorld, state: CollectionState, 
                      or state.has("Endless Explosions Stage 3", player)
                      or state.has("Endless Explosions Stage 5", player) or state.has("Royal Road Stage 1", player)
                      or state.has("Royal Road Stage 5", player) or state.has("Copy Ability Testing Room", player)
-                     or (can_fight_sectonia(world, multiworld, state, player)
-                         and not randomized_atr(world, multiworld, state, player)
-                         )
                      )
                 )
     else:
@@ -1030,9 +943,6 @@ def can_use_sword(world: World, multiworld: MultiWorld, state: CollectionState, 
                      or state.has("Endless Explosions Stage EX", player) or state.has("Royal Road Stage 1", player)
                      or state.has("Royal Road Stage 5", player) or state.has("Royal Road Stage EX 1", player)
                      or state.has("Copy Ability Testing Room", player)
-                     or (can_fight_sectonia(world, multiworld, state, player)
-                         and not randomized_atr(world, multiworld, state, player)
-                         )
                      )
                 )
 
@@ -1045,9 +955,6 @@ def can_use_wheel(world: World, multiworld: MultiWorld, state: CollectionState, 
                      or state.has("Endless Explosions Stage EX", player)
                      or state.has("Royal Road Stage EX 1", player)
                      or state.has("Copy Ability Testing Room", player)
-                     or (can_fight_sectonia(world, multiworld, state, player)
-                         and not randomized_atr(world, multiworld, state, player)
-                         )
                      )
                 )
     elif world.options.stage_shuffle == 1:
@@ -1061,9 +968,6 @@ def can_use_wheel(world: World, multiworld: MultiWorld, state: CollectionState, 
                      or state.has("Wild World Stage 2", player) or state.has("Endless Explosions Stage 1", player)
                      or state.has("Endless Explosions Stage 5", player) or state.has("Royal Road Stage 1", player)
                      or state.has("Royal Road Stage 4", player) or state.has("Copy Ability Testing Room", player)
-                     or (can_fight_sectonia(world, multiworld, state, player)
-                         and not randomized_atr(world, multiworld, state, player)
-                         )
                      )
                 )
     else:
@@ -1074,9 +978,6 @@ def can_use_wheel(world: World, multiworld: MultiWorld, state: CollectionState, 
                      or state.has("Endless Explosions Stage EX", player) or state.has("Royal Road Stage 1", player)
                      or state.has("Royal Road Stage 4", player) or state.has("Royal Road Stage EX 1", player)
                      or state.has("Copy Ability Testing Room", player)
-                     or (can_fight_sectonia(world, multiworld, state, player)
-                         and not randomized_atr(world, multiworld, state, player)
-                         )
                      )
                 )
 
