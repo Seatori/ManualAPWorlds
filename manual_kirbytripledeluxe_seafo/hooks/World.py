@@ -40,7 +40,8 @@ def hook_get_filler_item_name(world: World, multiworld: MultiWorld, player: int)
 def before_create_regions(world: World, multiworld: MultiWorld, player: int):
     if world.options.enable_kirby_fighters_locations.value < 2:
         raise Exception("Outdated option name 'enable_kirby_fighters_locations' detected. Please use an updated YAML.")
-    sectonia_boss_req = get_option_value(multiworld, player, "queen_sectonia_boss_requirement")
+
+    sectonia_boss_req = world.options.queen_sectonia_boss_requirement.value
     if sectonia_boss_req == -1:
         world.options.goal.value = sectonia_boss_req + 1
     else:
@@ -50,49 +51,49 @@ def before_create_regions(world: World, multiworld: MultiWorld, player: int):
 # Called after regions and locations are created, in case you want to see or modify that information. Victory location is included.
 def after_create_regions(world: World, multiworld: MultiWorld, player: int):
     # Use this hook to remove locations from the world
-    level_1_boss = get_option_value(multiworld, player, "level_1_boss_sun_stones")
+    level_1_boss = world.options.level_1_boss_sun_stones.value
     if level_1_boss > 0: 
         remove_first_boss = [loc.name for loc in multiworld.get_locations(player) if "Level 1 Boss" in loc.name
                              and f"- {level_1_boss} Sun Stone" not in loc.name]
     else:
         remove_first_boss = [loc.name for loc in multiworld.get_locations(player) if "Level 1 Boss -" in loc.name]
 
-    level_2_boss = get_option_value(multiworld, player, "level_2_boss_sun_stones")
+    level_2_boss = world.options.level_2_boss_sun_stones.value
     if level_2_boss > 0: 
         remove_second_boss = [loc.name for loc in multiworld.get_locations(player) if "Level 2 Boss" in loc.name
                               and f"- {level_2_boss} Sun Stone" not in loc.name]
     else:
         remove_second_boss = [loc.name for loc in multiworld.get_locations(player) if "Level 2 Boss -" in loc.name]
 
-    level_3_boss = get_option_value(multiworld, player, "level_3_boss_sun_stones")
+    level_3_boss = world.options.level_3_boss_sun_stones.value
     if level_3_boss > 0: 
         remove_third_boss = [loc.name for loc in multiworld.get_locations(player) if "Level 3 Boss" in loc.name
                              and f"- {level_3_boss} Sun Stone" not in loc.name]
     else:
         remove_third_boss = [loc.name for loc in multiworld.get_locations(player) if "Level 3 Boss -" in loc.name]
 
-    level_4_boss = get_option_value(multiworld, player, "level_4_boss_sun_stones")
+    level_4_boss = world.options.level_4_boss_sun_stones.value
     if level_4_boss > 0: 
         remove_fourth_boss = [loc.name for loc in multiworld.get_locations(player) if "Level 4 Boss" in loc.name
                               and f"- {level_4_boss} Sun Stone" not in loc.name]
     else:
         remove_fourth_boss = [loc.name for loc in multiworld.get_locations(player) if "Level 4 Boss -" in loc.name]
 
-    level_5_boss = get_option_value(multiworld, player, "level_5_boss_sun_stones")
+    level_5_boss = world.options.level_5_boss_sun_stones.value
     if level_5_boss > 0: 
         remove_fifth_boss = [loc.name for loc in multiworld.get_locations(player) if "Level 5 Boss" in loc.name
                              and f"- {level_5_boss} Sun Stone" not in loc.name]
     else:
         remove_fifth_boss = [loc.name for loc in multiworld.get_locations(player) if "Level 5 Boss -" in loc.name]
 
-    level_6_boss = get_option_value(multiworld, player, "level_6_boss_sun_stones")
+    level_6_boss = world.options.level_6_boss_sun_stones.value
     if level_6_boss > 0: 
         remove_sixth_boss = [loc.name for loc in multiworld.get_locations(player) if "Level 6 Boss" in loc.name
                              and f"- {level_6_boss} Sun Stone" not in loc.name]
     else:
         remove_sixth_boss = [loc.name for loc in multiworld.get_locations(player) if "Level 6 Boss -" in loc.name]
 
-    keychains = get_option_value(multiworld, player, "keychain_locations")
+    keychains = world.options.keychain_locations.value
     if keychains == 1:
         remove_keychains = [loc.name for loc in multiworld.get_locations(player) if "- Keychain" in loc.name
                             or "Left Keychain" in loc.name or "Right Keychain" in loc.name]
@@ -101,7 +102,7 @@ def after_create_regions(world: World, multiworld: MultiWorld, player: int):
     else:
         remove_keychains = []
 
-    stage_shuffle = get_option_value(multiworld, player, "stage_shuffle")
+    stage_shuffle = world.options.stage_shuffle.value
     # Here we remove every 'Unlock Stage' location, since all stages are in their vanilla positions.
     if stage_shuffle == 0:
         remove_stages = [loc.name for loc in multiworld.get_locations(player)
@@ -119,6 +120,12 @@ def after_create_regions(world: World, multiworld: MultiWorld, player: int):
     # Finally, if all stages are shuffled, we don't have to remove their respective unlock locations.
     else:
         remove_stages = []
+
+    if world.options.ability_testing_room.value == 0:
+        remove_atr = []
+    else:
+        remove_atr = [loc.name for loc in multiworld.get_locations(player)
+                      if loc.name == "Unlock Copy Ability Testing Room"]
 
     # Add your code here to calculate which locations to remove
 
@@ -140,6 +147,8 @@ def after_create_regions(world: World, multiworld: MultiWorld, player: int):
                 if location.name in remove_keychains:
                     region.locations.remove(location)
                 if location.name in remove_stages:
+                    region.locations.remove(location)
+                if location.name in remove_atr:
                     region.locations.remove(location)
 
     if hasattr(multiworld, "clear_location_cache"):
@@ -165,14 +174,19 @@ def before_create_items_filler(item_pool: list, world: World, multiworld: MultiW
         item = next(i for i in item_pool if i.name == itemName)
         item_pool.remove(item)
 
-    keychains = get_option_value(multiworld, player, "keychain_locations")
-    if keychains == 0:
+    if world.options.keychain_locations == 0:
         rare_keychains = [i.name for i in item_pool if " Keychain" in i.name]
         for keychains_to_remove in rare_keychains:
             remove_keychains = next(i for i in item_pool if i.name == keychains_to_remove)
             item_pool.remove(remove_keychains)
 
-    stage_shuffle = get_option_value(multiworld, player, "stage_shuffle")
+    if world.options.ability_testing_room == 2:
+        get_atr = [i.name for i in item_pool if i.name == "Copy Ability Testing Room"]
+        for atr in get_atr:
+            remove_atr = next(i for i in item_pool if i.name == atr)
+            item_pool.remove(remove_atr)
+
+    stage_shuffle = world.options.stage_shuffle
     if stage_shuffle == 0:
         # No stages are shuffled here, so we don't need any stage items.
         stages = [i.name for i in item_pool
@@ -353,12 +367,12 @@ def after_create_item(item: ManualItem, world: World, multiworld: MultiWorld, pl
 
 # This method is run towards the end of pre-generation, before the place_item options have been handled and before AP generation occurs
 def before_generate_basic(world: World, multiworld: MultiWorld, player: int) -> list:
-    stage_shuffle = get_option_value(multiworld, player, "stage_shuffle")
-    boss_shuffle = get_option_value(multiworld, player, "boss_shuffle")
+    stage_shuffle = world.options.stage_shuffle
+    boss_shuffle = world.options.boss_shuffle
     # Stage Shuffle 4 and Boss Shuffle 3 are the default behavior, so we don't need to place anything here.
     # Stage Shuffle 0 doesn't need any items placed, so we also check for it.
     if (stage_shuffle == 0 or stage_shuffle == 4) and boss_shuffle == 3:
-        return
+        return []
 
     if stage_shuffle == 1 or stage_shuffle == 3:
         main_stage_locs = [loc for loc in multiworld.get_locations(player)
@@ -390,6 +404,9 @@ def before_generate_basic(world: World, multiworld: MultiWorld, player: int) -> 
             next_ex_stage.place_locked_item(ex_stage)
             multiworld.itempool.remove(ex_stage)
             ex_stage_locs.remove(next_ex_stage)
+
+    if boss_shuffle == 3:
+        return []
 
     if boss_shuffle == 0:
         boss_stage_locs = [loc for loc in multiworld.get_locations(player)
