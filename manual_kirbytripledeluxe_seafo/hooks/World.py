@@ -38,7 +38,7 @@ def hook_get_filler_item_name(world: World, multiworld: MultiWorld, player: int)
 
 # Called before regions and locations are created. Not clear why you'd want this, but it's here. Victory location is included, but Victory event is not placed yet.
 def before_create_regions(world: World, multiworld: MultiWorld, player: int):
-    if world.options.enable_kirby_fighters_locations:
+    if world.options.enable_kirby_fighters_locations.value < 2:
         raise Exception("Outdated option name 'enable_kirby_fighters_locations' detected. Please use an updated YAML.")
     sectonia_boss_req = get_option_value(multiworld, player, "queen_sectonia_boss_requirement")
     if sectonia_boss_req == -1:

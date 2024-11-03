@@ -358,7 +358,11 @@ class Goal(Range):
     visibility = Visibility.none
 
 
-class DeprecatedFightersName(Toggle):
+class DeprecatedFightersName(Choice):
+    option_false = 0
+    option_true = 1
+    option_disabled = 2
+    default = 2
     visibility = Visibility.none
 
 
