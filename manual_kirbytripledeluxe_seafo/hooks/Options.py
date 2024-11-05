@@ -53,6 +53,15 @@ class RandomizeKeychains(Choice):
     display_name = "Keychain Locations"
 
 
+class GoalGames(DefaultOnToggle):
+    """
+    Add additional locations for doing each of the Goal Games across the stages.
+    Technically, the location is based on the Keychain that is awarded for winning, but since it has no logical
+    significance, you're free to decide whether it's for the Keychain or just doing the Goal Game by yourself.
+    """
+    display_name = "Goal Game Locations"
+
+
 class KirbyFighters(Toggle):
     """
     Add additional locations for clearing Kirby Fighters with each of the available Copy Abilities.
@@ -172,6 +181,20 @@ class LogicDifficulty(Choice):
     option_hard = 2
     default = 1
     display_name = "Logic Difficulty"
+
+
+class SunStoneCount(Range):
+    """
+    Determines the number of Sun Stones that will be added to the pool of randomized items.
+    If there aren't enough locations for the number defined, Grand Sun Stones, EX Stage Keys, Copy Abilities,
+    and the Copy Ability Testing Room will take priority over Sun Stones.
+    The Sun Stone count also decides the upper limit for boss unlocks, and they'll be lowered it to match if necessary.
+    Default value is 100.
+    """
+    range_start = 0
+    range_end = 100
+    default = 100
+    display_name = "Number of Sun Stones"
 
 
 class ExtraSunStones(Choice):
@@ -377,12 +400,14 @@ class DeprecatedFightersName(Choice):
 def before_options_defined(options: dict) -> dict:
     options["randomize_copy_abilities"] = RandomizeAbilities
     options["keychain_locations"] = RandomizeKeychains
+    options["goal_game_locations"] = GoalGames
     options["kirby_fighters_locations"] = KirbyFighters
     options["progressive_ex_stage_keys"] = ExtraStageKeys
     options["ability_testing_room"] = AbilityTestingRoom
     options["stage_shuffle"] = StageRando
     options["boss_shuffle"] = BossRando
     options["logic_difficulty"] = LogicDifficulty
+    options["sun_stone_count"] = SunStoneCount
     options["excess_sun_stones"] = ExtraSunStones
     options["level_1_boss_sun_stones"] = Level1BossRequirement
     options["level_2_boss_sun_stones"] = Level2BossRequirement

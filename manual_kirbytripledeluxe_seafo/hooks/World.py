@@ -1,6 +1,7 @@
 # Object classes from AP core, to represent an entire MultiWorld and this individual World that's part of it
 from worlds.AutoWorld import World
 from BaseClasses import MultiWorld, CollectionState, ItemClassification
+from Options import OptionError
 
 # Object classes from Manual -- extending AP core -- representing items and locations that are used in generation
 from ..Items import ManualItem
@@ -39,13 +40,59 @@ def hook_get_filler_item_name(world: World, multiworld: MultiWorld, player: int)
 # Called before regions and locations are created. Not clear why you'd want this, but it's here. Victory location is included, but Victory event is not placed yet.
 def before_create_regions(world: World, multiworld: MultiWorld, player: int):
     if world.options.enable_kirby_fighters_locations.value < 2:
-        raise Exception("Outdated option name 'enable_kirby_fighters_locations' detected. Please use an updated YAML.")
+        raise OptionError("Outdated option name 'enable_kirby_fighters_locations'. Please use an updated YAML.")
 
     sectonia_boss_req = world.options.queen_sectonia_boss_requirement.value
     if sectonia_boss_req == -1:
         world.options.goal.value = sectonia_boss_req + 1
     else:
         world.options.goal.value = sectonia_boss_req
+
+    keychain_locations = world.options.keychain_locations
+
+    if keychain_locations > 0 or world.options.goal_game_locations:
+        pass
+    else:
+        location_total = 106
+        item_total = 11
+        if world.options.randomize_copy_abilities:
+            int(item_total) + 25
+        # if world.options.keychain_locations == 1:
+        #     int(location_total) + 35
+        # if world.options.keychain_locations == 2:
+        #     int(location_total) + 137
+        # if world.options.goal_game_locations:
+        #     int(location_total) + 35
+        if world.options.kirby_fighters_locations:
+            int(location_total) + 10
+        if world.options.ability_testing_room == 1:
+            int(item_total) + 1
+        extra_locations = location_total - item_total
+        if extra_locations > 100:
+            sun_stone_locations = 100
+        else:
+            sun_stone_locations = extra_locations
+        world.options.sun_stone_count.value = sun_stone_locations
+
+    sun_stones = world.options.sun_stone_count.value
+
+    if world.options.level_1_boss_sun_stones > sun_stones:
+        world.options.level_1_boss_sun_stones.value = sun_stones
+
+    if world.options.level_2_boss_sun_stones > sun_stones:
+        world.options.level_2_boss_sun_stones.value = sun_stones
+
+    if world.options.level_3_boss_sun_stones > sun_stones:
+        world.options.level_3_boss_sun_stones.value = sun_stones
+
+    if world.options.level_4_boss_sun_stones > sun_stones:
+        world.options.level_4_boss_sun_stones.value = sun_stones
+
+    if world.options.level_5_boss_sun_stones > sun_stones:
+        world.options.level_5_boss_sun_stones.value = sun_stones
+
+    if world.options.level_6_boss_sun_stones > sun_stones:
+        world.options.level_6_boss_sun_stones.value = sun_stones
 
 
 # Called after regions and locations are created, in case you want to see or modify that information. Victory location is included.
@@ -237,6 +284,12 @@ def before_create_items_filler(item_pool: list, world: World, multiworld: MultiW
         item_pool.remove(first_stage)
     else:
         raise Exception("Invalid value for option 'Stage Shuffle'. Please report this to the maintainer.")
+
+    if world.options.sun_stone_count < 100:
+        unneeded_sun_stones = 100 - world.options.sun_stone_count.value
+        for _ in range(unneeded_sun_stones):
+            remove_sun_stones = next(i for i in item_pool if i.name == "Sun Stone")
+            item_pool.remove(remove_sun_stones)
 
     # If we want our excess Sun Stones to be progression items, we don't need to do anything here.
     if world.options.excess_sun_stones == 0:
