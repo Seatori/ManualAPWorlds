@@ -41,7 +41,8 @@
         "hidden": true
     },
     "Goal Games": {
-        "hidden": true
+        "hidden": true,
+        "yaml_option": ["goal_game_locations"]
     },
     "Rare Keychain Locations": {
         "hidden": true

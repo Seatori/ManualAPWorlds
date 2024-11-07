@@ -53,6 +53,15 @@ class RandomizeKeychains(Choice):
     display_name = "Keychain Locations"
 
 
+class GoalGames(DefaultOnToggle):
+    """
+    Add additional locations for doing each of the Goal Games across the stages.
+    Technically, the location is based on the Keychain that is awarded for winning, but since it has no logical
+    significance, you're free to decide whether it's for the Keychain or just doing the Goal Game by yourself.
+    """
+    display_name = "Goal Game Locations"
+
+
 class KirbyFighters(Toggle):
     """
     Add additional locations for clearing Kirby Fighters with each of the available Copy Abilities.
@@ -174,6 +183,27 @@ class LogicDifficulty(Choice):
     display_name = "Logic Difficulty"
 
 
+class SunStoneCount(Range):
+    """
+    Determines the number of Sun Stones that will be added to the pool of randomized items.
+
+    If there aren't enough locations for the number chosen, then Grand Sun Stones; EX Stage Keys; Copy Abilities;
+    and the Copy Ability Testing Room will take priority over Sun Stones.
+
+    The Sun Stone count also decides the upper limit for boss unlock conditions,
+    and those requirements will be lowered to match this if necessary.
+
+    The value of this option may be modified by other factors, such as a limited number of locations being added.
+    The number in the spoiler log should always match the number of Sun Stones created after it was modified.
+
+    Default value is 100.
+    """
+    range_start = 0
+    range_end = 100
+    default = 100
+    display_name = "Number of Sun Stones"
+
+
 class ExtraSunStones(Choice):
     """
     If some of the Sun Stones aren't needed for any given boss, this determines how the excess will be handled.
@@ -209,6 +239,7 @@ class ExtraSunStones(Choice):
 class Level1BossRequirement(NamedRange):
     """
     How many Sun Stones are required to battle the boss of Level 1.
+    Will be lowered to match the number of Sun Stones created if that number is lower than the requirement defined here.
     """
     display_name = "Sun Stones for Level 1 Boss"
     range_start = 0
@@ -228,6 +259,7 @@ class Level1BossRequirement(NamedRange):
 class Level2BossRequirement(NamedRange):
     """
     How many Sun Stones are required to battle the boss of Level 2.
+    Will be lowered to match the number of Sun Stones created if that number is lower than the requirement defined here.
     """
     display_name = "Sun Stones for Level 2 Boss"
     range_start = 0
@@ -247,6 +279,7 @@ class Level2BossRequirement(NamedRange):
 class Level3BossRequirement(NamedRange):
     """
     How many Sun Stones are required to battle the boss of Level 3.
+    Will be lowered to match the number of Sun Stones created if that number is lower than the requirement defined here.
     """
     display_name = "Sun Stones for Level 3 Boss"
     range_start = 0
@@ -266,6 +299,7 @@ class Level3BossRequirement(NamedRange):
 class Level4BossRequirement(NamedRange):
     """
     How many Sun Stones are required to battle the boss of Level 4.
+    Will be lowered to match the number of Sun Stones created if that number is lower than the requirement defined here.
     """
     display_name = "Sun Stones for Level 4 Boss"
     range_start = 0
@@ -285,6 +319,7 @@ class Level4BossRequirement(NamedRange):
 class Level5BossRequirement(NamedRange):
     """
     How many Sun Stones are required to battle the boss of Level 5.
+    Will be lowered to match the number of Sun Stones created if that number is lower than the requirement defined here.
     """
     display_name = "Sun Stones for Level 5 Boss"
     range_start = 0
@@ -304,6 +339,7 @@ class Level5BossRequirement(NamedRange):
 class Level6BossRequirement(NamedRange):
     """
     How many Sun Stones are required to battle the boss of Level 6.
+    Will be lowered to match the number of Sun Stones created if that number is lower than the requirement defined here.
     """
     display_name = "Sun Stones for Level 6 Boss"
     range_start = 0
@@ -377,12 +413,14 @@ class DeprecatedFightersName(Choice):
 def before_options_defined(options: dict) -> dict:
     options["randomize_copy_abilities"] = RandomizeAbilities
     options["keychain_locations"] = RandomizeKeychains
+    options["goal_game_locations"] = GoalGames
     options["kirby_fighters_locations"] = KirbyFighters
     options["progressive_ex_stage_keys"] = ExtraStageKeys
     options["ability_testing_room"] = AbilityTestingRoom
     options["stage_shuffle"] = StageRando
     options["boss_shuffle"] = BossRando
     options["logic_difficulty"] = LogicDifficulty
+    options["sun_stone_count"] = SunStoneCount
     options["excess_sun_stones"] = ExtraSunStones
     options["level_1_boss_sun_stones"] = Level1BossRequirement
     options["level_2_boss_sun_stones"] = Level2BossRequirement
