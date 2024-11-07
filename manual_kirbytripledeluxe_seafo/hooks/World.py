@@ -48,30 +48,40 @@ def before_create_regions(world: World, multiworld: MultiWorld, player: int):
     else:
         world.options.goal.value = sectonia_boss_req
 
-    keychain_locations = world.options.keychain_locations
-
-    if keychain_locations > 0 or world.options.goal_game_locations:
+    if world.options.keychain_locations > 0 or world.options.goal_game_locations:
         pass
     else:
         location_total = 106
         item_total = 11
         if world.options.randomize_copy_abilities:
-            int(item_total) + 25
+            item_total += 25
+        #
+        # These are never run due to them always exceeding the required number of locations.
+        #
         # if world.options.keychain_locations == 1:
-        #     int(location_total) + 35
+        #     location_total += 35
         # if world.options.keychain_locations == 2:
-        #     int(location_total) + 137
+        #     location_total += 137
         # if world.options.goal_game_locations:
-        #     int(location_total) + 35
+        #     location_total += 35
+        #
         if world.options.kirby_fighters_locations:
-            int(location_total) + 10
+            location_total += 10
         if world.options.ability_testing_room == 1:
-            int(item_total) + 1
-        extra_locations = location_total - item_total
-        if extra_locations > 100:
-            sun_stone_locations = 100
-        else:
-            sun_stone_locations = extra_locations
+            item_total += 1
+        #
+        # Special handling for if the number of locations were to exceed the number of items.
+        # This isn't relevant for KTD due to the way its options work out, but was kept here for future reference.
+        #
+        # extra_locations = location_total - item_total
+        # if extra_locations > 100:
+        #     sun_stone_locations = 100
+        # else:
+        #     sun_stone_locations = extra_locations
+        #
+        # This line is only here due to the above lines being unnecessary:
+        sun_stone_locations = location_total - item_total
+
         world.options.sun_stone_count.value = sun_stone_locations
 
     sun_stones = world.options.sun_stone_count.value
@@ -221,12 +231,6 @@ def before_create_items_filler(item_pool: list, world: World, multiworld: MultiW
         item = next(i for i in item_pool if i.name == itemName)
         item_pool.remove(item)
 
-    if world.options.keychain_locations == 0:
-        rare_keychains = [i.name for i in item_pool if " Keychain" in i.name]
-        for keychains_to_remove in rare_keychains:
-            remove_keychains = next(i for i in item_pool if i.name == keychains_to_remove)
-            item_pool.remove(remove_keychains)
-
     if world.options.ability_testing_room == 2:
         get_atr = [i.name for i in item_pool if i.name == "Copy Ability Testing Room"]
         for atr in get_atr:
@@ -285,7 +289,7 @@ def before_create_items_filler(item_pool: list, world: World, multiworld: MultiW
     else:
         raise Exception("Invalid value for option 'Stage Shuffle'. Please report this to the maintainer.")
 
-    if world.options.sun_stone_count < 100:
+    if world.options.sun_stone_count.value < 100:
         unneeded_sun_stones = 100 - world.options.sun_stone_count.value
         for _ in range(unneeded_sun_stones):
             remove_sun_stones = next(i for i in item_pool if i.name == "Sun Stone")
@@ -293,42 +297,71 @@ def before_create_items_filler(item_pool: list, world: World, multiworld: MultiW
 
     # If we want our excess Sun Stones to be progression items, we don't need to do anything here.
     if world.options.excess_sun_stones == 0:
-        return item_pool
-
-    # Getting the number of how many Sun Stones need to be progression items.
-    prog_sun_stones = max(world.options.level_1_boss_sun_stones, world.options.level_2_boss_sun_stones,
-                          world.options.level_3_boss_sun_stones, world.options.level_4_boss_sun_stones,
-                          world.options.level_5_boss_sun_stones, world.options.level_6_boss_sun_stones)
-    # Checking how many Sun Stones are in the pool.
-    total_sun_stones = [i for i in item_pool if i.name == "Sun Stone"]
-    # Calculating the number of unnecessary Sun Stones by subtracting the number in the pool by how many are needed.
-    excess_sun_stones = len(total_sun_stones) - prog_sun_stones
-
-    # If we know that our excess Sun Stones are being removed, it doesn't matter how many are needed.
-    # So we do this step before checking if we should end.
-    if world.options.excess_sun_stones == 3:
-        for _, item in zip(range(excess_sun_stones), total_sun_stones):
-            sun_stones = next(i for i in item_pool if i.name == "Sun Stone")
-            item_pool.remove(sun_stones)
-        return item_pool
-
-    # If no Sun Stones are required for any bosses, we always want any that may be in the pool to be filler.
-    # This is handled in a later function, so we can just quit out here.
-    if prog_sun_stones == 0:
-        return item_pool
-
-    # Modifying the unneeded Sun Stones based on which option was chosen.
-    if world.options.excess_sun_stones == 1:
-        for _, item in zip(range(excess_sun_stones), total_sun_stones):
-            item.classification = ItemClassification.useful
-        return item_pool
-    elif world.options.excess_sun_stones == 2:
-        for _, item in zip(range(excess_sun_stones), total_sun_stones):
-            item.classification = ItemClassification.filler
-        return item_pool
+        pass
     else:
-        # By this point, all four valid options should have been accounted for, so we throw an error if it went wrong.
-        raise Exception("Invalid value for option 'Excess Sun Stones'. Please report this to the maintainer.")
+        # Getting the number of Sun Stones that need to be progression items.
+        prog_sun_stones = max(world.options.level_1_boss_sun_stones, world.options.level_2_boss_sun_stones,
+                              world.options.level_3_boss_sun_stones, world.options.level_4_boss_sun_stones,
+                              world.options.level_5_boss_sun_stones, world.options.level_6_boss_sun_stones)
+        # Checking how many Sun Stones are in the pool.
+        total_sun_stones = [i for i in item_pool if i.name == "Sun Stone"]
+        # Calculating the number of unnecessary Sun Stones by subtracting the number in the pool by how many are needed.
+        excess_sun_stones = len(total_sun_stones) - prog_sun_stones
+
+        # Modifying the unneeded Sun Stones based on which option was chosen.
+        if world.options.excess_sun_stones == 1:
+            for _, item in zip(range(excess_sun_stones), total_sun_stones):
+                item.classification = ItemClassification.useful
+        elif world.options.excess_sun_stones == 2:
+            for _, item in zip(range(excess_sun_stones), total_sun_stones):
+                item.classification = ItemClassification.filler
+        elif world.options.excess_sun_stones == 3:
+            world.options.sun_stone_count.value = prog_sun_stones
+            for _, item in zip(range(excess_sun_stones), total_sun_stones):
+                sun_stones = next(i for i in item_pool if i.name == "Sun Stone")
+                item_pool.remove(sun_stones)
+        else:
+            # All four valid options should have been accounted for, so we throw an error if it went wrong somewhere.
+            raise Exception("Invalid value for option 'Excess Sun Stones'. Please report this to the maintainer.")
+
+    if world.options.keychain_locations == 0:
+        rare_keychains = [i.name for i in item_pool if " Keychain" in i.name]
+        for keychains_to_remove in rare_keychains:
+            remove_keychains = next(i for i in item_pool if i.name == keychains_to_remove)
+            item_pool.remove(remove_keychains)
+    # Used to check if there's actually enough room in the pool for Rare Keychains.
+    # We can skip this if we have Goal Game locations because they always provide just enough extra locations for Rares.
+    elif world.options.keychain_locations == 1 and not world.options.goal_game_locations:
+        # Higher location total here because we're including Rare Keychain locations.
+        location_total = 141
+        item_total = 11
+        if world.options.randomize_copy_abilities:
+            item_total += 25
+        if world.options.kirby_fighters_locations:
+            location_total += 10
+        if world.options.ability_testing_room == 1:
+            item_total += 1
+        # The Sun Stone Count value should always match the number of Sun Stones in the item pool by this point.
+        item_total += world.options.sun_stone_count.value
+        open_locations = location_total - item_total
+        if open_locations < 36:
+            # We remove the Queen Sectonia Keychain first because it doesn't have an equivalent location.
+            sectonia_keychain = [i for i in item_pool if i.name == "Queen Sectonia Keychain"]
+            for sectonia in sectonia_keychain:
+                remove_sectonia = next(i for i in item_pool if i.name == sectonia)
+                item_pool.remove(remove_sectonia)
+            # If we still don't have enough room, we need to remove more Rare Keychains at random to make up for it.
+            if open_locations < 35:
+                rare_keychains = [i for i in item_pool if " Keychain" in i.name]
+                taken_locations = 35 - open_locations
+                for _ in range(taken_locations):
+                    keychains_to_remove = world.random.choice(rare_keychains)
+                    item_pool.remove(keychains_to_remove)
+                    rare_keychains.remove(keychains_to_remove)
+    else:
+        pass
+
+    return item_pool
 
     # Some other useful hook options:
 

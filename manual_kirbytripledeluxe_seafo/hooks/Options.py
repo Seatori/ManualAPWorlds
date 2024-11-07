@@ -186,9 +186,16 @@ class LogicDifficulty(Choice):
 class SunStoneCount(Range):
     """
     Determines the number of Sun Stones that will be added to the pool of randomized items.
-    If there aren't enough locations for the number defined, Grand Sun Stones, EX Stage Keys, Copy Abilities,
+
+    If there aren't enough locations for the number chosen, then Grand Sun Stones; EX Stage Keys; Copy Abilities;
     and the Copy Ability Testing Room will take priority over Sun Stones.
-    The Sun Stone count also decides the upper limit for boss unlocks, and they'll be lowered it to match if necessary.
+
+    The Sun Stone count also decides the upper limit for boss unlock conditions,
+    and those requirements will be lowered to match this if necessary.
+
+    The value of this option may be modified by other factors, such as a limited number of locations being added.
+    The number in the spoiler log should always match the number of Sun Stones created after it was modified.
+
     Default value is 100.
     """
     range_start = 0
@@ -232,6 +239,7 @@ class ExtraSunStones(Choice):
 class Level1BossRequirement(NamedRange):
     """
     How many Sun Stones are required to battle the boss of Level 1.
+    Will be lowered to match the number of Sun Stones created if that number is lower than the requirement defined here.
     """
     display_name = "Sun Stones for Level 1 Boss"
     range_start = 0
@@ -251,6 +259,7 @@ class Level1BossRequirement(NamedRange):
 class Level2BossRequirement(NamedRange):
     """
     How many Sun Stones are required to battle the boss of Level 2.
+    Will be lowered to match the number of Sun Stones created if that number is lower than the requirement defined here.
     """
     display_name = "Sun Stones for Level 2 Boss"
     range_start = 0
@@ -270,6 +279,7 @@ class Level2BossRequirement(NamedRange):
 class Level3BossRequirement(NamedRange):
     """
     How many Sun Stones are required to battle the boss of Level 3.
+    Will be lowered to match the number of Sun Stones created if that number is lower than the requirement defined here.
     """
     display_name = "Sun Stones for Level 3 Boss"
     range_start = 0
@@ -289,6 +299,7 @@ class Level3BossRequirement(NamedRange):
 class Level4BossRequirement(NamedRange):
     """
     How many Sun Stones are required to battle the boss of Level 4.
+    Will be lowered to match the number of Sun Stones created if that number is lower than the requirement defined here.
     """
     display_name = "Sun Stones for Level 4 Boss"
     range_start = 0
@@ -308,6 +319,7 @@ class Level4BossRequirement(NamedRange):
 class Level5BossRequirement(NamedRange):
     """
     How many Sun Stones are required to battle the boss of Level 5.
+    Will be lowered to match the number of Sun Stones created if that number is lower than the requirement defined here.
     """
     display_name = "Sun Stones for Level 5 Boss"
     range_start = 0
@@ -327,6 +339,7 @@ class Level5BossRequirement(NamedRange):
 class Level6BossRequirement(NamedRange):
     """
     How many Sun Stones are required to battle the boss of Level 6.
+    Will be lowered to match the number of Sun Stones created if that number is lower than the requirement defined here.
     """
     display_name = "Sun Stones for Level 6 Boss"
     range_start = 0
