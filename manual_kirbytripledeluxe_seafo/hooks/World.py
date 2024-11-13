@@ -69,39 +69,38 @@ def before_create_regions(world: World, multiworld: MultiWorld, player: int):
             location_total += 10
         if world.options.ability_testing_room == 1:
             item_total += 1
-        #
-        # Special handling for if the number of locations were to exceed the number of items.
-        # This isn't relevant for KTD due to the way its options work out, but was kept here for future reference.
-        #
-        # extra_locations = location_total - item_total
-        # if extra_locations > 100:
-        #     sun_stone_locations = 100
-        # else:
-        #     sun_stone_locations = extra_locations
-        #
-        # This line is only here due to the above lines being unnecessary:
-        sun_stone_locations = location_total - item_total
-
-        world.options.sun_stone_count.value = sun_stone_locations
+        extra_locations = location_total - item_total
+        # Ensuring that the number of Sun Stones added to the pool isn't higher than the number defined by the option.
+        if extra_locations >= world.options.sun_stone_count.value:
+            pass
+        else:
+            print("Not enough locations for all Sun Stones to be placed. Removing excess Sun Stones.")
+            world.options.sun_stone_count.value = extra_locations
 
     sun_stones = world.options.sun_stone_count.value
 
     if world.options.level_1_boss_sun_stones > sun_stones:
+        print("Not enough Sun Stones to match Level 1 Boss requirement. Lowering requirement to match number created.")
         world.options.level_1_boss_sun_stones.value = sun_stones
 
     if world.options.level_2_boss_sun_stones > sun_stones:
+        print("Not enough Sun Stones to match Level 2 Boss requirement. Lowering requirement to match number created.")
         world.options.level_2_boss_sun_stones.value = sun_stones
 
     if world.options.level_3_boss_sun_stones > sun_stones:
+        print("Not enough Sun Stones to match Level 3 Boss requirement. Lowering requirement to match number created.")
         world.options.level_3_boss_sun_stones.value = sun_stones
 
     if world.options.level_4_boss_sun_stones > sun_stones:
+        print("Not enough Sun Stones to match Level 4 Boss requirement. Lowering requirement to match number created.")
         world.options.level_4_boss_sun_stones.value = sun_stones
 
     if world.options.level_5_boss_sun_stones > sun_stones:
+        print("Not enough Sun Stones to match Level 5 Boss requirement. Lowering requirement to match number created.")
         world.options.level_5_boss_sun_stones.value = sun_stones
 
     if world.options.level_6_boss_sun_stones > sun_stones:
+        print("Not enough Sun Stones to match Level 6 Boss requirement. Lowering requirement to match number created.")
         world.options.level_6_boss_sun_stones.value = sun_stones
 
 
@@ -345,11 +344,10 @@ def before_create_items_filler(item_pool: list, world: World, multiworld: MultiW
         item_total += world.options.sun_stone_count.value
         open_locations = location_total - item_total
         if open_locations < 36:
+            print("Not enough locations to place all Rare Keychains. Removing the excess.")
             # We remove the Queen Sectonia Keychain first because it doesn't have an equivalent location.
-            sectonia_keychain = [i for i in item_pool if i.name == "Queen Sectonia Keychain"]
-            for sectonia in sectonia_keychain:
-                remove_sectonia = next(i for i in item_pool if i.name == sectonia)
-                item_pool.remove(remove_sectonia)
+            sectonia_keychain = next(i for i in item_pool if i.name == "Queen Sectonia Keychain")
+            item_pool.remove(sectonia_keychain)
             # If we still don't have enough room, we need to remove more Rare Keychains at random to make up for it.
             if open_locations < 35:
                 rare_keychains = [i for i in item_pool if " Keychain" in i.name]
