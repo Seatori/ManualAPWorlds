@@ -424,7 +424,7 @@ def can_use_crash(world: World, multiworld: MultiWorld, state: CollectionState, 
                 and (state.has("Lollipop Land Stage 3", player)
                      or (state.has("Grand Sun Stone", player, 2)
                          and (state.has("Progressive EX Stage Key", player, 3)
-                              or state.has("Level 3 EX Stage Key")
+                              or state.has("Level 3 EX Stage Key", player)
                               )
                          )
                      or state.has("Wild World Stage 3", player) or state.has("Wild World Stage 4", player)
