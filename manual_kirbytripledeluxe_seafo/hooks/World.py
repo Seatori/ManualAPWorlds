@@ -15,8 +15,7 @@ from ..Data import game_table, item_table, location_table, region_table
 # These helper methods allow you to determine if an option has been set, or what its value is, for any player in the multiworld
 from ..Helpers import is_option_enabled, get_option_value
 
-from .Stage_Shuffle import \
-    shuffle_stages_early, shuffle_stages, shuffle_bosses, stage_order, main_stage_order, ex_stage_order, boss_order
+from .Stage_Shuffle import shuffle_stages_early, shuffle_stages, shuffle_bosses
 
 ########################################################################################
 ## Order of method calls when the world generates:
@@ -448,80 +447,118 @@ def before_extend_hint_information(hint_data: dict[int, dict[int, str]], world: 
 
 
 def after_extend_hint_information(hint_data: dict[int, dict[int, str]], world: World, multiworld: MultiWorld, player: int) -> None:
-    # In order to figure out hint information, we primarily need to check which items were placed on which locations.
-    # We then add the information to any of the corresponding locations.
-    # Not sure whether I'll use category or name lookup here, since both should work fine.
-    #
-    # Stage Shuffle has an additional caveat where we need to check which stage is in the player's starting inventory.
-    # This caveat does not apply to shuffling EX stages among themselves, which may cause 3 and 4 to need to be handled
-    # differently in some way.
-    #
-    # Boss Shuffle needs to filter out the Sun Stone requirement from the boss's location.
-    # Since this should always be clear to the player, we want to cut it down to only the level that the boss is in.
-    # This also creates some parity with how Stage Shuffle will be handled.
-    #
     stage_shuffle = world.options.stage_shuffle
     boss_shuffle = world.options.boss_shuffle
+    # We first check if both options have been disabled, and quit out if they have been.
+    if stage_shuffle == 0 and boss_shuffle == 0:
+        return
+    # If either option has been enabled in any fashion, we can continue.
     if stage_shuffle > 0 or boss_shuffle > 0:
         hint_data.update({player: {}})
     # Stage Shuffle first checks for if it has been enabled.
-    # Next, it needs to check for the specific value.
-    # 1 means only main stages are shuffled, 2 means only EX stages are shuffled, and 3 and 4 mean both are shuffled.
-    # We need one statement for main stages and one statement for EX stages, but shuffling both is more complicated.
-    # Either we can add a third statement that handles them individually, or we can just use the first two statements.
     if stage_shuffle > 0:
+        # Next, it needs to check for the specific value.
+        # 1 and 3 both shuffle main stages among themselves.
         if stage_shuffle == 1 or stage_shuffle == 3:
-            # TODO: Rewrite this to fetch the location names instead.
+            # First, we need to create a list of all the locations that stages can be placed on.
+            # TODO: Maybe rewrite this to fetch the location names instead?
             main_stage_locs = ["Level 1 - 1st Stage", "Level 1 - 2nd Stage",
                                "Level 1 - 3rd Stage", "Level 1 - 4th Stage",
                                "Level 2 - 1st Stage", "Level 2 - 2nd Stage",
                                "Level 2 - 3rd Stage", "Level 2 - 4th Stage",
                                "Level 3 - 1st Stage", "Level 3 - 2nd Stage",
-                               "Level 3 - 3rd Stage", "Level 3 - 4th Stage", "Level 3 - 5th Stage",
+                               "Level 3 - 3rd Stage", "Level 3 - 4th Stage",
+                               "Level 3 - 5th Stage",
                                "Level 4 - 1st Stage", "Level 4 - 2nd Stage",
-                               "Level 4 - 3rd Stage", "Level 4 - 4th Stage", "Level 4 - 5th Stage",
+                               "Level 4 - 3rd Stage", "Level 4 - 4th Stage",
+                               "Level 4 - 5th Stage",
                                "Level 5 - 1st Stage", "Level 5 - 2nd Stage",
-                               "Level 5 - 3rd Stage", "Level 5 - 4th Stage", "Level 5 - 5th Stage",
+                               "Level 5 - 3rd Stage", "Level 5 - 4th Stage",
+                               "Level 5 - 5th Stage",
                                "Level 6 - 1st Stage", "Level 6 - 2nd Stage",
-                               "Level 6 - 3rd Stage", "Level 6 - 4th Stage", "Level 6 - 5th Stage"]
-            main_stage_items = main_stage_order
-            iter(main_stage_items)
+                               "Level 6 - 3rd Stage", "Level 6 - 4th Stage",
+                               "Level 6 - 5th Stage"]
+            # Then we get the shuffled order of stages.
+            main_stage_items = world.main_stage_order[player]
+            # This next function only needs to be run as many times as
+            # there are locations for main stages to be placed on.
+            # In this case, whether it's items or locations doesn't matter, since both always have the same count.
+            for _ in range(len(main_stage_locs)):
+                # Next, we iterate through the relevant locations and get their names,
+                # along with the name of their corresponding stage item.
+                main_stage_loc = main_stage_locs.pop(0)
+                main_stage_item = main_stage_items.pop(0)
+                # Here, we get locations in the multiworld that share their
+                # region's name with the name of the stage item we're looking at.
+                # These conveniently always line up, so we can just check for it directly.
+                for main_loc in multiworld.get_locations(player):
+                    if main_stage_item in main_loc.parent_region.name:
+                        # Finally, we assign an entrance hint based on where the corresponding stage item is located.
+                        hint_data[player][main_loc.address] = main_stage_loc
+                        # The rest of the Stage Shuffle functions work almost identically to this one.
 
+        # 2 and 3 both shuffle EX stages among themselves.
+        if stage_shuffle == 2 or stage_shuffle == 3:
+            ex_stage_locs = ["Level 1 - EX Stage", "Level 2 - EX Stage", "Level 3 - EX Stage",
+                             "Level 4 - EX Stage", "Level 5 - EX Stage",
+                             "Level 6 - 1st EX Stage", "Level 6 - 2nd EX Stage"]
+            ex_stage_items = world.ex_stage_order[player]
+            for _ in range(len(ex_stage_locs)):
+                ex_stage_loc = ex_stage_locs.pop(0)
+                ex_stage_item = ex_stage_items.pop(0)
+                for ex_loc in multiworld.get_locations(player):
+                    if ex_stage_item in ex_loc.parent_region.name:
+                        hint_data[player][ex_loc.address] = ex_stage_loc
 
-        # for location in multiworld.get_locations(player):
-        #     if not location.address:
-        #         continue
-        #     if stage_shuffle == 1 or stage_shuffle == 3:
-        #         # TODO: Rewrite this to fetch the location names instead.
-        #         stage_locs = ["Level 1 - 1st Stage", "Level 1 - 2nd Stage",
-        #                       "Level 1 - 3rd Stage", "Level 1 - 4th Stage",
-        #                       "Level 2 - 1st Stage", "Level 2 - 2nd Stage",
-        #                       "Level 2 - 3rd Stage", "Level 2 - 4th Stage",
-        #                       "Level 3 - 1st Stage", "Level 3 - 2nd Stage",
-        #                       "Level 3 - 3rd Stage", "Level 3 - 4th Stage", "Level 3 - 5th Stage",
-        #                       "Level 4 - 1st Stage", "Level 4 - 2nd Stage",
-        #                       "Level 4 - 3rd Stage", "Level 4 - 4th Stage", "Level 4 - 5th Stage",
-        #                       "Level 5 - 1st Stage", "Level 5 - 2nd Stage",
-        #                       "Level 5 - 3rd Stage", "Level 5 - 4th Stage", "Level 5 - 5th Stage",
-        #                       "Level 6 - 1st Stage", "Level 6 - 2nd Stage",
-        #                       "Level 6 - 3rd Stage", "Level 6 - 4th Stage", "Level 6 - 5th Stage"]
-        #         # shuffled_main_stages, stage_locations = zip(*stage_locs, main_stage_order)
-        #         next_main_stage_item = iter(main_stage_order)
-        #         next_main_stage_loc = iter(stage_locs)
-        #         for _ in main_stage_order:
+        # 4 shuffles all stages among themselves, such that they can take the place of any other stage in the game.
+        if stage_shuffle == 4:
+            stage_locs = ["Level 1 - 1st Stage", "Level 1 - 2nd Stage",
+                          "Level 1 - 3rd Stage", "Level 1 - 4th Stage", "Level 1 - EX Stage",
+                          "Level 2 - 1st Stage", "Level 2 - 2nd Stage",
+                          "Level 2 - 3rd Stage", "Level 2 - 4th Stage", "Level 2 - EX Stage",
+                          "Level 3 - 1st Stage", "Level 3 - 2nd Stage", "Level 3 - 3rd Stage",
+                          "Level 3 - 4th Stage", "Level 3 - 5th Stage", "Level 3 - EX Stage",
+                          "Level 4 - 1st Stage", "Level 4 - 2nd Stage", "Level 4 - 3rd Stage",
+                          "Level 4 - 4th Stage", "Level 4 - 5th Stage", "Level 4 - EX Stage",
+                          "Level 5 - 1st Stage", "Level 5 - 2nd Stage", "Level 5 - 3rd Stage",
+                          "Level 5 - 4th Stage", "Level 5 - 5th Stage", "Level 5 - EX Stage",
+                          "Level 6 - 1st Stage", "Level 6 - 2nd Stage",
+                          "Level 6 - 3rd Stage", "Level 6 - 4th Stage",
+                          "Level 6 - 5th Stage", "Level 6 - 1st EX Stage", "Level 6 - 2nd EX Stage"]
+            stage_items = world.stage_order[player]
+            for _ in range(len(stage_locs)):
+                stage_loc = stage_locs.pop(0)
+                stage_item = stage_items.pop(0)
+                for loc in multiworld.get_locations(player):
+                    if stage_item in loc.parent_region.name:
+                        hint_data[player][loc.address] = stage_loc
 
-                    # next_stage_loc = (loc.name for loc in multiworld.get_locations(player)
-                    #                   if next(next_main_stage_item) in loc.category)
-                    # print(next_stage_loc)
-                    # hint_data[player][world.multiworld.get_location(f"{next_stage_loc}", player).address] =\
-                    #     next(next_main_stage_loc)
-    # Boss Shuffle is much simpler to handle than Stage Shuffle.
-    # First we check if it has been enabled.
-    # Then we check whether the value is 1 or higher.
-    # 1 has a unique case where it needs to add hint information for everything except Masked Dedede.
-    # Meanwhile, 2 and 3 always need to give the player information about all 6 bosses.
+    # Boss Shuffle works a little differently when compared to Stage Shuffle, but for the most part it's the same.
+    # This code is designed to work for all versions of Boss Shuffle, so we can just check if it's enabled.
     if boss_shuffle > 0:
-        for location in multiworld.get_locations(player):
-            if not location.address:
-                continue
-    pass
+        boss_locs = ["Level 1 Boss", "Level 2 Boss", "Level 3 Boss", "Level 4 Boss", "Level 5 Boss", "Level 6 Boss"]
+        boss_items = world.boss_order[player]
+        # We go by the item count instead of the location count because there
+        # can be fewer items than locations listed if Masked Dedede isn't shuffled.
+        # This way, since the names and order are always the same, we can handle it all within a single check.
+        for _ in range(len(boss_items)):
+            boss_loc = boss_locs.pop(0)
+            boss_item = boss_items.pop(0)
+            # Since the item names don't match the region names in this case,
+            # we check for which item we're looking at and get its equivalent region name.
+            # There's probably a more efficient way of doing this, but I couldn't figure it out.
+            if boss_item == "VS Flowery Woods":
+                boss_item = "Fine Fields Boss"
+            if boss_item == "VS Paintra":
+                boss_item = "Lollipop Land Boss"
+            if boss_item == "VS Kracko":
+                boss_item = "Old Odyssey Boss"
+            if boss_item == "VS Coily Rattler":
+                boss_item = "Wild World Boss"
+            if boss_item == "VS Pyribbit":
+                boss_item = "Endless Explosions Boss"
+            if boss_item == "VS Masked Dedede":
+                boss_item = "Royal Road Boss"
+            for boss in multiworld.get_locations(player):
+                if boss_item in boss.parent_region.name:
+                    hint_data[player][boss.address] = boss_loc
