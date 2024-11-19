@@ -357,6 +357,10 @@ def before_create_item(item_name: str, world: World, multiworld: MultiWorld, pla
 
 # The item that was created is provided after creation, in case you want to modify the item
 def after_create_item(item: ManualItem, world: World, multiworld: MultiWorld, player: int) -> ManualItem:
+    # Grand Sun Stones are always the biggest major unlocks, so they should always be Progression + Useful.
+    if item.name == "Grand Sun Stone":
+        item.classification = ItemClassification.progression | ItemClassification.useful
+
     # Bomb has no specific use when story mode is set to easy logic, but is always needed for Kirby Fighters.
     # Though even when Kirby Fighters locations aren't enabled, Bomb is still nice to have.
     if item.name == "Bomb":
