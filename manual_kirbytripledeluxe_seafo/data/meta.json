@@ -7,10 +7,9 @@
             "https://github.com/ArchipelagoMW/Archipelago/blob/main/docs/world%20api.md#webworld-class"
         ],
         "apworld_description": [
-            "Kirby's back in his first adventure on the Nintendo 3DS system! Use the brand new 3D Warp Stars to travel",
-            "between the foreground and background, and the powerful Hypernova ability to destroy giant obstacles, as",
-            "you explore the hidden land of Floralia on your way to rescue King Dedede from the mysterious Taranza and",
-            "uncover the mystery behind the sudden appearance of the Dreamstalk!"
+            "Join Kirby in his first adventure on the 3DS, as he explores the hidden land of Floralia in order to",
+            "rescue King Dedede from the mysterious Taranza, and uncovers the mystery behind the sudden appearance of",
+            "the Dreamstalk!"
         ],
         "web": {
             "_comment": "for more info check github https://github.com/ArchipelagoMW/Archipelago/blob/main/docs/world%20api.md#webworld-class",
