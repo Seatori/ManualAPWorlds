@@ -4083,7 +4083,7 @@
 		"name": "LoLa Stage 1 - Sun Stone 2 in Wheel Area",
 		"region": "Lollipop Land Stage 1",
 		"category": ["C1 - Lollipop Land Stage 1","Sun Stone Locations","Lollipop Land Stage 1","Lollipop Land"],
-		"requires": "({easy_logic()} AND |Wheel|) OR ({normal_logic()} AND (|Cutter| OR |Fire| OR |Wheel|)) OR ({hard_logic()} AND ({can_use_archer()} OR |Beam| OR {can_use_beetle()} OR {can_use_bell()} OR {can_use_bomb()} OR {can_use_circus()} OR |Cutter| OR {can_use_fighter()} OR |Fire| OR {can_use_hammer()} OR {can_use_ice()} OR {can_use_leaf()} OR {can_use_needle()} OR {can_use_ninja()} OR |Parasol| OR |Spark| OR {can_use_spear()} OR {can_use_stone()} OR {can_use_sword()} OR |Wheel| OR |Whip| OR {can_use_wing()}))"
+		"requires": "({easy_logic()} AND |Wheel|) OR ({normal_logic()} AND (|Cutter| OR |Fire| OR |Parasol| OR |Wheel|)) OR ({hard_logic()} AND ({can_use_archer()} OR |Beam| OR {can_use_beetle()} OR {can_use_bell()} OR {can_use_bomb()} OR {can_use_circus()} OR |Cutter| OR {can_use_fighter()} OR |Fire| OR {can_use_hammer()} OR {can_use_ice()} OR {can_use_leaf()} OR {can_use_needle()} OR {can_use_ninja()} OR |Parasol| OR |Spark| OR {can_use_spear()} OR {can_use_stone()} OR {can_use_sword()} OR |Wheel| OR |Whip| OR {can_use_wing()}))"
 	},
 	{
 		"name": "LoLa Stage 1 - Rare Keychain Before Hot Head",
