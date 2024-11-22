@@ -270,7 +270,7 @@ def before_create_items_filler(item_pool: list, world: World, multiworld: MultiW
                 item_pool.remove(sun_stones)
         else:
             # All four valid options should have been accounted for, so we throw an error if it went wrong somewhere.
-            raise Exception("Invalid value for option 'Excess Sun Stones'. Please report this to the maintainer.")
+            raise OptionError("Invalid value for option 'Excess Sun Stones'. Please report this to the maintainer.")
 
     if world.options.keychain_locations == 0:
         rare_keychains = [i.name for i in item_pool if " Keychain" in i.name]
