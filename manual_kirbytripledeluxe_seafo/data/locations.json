@@ -5564,7 +5564,7 @@
 	{
 		"name": "Unlock Copy Ability Testing Room",
 		"region": "Eternal Dreamland",
-		"category": [],
+		"category": ["I2 - Credits"],
 		"requires": "{can_fight_sectonia()}",
 		"place_item": ["Copy Ability Testing Room"]
 	},

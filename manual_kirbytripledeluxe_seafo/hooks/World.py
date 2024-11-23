@@ -1,3 +1,4 @@
+import logging
 # Object classes from AP core, to represent an entire MultiWorld and this individual World that's part of it
 from worlds.AutoWorld import World
 from BaseClasses import MultiWorld, CollectionState, ItemClassification
@@ -73,33 +74,80 @@ def before_create_regions(world: World, multiworld: MultiWorld, player: int):
         if extra_locations >= world.options.sun_stone_count.value:
             pass
         else:
-            print("Not enough locations for all Sun Stones to be placed. Removing excess Sun Stones.")
+            excess_sun_stones = world.options.sun_stone_count.value - extra_locations
+            logging.warning(f"Not enough locations for all Sun Stones to be placed for player "
+                            f"{world.multiworld.get_player_name(world.player)}. Removing {excess_sun_stones} of their "
+                            f"Sun Stones.")
             world.options.sun_stone_count.value = extra_locations
 
     sun_stones = world.options.sun_stone_count.value
 
+    sun_stone_reqs = max(world.options.level_1_boss_sun_stones, world.options.level_2_boss_sun_stones,
+                         world.options.level_3_boss_sun_stones, world.options.level_4_boss_sun_stones,
+                         world.options.level_5_boss_sun_stones, world.options.level_6_boss_sun_stones)
+
+    if sun_stones == 0 and sun_stone_reqs > 0:
+        logging.warning(f"No Sun Stones found in the pool for player {world.multiworld.get_player_name(world.player)}. "
+                        f"Removing all of their Sun Stone requirements.")
+
     if world.options.level_1_boss_sun_stones > sun_stones:
-        print("Not enough Sun Stones to match Level 1 Boss requirement. Lowering requirement to match number created.")
+        if sun_stones > 1:
+            logging.warning(f"Not enough Sun Stones to match Level 1 Boss requirement for player "
+                            f"{world.multiworld.get_player_name(world.player)}. Lowering requirement to {sun_stones} "
+                            f"Sun Stones.")
+        elif sun_stones == 1:
+            logging.warning(f"Not enough Sun Stones to match Level 1 Boss requirement for player "
+                            f"{world.multiworld.get_player_name(world.player)}. Lowering requirement to 1 Sun Stone.")
         world.options.level_1_boss_sun_stones.value = sun_stones
 
     if world.options.level_2_boss_sun_stones > sun_stones:
-        print("Not enough Sun Stones to match Level 2 Boss requirement. Lowering requirement to match number created.")
+        if sun_stones > 1:
+            logging.warning(f"Not enough Sun Stones to match Level 2 Boss requirement for player "
+                            f"{world.multiworld.get_player_name(world.player)}. Lowering requirement to {sun_stones} "
+                            f"Sun Stones.")
+        elif sun_stones == 1:
+            logging.warning(f"Not enough Sun Stones to match Level 2 Boss requirement for player "
+                            f"{world.multiworld.get_player_name(world.player)}. Lowering requirement to 1 Sun Stone.")
         world.options.level_2_boss_sun_stones.value = sun_stones
 
     if world.options.level_3_boss_sun_stones > sun_stones:
-        print("Not enough Sun Stones to match Level 3 Boss requirement. Lowering requirement to match number created.")
+        if sun_stones > 1:
+            logging.warning(f"Not enough Sun Stones to match Level 3 Boss requirement for player "
+                            f"{world.multiworld.get_player_name(world.player)}. Lowering requirement to {sun_stones} "
+                            f"Sun Stones.")
+        elif sun_stones == 1:
+            logging.warning(f"Not enough Sun Stones to match Level 3 Boss requirement for player "
+                            f"{world.multiworld.get_player_name(world.player)}. Lowering requirement to 1 Sun Stone.")
         world.options.level_3_boss_sun_stones.value = sun_stones
 
     if world.options.level_4_boss_sun_stones > sun_stones:
-        print("Not enough Sun Stones to match Level 4 Boss requirement. Lowering requirement to match number created.")
+        if sun_stones > 1:
+            logging.warning(f"Not enough Sun Stones to match Level 4 Boss requirement for player "
+                            f"{world.multiworld.get_player_name(world.player)}. Lowering requirement to {sun_stones} "
+                            f"Sun Stones.")
+        elif sun_stones == 1:
+            logging.warning(f"Not enough Sun Stones to match Level 4 Boss requirement for player "
+                            f"{world.multiworld.get_player_name(world.player)}. Lowering requirement to 1 Sun Stone.")
         world.options.level_4_boss_sun_stones.value = sun_stones
 
     if world.options.level_5_boss_sun_stones > sun_stones:
-        print("Not enough Sun Stones to match Level 5 Boss requirement. Lowering requirement to match number created.")
+        if sun_stones > 1:
+            logging.warning(f"Not enough Sun Stones to match Level 5 Boss requirement for player "
+                            f"{world.multiworld.get_player_name(world.player)}. Lowering requirement to {sun_stones} "
+                            f"Sun Stones.")
+        elif sun_stones == 1:
+            logging.warning(f"Not enough Sun Stones to match Level 5 Boss requirement for player "
+                            f"{world.multiworld.get_player_name(world.player)}. Lowering requirement to 1 Sun Stone.")
         world.options.level_5_boss_sun_stones.value = sun_stones
 
     if world.options.level_6_boss_sun_stones > sun_stones:
-        print("Not enough Sun Stones to match Level 6 Boss requirement. Lowering requirement to match number created.")
+        if sun_stones > 1:
+            logging.warning(f"Not enough Sun Stones to match Level 6 Boss requirement for player "
+                            f"{world.multiworld.get_player_name(world.player)}. Lowering requirement to {sun_stones} "
+                            f"Sun Stones.")
+        elif sun_stones == 1:
+            logging.warning(f"Not enough Sun Stones to match Level 6 Boss requirement for player "
+                            f"{world.multiworld.get_player_name(world.player)}. Lowering requirement to 1 Sun Stone.")
         world.options.level_6_boss_sun_stones.value = sun_stones
 
 
@@ -293,14 +341,19 @@ def before_create_items_filler(item_pool: list, world: World, multiworld: MultiW
         item_total += world.options.sun_stone_count.value
         open_locations = location_total - item_total
         if open_locations < 36:
-            print("Not enough locations to place all Rare Keychains. Removing the excess.")
             # We remove the Queen Sectonia Keychain first because it doesn't have an equivalent location.
             sectonia_keychain = next(i for i in item_pool if i.name == "Queen Sectonia Keychain")
             item_pool.remove(sectonia_keychain)
+            if open_locations == 35:
+                logging.warning(f"Not enough locations to place all Rare Keychains for player "
+                                f"{world.multiworld.get_player_name(world.player)}. Removing 1 Rare Keychain.")
             # If we still don't have enough room, we need to remove more Rare Keychains at random to make up for it.
-            if open_locations < 35:
+            elif open_locations < 35:
                 rare_keychains = [i for i in item_pool if " Keychain" in i.name]
                 taken_locations = 35 - open_locations
+                logging.warning(f"Not enough locations to place all Rare Keychains for player "
+                                f"{world.multiworld.get_player_name(world.player)}. Removing {taken_locations + 1} Rare"
+                                f" Keychains.")
                 for _ in range(taken_locations):
                     keychains_to_remove = world.random.choice(rare_keychains)
                     item_pool.remove(keychains_to_remove)
