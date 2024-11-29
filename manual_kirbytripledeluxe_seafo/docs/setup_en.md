@@ -4,7 +4,7 @@
 
 - Kirby: Triple Deluxe for the Nintendo 3DS
   - The Archipelago community cannot provide this.
-  - Requires a file that has cleared story mode and unlocked all of the EX stages.
+  - Requires a file that has cleared story mode and unlocked every EX stage.
 - [Archipelago](https://github.com/ArchipelagoMW/Archipelago/releases/latest)
 - [Kirby: Triple Deluxe Manual APWorld](https://github.com/Seatori/ManualAPWorlds/releases)
 

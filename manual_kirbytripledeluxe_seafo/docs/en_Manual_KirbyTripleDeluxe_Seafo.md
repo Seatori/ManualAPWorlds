@@ -15,6 +15,16 @@ Additionally, there are options for access to Kirby's Copy Abilities to be rando
 needed to fight the bosses, and the ability to access the Copy Ability Testing Room.
 The locations of stages and bosses can also be randomized.
 
+## Which items can be in another player's world?
+- Grand Sun Stones
+- EX Stage Keys
+- Sun Stones
+- Copy Abilities
+- Lose Ability Traps
+- Keychains
+- Rare Keychains
+- Copy Ability Testing Room access
+
 ## Where can items be placed in Kirby Triple Deluxe?
 Items can always be placed where the 100 Sun Stones and 5 Grand Sun Stones are normally located, and an additional item
 is obtained after defeating Masked Dedede's Revenge.

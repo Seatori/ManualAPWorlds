@@ -402,7 +402,7 @@ class FillerTrapPercent(NamedRange):
     How many random Keychains will be replaced by Lose Ability Traps.
     Lose Ability Traps make Kirby eject whatever ability he had. They do nothing if he didn't have one.
     
-    0 means no traps are added, 100 means all random Keychains will be replaced by traps.
+    0 means no traps are added, 100 means any non-rare Keychains that would otherwise exist will be replaced by traps.
     """
     display_name = "Filler Trap Percentage"
     range_start = 0
