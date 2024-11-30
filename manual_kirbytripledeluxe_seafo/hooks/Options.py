@@ -120,6 +120,8 @@ class StageRando(Choice):
     'Split Pools' means that both types of stages will be shuffled, but only among themselves.
 
     'Fully Shuffled' means that any stage can appear in any other stage's position, regardless of the type.
+
+    It's recommended to use lower Progression Balancing when shuffling main stages due to the mechanics behind them.
     """
     alias_false = 0
     alias_no = 0

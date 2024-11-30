@@ -68,6 +68,7 @@
                     "death_link": false
                 },
                 "Advanced": {
+                    "progression_balancing": 25,
                     "randomize_copy_abilities": true,
                     "keychain_locations": "yes",
                     "goal_game_locations": true,
@@ -109,6 +110,7 @@
                     "death_link": false
                 },
                 "Long": {
+                    "progression_balancing": 0,
                     "randomize_copy_abilities": true,
                     "keychain_locations": "yes",
                     "goal_game_locations": true,
