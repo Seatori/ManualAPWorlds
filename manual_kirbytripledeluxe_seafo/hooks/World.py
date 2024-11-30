@@ -606,16 +606,19 @@ def after_extend_hint_information(hint_data: dict[int, dict[int, str]], world: W
             # There's probably a more efficient way of doing this, but I couldn't figure it out.
             if boss_item == "VS Flowery Woods":
                 boss_item = "Fine Fields Boss"
-            if boss_item == "VS Paintra":
+            elif boss_item == "VS Paintra":
                 boss_item = "Lollipop Land Boss"
-            if boss_item == "VS Kracko":
+            elif boss_item == "VS Kracko":
                 boss_item = "Old Odyssey Boss"
-            if boss_item == "VS Coily Rattler":
+            elif boss_item == "VS Coily Rattler":
                 boss_item = "Wild World Boss"
-            if boss_item == "VS Pyribbit":
+            elif boss_item == "VS Pyribbit":
                 boss_item = "Endless Explosions Boss"
-            if boss_item == "VS Masked Dedede":
+            elif boss_item == "VS Masked Dedede":
                 boss_item = "Royal Road Boss"
+            else:
+                raise Exception(f"Invalid boss item for player {world.multiworld.get_player_name(world.player)}. "
+                                f"Something went terribly wrong here.")
             for boss in multiworld.get_locations(player):
                 if boss_item in boss.parent_region.name:
                     hint_data[player][boss.address] = boss_loc
