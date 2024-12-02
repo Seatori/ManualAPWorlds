@@ -2,7 +2,7 @@
 	{
 		"count":1,
 		"name": "Archer",
-		"category": ["Abilities","Copy Abilities"],
+		"category": ["Abilities","Copy Abilities","Cutting Abilities"],
 		"progression": true
 	},
 	{
@@ -14,7 +14,7 @@
 	{
 		"count":1,
 		"name": "Beetle",
-		"category": ["Abilities","Copy Abilities"],
+		"category": ["Abilities","Copy Abilities","Cutting Abilities","Pounding Abilities"],
 		"progression": true
 	},
 	{
@@ -32,7 +32,7 @@
 	{
 		"count":1,
 		"name": "Circus",
-		"category": ["Abilities","Copy Abilities"],
+		"category": ["Abilities","Copy Abilities","Burning Abilities"],
 		"progression": true
 	},
 	{
@@ -44,37 +44,37 @@
 	{
 		"count":1,
 		"name": "Cutter",
-		"category": ["Abilities","Copy Abilities"],
+		"category": ["Abilities","Copy Abilities","Cutting Abilities"],
 		"progression": true
 	},
 	{
 		"count":1,
 		"name": "Fighter",
-		"category": ["Abilities","Copy Abilities"],
+		"category": ["Abilities","Copy Abilities","Burning Abilities"],
 		"progression": true
 	},
 	{
 		"count":1,
 		"name": "Fire",
-		"category": ["Abilities","Copy Abilities"],
+		"category": ["Abilities","Copy Abilities","Burning Abilities"],
 		"progression": true
 	},
 	{
 		"count":1,
 		"name": "Hammer",
-		"category": ["Abilities","Copy Abilities"],
+		"category": ["Abilities","Copy Abilities","Burning Abilities","Pounding Abilities"],
 		"progression": true
 	},
 	{
 		"count":1,
 		"name": "Ice",
-		"category": ["Abilities","Copy Abilities"],
+		"category": ["Abilities","Copy Abilities","Cooling Abilities"],
 		"progression": true
 	},
 	{
 		"count":1,
 		"name": "Leaf",
-		"category": ["Abilities","Copy Abilities"],
+		"category": ["Abilities","Copy Abilities","Cutting Abilities"],
 		"progression": true
 	},
 	{
@@ -92,13 +92,13 @@
 	{
 		"count":1,
 		"name": "Ninja",
-		"category": ["Abilities","Copy Abilities"],
+		"category": ["Abilities","Copy Abilities","Cutting Abilities"],
 		"progression": true
 	},
 	{
 		"count":1,
 		"name": "Parasol",
-		"category": ["Abilities","Copy Abilities"],
+		"category": ["Abilities","Copy Abilities","Cooling Abilities"],
 		"progression": true
 	},
 	{
@@ -116,19 +116,19 @@
 	{
 		"count":1,
 		"name": "Spear",
-		"category": ["Abilities","Copy Abilities"],
+		"category": ["Abilities","Copy Abilities","Cutting Abilities"],
 		"progression": true
 	},
 	{
 		"count":1,
 		"name": "Stone",
-		"category": ["Abilities","Copy Abilities"],
+		"category": ["Abilities","Copy Abilities","Pounding Abilities"],
 		"progression": true
 	},
 	{
 		"count":1,
 		"name": "Sword",
-		"category": ["Abilities","Copy Abilities"],
+		"category": ["Abilities","Copy Abilities","Cutting Abilities"],
 		"progression": true
 	},
 	{
@@ -146,7 +146,7 @@
 	{
 		"count":1,
 		"name": "Wing",
-		"category": ["Abilities","Copy Abilities"],
+		"category": ["Abilities","Copy Abilities","Cutting Abilities"],
 		"progression": true
 	},
 	{
@@ -164,511 +164,511 @@
 	{
 		"count": "6",
 		"name": "Progressive EX Stage Key",
-		"category": ["EX Stages","Progressive Keys"],
+		"category": ["EX Stage Keys","Progressive Keys"],
 		"progression": true
 	},
 	{
 		"count":1,
 		"name": "Level 1 EX Stage Key",
-		"category": ["EX Stages","Vanilla Keys"],
+		"category": ["EX Stage Keys","Vanilla Keys"],
 		"progression": true
 	},
 	{
 		"count":1,
 		"name": "Level 2 EX Stage Key",
-		"category": ["EX Stages","Vanilla Keys"],
+		"category": ["EX Stage Keys","Vanilla Keys"],
 		"progression": true
 	},
 	{
 		"count":1,
 		"name": "Level 3 EX Stage Key",
-		"category": ["EX Stages","Vanilla Keys"],
+		"category": ["EX Stage Keys","Vanilla Keys"],
 		"progression": true
 	},
 	{
 		"count":1,
 		"name": "Level 4 EX Stage Key",
-		"category": ["EX Stages","Vanilla Keys"],
+		"category": ["EX Stage Keys","Vanilla Keys"],
 		"progression": true
 	},
 	{
 		"count":1,
 		"name": "Level 5 EX Stage Key",
-		"category": ["EX Stages","Vanilla Keys"],
+		"category": ["EX Stage Keys","Vanilla Keys"],
 		"progression": true
 	},
 	{
 		"count":1,
 		"name": "Level 6 EX Stage Key",
-		"category": ["EX Stages","Vanilla Keys"],
+		"category": ["EX Stage Keys","Vanilla Keys"],
 		"progression": true
 	},
 	{
 		"count":1,
 		"name": "Fine Fields Stage 1",
-		"category": ["Stages","Beam Access","Fire Access","Spark Access","Sword Access"],
+		"category": ["Stages","Main Stages"],
 		"progression": true
 	},
 	{
 		"count":1,
 		"name": "Fine Fields Stage 2",
-		"category": ["Stages","Bell Access","Fire Access","Ice Access","Sword Access","Whip Access"],
+		"category": ["Stages","Main Stages"],
 		"progression": true
 	},
 	{
 		"count":1,
 		"name": "Fine Fields Stage 3",
-		"category": ["Stages","Cutter Access","Fire Access","Sword Access","Whip Access"],
+		"category": ["Stages","Main Stages"],
 		"progression": true
 	},
 	{
 		"count":1,
 		"name": "Fine Fields Stage 4",
-		"category": ["Stages","Beam Access","Beetle Access","Bell Access","Cutter Access","Fire Access","Needle Access","Spark Access","Sword Access"],
+		"category": ["Stages","Main Stages"],
 		"progression": true
 	},
 	{
 		"count":1,
 		"name": "VS Flowery Woods",
-		"category": ["Bosses","Beam Access","Beetle Access","Cutter Access","Fire Access"],
+		"category": ["Bosses"],
 		"progression": true
 	},
 	{
 		"count":1,
 		"name": "Fine Fields Stage EX",
-		"category": ["Stages","Beam Access","Beetle Access","Cutter Access","Fire Access","Needle Access","Spark Access","Stone Access","Wing Access"],
+		"category": ["Stages","EX Stages"],
 		"progression": true
 	},
 	{
 		"count":1,
 		"name": "Lollipop Land Stage 1",
-		"category": ["Stages","Beam Access","Cutter Access","Fire Access","Parasol Access","Spark Access","Wheel Access","Whip Access"],
+		"category": ["Stages","Main Stages"],
 		"progression": true
 	},
 	{
 		"count":1,
 		"name": "Lollipop Land Stage 2",
-		"category": ["Stages","Archer Access","Cutter Access","Spear Access"],
+		"category": ["Stages","Main Stages"],
 		"progression": true
 	},
 	{
 		"count":1,
 		"name": "Lollipop Land Stage 3",
-		"category": ["Stages","Archer Access","Beam Access","Bomb Access","Crash Access","Fire Access","Ice Access","Ninja Access","Spark Access","Spear Access","Sword Access","Whip Access"],
+		"category": ["Stages","Main Stages"],
 		"progression": true
 	},
 	{
 		"count":1,
 		"name": "Lollipop Land Stage 4",
-		"category": ["Stages","Bomb Access","Circus Access","Ninja Access","Parasol Access","Spark Access"],
+		"category": ["Stages","Main Stages"],
 		"progression": true
 	},
 	{
 		"count":1,
 		"name": "VS Paintra",
-		"category": ["Bosses","Bell Access","Circus Access","Spear Access"],
+		"category": ["Bosses"],
 		"progression": true
 	},
 	{
 		"count":1,
 		"name": "Lollipop Land Stage EX",
-		"category": ["Stages","Archer Access","Beam Access","Bomb Access","Fighter Access","Fire Access","Parasol Access","Spear Access","Stone Access","Wheel Access","Whip Access"],
+		"category": ["Stages","EX Stages"],
 		"progression": true
 	},
 	{
 		"count":1,
 		"name": "Old Odyssey Stage 1",
-		"category": ["Stages","Archer Access","Bell Access","Cutter Access","Leaf Access","Parasol Access","Stone Access","Sword Access"],
+		"category": ["Stages","Main Stages"],
 		"progression": true
 	},
 	{
 		"count":1,
 		"name": "Old Odyssey Stage 2",
-		"category": ["Stages","Archer Access","Beam Access","Bomb Access","Cutter Access","Fighter Access","Hammer Access","Mike Access","Needle Access","Spark Access","Spear Access","Stone Access","Whip Access"],
+		"category": ["Stages","Main Stages"],
 		"progression": true
 	},
 	{
 		"count":1,
 		"name": "Old Odyssey Stage 3",
-		"category": ["Stages","Bell Access","Bomb Access","Cutter Access","Fire Access","Ice Access","Spark Access","Stone Access","Whip Access"],
+		"category": ["Stages","Main Stages"],
 		"progression": true
 	},
 	{
 		"count":1,
 		"name": "Old Odyssey Stage 4",
-		"category": ["Stages","Archer Access","Beam Access","Bomb Access","Cutter Access","Ice Access","Parasol Access","Spear Access","Sword Access","Wing Access"],
+		"category": ["Stages","Main Stages"],
 		"progression": true
 	},
 	{
 		"count":1,
 		"name": "Old Odyssey Stage 5",
-		"category": ["Stages","Beam Access","Circus Access","Fire Access","Ice Access","Spear Access"],
+		"category": ["Stages","Main Stages"],
 		"progression": true
 	},
 	{
 		"count":1,
 		"name": "VS Kracko",
-		"category": ["Bosses","Beam Access","Leaf Access","Ninja Access","Parasol Access"],
+		"category": ["Bosses"],
 		"progression": true
 	},
 	{
 		"count":1,
 		"name": "Old Odyssey Stage EX",
-		"category": ["Stages","Bomb Access","Crash Access","Cutter Access","Fire Access","Hammer Access","Ice Access","Ninja Access","Spark Access","Sword Access"],
+		"category": ["Stages","EX Stages"],
 		"progression": true
 	},
 	{
 		"count":1,
 		"name": "Wild World Stage 1",
-		"category": ["Stages","Archer Access","Beam Access","Beetle Access","Bomb Access","Cutter Access","Leaf Access","Spear Access","Stone Access","Wing Access"],
+		"category": ["Stages","Main Stages"],
 		"progression": true
 	},
 	{
 		"count":1,
 		"name": "Wild World Stage 2",
-		"category": ["Stages","Bell Access","Bomb Access","Ninja Access","Parasol Access","Spear Access","Sword Access","Wheel Access"],
+		"category": ["Stages","Main Stages"],
 		"progression": true
 	},
 	{
 		"count":1,
 		"name": "Wild World Stage 3",
-		"category": ["Stages","Beam Access","Bomb Access","Crash Access","Ninja Access"],
+		"category": ["Stages","Main Stages"],
 		"progression": true
 	},
 	{
 		"count":1,
 		"name": "Wild World Stage 4",
-		"category": ["Stages","Bomb Access","Circus Access","Crash Access","Cutter Access","Fighter Access","Fire Access","Ice Access","Leaf Access","Needle Access","Stone Access"],
+		"category": ["Stages","Main Stages"],
 		"progression": true
 	},
 	{
 		"count":1,
 		"name": "Wild World Stage 5",
-		"category": ["Stages","Beam Access","Bomb Access","Cutter Access","Fire Access","Leaf Access","Spark Access","Spear Access","Whip Access"],
+		"category": ["Stages","Main Stages"],
 		"progression": true
 	},
 	{
 		"count":1,
 		"name": "VS Coily Rattler",
-		"category": ["Bosses","Archer Access","Bell Access","Fire Access","Spear Access"],
+		"category": ["Bosses"],
 		"progression": true
 	},
 	{
 		"count":1,
 		"name": "Wild World Stage EX",
-		"category": ["Stages","Circus Access","Crash Access","Fire Access","Hammer Access","Needle Access","Spark Access","Stone Access","Wing Access"],
+		"category": ["Stages","EX Stages"],
 		"progression": true
 	},
 	{
 		"count":1,
 		"name": "Endless Explosions Stage 1",
-		"category": ["Stages","Beam Access","Circus Access","Fire Access","Ice Access","Leaf Access","Parasol Access","Sword Access","Wheel Access"],
+		"category": ["Stages","Main Stages"],
 		"progression": true
 	},
 	{
 		"count":1,
 		"name": "Endless Explosions Stage 2",
-		"category": ["Stages","Circus Access","Cutter Access","Ninja Access","Spear Access","Stone Access"],
+		"category": ["Stages","Main Stages"],
 		"progression": true
 	},
 	{
 		"count":1,
 		"name": "Endless Explosions Stage 3",
-		"category": ["Stages","Bell Access","Bomb Access","Fighter Access","Fire Access","Mike Access","Needle Access","Sword Access","Whip Access","Wing Access"],
+		"category": ["Stages","Main Stages"],
 		"progression": true
 	},
 	{
 		"count":1,
 		"name": "Endless Explosions Stage 4",
-		"category": ["Stages","Archer Access","Bomb Access","Cutter Access","Ice Access","Leaf Access","Parasol Access","Spear Access"],
+		"category": ["Stages","Main Stages"],
 		"progression": true
 	},
 	{
 		"count":1,
 		"name": "Endless Explosions Stage 5",
-		"category": ["Stages","Beam Access","Beetle Access","Bomb Access","Circus Access","Cutter Access","Fighter Access","Fire Access","Hammer Access","Ice Access","Leaf Access","Mike Access","Needle Access","Parasol Access","Spark Access","Spear Access","Stone Access","Sword Access","Wheel Access","Whip Access","Wing Access"],
+		"category": ["Stages","Main Stages"],
 		"progression": true
 	},
 	{
 		"count":1,
 		"name": "VS Pyribbit",
-		"category": ["Bosses","Bomb Access","Fighter Access","Fire Access","Ice Access"],
+		"category": ["Bosses"],
 		"progression": true
 	},
 	{
 		"count":1,
 		"name": "Endless Explosions Stage EX",
-		"category": ["Stages","Archer Access","Beetle Access","Bell Access","Bomb Access","Ice Access","Ninja Access","Parasol Access","Spear Access","Sword Access","Wheel Access"],
+		"category": ["Stages","EX Stages"],
 		"progression": true
 	},
 	{
 		"count":1,
 		"name": "Royal Road Stage 1",
-		"category": ["Stages","Archer Access","Beetle Access","Bell Access","Circus Access","Fire Access","Hammer Access","Ninja Access","Spark Access","Spear Access","Stone Access","Sword Access","Wheel Access","Wing Access"],
+		"category": ["Stages","Main Stages"],
 		"progression": true
 	},
 	{
 		"count":1,
 		"name": "Royal Road Stage 2",
-		"category": ["Stages","Archer Access","Bomb Access","Circus Access","Fighter Access","Fire Access","Mike Access","Parasol Access","Spear Access","Whip Access","Wing Access"],
+		"category": ["Stages","Main Stages"],
 		"progression": true
 	},
 	{
 		"count":1,
 		"name": "Royal Road Stage 3",
-		"category": ["Stages"],
+		"category": ["Stages","Main Stages"],
 		"progression": true
 	},
 	{
 		"count":1,
 		"name": "Royal Road Stage 4",
-		"category": ["Stages","Archer Access","Beam Access","Bell Access","Cutter Access","Fire Access","Hammer Access","Ice Access","Leaf Access","Needle Access","Ninja Access","Parasol Access","Spear Access","Wheel Access"],
+		"category": ["Stages","Main Stages"],
 		"progression": true
 	},
 	{
 		"count":1,
 		"name": "Royal Road Stage 5",
-		"category": ["Stages","Archer Access","Beetle Access","Bomb Access","Crash Access","Cutter Access","Hammer Access","Needle Access","Spear Access","Sword Access"],
+		"category": ["Stages","Main Stages"],
 		"progression": true
 	},
 	{
 		"count":1,
 		"name": "VS Masked Dedede",
-		"category": ["Bosses","Archer Access","Beam Access","Beetle Access","Bell Access","Bomb Access","Circus Access"],
+		"category": ["Bosses"],
 		"progression": true
 	},
 	{
 		"count":1,
 		"name": "Royal Road Stage EX 1",
-		"category": ["Stages","Archer Access","Beetle Access","Bell Access","Circus Access","Cutter Access","Fighter Access","Fire Access","Ice Access","Needle Access","Parasol Access","Spark Access","Spear Access","Sword Access","Wheel Access","Whip Access"],
+		"category": ["Stages","EX Stages"],
 		"progression": true
 	},
 	{
 		"count":1,
 		"name": "Royal Road Stage EX 2",
-		"category": ["Stages"],
+		"category": ["Stages","EX Stages"],
 		"progression": true
 	},
 	{
 		"count":1,
 		"name": "Copy Ability Testing Room",
-		"category": ["Abilities","Ability Testing Room","ATR","Archer Access","Beam Access","Beetle Access","Bell Access","Bomb Access","Circus Access","Crash Access","Cutter Access","Fighter Access","Fire Access","Hammer Access","Ice Access","Leaf Access","Mike Access","Needle Access","Ninja Access","Parasol Access","Spark Access","Spear Access","Stone Access","Sword Access","Wheel Access","Whip Access","Wing Access"],
+		"category": ["Ability Testing Room","Ability Room","Copy Ability Room","ATR"],
 		"progression": true
 	},
 	{
 		"count":1,
 		"name": "Star Rod Keychain",
-		"category": ["Rare Keychains","Keychains"],
+		"category": ["Rare Keychains"],
 		"filler": true
 	},
 	{
 		"count":1,
 		"name": "Dyna Blade Keychain",
-		"category": ["Rare Keychains","Keychains"],
+		"category": ["Rare Keychains"],
 		"filler": true
 	},
 	{
 		"count":1,
 		"name": "Triple Star Keychain",
-		"category": ["Rare Keychains","Keychains"],
+		"category": ["Rare Keychains"],
 		"filler": true
 	},
 	{
 		"count":1,
 		"name": "Dark Matter Blade Keychain",
-		"category": ["Rare Keychains","Keychains"],
+		"category": ["Rare Keychains"],
 		"filler": true
 	},
 	{
 		"count":1,
 		"name": "Magical Paintbrush Keychain",
-		"category": ["Rare Keychains","Keychains"],
+		"category": ["Rare Keychains"],
 		"filler": true
 	},
 	{
 		"count":1,
 		"name": "Starship Keychain",
-		"category": ["Rare Keychains","Keychains"],
+		"category": ["Rare Keychains"],
 		"filler": true
 	},
 	{
 		"count":1,
 		"name": "Master Sword Keychain",
-		"category": ["Rare Keychains","Keychains"],
+		"category": ["Rare Keychains"],
 		"filler": true
 	},
 	{
 		"count":1,
 		"name": "Gigant Edge Keychain",
-		"category": ["Rare Keychains","Keychains"],
+		"category": ["Rare Keychains"],
 		"filler": true
 	},
 	{
 		"count":1,
 		"name": "Dark Daroach Keychain",
-		"category": ["Rare Keychains","Keychains"],
+		"category": ["Rare Keychains"],
 		"filler": true
 	},
 	{
 		"count":1,
 		"name": "1-Up Meta Knight Keychain",
-		"category": ["Rare Keychains","Keychains"],
+		"category": ["Rare Keychains"],
 		"filler": true
 	},
 	{
 		"count":1,
 		"name": "Whispy Woods Keychain",
-		"category": ["Rare Keychains","Keychains"],
+		"category": ["Rare Keychains"],
 		"filler": true
 	},
 	{
 		"count":1,
 		"name": "10 Kirbys Keychain",
-		"category": ["Rare Keychains","Keychains"],
+		"category": ["Rare Keychains"],
 		"filler": true
 	},
 	{
 		"count":1,
 		"name": "Masked Dedede Keychain",
-		"category": ["Rare Keychains","Keychains"],
+		"category": ["Rare Keychains"],
 		"filler": true
 	},
 	{
 		"count":1,
 		"name": "Rainbow Drop Keychain",
-		"category": ["Rare Keychains","Keychains"],
+		"category": ["Rare Keychains"],
 		"filler": true
 	},
 	{
 		"count":1,
 		"name": "Nightmare Wizard Keychain",
-		"category": ["Rare Keychains","Keychains"],
+		"category": ["Rare Keychains"],
 		"filler": true
 	},
 	{
 		"count":1,
 		"name": "Captain Vul Keychain",
-		"category": ["Rare Keychains","Keychains"],
+		"category": ["Rare Keychains"],
 		"filler": true
 	},
 	{
 		"count":1,
 		"name": "Gold Waddle Dee Keychain",
-		"category": ["Rare Keychains","Keychains"],
+		"category": ["Rare Keychains"],
 		"filler": true
 	},
 	{
 		"count":1,
 		"name": "Dimension Mirror Keychain",
-		"category": ["Rare Keychains","Keychains"],
+		"category": ["Rare Keychains"],
 		"filler": true
 	},
 	{
 		"count":1,
 		"name": "U.F.O. Keychain",
-		"category": ["Rare Keychains","Keychains"],
+		"category": ["Rare Keychains"],
 		"filler": true
 	},
 	{
 		"count":1,
 		"name": "Shocked Dedede Keychain",
-		"category": ["Rare Keychains","Keychains"],
+		"category": ["Rare Keychains"],
 		"filler": true
 	},
 	{
 		"count":1,
 		"name": "Marx Keychain",
-		"category": ["Rare Keychains","Keychains"],
+		"category": ["Rare Keychains"],
 		"filler": true
 	},
 	{
 		"count":1,
 		"name": "Boss Butch Keychain",
-		"category": ["Rare Keychains","Keychains"],
+		"category": ["Rare Keychains"],
 		"filler": true
 	},
 	{
 		"count":1,
 		"name": "Skullord Keychain",
-		"category": ["Rare Keychains","Keychains"],
+		"category": ["Rare Keychains"],
 		"filler": true
 	},
 	{
 		"count":1,
 		"name": "Nightmare's Power Orb Keychain",
-		"category": ["Rare Keychains","Keychains"],
+		"category": ["Rare Keychains"],
 		"filler": true
 	},
 	{
 		"count":1,
 		"name": "Drawcia Keychain",
-		"category": ["Rare Keychains","Keychains"],
+		"category": ["Rare Keychains"],
 		"filler": true
 	},
 	{
 		"count":1,
 		"name": "Marx Soul Keychain",
-		"category": ["Rare Keychains","Keychains"],
+		"category": ["Rare Keychains"],
 		"filler": true
 	},
 	{
 		"count":1,
 		"name": "Real Dark Matter Keychain",
-		"category": ["Rare Keychains","Keychains"],
+		"category": ["Rare Keychains"],
 		"filler": true
 	},
 	{
 		"count":1,
 		"name": "Yin-Yarn Keychain",
-		"category": ["Rare Keychains","Keychains"],
+		"category": ["Rare Keychains"],
 		"filler": true
 	},
 	{
 		"count":1,
 		"name": "Galacta Knight Keychain",
-		"category": ["Rare Keychains","Keychains"],
+		"category": ["Rare Keychains"],
 		"filler": true
 	},
 	{
 		"count":1,
 		"name": "Dark Mind Keychain",
-		"category": ["Rare Keychains","Keychains"],
+		"category": ["Rare Keychains"],
 		"filler": true
 	},
 	{
 		"count":1,
 		"name": "Sweet Stuff Drawing Keychain",
-		"category": ["Rare Keychains","Keychains"],
+		"category": ["Rare Keychains"],
 		"filler": true
 	},
 	{
 		"count":1,
 		"name": "King Dedede Drawing Keychain",
-		"category": ["Rare Keychains","Keychains"],
+		"category": ["Rare Keychains"],
 		"filler": true
 	},
 	{
 		"count":1,
 		"name": "Golden Egg Statue Keychain",
-		"category": ["Rare Keychains","Keychains"],
+		"category": ["Rare Keychains"],
 		"filler": true
 	},
 	{
 		"count":1,
 		"name": "Magolor Keychain",
-		"category": ["Rare Keychains","Keychains"],
+		"category": ["Rare Keychains"],
 		"filler": true
 	},
 	{
 		"count":1,
 		"name": "Taranza Keychain",
-		"category": ["Rare Keychains","Keychains"],
+		"category": ["Rare Keychains"],
 		"filler": true
 	},
 	{
 		"count":1,
 		"name": "Queen Sectonia Keychain",
-		"category": ["Rare Keychains","Keychains"],
+		"category": ["Rare Keychains"],
 		"filler": true
 	},
 	{

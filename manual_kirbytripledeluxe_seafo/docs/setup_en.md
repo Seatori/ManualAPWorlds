@@ -3,15 +3,16 @@
 ## Required Software
 
 - Kirby: Triple Deluxe for the Nintendo 3DS
-  - Requires a file that has cleared story mode and unlocked all of the EX stages
+  - The Archipelago community cannot provide this.
+  - Requires a file that has cleared story mode and unlocked every EX stage.
 - [Archipelago](https://github.com/ArchipelagoMW/Archipelago/releases/latest)
-- [Kirby: Triple Deluxe APWorld](https://github.com/Seatori/ManualAPWorlds/releases)
+- [Kirby: Triple Deluxe Manual APWorld](https://github.com/Seatori/ManualAPWorlds/releases)
 
 ## Installation Procedures
 
 Install Archipelago in accordance to its provided instructions.
 
-Once installed, download the latest Kirby: Triple Deluxe APWorld from the provided link and install it
+Once installed, download the latest Kirby: Triple Deluxe Manual APWorld from the provided link and install it
 into the `custom_worlds` folder.
 
 ## Joining a MultiWorld Game
@@ -25,6 +26,8 @@ Click `Connect` in the top right corner. It should prompt you with your name.
 Input the name on the room page, which should align with the one you put into your YAML file.
 
 You should now be connected to the server!
+
+From here, you just have to load up your game, either on your 3DS or an emulator.
 
 ## Game Troubleshooting
 

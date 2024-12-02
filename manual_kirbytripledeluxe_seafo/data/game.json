@@ -1,2 +1,14 @@
 
-	{"game": "KirbyTripleDeluxe","creator": "Seafo","filler_item_name": "Keychain","death_link": true,"starting_items": [{"item_categories": ["Stages"],"random": 1}]}
+    {
+      "game": "KirbyTripleDeluxe",
+      "creator": "Seafo",
+      "filler_item_name": "Keychain",
+      "starting_index": 4500130000,
+      "death_link": true,
+      "starting_items": [
+        {
+          "items": ["Archer", "Beam", "Beetle", "Bell", "Bomb", "Circus", "Crash", "Cutter", "Fighter", "Fire", "Hammer", "Ice", "Leaf", "Mike", "Needle", "Ninja", "Parasol", "Sleep", "Spark", "Spear", "Stone", "Sword", "Wheel", "Whip", "Wing"],
+          "yaml_option": ["!randomize_copy_abilities"]
+        }
+      ]
+    }
