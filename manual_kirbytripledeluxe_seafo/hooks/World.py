@@ -15,8 +15,8 @@ from ..Data import game_table, item_table, location_table, region_table
 # These helper methods allow you to determine if an option has been set, or what its value is, for any player in the multiworld
 from ..Helpers import is_option_enabled, get_option_value
 
-import re
-
+from .Stage_Shuffle import \
+    shuffle_stages_early, shuffle_stages, shuffle_bosses, stage_order, main_stage_order, ex_stage_order, boss_order
 
 ########################################################################################
 ## Order of method calls when the world generates:
@@ -226,9 +226,9 @@ def before_create_items_filler(item_pool: list, world: World, multiworld: MultiW
     # Because multiple copies of an item can exist, you need to add an item name
     # to the list multiple times if you want to remove multiple copies of it.
 
-    for itemName in itemNamesToRemove:
-        item = next(i for i in item_pool if i.name == itemName)
-        item_pool.remove(item)
+    # for itemName in itemNamesToRemove:
+    #     item = next(i for i in item_pool if i.name == itemName)
+    #     item_pool.remove(item)
 
     if world.options.ability_testing_room == 2:
         get_atr = [i.name for i in item_pool if i.name == "Copy Ability Testing Room"]
@@ -236,57 +236,7 @@ def before_create_items_filler(item_pool: list, world: World, multiworld: MultiW
             remove_atr = next(i for i in item_pool if i.name == atr)
             item_pool.remove(remove_atr)
 
-    stage_shuffle = world.options.stage_shuffle
-    if stage_shuffle == 0:
-        # No stages are shuffled here, so we don't need any stage items.
-        stages = [i.name for i in item_pool
-                  if "Stage 1" in i.name or "Stage 2" in i.name or "Stage 3" in i.name
-                  or "Stage 4" in i.name or "Stage 5" in i.name or "Stage EX" in i.name]
-        for stages_to_remove in stages:
-            remove_stages = next(i for i in item_pool if i.name == stages_to_remove)
-            item_pool.remove(remove_stages)
-    elif stage_shuffle == 1:
-        # EX stages aren't shuffled here, so we don't need their items.
-        ex_stages = [i.name for i in item_pool if "Stage EX" in i.name]
-        for ex_stages_to_remove in ex_stages:
-            remove_ex_stages = next(i for i in item_pool if i.name == ex_stages_to_remove)
-            item_pool.remove(remove_ex_stages)
-
-        # Since only main stages are shuffled, we need to get one for the player to start with.
-        main_stages = [i for i in item_pool
-                       if "Stage 1" in i.name or "Stage 2" in i.name or "Stage 3" in i.name
-                       or "Stage 4" in i.name or "Stage 5" in i.name]
-        first_stage = world.random.choice(main_stages)
-        multiworld.push_precollected(first_stage)
-        item_pool.remove(first_stage)
-    elif stage_shuffle == 2:
-        # Main stages aren't shuffled here, so we don't need their items.
-        main_stages = [i.name for i in item_pool
-                       if "Stage 1" in i.name or "Stage 2" in i.name or "Stage 3" in i.name
-                       or "Stage 4" in i.name or "Stage 5" in i.name]
-        for main_stages_to_remove in main_stages:
-            remove_main_stages = next(i for i in item_pool if i.name == main_stages_to_remove)
-            item_pool.remove(remove_main_stages)
-    elif stage_shuffle == 3:
-        # Since stages are shuffled, we need to get one for the player to start with.
-        # We're only checking for main stages here because EX stages should always be shuffled between themselves.
-        main_stages = [i for i in item_pool
-                       if "Stage 1" in i.name or "Stage 2" in i.name or "Stage 3" in i.name
-                       or "Stage 4" in i.name or "Stage 5" in i.name]
-        first_stage = world.random.choice(main_stages)
-        multiworld.push_precollected(first_stage)
-        item_pool.remove(first_stage)
-    elif stage_shuffle == 4:
-        # Since stages are shuffled, we need to get one for the player to start with.
-        # In this case, we can start with any stage since they can each be in any position.
-        stages = [i for i in item_pool
-                  if "Stage 1" in i.name or "Stage 2" in i.name or "Stage 3" in i.name
-                  or "Stage 4" in i.name or "Stage 5" in i.name or "Stage EX" in i.name]
-        first_stage = world.random.choice(stages)
-        multiworld.push_precollected(first_stage)
-        item_pool.remove(first_stage)
-    else:
-        raise Exception("Invalid value for option 'Stage Shuffle'. Please report this to the maintainer.")
+    shuffle_stages_early(item_pool, world, multiworld, player)
 
     if world.options.sun_stone_count.value < 100:
         unneeded_sun_stones = 100 - world.options.sun_stone_count.value
@@ -451,81 +401,13 @@ def after_create_item(item: ManualItem, world: World, multiworld: MultiWorld, pl
 
 # This method is run towards the end of pre-generation, before the place_item options have been handled and before AP generation occurs
 def before_generate_basic(world: World, multiworld: MultiWorld, player: int) -> list:
-    stage_shuffle = world.options.stage_shuffle
-    boss_shuffle = world.options.boss_shuffle
-    # Stage Shuffle 4 and Boss Shuffle 3 are the default behavior, so we don't need to place anything here.
-    # Stage Shuffle 0 doesn't need any items placed, so we also check for it.
-    if (stage_shuffle == 0 or stage_shuffle == 4) and boss_shuffle == 3:
+    shuffle_bosses(world, multiworld, player)
+
+    # We don't need to do anything if Stage Shuffle is disabled, so we quit out early.
+    if world.options.stage_shuffle == 0:
         return []
 
-    if stage_shuffle == 1 or stage_shuffle == 3:
-        main_stage_locs = [loc for loc in multiworld.get_locations(player)
-                           if "Unlock 1st Stage" in loc.name or "Unlock 2nd Stage" in loc.name
-                           or "Unlock 3rd" in loc.name or "Unlock 4th" in loc.name or "Unlock 5th" in loc.name]
-        main_stage_items = [i for i in multiworld.get_items() if i.player == player
-                            and ("Stage 1" in i.name or "Stage 2" in i.name or "Stage 3" in i.name
-                            or "Stage 4" in i.name or "Stage 5" in i.name)]
-        for main_stage in main_stage_items:
-            if len(main_stage_locs) == 0:
-                break
-
-            next_main_stage = world.random.choice(main_stage_locs)
-            next_main_stage.place_locked_item(main_stage)
-            multiworld.itempool.remove(main_stage)
-            main_stage_locs.remove(next_main_stage)
-
-    if stage_shuffle == 2 or stage_shuffle == 3:
-        ex_stage_locs = [loc for loc in multiworld.get_locations(player)
-                         if "Unlock EX" in loc.name or "Unlock 1st EX" in loc.name or "Unlock 2nd EX" in loc.name]
-        ex_stage_items = [i for i in multiworld.get_items() if i.player == player
-                          and "Stage EX" in i.name]
-
-        for ex_stage in ex_stage_items:
-            if len(ex_stage_locs) == 0:
-                break
-
-            next_ex_stage = world.random.choice(ex_stage_locs)
-            next_ex_stage.place_locked_item(ex_stage)
-            multiworld.itempool.remove(ex_stage)
-            ex_stage_locs.remove(next_ex_stage)
-
-    if boss_shuffle == 3:
-        return []
-
-    if boss_shuffle == 0:
-        boss_stage_locs = [loc for loc in multiworld.get_locations(player)
-                           if "Level 1 Boss" in loc.name or "Level 2 Boss" in loc.name or "Level 3 Boss" in loc.name
-                           or "Level 4 Boss" in loc.name or "Level 5 Boss" in loc.name or "Level 6 Boss" in loc.name]
-        boss_stage_items = [i for i in multiworld.get_items() if i.player == player and "VS" in i.name]
-        for boss in boss_stage_items:
-            if len(boss_stage_locs) == 0:
-                break
-
-            boss_locations = boss_stage_locs.pop(0)
-            boss_locations.place_locked_item(boss)
-            multiworld.itempool.remove(boss)
-
-    if boss_shuffle == 1:
-        masked_dedede_loc = [loc for loc in multiworld.get_locations(player) if "Level 6 Boss" in loc.name]
-        masked_dedede_item = [i for i in multiworld.get_items() if i.player == player and i.name == "VS Masked Dedede"]
-        for boss in masked_dedede_item:
-            if len(masked_dedede_loc) == 0:
-                break
-
-            place_dedede = masked_dedede_loc.pop()
-            place_dedede.place_locked_item(boss)
-            multiworld.itempool.remove(boss)
-
-    if boss_shuffle == 2:
-        masked_dedede_loc = [loc for loc in multiworld.get_locations(player) if "Level 1 Boss" in loc.name]
-        masked_dedede_item = [i for i in multiworld.get_items() if i.player == player and i.name == "VS Masked Dedede"]
-        for boss in masked_dedede_item:
-            if len(masked_dedede_loc) == 0:
-                break
-
-            place_dedede = masked_dedede_loc.pop()
-            place_dedede.place_locked_item(boss)
-            multiworld.itempool.remove(boss)
+    shuffle_stages(world, multiworld, player)
 
 
 # This method is run at the very end of pre-generation, once the place_item options have been handled and before AP generation occurs
@@ -566,4 +448,80 @@ def before_extend_hint_information(hint_data: dict[int, dict[int, str]], world: 
 
 
 def after_extend_hint_information(hint_data: dict[int, dict[int, str]], world: World, multiworld: MultiWorld, player: int) -> None:
+    # In order to figure out hint information, we primarily need to check which items were placed on which locations.
+    # We then add the information to any of the corresponding locations.
+    # Not sure whether I'll use category or name lookup here, since both should work fine.
+    #
+    # Stage Shuffle has an additional caveat where we need to check which stage is in the player's starting inventory.
+    # This caveat does not apply to shuffling EX stages among themselves, which may cause 3 and 4 to need to be handled
+    # differently in some way.
+    #
+    # Boss Shuffle needs to filter out the Sun Stone requirement from the boss's location.
+    # Since this should always be clear to the player, we want to cut it down to only the level that the boss is in.
+    # This also creates some parity with how Stage Shuffle will be handled.
+    #
+    stage_shuffle = world.options.stage_shuffle
+    boss_shuffle = world.options.boss_shuffle
+    if stage_shuffle > 0 or boss_shuffle > 0:
+        hint_data.update({player: {}})
+    # Stage Shuffle first checks for if it has been enabled.
+    # Next, it needs to check for the specific value.
+    # 1 means only main stages are shuffled, 2 means only EX stages are shuffled, and 3 and 4 mean both are shuffled.
+    # We need one statement for main stages and one statement for EX stages, but shuffling both is more complicated.
+    # Either we can add a third statement that handles them individually, or we can just use the first two statements.
+    if stage_shuffle > 0:
+        if stage_shuffle == 1 or stage_shuffle == 3:
+            # TODO: Rewrite this to fetch the location names instead.
+            main_stage_locs = ["Level 1 - 1st Stage", "Level 1 - 2nd Stage",
+                               "Level 1 - 3rd Stage", "Level 1 - 4th Stage",
+                               "Level 2 - 1st Stage", "Level 2 - 2nd Stage",
+                               "Level 2 - 3rd Stage", "Level 2 - 4th Stage",
+                               "Level 3 - 1st Stage", "Level 3 - 2nd Stage",
+                               "Level 3 - 3rd Stage", "Level 3 - 4th Stage", "Level 3 - 5th Stage",
+                               "Level 4 - 1st Stage", "Level 4 - 2nd Stage",
+                               "Level 4 - 3rd Stage", "Level 4 - 4th Stage", "Level 4 - 5th Stage",
+                               "Level 5 - 1st Stage", "Level 5 - 2nd Stage",
+                               "Level 5 - 3rd Stage", "Level 5 - 4th Stage", "Level 5 - 5th Stage",
+                               "Level 6 - 1st Stage", "Level 6 - 2nd Stage",
+                               "Level 6 - 3rd Stage", "Level 6 - 4th Stage", "Level 6 - 5th Stage"]
+            main_stage_items = main_stage_order
+            iter(main_stage_items)
+
+
+        # for location in multiworld.get_locations(player):
+        #     if not location.address:
+        #         continue
+        #     if stage_shuffle == 1 or stage_shuffle == 3:
+        #         # TODO: Rewrite this to fetch the location names instead.
+        #         stage_locs = ["Level 1 - 1st Stage", "Level 1 - 2nd Stage",
+        #                       "Level 1 - 3rd Stage", "Level 1 - 4th Stage",
+        #                       "Level 2 - 1st Stage", "Level 2 - 2nd Stage",
+        #                       "Level 2 - 3rd Stage", "Level 2 - 4th Stage",
+        #                       "Level 3 - 1st Stage", "Level 3 - 2nd Stage",
+        #                       "Level 3 - 3rd Stage", "Level 3 - 4th Stage", "Level 3 - 5th Stage",
+        #                       "Level 4 - 1st Stage", "Level 4 - 2nd Stage",
+        #                       "Level 4 - 3rd Stage", "Level 4 - 4th Stage", "Level 4 - 5th Stage",
+        #                       "Level 5 - 1st Stage", "Level 5 - 2nd Stage",
+        #                       "Level 5 - 3rd Stage", "Level 5 - 4th Stage", "Level 5 - 5th Stage",
+        #                       "Level 6 - 1st Stage", "Level 6 - 2nd Stage",
+        #                       "Level 6 - 3rd Stage", "Level 6 - 4th Stage", "Level 6 - 5th Stage"]
+        #         # shuffled_main_stages, stage_locations = zip(*stage_locs, main_stage_order)
+        #         next_main_stage_item = iter(main_stage_order)
+        #         next_main_stage_loc = iter(stage_locs)
+        #         for _ in main_stage_order:
+
+                    # next_stage_loc = (loc.name for loc in multiworld.get_locations(player)
+                    #                   if next(next_main_stage_item) in loc.category)
+                    # print(next_stage_loc)
+                    # hint_data[player][world.multiworld.get_location(f"{next_stage_loc}", player).address] =\
+                    #     next(next_main_stage_loc)
+    # Boss Shuffle is much simpler to handle than Stage Shuffle.
+    # First we check if it has been enabled.
+    # Then we check whether the value is 1 or higher.
+    # 1 has a unique case where it needs to add hint information for everything except Masked Dedede.
+    # Meanwhile, 2 and 3 always need to give the player information about all 6 bosses.
+    if boss_shuffle > 0:
+        for location in multiworld.get_locations(player):
+            if not location.address:
+                continue
     pass
