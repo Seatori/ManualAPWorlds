@@ -410,20 +410,45 @@ def before_create_item(item_name: str, world: World, multiworld: MultiWorld, pla
 
 # The item that was created is provided after creation, in case you want to modify the item
 def after_create_item(item: ManualItem, world: World, multiworld: MultiWorld, player: int) -> ManualItem:
-    # Grand Sun Stones are always the biggest major unlocks, so they should always be Progression + Useful.
-    if item.name == "Grand Sun Stone":
-        item.classification = ItemClassification.progression | ItemClassification.useful
+    easy_logic = world.options.logic_difficulty == 0
+    normal_logic = world.options.logic_difficulty == 1
+    no_keychains = world.options.keychain_locations == 0
+    no_commons = world.options.keychain_locations < 2
+    no_fighters = not world.options.kirby_fighters_locations
 
-    # Bomb has no specific use when story mode is set to easy logic, but is always needed for Kirby Fighters.
-    # Though even when Kirby Fighters locations aren't enabled, Bomb is still nice to have.
-    if item.name == "Bomb":
-        if world.options.logic_difficulty == 0 and not world.options.kirby_fighters_locations:
+    if easy_logic:
+        # Wing is never used in easy logic.
+        if item.name == "Wing":
             item.classification = ItemClassification.useful
 
-    # Mike has an extra requirement added for easy logic, and all of its important requirements are considered 'hard'.
-    # Neither of these apply to normal logic, so it's never required for anything but is still good to have.
-    if item.name == "Mike":
-        if world.options.logic_difficulty == 1:
+        # Bomb is never used in easy logic if Kirby Fighters locations aren't enabled.
+        if no_fighters:
+            if item.name == "Bomb":
+                item.classification = ItemClassification.useful
+
+        if no_keychains:
+            # Spark is never used in easy logic if there aren't any Keychain locations.
+            if item.name == "Spark":
+                item.classification = ItemClassification.useful
+            # The same goes for Ninja and Parasol, but they're also used in Kirby Fighters.
+            if no_fighters:
+                if item.name == "Ninja":
+                    item.classification = ItemClassification.useful
+                if item.name == "Parasol":
+                    item.classification = ItemClassification.useful
+
+        if no_commons:
+            # Bell is only logically used for a common Keychain location, so if it doesn't exist then it's never needed.
+            if item.name == "Bell":
+                item.classification = ItemClassification.useful
+            # The same goes for Fighter, except that it's also used in Kirby Fighters.
+            if no_fighters:
+                if item.name == "Fighter":
+                    item.classification = ItemClassification.useful
+    # Mike has an extra requirement added for easy logic, and all of its logically relevant uses are considered 'hard'.
+    # Neither of these apply to normal logic, so it's never required for anything.
+    elif normal_logic:
+        if item.name == "Mike":
             item.classification = ItemClassification.useful
 
     # Sleep is a purely detrimental ability, and (theoretically) it would only be disadvantageous to receive it.
@@ -431,10 +456,9 @@ def after_create_item(item: ManualItem, world: World, multiworld: MultiWorld, pl
     if item.name == "Sleep":
         item.classification = ItemClassification.trap
 
-    # Wing has no specific use when story mode is set to easy logic, but is still good to have.
-    if item.name == "Wing":
-        if world.options.logic_difficulty == 0:
-            item.classification = ItemClassification.useful
+    # Grand Sun Stones are always the biggest major unlocks, so they should always be Progression + Useful.
+    if item.name == "Grand Sun Stone":
+        item.classification = ItemClassification.progression | ItemClassification.useful
 
     # Taking abilities from other areas is only needed in hard logic, and ability logic is only relevant if randomized.
     # It is however still convenient for if the player wants to go out of logic, or just use their favorite ability.
