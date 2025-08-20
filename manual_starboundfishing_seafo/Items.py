@@ -1,10 +1,7 @@
 from BaseClasses import Item
-from .Data import item_table, progressive_item_table
+from .Data import item_table
 from .Game import filler_item_name, starting_index
-from .hooks.Items import before_item_table_processed, before_progressive_item_table_processed
 
-item_table = before_item_table_processed(item_table)
-progressive_item_table = before_progressive_item_table_processed(progressive_item_table)
 
 ######################
 # Generate item lookups
@@ -26,16 +23,24 @@ if filler_item_name:
 
 # add sequential generated ids to the lists
 for key, val in enumerate(item_table):
+    if "id" in item_table[key]:
+        item_id = item_table[key]["id"]
+        if item_id >= count:
+            count = item_id
+        else:
+            raise ValueError(f"{item_table[key]['name']} has an invalid ID. ID must be at least {count + 1}")
+
     item_table[key]["id"] = count
     item_table[key]["progression"] = val["progression"] if "progression" in val else False
+    if isinstance(val.get("category", []), str):
+        item_table[key]["category"] = [val["category"]]
+        
     count += 1
 
 for item in item_table:
     item_name = item["name"]
     item_id_to_name[item["id"]] = item_name
     item_name_to_item[item_name] = item
-    if item["progression"]:
-        advancement_item_names.add(item_name)
 
     if item["id"] is not None:
         lastItemId = max(lastItemId, item["id"])
@@ -45,22 +50,15 @@ for item in item_table:
             item_name_groups[c] = []
         item_name_groups[c].append(item_name)
 
-progressive_item_list = {}
+    #Just lowercase the values here to remove all the .lower.strip down the line
+    item['value'] = {k.lower().strip(): v
+                     for k, v in item.get('value', {}).items()}
 
-for item in progressive_item_table:
-    progressiveName = progressive_item_table[item]
-    if progressiveName not in progressive_item_list:
-        progressive_item_list[progressiveName] = []
-    progressive_item_list[progressiveName].append(item)
-
-for progressiveItemName in progressive_item_list.keys():
-    lastItemId += 1
-    generatedItem = {}
-    generatedItem["id"] = lastItemId
-    generatedItem["name"] = progressiveItemName
-    generatedItem["progression"] = item_name_to_item[progressive_item_list[progressiveItemName][0]]["progression"]
-    item_name_to_item[progressiveItemName] = generatedItem
-    item_id_to_name[lastItemId] = progressiveItemName
+    for v in item.get("value", {}).keys():
+        group_name = f"has_{v}_value"
+        if group_name not in item_name_groups:
+            item_name_groups[group_name] = []
+        item_name_groups[group_name].append(item_name)
 
 item_id_to_name[None] = "__Victory__"
 item_name_to_id = {name: id for id, name in item_id_to_name.items()}
