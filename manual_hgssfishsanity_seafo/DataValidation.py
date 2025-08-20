@@ -1,6 +1,9 @@
 import logging
 import re
 import json
+from worlds.AutoWorld import World
+from BaseClasses import MultiWorld, ItemClassification
+
 
 class ValidationError(Exception):
     pass
@@ -24,8 +27,21 @@ class DataValidation():
                     if item.lower() == "or" or item.lower() == "and" or item == ")" or item == "(":
                         continue
                     else:
-                        # it's just a category, so ignore it
+                        # if it's a category, validate that the category exists
                         if '@' in item:
+                            item = item.replace("|", "")
+                            item_parts = item.split(":")
+                            item_name = item
+
+                            if len(item_parts) > 1:
+                                item_name = item_parts[0]
+
+                            item_name = item_name[1:]
+                            item_category_exists = len([item for item in DataValidation.item_table if item_name in item.get('category', [])]) > 0
+
+                            if not item_category_exists:
+                                raise ValidationError("Item category %s is required by location %s but is misspelled or does not exist." % (item_name, location["name"]))
+
                             continue
 
                         item = item.replace("|", "")
@@ -87,8 +103,21 @@ class DataValidation():
                     if item.lower() == "or" or item.lower() == "and" or item == ")" or item == "(":
                         continue
                     else:
-                        # it's just a category, so ignore it
+                        # if it's a category, validate that the category exists
                         if '@' in item:
+                            item = item.replace("|", "")
+                            item_parts = item.split(":")
+                            item_name = item
+
+                            if len(item_parts) > 1:
+                                item_name = item_parts[0]
+
+                            item_name = item_name[1:]
+                            item_category_exists = len([item for item in DataValidation.item_table if item_name in item.get('category', [])]) > 0
+
+                            if not item_category_exists:
+                                raise ValidationError("Item category %s is required by region %s but is misspelled or does not exist." % (item_name, region_name))
+
                             continue
 
                         item = item.replace("|", "")
@@ -193,6 +222,73 @@ class DataValidation():
                         raise ValidationError("Item %s is required by region %s, but the item is not marked as progression." % (item["name"], region_name))
 
     @staticmethod
+    def _checkLocationRequiresForItemValueWithRegex(values_requested: dict[str, int], requires) -> dict[str, int]:
+        if isinstance(requires, str) and 'ItemValue' in requires:
+            for result in re.findall(r'\{ItemValue\(([^:]*)\:(.*?)\)\}', requires):
+                value = result[0].lower().strip()
+                count = int(result[1].split(",")[0])
+                if not values_requested.get(value):
+                    values_requested[value] = count
+                else:
+                    values_requested[value] = max(values_requested[value], count)
+        return values_requested
+
+
+    @staticmethod
+    def preFillCheckIfEnoughItemsForValue(world: World, multiworld: MultiWorld):
+        from .Helpers import get_items_with_value, get_items_for_player, filter_used_regions
+        player = world.player
+        values_requested = {}
+        player_regions = []
+
+        #Grab all the player's regions
+        for region in multiworld.regions:
+            if region.player != player:
+                continue
+            player_regions.append(region)
+
+        used_regions = filter_used_regions(player_regions)
+        used_regions_names = {r.name for r in set(used_regions)}
+
+        #Check used regions (and their parent(s)) for ItemValue requirement
+        for region in used_regions:
+            manualregion = DataValidation.region_table.get(region.name, {})
+            if manualregion:
+                if manualregion.get("requires"):
+                    DataValidation._checkLocationRequiresForItemValueWithRegex(values_requested, json.dumps(manualregion["requires"]))
+
+                for region_entrance, require in manualregion.get('entrance_requires', {}).items():
+                    if region_entrance in used_regions_names:
+                        DataValidation._checkLocationRequiresForItemValueWithRegex(values_requested, json.dumps(require))
+
+                for region_exit, require in manualregion.get('exit_requires', {}).items():
+                    if region_exit in used_regions_names:
+                        DataValidation._checkLocationRequiresForItemValueWithRegex(values_requested, json.dumps(require))
+
+            for location in region.locations:
+                manualLocation = world.location_name_to_location.get(location.name, {})
+                if "requires" in manualLocation and manualLocation["requires"]:
+                    DataValidation._checkLocationRequiresForItemValueWithRegex(values_requested, json.dumps(manualLocation["requires"]))
+
+        # compare whats available vs requested but only if there's anything requested
+        if values_requested:
+            errors = []
+            existing_items = [item for item in get_items_for_player(multiworld, player, True) if
+                              item.code is not None and ItemClassification.progression in item.classification]
+            for value, val_count in values_requested.items():
+                items_value = get_items_with_value(world, multiworld, value, player)
+                found_count = 0
+                if items_value:
+                    for item in existing_items:
+                        if item.name in items_value:
+                            found_count += items_value[item.name]
+
+                if found_count < val_count:
+                    errors.append(f"   '{value}': {found_count} out of the {val_count} {value} worth of progression items required can be found.")
+            if errors:
+                raise ValidationError("There are not enough progression items for the following value(s): \n" + "\n".join(errors))
+
+    @staticmethod
     def checkRegionsConnectingToOtherRegions():
         for region_name in DataValidation.region_table:
             region = DataValidation.region_table[region_name]
@@ -205,13 +301,6 @@ class DataValidation():
 
                 if not region_exists:
                     raise ValidationError("Region %s connects to a region %s, which is misspelled or does not exist." % (region_name, connecting_region))
-
-    @staticmethod
-    def checkForMultipleVictoryLocations():
-        victory_count = len([location["name"] for location in DataValidation.location_table if "victory" in location and location["victory"]])
-
-        if victory_count > 1:
-            raise ValidationError("There are %s victory locations defined, but there should only be 1." % (str(victory_count)))
 
     @staticmethod
     def checkForDuplicateItemNames():
@@ -268,7 +357,7 @@ class DataValidation():
             if type(starting_block) is not dict or len(starting_block.keys()) == 0:
                 raise ValidationError("One of your starting item definitions is not a valid dictionary.\n   Each definition must be inside {}, as demonstrated in the Manual documentation.")
 
-            valid_keys = ["items", "item_categories", "random", "if_previous_item", "_comment"] # _comment is provided by schema
+            valid_keys = ["items", "item_categories", "random", "if_previous_item", "_comment", "yaml_option"] # _comment is provided by schema
             invalid_keys = [f'"{key}"' for key in starting_block.keys() if key not in valid_keys]
 
             if len(invalid_keys) > 0:
@@ -277,7 +366,10 @@ class DataValidation():
     @staticmethod
     def checkPlacedItemsAndCategoriesForBadSyntax():
         for location in DataValidation.location_table:
-            if not (place_item := location.get("place_item", False)) and not (place_item_category := location.get("place_item_category", False)):
+            place_item = location.get("place_item", False)
+            place_item_category = location.get("place_item_category", False)
+
+            if not place_item and not place_item_category:
                 continue
 
             if place_item and type(place_item) is not list:
@@ -331,12 +423,12 @@ class DataValidation():
 
     @staticmethod
     def checkForNonStartingRegionsThatAreUnreachable():
-        using_starting_regions = len([region for region in DataValidation.region_table if "starting" in DataValidation.region_table[region] and not DataValidation.region_table[region]["starting"]]) > 0
+        using_starting_regions = len([region for region in DataValidation.region_table if DataValidation.region_table[region].get("starting")]) > 0
 
         if not using_starting_regions:
             return
 
-        nonstarting_regions = [region for region in DataValidation.region_table if "starting" in DataValidation.region_table[region] and not DataValidation.region_table[region]["starting"]]
+        nonstarting_regions = [region for region in DataValidation.region_table if not DataValidation.region_table[region].get("starting")]
 
         for nonstarter in nonstarting_regions:
             regions_that_connect_to = [region for region in DataValidation.region_table if "connects_to" in DataValidation.region_table[region] and nonstarter in DataValidation.region_table[region]["connects_to"]]
@@ -345,9 +437,20 @@ class DataValidation():
                 raise ValidationError("The region '%s' is set as a non-starting region, but has no regions that connect to it. It will be inaccessible." % nonstarter)
 
 
+def runPreFillDataValidation(world: World, multiworld: MultiWorld):
+    validation_errors = []
+
+    # check if there is enough items with values
+    try: DataValidation.preFillCheckIfEnoughItemsForValue(world, multiworld)
+    except ValidationError as e: validation_errors.append(e)
+
+    if validation_errors:
+        heading = f"ValidationError(s) for pre_fill of {world.game}:";
+        newline = "\n"
+        raise Exception(f"\n\n{heading} \n\n{newline.join([' - ' + str(validation_error) for validation_error in validation_errors])}\n\n")
 
 # Called during stage_assert_generate
-def runGenerationDataValidation() -> None:
+def runGenerationDataValidation(cls) -> None:
     validation_errors = []
 
     # check that requires have correct item names in locations and regions
@@ -367,10 +470,6 @@ def runGenerationDataValidation() -> None:
 
     # check that regions that are connected to are correct
     try: DataValidation.checkRegionsConnectingToOtherRegions()
-    except ValidationError as e: validation_errors.append(e)
-
-    # check that the apworld creator didn't specify multiple victory conditions
-    try: DataValidation.checkForMultipleVictoryLocations()
     except ValidationError as e: validation_errors.append(e)
 
     # check for duplicate names in items, locations, and regions
@@ -405,5 +504,8 @@ def runGenerationDataValidation() -> None:
     # check for regions that are set as non-starting regions and have no connectors to them (so are unreachable)
     try: DataValidation.checkForNonStartingRegionsThatAreUnreachable()
     except ValidationError as e: validation_errors.append(e)
+
     if len(validation_errors) > 0:
-        raise Exception("\nValidationError(s): \n\n%s\n\n" % ("\n".join([' - ' + str(validation_error) for validation_error in validation_errors])))
+        heading = f"ValidationError(s) in {cls.game}:";
+
+        raise Exception("\n\n%s \n\n%s\n\n" % (heading, "\n".join([' - ' + str(validation_error) for validation_error in validation_errors])))

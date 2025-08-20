@@ -1,0 +1,30 @@
+{
+    "core": {
+        "filler_traps": {
+            "_comment": "Currently non-functional; may add later.",
+            "display_name": "Filler Trap Percentage",
+            "description": [
+                "Replaces the given percentage of Dive Balls, Net Balls, and Lure Balls with 'Failed Catch Traps'. ",
+                "When received, a Failed Catch Trap forces you to flee from your current (or next) encounter."
+            ],
+            "hidden": true
+        }
+    },
+    "user": {
+        "routesanity": {
+            "display_name": "Routesanity",
+            "description": [
+                "Makes it so that items are rewarded each time a species is caught in a new area. ",
+                "For example, this means you get an item for catching a Magikarp in New Bark Town, ",
+                "another item for catching a Magikarp in Cherrygrove City, and so on. ",
+                "",
+                "The extra locations also result in more important items being shuffled into the pool, ",
+                "including locking the use of repels, status ailments in battle, both fishing abilities separately, ",
+                "the Bicycle, and an extra key item to match an otherwise irrelevant vanilla progression blocker. ",
+                "",
+                "Effectively adds an additional 182 checks when enabled."
+            ],
+            "type": "Toggle"
+        }
+    }
+}
