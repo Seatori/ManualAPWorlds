@@ -45,12 +45,14 @@ class RandomizeKeychains(Choice):
     Randomizing all Keychains adds an additional 102 checks, for a total of 137 added.
     """
     alias_false = 0
-    option_no = 0
+    alias_no = 0
+    option_none = 0
     alias_rare_keychains = 1
     alias_rares_only = 1
     option_only_rares = 1
     alias_true = 2
-    option_yes = 2
+    alias_yes = 2
+    option_all = 2
     display_name = "Keychain Locations"
 
 
