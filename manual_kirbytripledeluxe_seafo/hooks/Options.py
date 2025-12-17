@@ -1,9 +1,10 @@
 # Object classes from AP that represent different types of options that you can create
-from Options import (FreeText, NumericOption, Toggle, DefaultOnToggle, Choice, TextChoice, Range, NamedRange,
-                     OptionGroup, Visibility)
+from Options import (Option, FreeText, NumericOption, Toggle, DefaultOnToggle, Choice, TextChoice, Range, NamedRange,
+                     OptionGroup, PerGameCommonOptions, Visibility, DeathLink)
 
 # These helper methods allow you to determine if an option has been set, or what its value is, for any player in the multiworld
 from ..Helpers import is_option_enabled, get_option_value
+from typing import Type
 
 
 ####################################################################
@@ -401,24 +402,25 @@ class ExtraSunStones(Choice):
     display_name = "Excess Sun Stones"
 
 
-class FillerTrapPercent(NamedRange):
-    """
-    How many random Keychains will be replaced by Lose Ability Traps.
-    Lose Ability Traps make Kirby eject whatever ability he had. They do nothing if he didn't have one.
-    
-    0 means no traps are added, 100 means any non-rare Keychains that would otherwise exist will be replaced by traps.
-    """
-    display_name = "Filler Trap Percentage"
-    range_start = 0
-    range_end = 100
-
-    special_range_names = {
-        "none": 0,
-        "some": 25,
-        "half": 50,
-        "most": 75,
-        "all": 100,
-    }
+# Might try to reuse the special range names if I can get filler traps into an option group
+# class FillerTrapPercent(NamedRange):
+    #     """
+    #     How many random Keychains will be replaced by Lose Ability Traps.
+    #     Lose Ability Traps make Kirby eject whatever ability he had. They do nothing if he didn't have one.
+    #
+    #     0 means no traps are added, 100 means any non-rare Keychains that would otherwise exist will be replaced by traps.
+    #     """
+    #     display_name = "Filler Trap Percentage"
+    #     range_start = 0
+    #     range_end = 100
+    #
+    #     special_range_names = {
+    #         "none": 0,
+    #         "some": 25,
+    #         "half": 50,
+    #         "most": 75,
+    #         "all": 100,
+#     }
 
 
 class Goal(Range):
@@ -459,8 +461,27 @@ def before_options_defined(options: dict) -> dict:
     return options
 
 
+def before_option_groups_created(groups: dict[str, list[Option]]) -> dict[str, list[Option]]:
+    # Uses the format groups['GroupName'] = [TotalCharactersToWinWith]
+    groups['Items & Locations'] = [RandomizeAbilities, RandomizeKeychains, GoalGames, KirbyFighters, ExtraStageKeys,
+                                   AbilityTestingRoom]
+    groups['Stage Shuffling'] = [StageRando, BossRando]
+    groups['Logic'] = [LogicDifficulty]
+    groups['Sun Stones & Boss Requirements'] = [SunStoneCount, Level1BossRequirement, Level2BossRequirement,
+                                                Level3BossRequirement, Level4BossRequirement, Level5BossRequirement,
+                                                Level6BossRequirement, QueenSectoniaRequirement, ExtraSunStones]
+    groups['Extra Challenges'] = [DeathLink]
+    return groups
+
+
+def after_option_groups_created(groups: list[OptionGroup]) -> list[OptionGroup]:
+    return groups
+
+
 # This is called after any manual options are defined, in case you want to see what options are defined or want to modify the defined options
-def after_options_defined(options: dict) -> dict:
-    options["filler_traps"] = FillerTrapPercent
-    options["goal"] = Goal
-    return options
+def after_options_defined(options: Type[PerGameCommonOptions]):
+    options.type_hints['goal'].visibility = Visibility.none
+    options.type_hints['filler_traps'].visibility = Visibility.none  # Temporary until I can get it into Extra Challenges
+    # options.type_hints['filler_traps'].display_name = "Filler Trap Percentage"
+    # options.type_hints['filler_traps'].__doc__ = "How many random Keychains will be replaced by Lose Ability Traps. \nLose Ability Traps make Kirby eject whatever ability he had. They do nothing if he didn't have one.\n\n0 means no traps are added, 100 means any non-rare Keychains that would otherwise exist will be replaced by traps."
+    pass
