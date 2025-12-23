@@ -45,7 +45,7 @@
                     "level_6_boss_sun_stones": "normal",
                     "queen_sectonia_boss_requirement": "vanilla",
                     "excess_sun_stones": "progression",
-                    "filler_traps": "none",
+                    "lose_ability_traps": "none",
                     "death_link": false
                 },
                 "Moderate": {
@@ -64,7 +64,7 @@
                     "level_6_boss_sun_stones": "extra",
                     "queen_sectonia_boss_requirement": "vanilla",
                     "excess_sun_stones": "useful",
-                    "filler_traps": "some",
+                    "lose_ability_traps": "some",
                     "death_link": false
                 },
                 "Advanced": {
@@ -86,7 +86,7 @@
                     "level_6_boss_sun_stones": "random",
                     "queen_sectonia_boss_requirement": 4,
                     "excess_sun_stones": "removed",
-                    "filler_traps": "half",
+                    "lose_ability_traps": "half",
                     "death_link": true
                 },
                 "Short": {
@@ -106,7 +106,7 @@
                     "level_5_boss_sun_stones": 15,
                     "level_6_boss_sun_stones": 10,
                     "queen_sectonia_boss_requirement": "vanilla",
-                    "filler_traps": "none",
+                    "lose_ability_traps": "none",
                     "death_link": false
                 },
                 "Long": {
@@ -126,7 +126,7 @@
                     "level_5_boss_sun_stones": "double",
                     "level_6_boss_sun_stones": "double",
                     "queen_sectonia_boss_requirement": "vanilla",
-                    "filler_traps": "none",
+                    "lose_ability_traps": "none",
                     "death_link": false
                 },
                 "Sun Stone Hunt": {
@@ -159,7 +159,7 @@
                     "level_6_boss_sun_stones": "random",
                     "queen_sectonia_boss_requirement": "random",
                     "excess_sun_stones": "random",
-                    "filler_traps": "random",
+                    "lose_ability_traps": "random",
                     "death_link": "random"
                 }
             }

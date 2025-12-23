@@ -402,39 +402,38 @@ class ExtraSunStones(Choice):
     display_name = "Excess Sun Stones"
 
 
-# Might try to reuse the special range names if I can get filler traps into an option group
-# class FillerTrapPercent(NamedRange):
-    #     """
-    #     How many random Keychains will be replaced by Lose Ability Traps.
-    #     Lose Ability Traps make Kirby eject whatever ability he had. They do nothing if he didn't have one.
-    #
-    #     0 means no traps are added, 100 means any non-rare Keychains that would otherwise exist will be replaced by traps.
-    #     """
-    #     display_name = "Filler Trap Percentage"
-    #     range_start = 0
-    #     range_end = 100
-    #
-    #     special_range_names = {
-    #         "none": 0,
-    #         "some": 25,
-    #         "half": 50,
-    #         "most": 75,
-    #         "all": 100,
-#     }
+class LoseAbilityTrapPercent(NamedRange):
+    """
+    How many random Keychains will be replaced by Lose Ability Traps.
+    Lose Ability Traps make Kirby eject whatever ability he had. They do nothing if he didn't have one.
 
-
-class Goal(Range):
+    0 means no traps are added, 100 means any non-rare Keychains that would otherwise exist will be replaced by traps.
+    """
+    display_name = "Lose Ability Trap Percentage"
     range_start = 0
-    range_end = 6
-    visibility = Visibility.none
+    range_end = 100
+
+    special_range_names = {
+        "none": 0,
+        "some": 25,
+        "half": 50,
+        "most": 75,
+        "all": 100,
+    }
 
 
-class DeprecatedFightersName(Choice):
-    option_false = 0
-    option_true = 1
-    option_disabled = 2
-    default = 2
-    visibility = Visibility.none
+# class Goal(Range):
+#     range_start = 0
+#     range_end = 6
+#     visibility = Visibility.none
+
+
+# class DeprecatedFightersName(Choice):
+#     option_false = 0
+#     option_true = 1
+#     option_disabled = 2
+#     default = 2
+#     visibility = Visibility.none
 
 
 # This is called before any manual options are defined, in case you want to define your own with a clean slate or let Manual define over them
@@ -457,7 +456,8 @@ def before_options_defined(options: dict) -> dict:
     options["level_6_boss_sun_stones"] = Level6BossRequirement
     options["queen_sectonia_boss_requirement"] = QueenSectoniaRequirement
     options["excess_sun_stones"] = ExtraSunStones
-    options["enable_kirby_fighters_locations"] = DeprecatedFightersName
+    options["lose_ability_traps"] = LoseAbilityTrapPercent
+    # options["enable_kirby_fighters_locations"] = DeprecatedFightersName
     return options
 
 
@@ -470,7 +470,7 @@ def before_option_groups_created(groups: dict[str, list[Option]]) -> dict[str, l
     groups['Sun Stones & Boss Requirements'] = [SunStoneCount, Level1BossRequirement, Level2BossRequirement,
                                                 Level3BossRequirement, Level4BossRequirement, Level5BossRequirement,
                                                 Level6BossRequirement, QueenSectoniaRequirement, ExtraSunStones]
-    groups['Extra Challenges'] = [DeathLink]
+    groups['Extra Challenges'] = [LoseAbilityTrapPercent, DeathLink]
     return groups
 
 

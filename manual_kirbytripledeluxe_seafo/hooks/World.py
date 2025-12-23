@@ -37,10 +37,16 @@ def hook_get_filler_item_name(world: World, multiworld: MultiWorld, player: int)
     return False
 
 
-# Called before regions and locations are created. Not clear why you'd want this, but it's here. Victory location is included, but Victory event is not placed yet.
-def before_create_regions(world: World, multiworld: MultiWorld, player: int):
-    if world.options.enable_kirby_fighters_locations.value < 2:
-        raise OptionError("Outdated option name 'enable_kirby_fighters_locations'. Please use an updated YAML.")
+def before_generate_early(world: World, multiworld: MultiWorld, player: int) -> None:
+    # Probably good to have this deprecated now
+    # if world.options.enable_kirby_fighters_locations.value < 2:
+    #     raise OptionError("Outdated option name 'enable_kirby_fighters_locations'. Please use an updated YAML.")
+
+    filler_traps = world.options.filler_traps.value
+    lose_ability_traps = world.options.lose_ability_traps.value
+    trap_percent = max(filler_traps, lose_ability_traps)
+    world.options.filler_traps.value = trap_percent
+    world.options.lose_ability_traps.value = trap_percent
 
     sectonia_boss_req = world.options.queen_sectonia_boss_requirement.value
     if sectonia_boss_req == -1:
@@ -149,6 +155,11 @@ def before_create_regions(world: World, multiworld: MultiWorld, player: int):
             logging.warning(f"Not enough Sun Stones to match Level 6 Boss requirement for player "
                             f"{world.multiworld.get_player_name(world.player)}. Lowering requirement to 1 Sun Stone.")
         world.options.level_6_boss_sun_stones.value = sun_stones
+
+
+# Called before regions and locations are created. Not clear why you'd want this, but it's here. Victory location is included, but Victory event is not placed yet.
+def before_create_regions(world: World, multiworld: MultiWorld, player: int):
+    pass
 
 
 # Called after regions and locations are created, in case you want to see or modify that information. Victory location is included.
