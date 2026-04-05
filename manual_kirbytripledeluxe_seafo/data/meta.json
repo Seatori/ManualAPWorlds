@@ -29,7 +29,7 @@
             "options_presets": {
                 "Beginner": {
                     "randomize_copy_abilities": true,
-                    "keychain_locations": "no",
+                    "keychain_locations": "none",
                     "goal_game_locations": true,
                     "kirby_fighters_locations": false,
                     "progressive_ex_stage_keys": true,
@@ -70,7 +70,7 @@
                 "Advanced": {
                     "progression_balancing": 25,
                     "randomize_copy_abilities": true,
-                    "keychain_locations": "yes",
+                    "keychain_locations": "all",
                     "goal_game_locations": true,
                     "kirby_fighters_locations": true,
                     "progressive_ex_stage_keys": false,
@@ -91,7 +91,7 @@
                 },
                 "Short": {
                     "randomize_copy_abilities": true,
-                    "keychain_locations": "no",
+                    "keychain_locations": "none",
                     "goal_game_locations": true,
                     "progressive_ex_stage_keys": true,
                     "ability_testing_room": "randomized",
@@ -112,7 +112,7 @@
                 "Long": {
                     "progression_balancing": 0,
                     "randomize_copy_abilities": true,
-                    "keychain_locations": "yes",
+                    "keychain_locations": "all",
                     "goal_game_locations": true,
                     "progressive_ex_stage_keys": false,
                     "ability_testing_room": "randomized",

@@ -38,7 +38,7 @@ def hook_get_filler_item_name(world: World, multiworld: MultiWorld, player: int)
 
 
 def before_generate_early(world: World, multiworld: MultiWorld, player: int) -> None:
-    # Probably good to have this deprecated now
+    # Probably good to fully remove this now.
     # if world.options.enable_kirby_fighters_locations.value < 2:
     #     raise OptionError("Outdated option name 'enable_kirby_fighters_locations'. Please use an updated YAML.")
 
@@ -57,7 +57,7 @@ def before_generate_early(world: World, multiworld: MultiWorld, player: int) -> 
     if world.options.keychain_locations > 0 or world.options.goal_game_locations:
         pass
     else:
-        location_total = 106
+        location_total = 100
         item_total = 11
         if world.options.randomize_copy_abilities:
             item_total += 25
@@ -75,13 +75,21 @@ def before_generate_early(world: World, multiworld: MultiWorld, player: int) -> 
             location_total += 10
         if world.options.ability_testing_room == 1:
             item_total += 1
+        # If the number of Sun Stones required is too high, no Sun Stones can be placed on boss locations.
+        # There are assuredly less restrictive ways of doing this, but this method should suffice.
+        for option in (world.options.level_1_boss_sun_stones, world.options.level_2_boss_sun_stones,
+                       world.options.level_3_boss_sun_stones, world.options.level_4_boss_sun_stones,
+                       world.options.level_5_boss_sun_stones, world.options.level_6_boss_sun_stones):
+            if option.value <= location_total - item_total - 6:
+                location_total += 1
+
         extra_locations = location_total - item_total
         # Ensuring that the number of Sun Stones added to the pool isn't higher than the number defined by the option.
         if extra_locations >= world.options.sun_stone_count.value:
             pass
         else:
             excess_sun_stones = world.options.sun_stone_count.value - extra_locations
-            logging.warning(f"Not enough locations for all Sun Stones to be placed for player "
+            logging.warning(f"There may not be enough locations for all Sun Stones to be placed for player "
                             f"{world.multiworld.get_player_name(world.player)}. Removing {excess_sun_stones} of their "
                             f"Sun Stones.")
             world.options.sun_stone_count.value = extra_locations
@@ -164,7 +172,7 @@ def before_create_regions(world: World, multiworld: MultiWorld, player: int):
 
 # Called after regions and locations are created, in case you want to see or modify that information. Victory location is included.
 def after_create_regions(world: World, multiworld: MultiWorld, player: int):
-    # Use this hook to remove locations from the world
+    # Removing all unused boss unlock locations.
     level_1_boss = world.options.level_1_boss_sun_stones.value
     if level_1_boss > 0: 
         remove_first_boss = [loc.name for loc in multiworld.get_locations(player) if "Level 1 Boss" in loc.name
@@ -215,6 +223,13 @@ def after_create_regions(world: World, multiworld: MultiWorld, player: int):
         remove_keychains = [loc.name for loc in multiworld.get_locations(player) if "Keychain" in loc.name]
     else:
         remove_keychains = []
+
+    # Manual's place_item function currently fails unit tests, so we do it here instead.
+    atr_loc = [loc for loc in multiworld.get_locations(player) if "Unlock Copy Ability Testing Room" in loc.name]
+    atr_item = next(i for i in multiworld.get_items() if i.player == player and i.name == "Copy Ability Testing Room")
+    place_atr = atr_loc.pop()
+    place_atr.place_locked_item(atr_item)
+    multiworld.itempool.remove(atr_item)
 
     stage_shuffle = world.options.stage_shuffle.value
     # Here we remove every 'Unlock Stage' location, since all stages are in their vanilla positions.
@@ -314,16 +329,21 @@ def before_create_items_filler(item_pool: list, world: World, multiworld: MultiW
             remove_sun_stones = next(i for i in item_pool if i.name == "Sun Stone")
             item_pool.remove(remove_sun_stones)
 
+    # Checking the number of Sun Stones that need to be progression items.
+    prog_sun_stones = max(world.options.level_1_boss_sun_stones.value, world.options.level_2_boss_sun_stones.value,
+                          world.options.level_3_boss_sun_stones.value, world.options.level_4_boss_sun_stones.value,
+                          world.options.level_5_boss_sun_stones.value, world.options.level_6_boss_sun_stones.value)
+    # Getting all the Sun Stones from the pool.
+    total_sun_stones = [i for i in item_pool if i.name == "Sun Stone"]
+
+    if len(total_sun_stones) > 10:
+        for _, item in zip(range(len(total_sun_stones)), total_sun_stones):  # Surely there must be a better way??
+            item.classification |= ItemClassification.deprioritized
+
     # If we want our excess Sun Stones to be progression items, we don't need to do anything here.
     if world.options.excess_sun_stones == 0:
         pass
     else:
-        # Getting the number of Sun Stones that need to be progression items.
-        prog_sun_stones = max(world.options.level_1_boss_sun_stones, world.options.level_2_boss_sun_stones,
-                              world.options.level_3_boss_sun_stones, world.options.level_4_boss_sun_stones,
-                              world.options.level_5_boss_sun_stones, world.options.level_6_boss_sun_stones)
-        # Checking how many Sun Stones are in the pool.
-        total_sun_stones = [i for i in item_pool if i.name == "Sun Stone"]
         # Calculating the number of unnecessary Sun Stones by subtracting the number in the pool by how many are needed.
         excess_sun_stones = len(total_sun_stones) - prog_sun_stones
 

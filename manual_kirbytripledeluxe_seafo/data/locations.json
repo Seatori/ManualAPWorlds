@@ -2,18 +2,21 @@
 	{
 		"name": "Level 1 - Unlock 2nd Stage",
 		"region": "Fine Fields",
+		"sort-key": "l1s2",
 		"category": ["A1 - Level 1 Stages","Main Stages"],
 		"requires": []
 	},
 	{
 		"name": "Level 1 - Unlock 3rd Stage",
 		"region": "Fine Fields",
+		"sort-key": "l1s3",
 		"category": ["A1 - Level 1 Stages","Main Stages"],
 		"requires": []
 	},
 	{
 		"name": "Level 1 - Unlock 4th Stage",
 		"region": "Fine Fields",
+		"sort-key": "l1s4",
 		"category": ["A1 - Level 1 Stages","Main Stages"],
 		"requires": []
 	},
@@ -626,30 +629,35 @@
 	{
 		"name": "Level 1 - Unlock EX Stage",
 		"region": "Fine Fields",
+		"sort-key": "l1s6",
 		"category": ["A1 - Level 1 Stages","EX Stages"],
 		"requires": "|Progressive EX Stage Key:1| OR |Level 1 EX Stage Key|"
 	},
 	{
 		"name": "Level 2 - Unlock 1st Stage",
 		"region": "Lollipop Land",
+		"sort-key": "l2s1",
 		"category": ["A2 - Level 2 Stages","Main Stages"],
 		"requires": []
 	},
 	{
 		"name": "Level 2 - Unlock 2nd Stage",
 		"region": "Lollipop Land",
+		"sort-key": "l2s2",
 		"category": ["A2 - Level 2 Stages","Main Stages"],
 		"requires": []
 	},
 	{
 		"name": "Level 2 - Unlock 3rd Stage",
 		"region": "Lollipop Land",
+		"sort-key": "l2s3",
 		"category": ["A2 - Level 2 Stages","Main Stages"],
 		"requires": []
 	},
 	{
 		"name": "Level 2 - Unlock 4th Stage",
 		"region": "Lollipop Land",
+		"sort-key": "l2s4",
 		"category": ["A2 - Level 2 Stages","Main Stages"],
 		"requires": []
 	},
@@ -1262,36 +1270,42 @@
 	{
 		"name": "Level 2 - Unlock EX Stage",
 		"region": "Lollipop Land",
+		"sort-key": "l2s6",
 		"category": ["A2 - Level 2 Stages","EX Stages"],
 		"requires": "|Progressive EX Stage Key:2| OR |Level 2 EX Stage Key|"
 	},
 	{
 		"name": "Level 3 - Unlock 1st Stage",
 		"region": "Old Odyssey",
+		"sort-key": "l3s1",
 		"category": ["A3 - Level 3 Stages","Main Stages"],
 		"requires": []
 	},
 	{
 		"name": "Level 3 - Unlock 2nd Stage",
 		"region": "Old Odyssey",
+		"sort-key": "l3s2",
 		"category": ["A3 - Level 3 Stages","Main Stages"],
 		"requires": []
 	},
 	{
 		"name": "Level 3 - Unlock 3rd Stage",
 		"region": "Old Odyssey",
+		"sort-key": "l3s3",
 		"category": ["A3 - Level 3 Stages","Main Stages"],
 		"requires": []
 	},
 	{
 		"name": "Level 3 - Unlock 4th Stage",
 		"region": "Old Odyssey",
+		"sort-key": "l3s4",
 		"category": ["A3 - Level 3 Stages","Main Stages"],
 		"requires": []
 	},
 	{
 		"name": "Level 3 - Unlock 5th Stage",
 		"region": "Old Odyssey",
+		"sort-key": "l3s5",
 		"category": ["A3 - Level 3 Stages","Main Stages"],
 		"requires": []
 	},
@@ -1904,36 +1918,42 @@
 	{
 		"name": "Level 3 - Unlock EX Stage",
 		"region": "Old Odyssey",
+		"sort-key": "l3s7",
 		"category": ["A3 - Level 3 Stages","EX Stages"],
 		"requires": "|Progressive EX Stage Key:3| OR |Level 3 EX Stage Key|"
 	},
 	{
 		"name": "Level 4 - Unlock 1st Stage",
 		"region": "Wild World",
+		"sort-key": "l4s1",
 		"category": ["A4 - Level 4 Stages","Main Stages"],
 		"requires": []
 	},
 	{
 		"name": "Level 4 - Unlock 2nd Stage",
 		"region": "Wild World",
+		"sort-key": "l4s2",
 		"category": ["A4 - Level 4 Stages","Main Stages"],
 		"requires": []
 	},
 	{
 		"name": "Level 4 - Unlock 3rd Stage",
 		"region": "Wild World",
+		"sort-key": "l4s3",
 		"category": ["A4 - Level 4 Stages","Main Stages"],
 		"requires": []
 	},
 	{
 		"name": "Level 4 - Unlock 4th Stage",
 		"region": "Wild World",
+		"sort-key": "l4s4",
 		"category": ["A4 - Level 4 Stages","Main Stages"],
 		"requires": []
 	},
 	{
 		"name": "Level 4 - Unlock 5th Stage",
 		"region": "Wild World",
+		"sort-key": "l4s5",
 		"category": ["A4 - Level 4 Stages","Main Stages"],
 		"requires": []
 	},
@@ -2546,36 +2566,42 @@
 	{
 		"name": "Level 4 - Unlock EX Stage",
 		"region": "Wild World",
+		"sort-key": "l4s7",
 		"category": ["A4 - Level 4 Stages","EX Stages"],
 		"requires": "|Progressive EX Stage Key:4| OR |Level 4 EX Stage Key|"
 	},
 	{
 		"name": "Level 5 - Unlock 1st Stage",
 		"region": "Endless Explosions",
+		"sort-key": "l5s1",
 		"category": ["A5 - Level 5 Stages","Main Stages"],
 		"requires": []
 	},
 	{
 		"name": "Level 5 - Unlock 2nd Stage",
 		"region": "Endless Explosions",
+		"sort-key": "l5s2",
 		"category": ["A5 - Level 5 Stages","Main Stages"],
 		"requires": []
 	},
 	{
 		"name": "Level 5 - Unlock 3rd Stage",
 		"region": "Endless Explosions",
+		"sort-key": "l5s3",
 		"category": ["A5 - Level 5 Stages","Main Stages"],
 		"requires": []
 	},
 	{
 		"name": "Level 5 - Unlock 4th Stage",
 		"region": "Endless Explosions",
+		"sort-key": "l5s4",
 		"category": ["A5 - Level 5 Stages","Main Stages"],
 		"requires": []
 	},
 	{
 		"name": "Level 5 - Unlock 5th Stage",
 		"region": "Endless Explosions",
+		"sort-key": "l5s5",
 		"category": ["A5 - Level 5 Stages","Main Stages"],
 		"requires": []
 	},
@@ -3188,36 +3214,42 @@
 	{
 		"name": "Level 5 - Unlock EX Stage",
 		"region": "Endless Explosions",
+		"sort-key": "l5s7",
 		"category": ["A5 - Level 5 Stages","EX Stages"],
 		"requires": "|Progressive EX Stage Key:5| OR |Level 5 EX Stage Key|"
 	},
 	{
 		"name": "Level 6 - Unlock 1st Stage",
 		"region": "Royal Road",
+		"sort-key": "l6s1",
 		"category": ["A6 - Level 6 Stages","Main Stages"],
 		"requires": []
 	},
 	{
 		"name": "Level 6 - Unlock 2nd Stage",
 		"region": "Royal Road",
+		"sort-key": "l6s2",
 		"category": ["A6 - Level 6 Stages","Main Stages"],
 		"requires": []
 	},
 	{
 		"name": "Level 6 - Unlock 3rd Stage",
 		"region": "Royal Road",
+		"sort-key": "l6s3",
 		"category": ["A6 - Level 6 Stages","Main Stages"],
 		"requires": []
 	},
 	{
 		"name": "Level 6 - Unlock 4th Stage",
 		"region": "Royal Road",
+		"sort-key": "l6s4",
 		"category": ["A6 - Level 6 Stages","Main Stages"],
 		"requires": []
 	},
 	{
 		"name": "Level 6 - Unlock 5th Stage",
 		"region": "Royal Road",
+		"sort-key": "l6s5",
 		"category": ["A6 - Level 6 Stages","Main Stages"],
 		"requires": []
 	},
@@ -3830,53 +3862,56 @@
 	{
 		"name": "Level 6 - Unlock 1st EX Stage",
 		"region": "Royal Road",
+		"sort-key": "l6s7",
 		"category": ["A6 - Level 6 Stages","EX Stages"],
 		"requires": "|Progressive EX Stage Key:6| OR |Level 6 EX Stage Key|"
 	},
 	{
 		"name": "Level 6 - Unlock 2nd EX Stage",
 		"region": "Royal Road",
+		"sort-key": "l6s8",
 		"category": ["A6 - Level 6 Stages","EX Stages"],
 		"requires": "|Progressive EX Stage Key:6| OR |Level 6 EX Stage Key|"
 	},
 	{
 		"name": "FiFi Stage 1 - Keychain in Grass",
 		"region": "Fine Fields Stage 1",
+		"sort-key": "l1s1-01",
 		"category": ["B1 - Fine Fields Stage 1","Keychain Locations","Fine Fields Stage 1","Fine Fields"],
 		"requires": "({easy_logic()} AND |Sword|) OR ({normal_logic()} AND (|Fire| OR |Sword|)) OR ({hard_logic()} AND ({can_use_archer()} OR {can_use_beetle()} OR {can_use_circus()} OR {can_use_cutter()} OR {can_use_fighter()} OR |Fire| OR {can_use_hammer()} OR {can_use_leaf()} OR {can_use_ninja()} OR {can_use_spear()} OR |Sword| OR {can_use_wing()}))"
 	},
 	{
 		"name": "FiFi Stage 1 - Keychain Under Crate",
 		"region": "Fine Fields Stage 1",
-		"sort-key": "l1s1-01",
+		"sort-key": "l1s1-02",
 		"category": ["B1 - Fine Fields Stage 1","Keychain Locations","Fine Fields Stage 1","Fine Fields"],
 		"requires": []
 	},
 	{
 		"name": "FiFi Stage 1 - Sun Stone 1 Under Tree",
 		"region": "Fine Fields Stage 1",
-		"sort-key": "l1s1-02",
+		"sort-key": "l1s1-03",
 		"category": ["B1 - Fine Fields Stage 1","Sun Stone Locations","Fine Fields Stage 1","Fine Fields"],
 		"requires": []
 	},
 	{
 		"name": "FiFi Stage 1 - Sun Stone 2 in Stone Block",
 		"region": "Fine Fields Stage 1",
-		"sort-key": "l1s1-03",
+		"sort-key": "l1s1-04",
 		"category": ["B1 - Fine Fields Stage 1","Sun Stone Locations","Fine Fields Stage 1","Fine Fields"],
 		"requires": []
 	},
 	{
 		"name": "FiFi Stage 1 - Rare Keychain in Hypernova Segment",
 		"region": "Fine Fields Stage 1",
-		"sort-key": "l1s1-04",
+		"sort-key": "l1s1-05",
 		"category": ["B1 - Fine Fields Stage 1","Keychain Locations","Rare Keychain Locations","Fine Fields Stage 1","Fine Fields"],
 		"requires": []
 	},
 	{
 		"name": "FiFi Stage 1 - Goal Game",
 		"region": "Fine Fields Stage 1",
-		"sort-key": "l1s1-05",
+		"sort-key": "l1s1-06",
 		"category": ["B1 - Fine Fields Stage 1","Goal Games","Fine Fields Stage 1","Fine Fields"],
 		"requires": []
 	},
@@ -5841,8 +5876,7 @@
 		"name": "Unlock Copy Ability Testing Room",
 		"region": "Eternal Dreamland",
 		"category": ["I2 - Credits"],
-		"requires": "{can_fight_sectonia()}",
-		"place_item": ["Copy Ability Testing Room"]
+		"requires": "{can_fight_sectonia()}"
 	},
 	{
 		"name": "Defeat Queen Sectonia",
