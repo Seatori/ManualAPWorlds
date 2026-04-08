@@ -1,4 +1,5 @@
 import logging
+from typing import Any
 # Object classes from AP core, to represent an entire MultiWorld and this individual World that's part of it
 from worlds.AutoWorld import World
 from BaseClasses import MultiWorld, CollectionState, Item, ItemClassification
@@ -710,3 +711,10 @@ def after_extend_hint_information(hint_data: dict[int, dict[int, str]], world: W
             for boss in multiworld.get_locations(player):
                 if boss_item in boss.parent_region.name:
                     hint_data[player][boss.address] = boss_loc
+
+
+# called when an external tool (eg Universal Tracker) ask for slot data to be read
+# use this if you want to restore more data
+# return True if you want to trigger a regeneration if you changed anything
+def hook_interpret_slot_data(world, player: int, slot_data: dict[str, any]) -> dict | bool:
+    return False
