@@ -1,9 +1,10 @@
 # Object classes from AP that represent different types of options that you can create
-from Options import (FreeText, NumericOption, Toggle, DefaultOnToggle, Choice, TextChoice, Range, NamedRange,
-                     OptionGroup, Visibility)
+from Options import (Option, FreeText, NumericOption, Toggle, DefaultOnToggle, Choice, TextChoice, Range, NamedRange,
+                     OptionGroup, PerGameCommonOptions, Visibility, DeathLink)
 
 # These helper methods allow you to determine if an option has been set, or what its value is, for any player in the multiworld
 from ..Helpers import is_option_enabled, get_option_value
+from typing import Type
 
 
 ####################################################################
@@ -45,12 +46,14 @@ class RandomizeKeychains(Choice):
     Randomizing all Keychains adds an additional 102 checks, for a total of 137 added.
     """
     alias_false = 0
-    option_no = 0
+    alias_no = 0
+    option_none = 0
     alias_rare_keychains = 1
     alias_rares_only = 1
     option_only_rares = 1
     alias_true = 2
-    option_yes = 2
+    alias_yes = 2
+    option_all = 2
     display_name = "Keychain Locations"
 
 
@@ -399,14 +402,14 @@ class ExtraSunStones(Choice):
     display_name = "Excess Sun Stones"
 
 
-class FillerTrapPercent(NamedRange):
+class LoseAbilityTrapPercent(NamedRange):
     """
     How many random Keychains will be replaced by Lose Ability Traps.
     Lose Ability Traps make Kirby eject whatever ability he had. They do nothing if he didn't have one.
-    
+
     0 means no traps are added, 100 means any non-rare Keychains that would otherwise exist will be replaced by traps.
     """
-    display_name = "Filler Trap Percentage"
+    display_name = "Lose Ability Trap Percentage"
     range_start = 0
     range_end = 100
 
@@ -419,18 +422,18 @@ class FillerTrapPercent(NamedRange):
     }
 
 
-class Goal(Range):
-    range_start = 0
-    range_end = 6
-    visibility = Visibility.none
+# class Goal(Range):
+#     range_start = 0
+#     range_end = 6
+#     visibility = Visibility.none
 
 
-class DeprecatedFightersName(Choice):
-    option_false = 0
-    option_true = 1
-    option_disabled = 2
-    default = 2
-    visibility = Visibility.none
+# class DeprecatedFightersName(Choice):
+#     option_false = 0
+#     option_true = 1
+#     option_disabled = 2
+#     default = 2
+#     visibility = Visibility.none
 
 
 # This is called before any manual options are defined, in case you want to define your own with a clean slate or let Manual define over them
@@ -453,12 +456,32 @@ def before_options_defined(options: dict) -> dict:
     options["level_6_boss_sun_stones"] = Level6BossRequirement
     options["queen_sectonia_boss_requirement"] = QueenSectoniaRequirement
     options["excess_sun_stones"] = ExtraSunStones
-    options["enable_kirby_fighters_locations"] = DeprecatedFightersName
+    options["lose_ability_traps"] = LoseAbilityTrapPercent
+    # options["enable_kirby_fighters_locations"] = DeprecatedFightersName
     return options
+
+
+def before_option_groups_created(groups: dict[str, list[Option]]) -> dict[str, list[Option]]:
+    # Uses the format groups['GroupName'] = [TotalCharactersToWinWith]
+    groups['Items & Locations'] = [RandomizeAbilities, RandomizeKeychains, GoalGames, KirbyFighters, ExtraStageKeys,
+                                   AbilityTestingRoom]
+    groups['Stage Shuffling'] = [StageRando, BossRando]
+    groups['Logic'] = [LogicDifficulty]
+    groups['Sun Stones & Boss Requirements'] = [SunStoneCount, Level1BossRequirement, Level2BossRequirement,
+                                                Level3BossRequirement, Level4BossRequirement, Level5BossRequirement,
+                                                Level6BossRequirement, QueenSectoniaRequirement, ExtraSunStones]
+    groups['Extra Challenges'] = [LoseAbilityTrapPercent, DeathLink]
+    return groups
+
+
+def after_option_groups_created(groups: list[OptionGroup]) -> list[OptionGroup]:
+    return groups
 
 
 # This is called after any manual options are defined, in case you want to see what options are defined or want to modify the defined options
-def after_options_defined(options: dict) -> dict:
-    options["filler_traps"] = FillerTrapPercent
-    options["goal"] = Goal
-    return options
+def after_options_defined(options: Type[PerGameCommonOptions]):
+    options.type_hints['goal'].visibility = Visibility.none
+    options.type_hints['filler_traps'].visibility = Visibility.none  # Temporary until I can get it into Extra Challenges
+    # options.type_hints['filler_traps'].display_name = "Filler Trap Percentage"
+    # options.type_hints['filler_traps'].__doc__ = "How many random Keychains will be replaced by Lose Ability Traps. \nLose Ability Traps make Kirby eject whatever ability he had. They do nothing if he didn't have one.\n\n0 means no traps are added, 100 means any non-rare Keychains that would otherwise exist will be replaced by traps."
+    pass

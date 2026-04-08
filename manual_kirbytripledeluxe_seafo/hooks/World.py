@@ -1,7 +1,8 @@
 import logging
+from typing import Any
 # Object classes from AP core, to represent an entire MultiWorld and this individual World that's part of it
 from worlds.AutoWorld import World
-from BaseClasses import MultiWorld, CollectionState, ItemClassification
+from BaseClasses import MultiWorld, CollectionState, Item, ItemClassification
 from Options import OptionError
 
 # Object classes from Manual -- extending AP core -- representing items and locations that are used in generation
@@ -37,10 +38,16 @@ def hook_get_filler_item_name(world: World, multiworld: MultiWorld, player: int)
     return False
 
 
-# Called before regions and locations are created. Not clear why you'd want this, but it's here. Victory location is included, but Victory event is not placed yet.
-def before_create_regions(world: World, multiworld: MultiWorld, player: int):
-    if world.options.enable_kirby_fighters_locations.value < 2:
-        raise OptionError("Outdated option name 'enable_kirby_fighters_locations'. Please use an updated YAML.")
+def before_generate_early(world: World, multiworld: MultiWorld, player: int) -> None:
+    # Probably good to fully remove this now.
+    # if world.options.enable_kirby_fighters_locations.value < 2:
+    #     raise OptionError("Outdated option name 'enable_kirby_fighters_locations'. Please use an updated YAML.")
+
+    filler_traps = world.options.filler_traps.value
+    lose_ability_traps = world.options.lose_ability_traps.value
+    trap_percent = max(filler_traps, lose_ability_traps)
+    world.options.filler_traps.value = trap_percent
+    world.options.lose_ability_traps.value = trap_percent
 
     sectonia_boss_req = world.options.queen_sectonia_boss_requirement.value
     if sectonia_boss_req == -1:
@@ -51,7 +58,7 @@ def before_create_regions(world: World, multiworld: MultiWorld, player: int):
     if world.options.keychain_locations > 0 or world.options.goal_game_locations:
         pass
     else:
-        location_total = 106
+        location_total = 100
         item_total = 11
         if world.options.randomize_copy_abilities:
             item_total += 25
@@ -69,13 +76,21 @@ def before_create_regions(world: World, multiworld: MultiWorld, player: int):
             location_total += 10
         if world.options.ability_testing_room == 1:
             item_total += 1
+        # If the number of Sun Stones required is too high, no Sun Stones can be placed on boss locations.
+        # There are assuredly less restrictive ways of doing this, but this method should suffice.
+        for option in (world.options.level_1_boss_sun_stones, world.options.level_2_boss_sun_stones,
+                       world.options.level_3_boss_sun_stones, world.options.level_4_boss_sun_stones,
+                       world.options.level_5_boss_sun_stones, world.options.level_6_boss_sun_stones):
+            if option.value <= location_total - item_total - 6:
+                location_total += 1
+
         extra_locations = location_total - item_total
         # Ensuring that the number of Sun Stones added to the pool isn't higher than the number defined by the option.
         if extra_locations >= world.options.sun_stone_count.value:
             pass
         else:
             excess_sun_stones = world.options.sun_stone_count.value - extra_locations
-            logging.warning(f"Not enough locations for all Sun Stones to be placed for player "
+            logging.warning(f"There may not be enough locations for all Sun Stones to be placed for player "
                             f"{world.multiworld.get_player_name(world.player)}. Removing {excess_sun_stones} of their "
                             f"Sun Stones.")
             world.options.sun_stone_count.value = extra_locations
@@ -151,9 +166,14 @@ def before_create_regions(world: World, multiworld: MultiWorld, player: int):
         world.options.level_6_boss_sun_stones.value = sun_stones
 
 
+# Called before regions and locations are created. Not clear why you'd want this, but it's here. Victory location is included, but Victory event is not placed yet.
+def before_create_regions(world: World, multiworld: MultiWorld, player: int):
+    pass
+
+
 # Called after regions and locations are created, in case you want to see or modify that information. Victory location is included.
 def after_create_regions(world: World, multiworld: MultiWorld, player: int):
-    # Use this hook to remove locations from the world
+    # Removing all unused boss unlock locations.
     level_1_boss = world.options.level_1_boss_sun_stones.value
     if level_1_boss > 0: 
         remove_first_boss = [loc.name for loc in multiworld.get_locations(player) if "Level 1 Boss" in loc.name
@@ -258,6 +278,18 @@ def after_create_regions(world: World, multiworld: MultiWorld, player: int):
         multiworld.clear_location_cache()
 
 
+# This hook allows you to access the item names & counts before the items are created. Use this to increase/decrease the amount of a specific item in the pool
+# Valid item_config key/values:
+# {"Item Name": 5} <- This will create qty 5 items using all the default settings
+# {"Item Name": {"useful": 7}} <- This will create qty 7 items and force them to be classified as useful
+# {"Item Name": {"progression": 2, "useful": 1}} <- This will create 3 items, with 2 classified as progression and 1 as useful
+# {"Item Name": {0b0110: 5}} <- If you know the special flag for the item classes, you can also define non-standard options. This setup
+#       will create 5 items that are the "useful trap" class
+# {"Item Name": {ItemClassification.useful: 5}} <- You can also use the classification directly
+def before_create_items_all(item_config: dict[str, int|dict], world: World, multiworld: MultiWorld, player: int) -> dict[str, int|dict]:
+    return item_config
+
+
 # The item pool before starting items are processed, in case you want to see the raw item pool at that stage
 def before_create_items_starting(item_pool: list, world: World, multiworld: MultiWorld, player: int) -> list:
     return item_pool
@@ -277,7 +309,17 @@ def before_create_items_filler(item_pool: list, world: World, multiworld: MultiW
     #     item = next(i for i in item_pool if i.name == itemName)
     #     item_pool.remove(item)
 
-    if world.options.ability_testing_room == 2:
+    # Manual's place_item function currently fails unit tests, so we do it here instead.
+    if world.options.ability_testing_room.value == 0:
+        atr_loc = [loc for loc in multiworld.get_locations(player) if loc.name == "Unlock Copy Ability Testing Room"]
+        atr_item = [i for i in item_pool if i.name == "Copy Ability Testing Room"]
+        for atr in atr_item:
+            if len(atr_loc) == 0:
+                break
+            place_atr = atr_loc.pop()
+            place_atr.place_locked_item(atr)
+            item_pool.remove(atr)
+    elif world.options.ability_testing_room == 2:
         get_atr = [i.name for i in item_pool if i.name == "Copy Ability Testing Room"]
         for atr in get_atr:
             remove_atr = next(i for i in item_pool if i.name == atr)
@@ -291,16 +333,21 @@ def before_create_items_filler(item_pool: list, world: World, multiworld: MultiW
             remove_sun_stones = next(i for i in item_pool if i.name == "Sun Stone")
             item_pool.remove(remove_sun_stones)
 
+    # Checking the number of Sun Stones that need to be progression items.
+    prog_sun_stones = max(world.options.level_1_boss_sun_stones.value, world.options.level_2_boss_sun_stones.value,
+                          world.options.level_3_boss_sun_stones.value, world.options.level_4_boss_sun_stones.value,
+                          world.options.level_5_boss_sun_stones.value, world.options.level_6_boss_sun_stones.value)
+    # Getting all the Sun Stones from the pool.
+    total_sun_stones = [i for i in item_pool if i.name == "Sun Stone"]
+
+    if len(total_sun_stones) > 10:
+        for _, item in zip(range(len(total_sun_stones)), total_sun_stones):  # Surely there must be a better way??
+            item.classification |= ItemClassification.deprioritized
+
     # If we want our excess Sun Stones to be progression items, we don't need to do anything here.
     if world.options.excess_sun_stones == 0:
         pass
     else:
-        # Getting the number of Sun Stones that need to be progression items.
-        prog_sun_stones = max(world.options.level_1_boss_sun_stones, world.options.level_2_boss_sun_stones,
-                              world.options.level_3_boss_sun_stones, world.options.level_4_boss_sun_stones,
-                              world.options.level_5_boss_sun_stones, world.options.level_6_boss_sun_stones)
-        # Checking how many Sun Stones are in the pool.
-        total_sun_stones = [i for i in item_pool if i.name == "Sun Stone"]
         # Calculating the number of unnecessary Sun Stones by subtracting the number in the pool by how many are needed.
         excess_sun_stones = len(total_sun_stones) - prog_sun_stones
 
@@ -342,8 +389,11 @@ def before_create_items_filler(item_pool: list, world: World, multiworld: MultiW
         open_locations = location_total - item_total
         if open_locations < 36:
             # We remove the Queen Sectonia Keychain first because it doesn't have an equivalent location.
-            sectonia_keychain = next(i for i in item_pool if i.name == "Queen Sectonia Keychain")
-            item_pool.remove(sectonia_keychain)
+            sectonia_keychain_item = [i.name for i in item_pool if i.name == "Queen Sectonia Keychain"]
+            for sectonia_keychain in sectonia_keychain_item:
+                remove_sectonia = next(i for i in item_pool if i.name == sectonia_keychain)
+                item_pool.remove(remove_sectonia)
+
             if open_locations == 35:
                 logging.warning(f"Not enough locations to place all Rare Keychains for player "
                                 f"{world.multiworld.get_player_name(world.player)}. Removing 1 Rare Keychain.")
@@ -360,6 +410,14 @@ def before_create_items_filler(item_pool: list, world: World, multiworld: MultiW
                     rare_keychains.remove(keychains_to_remove)
     else:
         pass
+
+    shuffle_bosses(item_pool, world, multiworld, player)
+
+    # We don't need to do anything if Stage Shuffle is disabled, so we quit out early.
+    if world.options.stage_shuffle == 0:
+        return item_pool
+
+    shuffle_stages(item_pool, world, multiworld, player)
 
     return item_pool
 
@@ -456,10 +514,6 @@ def after_create_item(item: ManualItem, world: World, multiworld: MultiWorld, pl
     if item.name == "Sleep":
         item.classification = ItemClassification.trap
 
-    # Grand Sun Stones are always the biggest major unlocks, so they should always be Progression + Useful.
-    if item.name == "Grand Sun Stone":
-        item.classification = ItemClassification.progression | ItemClassification.useful
-
     # Taking abilities from other areas is only needed in hard logic, and ability logic is only relevant if randomized.
     # It is however still convenient for if the player wants to go out of logic, or just use their favorite ability.
     if item.name == "Copy Ability Testing Room":
@@ -481,17 +535,28 @@ def after_create_item(item: ManualItem, world: World, multiworld: MultiWorld, pl
 
 # This method is run towards the end of pre-generation, before the place_item options have been handled and before AP generation occurs
 def before_generate_basic(world: World, multiworld: MultiWorld, player: int) -> list:
-    shuffle_bosses(world, multiworld, player)
-
-    # We don't need to do anything if Stage Shuffle is disabled, so we quit out early.
-    if world.options.stage_shuffle == 0:
-        return []
-
-    shuffle_stages(world, multiworld, player)
-
+    pass
 
 # This method is run at the very end of pre-generation, once the place_item options have been handled and before AP generation occurs
 def after_generate_basic(world: World, multiworld: MultiWorld, player: int):
+    pass
+
+
+# This method is run every time an item is added to the state, can be used to modify the value of an item.
+# IMPORTANT! Any changes made in this hook must be cancelled/undone in after_remove_item
+def after_collect_item(world: World, state: CollectionState, Changed: bool, item: Item):
+    # the following let you add to the Potato Item Value count
+    # if item.name == "Cooked Potato":
+    #     state.prog_items[item.player][format_state_prog_items_key(ProgItemsCat.VALUE, "Potato")] += 1
+    pass
+
+
+# This method is run every time an item is removed from the state, can be used to modify the value of an item.
+# IMPORTANT! Any changes made in this hook must be first done in after_collect_item
+def after_remove_item(world: World, state: CollectionState, Changed: bool, item: Item):
+    # the following let you undo the addition to the Potato Item Value count
+    # if item.name == "Cooked Potato":
+    #     state.prog_items[item.player][format_state_prog_items_key(ProgItemsCat.VALUE, "Potato")] -= 1
     pass
 
 
@@ -646,3 +711,10 @@ def after_extend_hint_information(hint_data: dict[int, dict[int, str]], world: W
             for boss in multiworld.get_locations(player):
                 if boss_item in boss.parent_region.name:
                     hint_data[player][boss.address] = boss_loc
+
+
+# called when an external tool (eg Universal Tracker) ask for slot data to be read
+# use this if you want to restore more data
+# return True if you want to trigger a regeneration if you changed anything
+def hook_interpret_slot_data(world, player: int, slot_data: dict[str, any]) -> dict | bool:
+    return False

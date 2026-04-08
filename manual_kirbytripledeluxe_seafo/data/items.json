@@ -159,7 +159,8 @@
 		"count": "5",
 		"name": "Grand Sun Stone",
 		"category": ["Grand Sun Stones"],
-		"progression": true
+		"progression": true,
+		"useful": true
 	},
 	{
 		"count": "6",
