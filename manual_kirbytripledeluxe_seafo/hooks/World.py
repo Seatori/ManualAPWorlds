@@ -224,13 +224,6 @@ def after_create_regions(world: World, multiworld: MultiWorld, player: int):
     else:
         remove_keychains = []
 
-    # Manual's place_item function currently fails unit tests, so we do it here instead.
-    atr_loc = [loc for loc in multiworld.get_locations(player) if "Unlock Copy Ability Testing Room" in loc.name]
-    atr_item = next(i for i in multiworld.get_items() if i.player == player and i.name == "Copy Ability Testing Room")
-    place_atr = atr_loc.pop()
-    place_atr.place_locked_item(atr_item)
-    multiworld.itempool.remove(atr_item)
-
     stage_shuffle = world.options.stage_shuffle.value
     # Here we remove every 'Unlock Stage' location, since all stages are in their vanilla positions.
     if stage_shuffle == 0:
@@ -315,7 +308,17 @@ def before_create_items_filler(item_pool: list, world: World, multiworld: MultiW
     #     item = next(i for i in item_pool if i.name == itemName)
     #     item_pool.remove(item)
 
-    if world.options.ability_testing_room == 2:
+    # Manual's place_item function currently fails unit tests, so we do it here instead.
+    if world.options.ability_testing_room.value == 0:
+        atr_loc = [loc for loc in multiworld.get_locations(player) if loc.name == "Unlock Copy Ability Testing Room"]
+        atr_item = [i for i in item_pool if i.name == "Copy Ability Testing Room"]
+        for atr in atr_item:
+            if len(atr_loc) == 0:
+                break
+            place_atr = atr_loc.pop()
+            place_atr.place_locked_item(atr)
+            item_pool.remove(atr)
+    elif world.options.ability_testing_room == 2:
         get_atr = [i.name for i in item_pool if i.name == "Copy Ability Testing Room"]
         for atr in get_atr:
             remove_atr = next(i for i in item_pool if i.name == atr)
@@ -385,8 +388,11 @@ def before_create_items_filler(item_pool: list, world: World, multiworld: MultiW
         open_locations = location_total - item_total
         if open_locations < 36:
             # We remove the Queen Sectonia Keychain first because it doesn't have an equivalent location.
-            sectonia_keychain = next(i for i in item_pool if i.name == "Queen Sectonia Keychain")
-            item_pool.remove(sectonia_keychain)
+            sectonia_keychain_item = [i.name for i in item_pool if i.name == "Queen Sectonia Keychain"]
+            for sectonia_keychain in sectonia_keychain_item:
+                remove_sectonia = next(i for i in item_pool if i.name == sectonia_keychain)
+                item_pool.remove(remove_sectonia)
+
             if open_locations == 35:
                 logging.warning(f"Not enough locations to place all Rare Keychains for player "
                                 f"{world.multiworld.get_player_name(world.player)}. Removing 1 Rare Keychain.")
@@ -403,6 +409,14 @@ def before_create_items_filler(item_pool: list, world: World, multiworld: MultiW
                     rare_keychains.remove(keychains_to_remove)
     else:
         pass
+
+    shuffle_bosses(item_pool, world, multiworld, player)
+
+    # We don't need to do anything if Stage Shuffle is disabled, so we quit out early.
+    if world.options.stage_shuffle == 0:
+        return item_pool
+
+    shuffle_stages(item_pool, world, multiworld, player)
 
     return item_pool
 
@@ -520,14 +534,7 @@ def after_create_item(item: ManualItem, world: World, multiworld: MultiWorld, pl
 
 # This method is run towards the end of pre-generation, before the place_item options have been handled and before AP generation occurs
 def before_generate_basic(world: World, multiworld: MultiWorld, player: int) -> list:
-    shuffle_bosses(world, multiworld, player)
-
-    # We don't need to do anything if Stage Shuffle is disabled, so we quit out early.
-    if world.options.stage_shuffle == 0:
-        return []
-
-    shuffle_stages(world, multiworld, player)
-
+    pass
 
 # This method is run at the very end of pre-generation, once the place_item options have been handled and before AP generation occurs
 def after_generate_basic(world: World, multiworld: MultiWorld, player: int):

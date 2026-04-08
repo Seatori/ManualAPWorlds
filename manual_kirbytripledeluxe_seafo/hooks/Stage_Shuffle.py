@@ -75,52 +75,52 @@ def shuffle_stages_early(item_pool: list, world: World, multiworld: MultiWorld, 
     return item_pool
 
 
-def shuffle_stages(world: World, multiworld: MultiWorld, player: int) -> list:
+def shuffle_stages(item_pool: list, world: World, multiworld: MultiWorld, player: int) -> list:
     stage_shuffle = world.options.stage_shuffle
 
     if stage_shuffle == 1 or stage_shuffle == 3:
         main_stage_locs = [loc for loc in multiworld.get_locations(player)
                            if "Unlock 1st Stage" in loc.name or "Unlock 2nd Stage" in loc.name
                            or "Unlock 3rd" in loc.name or "Unlock 4th" in loc.name or "Unlock 5th" in loc.name]
-        main_stage_items = [i for i in multiworld.get_items() if i.player == player
-                            and ("Stage 1" in i.name or "Stage 2" in i.name or "Stage 3" in i.name
+        main_stage_items = [i for i in item_pool if
+                            ("Stage 1" in i.name or "Stage 2" in i.name or "Stage 3" in i.name
                             or "Stage 4" in i.name or "Stage 5" in i.name)]
 
         for main_stage in main_stage_locs:
             main_stage_item = world.random.choice(main_stage_items)
             world.main_stage_order[player].append(main_stage_item.name)
             main_stage.place_locked_item(main_stage_item)
-            multiworld.itempool.remove(main_stage_item)
+            item_pool.remove(main_stage_item)
             main_stage_items.remove(main_stage_item)
 
     if stage_shuffle == 2 or stage_shuffle == 3:
         ex_stage_locs = [loc for loc in multiworld.get_locations(player)
                          if "Unlock EX" in loc.name or "Unlock 1st EX" in loc.name or "Unlock 2nd EX" in loc.name]
-        ex_stage_items = [i for i in multiworld.get_items() if i.player == player
-                          and "Stage EX" in i.name]
+        ex_stage_items = [i for i in item_pool if "Stage EX" in i.name]
 
         for ex_stage in ex_stage_locs:
             ex_stage_item = world.random.choice(ex_stage_items)
             world.ex_stage_order[player].append(ex_stage_item.name)
             ex_stage.place_locked_item(ex_stage_item)
-            multiworld.itempool.remove(ex_stage_item)
+            item_pool.remove(ex_stage_item)
             ex_stage_items.remove(ex_stage_item)
 
     if stage_shuffle == 4:
         stage_locs = [loc for loc in multiworld.get_locations(player)
                       if "Level" in loc.name and "Boss" not in loc.name]
-        stage_items = [i for i in multiworld.get_items() if i.player == player
-                       and "Stage" in i.name and "Key" not in i.name]
+        stage_items = [i for i in item_pool if "Stage" in i.name and "Key" not in i.name]
 
         for stage in stage_locs:
             stage_item = world.random.choice(stage_items)
             world.stage_order[player].append(stage_item.name)
             stage.place_locked_item(stage_item)
-            multiworld.itempool.remove(stage_item)
+            item_pool.remove(stage_item)
             stage_items.remove(stage_item)
 
+    return item_pool
 
-def shuffle_bosses(world: World, multiworld: MultiWorld, player: int) -> list:
+
+def shuffle_bosses(item_pool: list, world: World, multiworld: MultiWorld, player: int) -> list:
     boss_shuffle = world.options.boss_shuffle
 
     world.boss_order = {}
@@ -131,68 +131,71 @@ def shuffle_bosses(world: World, multiworld: MultiWorld, player: int) -> list:
         boss_stage_locs = [loc for loc in multiworld.get_locations(player)
                            if "Level 1 Boss" in loc.name or "Level 2 Boss" in loc.name or "Level 3 Boss" in loc.name
                            or "Level 4 Boss" in loc.name or "Level 5 Boss" in loc.name or "Level 6 Boss" in loc.name]
-        boss_stage_items = [i for i in multiworld.get_items() if i.player == player and "VS" in i.name]
+        boss_stage_items = [i for i in item_pool if "VS" in i.name]
 
         for boss in boss_stage_items:
             if len(boss_stage_locs) == 0:
                 break
             boss_locations = boss_stage_locs.pop(0)
             boss_locations.place_locked_item(boss)
-            multiworld.itempool.remove(boss)
+            item_pool.remove(boss)
 
     if boss_shuffle == 1:
-        masked_dedede_loc = [loc for loc in multiworld.get_locations(player)
-                             if "Level 6 Boss" in loc.name]
-        masked_dedede_item = next(i for i in multiworld.get_items()
-                                  if i.player == player and i.name == "VS Masked Dedede")
-        place_dedede = masked_dedede_loc.pop()
-        place_dedede.place_locked_item(masked_dedede_item)
-        multiworld.itempool.remove(masked_dedede_item)
+        masked_dedede_loc = [loc for loc in multiworld.get_locations(player) if "Level 6 Boss" in loc.name]
+        masked_dedede_item = [i for i in item_pool if i.name == "VS Masked Dedede"]
+        for dedede in masked_dedede_item:
+            if len(masked_dedede_loc) == 0:
+                break
+            place_dedede = masked_dedede_loc.pop()
+            place_dedede.place_locked_item(dedede)
+            item_pool.remove(dedede)
 
         boss_stage_locs = [loc for loc in multiworld.get_locations(player)
                            if "Level 1 Boss" in loc.name or "Level 2 Boss" in loc.name or "Level 3 Boss" in loc.name
                            or "Level 4 Boss" in loc.name or "Level 5 Boss" in loc.name]
-        boss_stage_items = [i for i in multiworld.get_items()
-                            if i.player == player and "VS" in i.name and "VS Masked Dedede" not in i.name]
+        boss_stage_items = [i for i in item_pool if "VS" in i.name and "VS Masked Dedede" not in i.name]
 
         for boss_loc in boss_stage_locs:
             boss_item = world.random.choice(boss_stage_items)
             world.boss_order[player].append(boss_item.name)
             boss_loc.place_locked_item(boss_item)
-            multiworld.itempool.remove(boss_item)
+            item_pool.remove(boss_item)
             boss_stage_items.remove(boss_item)
 
     if boss_shuffle == 2:
         masked_dedede_loc = [loc for loc in multiworld.get_locations(player) if "Level 1 Boss" in loc.name]
-        masked_dedede_item = next(i for i in multiworld.get_items()
-                                  if i.player == player and i.name == "VS Masked Dedede")
-        world.boss_order[player].append(masked_dedede_item.name)
-        place_dedede = masked_dedede_loc.pop()
-        place_dedede.place_locked_item(masked_dedede_item)
-        multiworld.itempool.remove(masked_dedede_item)
+        masked_dedede_item = [i for i in item_pool if i.name == "VS Masked Dedede"]
+        for dedede in masked_dedede_item:
+            if len(masked_dedede_loc) == 0:
+                break
+            world.boss_order[player].append(dedede.name)
+            place_dedede = masked_dedede_loc.pop()
+            place_dedede.place_locked_item(dedede)
+            item_pool.remove(dedede)
 
         boss_stage_locs = [loc for loc in multiworld.get_locations(player)
                            if "Level 2 Boss" in loc.name or "Level 3 Boss" in loc.name or "Level 4 Boss" in loc.name
                            or "Level 5 Boss" in loc.name or "Level 6 Boss" in loc.name]
-        boss_stage_items = [i for i in multiworld.get_items()
-                            if i.player == player and "VS" in i.name and "VS Masked Dedede" not in i.name]
+        boss_stage_items = [i for i in item_pool if "VS" in i.name and "VS Masked Dedede" not in i.name]
 
         for boss_loc in boss_stage_locs:
             boss_item = world.random.choice(boss_stage_items)
             world.boss_order[player].append(boss_item.name)
             boss_loc.place_locked_item(boss_item)
-            multiworld.itempool.remove(boss_item)
+            item_pool.remove(boss_item)
             boss_stage_items.remove(boss_item)
 
     if boss_shuffle == 3:
         boss_stage_locs = [loc for loc in multiworld.get_locations(player)
                            if "Level 1 Boss" in loc.name or "Level 2 Boss" in loc.name or "Level 3 Boss" in loc.name
                            or "Level 4 Boss" in loc.name or "Level 5 Boss" in loc.name or "Level 6 Boss" in loc.name]
-        boss_stage_items = [i for i in multiworld.get_items() if i.player == player and "VS" in i.name]
+        boss_stage_items = [i for i in item_pool if "VS" in i.name]
 
         for boss_loc in boss_stage_locs:
             boss_item = world.random.choice(boss_stage_items)
             world.boss_order[player].append(boss_item.name)
             boss_loc.place_locked_item(boss_item)
-            multiworld.itempool.remove(boss_item)
+            item_pool.remove(boss_item)
             boss_stage_items.remove(boss_item)
+
+    return item_pool
